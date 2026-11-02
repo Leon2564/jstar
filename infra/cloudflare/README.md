@@ -1,5 +1,24 @@
 # Cloudflare deployment
 
+## Standalone frontend + R2
+
+The public frontend can be deployed independently with `wrangler.leon.jsonc`. The Worker serves the Vite application while the `jstar-media` R2 binding serves videos, card art, voice, audio, gifts and icons from their existing same-origin paths.
+
+```bash
+# Build the web application, then keep large runtime assets out of Workers Assets.
+npm run build -w @jstar/web
+node infra/cloudflare/scripts/prepare-leon.mjs
+
+# Resumable upload of current runtime resources to R2.
+node infra/cloudflare/scripts/upload-leon-r2.mjs
+
+# Publish the Worker.
+cd infra/cloudflare
+wrangler deploy -c wrangler.leon.jsonc
+```
+
+Current deployment: <https://jstar-leon.lionellong.workers.dev/>
+
 | Host | Worker | Serves |
 |---|---|---|
 | `jstarcards.ai` (`www` → 301) | `jstar-web` | `apps/web/dist`; `/v1/*` and `/health` → API container |
