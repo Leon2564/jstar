@@ -34,6 +34,8 @@ npm run demo       # agent :8100 + API :8080（演示模式）+ 用户端 :5173 
 
 ```bash
 node -v            # 需要 Node 20+
+git lfs install    # 首次使用 Git LFS
+git lfs pull       # 下载完整视频、卡牌和语音资源
 npm install        # 安装全部 workspace 依赖
 cp .env.example .env
 
@@ -57,6 +59,8 @@ VITE_API_BASE=http://localhost:8080
 ```
 
 完整依赖（Postgres + Redis + API + agent）用 `npm run docker:up`。
+
+当前运行资源包清单与完整下载方式见 [`docs/runtime-assets.md`](docs/runtime-assets.md)。
 
 ## 常用命令
 
