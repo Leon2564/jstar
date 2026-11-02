@@ -1,0 +1,775 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Card Review · S1</title>
+<style>
+:root{--bg:#0f1126;--fg:#f3eef2;--muted:#a9a3b8;--pass:#4caf7d;--fail:#e0626f;--todo:#555a78;--card:#1a1d3a}
+body{margin:0;background:var(--bg);color:var(--fg);font:13px/1.45 system-ui,-apple-system,"Hiragino Sans",sans-serif}
+header{padding:16px;position:sticky;top:0;background:var(--bg);z-index:1;border-bottom:1px solid #2a2e55}
+h1{font-size:18px;margin:0 0 6px} ul{margin:4px 0;padding-left:18px;color:var(--muted)} label{margin-right:10px}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;padding:16px}
+figure{margin:0;background:var(--card);border-radius:10px;overflow:hidden;border:2px solid var(--todo)}
+figure.pass{border-color:var(--pass)} figure.fail{border-color:var(--fail)}
+img,.ph{display:block;width:100%;aspect-ratio:360/503;object-fit:cover}
+.ph{display:grid;place-items:center;color:var(--muted);text-align:center;padding:8px;box-sizing:border-box}
+figcaption{padding:8px} small{color:var(--muted)} .score{float:right;font-weight:700}
+.tier{font-size:11px;padding:1px 5px;border-radius:4px;background:#333a6a} .t-SSR{background:#8a5a1a}.t-UR{background:#a0294a}.t-SR{background:#5b3b8a}
+</style></head><body>
+<header><h1>Star Genesis · First Five — card review (local, not deployed)</h1>
+<div>Likeness 1–5 from the blind line-up judge (tools/media/src/judge.ts); pass ≥ 4. Green = published, red = below threshold (not shipped), grey = not generated yet.</div>
+<ul><li><b>mahiro</b>: 30/30 published, likeness mean 5.00, min 5</li><li><b>nana</b>: 30/30 published, likeness mean 5.00, min 5</li><li><b>unpai</b>: 30/30 published, likeness mean 5.00, min 5</li><li><b>alice</b>: 30/30 published, likeness mean 5.00, min 5</li><li><b>eimi</b>: 30/30 published, likeness mean 5.00, min 5</li></ul>
+<div><label>Talent <select id="s"><option value="">all</option><option>mahiro</option><option>nana</option><option>unpai</option><option>alice</option><option>eimi</option></select></label>
+<label>Tier <select id="t"><option value="">all</option><option>N</option><option>R</option><option>SR</option><option>SSR</option><option>UR</option></select></label></div></header>
+<main><figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-01/card-sm.webp" alt="Mahiro at a sunny kitchen counter in the morning, oversized cream cable-knit cardigan, holding a navy and a blush-pink handmade mug with steam rising, smiling at you">
+  <figcaption><b>mahiro-01</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  おはようの一杯 · Morning, One Cup Each<br><i>おはよ。コーヒー、あなたの分もいれといたよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-02/card-sm.webp" alt="Mahiro curled up on a sofa by a bright window on a quiet afternoon, a paperback open on her knees, cream knit sweater and long beige skirt, looking up at you">
+  <figcaption><b>mahiro-02</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  窓辺で読書 · Reading by the Window<br><i>あ、読み終わるまで待っててくれたの？ ……ありがと。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-03/card-sm.webp" alt="Mahiro at a café window seat on a rainy afternoon, raindrops on the glass, a latte held in both hands, beige knit over a white blouse">
+  <figcaption><b>mahiro-03</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  雨宿りの窓際 · Sheltering from the Rain<br><i>雨、やむまでここにいよっか。急がなくていいよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-04/card-sm.webp" alt="Mahiro hanging white sheets on a sunny apartment balcony in the morning, loose light-blue linen shirt and cream trousers, a breeze in her hair">
+  <figcaption><b>mahiro-04</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  洗濯日和 · Perfect Laundry Weather<br><i>いいお天気。今夜のシーツ、ふかふかだね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-05/card-sm.webp" alt="Mahiro in a neighbourhood supermarket aisle in the early evening, holding a basket of vegetables, soft grey cardigan and canvas tote, turning to ask you">
+  <figcaption><b>mahiro-05</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  今夜はなに食べる？ · What's for Dinner?<br><i>今日はあなたの食べたいものにしよ。なにがいい？</i><br><small>jawline slightly slimmer; nose tip slightly more refined</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-06/card-sm.webp" alt="Mahiro half-asleep on a sofa under a knit blanket in a warm lamp-lit living room at night, soft grey lounge sweater, eyes just opening toward you">
+  <figcaption><b>mahiro-06</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ソファでうとうと · Dozing on the Sofa<br><i>ん……寝てないよ。ちょっと目を閉じてただけ。</i><br><small>less under-eye fullness; nose bridge narrower</small><br><small>gemini-3.1-flash-image · 4 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-07/card-sm.webp" alt="Mahiro leaning on a high-rise balcony railing at dusk, pink and orange sky over Tokyo, cream cardigan, holding a mug">
+  <figcaption><b>mahiro-07</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ベランダの夕暮れ · Balcony at Dusk<br><i>見て、空がピンク色。今日もおつかれさま。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-08/card-sm.webp" alt="Mahiro walking a quiet residential street at night under streetlights, oversized hoodie and long skirt, holding a convenience-store bag with two ice creams">
+  <figcaption><b>mahiro-08</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  コンビニの帰り道 · The Walk Back from the Konbini<br><i>アイス、ふたつ買っちゃった。半分こ、しよ？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-09/card-sm.webp" alt="Mahiro watering potted herbs and flowers on a sunny windowsill in the morning, white cotton blouse, a small tin watering can, gentle smile">
+  <figcaption><b>mahiro-09</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  朝の水やり · Morning Watering<br><i>この子たち、あなたが来ると元気になる気がする。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-10/card-sm.webp" alt="Mahiro at the entrance of a cosy apartment in the evening, warm hallway light, cream cardigan over a white dress, reaching out to take your bag">
+  <figcaption><b>mahiro-10</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  おかえりの玄関 · Welcome Home at the Door<br><i>おかえり。今日もがんばったね。荷物、持つよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-11/card-sm.webp" alt="Mahiro on a riverside path lined with cherry blossoms in spring, light beige trench coat over a white dress, petals falling, looking back at you">
+  <figcaption><b>mahiro-11</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  桜並木をふたりで · Under the Cherry Trees<br><i>花びら、髪についてるよ。……とってあげる。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-12/card-sm.webp" alt="Mahiro inside an aquarium tunnel bathed in blue light, fish gliding overhead, navy knit and pleated midi skirt, her face softly lit as she looks at you">
+  <figcaption><b>mahiro-12</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  水族館の青い道 · The Blue Tunnel<br><i>魚より、あなたの顔ばっかり見ちゃう。なんでだろ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-13/card-sm.webp" alt="Mahiro in a narrow Jimbocho second-hand bookshop with tall wooden shelves, afternoon light, holding up an old book, camel coat over a knit">
+  <figcaption><b>mahiro-13</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  古本屋めぐり · Old Bookshop Hunt<br><i>これ、あなたが好きそうだと思って。当たり？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-14/card-sm.webp" alt="Mahiro on a sandy beach path at sunset, long white cotton dress with a cream cardigan, holding her sandals, golden light and gentle waves behind her">
+  <figcaption><b>mahiro-14</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  海辺の帰り道 · Seaside, Heading Home<br><i>靴、脱いじゃった。もうちょっとだけ、歩こ？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-15/card-sm.webp" alt="Mahiro seated inside a Ferris wheel gondola at dusk, city lights beginning to glow below, light knit and a soft scarf, smiling across at you">
+  <figcaption><b>mahiro-15</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  観覧車のてっぺん · Top of the Ferris Wheel<br><i>いちばん上に着いたら、ちょっとだけ静かにしてて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-16/card-sm.webp" alt="Mahiro at a pottery wheel in a sunlit studio, canvas apron over a linen shirt, hands shaping a small clay mug, laughing toward you">
+  <figcaption><b>mahiro-16</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  陶芸教室 · Pottery Class<br><i>おそろいのマグ、作ろ。あなたのは紺色ね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-17/card-sm.webp" alt="Mahiro on a stone path in a Kyoto temple garden under red maple leaves, burgundy knit and long camel skirt, soft afternoon light">
+  <figcaption><b>mahiro-17</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  紅葉の古都 · Autumn in Kyoto<br><i>真っ赤だね。この景色、あなたと見たかったんだ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-18/card-sm.webp" alt="Mahiro on a quiet snowy street in the evening, cream wool coat, white knit hat and mittens, snowflakes falling, cheeks pink from the cold">
+  <figcaption><b>mahiro-18</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  雪の日の足あと · Footprints in the Snow<br><i>手、冷たいでしょ。ほら、ポケットに入れて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-19/card-sm.webp" alt="Mahiro at a summer festival at night in a navy yukata with small pink flowers, holding a paper fan, fireworks blooming in the sky behind her">
+  <figcaption><b>mahiro-19</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  花火のあとで · After the Fireworks<br><i>花火より、あなたの横顔を覚えてる気がする。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-20/card-sm.webp" alt="Mahiro on a tree-lined avenue of winter illuminations at night, cream coat and pale pink scarf, golden fairy lights in soft bokeh">
+  <figcaption><b>mahiro-20</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  光の並木道 · Avenue of Lights<br><i>きれい……でも、手はつないだままでいてね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-21/card-sm.webp" alt="Mahiro at home at night holding a small strawberry cake with lit candles, candlelight on her face, cream dress, fairy lights behind">
+  <figcaption><b>mahiro-21</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  あなたの誕生日 · Your Birthday<br><i>お誕生日おめでとう。生まれてきてくれて、ありがと。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-22/card-sm.webp" alt="Mahiro sitting on a grassy hill at night under a starry sky, wrapped in a plaid blanket over a knit sweater, a thermos beside her">
+  <figcaption><b>mahiro-22</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  星をさがしに · Looking for Stars<br><i>流れ星、見つけたら教えてね。願いごと、もう決めてるの。</i><br><small>chin slightly narrower; nose bridge slightly narrower</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-23/card-sm.webp" alt="Mahiro at a fine-dining table by a tall window at night, elegant black long-sleeve dress and pearl earrings, city lights behind, raising a glass">
+  <figcaption><b>mahiro-23</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  窓際のディナー · Dinner by the Window<br><i>ちょっと背伸びしちゃった。……似合ってる？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-24/card-sm.webp" alt="Mahiro at a traditional ryokan breakfast table by a window with a garden view in the morning, soft beige knit, small dishes of Japanese breakfast">
+  <figcaption><b>mahiro-24</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  旅先の朝ごはん · Breakfast on Our Trip<br><i>旅先の朝って、なんでこんなに特別なんだろうね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-25/card-sm.webp" alt="Mahiro outside a small cinema late at night under a glowing marquee, camel coat and scarf, holding two ticket stubs, the street softly blurred">
+  <figcaption><b>mahiro-25</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  最終上映のあと · After the Last Show<br><i>ラスト、泣いちゃった。……こっち見ないで。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-26/card-sm.webp" alt="Intimate close-up of Mahiro in soft morning window light, sitting on white linen bedding in a cream cable-knit cardigan buttoned up to the collarbone over a high-neck long white cotton dress, leaning toward the lens with a sleepy smile">
+  <figcaption><b>mahiro-26</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  おでこ、こつん · Forehead to Forehead<br><i>熱、ないね。……よかった。今日はゆっくりしよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-27/card-sm.webp" alt="Close-up of Mahiro on a late-night train seat, city lights streaking past the window, beige coat and scarf, resting her head as she looks up at the lens">
+  <figcaption><b>mahiro-27</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  終電の肩 · Your Shoulder on the Last Train<br><i>着くまで、こうしてていい？ あなたの肩、落ち着くの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-28/card-sm.webp" alt="Close-up of Mahiro lying on her side on a pillow under warm bedside lamp light, long-sleeve cotton pajamas buttoned to the collar, a blanket pulled up to her shoulder, gazing at the lens">
+  <figcaption><b>mahiro-28</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  おやすみの前に · Before Goodnight<br><i>電気消す前に、もう少しだけ話そ。あなたの声、好き。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-29/card-sm.webp" alt="Close-up of Mahiro outdoors on a snowy night, a long cream knit scarf wrapped around her neck and extending toward the lens, cream wool coat, snowflakes and warm streetlight bokeh">
+  <figcaption><b>mahiro-29</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  マフラー、半分こ · Half the Scarf<br><i>ほら、こうすれば二人ともあったかいでしょ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="mahiro" data-tier="UR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-mahiro-30/card-sm.webp" alt="Mahiro's signature: a high-rise apartment balcony at blue hour, sheer white curtains breathing in the breeze, oversized cream cable-knit cardigan over a white dress, holding a navy and a blush-pink handmade mug, Tokyo lights below, looking into the lens">
+  <figcaption><b>mahiro-30</b> <span class="tier t-UR">UR</span> <span class="score">5</span><br>
+  ふたつのマグカップ · Two Mugs<br><i>紺色のほうは、あなたの。ずっと、ここに置いておくね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-01/card-sm.webp" alt="Nana at a sunny kitchen counter in the morning, soft lavender knit top, a kettle beginning to steam and fresh flowers in a glass jar, smiling at you">
+  <figcaption><b>nana-01</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  お湯が沸くまで · While the Kettle Boils<br><i>おはよう。お湯が沸くまで、昨日の話きかせて？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-02/card-sm.webp" alt="Nana at a wooden table by a window in the afternoon, sorting roses and pressing them between the pages of a heavy book, cream blouse and lavender cardigan">
+  <figcaption><b>nana-02</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  押し花の準備 · Pressing Flowers<br><i>このバラ、押し花にするの。しおりにしてあげるね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-03/card-sm.webp" alt="Nana in a bookshop corner with tall wooden shelves, afternoon light through a skylight, holding an open book, lavender knit and long skirt">
+  <figcaption><b>nana-03</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  本屋さんの片すみ · A Corner of the Bookshop<br><i>いまどんな本読んでるの？ あなたの好きな話、知りたいな。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-04/card-sm.webp" alt="Nana on a sofa at night wrapped in a folded knit blanket, one warm floor lamp, rain streaking the big window, lavender lounge set">
+  <figcaption><b>nana-04</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  雨の日のブランケット · Rainy-Day Blanket<br><i>雨の音、落ち着くね。……今日は、なにがあったの？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-05/card-sm.webp" alt="Nana in a cosy kitchen in a linen apron over a lavender sweater, holding out a tray of freshly baked cookies, warm afternoon light">
+  <figcaption><b>nana-05</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  焼きたてクッキー · Fresh from the Oven<br><i>焼けたよ。熱いから気をつけて。……おいしい？</i><br><small>less under-eye fullness; face slightly wider</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-06/card-sm.webp" alt="Nana sitting by a sunlit window on a Sunday morning in lavender loungewear with long sleeves, hair slightly tousled, hugging a cushion">
+  <figcaption><b>nana-06</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  日曜日の朝寝坊 · Sunday Lie-In<br><i>今日は予定なし。一日中、あなたの話きいていたいな。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-07/card-sm.webp" alt="Nana on a sunny balcony with potted cherry tomatoes and herbs, white T-shirt and lavender cardigan, holding a small ripe tomato up to you">
+  <figcaption><b>nana-07</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ベランダの小さな菜園 · Little Balcony Garden<br><i>ミニトマト、赤くなってきたよ。最初の一個、あなたにあげる。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-08/card-sm.webp" alt="Nana at a wooden desk in the evening under a brass reading lamp, writing a letter with a fountain pen, lavender knit, covering the page shyly">
+  <figcaption><b>nana-08</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  手紙を書いてるの · Writing You a Letter<br><i>見ちゃだめ。……書き終わったら、ちゃんと渡すから。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-09/card-sm.webp" alt="Nana on an old Tokyo shopping street in the early evening, paper-wrapped croquette in hand, beige coat over a lavender sweater, warm shop lights">
+  <figcaption><b>nana-09</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  商店街のコロッケ · Croquettes on the Shopping Street<br><i>揚げたて、はんぶんこしよ。はい、あーん……なんてね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-10/card-sm.webp" alt="Nana in a cosy living room at night pouring tea from a ceramic teapot, one warm floor lamp, lavender knit set, offering you a cup">
+  <figcaption><b>nana-10</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  おつかれさまのお茶 · A Cup of Tea for You<br><i>おつかれさま。あったかいお茶、いれたよ。ゆっくりでいいからね。</i><br><small>less under-eye fullness; narrower nose bridge</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-11/card-sm.webp" alt="Nana in a grand library reading room with long wooden tables and green lamps, finger to her lips, cream blouse and lavender cardigan">
+  <figcaption><b>nana-11</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  図書館デート · Library Date<br><i>しーっ。……小さい声でなら、ずっとお話しできるね。</i><br><small>nose bridge narrower; upper lip fuller</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-12/card-sm.webp" alt="Nana on a gingham blanket in a spring park, white long-sleeve dress with a lavender cardigan, a basket of sandwiches, dappled sunlight">
+  <figcaption><b>nana-12</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  公園のピクニック · Picnic in the Park<br><i>サンドイッチ、早起きして作ったの。いっぱい食べてね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-13/card-sm.webp" alt="Nana on a temple path lined with blue and purple hydrangeas in the June rain, holding a clear umbrella, pale lavender raincoat over a dress">
+  <figcaption><b>nana-13</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  あじさいの小道 · Hydrangea Lane<br><i>雨の日も、あなたとなら好き。あじさい、きれいだね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-14/card-sm.webp" alt="Nana in a quiet art museum gallery with white walls and soft skylight, standing beside a painting, grey coat and lavender knit, turning to you">
+  <figcaption><b>nana-14</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  美術館の午後 · Afternoon at the Museum<br><i>この絵、どう思う？ あなたの感想、ききたいな。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-15/card-sm.webp" alt="Nana in a retro Showa-era coffee shop with red velvet seats and stained-glass lamps, a green cream soda on the table, lavender blouse">
+  <figcaption><b>nana-15</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  レトロな喫茶店 · Retro Kissaten<br><i>クリームソーダ、一口ちょうだい？ ……交換こね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-16/card-sm.webp" alt="Nana in a tall sunflower field on a bright summer day, straw hat and a white cotton dress with short sleeves, peeking out between the flowers">
+  <figcaption><b>nana-16</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  ひまわり畑 · Sunflower Field<br><i>ひまわりに隠れちゃった。……見つけてくれた？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-17/card-sm.webp" alt="Nana at an outdoor second-hand book fair under autumn trees, beret and lavender cardigan over a long skirt, holding a book up for you">
+  <figcaption><b>nana-17</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  秋の古本市 · Autumn Book Fair<br><i>あなたにぴったりの一冊、見つけたかも。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-18/card-sm.webp" alt="Nana in a warm café by a large window with snow falling outside, cream turtleneck sweater, a mug of hot cocoa with marshmallows">
+  <figcaption><b>nana-18</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  雪見のカフェ · Snow-View Café<br><i>外、真っ白。ココア飲み終わるまで、帰らないでね。</i><br><small>face slightly narrower; less prominent under-eye fullness</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-19/card-sm.webp" alt="Nana at a summer evening Tanabata festival in a lavender yukata, hanging a paper wish strip on bamboo decorated with streamers, lantern light">
+  <figcaption><b>nana-19</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  七夕の短冊 · Tanabata Wishes<br><i>お願いごと、見せっこしよ？ ……わたしのは、ないしょ。</i><br><small>nose tip narrower; under-eye fullness less pronounced; upper lip slightly fuller</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-20/card-sm.webp" alt="Nana at a Christmas market at night among wooden stalls and string lights, white wool coat and knit earmuffs, holding two cups of hot apple cider">
+  <figcaption><b>nana-20</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  クリスマスマーケット · Christmas Market<br><i>あったかいの、ひとつずつ。手、あったまるでしょ？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-21/card-sm.webp" alt="Nana in an armchair at night reading a hardcover novel aloud under a brass lamp, candles on the side table, lavender knit dress">
+  <figcaption><b>nana-21</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  あなただけの朗読会 · A Reading Just for You<br><i>今夜は、あなただけのために読むね。目、閉じてて。</i><br><small>nose tip narrower</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-22/card-sm.webp" alt="Nana sitting in a wooden rowboat on a calm lake surrounded by autumn trees, cream knit and a long plaid skirt, smiling across at you">
+  <figcaption><b>nana-22</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  湖のボート · Rowboat on the Lake<br><i>こぐの、交代しよっか？ ……やっぱり、見てるほうが好き。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-23/card-sm.webp" alt="Nana in the soft dark of a planetarium dome, projected stars across the ceiling, navy dress and lavender cardigan, face gently lit as she turns to you">
+  <figcaption><b>nana-23</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  プラネタリウム · Planetarium<br><i>本物の星より近くに感じるね。……あなたも。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-24/card-sm.webp" alt="Nana outside a small florist on a spring evening, lavender dress and cream cardigan, holding out a bouquet of lavender and pale pink roses">
+  <figcaption><b>nana-24</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  花束をあなたに · Flowers for You<br><i>いつもきいてくれるお礼。……今日は、わたしから。</i><br><small>nose bridge broader; jawline wider; less under-eye fullness</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-25/card-sm.webp" alt="Nana on the wooden veranda of a traditional house on an autumn night, full moon and pampas grass, moon-viewing dumplings on a tray, soft knit cardigan">
+  <figcaption><b>nana-25</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  月見の縁側 · Moon-Viewing Veranda<br><i>月がきれいですね。……意味、わかってる？</i><br><small>jaw slightly narrower</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-26/card-sm.webp" alt="Intimate close-up of Nana resting her chin on her hands and leaning toward the lens, attentive soft eyes, lavender knit sleeves over her fingers, warm floor-lamp glow at night">
+  <figcaption><b>nana-26</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  耳をすませて · I'm Listening<br><i>うん、うん。……それで？ ちゃんと最後まできくよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-27/card-sm.webp" alt="Close-up of Nana by a rain-streaked window at night, a knit blanket around her shoulders over a lavender sweater, city lights blurred like watercolour behind her, looking softly into the lens">
+  <figcaption><b>nana-27</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  雨の窓、ふたりきり · Just Us and the Rain<br><i>雨、やまないといいな。……なんて、言ったら困る？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-28/card-sm.webp" alt="Close-up of Nana holding a pressed-rose bookmark up beside her face under a warm reading lamp at night, an open hardcover novel below, lavender knit, gentle smile into the lens">
+  <figcaption><b>nana-28</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  しおりの押し花 · The Pressed Rose<br><i>この押し花、あなたに初めてもらったバラなの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-29/card-sm.webp" alt="Close-up of Nana lying on a sofa with a phone to her ear under a dim warm lamp at night, long-sleeve lavender loungewear, hugging a cushion, sleepy smile toward the lens">
+  <figcaption><b>nana-29</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  おやすみの電話 · Goodnight Call<br><i>眠くなるまで、切らないで。あなたの声、ききながら寝たいの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="nana" data-tier="UR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-nana-30/card-sm.webp" alt="Nana's signature: a cosy living room at night lit by one warm floor lamp, rain streaking the big window, a sofa with a folded knit blanket, soft lavender knit top and wide trousers, a hardcover novel with a pressed-rose bookmark in her hands, looking into the lens">
+  <figcaption><b>nana-30</b> <span class="tier t-UR">UR</span> <span class="score">5</span><br>
+  灯りの下で待ってる · Waiting Under the Lamp<br><i>おかえり。今日のこと、ぜんぶきかせて。時間はたっぷりあるよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-01/card-sm.webp" alt="Unpai in a sunny bedroom full of plush toys and polaroid photos on a string of fairy lights, oversized pastel cardigan over a white T-shirt, waving at you with a big smile">
+  <figcaption><b>unpai-01</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  やっと来た！ · You Finally Came!<br><i>やっと来た！ もー、待ちくたびれたんだからね。</i><br><small>nose tip less upturned</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-02/card-sm.webp" alt="Unpai pinning polaroid photos onto a string of fairy lights on her bedroom wall in the morning, oversized striped sweater, holding one photo up to you">
+  <figcaption><b>unpai-02</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ポラロイドの壁 · The Polaroid Wall<br><i>この写真、あなたと撮ったやつ。いちばんのお気に入り！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-03/card-sm.webp" alt="Unpai on a sunny rooftop with laundry and a pink scarf fluttering on a line, blue sky with fast clouds, oversized denim shirt and jeans, reaching for the scarf">
+  <figcaption><b>unpai-03</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  屋上の洗濯物 · Rooftop Laundry<br><i>風つよーい！ ねえ、スカーフ飛んでっちゃう、押さえて！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-04/card-sm.webp" alt="Unpai sitting on her bedroom floor beside a turntable and a stack of vinyl records, pearl-white retro headphones around her neck, oversized hoodie, holding up a record sleeve">
+  <figcaption><b>unpai-04</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  今日の一枚 · Today's Record<br><i>今日はこれ聴こ！ あなたのぶんのヘッドホンもあるよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-05/card-sm.webp" alt="Unpai beside a glowing vending machine on a narrow Tokyo side street at night, rose-pink and blue neon reflected in wet asphalt, navy varsity jacket, pointing at the drinks">
+  <figcaption><b>unpai-05</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  自販機のまえで · At the Vending Machine<br><i>どっちにする？ ……じゃんけんで負けたほうのおごりね！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-06/card-sm.webp" alt="Unpai sitting cross-legged on floor cushions at night holding a game controller, oversized hoodie and lounge pants, TV glow on her face, laughing at you">
+  <figcaption><b>unpai-06</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ゲーム対決 · Game Night Showdown<br><i>手加減しないからね！ ……あ、今のなし！もう一回！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-07/card-sm.webp" alt="Unpai at a vanity mirror in her bright bedroom in the morning, tying a black ribbon into her long wavy hair, cream knit top, glancing back at you">
+  <figcaption><b>unpai-07</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ヘアアレンジ中 · Doing My Hair<br><i>ねえ、ポニーテールとおろすの、どっちが好き？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-08/card-sm.webp" alt="Unpai at a small ramen shop counter late at night, steam rising from a bowl, navy varsity jacket, chopsticks in hand, grinning at you">
+  <figcaption><b>unpai-08</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  深夜のラーメン · Late-Night Ramen<br><i>夜中のラーメンって、なんでこんなにおいしいの？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-09/card-sm.webp" alt="Unpai sitting on her bed surrounded by plush toys in the afternoon, pastel sweatshirt, holding a small bear plushie up toward you">
+  <figcaption><b>unpai-09</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ぬいぐるみ会議 · Plushie Meeting<br><i>この子、あなたに似てるの。名前つけてあげて！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-10/card-sm.webp" alt="Unpai in a small kitchen with a smudge of flour on her cheek, pink apron over a T-shirt, holding a tray of slightly burnt cupcakes, sheepish smile">
+  <figcaption><b>unpai-10</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  お菓子作り失敗 · Baking Fail<br><i>ちょっとこげた……けど、味は保証する！ たぶん！</i><br><small>nose tip less upturned</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-11/card-sm.webp" alt="Unpai at a neon-lit arcade claw machine in the evening, navy varsity jacket, gripping the joystick with a determined grin">
+  <figcaption><b>unpai-11</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  UFOキャッチャー · Claw Machine Challenge<br><i>あとちょっと……！ 取れたら、あなたにあげるね！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-12/card-sm.webp" alt="Unpai on a colourful Harajuku street on a sunny afternoon holding a strawberry crepe, oversized pastel hoodie and jeans, offering you a bite">
+  <figcaption><b>unpai-12</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  原宿食べ歩き · Harajuku Snack Crawl<br><i>クレープ、ひとくち交換しよ！ はい、いちご味！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-13/card-sm.webp" alt="Unpai outside a small Shimokitazawa live music venue in the early evening, band T-shirt under her navy varsity jacket, holding up two tickets">
+  <figcaption><b>unpai-13</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  ライブハウスの前で · Outside the Live House<br><i>チケット二枚！ 今日はいちばん前で跳ぼうね！</i><br><small>nose tip slightly broader; mouth slightly wider</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-14/card-sm.webp" alt="Unpai laughing in a pastel teacup ride at an amusement park on a bright day, windswept long wavy hair, white sweatshirt and denim jacket">
+  <figcaption><b>unpai-14</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  コーヒーカップ · Spinning Teacups<br><i>もっと回して！ ……うそ、やっぱ目まわる〜！</i><br><small>nose tip wider; double eyelid fold less distinct</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-15/card-sm.webp" alt="Unpai at a summer festival goldfish-scooping stall at night in a pink and navy yukata, paper lanterns glowing, holding up a small bag with two goldfish">
+  <figcaption><b>unpai-15</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  金魚すくい · Goldfish Scooping<br><i>見て見て、二匹すくえた！ 名前、一緒に考えよ？</i><br><small>nose tip broader; jawline slightly rounder</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-16/card-sm.webp" alt="Unpai flipping through crates in a cosy second-hand record shop in the afternoon, pearl-white headphones around her neck, holding up a colourful album cover">
+  <figcaption><b>unpai-16</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  レコードショップ · Record Store Dig<br><i>このジャケ、かわいくない？ あなたの部屋に飾ろうよ！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-17/card-sm.webp" alt="Unpai on a bicycle on a coastal road on a sunny day, the sea and Enoshima island behind her, light windbreaker and cap, hair flying, looking back at you">
+  <figcaption><b>unpai-17</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  海までサイクリング · Cycling to the Sea<br><i>海まで競争ね！ 負けたらソフトクリームおごりだよ！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-18/card-sm.webp" alt="Unpai on an outdoor ice rink in winter holding the railing, pink knit hat, white puffer jacket and mittens, wobbling and laughing, reaching a hand out to you">
+  <figcaption><b>unpai-18</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  スケートリンク · Ice Rink<br><i>手、はなさないでよ！？ 絶対だからね！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-19/card-sm.webp" alt="Unpai on a city rooftop on a summer night, fireworks bursting in the sky behind her, navy varsity jacket over a white T-shirt, sitting on a blanket and patting the spot beside her">
+  <figcaption><b>unpai-19</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  屋上の花火特等席 · Rooftop Fireworks<br><i>ここ、わたしの特等席。今日は特別に貸してあげる！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 3</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-20/card-sm.webp" alt="Unpai in a festive crowd on New Year's Eve at night, confetti in the air and city lights behind, cream coat and pink scarf, cheering toward you">
+  <figcaption><b>unpai-20</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  カウントダウン · New Year's Countdown<br><i>三、二、一……あけおめ！ 今年最初に会えたね！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-21/card-sm.webp" alt="Unpai under a shop awning on a rainy neon-lit Tokyo side street at night, holding a clear umbrella, navy varsity jacket, rain streaks glowing pink and blue">
+  <figcaption><b>unpai-21</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  ネオンの雨宿り · Neon Shelter<br><i>傘、一本しかないや。……もっとこっち寄って？</i><br><small>chin rounder; face slightly wider</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-22/card-sm.webp" alt="Unpai in her kitchen on a winter evening holding out a heart-shaped box of homemade chocolates with a pink ribbon, cream knit sweater, blushing">
+  <figcaption><b>unpai-22</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  手作りバレンタイン · Homemade Valentine<br><i>はい、本命！ ……って言わせないでよ、恥ずかしい！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-23/card-sm.webp" alt="Unpai at an amusement park at night beside a glowing golden carousel, navy varsity jacket, one hand on a white carousel horse, inviting you on">
+  <figcaption><b>unpai-23</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  夜のメリーゴーランド · Carousel at Night<br><i>メリーゴーランド、一緒に乗ろ！ 白い馬、あなたのね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-24/card-sm.webp" alt="Unpai behind a DJ booth in a small lounge in the early evening, pearl-white headphones on one ear, hand on a vinyl record, neon glow, winking at you">
+  <figcaption><b>unpai-24</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  DJブースのわたし · Me at the Decks<br><i>次の曲、あなたのために選んだの。ちゃんと聴いててね！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-25/card-sm.webp" alt="Unpai under lantern-lit cherry blossoms at night in spring, light pink trench coat over a white knit, petals drifting, smiling shyly at you">
+  <figcaption><b>unpai-25</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  お花見の夜桜 · Cherry Blossoms at Night<br><i>夜の桜って、ちょっとドキドキするね。……わたしだけ？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-26/card-sm.webp" alt="Intimate close-up of Unpai leaning in and holding one side of her pearl-white headphones toward the lens, bedroom fairy lights twinkling behind, oversized knit sweater, soft smile">
+  <figcaption><b>unpai-26</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  ヘッドホン、はんぶんこ · Sharing Headphones<br><i>この曲、あなたにだけ聴かせたかったの。……どう？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-27/card-sm.webp" alt="Close-up of Unpai leaning in close to the lens as if for a selfie on a rain-washed neon side street at night, pink and blue light on her face, navy varsity jacket with rose-pink sleeves, playful smile">
+  <figcaption><b>unpai-27</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  自撮り、もう一枚 · One More Selfie<br><i>もう一枚！ 今度は、もっとくっついて撮ろ？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-28/card-sm.webp" alt="Close-up of Unpai wrapped in an oversized dark jacket with sleeves covering her hands on a rainy neon-lit street at night, collar pulled up to her chin, glowing reflections behind, shy smile into the lens">
+  <figcaption><b>unpai-28</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  あなたのジャケット · Your Jacket<br><i>あなたのジャケット、ぶかぶか。……でも、返したくないかも。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-29/card-sm.webp" alt="Close-up of Unpai lying among plush toys on her bed at night hugging a teddy bear, oversized pastel hoodie and long lounge pants, the sleeves over her hands, fairy lights glowing, sleepy eyes looking into the lens">
+  <figcaption><b>unpai-29</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  寝落ちする前に · Before I Doze Off<br><i>ねむい……でも、まだ帰っちゃやだ。あと五分だけ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="unpai" data-tier="UR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-unpai-30/card-sm.webp" alt="Unpai's signature: a narrow Tokyo side street at night, rose-pink and blue neon signs reflected in wet asphalt, a glowing vending machine, light rain, oversized navy varsity jacket with rose-pink sleeves over a white T-shirt, pearl-white retro headphones around her neck, looking into the lens">
+  <figcaption><b>unpai-30</b> <span class="tier t-UR">UR</span> <span class="score">5</span><br>
+  ネオン小道で待ってた · Waiting in Neon Alley<br><i>おそーい！ ……でも来てくれたから、ぜんぶ許す！</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-01/card-sm.webp" alt="Alice on a window seat with lace curtains at dawn, pale pink sky outside, a porcelain teacup and a small silver music box on the sill, opaque, fully lined white lace blouse, shy smile at you">
+  <figcaption><b>alice-01</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  夜明けの窓辺 · Window Seat at Dawn<br><i>お、おはよう……。早起きしたら、あなたに一番に会いたくて。</i><br><small>nose bridge narrower; chin slightly more pointed</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-02/card-sm.webp" alt="Alice at a small wooden table in soft morning light winding an antique silver music box with a tiny dancer, cream cardigan over a white blouse, looking up at you">
+  <figcaption><b>alice-02</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  オルゴールのねじ · Winding the Music Box<br><i>この曲、好きなの。……あなたにも、聴いてほしくて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-03/card-sm.webp" alt="Alice at a grand piano in an old music room in the afternoon, sun through tall windows, sheet music on the stand, white blouse and long navy pleated skirt, glancing shyly at you">
+  <figcaption><b>alice-03</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ピアノの練習 · Piano Practice<br><i>まだ練習中だから……あんまり、じっと見ないでね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-04/card-sm.webp" alt="Alice pouring tea from a porcelain teapot at a lace-covered table in the afternoon, cream knit cardigan, sugar bowl in hand, soft window light">
+  <figcaption><b>alice-04</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  紅茶の時間 · Tea Time<br><i>お砂糖、いくつ？ ……あなたの好み、覚えたいの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-05/card-sm.webp" alt="Alice in a glass conservatory in daylight tending white roses, linen apron over a white blouse, gardening gloves and small shears, smiling at you">
+  <figcaption><b>alice-05</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  白いバラの手入れ · Tending the White Roses<br><i>棘に気をつけてね。……あ、心配してくれたの？ ありがと。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-06/card-sm.webp" alt="Alice by an afternoon window holding an embroidery hoop with a half-stitched handkerchief, cream cardigan, hiding it shyly from you">
+  <figcaption><b>alice-06</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  刺繍の途中 · Embroidery in Progress<br><i>これ、あなたのイニシャル。……まだ、ないしょだったのに。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-07/card-sm.webp" alt="Alice sitting on the floor of a music room on a rainy afternoon sorting sheet music, rain on the tall windows, soft grey knit dress">
+  <figcaption><b>alice-07</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  雨の日の楽譜 · Sheet Music on a Rainy Day<br><i>雨の日は、弾きたい曲が変わるの。……不思議だね。</i><br><small>more pronounced cheek dimples</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-08/card-sm.webp" alt="Alice outside a small bakery on a quiet morning street, holding a paper bag with croissants, beige trench coat over a white blouse, offering you one">
+  <figcaption><b>alice-08</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  パン屋さんの朝 · Bakery Morning<br><i>焼きたてのクロワッサン、ふたつ。……一緒に食べてくれる？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-09/card-sm.webp" alt="Alice in front of a tall mirror in her bedroom trying on a pale pink cardigan over a white blouse, turning to ask your opinion, soft daylight">
+  <figcaption><b>alice-09</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  お気に入りのカーディガン · My Favorite Cardigan<br><i>これ、変じゃないかな……。あなたに見てほしかったの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-10/card-sm.webp" alt="Alice at night by a bedside lamp gently closing the lid of a silver music box, long-sleeve cream nightgown-style lounge dress buttoned to the collar, sleepy smile">
+  <figcaption><b>alice-10</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  おやすみのオルゴール · Goodnight Music Box<br><i>今日も、会いに来てくれてありがとう。……おやすみなさい。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-11/card-sm.webp" alt="Alice strolling in a public rose garden on a sunny afternoon, white sun hat and a long white dress with sleeves, roses in full bloom, looking back at you">
+  <figcaption><b>alice-11</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  バラ園の散歩 · Walk in the Rose Garden<br><i>白いバラの花言葉、知ってる？ ……ううん、やっぱりないしょ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-12/card-sm.webp" alt="Alice in the lobby of a concert hall in the evening, elegant navy long-sleeve dress, holding a programme, chandelier light, looking at you shyly">
+  <figcaption><b>alice-12</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  クラシックコンサート · Classical Concert<br><i>演奏中、あなたの手、にぎってもいい……？</i><br><small>under-eye fullness slightly reduced; nose tip slightly more defined</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-13/card-sm.webp" alt="Alice in a cluttered antique shop in the afternoon, holding a small vintage music box, cream coat and burgundy scarf, warm lamplight">
+  <figcaption><b>alice-13</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  アンティークショップ · Antique Shop<br><i>古いものって、誰かの大切な思い出が入ってる気がするの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-14/card-sm.webp" alt="Alice sitting on a bench by a calm lake in autumn with a sketchbook on her knees, camel coat over a white blouse, pencil raised, looking at you">
+  <figcaption><b>alice-14</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  湖畔のスケッチ · Sketching by the Lake<br><i>あなたも描いていい？ ……動かないでね、すぐ終わるから。</i><br><small>less under-eye fullness; eyes slightly narrower</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-15/card-sm.webp" alt="Alice on the steps of an old Western-style mansion in Yokohama in June, hydrangeas in bloom, holding a lace-trimmed umbrella, pale blue dress with long sleeves">
+  <figcaption><b>alice-15</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  紫陽花の洋館 · Mansion in the Rainy Season<br><i>こういうお家に住むのが夢だったの。……笑わない？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-16/card-sm.webp" alt="Alice in an elegant hotel tea lounge with a three-tier stand of pastries, blush pink blouse with a bow, holding a teacup, hesitating over the sweets">
+  <figcaption><b>alice-16</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  アフタヌーンティー · Afternoon Tea<br><i>どれから食べるか、迷っちゃう。……あなたが先に選んで？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-17/card-sm.webp" alt="Alice walking down an avenue of golden ginkgo trees in late autumn, cream coat and beret, leaves falling, smiling back at you">
+  <figcaption><b>alice-17</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  いちょう並木 · Golden Ginkgo Avenue<br><i>落ち葉、ふかふかだね。……もう少しゆっくり歩こ？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-18/card-sm.webp" alt="Alice inside a small stone chapel on a snowy evening, candles glowing, snow visible through the arched window, white wool coat and knit scarf">
+  <figcaption><b>alice-18</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  雪の日のチャペル · Chapel in the Snow<br><i>ここ、静かで好き。……あなたといると、もっと好き。</i><br><small>gemini-3.1-flash-image · 1 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-19/card-sm.webp" alt="Alice seated at a grand piano in a candle-lit music room in the evening, elegant navy long-sleeve gown, turning toward you before she plays">
+  <figcaption><b>alice-19</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  ふたりだけのリサイタル · A Recital for Two<br><i>今夜の観客は、あなたひとり。……最後まで聴いてね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-20/card-sm.webp" alt="Alice in a glass conservatory at night among white roses and fairy lights, rain running down the glass roof, cream cardigan over a opaque, fully lined white lace blouse">
+  <figcaption><b>alice-20</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  温室の雨音 · Rain on the Glass House<br><i>雨の音と、あなたの声だけ。……すごく、しあわせ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-21/card-sm.webp" alt="Alice in a grand ballroom under crystal chandeliers, elegant floor-length ivory gown with long lace sleeves, extending her hand toward you">
+  <figcaption><b>alice-21</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  舞踏会の夜 · The Ball<br><i>ダンス、下手でも……一曲だけ、踊ってくれますか？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-22/card-sm.webp" alt="Alice on a stone terrace at night under a full moon, a soft shawl over a long lavender dress, holding a teacup, garden lanterns behind her">
+  <figcaption><b>alice-22</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  月夜のテラス · Moonlit Terrace<br><i>月が、あなたのほうばっかり照らしてる気がする。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-23/card-sm.webp" alt="Alice in a bright kitchen in spring holding out a pastel box of homemade macarons tied with a navy ribbon, white blouse and apron, blushing">
+  <figcaption><b>alice-23</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  手作りのマカロン · Handmade Macarons<br><i>何回も失敗したけど……いちばんきれいなの、選んだの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-24/card-sm.webp" alt="Alice in a red velvet opera box at night, elegant burgundy gown with long sleeves, the stage lights glowing below, eyes glistening as she turns to you">
+  <figcaption><b>alice-24</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  オペラの夜 · Night at the Opera<br><i>泣いちゃいそう……ハンカチ、貸してくれる？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-25/card-sm.webp" alt="Alice on a grassy hill at night under a sky full of shooting stars, holding an open silver music box, cream coat over a white blouse, looking up then at you">
+  <figcaption><b>alice-25</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  流れ星とオルゴール · Music Box Under Shooting Stars<br><i>流れ星が落ちるまで、このオルゴール、止めないでいて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-26/card-sm.webp" alt="Intimate close-up of Alice by a lace-curtained window at dawn, soft pink light on her face, opaque, fully lined white lace high-neck blouse with a small navy ribbon, blushing as she looks into the lens">
+  <figcaption><b>alice-26</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  ほんとの気持ち · What I Really Feel<br><i>……ほんとだよ。あなたのこと、すごく大切に思ってる。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-27/card-sm.webp" alt="Close-up of Alice seated at a grand piano in an old music room, afternoon sun through tall windows, fingers resting on the keys, opaque, fully lined white lace blouse, turning her face toward the lens with a shy smile">
+  <figcaption><b>alice-27</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  連弾しよ？ · Play a Duet with Me<br><i>連弾、しよ？ ……となり、座って。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-28/card-sm.webp" alt="Close-up of Alice in a glass conservatory at night holding a single white rose tied with a navy ribbon near her chin, fairy lights and raindrops glowing behind, opaque, fully lined white lace high-neck blouse, bashful gaze into the lens">
+  <figcaption><b>alice-28</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  白いバラを一輪 · A Single White Rose<br><i>一輪だけ、あなたに。……いちばんきれいに咲いた子なの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-29/card-sm.webp" alt="Close-up of Alice at night in a chair by a warm lamp, a knit blanket around her shoulders over a long-sleeve cream blouse, holding a teacup of chamomile near her face, soft sleepy eyes on the lens">
+  <figcaption><b>alice-29</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  眠る前のティーカップ · Last Cup Before Sleep<br><i>カモミール、よく眠れるんだって。……夢でも、会えたらいいな。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="alice" data-tier="UR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-alice-30/card-sm.webp" alt="Alice's signature: a glass conservatory at night filled with white roses and strings of fairy lights, rain tapping on the glass roof, opaque, fully lined white lace high-neck blouse with a small navy ribbon at the collar and a long pleated skirt, holding an open antique silver music box with a tiny dancer, looking into the lens">
+  <figcaption><b>alice-30</b> <span class="tier t-UR">UR</span> <span class="score">5</span><br>
+  白いバラの温室で · In the White Rose Conservatory<br><i>会えてうれしい。……ほんとだよ。ずっと、ここで待ってたの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-01/card-sm.webp" alt="Eimi at a marble vanity in soft morning light holding up two pairs of pearl earrings, cream silk blouse, looking at you through the mirror with a knowing smile">
+  <figcaption><b>eimi-01</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  鏡の前のわたし · Me in the Mirror<br><i>おはよ。ピアス、どっちが似合うと思う？ 選んで。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-02/card-sm.webp" alt="Eimi at a marble vanity spraying perfume from a faceted crystal bottle with a rose-gold cap onto her wrist, black silk blouse, morning light">
+  <figcaption><b>eimi-02</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  香水をひと吹き · A Touch of Perfume<br><i>この香り、覚えておいて。……次に会うときの合図だから。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-03/card-sm.webp" alt="Eimi by a hotel suite window in the morning holding a small espresso cup, ivory satin shirt and wide tailored trousers, city skyline behind her">
+  <figcaption><b>eimi-03</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  朝のエスプレッソ · Morning Espresso<br><i>朝はブラック派。……あなたは甘いほうが好きでしょ？ 知ってる。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-04/card-sm.webp" alt="Eimi on a velvet sofa in a hotel suite in the afternoon painting her nails rose pink, black knit top, fingers spread, glancing up at you">
+  <figcaption><b>eimi-04</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ネイルの時間 · Nail Time<br><i>乾くまで動けないの。……だから、ここにいて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-05/card-sm.webp" alt="Eimi stepping out of a fitting room in an elegant boutique wearing a tailored black long-sleeve dress, hand on her hip, waiting for your verdict">
+  <figcaption><b>eimi-05</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ブティックで試着 · Fitting at the Boutique<br><i>どう？ ……黙ってないで、ちゃんと言葉にして。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-06/card-sm.webp" alt="Eimi seated on a shaded lounge chair on a poolside terrace on a bright afternoon, white long-sleeve linen shirt buttoned high and wide ankle-length linen trousers, sunglasses pushed up in her hair, water caustics on white tiles">
+  <figcaption><b>eimi-06</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  プールサイドの午後 · Poolside Afternoon<br><i>日差し、強いね。……あなたの影に入れて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-07/card-sm.webp" alt="Eimi in a hotel suite in the morning beside a room-service trolley with strawberries and tea, cream silk blouse and trousers, lifting a silver cloche with a smile">
+  <figcaption><b>eimi-07</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  ルームサービス · Room Service<br><i>朝ごはん、ふたり分頼んでおいた。……もちろん、あなたの分もね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-08/card-sm.webp" alt="Eimi beside a classic car in a softly lit city parking area at night, black leather jacket over a knit dress, dangling the car keys toward you">
+  <figcaption><b>eimi-08</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  夜のドライブ前 · Before the Night Drive<br><i>助手席、あなたの指定席にしといたから。乗って。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-09/card-sm.webp" alt="Eimi in a stylish florist holding a bunch of pale pink peonies to her face, camel coat over a black turtleneck, playful look at you">
+  <figcaption><b>eimi-09</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  花屋でひと目惚れ · Love at First Sight at the Florist<br><i>このピオニー、わたしみたいでしょ？ ……ふふ、冗談。</i><br><small>nose tip wider</small><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="N">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-10/card-sm.webp" alt="Eimi leaning in the doorway of a hotel suite at night, arms crossed, black satin blouse and tailored trousers, warm lamplight behind, a half-smile for you">
+  <figcaption><b>eimi-10</b> <span class="tier t-N">N</span> <span class="score">5</span><br>
+  遅かったね · You're Late<br><i>遅かったね。……でも、待ってるのも嫌いじゃないの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-11/card-sm.webp" alt="Eimi at a rooftop bar at night with the Tokyo skyline glittering behind, elegant black long-sleeve dress, raising a glass toward you">
+  <figcaption><b>eimi-11</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  ルーフトップバー · Rooftop Bar<br><i>乾杯。今夜は、わたしだけ見てて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-12/card-sm.webp" alt="Eimi on a Ginza street on a sunny afternoon holding elegant shopping bags, beige trench coat and sunglasses, turning back to you">
+  <figcaption><b>eimi-12</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  銀座でショッピング · Shopping in Ginza<br><i>荷物持ちじゃないよ。……エスコート役、ってこと。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-13/card-sm.webp" alt="Eimi at an evening event in a modern art museum, standing before a large abstract canvas, black blazer dress, watching you instead of the art">
+  <figcaption><b>eimi-13</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  美術館ナイト · Museum Night<br><i>作品より、あなたの反応のほうが面白いかも。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-14/card-sm.webp" alt="Eimi at a seaside terrace café on a breezy afternoon, white linen dress with sleeves and a wide straw hat, the sea sparkling behind her, hair tousled by the wind">
+  <figcaption><b>eimi-14</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  海辺のテラスカフェ · Seaside Terrace Café<br><i>潮風、気持ちいいね。……髪、乱れちゃった。直して？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-15/card-sm.webp" alt="Eimi in a dim jazz bar at night, a saxophonist blurred on stage behind, deep burgundy velvet dress with long sleeves, chin on her hand, looking at you">
+  <figcaption><b>eimi-15</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  ジャズバー · Jazz Bar<br><i>この曲、ゆっくりでいいよね。……今夜は急がないで。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-16/card-sm.webp" alt="Eimi at a riding club on a clear morning in a fitted navy riding jacket, white shirt and riding boots, one hand on a chestnut horse, confident smile">
+  <figcaption><b>eimi-16</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  乗馬クラブ · Riding Club<br><i>馬に乗るわたし、かっこいいでしょ？ ほら、ちゃんと見てて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-17/card-sm.webp" alt="Eimi on a mountain path in Hakone among red and orange autumn leaves, long camel coat and black turtleneck, cool air, holding her coat open toward you">
+  <figcaption><b>eimi-17</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  箱根の紅葉 · Hakone in Autumn<br><i>寒くなってきた。……コートの中、入る？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="R">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-18/card-sm.webp" alt="Eimi in a hotel lounge in winter by a crackling fireplace, cream cashmere turtleneck and wide trousers, patting the armchair beside her">
+  <figcaption><b>eimi-18</b> <span class="tier t-R">R</span> <span class="score">5</span><br>
+  暖炉のラウンジ · Fireside Lounge<br><i>暖炉の前、特等席とっておいた。……となり、どうぞ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-19/card-sm.webp" alt="Eimi on the steps of a gala at night, elegant high-neck black floor-length gown with long sleeves, camera flashes in soft bokeh, looking past the crowd at you">
+  <figcaption><b>eimi-19</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  ガラの夜 · Gala Night<br><i>みんな見てるけど……わたしが見てるのは、あなただけ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-20/card-sm.webp" alt="Eimi on the deck of a cruise boat on Tokyo Bay at night, Rainbow Bridge lit up behind, high-neck navy dress with long sleeves and a light shawl, wind in her hair">
+  <figcaption><b>eimi-20</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  ナイトクルーズ · Night Cruise<br><i>夜景、きれいでしょ。……でも、今はこっち見て。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-21/card-sm.webp" alt="Eimi in a softly lit dressing room in the evening wearing a high-neck deep navy satin gown with long sleeves, adjusting an earring, turning to ask if you noticed">
+  <figcaption><b>eimi-21</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  あなた好みのドレス · The Dress You'd Like<br><i>このドレス、あなたの好みに合わせたの。……気づいた？</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-22/card-sm.webp" alt="Eimi on a hotel terrace on a summer night in a black yukata with red camellias, fireworks blooming over the city behind her, a folding fan in hand">
+  <figcaption><b>eimi-22</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  テラスの花火 · Fireworks from the Terrace<br><i>浴衣、似合う？ ……あなたに一番に見せたかったの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-23/card-sm.webp" alt="Eimi in a private dining room at night presenting a small cake with a sparkler, elegant black dress, candlelight, delighted smile at you">
+  <figcaption><b>eimi-23</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  誕生日のサプライズ · Birthday Surprise<br><i>サプライズ、成功？ ……あなたの驚いた顔、見たかったの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 4</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-24/card-sm.webp" alt="Eimi in a mountain chalet at night by a large window with heavy snow falling outside, white cable-knit dress with long sleeves, a mug of hot chocolate, fireplace glow">
+  <figcaption><b>eimi-24</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  雪のリゾートの夜 · Snow Resort Night<br><i>外は吹雪。……今夜は、暖炉の前でゆっくりしよ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-25/card-sm.webp" alt="Eimi sitting on the edge of a lounge chair by a hotel pool at night, fully clothed in a flowing high-neck rose silk dress with long sleeves, lanterns and the moon reflected in the water">
+  <figcaption><b>eimi-25</b> <span class="tier t-SR">SR</span> <span class="score">5</span><br>
+  月夜のプールサイド · Moonlit Poolside<br><i>水面に月が映ってる。……ねえ、少しだけ隣に座って。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-26/card-sm.webp" alt="Intimate close-up of Eimi in a velvet armchair in a hotel suite at night, warm lamplight, high-neck rose satin evening dress with long sleeves and a navy silk wrap over her shoulders, direct confident gaze into the lens">
+  <figcaption><b>eimi-26</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  目をそらさないで · Don't Look Away<br><i>目、そらさないで。……わたしのこと、ちゃんと見てて。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-27/card-sm.webp" alt="Close-up of Eimi at a marble vanity in bright morning light, turning her head and holding a single pearl earring out toward the lens, cream silk blouse, playful smile">
+  <figcaption><b>eimi-27</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  ピアスをつけて · Help with My Earring<br><i>片方、つけてくれる？ ……手、ふるえてるよ？ ふふ。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-28/card-sm.webp" alt="Close-up of Eimi in a hotel suite at night holding a faceted crystal perfume bottle with a rose-gold cap near her chin, city lights sparkling behind, black high-neck silk dress, a soft knowing smile into the lens">
+  <figcaption><b>eimi-28</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  香りの記憶 · Memory of a Scent<br><i>この香りがしたら、わたしを思い出して。……約束ね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="SSR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-29/card-sm.webp" alt="Close-up of Eimi on a window sofa in a hotel suite at sunrise, warm orange light on her face, soft grey cashmere cardigan buttoned up, fresh natural makeup, holding a coffee mug, relaxed smile into the lens">
+  <figcaption><b>eimi-29</b> <span class="tier t-SSR">SSR</span> <span class="score">5</span><br>
+  朝焼けのスイート · Suite at Sunrise<br><i>すっぴん、見せるのはあなただけ。……内緒ね。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure>
+<figure class="pass" data-star="eimi" data-tier="UR">
+  <img loading="lazy" src="../../../apps/web/public/cards/s1-eimi-30/card-sm.webp" alt="Eimi's signature: a luxury hotel suite at night with floor-to-ceiling windows over the glittering city, seated in a velvet armchair, elegant high-neck, long-sleeve rose satin evening gown with a navy silk wrap over her shoulders, a glass of rosé catching the light and a crystal perfume bottle on the table, looking into the lens">
+  <figcaption><b>eimi-30</b> <span class="tier t-UR">UR</span> <span class="score">5</span><br>
+  ロゼ色の夜 · A Rosé-Colored Night<br><i>こっち、見て。……今夜は、あなたのためだけに着たの。</i><br><small>gemini-3.1-flash-image · 2 cand. · hair 5</small></figcaption>
+</figure></main>
+<script>
+const s=document.getElementById('s'),t=document.getElementById('t');
+function f(){for(const el of document.querySelectorAll('figure'))el.style.display=(!s.value||el.dataset.star===s.value)&&(!t.value||el.dataset.tier===t.value)?'':'none'}
+s.onchange=t.onchange=f;
+</script></body></html>

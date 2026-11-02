@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+# out/ 里是明文验证码和 HMAC 密钥，绝不能进 git
+out/
+*.secret
+.env
+.dev.vars

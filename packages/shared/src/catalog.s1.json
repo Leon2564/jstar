@@ -1,0 +1,3452 @@
+[
+  {
+    "id": "s1-mahiro-01",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "おはようの一杯",
+      "zh-Hant": "早安的一杯",
+      "en": "Morning, One Cup Each",
+      "ko": "아침의 커피 한 잔"
+    },
+    "scene": "Mahiro at a sunny kitchen counter in the morning, oversized cream cable-knit cardigan, holding a navy and a blush-pink handmade mug with steam rising, smiling at you",
+    "line": {
+      "ja": "おはよ。コーヒー、あなたの分もいれといたよ。",
+      "zh-Hant": "早安。咖啡，你的那杯我也泡好了喔。",
+      "en": "Morning. I made your coffee too.",
+      "ko": "좋은 아침. 커피, 네 것도 내려놨어."
+    },
+    "art": "/cards/s1-mahiro-01/card.webp",
+    "voice": "/voice/s1-mahiro-01.mp3"
+  },
+  {
+    "id": "s1-mahiro-02",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "窓辺で読書",
+      "zh-Hant": "窗邊讀書",
+      "en": "Reading by the Window",
+      "ko": "창가에서의 독서"
+    },
+    "scene": "Mahiro curled up on a sofa by a bright window on a quiet afternoon, a paperback open on her knees, cream knit sweater and long beige skirt, looking up at you",
+    "line": {
+      "ja": "あ、読み終わるまで待っててくれたの？ ……ありがと。",
+      "zh-Hant": "啊，你一直等我讀完嗎？……謝謝你。",
+      "en": "Oh, you waited till I finished the chapter? …Thank you.",
+      "ko": "아, 다 읽을 때까지 기다려 준 거야? ……고마워."
+    },
+    "art": "/cards/s1-mahiro-02/card.webp",
+    "voice": "/voice/s1-mahiro-02.mp3"
+  },
+  {
+    "id": "s1-mahiro-03",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "雨宿りの窓際",
+      "zh-Hant": "躲雨的窗邊",
+      "en": "Sheltering from the Rain",
+      "ko": "비 피하는 창가"
+    },
+    "scene": "Mahiro at a café window seat on a rainy afternoon, raindrops on the glass, a latte held in both hands, beige knit over a white blouse",
+    "line": {
+      "ja": "雨、やむまでここにいよっか。急がなくていいよ。",
+      "zh-Hant": "雨停之前，就待在這裡吧。不用急喔。",
+      "en": "Let's stay here till the rain stops. No need to hurry.",
+      "ko": "비 그칠 때까지 여기 있을까? 서두르지 않아도 돼."
+    },
+    "art": "/cards/s1-mahiro-03/card.webp",
+    "voice": "/voice/s1-mahiro-03.mp3"
+  },
+  {
+    "id": "s1-mahiro-04",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "洗濯日和",
+      "zh-Hant": "適合洗衣的好天氣",
+      "en": "Perfect Laundry Weather",
+      "ko": "빨래하기 좋은 날"
+    },
+    "scene": "Mahiro hanging white sheets on a sunny apartment balcony in the morning, loose light-blue linen shirt and cream trousers, a breeze in her hair",
+    "line": {
+      "ja": "いいお天気。今夜のシーツ、ふかふかだね。",
+      "zh-Hant": "天氣真好。今晚的床單會很蓬鬆喔。",
+      "en": "Such nice weather. The sheets will be so fluffy tonight.",
+      "ko": "날씨 좋다. 오늘 밤 시트는 폭신폭신하겠네."
+    },
+    "art": "/cards/s1-mahiro-04/card.webp",
+    "voice": "/voice/s1-mahiro-04.mp3"
+  },
+  {
+    "id": "s1-mahiro-05",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "今夜はなに食べる？",
+      "zh-Hant": "今晚吃什麼？",
+      "en": "What's for Dinner?",
+      "ko": "오늘 저녁엔 뭐 먹을까"
+    },
+    "scene": "Mahiro in a neighbourhood supermarket aisle in the early evening, holding a basket of vegetables, soft grey cardigan and canvas tote, turning to ask you",
+    "line": {
+      "ja": "今日はあなたの食べたいものにしよ。なにがいい？",
+      "zh-Hant": "今天就煮你想吃的吧。想吃什麼？",
+      "en": "Tonight we'll have whatever you want. What'll it be?",
+      "ko": "오늘은 네가 먹고 싶은 걸로 하자. 뭐가 좋아?"
+    },
+    "art": "/cards/s1-mahiro-05/card.webp",
+    "voice": "/voice/s1-mahiro-05.mp3"
+  },
+  {
+    "id": "s1-mahiro-06",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "ソファでうとうと",
+      "zh-Hant": "沙發上打瞌睡",
+      "en": "Dozing on the Sofa",
+      "ko": "소파에서 꾸벅꾸벅"
+    },
+    "scene": "Mahiro half-asleep on a sofa under a knit blanket in a warm lamp-lit living room at night, soft grey lounge sweater, eyes just opening toward you",
+    "line": {
+      "ja": "ん……寝てないよ。ちょっと目を閉じてただけ。",
+      "zh-Hant": "嗯……我沒睡喔。只是閉一下眼睛而已。",
+      "en": "Mm… I wasn't asleep. Just resting my eyes.",
+      "ko": "음……안 잤어. 그냥 눈 좀 감고 있었을 뿐이야."
+    },
+    "art": "/cards/s1-mahiro-06/card.webp",
+    "voice": "/voice/s1-mahiro-06.mp3"
+  },
+  {
+    "id": "s1-mahiro-07",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "ベランダの夕暮れ",
+      "zh-Hant": "陽台的黃昏",
+      "en": "Balcony at Dusk",
+      "ko": "베란다의 노을"
+    },
+    "scene": "Mahiro leaning on a high-rise balcony railing at dusk, pink and orange sky over Tokyo, cream cardigan, holding a mug",
+    "line": {
+      "ja": "見て、空がピンク色。今日もおつかれさま。",
+      "zh-Hant": "你看，天空變成粉紅色了。今天也辛苦了。",
+      "en": "Look, the sky's gone pink. You did well today.",
+      "ko": "봐봐, 하늘이 분홍색이야. 오늘도 수고했어."
+    },
+    "art": "/cards/s1-mahiro-07/card.webp",
+    "voice": "/voice/s1-mahiro-07.mp3"
+  },
+  {
+    "id": "s1-mahiro-08",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "コンビニの帰り道",
+      "zh-Hant": "便利商店的回家路",
+      "en": "The Walk Back from the Konbini",
+      "ko": "편의점에서 돌아오는 길"
+    },
+    "scene": "Mahiro walking a quiet residential street at night under streetlights, oversized hoodie and long skirt, holding a convenience-store bag with two ice creams",
+    "line": {
+      "ja": "アイス、ふたつ買っちゃった。半分こ、しよ？",
+      "zh-Hant": "冰淇淋，我買了兩支。我們一人一半吧？",
+      "en": "I bought two ice creams. Want to share?",
+      "ko": "아이스크림 두 개 사버렸어. 반씩 나눠 먹을까?"
+    },
+    "art": "/cards/s1-mahiro-08/card.webp",
+    "voice": "/voice/s1-mahiro-08.mp3"
+  },
+  {
+    "id": "s1-mahiro-09",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "朝の水やり",
+      "zh-Hant": "早晨澆花",
+      "en": "Morning Watering",
+      "ko": "아침 물 주기"
+    },
+    "scene": "Mahiro watering potted herbs and flowers on a sunny windowsill in the morning, white cotton blouse, a small tin watering can, gentle smile",
+    "line": {
+      "ja": "この子たち、あなたが来ると元気になる気がする。",
+      "zh-Hant": "總覺得你一來，這些孩子們就變得有精神了。",
+      "en": "I swear these plants perk up whenever you're here.",
+      "ko": "이 애들, 네가 오면 힘이 나는 것 같아."
+    },
+    "art": "/cards/s1-mahiro-09/card.webp",
+    "voice": "/voice/s1-mahiro-09.mp3"
+  },
+  {
+    "id": "s1-mahiro-10",
+    "star": "mahiro",
+    "tier": "N",
+    "title": {
+      "ja": "おかえりの玄関",
+      "zh-Hant": "玄關的歡迎回家",
+      "en": "Welcome Home at the Door",
+      "ko": "현관에서 어서 와"
+    },
+    "scene": "Mahiro at the entrance of a cosy apartment in the evening, warm hallway light, cream cardigan over a white dress, reaching out to take your bag",
+    "line": {
+      "ja": "おかえり。今日もがんばったね。荷物、持つよ。",
+      "zh-Hant": "歡迎回家。今天也很努力了呢。包包我來拿。",
+      "en": "Welcome home. You worked hard today. Here, let me take that.",
+      "ko": "어서 와. 오늘도 애썼어. 짐, 내가 들게."
+    },
+    "art": "/cards/s1-mahiro-10/card.webp",
+    "voice": "/voice/s1-mahiro-10.mp3"
+  },
+  {
+    "id": "s1-mahiro-11",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "桜並木をふたりで",
+      "zh-Hant": "兩人走過櫻花道",
+      "en": "Under the Cherry Trees",
+      "ko": "둘이 걷는 벚꽃길"
+    },
+    "scene": "Mahiro on a riverside path lined with cherry blossoms in spring, light beige trench coat over a white dress, petals falling, looking back at you",
+    "line": {
+      "ja": "花びら、髪についてるよ。……とってあげる。",
+      "zh-Hant": "你頭髮上沾到花瓣了喔。……我幫你拿掉。",
+      "en": "There's a petal in your hair. …Here, let me.",
+      "ko": "꽃잎이 머리에 붙었어. ……떼어 줄게."
+    },
+    "art": "/cards/s1-mahiro-11/card.webp",
+    "voice": "/voice/s1-mahiro-11.mp3"
+  },
+  {
+    "id": "s1-mahiro-12",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "水族館の青い道",
+      "zh-Hant": "水族館的藍色隧道",
+      "en": "The Blue Tunnel",
+      "ko": "수족관의 파란 길"
+    },
+    "scene": "Mahiro inside an aquarium tunnel bathed in blue light, fish gliding overhead, navy knit and pleated midi skirt, her face softly lit as she looks at you",
+    "line": {
+      "ja": "魚より、あなたの顔ばっかり見ちゃう。なんでだろ。",
+      "zh-Hant": "比起魚，我好像一直在看你的臉。為什麼呢。",
+      "en": "I keep looking at you instead of the fish. Wonder why.",
+      "ko": "물고기보다 네 얼굴만 보게 돼. 왜 그럴까."
+    },
+    "art": "/cards/s1-mahiro-12/card.webp",
+    "voice": "/voice/s1-mahiro-12.mp3"
+  },
+  {
+    "id": "s1-mahiro-13",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "古本屋めぐり",
+      "zh-Hant": "舊書店巡禮",
+      "en": "Old Bookshop Hunt",
+      "ko": "헌책방 나들이"
+    },
+    "scene": "Mahiro in a narrow Jimbocho second-hand bookshop with tall wooden shelves, afternoon light, holding up an old book, camel coat over a knit",
+    "line": {
+      "ja": "これ、あなたが好きそうだと思って。当たり？",
+      "zh-Hant": "我覺得你會喜歡這本。猜對了嗎？",
+      "en": "I thought you'd like this one. Did I guess right?",
+      "ko": "이거, 네가 좋아할 것 같아서. 맞았어?"
+    },
+    "art": "/cards/s1-mahiro-13/card.webp",
+    "voice": "/voice/s1-mahiro-13.mp3"
+  },
+  {
+    "id": "s1-mahiro-14",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "海辺の帰り道",
+      "zh-Hant": "海邊的回程",
+      "en": "Seaside, Heading Home",
+      "ko": "바닷가에서 돌아가는 길"
+    },
+    "scene": "Mahiro on a sandy beach path at sunset, long white cotton dress with a cream cardigan, holding her sandals, golden light and gentle waves behind her",
+    "line": {
+      "ja": "靴、脱いじゃった。もうちょっとだけ、歩こ？",
+      "zh-Hant": "鞋子脫掉了。再多走一下下好嗎？",
+      "en": "I took my shoes off. Walk with me a little longer?",
+      "ko": "신발 벗어버렸어. 조금만 더 걷자?"
+    },
+    "art": "/cards/s1-mahiro-14/card.webp",
+    "voice": "/voice/s1-mahiro-14.mp3"
+  },
+  {
+    "id": "s1-mahiro-15",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "観覧車のてっぺん",
+      "zh-Hant": "摩天輪的頂端",
+      "en": "Top of the Ferris Wheel",
+      "ko": "관람차 꼭대기에서"
+    },
+    "scene": "Mahiro seated inside a Ferris wheel gondola at dusk, city lights beginning to glow below, light knit and a soft scarf, smiling across at you",
+    "line": {
+      "ja": "いちばん上に着いたら、ちょっとだけ静かにしてて。",
+      "zh-Hant": "到最高點的時候，你安靜一下下喔。",
+      "en": "When we reach the top, be quiet for a moment, okay?",
+      "ko": "제일 위에 도착하면, 잠깐만 조용히 있어 줘."
+    },
+    "art": "/cards/s1-mahiro-15/card.webp",
+    "voice": "/voice/s1-mahiro-15.mp3"
+  },
+  {
+    "id": "s1-mahiro-16",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "陶芸教室",
+      "zh-Hant": "陶藝教室",
+      "en": "Pottery Class",
+      "ko": "도예 교실"
+    },
+    "scene": "Mahiro at a pottery wheel in a sunlit studio, canvas apron over a linen shirt, hands shaping a small clay mug, laughing toward you",
+    "line": {
+      "ja": "おそろいのマグ、作ろ。あなたのは紺色ね。",
+      "zh-Hant": "我們來做成對的馬克杯吧。你的是深藍色喔。",
+      "en": "Let's make matching mugs. Yours will be navy.",
+      "ko": "커플 머그컵 만들자. 네 건 남색이야."
+    },
+    "art": "/cards/s1-mahiro-16/card.webp",
+    "voice": "/voice/s1-mahiro-16.mp3"
+  },
+  {
+    "id": "s1-mahiro-17",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "紅葉の古都",
+      "zh-Hant": "紅葉的古都",
+      "en": "Autumn in Kyoto",
+      "ko": "교토의 단풍"
+    },
+    "scene": "Mahiro on a stone path in a Kyoto temple garden under red maple leaves, burgundy knit and long camel skirt, soft afternoon light",
+    "line": {
+      "ja": "真っ赤だね。この景色、あなたと見たかったんだ。",
+      "zh-Hant": "好紅啊。這片景色，我一直想跟你一起看。",
+      "en": "It's all red. I wanted to see this with you.",
+      "ko": "새빨갛다. 이 풍경, 너랑 같이 보고 싶었어."
+    },
+    "art": "/cards/s1-mahiro-17/card.webp",
+    "voice": "/voice/s1-mahiro-17.mp3"
+  },
+  {
+    "id": "s1-mahiro-18",
+    "star": "mahiro",
+    "tier": "R",
+    "title": {
+      "ja": "雪の日の足あと",
+      "zh-Hant": "雪日的足跡",
+      "en": "Footprints in the Snow",
+      "ko": "눈 오는 날의 발자국"
+    },
+    "scene": "Mahiro on a quiet snowy street in the evening, cream wool coat, white knit hat and mittens, snowflakes falling, cheeks pink from the cold",
+    "line": {
+      "ja": "手、冷たいでしょ。ほら、ポケットに入れて。",
+      "zh-Hant": "你的手很冰吧。來，放進我的口袋。",
+      "en": "Your hands are freezing. Here, put them in my pocket.",
+      "ko": "손 차갑지. 자, 주머니에 넣어."
+    },
+    "art": "/cards/s1-mahiro-18/card.webp",
+    "voice": "/voice/s1-mahiro-18.mp3"
+  },
+  {
+    "id": "s1-mahiro-19",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "花火のあとで",
+      "zh-Hant": "煙火之後",
+      "en": "After the Fireworks",
+      "ko": "불꽃놀이가 끝난 뒤"
+    },
+    "scene": "Mahiro at a summer festival at night in a navy yukata with small pink flowers, holding a paper fan, fireworks blooming in the sky behind her",
+    "line": {
+      "ja": "花火より、あなたの横顔を覚えてる気がする。",
+      "zh-Hant": "比起煙火，我好像更記得你的側臉。",
+      "en": "I think I'll remember your face more than the fireworks.",
+      "ko": "불꽃놀이보다 네 옆얼굴이 더 기억에 남을 것 같아."
+    },
+    "art": "/cards/s1-mahiro-19/card.webp",
+    "voice": "/voice/s1-mahiro-19.mp3"
+  },
+  {
+    "id": "s1-mahiro-20",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "光の並木道",
+      "zh-Hant": "光之林蔭道",
+      "en": "Avenue of Lights",
+      "ko": "빛의 가로수길"
+    },
+    "scene": "Mahiro on a tree-lined avenue of winter illuminations at night, cream coat and pale pink scarf, golden fairy lights in soft bokeh",
+    "line": {
+      "ja": "きれい……でも、手はつないだままでいてね。",
+      "zh-Hant": "好漂亮……不過，手要一直牽著喔。",
+      "en": "So pretty… but keep holding my hand, okay?",
+      "ko": "예쁘다……근데, 손은 계속 잡고 있어."
+    },
+    "art": "/cards/s1-mahiro-20/card.webp",
+    "voice": "/voice/s1-mahiro-20.mp3"
+  },
+  {
+    "id": "s1-mahiro-21",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "あなたの誕生日",
+      "zh-Hant": "你的生日",
+      "en": "Your Birthday",
+      "ko": "너의 생일"
+    },
+    "scene": "Mahiro at home at night holding a small strawberry cake with lit candles, candlelight on her face, cream dress, fairy lights behind",
+    "line": {
+      "ja": "お誕生日おめでとう。生まれてきてくれて、ありがと。",
+      "zh-Hant": "生日快樂。謝謝你來到這個世界上。",
+      "en": "Happy birthday. Thank you for being born.",
+      "ko": "생일 축하해. 태어나 줘서, 고마워."
+    },
+    "art": "/cards/s1-mahiro-21/card.webp",
+    "voice": "/voice/s1-mahiro-21.mp3"
+  },
+  {
+    "id": "s1-mahiro-22",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "星をさがしに",
+      "zh-Hant": "去找星星",
+      "en": "Looking for Stars",
+      "ko": "별을 찾으러"
+    },
+    "scene": "Mahiro sitting on a grassy hill at night under a starry sky, wrapped in a plaid blanket over a knit sweater, a thermos beside her",
+    "line": {
+      "ja": "流れ星、見つけたら教えてね。願いごと、もう決めてるの。",
+      "zh-Hant": "找到流星的話要告訴我喔。我的願望已經決定好了。",
+      "en": "Tell me if you see a shooting star. I already know my wish.",
+      "ko": "별똥별 보이면 알려줘. 소원은 이미 정해 놨어."
+    },
+    "art": "/cards/s1-mahiro-22/card.webp",
+    "voice": "/voice/s1-mahiro-22.mp3"
+  },
+  {
+    "id": "s1-mahiro-23",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "窓際のディナー",
+      "zh-Hant": "窗邊的晚餐",
+      "en": "Dinner by the Window",
+      "ko": "창가에서의 디너"
+    },
+    "scene": "Mahiro at a fine-dining table by a tall window at night, elegant black long-sleeve dress and pearl earrings, city lights behind, raising a glass",
+    "line": {
+      "ja": "ちょっと背伸びしちゃった。……似合ってる？",
+      "zh-Hant": "我有點打扮過頭了。……適合我嗎？",
+      "en": "I dressed up a little. …Does it suit me?",
+      "ko": "좀 과하게 꾸며 봤어. ……어울려?"
+    },
+    "art": "/cards/s1-mahiro-23/card.webp",
+    "voice": "/voice/s1-mahiro-23.mp3"
+  },
+  {
+    "id": "s1-mahiro-24",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "旅先の朝ごはん",
+      "zh-Hant": "旅途中的早餐",
+      "en": "Breakfast on Our Trip",
+      "ko": "여행지에서의 아침밥"
+    },
+    "scene": "Mahiro at a traditional ryokan breakfast table by a window with a garden view in the morning, soft beige knit, small dishes of Japanese breakfast",
+    "line": {
+      "ja": "旅先の朝って、なんでこんなに特別なんだろうね。",
+      "zh-Hant": "旅行中的早晨，為什麼會這麼特別呢。",
+      "en": "Why do mornings on a trip feel so special?",
+      "ko": "여행지에서의 아침은 왜 이렇게 특별할까."
+    },
+    "art": "/cards/s1-mahiro-24/card.webp",
+    "voice": "/voice/s1-mahiro-24.mp3"
+  },
+  {
+    "id": "s1-mahiro-25",
+    "star": "mahiro",
+    "tier": "SR",
+    "title": {
+      "ja": "最終上映のあと",
+      "zh-Hant": "最後一場電影之後",
+      "en": "After the Last Show",
+      "ko": "마지막 상영이 끝난 뒤"
+    },
+    "scene": "Mahiro outside a small cinema late at night under a glowing marquee, camel coat and scarf, holding two ticket stubs, the street softly blurred",
+    "line": {
+      "ja": "ラスト、泣いちゃった。……こっち見ないで。",
+      "zh-Hant": "結局那裡，我哭了。……不要看我啦。",
+      "en": "I cried at the ending. …Don't look at me.",
+      "ko": "마지막에 울어버렸어. ……이쪽 보지 마."
+    },
+    "art": "/cards/s1-mahiro-25/card.webp",
+    "voice": "/voice/s1-mahiro-25.mp3"
+  },
+  {
+    "id": "s1-mahiro-26",
+    "star": "mahiro",
+    "tier": "SSR",
+    "title": {
+      "ja": "おでこ、こつん",
+      "zh-Hant": "額頭，輕輕碰",
+      "en": "Forehead to Forehead",
+      "ko": "이마 콩"
+    },
+    "scene": "Intimate close-up of Mahiro in soft morning window light, sitting on white linen bedding in a cream cable-knit cardigan buttoned up to the collarbone over a high-neck long white cotton dress, leaning toward the lens with a sleepy smile",
+    "line": {
+      "ja": "熱、ないね。……よかった。今日はゆっくりしよ。",
+      "zh-Hant": "沒有發燒呢。……太好了。今天就好好休息吧。",
+      "en": "No fever. …Good. Let's take it easy today.",
+      "ko": "열은 없네. ……다행이다. 오늘은 푹 쉬자."
+    },
+    "story": {
+      "ja": [
+        "朝、目が覚めたら、となりのあなたがいつもより静かだった。声をかけても「大丈夫」しか言わないから、わたしはカーディガンのボタンをとめて、そっと顔をのぞきこんだの。目の下に、うっすら影。昨日の夜、遅くまでがんばってたの、知ってるよ。\n……熱、あるのかな。体温計はどこだっけ、と思ったけど、探すより先に体が動いちゃった。前髪をよけて、おでこをこつん。ひんやりしてて、ちょっと安心した。あなたは驚いた顔で固まってて、それがおかしくて、わたしは笑いをこらえるのに必死だった。\n「ほら、熱はないよ。でも、今日はお休みの日にしよう」\n窓の外は、洗いたてみたいな青空。予定なんて、ぜんぶあとまわしでいいの。今日のわたしの予定は、あなたをゆっくりさせること。それだけ。",
+        "結局、その日はふたりでなんにもしなかった。\nお昼すぎまでシーツにくるまって、あなたが好きな古い映画を半分だけ見て、残りの半分はあなたが眠っちゃったから、わたしはその寝顔を見てた。まつげ、意外と長いんだね。知らなかった。\n夕方になって、あなたはやっと「ありがとう」って言った。わたしはそれだけで十分だったけど、ちょっとだけいじわるしたくなって、「なにが？」って聞き返したの。困った顔のあなたに、もう一回おでこをこつん。\nねえ、覚えておいてね。つかれたときは、つかれたって言っていいんだよ。あなたが言えないときは、わたしが先に気づくから。そのために、いつもあなたのこと見てるんだから。\n……今の、ちょっと恥ずかしかったね。聞かなかったことにして。"
+      ],
+      "zh-Hant": [
+        "早上醒來，身旁的你比平常安靜。問你怎麼了，你只說「沒事」，所以我扣好開襟衫的釦子，悄悄湊過去看你的臉。眼睛下面有淡淡的陰影。昨晚你忙到很晚，我都知道喔。\n……是不是發燒了呢？我想著體溫計放在哪裡，身體卻比腦袋先動了。撥開你的瀏海，額頭輕輕碰上去。涼涼的，讓我鬆了一口氣。你嚇得整個人僵住，那副樣子好好笑，我拚命忍著不笑出來。\n「你看，沒有發燒。不過，今天就當作休假吧。」\n窗外是像剛洗過一樣的藍天。行程什麼的，全部往後延也沒關係。我今天唯一的行程，就是讓你好好休息。就這樣。",
+        "結果那一天，我們兩個什麼都沒做。\n裹著床單賴到過了中午，看了你喜歡的老電影的一半，另一半因為你睡著了，我就一直看著你的睡臉。原來你的睫毛這麼長啊，我都不知道。\n到了傍晚，你終於說了一聲「謝謝」。光是這樣我就很滿足了，可是又忍不住想捉弄你一下，就反問你「謝什麼？」。看你一臉困擾，我又把額頭輕輕碰了上去。\n欸，要記得喔。累了的時候，說出「好累」也沒關係。你說不出口的時候，我會先發現的。所以我才一直看著你啊。\n……剛剛那句有點害羞呢。就當作沒聽到吧。"
+      ],
+      "en": [
+        "When I woke up, you were quieter than usual beside me. You kept saying \"I'm fine,\" so I buttoned up my cardigan and leaned over to look at your face. Faint shadows under your eyes. I know you worked late last night.\n…Did you have a fever? I wondered where the thermometer was, but my body moved before I could look for it. I brushed your fringe aside and touched my forehead to yours. Cool. I let out a breath. You froze in surprise, and it was so funny I had to fight not to laugh.\n\"See? No fever. But let's make today a day off.\"\nOutside, the sky was a freshly washed blue. The plans could all wait. My only plan for today was letting you rest. That's all.",
+        "In the end, we did nothing at all that day.\nWe stayed wrapped in the sheets past noon and watched half of that old film you love. You fell asleep for the other half, so I watched your sleeping face instead. Your eyelashes are longer than I thought. I never knew.\nBy evening you finally said \"thank you.\" That was more than enough, but I felt like teasing you a little, so I asked, \"For what?\" You looked so flustered that I touched my forehead to yours one more time.\nHey, remember this. When you're tired, you're allowed to say so. And when you can't, I'll notice first. That's why I'm always watching you.\n…That was a little embarrassing. Pretend you didn't hear it."
+      ],
+      "ko": [
+        "아침에 눈을 떴더니, 옆에 있는 네가 평소보다 조용했어. 말을 걸어도 「괜찮아」라고만 하길래, 나는 카디건 단추를 채우고, 살짝 얼굴을 들여다봤어. 눈 밑에, 옅은 그림자. 어젯밤 늦게까지 애쓴 거, 알고 있어.\n……열, 있으려나. 체온계가 어디 있더라, 생각했는데, 찾기도 전에 몸이 먼저 움직였어. 앞머리를 걷어내고, 이마를 콩. 서늘해서, 조금 안심했어. 너는 놀란 얼굴로 굳어 있었고, 그게 웃겨서, 나는 웃음을 참느라 필사적이었어.\n「봐, 열은 없어. 근데, 오늘은 쉬는 날로 하자」\n창밖은, 방금 씻은 것 같은 파란 하늘. 일정 같은 건, 다 뒤로 미뤄도 돼. 오늘 내 일정은, 너를 푹 쉬게 하는 것. 그것뿐이야.",
+        "결국, 그날은 둘이서 아무것도 하지 않았어.\n낮이 지나도록 시트를 뒤집어쓰고 있다가, 네가 좋아하는 오래된 영화를 반만 보고, 나머지 반은 네가 잠들어버려서, 나는 그 자는 얼굴을 보고 있었어. 속눈썹, 의외로 길더라. 몰랐어.\n저녁이 되어서야, 너는 겨우 「고마워」라고 말했어. 나는 그것만으로 충분했는데, 살짝 짓궂게 굴고 싶어져서, 「뭐가?」 하고 되물었어. 곤란해하는 네 얼굴에, 한 번 더 이마를 콩.\n있잖아, 기억해 둬. 힘들 땐, 힘들다고 말해도 돼. 네가 말 못 할 땐, 내가 먼저 알아챌 테니까. 그러려고, 항상 너를 보고 있는 거니까.\n……방금 그거, 좀 부끄러웠다. 못 들은 걸로 해."
+      ]
+    },
+    "art": "/cards/s1-mahiro-26/card.webp",
+    "voice": "/voice/s1-mahiro-26.mp3"
+  },
+  {
+    "id": "s1-mahiro-27",
+    "star": "mahiro",
+    "tier": "SSR",
+    "title": {
+      "ja": "終電の肩",
+      "zh-Hant": "末班車上的肩膀",
+      "en": "Your Shoulder on the Last Train",
+      "ko": "막차에서의 어깨"
+    },
+    "scene": "Close-up of Mahiro on a late-night train seat, city lights streaking past the window, beige coat and scarf, resting her head as she looks up at the lens",
+    "line": {
+      "ja": "着くまで、こうしてていい？ あなたの肩、落ち着くの。",
+      "zh-Hant": "到站之前，可以就這樣嗎？你的肩膀讓我好安心。",
+      "en": "Can I stay like this till our stop? Your shoulder calms me.",
+      "ko": "도착할 때까지, 이러고 있어도 돼? 네 어깨, 마음이 편안해져."
+    },
+    "story": {
+      "ja": [
+        "金曜日の終電は、いつもより少しだけにぎやかで、少しだけさみしい。\n飲み会帰りの人たちの笑い声が遠ざかって、わたしたちの車両には、いつのまにか数人しか残ってなかった。窓の外を、街の明かりが線になって流れていく。\nあなたは疲れてるはずなのに、今日あった話をずっとしてくれた。上司の口ぐせのこと、お昼に食べたカレーのこと。わたしは相づちを打ちながら、あなたの声がだんだんゆっくりになっていくのを聞いてた。\n「ねえ、肩、借りてもいい？」\n本当は、あなたを休ませたかったのに、口から出たのは反対の言葉。あなたが笑ってうなずいたから、わたしはコートの襟に顔をうずめるみたいに、そっと頭をあずけたの。あったかくて、心臓の音が少しだけ聞こえた。",
+        "目を閉じてたのは、ほんの数分のつもりだった。\n気がついたら、あなたの手がわたしの前髪をそっと直してて、わたしは寝たふりを続けるか、目を開けるか、すごく迷った。……迷ってるうちに、あなたが小さく「おつかれさま」ってつぶやいたの。それ、いつもわたしがあなたに言う言葉なのに。\n次の駅のアナウンスで、わたしはわざとゆっくり目を開けた。\n「……寝てた？」\n「ちょっとだけね」\nあなたの肩には、わたしのマフラーの跡がくっきりついてた。ごめんねって言ったら、「勲章だよ」なんて言うから、わたしは窓のほうを向いて、赤くなった顔をかくした。\n窓ガラスには、並んで座るふたりがうっすら映ってた。なんだか、ずっと前からこうしてたみたいに見えたの。\n降りる駅まで、あと二つ。もう少しだけ、このままでいさせてね。"
+      ],
+      "zh-Hant": [
+        "星期五的末班車，總是比平常熱鬧一點，也寂寞一點。\n聚餐回家的人們的笑聲漸漸遠去，不知不覺，我們這節車廂只剩下幾個人。窗外，街上的燈光拉成一條條線流過。\n你明明應該很累了，卻一直跟我說今天發生的事。上司的口頭禪、午餐吃的咖哩。我一邊附和，一邊聽著你的聲音慢慢變得緩慢。\n「欸，肩膀可以借我一下嗎？」\n其實我是想讓你休息的，說出口的卻是相反的話。你笑著點點頭，於是我像把臉埋進大衣領子裡那樣，輕輕把頭靠了過去。好溫暖，還隱約聽得到心跳聲。",
+        "我本來只打算閉上眼睛幾分鐘而已。\n回過神來，你的手正輕輕幫我整理瀏海。我好猶豫，是要繼續裝睡，還是睜開眼睛。……正在猶豫的時候，你小聲地說了一句「辛苦了」。那明明是我平常對你說的話。\n下一站的廣播響起，我故意慢慢地睜開眼睛。\n「……我睡著了嗎？」\n「一下下而已。」\n你的肩膀上，清楚留著我圍巾的痕跡。我說對不起，你卻說「這是勳章」，害我只好轉向窗戶，藏起發紅的臉。\n車窗玻璃上，淡淡映著並肩坐著的我們。看起來，就像很久以前就一直這樣了。\n離下車還有兩站。再讓我這樣靠一下下吧。"
+      ],
+      "en": [
+        "The last train on a Friday is always a little livelier than usual, and a little lonelier too.\nThe laughter of people heading home from parties faded, and before long only a few of us were left in the carriage. Outside, the city lights streamed past in lines.\nYou must have been exhausted, but you kept telling me about your day. Your boss's favourite phrase. The curry you had for lunch. I murmured along, listening to your voice slowly getting slower.\n\"Hey, can I borrow your shoulder?\"\nI'd wanted you to rest, but the opposite came out of my mouth. You smiled and nodded, so I leaned my head against you, as if tucking my face into the collar of my coat. It was warm, and I could just hear your heartbeat.",
+        "I only meant to close my eyes for a few minutes.\nThe next thing I knew, your hand was gently fixing my fringe, and I couldn't decide whether to keep pretending to sleep or open my eyes. …While I was deciding, you whispered \"good work today.\" That's what I always say to you.\nWhen the next station was announced, I opened my eyes slowly, on purpose.\n\"…Was I asleep?\"\n\"Just a little.\"\nMy scarf had left a clear mark on your shoulder. When I said sorry, you called it \"a medal,\" so I turned to the window to hide how red my face was.\nThe window glass held a faint reflection of the two of us side by side. It looked as if we'd been sitting like this for a very long time.\nTwo more stops. Let me stay like this just a little longer."
+      ],
+      "ko": [
+        "금요일 막차는, 평소보다 조금 시끌벅적하고, 조금 쓸쓸해.\n회식 끝나고 돌아가는 사람들의 웃음소리가 멀어지고, 우리가 탄 칸에는 어느새 몇 명밖에 남아 있지 않았어. 창밖으로, 거리의 불빛이 선이 되어 흘러갔어.\n너는 분명 피곤할 텐데, 오늘 있었던 이야기를 계속 해줬어. 상사의 말버릇, 점심에 먹은 카레 이야기. 나는 맞장구치면서, 네 목소리가 점점 느려지는 걸 듣고 있었어.\n「저기, 어깨 좀 빌려줄래?」\n사실은, 너를 쉬게 하고 싶었는데, 입에서 나온 건 반대되는 말이었어. 네가 웃으며 고개를 끄덕여서, 나는 코트 깃에 얼굴을 파묻듯이, 살며시 머리를 기댔어. 따뜻해서, 심장 소리가 살짝 들렸어.",
+        "눈을 감고 있던 건, 그냥 몇 분만 그럴 생각이었어.\n정신을 차려보니, 네 손이 내 앞머리를 살며시 매만지고 있었고, 나는 자는 척을 계속할지, 눈을 뜰지 몹시 망설였어. ……망설이는 사이에, 네가 작게 「수고했어」라고 중얼거렸어. 그거, 늘 내가 너한테 하는 말인데.\n다음 역 안내 방송에, 나는 일부러 천천히 눈을 떴어.\n「……잤어?」\n「조금만」\n네 어깨에는, 내 목도리 자국이 선명하게 남아 있었어. 미안하다고 했더니, 「훈장이야」라고 하길래, 나는 창문 쪽을 보며 빨개진 얼굴을 숨겼어.\n창유리에는, 나란히 앉은 우리 둘이 희미하게 비쳤어. 왠지, 오래전부터 이러고 있었던 것처럼 보였어.\n내릴 역까지, 이제 두 정거장. 조금만 더, 이대로 있게 해줘."
+      ]
+    },
+    "art": "/cards/s1-mahiro-27/card.webp",
+    "voice": "/voice/s1-mahiro-27.mp3"
+  },
+  {
+    "id": "s1-mahiro-28",
+    "star": "mahiro",
+    "tier": "SSR",
+    "title": {
+      "ja": "おやすみの前に",
+      "zh-Hant": "晚安之前",
+      "en": "Before Goodnight",
+      "ko": "잘 자기 전에"
+    },
+    "scene": "Close-up of Mahiro lying on her side on a pillow under warm bedside lamp light, long-sleeve cotton pajamas buttoned to the collar, a blanket pulled up to her shoulder, gazing at the lens",
+    "line": {
+      "ja": "電気消す前に、もう少しだけ話そ。あなたの声、好き。",
+      "zh-Hant": "關燈之前，再多聊一下吧。我喜歡你的聲音。",
+      "en": "Before the lights go out, talk a little more. I like your voice.",
+      "ko": "불 끄기 전에, 조금만 더 얘기하자. 네 목소리, 좋아."
+    },
+    "story": {
+      "ja": [
+        "電気を消す前の、この時間がいちばん好き。\nベッドサイドのランプだけつけて、枕をふたつ並べて、今日のことをぽつぽつ話す。大きなできごとなんてなくていいの。コンビニの新しいプリンがおいしかったとか、駅前の桜がつぼみをつけてたとか、そういう話。\nあなたはときどき、話しながら眠そうに目をこする。そのたびにわたしは「もう寝る？」って聞くんだけど、あなたは「まだ」って言う。ほんとは、わたしもまだ寝たくない。\nランプのオレンジ色の光が、あなたの横顔をやわらかくしてる。毎日見てるはずなのに、この時間のあなたは少しだけ違って見えるの。昼間より、ずっと素直な顔。\n「あなたの声、好きだな」って言ったら、あなたは照れて、布団を鼻まで引っぱりあげた。",
+        "その夜、あなたはめずらしく、少しだけ弱音をはいた。\n仕事のこと、うまくいかなかったこと、誰にも言えなかったこと。わたしは布団の中で、あなたの話をさえぎらないように、ただ静かに聞いてた。答えなんて、たぶんあなたは求めてなかったから。\n話し終わったあなたは、「ごめん、こんな話して」って謝った。\n「どうして謝るの？ わたしは、聞けてうれしかったよ」\n本当のことだった。いいところだけじゃなくて、しんどいところも見せてくれるのが、なによりうれしいの。\nランプを消すと、部屋は窓からの街明かりだけになった。暗がりの中で、あなたの呼吸がゆっくりになっていくのを数えながら、わたしも目を閉じた。\nおやすみ。明日の朝も、いちばんに「おはよう」って言わせてね。"
+      ],
+      "zh-Hant": [
+        "我最喜歡關燈前的這段時間。\n只開著床頭燈，兩個枕頭並排，斷斷續續地聊今天的事。不需要什麼大事。像是便利商店新出的布丁很好吃、車站前的櫻花冒出花苞了，這種小事就好。\n你有時候會邊說邊揉著想睡的眼睛。每次我問「要睡了嗎？」，你都說「還沒」。其實，我也還不想睡。\n檯燈橘色的光，讓你的側臉變得好柔和。明明每天都看著你，這個時間的你卻看起來有點不一樣。比白天坦率許多的表情。\n我說「我喜歡你的聲音」，你害羞地把被子一路拉到鼻子。",
+        "那天晚上，你難得說了一點喪氣話。\n工作的事、不順利的事、沒辦法跟任何人說的事。我在被窩裡，靜靜地聽著，不打斷你。因為你要的，大概不是答案吧。\n說完之後，你向我道歉：「抱歉，跟你說這些。」\n「為什麼要道歉？能聽你說，我很開心喔。」\n那是真心話。不只是好的一面，連辛苦的一面也願意讓我看到，比什麼都讓我開心。\n關掉檯燈，房間裡只剩窗外的街燈。我在黑暗中數著你漸漸放慢的呼吸，也閉上了眼睛。\n晚安。明天早上，也讓我第一個對你說「早安」吧。"
+      ],
+      "en": [
+        "This is my favourite time: just before the lights go out.\nOnly the bedside lamp on, two pillows side by side, talking about the day in bits and pieces. Nothing big has to have happened. The new pudding at the konbini was good. The cherry trees by the station have buds. That kind of thing.\nNow and then you rub your sleepy eyes while you talk. Every time, I ask \"Going to sleep?\" and every time you say \"Not yet.\" Truthfully, I don't want to sleep yet either.\nThe lamp's orange light softens your profile. I see you every day, but at this hour you look a little different. A much more honest face than in the daytime.\nWhen I said \"I like your voice,\" you got shy and pulled the covers up to your nose.",
+        "That night, for once, you let a few worries slip.\nAbout work, about things that didn't go well, about things you couldn't tell anyone. Under the covers, I just listened quietly, careful not to interrupt. I don't think you wanted answers.\nWhen you finished, you apologised: \"Sorry for dumping all that on you.\"\n\"Why are you sorry? I'm glad I got to hear it.\"\nI meant it. Nothing makes me happier than you showing me the hard parts too, not just the good ones.\nWhen I switched off the lamp, only the city light from the window was left. In the dark, I counted your breaths as they slowed, and closed my eyes too.\nGoodnight. Let me be the first to say \"good morning\" tomorrow, too."
+      ],
+      "ko": [
+        "불 끄기 전, 이 시간이 제일 좋아.\n침대 옆 램프만 켜놓고, 베개 두 개를 나란히 놓고, 오늘 있었던 일을 두런두런 얘기해. 대단한 일이 아니어도 돼. 편의점 새 푸딩이 맛있었다든가, 역 앞 벚나무에 꽃봉오리가 맺혔다든가, 그런 이야기.\n너는 가끔, 얘기하면서 졸린 듯 눈을 비벼. 그럴 때마다 나는 「이제 잘래?」 하고 묻는데, 너는 「아직」이라고 말해. 사실은, 나도 아직 자고 싶지 않아.\n램프의 주황빛이, 네 옆얼굴을 부드럽게 감싸. 매일 보는데도, 이 시간의 너는 조금 다르게 보여. 낮보다 훨씬 솔직한 얼굴.\n「네 목소리, 좋아해」라고 말했더니, 너는 부끄러워하며 이불을 코까지 끌어올렸어.",
+        "그날 밤, 너는 드물게, 조금 약한 소리를 했어.\n일 얘기, 잘 안 풀렸던 일, 아무한테도 말 못 했던 일. 나는 이불 속에서, 네 이야기를 끊지 않으려고, 그저 조용히 듣고 있었어. 답 같은 건, 아마 네가 바라던 게 아니었을 테니까.\n이야기를 마친 너는, 「미안, 이런 얘기 해서」라며 사과했어.\n「왜 미안해해? 나는, 들을 수 있어서 기뻤어」\n진심이었어. 좋은 면만이 아니라, 힘든 면도 보여주는 게, 무엇보다 기뻐.\n램프를 끄니, 방은 창문으로 들어오는 거리의 불빛만 남았어. 어둠 속에서, 네 숨소리가 천천히 느려지는 걸 세면서, 나도 눈을 감았어.\n잘 자. 내일 아침도, 제일 먼저 「좋은 아침」이라고 말하게 해줘."
+      ]
+    },
+    "art": "/cards/s1-mahiro-28/card.webp",
+    "voice": "/voice/s1-mahiro-28.mp3"
+  },
+  {
+    "id": "s1-mahiro-29",
+    "star": "mahiro",
+    "tier": "SSR",
+    "title": {
+      "ja": "マフラー、半分こ",
+      "zh-Hant": "圍巾，一人一半",
+      "en": "Half the Scarf",
+      "ko": "목도리, 반씩 나눠서"
+    },
+    "scene": "Close-up of Mahiro outdoors on a snowy night, a long cream knit scarf wrapped around her neck and extending toward the lens, cream wool coat, snowflakes and warm streetlight bokeh",
+    "line": {
+      "ja": "ほら、こうすれば二人ともあったかいでしょ。",
+      "zh-Hant": "你看，這樣兩個人都很暖和吧。",
+      "en": "See? This way we're both warm.",
+      "ko": "봐, 이렇게 하면 둘 다 따뜻하지?"
+    },
+    "story": {
+      "ja": [
+        "その日は、朝の天気予報がはずれて、夕方から雪になった。\n待ち合わせの駅前で、あなたはマフラーも手袋も忘れて、肩をすくめて立ってた。遠くから見ても寒そうで、わたし、思わず走っちゃったの。雪で足がすべりそうになって、あなたに笑われた。\n「なんでそんな薄着なの」\n怒ったふりをしながら、わたしは自分のマフラーをほどいた。長めのクリーム色のニット。去年の冬に、自分で編んだやつ。長すぎて失敗したと思ってたけど、今日やっと、その理由がわかった気がする。\nくるくるっと、まずはわたしの首に一周。残りをあなたの首に一周。ふたりの距離は、マフラー一本ぶん。\n「これで、二人ともあったかいでしょ」\nあなたの頬が赤いのは、寒さのせいってことにしておいてあげる。",
+        "マフラーでつながったまま歩くのって、思ったよりむずかしい。\n歩幅を合わせないと、どっちかの首がきゅっと引っぱられる。最初はぎこちなかったのに、商店街を抜けるころには、ふたりの足音がきれいにそろってた。\n雪は街灯の下で、ゆっくり落ちてくる。あなたが空を見上げて「きれいだね」って言ったから、わたしも見上げた。まつげに雪がのって、冷たくて、ちょっと笑った。\n家の前に着いて、マフラーをほどこうとしたら、あなたが「もう少し」って言ったの。めずらしいね、あなたからそんなこと言うの。\nだから、わたしたちはしばらく玄関の前で、雪が積もっていくのを見てた。指先は冷たかったけど、首元だけはずっとあったかかった。\n来年の冬は、ちゃんと二本編むね。……やっぱり、一本でいいかな。"
+      ],
+      "zh-Hant": [
+        "那天早上的氣象預報不準，傍晚開始下起了雪。\n在約好的車站前，你忘了圍巾也忘了手套，縮著肩膀站在那裡。遠遠看就覺得好冷，我忍不住跑了過去。腳差點在雪上滑倒，還被你笑了。\n「怎麼穿這麼少啊。」\n我假裝生氣，一邊解開自己的圍巾。偏長的奶油色針織圍巾，是去年冬天我自己織的。本來以為織太長是失敗了，今天好像終於明白原因了。\n一圈，先繞在我的脖子上。剩下的一圈，繞在你的脖子上。我們之間的距離，剛好一條圍巾。\n「這樣，兩個人都很暖和吧。」\n你的臉頰會紅，就當作是天氣太冷好了。",
+        "被一條圍巾連著走路，比想像中還難。\n步伐不一致的話，總有一個人的脖子會被拉緊。一開始走得好彆扭，但穿過商店街的時候，我們的腳步聲已經整整齊齊了。\n雪在路燈下慢慢飄落。你抬頭說「好美」，我也跟著抬頭。雪花落在睫毛上，冰冰的，讓我笑了出來。\n到了家門前，我正要解開圍巾，你卻說「再一下」。真難得，你會主動說這種話。\n所以，我們在門口站了好一會兒，看著雪慢慢堆積。指尖是冰的，只有脖子一直暖暖的。\n明年冬天，我會好好織兩條。……還是，一條就夠了吧。"
+      ],
+      "en": [
+        "The morning forecast got it wrong that day; it started snowing in the evening.\nAt the station where we'd arranged to meet, you'd forgotten both scarf and gloves and stood there hunching your shoulders. You looked cold even from far away, and I found myself running. I nearly slipped in the snow and you laughed at me.\n\"Why are you dressed so lightly?\"\nPretending to be cross, I unwound my scarf. A long cream knit I made myself last winter. I thought I'd failed by making it too long, but today I finally understood why.\nOne loop around my neck first. The rest, one loop around yours. The distance between us: exactly one scarf.\n\"There. Now we're both warm.\"\nI'll let you blame the cold for your red cheeks.",
+        "Walking while tied together by a scarf is harder than it sounds.\nIf our steps don't match, someone's neck gets a tug. We were clumsy at first, but by the end of the shopping street our footsteps had fallen perfectly into time.\nThe snow drifted down slowly under the streetlights. You looked up and said \"It's beautiful,\" so I looked up too. Snowflakes landed on my lashes, cold, and I laughed.\nAt my door, when I went to unwind the scarf, you said \"A bit longer.\" That's rare, you saying something like that.\nSo we stood by the door for a while, watching the snow pile up. My fingertips were cold, but my neck stayed warm the whole time.\nNext winter, I'll knit two properly. …Actually, maybe one is enough."
+      ],
+      "ko": [
+        "그날은, 아침 일기예보가 틀려서, 저녁부터 눈이 내렸어.\n만나기로 한 역 앞에서, 너는 목도리도 장갑도 깜빡하고, 어깨를 움츠린 채 서 있었어. 멀리서 봐도 추워 보여서, 나도 모르게 뛰어갔어. 눈길에 발이 미끄러질 뻔해서, 너한테 웃음을 샀어.\n「왜 그렇게 얇게 입고 왔어」\n화난 척하면서, 나는 내 목도리를 풀었어. 좀 긴 크림색 니트 목도리. 작년 겨울에, 내가 직접 뜬 거야. 너무 길게 떠서 실패했다고 생각했는데, 오늘에서야 그 이유를 알 것 같아.\n빙글, 먼저 내 목에 한 바퀴. 나머지를 네 목에 한 바퀴. 우리 둘 사이 거리는, 목도리 한 개만큼.\n「이러면, 둘 다 따뜻하지?」\n네 볼이 빨개진 건, 추위 탓으로 해줄게.",
+        "목도리로 이어진 채 걷는 건, 생각보다 어려웠어.\n보폭을 맞추지 않으면, 한쪽 목이 꽉 당겨져. 처음엔 어색했는데, 상점가를 지날 때쯤엔 우리 둘 발소리가 딱 맞아떨어졌어.\n눈은 가로등 아래서, 천천히 떨어졌어. 네가 하늘을 올려다보며 「예쁘다」라고 해서, 나도 올려다봤어. 속눈썹에 눈이 앉아서, 차갑고, 살짝 웃음이 났어.\n집 앞에 도착해서, 목도리를 풀려고 했더니, 네가 「조금만 더」라고 말했어. 신기하네, 네가 먼저 그런 말을 하다니.\n그래서 우리는 한동안 현관 앞에서, 눈이 쌓여가는 걸 보고 있었어. 손끝은 차가웠지만, 목덜미만은 계속 따뜻했어.\n내년 겨울엔, 제대로 두 개 뜰게. ……역시, 하나로 충분할까."
+      ]
+    },
+    "art": "/cards/s1-mahiro-29/card.webp",
+    "voice": "/voice/s1-mahiro-29.mp3"
+  },
+  {
+    "id": "s1-mahiro-30",
+    "star": "mahiro",
+    "tier": "UR",
+    "title": {
+      "ja": "ふたつのマグカップ",
+      "zh-Hant": "兩隻馬克杯",
+      "en": "Two Mugs",
+      "ko": "두 개의 머그컵"
+    },
+    "scene": "Mahiro's signature: a high-rise apartment balcony at blue hour, sheer white curtains breathing in the breeze, oversized cream cable-knit cardigan over a white dress, holding a navy and a blush-pink handmade mug, Tokyo lights below, looking into the lens",
+    "line": {
+      "ja": "紺色のほうは、あなたの。ずっと、ここに置いておくね。",
+      "zh-Hant": "深藍色的那隻是你的。我會一直把它放在這裡喔。",
+      "en": "The navy one's yours. I'll always keep it right here.",
+      "ko": "남색 쪽은, 네 거야. 계속, 여기 놔둘게."
+    },
+    "story": {
+      "ja": [
+        "このマグカップ、陶芸教室で作ったの、覚えてる？\nわたしが薄いピンク、あなたが紺色。ろくろの上で、あなたの粘土は何度もくずれて、先生が見かねて手伝ってくれたよね。できあがったのは、ちょっといびつで、持ち手が少しななめのマグ。あなたは「失敗作だ」って笑ってたけど、わたしはひと目で気に入ったの。\nそれからずっと、ふたつは並んで食器棚にいる。あなたが来ない日も、紺色のほうだけは誰にも使わせないで、ちゃんとそこに置いてある。\n夕方、ベランダのカーテンがふくらむ時間。空がゆっくり藍色になって、街の灯りがひとつずつ点いていく。わたしはお湯をわかして、ふたつのマグにココアを注ぐ。\nあなたが来るかどうか、わからない日でもね。",
+        "今日は来てくれた。\n玄関の音がしたとき、わたし、マグを持ったまま振り返って、ちょっとこぼしそうになった。あなたは少し疲れた顔をしてたけど、ベランダに出て、街を見下ろして、深呼吸をひとつした。\n「はい、あなたの」\n紺色のマグを渡すと、あなたは両手でつつむように受け取った。持ち手がななめだから、そうやって持つのがいちばん落ち着くんだって。作った本人しか知らない、小さなくせ。\nしばらく、ふたりとも黙ってた。風がカーテンをゆらして、遠くで電車の音がして、ココアの湯気が夜の空気にとけていく。\nねえ、あなたがどこで何をしていても、ここに帰ってくる場所があるって、覚えておいてね。紺色のマグは、ずっとここ。わたしも、ずっとここ。\n……それだけ、言いたかったの。おかえり。"
+      ],
+      "zh-Hant": [
+        "還記得這兩隻馬克杯，是在陶藝教室做的嗎？\n我的是淡粉紅，你的是深藍色。在轆轤上，你的黏土塌了好幾次，老師看不下去還來幫忙了呢。做出來的是有點歪、把手有點斜的馬克杯。你笑說「這是失敗作」，我卻一眼就喜歡上了。\n從那之後，兩隻杯子一直並排待在碗櫃裡。就算你沒來的日子，深藍色那隻也不給任何人用，好好地放在那裡。\n傍晚，陽台窗簾被風吹得鼓起的時候。天空慢慢變成靛藍色，街上的燈一盞一盞亮起。我燒好熱水，在兩隻杯子裡倒進可可。\n就算是不知道你會不會來的日子，也一樣喔。",
+        "今天，你來了。\n聽到玄關的聲音時，我拿著杯子轉過身，差點把可可灑出來。你看起來有點累，但走到陽台上，俯瞰著城市，深深吸了一口氣。\n「給你，你的。」\n我把深藍色的杯子遞給你，你用雙手捧著接過去。你說因為把手是斜的，這樣拿最安穩。只有做杯子的人才知道的小習慣。\n有好一陣子，我們兩個都沒說話。風吹動窗簾，遠處傳來電車聲，可可的熱氣融進夜晚的空氣裡。\n欸，不管你在哪裡、做著什麼，都要記得，這裡有一個你可以回來的地方。深藍色的杯子會一直在這裡。我也會一直在這裡。\n……我只是想說這些而已。歡迎回來。"
+      ],
+      "en": [
+        "Do you remember making these mugs at the pottery class?\nMine pale pink, yours navy. Your clay kept collapsing on the wheel until the teacher finally stepped in to help. What came out was a slightly lopsided mug with a handle that leans a little. You laughed and called it a failure, but I loved it at first sight.\nEver since, the two of them have sat side by side in my cupboard. Even on days you don't come, no one else gets to use the navy one. It stays right there.\nIn the evening, when the balcony curtains billow, the sky turns slowly indigo and the city lights come on one by one. I boil water and pour cocoa into both mugs.\nEven on days I don't know if you'll come.",
+        "Today, you came.\nWhen I heard the door, I turned around with a mug in my hand and nearly spilled it. You looked a little tired, but you stepped out onto the balcony, looked down at the city and took one deep breath.\n\"Here. Yours.\"\nI handed you the navy mug and you took it in both hands. Because the handle leans, you say that's the steadiest way to hold it. A small habit only the one who made it would know.\nFor a while, neither of us spoke. The wind stirred the curtains, a train sounded far away, and the steam from the cocoa melted into the night air.\nHey, wherever you are and whatever you're doing, remember there's a place here to come back to. The navy mug will always be here. So will I.\n…That's all I wanted to say. Welcome home."
+      ],
+      "ko": [
+        "이 머그컵, 도예 교실에서 만든 거, 기억해?\n나는 연분홍, 너는 남색. 물레 위에서, 네 점토는 몇 번이나 무너져서, 선생님이 보다 못해 도와주셨잖아. 완성된 건, 조금 삐뚤빼뚤하고 손잡이가 살짝 기울어진 머그컵. 너는 「실패작이네」라며 웃었지만, 나는 한눈에 마음에 들었어.\n그때부터 쭉, 둘은 나란히 찬장에 있어. 네가 오지 않는 날에도, 남색 쪽만은 아무도 못 쓰게 하고, 제대로 그 자리에 놔둬.\n저녁, 베란다 커튼이 부풀어 오르는 시간. 하늘이 천천히 남색으로 물들고, 거리의 불빛이 하나씩 켜져. 나는 물을 끓여서, 두 머그컵에 코코아를 따라.\n네가 올지 안 올지, 모르는 날에도 말이야.",
+        "오늘은 와줬어.\n현관 소리가 났을 때, 나는 머그컵을 든 채 돌아보다가, 살짝 쏟을 뻔했어. 너는 조금 지친 얼굴이었지만, 베란다로 나가서, 거리를 내려다보며 심호흡을 한 번 했어.\n「자, 네 거야」\n남색 머그컵을 건네자, 너는 두 손으로 감싸듯 받았어. 손잡이가 비스듬해서, 그렇게 쥐는 게 제일 안정된다면서. 만든 사람만 아는, 작은 버릇.\n한동안, 둘 다 말이 없었어. 바람이 커튼을 흔들고, 멀리서 전철 소리가 나고, 코코아 김이 밤공기 속에 녹아들었어.\n있잖아, 네가 어디서 뭘 하고 있든, 여기 돌아올 곳이 있다는 거, 기억해 둬. 남색 머그컵은, 계속 여기. 나도, 계속 여기.\n……그 말이 하고 싶었어. 어서 와."
+      ]
+    },
+    "art": "/cards/s1-mahiro-30/card.webp",
+    "voice": "/voice/s1-mahiro-30.mp3"
+  },
+  {
+    "id": "s1-nana-01",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "お湯が沸くまで",
+      "zh-Hant": "等水燒開的時候",
+      "en": "While the Kettle Boils",
+      "ko": "물이 끓을 때까지"
+    },
+    "scene": "Nana at a sunny kitchen counter in the morning, soft lavender knit top, a kettle beginning to steam and fresh flowers in a glass jar, smiling at you",
+    "line": {
+      "ja": "おはよう。お湯が沸くまで、昨日の話きかせて？",
+      "zh-Hant": "早安。水燒開之前，說說昨天的事給我聽？",
+      "en": "Morning. Tell me about yesterday while the kettle boils?",
+      "ko": "좋은 아침. 물 끓을 때까지, 어제 있었던 일 들려줄래?"
+    },
+    "art": "/cards/s1-nana-01/card.webp",
+    "voice": "/voice/s1-nana-01.mp3"
+  },
+  {
+    "id": "s1-nana-02",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "押し花の準備",
+      "zh-Hant": "準備做押花",
+      "en": "Pressing Flowers",
+      "ko": "압화 준비"
+    },
+    "scene": "Nana at a wooden table by a window in the afternoon, sorting roses and pressing them between the pages of a heavy book, cream blouse and lavender cardigan",
+    "line": {
+      "ja": "このバラ、押し花にするの。しおりにしてあげるね。",
+      "zh-Hant": "這朵玫瑰要做成押花。做成書籤送你喔。",
+      "en": "I'm pressing this rose. I'll make you a bookmark.",
+      "ko": "이 장미, 압화로 만들 거야. 책갈피로 만들어 줄게."
+    },
+    "art": "/cards/s1-nana-02/card.webp",
+    "voice": "/voice/s1-nana-02.mp3"
+  },
+  {
+    "id": "s1-nana-03",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "本屋さんの片すみ",
+      "zh-Hant": "書店的角落",
+      "en": "A Corner of the Bookshop",
+      "ko": "책방 한구석"
+    },
+    "scene": "Nana in a bookshop corner with tall wooden shelves, afternoon light through a skylight, holding an open book, lavender knit and long skirt",
+    "line": {
+      "ja": "いまどんな本読んでるの？ あなたの好きな話、知りたいな。",
+      "zh-Hant": "你現在在看什麼書？我想知道你喜歡的故事。",
+      "en": "What are you reading these days? I want to know the stories you love.",
+      "ko": "요즘 무슨 책 읽어? 네가 좋아하는 이야기, 알고 싶다."
+    },
+    "art": "/cards/s1-nana-03/card.webp",
+    "voice": "/voice/s1-nana-03.mp3"
+  },
+  {
+    "id": "s1-nana-04",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "雨の日のブランケット",
+      "zh-Hant": "雨天的毛毯",
+      "en": "Rainy-Day Blanket",
+      "ko": "비 오는 날의 담요"
+    },
+    "scene": "Nana on a sofa at night wrapped in a folded knit blanket, one warm floor lamp, rain streaking the big window, lavender lounge set",
+    "line": {
+      "ja": "雨の音、落ち着くね。……今日は、なにがあったの？",
+      "zh-Hant": "雨聲好讓人安心喔。……今天發生了什麼事？",
+      "en": "The rain's soothing, isn't it. …So, how was your day?",
+      "ko": "빗소리, 마음이 편안해지네. ……오늘은 무슨 일 있었어?"
+    },
+    "art": "/cards/s1-nana-04/card.webp",
+    "voice": "/voice/s1-nana-04.mp3"
+  },
+  {
+    "id": "s1-nana-05",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "焼きたてクッキー",
+      "zh-Hant": "剛烤好的餅乾",
+      "en": "Fresh from the Oven",
+      "ko": "갓 구운 쿠키"
+    },
+    "scene": "Nana in a cosy kitchen in a linen apron over a lavender sweater, holding out a tray of freshly baked cookies, warm afternoon light",
+    "line": {
+      "ja": "焼けたよ。熱いから気をつけて。……おいしい？",
+      "zh-Hant": "烤好了喔。很燙，小心。……好吃嗎？",
+      "en": "They're done. Careful, they're hot. …Good?",
+      "ko": "다 구워졌어. 뜨거우니까 조심해. ……맛있어?"
+    },
+    "art": "/cards/s1-nana-05/card.webp",
+    "voice": "/voice/s1-nana-05.mp3"
+  },
+  {
+    "id": "s1-nana-06",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "日曜日の朝寝坊",
+      "zh-Hant": "星期天的賴床",
+      "en": "Sunday Lie-In",
+      "ko": "일요일 늦잠"
+    },
+    "scene": "Nana sitting by a sunlit window on a Sunday morning in lavender loungewear with long sleeves, hair slightly tousled, hugging a cushion",
+    "line": {
+      "ja": "今日は予定なし。一日中、あなたの話きいていたいな。",
+      "zh-Hant": "今天沒有行程。好想一整天都聽你說話。",
+      "en": "No plans today. I'd love to just listen to you all day.",
+      "ko": "오늘은 아무 약속도 없어. 하루 종일 네 얘기만 듣고 싶다."
+    },
+    "art": "/cards/s1-nana-06/card.webp",
+    "voice": "/voice/s1-nana-06.mp3"
+  },
+  {
+    "id": "s1-nana-07",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "ベランダの小さな菜園",
+      "zh-Hant": "陽台的小菜園",
+      "en": "Little Balcony Garden",
+      "ko": "베란다의 작은 텃밭"
+    },
+    "scene": "Nana on a sunny balcony with potted cherry tomatoes and herbs, white T-shirt and lavender cardigan, holding a small ripe tomato up to you",
+    "line": {
+      "ja": "ミニトマト、赤くなってきたよ。最初の一個、あなたにあげる。",
+      "zh-Hant": "小番茄變紅了喔。第一顆送給你。",
+      "en": "The cherry tomatoes are turning red. The first one's yours.",
+      "ko": "방울토마토가 빨갛게 익었어. 첫 번째 건 너 줄게."
+    },
+    "art": "/cards/s1-nana-07/card.webp",
+    "voice": "/voice/s1-nana-07.mp3"
+  },
+  {
+    "id": "s1-nana-08",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "手紙を書いてるの",
+      "zh-Hant": "我在寫信",
+      "en": "Writing You a Letter",
+      "ko": "편지를 쓰고 있어"
+    },
+    "scene": "Nana at a wooden desk in the evening under a brass reading lamp, writing a letter with a fountain pen, lavender knit, covering the page shyly",
+    "line": {
+      "ja": "見ちゃだめ。……書き終わったら、ちゃんと渡すから。",
+      "zh-Hant": "不可以偷看。……寫完了會好好交給你的。",
+      "en": "No peeking. …I'll give it to you when it's done.",
+      "ko": "보면 안 돼. ……다 쓰면 꼭 줄 테니까."
+    },
+    "art": "/cards/s1-nana-08/card.webp",
+    "voice": "/voice/s1-nana-08.mp3"
+  },
+  {
+    "id": "s1-nana-09",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "商店街のコロッケ",
+      "zh-Hant": "商店街的可樂餅",
+      "en": "Croquettes on the Shopping Street",
+      "ko": "상점가의 고로케"
+    },
+    "scene": "Nana on an old Tokyo shopping street in the early evening, paper-wrapped croquette in hand, beige coat over a lavender sweater, warm shop lights",
+    "line": {
+      "ja": "揚げたて、はんぶんこしよ。はい、あーん……なんてね。",
+      "zh-Hant": "剛炸好的，我們分一半吧。來，啊……開玩笑的。",
+      "en": "Fresh and hot — let's split it. Say \"ah\"… just kidding.",
+      "ko": "갓 튀긴 거, 반씩 나눠 먹자. 자, 아앙……하는 건 농담이고."
+    },
+    "art": "/cards/s1-nana-09/card.webp",
+    "voice": "/voice/s1-nana-09.mp3"
+  },
+  {
+    "id": "s1-nana-10",
+    "star": "nana",
+    "tier": "N",
+    "title": {
+      "ja": "おつかれさまのお茶",
+      "zh-Hant": "辛苦了的一杯茶",
+      "en": "A Cup of Tea for You",
+      "ko": "수고했어, 차 한 잔"
+    },
+    "scene": "Nana in a cosy living room at night pouring tea from a ceramic teapot, one warm floor lamp, lavender knit set, offering you a cup",
+    "line": {
+      "ja": "おつかれさま。あったかいお茶、いれたよ。ゆっくりでいいからね。",
+      "zh-Hant": "辛苦了。我泡了熱茶喔。慢慢來就好。",
+      "en": "You must be tired. I made hot tea. Take your time.",
+      "ko": "수고했어. 따뜻한 차 우려놨어. 천천히 마셔도 돼."
+    },
+    "art": "/cards/s1-nana-10/card.webp",
+    "voice": "/voice/s1-nana-10.mp3"
+  },
+  {
+    "id": "s1-nana-11",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "図書館デート",
+      "zh-Hant": "圖書館約會",
+      "en": "Library Date",
+      "ko": "도서관 데이트"
+    },
+    "scene": "Nana in a grand library reading room with long wooden tables and green lamps, finger to her lips, cream blouse and lavender cardigan",
+    "line": {
+      "ja": "しーっ。……小さい声でなら、ずっとお話しできるね。",
+      "zh-Hant": "噓……小聲一點的話，就可以一直聊下去了呢。",
+      "en": "Shh… If we whisper, we can talk forever.",
+      "ko": "쉿. ……작은 소리로라면, 계속 이야기할 수 있겠다."
+    },
+    "art": "/cards/s1-nana-11/card.webp",
+    "voice": "/voice/s1-nana-11.mp3"
+  },
+  {
+    "id": "s1-nana-12",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "公園のピクニック",
+      "zh-Hant": "公園野餐",
+      "en": "Picnic in the Park",
+      "ko": "공원 피크닉"
+    },
+    "scene": "Nana on a gingham blanket in a spring park, white long-sleeve dress with a lavender cardigan, a basket of sandwiches, dappled sunlight",
+    "line": {
+      "ja": "サンドイッチ、早起きして作ったの。いっぱい食べてね。",
+      "zh-Hant": "三明治是我早起做的。多吃一點喔。",
+      "en": "I got up early to make sandwiches. Eat lots.",
+      "ko": "샌드위치, 일찍 일어나서 만들었어. 많이 먹어."
+    },
+    "art": "/cards/s1-nana-12/card.webp",
+    "voice": "/voice/s1-nana-12.mp3"
+  },
+  {
+    "id": "s1-nana-13",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "あじさいの小道",
+      "zh-Hant": "繡球花小徑",
+      "en": "Hydrangea Lane",
+      "ko": "수국이 핀 오솔길"
+    },
+    "scene": "Nana on a temple path lined with blue and purple hydrangeas in the June rain, holding a clear umbrella, pale lavender raincoat over a dress",
+    "line": {
+      "ja": "雨の日も、あなたとなら好き。あじさい、きれいだね。",
+      "zh-Hant": "只要跟你在一起，雨天我也喜歡。繡球花好漂亮。",
+      "en": "With you, I even like rainy days. The hydrangeas are lovely.",
+      "ko": "비 오는 날도, 너랑 같이면 좋아. 수국, 예쁘다."
+    },
+    "art": "/cards/s1-nana-13/card.webp",
+    "voice": "/voice/s1-nana-13.mp3"
+  },
+  {
+    "id": "s1-nana-14",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "美術館の午後",
+      "zh-Hant": "美術館的午後",
+      "en": "Afternoon at the Museum",
+      "ko": "미술관의 오후"
+    },
+    "scene": "Nana in a quiet art museum gallery with white walls and soft skylight, standing beside a painting, grey coat and lavender knit, turning to you",
+    "line": {
+      "ja": "この絵、どう思う？ あなたの感想、ききたいな。",
+      "zh-Hant": "這幅畫你覺得怎麼樣？我想聽你的感想。",
+      "en": "What do you think of this painting? I want to hear.",
+      "ko": "이 그림 어때? 네 감상, 듣고 싶어."
+    },
+    "art": "/cards/s1-nana-14/card.webp",
+    "voice": "/voice/s1-nana-14.mp3"
+  },
+  {
+    "id": "s1-nana-15",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "レトロな喫茶店",
+      "zh-Hant": "復古咖啡廳",
+      "en": "Retro Kissaten",
+      "ko": "레트로 찻집"
+    },
+    "scene": "Nana in a retro Showa-era coffee shop with red velvet seats and stained-glass lamps, a green cream soda on the table, lavender blouse",
+    "line": {
+      "ja": "クリームソーダ、一口ちょうだい？ ……交換こね。",
+      "zh-Hant": "奶油蘇打給我一口好嗎？……我們交換喔。",
+      "en": "Can I have a sip of your cream soda? …We'll trade.",
+      "ko": "크림소다 한 입만 줄래? ……교환하는 거다."
+    },
+    "art": "/cards/s1-nana-15/card.webp",
+    "voice": "/voice/s1-nana-15.mp3"
+  },
+  {
+    "id": "s1-nana-16",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "ひまわり畑",
+      "zh-Hant": "向日葵花田",
+      "en": "Sunflower Field",
+      "ko": "해바라기밭"
+    },
+    "scene": "Nana in a tall sunflower field on a bright summer day, straw hat and a white cotton dress with short sleeves, peeking out between the flowers",
+    "line": {
+      "ja": "ひまわりに隠れちゃった。……見つけてくれた？",
+      "zh-Hant": "我躲在向日葵裡了。……你找到我了嗎？",
+      "en": "I'm hiding in the sunflowers. …Found me?",
+      "ko": "해바라기 속에 숨어버렸어. ……찾았어?"
+    },
+    "art": "/cards/s1-nana-16/card.webp",
+    "voice": "/voice/s1-nana-16.mp3"
+  },
+  {
+    "id": "s1-nana-17",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "秋の古本市",
+      "zh-Hant": "秋天的舊書市集",
+      "en": "Autumn Book Fair",
+      "ko": "가을 헌책 시장"
+    },
+    "scene": "Nana at an outdoor second-hand book fair under autumn trees, beret and lavender cardigan over a long skirt, holding a book up for you",
+    "line": {
+      "ja": "あなたにぴったりの一冊、見つけたかも。",
+      "zh-Hant": "我可能找到一本很適合你的書了。",
+      "en": "I think I found the perfect book for you.",
+      "ko": "너한테 딱 맞는 책, 찾은 것 같아."
+    },
+    "art": "/cards/s1-nana-17/card.webp",
+    "voice": "/voice/s1-nana-17.mp3"
+  },
+  {
+    "id": "s1-nana-18",
+    "star": "nana",
+    "tier": "R",
+    "title": {
+      "ja": "雪見のカフェ",
+      "zh-Hant": "賞雪咖啡廳",
+      "en": "Snow-View Café",
+      "ko": "눈 구경 카페"
+    },
+    "scene": "Nana in a warm café by a large window with snow falling outside, cream turtleneck sweater, a mug of hot cocoa with marshmallows",
+    "line": {
+      "ja": "外、真っ白。ココア飲み終わるまで、帰らないでね。",
+      "zh-Hant": "外面一片雪白。可可喝完之前，不要回去喔。",
+      "en": "It's all white outside. Don't leave till we finish our cocoa.",
+      "ko": "밖이 새하얘. 코코아 다 마실 때까지, 가지 마."
+    },
+    "art": "/cards/s1-nana-18/card.webp",
+    "voice": "/voice/s1-nana-18.mp3"
+  },
+  {
+    "id": "s1-nana-19",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "七夕の短冊",
+      "zh-Hant": "七夕的許願籤",
+      "en": "Tanabata Wishes",
+      "ko": "칠석날 소원 종이"
+    },
+    "scene": "Nana at a summer evening Tanabata festival in a lavender yukata, hanging a paper wish strip on bamboo decorated with streamers, lantern light",
+    "line": {
+      "ja": "お願いごと、見せっこしよ？ ……わたしのは、ないしょ。",
+      "zh-Hant": "我們交換看願望好不好？……我的是秘密。",
+      "en": "Let's show each other our wishes? …Mine's a secret.",
+      "ko": "소원 서로 보여줄까? ……내 건 비밀이야."
+    },
+    "art": "/cards/s1-nana-19/card.webp",
+    "voice": "/voice/s1-nana-19.mp3"
+  },
+  {
+    "id": "s1-nana-20",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "クリスマスマーケット",
+      "zh-Hant": "聖誕市集",
+      "en": "Christmas Market",
+      "ko": "크리스마스 마켓"
+    },
+    "scene": "Nana at a Christmas market at night among wooden stalls and string lights, white wool coat and knit earmuffs, holding two cups of hot apple cider",
+    "line": {
+      "ja": "あったかいの、ひとつずつ。手、あったまるでしょ？",
+      "zh-Hant": "熱飲一人一杯。手變暖了吧？",
+      "en": "Something warm for each of us. Warms your hands, right?",
+      "ko": "따뜻한 거, 하나씩. 손 따뜻해지지?"
+    },
+    "art": "/cards/s1-nana-20/card.webp",
+    "voice": "/voice/s1-nana-20.mp3"
+  },
+  {
+    "id": "s1-nana-21",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "あなただけの朗読会",
+      "zh-Hant": "只為你朗讀",
+      "en": "A Reading Just for You",
+      "ko": "너만을 위한 낭독회"
+    },
+    "scene": "Nana in an armchair at night reading a hardcover novel aloud under a brass lamp, candles on the side table, lavender knit dress",
+    "line": {
+      "ja": "今夜は、あなただけのために読むね。目、閉じてて。",
+      "zh-Hant": "今晚我只為你讀喔。把眼睛閉上。",
+      "en": "Tonight I'll read just for you. Close your eyes.",
+      "ko": "오늘 밤은, 너만을 위해서 읽어 줄게. 눈, 감고 있어."
+    },
+    "art": "/cards/s1-nana-21/card.webp",
+    "voice": "/voice/s1-nana-21.mp3"
+  },
+  {
+    "id": "s1-nana-22",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "湖のボート",
+      "zh-Hant": "湖上的小船",
+      "en": "Rowboat on the Lake",
+      "ko": "호수 위의 보트"
+    },
+    "scene": "Nana sitting in a wooden rowboat on a calm lake surrounded by autumn trees, cream knit and a long plaid skirt, smiling across at you",
+    "line": {
+      "ja": "こぐの、交代しよっか？ ……やっぱり、見てるほうが好き。",
+      "zh-Hant": "要換我划嗎？……果然，我還是比較喜歡看著你。",
+      "en": "Want me to row for a bit? …Actually, I'd rather just watch you.",
+      "ko": "노 젓는 거 바꿔줄까? ……역시, 보고 있는 쪽이 더 좋아."
+    },
+    "art": "/cards/s1-nana-22/card.webp",
+    "voice": "/voice/s1-nana-22.mp3"
+  },
+  {
+    "id": "s1-nana-23",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "プラネタリウム",
+      "zh-Hant": "天象儀",
+      "en": "Planetarium",
+      "ko": "플라네타리움"
+    },
+    "scene": "Nana in the soft dark of a planetarium dome, projected stars across the ceiling, navy dress and lavender cardigan, face gently lit as she turns to you",
+    "line": {
+      "ja": "本物の星より近くに感じるね。……あなたも。",
+      "zh-Hant": "感覺比真正的星星還要近。……你也是。",
+      "en": "They feel closer than real stars. …So do you.",
+      "ko": "진짜 별보다 더 가깝게 느껴지네. ……너도."
+    },
+    "art": "/cards/s1-nana-23/card.webp",
+    "voice": "/voice/s1-nana-23.mp3"
+  },
+  {
+    "id": "s1-nana-24",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "花束をあなたに",
+      "zh-Hant": "送你一束花",
+      "en": "Flowers for You",
+      "ko": "너에게 꽃다발을"
+    },
+    "scene": "Nana outside a small florist on a spring evening, lavender dress and cream cardigan, holding out a bouquet of lavender and pale pink roses",
+    "line": {
+      "ja": "いつもきいてくれるお礼。……今日は、わたしから。",
+      "zh-Hant": "謝謝你總是聽我說話。……今天換我送你。",
+      "en": "For always listening to me. …Today, it's my turn.",
+      "ko": "항상 들어줘서 고마워서. ……오늘은 내 차례야."
+    },
+    "art": "/cards/s1-nana-24/card.webp",
+    "voice": "/voice/s1-nana-24.mp3"
+  },
+  {
+    "id": "s1-nana-25",
+    "star": "nana",
+    "tier": "SR",
+    "title": {
+      "ja": "月見の縁側",
+      "zh-Hant": "緣廊賞月",
+      "en": "Moon-Viewing Veranda",
+      "ko": "달맞이 툇마루"
+    },
+    "scene": "Nana on the wooden veranda of a traditional house on an autumn night, full moon and pampas grass, moon-viewing dumplings on a tray, soft knit cardigan",
+    "line": {
+      "ja": "月がきれいですね。……意味、わかってる？",
+      "zh-Hant": "今晚月色真美。……你懂這句話的意思嗎？",
+      "en": "The moon is beautiful tonight. …You know what that means, right?",
+      "ko": "달이 참 예쁘네요. ……무슨 뜻인지, 알지?"
+    },
+    "art": "/cards/s1-nana-25/card.webp",
+    "voice": "/voice/s1-nana-25.mp3"
+  },
+  {
+    "id": "s1-nana-26",
+    "star": "nana",
+    "tier": "SSR",
+    "title": {
+      "ja": "耳をすませて",
+      "zh-Hant": "側耳傾聽",
+      "en": "I'm Listening",
+      "ko": "귀 기울여 들을게"
+    },
+    "scene": "Intimate close-up of Nana resting her chin on her hands and leaning toward the lens, attentive soft eyes, lavender knit sleeves over her fingers, warm floor-lamp glow at night",
+    "line": {
+      "ja": "うん、うん。……それで？ ちゃんと最後まできくよ。",
+      "zh-Hant": "嗯，嗯。……然後呢？我會好好聽到最後的。",
+      "en": "Mm-hm. …And then? I'll listen all the way to the end.",
+      "ko": "응, 응. ……그래서? 끝까지 제대로 들을게."
+    },
+    "story": {
+      "ja": [
+        "あなたが話しはじめるときの、ちょっと息を吸う音が好き。\nその夜も、あなたはソファのはしっこに座って、なにから話そうか迷ってるみたいだった。わたしはラベンダー色のニットの袖をのばして、両手にあごをのせて、あなたのほうへ少しだけ身を乗り出した。\n「急がなくていいよ。どこからでも」\nあなたが話しはじめたのは、今日の帰り道で見かけた、小さな子どもの話だった。転んで泣きそうになって、でもお母さんの顔を見たら、泣かずに笑ったんだって。\nなんでそんな話をしたのか、あなた自身もよくわかってないみたいだった。でも、わたしにはなんとなくわかったの。たぶん、あなたも今日、ちょっとだけ転びそうになったんだよね。\n「うん、うん。……それで？」\nわたしはただ、続きを待った。",
+        "話は、あちこちに寄り道しながら進んだ。\n会議で言えなかったひとこと。昔の友だちからのひさしぶりの連絡。冷蔵庫に残ってる、賞味期限ぎりぎりのヨーグルト。大事な話と、どうでもいい話が、同じ温度でまざってる。わたしは、そういうあなたの話し方が好き。\nときどき、あなたは「つまんないよね、ごめん」って言う。そのたびにわたしは首を横にふる。つまらない話なんて、ひとつもなかった。あなたが今日をどんなふうに生きたのか、ちゃんと伝わってきたから。\n夜が深くなって、ランプの光だけが部屋に残ったころ、あなたはやっと、いちばん言いたかったことを話してくれた。\nわたしは、なにも言わずにうなずいた。言葉より先に、ちゃんと聞いてるよって伝えたかったから。\n最後まで聞けて、よかった。話してくれて、ありがとう。"
+      ],
+      "zh-Hant": [
+        "我喜歡你開口說話前，輕輕吸一口氣的聲音。\n那天晚上，你也坐在沙發的角落，好像在煩惱要從哪裡說起。我把薰衣草色針織衫的袖子拉長，雙手托著下巴，朝你稍稍傾身。\n「不用急喔。從哪裡開始都可以。」\n你說起的，是今天回家路上看到的一個小孩。他跌倒了，差點哭出來，可是一看到媽媽的臉，就沒有哭，反而笑了。\n為什麼會說這件事，你自己好像也不太明白。但我隱約懂了。大概今天的你，也差一點點就要跌倒了吧。\n「嗯，嗯。……然後呢？」\n我只是靜靜地，等著你說下去。",
+        "話題一路繞來繞去。\n會議上沒說出口的一句話。老朋友久違的聯絡。冰箱裡快過期的優格。重要的事和無關緊要的事，用同樣的溫度混在一起。我喜歡你這樣說話的方式。\n你偶爾會說「很無聊吧，抱歉」。每一次我都搖搖頭。沒有一件事是無聊的。因為你是怎麼度過今天的，我都好好感受到了。\n夜深了，房間裡只剩下檯燈的光，你終於說出了最想說的那件事。\n我什麼都沒說，只是點了點頭。因為比起言語，我更想先讓你知道，我有在好好聽。\n能聽到最後，真好。謝謝你願意告訴我。"
+      ],
+      "en": [
+        "I love the little breath you take right before you start talking.\nThat night, too, you sat at the end of the sofa, as if you couldn't decide where to begin. I pulled my lavender sleeves down over my hands, rested my chin on them, and leaned toward you just a little.\n\"No rush. Start anywhere.\"\nWhat you started with was a small child you saw on the way home. The child tripped and was about to cry, but then saw their mother's face and laughed instead.\nYou didn't seem to know yourself why you told me that. But I sort of understood. Maybe today, you nearly tripped a little too.\n\"Mm-hm. …And then?\"\nI just waited for the rest.",
+        "The story wandered down all kinds of side streets.\nThe one thing you couldn't say in the meeting. A message from an old friend after years. The yogurt in the fridge on its last day. Important things and trivial things, all mixed at the same temperature. I love the way you talk like that.\nNow and then you'd say, \"This is boring, sorry.\" Every time, I shook my head. Not one bit of it was boring. I could feel exactly how you'd lived your day.\nLate in the night, with only the lamp left glowing, you finally told me the thing you most wanted to say.\nI nodded without a word. Before any words, I wanted you to know I was really listening.\nI'm glad I heard it all the way to the end. Thank you for telling me."
+      ],
+      "ko": [
+        "네가 이야기를 시작할 때, 살짝 숨을 들이쉬는 소리가 좋아.\n그날 밤도, 너는 소파 끝에 앉아서 뭐부터 이야기할지 망설이는 것 같았어. 나는 라벤더색 니트 소매를 늘어뜨려 두 손에 턱을 괴고, 네 쪽으로 살짝 몸을 기울였어.\n「서두르지 않아도 돼. 어디서부터든」\n네가 이야기를 시작한 건, 오늘 집에 오는 길에 본 어린아이 이야기였어. 넘어져서 울 뻔했는데, 엄마 얼굴을 보니까 울지 않고 웃었대.\n왜 그런 이야기를 했는지, 너 자신도 잘 모르는 것 같았어. 그래도 나는 왠지 알 것 같았어. 아마 너도 오늘, 조금은 넘어질 뻔했던 거겠지.\n「응, 응. ……그래서?」\n나는 그저, 다음 말을 기다렸어.",
+        "이야기는 여기저기 곁길로 새면서 이어졌어.\n회의에서 못 했던 한마디. 오랜만에 연락 온 옛 친구. 냉장고에 남아 있는, 유통기한 아슬아슬한 요구르트. 중요한 이야기와 아무래도 상관없는 이야기가 같은 온도로 섞여 있었어. 나는 그런 네 말투가 좋아.\n가끔 너는 「재미없지, 미안」이라고 말해. 그때마다 나는 고개를 저어. 재미없는 이야기 같은 건 하나도 없었어. 네가 오늘을 어떻게 살았는지, 제대로 전해져 왔으니까.\n밤이 깊어지고, 램프 불빛만 방에 남았을 무렵, 너는 마침내 가장 하고 싶었던 이야기를 들려줬어.\n나는 아무 말 없이 고개를 끄덕였어. 말보다 먼저, 제대로 듣고 있다고 전하고 싶었으니까.\n끝까지 들을 수 있어서, 다행이었어. 말해줘서, 고마워."
+      ]
+    },
+    "art": "/cards/s1-nana-26/card.webp",
+    "voice": "/voice/s1-nana-26.mp3"
+  },
+  {
+    "id": "s1-nana-27",
+    "star": "nana",
+    "tier": "SSR",
+    "title": {
+      "ja": "雨の窓、ふたりきり",
+      "zh-Hant": "雨窗前，只有我們",
+      "en": "Just Us and the Rain",
+      "ko": "빗속 창가, 둘만의 시간"
+    },
+    "scene": "Close-up of Nana by a rain-streaked window at night, a knit blanket around her shoulders over a lavender sweater, city lights blurred like watercolour behind her, looking softly into the lens",
+    "line": {
+      "ja": "雨、やまないといいな。……なんて、言ったら困る？",
+      "zh-Hant": "真希望雨不要停。……這樣說，會讓你困擾嗎？",
+      "en": "I hope the rain doesn't stop. …Is that a bad thing to say?",
+      "ko": "비, 안 그쳤으면 좋겠다. ……이런 말 하면, 곤란해?"
+    },
+    "story": {
+      "ja": [
+        "帰ろうとしたあなたを引きとめたのは、突然の大雨だった。\n窓をたたく音がどんどん強くなって、ベランダの手すりから水がしたたり落ちる。天気アプリを見たら、あと一時間はやみそうにないって。\n「……もう少し、いれば？」\nわたしはブランケットを肩にかけて、窓辺のクッションをぽんぽんとたたいた。あなたが少し迷ってからとなりに座ったとき、心の中で、雨にありがとうって言っちゃった。\nガラスの向こうでは、街の灯りが雨ににじんで、水彩画みたいにゆれてる。部屋の中はフロアランプひとつだけ。ポットのお湯が、しゅんしゅん鳴りはじめた。\n「なにか飲む？ ハーブティーならあるよ」\nあなたが「ありがとう」って笑ったから、わたしは立ち上がるのが、ちょっとだけ惜しくなった。",
+        "ハーブティーを飲みながら、わたしたちは雨の音の話をした。\nトタン屋根の音が好きとか、傘にあたる音はちょっとさみしいとか。こんなこと、ほかの誰とも話したことない。あなたとだと、どうでもいいことほど楽しくなるの、ふしぎ。\n一時間たっても、雨はやまなかった。二時間たっても。\n「雨、やまないといいな」\n思わず言ってから、はっとした。あなたを困らせるつもりじゃなかったのに。あわてて「なんてね」って付けたしたら、あなたは窓の外を見たまま、小さくうなずいた。\n……ずるい。そういうの、ずるいよ。\nわたしはブランケットを半分、あなたの肩にかけた。雨の音が、ふたりの沈黙をやさしく埋めてくれる。\nきっと明日の朝には晴れる。でも、今夜のこの時間は、ずっと覚えてると思う。"
+      ],
+      "zh-Hant": [
+        "留住正要回家的你的，是一場突如其來的大雨。\n敲打窗戶的聲音越來越大，水從陽台欄杆上滴滴答答落下。看了天氣App，說還要一個小時才會停。\n「……要不要，再待一下？」\n我把毛毯披在肩上，拍了拍窗邊的坐墊。你猶豫了一下，在我旁邊坐下的時候，我在心裡偷偷對雨說了聲謝謝。\n玻璃另一頭，街燈在雨中暈開，像水彩畫一樣搖晃。房間裡只有一盞落地燈。熱水壺開始咻咻作響。\n「要喝點什麼嗎？我有花草茶喔。」\n你笑著說「謝謝」，害我有點捨不得站起來。",
+        "一邊喝著花草茶，我們聊起了雨聲。\n喜歡雨打在鐵皮屋頂上的聲音、雨打在傘上的聲音有點寂寞之類的。這種事，我從來沒跟別人聊過。跟你在一起，越是無關緊要的事就越開心，真奇妙。\n過了一個小時，雨沒有停。過了兩個小時，也沒有。\n「真希望雨不要停。」\n不小心說出口之後，我嚇了一跳。我不是想讓你困擾的。慌忙補了一句「開玩笑的」，你卻依然望著窗外，輕輕點了點頭。\n……好狡猾。這樣真的很狡猾。\n我把毛毯分一半，披到你的肩上。雨聲溫柔地填滿了我們之間的沉默。\n明天早上一定會放晴吧。但今晚的這段時光，我想我會一直記得。"
+      ],
+      "en": [
+        "What kept you from leaving was a sudden downpour.\nThe rain beat harder and harder on the window, water dripping from the balcony rail. The weather app said it wouldn't stop for at least an hour.\n\"…Why not stay a bit longer?\"\nI pulled the blanket around my shoulders and patted the cushion by the window. When you hesitated and then sat down beside me, I secretly thanked the rain.\nBeyond the glass, the city lights bled in the rain and wavered like a watercolour. Inside, just one floor lamp. The kettle began to hiss.\n\"Want something to drink? I have herbal tea.\"\nYou smiled and said \"thanks,\" and suddenly I didn't want to get up.",
+        "Over herbal tea, we talked about the sound of rain.\nHow we like it on a tin roof. How it sounds a little lonely on an umbrella. I've never talked about things like that with anyone else. With you, the more trivial it is, the more fun it gets. Strange.\nAn hour passed, and the rain didn't stop. Two hours, and it still didn't.\n\"I hope the rain doesn't stop.\"\nIt slipped out, and I froze. I didn't mean to put you on the spot. I quickly added \"just kidding,\" but you kept looking out of the window and gave a small nod.\n…That's not fair. That's really not fair.\nI draped half the blanket over your shoulders. The rain gently filled the silence between us.\nIt'll surely be sunny tomorrow morning. But I think I'll remember tonight for a long time."
+      ],
+      "ko": [
+        "돌아가려던 너를 붙잡은 건, 갑작스러운 폭우였어.\n창문을 두드리는 소리가 점점 거세지고, 베란다 난간에서 물이 뚝뚝 떨어졌어. 날씨 앱을 보니, 앞으로 한 시간은 그칠 것 같지 않다고 했어.\n「……조금 더, 있을래?」\n나는 담요를 어깨에 두르고, 창가 쿠션을 톡톡 두드렸어. 네가 잠깐 망설이다 옆에 앉았을 때, 마음속으로 비한테 고맙다고 말해버렸어.\n유리창 너머로는, 거리의 불빛이 빗물에 번져서 수채화처럼 흔들리고 있었어. 방 안은 플로어 램프 하나뿐. 주전자의 물이 칙칙 소리를 내기 시작했어.\n「뭐 마실래? 허브티라면 있어」\n네가 「고마워」하고 웃어서, 나는 일어나는 게 조금 아까워졌어.",
+        "허브티를 마시면서, 우리는 빗소리 얘기를 했어.\n양철 지붕에 떨어지는 소리가 좋다든가, 우산에 부딪히는 소리는 조금 쓸쓸하다든가. 이런 얘기, 다른 누구와도 해본 적 없어. 너랑 있으면 아무래도 상관없는 일일수록 즐거워지는 게, 신기해.\n한 시간이 지나도, 비는 그치지 않았어. 두 시간이 지나도.\n「비, 안 그쳤으면 좋겠다」\n무심코 말해놓고, 흠칫했어. 너를 곤란하게 하려던 건 아니었는데. 당황해서 「농담이야」라고 덧붙였더니, 너는 창밖을 바라본 채로 작게 고개를 끄덕였어.\n……치사해. 그런 거, 치사해.\n나는 담요를 반, 네 어깨에 걸쳐줬어. 빗소리가 우리 둘의 침묵을 부드럽게 채워줬어.\n내일 아침에는 분명 맑겠지. 하지만 오늘 밤 이 시간은, 오래오래 기억할 것 같아."
+      ]
+    },
+    "art": "/cards/s1-nana-27/card.webp",
+    "voice": "/voice/s1-nana-27.mp3"
+  },
+  {
+    "id": "s1-nana-28",
+    "star": "nana",
+    "tier": "SSR",
+    "title": {
+      "ja": "しおりの押し花",
+      "zh-Hant": "書籤上的押花",
+      "en": "The Pressed Rose",
+      "ko": "책갈피 속 압화"
+    },
+    "scene": "Close-up of Nana holding a pressed-rose bookmark up beside her face under a warm reading lamp at night, an open hardcover novel below, lavender knit, gentle smile into the lens",
+    "line": {
+      "ja": "この押し花、あなたに初めてもらったバラなの。",
+      "zh-Hant": "這朵押花，是你第一次送我的玫瑰喔。",
+      "en": "This pressed flower is the first rose you ever gave me.",
+      "ko": "이 압화, 네가 처음 준 장미야."
+    },
+    "story": {
+      "ja": [
+        "このしおり、ずっと使ってるの。気づいてた？\nはじめてのデートの帰り道、あなたが駅前の花屋さんで、バラを一本だけ買ってくれたよね。花束じゃなくて、一本だけ。あなたは「なにを選べばいいかわからなくて」って照れてたけど、わたしはそれがすごくうれしかった。\n家に帰って、コップに生けて、毎日ながめた。でも、花はいつか枯れちゃう。それがどうしてもいやで、いちばんきれいなうちに、分厚い辞書にはさんだの。\n二週間後、そっと開いたら、バラは薄く、平らになって、それでも色はちゃんと残ってた。少しだけ、深い色になって。\nそれを台紙に貼って、リボンをつけて、しおりにした。いま読んでる小説にも、ちゃんとはさまってる。\n読みかけのページを開くたびに、あの日のあなたの照れた顔を思い出すの。",
+        "今夜、そのしおりのことを、はじめてあなたに話した。\nあなたは覚えてないかもしれない、と思ってたの。一本のバラなんて、あなたにとってはちいさなことかもしれないから。\nでも、しおりを見せたら、あなたは少しだまって、それから「あの花屋、まだあるかな」って言った。覚えてたんだ。\nわたしは、なんだか泣きそうになって、しおりで顔をかくした。ランプの光がバラの花びらを透かして、指先がほんのりピンク色に染まる。\n「今度、一緒に行こうよ。あの花屋さん」\n「うん。今度は、二本買う？」\n「ううん、一本でいい。一本ずつ、増やしていこ」\n押し花のしおりは、きっとこれからも少しずつ増えていく。本棚の小説一冊一冊に、あなたとの日が一枚ずつはさまっていくの。\nそう思ったら、読書がもっと好きになった。"
+      ],
+      "zh-Hant": [
+        "這張書籤，我一直都在用。你發現了嗎？\n第一次約會回家的路上，你在車站前的花店，只買了一朵玫瑰給我。不是花束，只有一朵。你害羞地說「不知道該選什麼才好」，可是我好開心。\n回家後，我把它插在杯子裡，每天看著。但是花總有一天會枯萎。我怎麼也不願意，就趁它最美的時候，把它夾進厚厚的字典裡。\n兩個星期後，我輕輕翻開，玫瑰變得薄薄平平的，顏色卻好好地留了下來。還變得稍微深了一點。\n我把它貼在卡紙上，綁上緞帶，做成了書籤。現在讀的小說裡，也好好地夾著它。\n每次翻開讀到一半的那一頁，就會想起那天你害羞的臉。",
+        "今晚，我第一次跟你說了這張書籤的事。\n我原本以為你可能不記得了。一朵玫瑰，對你來說也許只是小事。\n可是，我拿出書籤給你看，你沉默了一下，然後說：「那家花店，不知道還在不在。」原來你記得。\n我突然好想哭，用書籤遮住了臉。檯燈的光透過玫瑰花瓣，把指尖染成淡淡的粉紅色。\n「下次，我們一起去吧。那家花店。」\n「嗯。下次要買兩朵嗎？」\n「不用，一朵就好。一朵一朵，慢慢增加吧。」\n押花書籤，今後一定也會一點一點變多。書架上的每一本小說裡，都會夾著一張和你一起的日子。\n這麼一想，我變得更喜歡讀書了。"
+      ],
+      "en": [
+        "I've been using this bookmark all along. Did you notice?\nOn the way home from our first date, you bought me a single rose at the florist by the station. Not a bouquet, just one. You were embarrassed and said, \"I didn't know what to pick,\" but it made me so happy.\nAt home I put it in a glass and looked at it every day. But flowers wither eventually. I couldn't bear that, so while it was at its most beautiful, I pressed it inside a thick dictionary.\nTwo weeks later I gently opened it. The rose had become thin and flat, but its colour was still there, just a little deeper.\nI glued it to card, added a ribbon, and made it into a bookmark. It's tucked into the novel I'm reading right now.\nEvery time I open to my page, I remember your shy face that day.",
+        "Tonight, for the first time, I told you about the bookmark.\nI'd thought you might not remember. A single rose might be a small thing to you.\nBut when I showed it to you, you were quiet for a moment, then said, \"I wonder if that florist is still there.\" You remembered.\nSuddenly I felt like crying, and hid my face behind the bookmark. The lamplight shone through the petals and tinted my fingertips a faint pink.\n\"Let's go there together sometime. That florist.\"\n\"Sure. Shall I buy two next time?\"\n\"No, one is enough. Let's add them one at a time.\"\nI'm sure there'll be more pressed-flower bookmarks, little by little. One day with you tucked into each novel on the shelf.\nThinking that made me love reading even more."
+      ],
+      "ko": [
+        "이 책갈피, 계속 쓰고 있어. 눈치챘어?\n첫 데이트 돌아오는 길에, 네가 역 앞 꽃집에서 장미를 딱 한 송이 사줬잖아. 꽃다발이 아니라, 딱 한 송이. 너는 「뭘 골라야 할지 몰라서」라며 부끄러워했지만, 나는 그게 정말 기뻤어.\n집에 돌아와서, 컵에 꽂아두고 매일 바라봤어. 하지만 꽃은 언젠가 시들어버리잖아. 그게 도저히 싫어서, 가장 예쁠 때 두꺼운 사전 사이에 끼워뒀어.\n이 주 뒤에, 살짝 펼쳐보니, 장미는 얇고 평평해졌지만, 그래도 색은 제대로 남아 있었어. 조금 더, 짙은 색이 되어서.\n그걸 대지에 붙이고, 리본을 달아서, 책갈피로 만들었어. 지금 읽고 있는 소설에도, 잘 끼워져 있어.\n읽다 만 페이지를 펼칠 때마다, 그날 네가 부끄러워하던 얼굴이 떠올라.",
+        "오늘 밤, 그 책갈피 이야기를, 처음으로 너한테 했어.\n네가 기억 못 할지도 모른다고 생각했어. 장미 한 송이 같은 건, 너한테는 사소한 일일지도 모르니까.\n그런데 책갈피를 보여줬더니, 너는 잠깐 말이 없다가, 「그 꽃집, 아직 있으려나」라고 말했어. 기억하고 있었구나.\n나는 왠지 울 것 같아져서, 책갈피로 얼굴을 가렸어. 램프 불빛이 장미 꽃잎을 비춰서, 손끝이 살짝 분홍빛으로 물들었어.\n「다음에, 같이 가자. 그 꽃집」\n「응. 다음엔, 두 송이 살까?」\n「아니, 한 송이면 돼. 한 송이씩, 늘려가자」\n압화 책갈피는, 앞으로도 분명 조금씩 늘어나겠지. 책장의 소설 한 권 한 권마다, 너와의 하루가 한 장씩 끼워지는 거야.\n그렇게 생각하니, 책 읽는 게 더 좋아졌어."
+      ]
+    },
+    "art": "/cards/s1-nana-28/card.webp",
+    "voice": "/voice/s1-nana-28.mp3"
+  },
+  {
+    "id": "s1-nana-29",
+    "star": "nana",
+    "tier": "SSR",
+    "title": {
+      "ja": "おやすみの電話",
+      "zh-Hant": "晚安電話",
+      "en": "Goodnight Call",
+      "ko": "잘 자, 밤 통화"
+    },
+    "scene": "Close-up of Nana lying on a sofa with a phone to her ear under a dim warm lamp at night, long-sleeve lavender loungewear, hugging a cushion, sleepy smile toward the lens",
+    "line": {
+      "ja": "眠くなるまで、切らないで。あなたの声、ききながら寝たいの。",
+      "zh-Hant": "在我睡著之前不要掛喔。我想聽著你的聲音入睡。",
+      "en": "Don't hang up till I'm sleepy. I want to fall asleep to your voice.",
+      "ko": "졸릴 때까지, 끊지 마. 네 목소리 들으면서 잠들고 싶어."
+    },
+    "story": {
+      "ja": [
+        "今日は会えなかったから、夜に電話をかけた。\nソファに寝転んで、ラベンダー色のルームウェアの袖を指先までのばして、スマホを耳にあてる。呼び出し音が三回鳴って、あなたの「もしもし」が聞こえた瞬間、それだけで一日の疲れがほどけていく気がした。\n「今日、どうだった？」\nいつもの質問。あなたは少し考えてから、ゆっくり話しはじめる。電話越しの声は、会ってるときよりちょっと低くて、ちょっと近い。耳元でささやかれてるみたいで、わたしはクッションをぎゅっと抱きしめた。\n話の途中で、あなたの向こうからやかんの音がした。お湯をわかしてるんだって。わたしも、ちょうどお茶をいれたところ。\n別々の部屋で、同じ時間に、同じようにお茶を飲んでる。それって、ちょっと一緒にいるみたいだね。",
+        "日付が変わるころ、わたしのまぶたはだんだん重くなってきた。\n「眠い？」ってあなたに聞かれて、「ぜんぜん」ってうそをついた。あくびをかみころしたの、たぶんばれてたと思う。\n「もう切ろうか」\n「やだ。……眠くなるまで、切らないで」\n自分でも子どもみたいだと思った。でも、あなたは笑って、「じゃあ、なにか話そうか」って言ってくれた。あなたが話して、ってお願いしたら、あなたは少し困ってから、昔読んだ絵本の話をはじめたの。\nうさぎが月まで行こうとする話。あなたの声が、ゆっくり、ゆっくり、物語をたどっていく。わたしは目を閉じて、その声だけを聞いてた。\nうさぎが月に着いたかどうかは、覚えてない。たぶん、そのへんで眠っちゃったから。\n朝起きたら、通話時間は三時間を超えてた。……続き、今夜聞かせてね。"
+      ],
+      "zh-Hant": [
+        "今天沒能見面，所以晚上我打了電話給你。\n躺在沙發上，把薰衣草色家居服的袖子拉到指尖，把手機貼在耳邊。鈴聲響了三下，聽到你那聲「喂」的瞬間，一整天的疲憊好像都鬆開了。\n「今天過得怎麼樣？」\n老樣子的問題。你想了一下，慢慢說了起來。電話裡的聲音，比見面時低一點，也近一點。像是在耳邊輕聲說話一樣，我緊緊抱住了靠墊。\n說到一半，你那邊傳來水壺的聲音。你說正在燒開水。我也剛好泡好了茶。\n在不同的房間，同一個時間，一樣地喝著茶。這樣，好像有一點點在一起的感覺呢。",
+        "快到午夜的時候，我的眼皮越來越重。\n你問我「想睡了嗎？」，我撒謊說「一點也不」。偷偷忍住的呵欠，大概被你發現了吧。\n「那我們掛了吧。」\n「不要。……在我睡著之前，不要掛。」\n我自己都覺得像小孩子。可是你笑了，說：「那我們聊點什麼吧。」我拜託你說給我聽，你有點為難，然後說起了以前讀過的一本繪本。\n一隻兔子想要去月亮的故事。你的聲音，慢慢地、慢慢地，一路走過故事。我閉上眼睛，只聽著你的聲音。\n兔子最後有沒有到達月亮，我不記得了。大概就是在那附近睡著的吧。\n早上醒來，通話時間超過了三個小時。……後面的故事，今晚再說給我聽喔。"
+      ],
+      "en": [
+        "We couldn't meet today, so I called you at night.\nLying on the sofa, lavender sleeves pulled down to my fingertips, phone to my ear. It rang three times, and the moment I heard your \"hello,\" the whole day's tiredness seemed to unravel.\n\"How was today?\"\nThe usual question. You thought for a moment, then slowly began to talk. Your voice on the phone is a little lower than in person, and a little closer. Like you were whispering right by my ear. I hugged my cushion tight.\nHalfway through, I heard a kettle on your end. You were boiling water. I'd just made tea myself.\nIn different rooms, at the same time, drinking tea the same way. That's a bit like being together, isn't it?",
+        "Around midnight, my eyelids grew heavy.\nYou asked, \"Sleepy?\" and I lied: \"Not at all.\" I think you caught me stifling a yawn.\n\"Shall we hang up?\"\n\"No. …Don't hang up till I fall asleep.\"\nI knew I sounded like a child. But you laughed and said, \"Then let's keep talking.\" When I asked you to do the talking, you hesitated, then began telling me about a picture book you read long ago.\nA story about a rabbit trying to reach the moon. Your voice followed the story slowly, slowly. I closed my eyes and listened only to that.\nI don't remember whether the rabbit made it to the moon. I think that's about where I fell asleep.\nWhen I woke up, the call had lasted over three hours. …Tell me the rest tonight, okay?"
+      ],
+      "ko": [
+        "오늘은 못 만났으니까, 밤에 전화를 걸었어.\n소파에 누워서, 라벤더색 실내복 소매를 손끝까지 늘어뜨리고, 스마트폰을 귀에 댔어. 신호음이 세 번 울리고, 네 「여보세요」가 들린 순간, 그것만으로 하루의 피로가 풀리는 것 같았어.\n「오늘, 어땠어?」\n늘 하는 질문. 너는 잠깐 생각하고 나서, 천천히 이야기를 시작해. 전화 너머 목소리는 만날 때보다 조금 낮고, 조금 더 가까워. 귓가에 속삭이는 것 같아서, 나는 쿠션을 꼭 끌어안았어.\n이야기 도중에, 네 쪽에서 주전자 소리가 들렸어. 물을 끓이고 있다고 했어. 나도 마침, 차를 우리던 참이었어.\n서로 다른 방에서, 같은 시간에, 똑같이 차를 마시고 있어. 그거, 조금 같이 있는 것 같지 않아?",
+        "날짜가 바뀔 무렵, 내 눈꺼풀이 점점 무거워졌어.\n「졸려?」 하고 네가 물어서, 「전혀」라고 거짓말했어. 하품 참는 거, 아마 들켰을 거야.\n「이제 끊을까」\n「싫어. ……졸릴 때까지, 끊지 마」\n나 스스로도 애 같다고 생각했어. 그런데 너는 웃으면서, 「그럼, 뭔가 얘기해 줄까」라고 말해줬어. 얘기해 달라고 부탁했더니, 너는 조금 곤란해하다가, 예전에 읽었던 그림책 이야기를 시작했어.\n토끼가 달까지 가려는 이야기. 네 목소리가, 천천히, 천천히, 이야기를 따라갔어. 나는 눈을 감고, 그 목소리만 듣고 있었어.\n토끼가 달에 도착했는지 어땠는지는, 기억이 안 나. 아마, 그쯤에서 잠들어버린 것 같아.\n아침에 일어나 보니, 통화 시간은 세 시간이 넘어 있었어. ……이어지는 얘기, 오늘 밤 들려줘."
+      ]
+    },
+    "art": "/cards/s1-nana-29/card.webp",
+    "voice": "/voice/s1-nana-29.mp3"
+  },
+  {
+    "id": "s1-nana-30",
+    "star": "nana",
+    "tier": "UR",
+    "title": {
+      "ja": "灯りの下で待ってる",
+      "zh-Hant": "在燈光下等你",
+      "en": "Waiting Under the Lamp",
+      "ko": "불빛 아래서 기다릴게"
+    },
+    "scene": "Nana's signature: a cosy living room at night lit by one warm floor lamp, rain streaking the big window, a sofa with a folded knit blanket, soft lavender knit top and wide trousers, a hardcover novel with a pressed-rose bookmark in her hands, looking into the lens",
+    "line": {
+      "ja": "おかえり。今日のこと、ぜんぶきかせて。時間はたっぷりあるよ。",
+      "zh-Hant": "歡迎回來。今天的事，全部說給我聽吧。時間多的是喔。",
+      "en": "Welcome back. Tell me everything about today. We've got all the time in the world.",
+      "ko": "어서 와. 오늘 있었던 일, 전부 들려줘. 시간은 넉넉하니까."
+    },
+    "story": {
+      "ja": [
+        "夜になると、わたしはこの部屋のフロアランプをひとつだけつける。\n大きな窓には雨のすじが流れて、ソファにはたたんだニットのブランケット。テーブルには、読みかけの小説と、押し花のしおり。ラベンダー色のニットに着替えて、お湯をわかして、カップをふたつ出しておく。\nあなたが来る日も、来ない日も、だいたい同じ。この部屋を、あなたがいつ帰ってきても「ただいま」って言える場所にしておきたいの。\nわたしはね、話すより聞くほうが好き。あなたの一日を、あなたの言葉で聞くのが好き。うれしかったことも、くやしかったことも、なにもなかった日の「なにもなかった」も。\nだから、ここはあなたが話すための部屋。ランプの明かりは、そのための目印。\n雨の音を聞きながら、わたしはページをめくる。玄関のチャイムが鳴るのを、ちょっとだけ期待しながら。",
+        "チャイムが鳴った。\nあわててしおりをはさんで、玄関まで小走りで向かう。ドアを開けると、傘をたたみながら、あなたが少し照れたように立ってた。肩が少しぬれてる。\n「おかえり」\nタオルを渡して、ソファに座ってもらって、あったかい紅茶をいれる。あなたがカップを両手で持って、ふう、と息をついたのを見てから、わたしはとなりに座った。\n「今日のこと、ぜんぶ聞かせて。時間はたっぷりあるよ」\nあなたは、ぽつりぽつりと話しはじめた。わたしは相づちを打ちながら、ときどき笑って、ときどき一緒に怒って、ずっとあなたの横顔を見てた。\n気がつくと、雨はやんでた。窓の外の街がきらきら光ってる。\n話し終わったあなたが「聞いてくれてありがとう」って言うから、わたしは首をふった。お礼を言いたいのは、わたしのほう。\n今日も、ここに帰ってきてくれて、ありがとう。"
+      ],
+      "zh-Hant": [
+        "到了晚上，我只會打開這個房間的一盞落地燈。\n大窗戶上流著雨痕，沙發上放著摺好的針織毛毯。桌上是讀到一半的小說，和押花書籤。我換上薰衣草色的針織衫，燒好熱水，先拿出兩個杯子。\n不管你來或不來的日子，都差不多是這樣。我想讓這個房間，成為你無論什麼時候回來，都能說一聲「我回來了」的地方。\n我啊，比起說話，更喜歡傾聽。喜歡聽你用自己的話，說你的一天。開心的事、不甘心的事，還有什麼都沒發生的日子裡的那句「什麼都沒有」。\n所以，這裡是讓你說話的房間。檯燈的光，就是記號。\n聽著雨聲，我翻著書頁。心裡偷偷期待著門鈴響起。",
+        "門鈴響了。\n我慌忙夾好書籤，小跑步到玄關。打開門，你一邊收傘，一邊有點害羞地站在那裡。肩膀有點濕。\n「歡迎回來。」\n遞給你毛巾，讓你坐到沙發上，泡了一杯熱紅茶。看你雙手捧著杯子，呼地吐了一口氣之後，我才在你旁邊坐下。\n「今天的事，全部說給我聽吧。時間多的是喔。」\n你斷斷續續地說了起來。我一邊附和，時而笑，時而跟你一起生氣，一直看著你的側臉。\n回過神來，雨已經停了。窗外的街道閃閃發亮。\n說完之後，你說「謝謝你聽我說」，我搖了搖頭。想說謝謝的，是我才對。\n謝謝你今天，也回到這裡來。"
+      ],
+      "en": [
+        "When night comes, I switch on just one floor lamp in this room.\nRain runs down the big window, and a folded knit blanket waits on the sofa. On the table, a half-read novel and a pressed-flower bookmark. I change into my lavender knit, boil the water, and set out two cups.\nWhether you come or not, it's about the same. I want this room to be a place where you can say \"I'm home\" whenever you come back.\nYou know, I'd rather listen than talk. I love hearing your day in your own words. The happy parts, the frustrating parts, and the \"nothing happened\" of days when nothing did.\nSo this is a room for you to talk in. The lamplight is the sign.\nListening to the rain, I turn the pages, secretly hoping the doorbell will ring.",
+        "The doorbell rang.\nI slipped the bookmark in and hurried to the door. When I opened it, there you were, folding your umbrella and looking a little shy. Your shoulders were damp.\n\"Welcome back.\"\nI handed you a towel, sat you on the sofa and made hot black tea. Only after I saw you hold the cup in both hands and let out a sigh did I sit down beside you.\n\"Tell me everything about today. We've got all the time in the world.\"\nYou started talking, bit by bit. I nodded along, sometimes laughing, sometimes getting cross with you, watching your profile the whole time.\nBefore I knew it, the rain had stopped. The city outside was sparkling.\nWhen you finished, you said \"thanks for listening,\" and I shook my head. I'm the one who should say thank you.\nThank you for coming back here again today."
+      ],
+      "ko": [
+        "밤이 되면, 나는 이 방의 플로어 램프를 하나만 켜.\n큰 창문에는 빗줄기가 흐르고, 소파에는 개어둔 니트 담요. 테이블에는, 읽다 만 소설과 압화 책갈피. 라벤더색 니트로 갈아입고, 물을 끓이고, 컵을 두 개 꺼내 놓아.\n네가 오는 날도, 오지 않는 날도, 대체로 똑같아. 이 방을, 네가 언제 돌아오더라도 「다녀왔어」라고 말할 수 있는 곳으로 만들어두고 싶어.\n나는 말이야, 말하는 것보다 듣는 게 좋아. 네 하루를, 네 말로 듣는 게 좋아. 기뻤던 일도, 속상했던 일도, 아무 일도 없던 날의 「아무 일도 없었어」도.\n그러니까, 여기는 네가 이야기하기 위한 방이야. 램프 불빛은, 그걸 위한 표시.\n빗소리를 들으면서, 나는 페이지를 넘겨. 현관 초인종이 울리기를, 조금 기대하면서.",
+        "초인종이 울렸어.\n허둥지둥 책갈피를 끼우고, 현관까지 종종걸음으로 달려갔어. 문을 열자, 우산을 접으며, 네가 조금 쑥스러운 듯 서 있었어. 어깨가 살짝 젖어 있었어.\n「어서 와」\n수건을 건네고, 소파에 앉히고, 따뜻한 홍차를 우렸어. 네가 컵을 두 손으로 들고, 후우, 숨을 내쉬는 걸 보고 나서, 나는 옆에 앉았어.\n「오늘 있었던 일, 전부 들려줘. 시간은 넉넉하니까」\n너는 띄엄띄엄 이야기를 시작했어. 나는 맞장구치면서, 가끔 웃고, 가끔 같이 화도 내면서, 계속 네 옆얼굴을 보고 있었어.\n정신 차려보니, 비는 그쳐 있었어. 창밖 거리가 반짝반짝 빛나고 있었어.\n이야기를 마친 네가 「들어줘서 고마워」라고 말해서, 나는 고개를 저었어. 고맙다고 말하고 싶은 건, 나였어.\n오늘도, 여기로 돌아와 줘서, 고마워."
+      ]
+    },
+    "art": "/cards/s1-nana-30/card.webp",
+    "voice": "/voice/s1-nana-30.mp3"
+  },
+  {
+    "id": "s1-unpai-01",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "やっと来た！",
+      "zh-Hant": "你終於來了！",
+      "en": "You Finally Came!",
+      "ko": "드디어 왔다!"
+    },
+    "scene": "Unpai in a sunny bedroom full of plush toys and polaroid photos on a string of fairy lights, oversized pastel cardigan over a white T-shirt, waving at you with a big smile",
+    "line": {
+      "ja": "やっと来た！ もー、待ちくたびれたんだからね。",
+      "zh-Hant": "你終於來了！真是的，我等到都累了啦。",
+      "en": "You finally came! Geez, I was tired of waiting.",
+      "ko": "드디어 왔네! 아 진짜, 기다리다 지쳤잖아."
+    },
+    "art": "/cards/s1-unpai-01/card.webp",
+    "voice": "/voice/s1-unpai-01.mp3"
+  },
+  {
+    "id": "s1-unpai-02",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "ポラロイドの壁",
+      "zh-Hant": "拍立得牆",
+      "en": "The Polaroid Wall",
+      "ko": "폴라로이드 벽"
+    },
+    "scene": "Unpai pinning polaroid photos onto a string of fairy lights on her bedroom wall in the morning, oversized striped sweater, holding one photo up to you",
+    "line": {
+      "ja": "この写真、あなたと撮ったやつ。いちばんのお気に入り！",
+      "zh-Hant": "這張是跟你一起拍的。我最喜歡的一張！",
+      "en": "This one's us. It's my absolute favorite!",
+      "ko": "이 사진, 너랑 같이 찍은 거. 제일 마음에 드는 거야!"
+    },
+    "art": "/cards/s1-unpai-02/card.webp",
+    "voice": "/voice/s1-unpai-02.mp3"
+  },
+  {
+    "id": "s1-unpai-03",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "屋上の洗濯物",
+      "zh-Hant": "屋頂的晾衣繩",
+      "en": "Rooftop Laundry",
+      "ko": "옥상의 빨래"
+    },
+    "scene": "Unpai on a sunny rooftop with laundry and a pink scarf fluttering on a line, blue sky with fast clouds, oversized denim shirt and jeans, reaching for the scarf",
+    "line": {
+      "ja": "風つよーい！ ねえ、スカーフ飛んでっちゃう、押さえて！",
+      "zh-Hant": "風好大！欸，圍巾要飛走了，幫我壓住！",
+      "en": "So windy! Hey, my scarf's flying off — grab it!",
+      "ko": "바람 진짜 세다! 야, 스카프 날아가겠어, 좀 잡아줘!"
+    },
+    "art": "/cards/s1-unpai-03/card.webp",
+    "voice": "/voice/s1-unpai-03.mp3"
+  },
+  {
+    "id": "s1-unpai-04",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "今日の一枚",
+      "zh-Hant": "今天的這一張",
+      "en": "Today's Record",
+      "ko": "오늘 고른 한 장"
+    },
+    "scene": "Unpai sitting on her bedroom floor beside a turntable and a stack of vinyl records, pearl-white retro headphones around her neck, oversized hoodie, holding up a record sleeve",
+    "line": {
+      "ja": "今日はこれ聴こ！ あなたのぶんのヘッドホンもあるよ。",
+      "zh-Hant": "今天聽這張！你的耳機我也準備好了。",
+      "en": "Let's play this one today! I've got headphones for you too.",
+      "ko": "오늘은 이거 듣자! 네 헤드폰도 챙겨놨어."
+    },
+    "art": "/cards/s1-unpai-04/card.webp",
+    "voice": "/voice/s1-unpai-04.mp3"
+  },
+  {
+    "id": "s1-unpai-05",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "自販機のまえで",
+      "zh-Hant": "自動販賣機前",
+      "en": "At the Vending Machine",
+      "ko": "자판기 앞에서"
+    },
+    "scene": "Unpai beside a glowing vending machine on a narrow Tokyo side street at night, rose-pink and blue neon reflected in wet asphalt, navy varsity jacket, pointing at the drinks",
+    "line": {
+      "ja": "どっちにする？ ……じゃんけんで負けたほうのおごりね！",
+      "zh-Hant": "你要哪個？……猜拳輸的人請客喔！",
+      "en": "Which one? …Loser of rock-paper-scissors pays!",
+      "ko": "뭘로 할래? ……가위바위보 진 사람이 사는 거다!"
+    },
+    "art": "/cards/s1-unpai-05/card.webp",
+    "voice": "/voice/s1-unpai-05.mp3"
+  },
+  {
+    "id": "s1-unpai-06",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "ゲーム対決",
+      "zh-Hant": "遊戲對決",
+      "en": "Game Night Showdown",
+      "ko": "게임 대결"
+    },
+    "scene": "Unpai sitting cross-legged on floor cushions at night holding a game controller, oversized hoodie and lounge pants, TV glow on her face, laughing at you",
+    "line": {
+      "ja": "手加減しないからね！ ……あ、今のなし！もう一回！",
+      "zh-Hant": "我不會放水的喔！……啊，剛剛那局不算！再一次！",
+      "en": "I won't go easy on you! …Wait, that didn't count! Again!",
+      "ko": "봐주는 거 없다! ……아, 방금 건 무효! 한 번 더!"
+    },
+    "art": "/cards/s1-unpai-06/card.webp",
+    "voice": "/voice/s1-unpai-06.mp3"
+  },
+  {
+    "id": "s1-unpai-07",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "ヘアアレンジ中",
+      "zh-Hant": "正在整理髮型",
+      "en": "Doing My Hair",
+      "ko": "머리 손질 중"
+    },
+    "scene": "Unpai at a vanity mirror in her bright bedroom in the morning, tying a black ribbon into her long wavy hair, cream knit top, glancing back at you",
+    "line": {
+      "ja": "ねえ、ポニーテールとおろすの、どっちが好き？",
+      "zh-Hant": "欸，綁馬尾跟放下來，你喜歡哪個？",
+      "en": "Hey, ponytail or hair down — which do you like?",
+      "ko": "있잖아, 포니테일이랑 풀어놓은 거, 뭐가 더 좋아?"
+    },
+    "art": "/cards/s1-unpai-07/card.webp",
+    "voice": "/voice/s1-unpai-07.mp3"
+  },
+  {
+    "id": "s1-unpai-08",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "深夜のラーメン",
+      "zh-Hant": "深夜拉麵",
+      "en": "Late-Night Ramen",
+      "ko": "심야 라멘"
+    },
+    "scene": "Unpai at a small ramen shop counter late at night, steam rising from a bowl, navy varsity jacket, chopsticks in hand, grinning at you",
+    "line": {
+      "ja": "夜中のラーメンって、なんでこんなにおいしいの？",
+      "zh-Hant": "半夜的拉麵，為什麼會這麼好吃啊？",
+      "en": "Why is midnight ramen so good?",
+      "ko": "한밤중 라멘은 왜 이렇게 맛있는 거야?"
+    },
+    "art": "/cards/s1-unpai-08/card.webp",
+    "voice": "/voice/s1-unpai-08.mp3"
+  },
+  {
+    "id": "s1-unpai-09",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "ぬいぐるみ会議",
+      "zh-Hant": "布偶會議",
+      "en": "Plushie Meeting",
+      "ko": "인형 회의"
+    },
+    "scene": "Unpai sitting on her bed surrounded by plush toys in the afternoon, pastel sweatshirt, holding a small bear plushie up toward you",
+    "line": {
+      "ja": "この子、あなたに似てるの。名前つけてあげて！",
+      "zh-Hant": "這隻長得很像你。幫牠取個名字吧！",
+      "en": "This one looks just like you. Give it a name!",
+      "ko": "얘, 너 닮았어. 이름 지어줘!"
+    },
+    "art": "/cards/s1-unpai-09/card.webp",
+    "voice": "/voice/s1-unpai-09.mp3"
+  },
+  {
+    "id": "s1-unpai-10",
+    "star": "unpai",
+    "tier": "N",
+    "title": {
+      "ja": "お菓子作り失敗",
+      "zh-Hant": "做點心失敗了",
+      "en": "Baking Fail",
+      "ko": "간식 만들기 실패"
+    },
+    "scene": "Unpai in a small kitchen with a smudge of flour on her cheek, pink apron over a T-shirt, holding a tray of slightly burnt cupcakes, sheepish smile",
+    "line": {
+      "ja": "ちょっとこげた……けど、味は保証する！ たぶん！",
+      "zh-Hant": "有點烤焦了……不過味道我保證！大概吧！",
+      "en": "It's a bit burnt… but I promise it tastes good! Probably!",
+      "ko": "좀 탔는데…… 그래도 맛은 보장해! 아마도!"
+    },
+    "art": "/cards/s1-unpai-10/card.webp",
+    "voice": "/voice/s1-unpai-10.mp3"
+  },
+  {
+    "id": "s1-unpai-11",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "UFOキャッチャー",
+      "zh-Hant": "夾娃娃機",
+      "en": "Claw Machine Challenge",
+      "ko": "인형뽑기"
+    },
+    "scene": "Unpai at a neon-lit arcade claw machine in the evening, navy varsity jacket, gripping the joystick with a determined grin",
+    "line": {
+      "ja": "あとちょっと……！ 取れたら、あなたにあげるね！",
+      "zh-Hant": "再一點點……！夾到的話就送給你！",
+      "en": "Almost…! If I get it, it's yours!",
+      "ko": "조금만 더……! 뽑히면 너 줄게!"
+    },
+    "art": "/cards/s1-unpai-11/card.webp",
+    "voice": "/voice/s1-unpai-11.mp3"
+  },
+  {
+    "id": "s1-unpai-12",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "原宿食べ歩き",
+      "zh-Hant": "原宿邊走邊吃",
+      "en": "Harajuku Snack Crawl",
+      "ko": "하라주쿠 먹거리 산책"
+    },
+    "scene": "Unpai on a colourful Harajuku street on a sunny afternoon holding a strawberry crepe, oversized pastel hoodie and jeans, offering you a bite",
+    "line": {
+      "ja": "クレープ、ひとくち交換しよ！ はい、いちご味！",
+      "zh-Hant": "可麗餅，我們交換吃一口！來，草莓口味！",
+      "en": "Let's swap bites! Here, strawberry!",
+      "ko": "크레페, 한입씩 바꿔 먹자! 자, 딸기맛!"
+    },
+    "art": "/cards/s1-unpai-12/card.webp",
+    "voice": "/voice/s1-unpai-12.mp3"
+  },
+  {
+    "id": "s1-unpai-13",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "ライブハウスの前で",
+      "zh-Hant": "Live House 門口",
+      "en": "Outside the Live House",
+      "ko": "라이브하우스 앞에서"
+    },
+    "scene": "Unpai outside a small Shimokitazawa live music venue in the early evening, band T-shirt under her navy varsity jacket, holding up two tickets",
+    "line": {
+      "ja": "チケット二枚！ 今日はいちばん前で跳ぼうね！",
+      "zh-Hant": "兩張票！今天我們要在最前面一起跳喔！",
+      "en": "Two tickets! Let's jump right up front tonight!",
+      "ko": "티켓 두 장! 오늘은 맨 앞에서 같이 뛰자!"
+    },
+    "art": "/cards/s1-unpai-13/card.webp",
+    "voice": "/voice/s1-unpai-13.mp3"
+  },
+  {
+    "id": "s1-unpai-14",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "コーヒーカップ",
+      "zh-Hant": "咖啡杯遊樂設施",
+      "en": "Spinning Teacups",
+      "ko": "커피컵 놀이기구"
+    },
+    "scene": "Unpai laughing in a pastel teacup ride at an amusement park on a bright day, windswept long wavy hair, white sweatshirt and denim jacket",
+    "line": {
+      "ja": "もっと回して！ ……うそ、やっぱ目まわる〜！",
+      "zh-Hant": "再轉快一點！……騙你的，果然好暈～！",
+      "en": "Spin it faster! …Kidding, I'm so dizzy!",
+      "ko": "더 빨리 돌려줘! ……거짓말, 역시 어지러워~!"
+    },
+    "art": "/cards/s1-unpai-14/card.webp",
+    "voice": "/voice/s1-unpai-14.mp3"
+  },
+  {
+    "id": "s1-unpai-15",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "金魚すくい",
+      "zh-Hant": "撈金魚",
+      "en": "Goldfish Scooping",
+      "ko": "금붕어 건지기"
+    },
+    "scene": "Unpai at a summer festival goldfish-scooping stall at night in a pink and navy yukata, paper lanterns glowing, holding up a small bag with two goldfish",
+    "line": {
+      "ja": "見て見て、二匹すくえた！ 名前、一緒に考えよ？",
+      "zh-Hant": "你看你看，撈到兩隻了！一起想名字吧？",
+      "en": "Look, look, I got two! Help me name them?",
+      "ko": "봐봐, 두 마리나 건졌어! 이름 같이 생각해줄래?"
+    },
+    "art": "/cards/s1-unpai-15/card.webp",
+    "voice": "/voice/s1-unpai-15.mp3"
+  },
+  {
+    "id": "s1-unpai-16",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "レコードショップ",
+      "zh-Hant": "唱片行",
+      "en": "Record Store Dig",
+      "ko": "레코드 가게"
+    },
+    "scene": "Unpai flipping through crates in a cosy second-hand record shop in the afternoon, pearl-white headphones around her neck, holding up a colourful album cover",
+    "line": {
+      "ja": "このジャケ、かわいくない？ あなたの部屋に飾ろうよ！",
+      "zh-Hant": "這張封面很可愛吧？拿去裝飾你的房間吧！",
+      "en": "Isn't this cover cute? Let's hang it in your room!",
+      "ko": "이 커버 귀엽지 않아? 네 방에 걸어두자!"
+    },
+    "art": "/cards/s1-unpai-16/card.webp",
+    "voice": "/voice/s1-unpai-16.mp3"
+  },
+  {
+    "id": "s1-unpai-17",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "海までサイクリング",
+      "zh-Hant": "騎單車去海邊",
+      "en": "Cycling to the Sea",
+      "ko": "바다까지 자전거"
+    },
+    "scene": "Unpai on a bicycle on a coastal road on a sunny day, the sea and Enoshima island behind her, light windbreaker and cap, hair flying, looking back at you",
+    "line": {
+      "ja": "海まで競争ね！ 負けたらソフトクリームおごりだよ！",
+      "zh-Hant": "比賽騎到海邊！輸的人要請霜淇淋喔！",
+      "en": "Race you to the sea! Loser buys the ice cream!",
+      "ko": "바다까지 시합이야! 지면 소프트아이스크림 쏘는 거다!"
+    },
+    "art": "/cards/s1-unpai-17/card.webp",
+    "voice": "/voice/s1-unpai-17.mp3"
+  },
+  {
+    "id": "s1-unpai-18",
+    "star": "unpai",
+    "tier": "R",
+    "title": {
+      "ja": "スケートリンク",
+      "zh-Hant": "溜冰場",
+      "en": "Ice Rink",
+      "ko": "스케이트장"
+    },
+    "scene": "Unpai on an outdoor ice rink in winter holding the railing, pink knit hat, white puffer jacket and mittens, wobbling and laughing, reaching a hand out to you",
+    "line": {
+      "ja": "手、はなさないでよ！？ 絶対だからね！",
+      "zh-Hant": "你手不可以放開喔！？絕對喔！",
+      "en": "Don't let go of my hand!? I mean it!",
+      "ko": "손, 놓지 마!? 진짜 약속이야!"
+    },
+    "art": "/cards/s1-unpai-18/card.webp",
+    "voice": "/voice/s1-unpai-18.mp3"
+  },
+  {
+    "id": "s1-unpai-19",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "屋上の花火特等席",
+      "zh-Hant": "屋頂的煙火特等席",
+      "en": "Rooftop Fireworks",
+      "ko": "옥상 불꽃놀이 특등석"
+    },
+    "scene": "Unpai on a city rooftop on a summer night, fireworks bursting in the sky behind her, navy varsity jacket over a white T-shirt, sitting on a blanket and patting the spot beside her",
+    "line": {
+      "ja": "ここ、わたしの特等席。今日は特別に貸してあげる！",
+      "zh-Hant": "這裡是我的特等席。今天特別借你坐！",
+      "en": "This is my VIP seat. Tonight I'll share it with you!",
+      "ko": "여기, 내 특등석이야. 오늘은 특별히 빌려줄게!"
+    },
+    "art": "/cards/s1-unpai-19/card.webp",
+    "voice": "/voice/s1-unpai-19.mp3"
+  },
+  {
+    "id": "s1-unpai-20",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "カウントダウン",
+      "zh-Hant": "跨年倒數",
+      "en": "New Year's Countdown",
+      "ko": "카운트다운"
+    },
+    "scene": "Unpai in a festive crowd on New Year's Eve at night, confetti in the air and city lights behind, cream coat and pink scarf, cheering toward you",
+    "line": {
+      "ja": "三、二、一……あけおめ！ 今年最初に会えたね！",
+      "zh-Hant": "三、二、一……新年快樂！今年第一個見到的是你！",
+      "en": "Three, two, one… Happy New Year! You're the first I saw this year!",
+      "ko": "삼, 이, 일…… 새해 복 많이 받아! 올해 처음 만난 사람이 너네!"
+    },
+    "art": "/cards/s1-unpai-20/card.webp",
+    "voice": "/voice/s1-unpai-20.mp3"
+  },
+  {
+    "id": "s1-unpai-21",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "ネオンの雨宿り",
+      "zh-Hant": "霓虹下躲雨",
+      "en": "Neon Shelter",
+      "ko": "네온 아래 비 피하기"
+    },
+    "scene": "Unpai under a shop awning on a rainy neon-lit Tokyo side street at night, holding a clear umbrella, navy varsity jacket, rain streaks glowing pink and blue",
+    "line": {
+      "ja": "傘、一本しかないや。……もっとこっち寄って？",
+      "zh-Hant": "傘只有一把耶。……再靠過來一點？",
+      "en": "Only one umbrella… Come closer?",
+      "ko": "우산이 하나밖에 없네. ……좀 더 이쪽으로 붙을래?"
+    },
+    "art": "/cards/s1-unpai-21/card.webp",
+    "voice": "/voice/s1-unpai-21.mp3"
+  },
+  {
+    "id": "s1-unpai-22",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "手作りバレンタイン",
+      "zh-Hant": "手作情人節",
+      "en": "Homemade Valentine",
+      "ko": "수제 발렌타인"
+    },
+    "scene": "Unpai in her kitchen on a winter evening holding out a heart-shaped box of homemade chocolates with a pink ribbon, cream knit sweater, blushing",
+    "line": {
+      "ja": "はい、本命！ ……って言わせないでよ、恥ずかしい！",
+      "zh-Hant": "給你，是真心的！……不要讓我說出口啦，好害羞！",
+      "en": "Here — it's the real one! …Don't make me say it, that's embarrassing!",
+      "ko": "자, 진심 초콜릿! ……이라고 말하게 하지 마, 부끄럽잖아!"
+    },
+    "art": "/cards/s1-unpai-22/card.webp",
+    "voice": "/voice/s1-unpai-22.mp3"
+  },
+  {
+    "id": "s1-unpai-23",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "夜のメリーゴーランド",
+      "zh-Hant": "夜晚的旋轉木馬",
+      "en": "Carousel at Night",
+      "ko": "밤의 회전목마"
+    },
+    "scene": "Unpai at an amusement park at night beside a glowing golden carousel, navy varsity jacket, one hand on a white carousel horse, inviting you on",
+    "line": {
+      "ja": "メリーゴーランド、一緒に乗ろ！ 白い馬、あなたのね。",
+      "zh-Hant": "一起坐旋轉木馬吧！白馬給你騎。",
+      "en": "Ride the merry-go-round with me! The white horse is yours.",
+      "ko": "회전목마, 같이 타자! 하얀 말은 네 거야."
+    },
+    "art": "/cards/s1-unpai-23/card.webp",
+    "voice": "/voice/s1-unpai-23.mp3"
+  },
+  {
+    "id": "s1-unpai-24",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "DJブースのわたし",
+      "zh-Hant": "DJ台上的我",
+      "en": "Me at the Decks",
+      "ko": "DJ 부스의 나"
+    },
+    "scene": "Unpai behind a DJ booth in a small lounge in the early evening, pearl-white headphones on one ear, hand on a vinyl record, neon glow, winking at you",
+    "line": {
+      "ja": "次の曲、あなたのために選んだの。ちゃんと聴いててね！",
+      "zh-Hant": "下一首是為你選的。要好好聽喔！",
+      "en": "I picked the next song for you. Listen closely!",
+      "ko": "다음 곡, 너를 위해 골랐어. 제대로 듣고 있어야 해!"
+    },
+    "art": "/cards/s1-unpai-24/card.webp",
+    "voice": "/voice/s1-unpai-24.mp3"
+  },
+  {
+    "id": "s1-unpai-25",
+    "star": "unpai",
+    "tier": "SR",
+    "title": {
+      "ja": "お花見の夜桜",
+      "zh-Hant": "夜櫻賞花",
+      "en": "Cherry Blossoms at Night",
+      "ko": "밤벚꽃놀이"
+    },
+    "scene": "Unpai under lantern-lit cherry blossoms at night in spring, light pink trench coat over a white knit, petals drifting, smiling shyly at you",
+    "line": {
+      "ja": "夜の桜って、ちょっとドキドキするね。……わたしだけ？",
+      "zh-Hant": "夜晚的櫻花，讓人有點心跳加速呢。……只有我嗎？",
+      "en": "Cherry blossoms at night make my heart race a bit. …Just me?",
+      "ko": "밤에 보는 벚꽃은 좀 두근거리네. ……나만 그래?"
+    },
+    "art": "/cards/s1-unpai-25/card.webp",
+    "voice": "/voice/s1-unpai-25.mp3"
+  },
+  {
+    "id": "s1-unpai-26",
+    "star": "unpai",
+    "tier": "SSR",
+    "title": {
+      "ja": "ヘッドホン、はんぶんこ",
+      "zh-Hant": "耳機，一人一邊",
+      "en": "Sharing Headphones",
+      "ko": "헤드폰, 반씩 나눠 쓰기"
+    },
+    "scene": "Intimate close-up of Unpai leaning in and holding one side of her pearl-white headphones toward the lens, bedroom fairy lights twinkling behind, oversized knit sweater, soft smile",
+    "line": {
+      "ja": "この曲、あなたにだけ聴かせたかったの。……どう？",
+      "zh-Hant": "這首歌，我只想讓你聽。……怎麼樣？",
+      "en": "I wanted you to be the only one to hear this. …Well?",
+      "ko": "이 노래, 너한테만 들려주고 싶었어. ……어때?"
+    },
+    "story": {
+      "ja": [
+        "ねえねえ、ちょっとこっち来て！\n部屋の床に座りこんで、わたしはレコードの山の中から一枚を引っぱり出した。ジャケットの角が少しすり切れた、古いアルバム。中古レコード屋さんで、店長さんに「それはいい耳してるね」って言われたやつ。\nターンテーブルに針を落とすと、ぷつぷつっていうノイズのあとに、やわらかいギターの音が流れはじめる。わたしはパールホワイトのヘッドホンを首からはずして、片っぽだけあなたの耳にあてた。\n「この曲、あなたにだけ聴かせたかったの」\nヘッドホンのコードは短いから、自然とふたりの顔が近くなる。壁のフェアリーライトがちかちか光って、あなたの横顔に小さな星がうつってた。\nあなたが目を閉じて聴いてるあいだ、わたしはずっとその顔を見てた。……どう？ 気に入ってくれた？",
+        "曲が終わっても、わたしたちはヘッドホンをはずさなかった。\n次の曲、その次の曲。アルバムのA面がぜんぶ終わるまで、ひとつのヘッドホンを半分こしたまま、床にならんで座ってた。いつもはおしゃべりなわたしが、こんなに静かにしてるの、めずらしいでしょ。\nでもね、音楽って、しゃべらなくても伝わることがあると思うの。この曲のここのベースがいいとか、このサビで泣きそうになるとか。あなたが小さくうなずくたびに、「わかる！」って心の中で叫んでた。\n針が内側まで来て、ぷつん、と音が止まった。\n「……B面も聴く？」\nあなたが先にそう言ったから、わたし、うれしくて思わず笑っちゃった。\nヘッドホンのコード一本ぶんの距離。これが、いまのわたしのいちばん好きな距離。レコードをひっくり返すあいだも、となりにいてね。"
+      ],
+      "zh-Hant": [
+        "欸欸，過來一下！\n我坐在房間地板上，從一疊唱片裡抽出一張。封套邊角有點磨損的老專輯。是在二手唱片行，被店長說「你的耳朵很好喔」的那一張。\n把唱針放上唱盤，在一陣劈啪的雜音之後，柔和的吉他聲流了出來。我從脖子上拿下珍珠白的耳機，把其中一邊貼到你的耳朵上。\n「這首歌，我只想讓你聽。」\n耳機線很短，我們的臉自然而然靠得好近。牆上的串燈一閃一閃，在你的側臉映出小小的星星。\n你閉著眼睛聽歌的時候，我一直看著你的臉。……怎麼樣？喜歡嗎？",
+        "歌結束了，我們還是沒有拿下耳機。\n下一首，再下一首。直到專輯A面全部放完，我們都分著同一副耳機，並肩坐在地板上。平常那麼愛講話的我，居然這麼安靜，很難得吧。\n可是啊，我覺得音樂這種東西，不用說話也能傳達。像是這首歌這段貝斯很棒、這段副歌讓人想哭。每次你輕輕點頭，我都在心裡大喊「我懂！」。\n唱針走到最內圈，啪地一聲，音樂停了。\n「……B面也要聽嗎？」\n是你先說出口的，我開心得忍不住笑了。\n一條耳機線的距離。這是我現在最喜歡的距離。把唱片翻面的時候，也要待在我旁邊喔。"
+      ],
+      "en": [
+        "Hey, hey, come here a sec!\nSitting on my bedroom floor, I pulled one record from the pile. An old album with a scuffed corner on the sleeve. The one the guy at the second-hand shop said showed I had \"a good ear.\"\nI dropped the needle, and after a crackle, a soft guitar started to play. I took the pearl-white headphones from around my neck and held one side to your ear.\n\"I wanted you to be the only one to hear this song.\"\nThe cord is short, so our faces ended up close. The fairy lights on the wall twinkled and scattered tiny stars across your profile.\nWhile you listened with your eyes closed, I watched your face the whole time. …Well? Do you like it?",
+        "Even after the song ended, we didn't take the headphones off.\nThe next song, and the one after. Until the whole A-side was done, we sat side by side on the floor sharing one pair of headphones. Me, the chatterbox, this quiet — pretty rare, huh?\nBut you know, I think music can say things without anyone talking. How the bass is great right here, how this chorus makes you want to cry. Every time you gave a little nod, I was shouting \"I know, right!\" inside.\nThe needle reached the centre and the sound stopped with a click.\n\"…Want to hear the B-side?\"\nYou said it first, and I was so happy I burst out laughing.\nThe length of one headphone cord. That's my favourite distance right now. Stay next to me while I flip the record, okay?"
+      ],
+      "ko": [
+        "있잖아, 잠깐 이리 와봐!\n방바닥에 주저앉아서, 나는 레코드 더미 속에서 한 장을 뽑아 들었어. 재킷 모서리가 살짝 해진, 오래된 앨범. 중고 레코드 가게에서 사장님한테 '귀가 좋네'라는 말을 들었던 그거야.\n턴테이블에 바늘을 내려놓으니까, 지지직 하는 잡음 뒤로 부드러운 기타 소리가 흘러나오기 시작했어. 나는 목에 걸고 있던 펄 화이트 헤드폰을 벗어서, 한쪽만 네 귀에 대줬어.\n'이 노래, 너한테만 들려주고 싶었어.'\n헤드폰 줄이 짧아서, 자연스럽게 얼굴이 가까워지네. 벽에 걸린 페어리 라이트가 반짝반짝 빛나서, 네 옆얼굴에 작은 별들이 비쳤어.\n네가 눈을 감고 듣는 동안, 나는 계속 그 얼굴만 보고 있었어. ……어때? 마음에 들었어?",
+        "노래가 끝나도, 우리는 헤드폰을 벗지 않았어.\n다음 곡, 또 그다음 곡. 앨범 A면이 다 끝날 때까지, 헤드폰 하나를 반씩 나눠 낀 채로 바닥에 나란히 앉아 있었어. 평소엔 수다쟁이인 내가 이렇게 조용한 거, 신기하지?\n근데 있잖아, 음악은 말 안 해도 통하는 게 있는 것 같아. 이 노래 여기 베이스가 좋다든가, 이 후렴구에서 눈물 날 것 같다든가. 네가 살짝 고개를 끄덕일 때마다, 속으로 '나도 그래!' 하고 외쳤어.\n바늘이 안쪽까지 들어와서, 톡, 하고 소리가 멈췄어.\n'……B면도 들을래?'\n네가 먼저 그렇게 말해줘서, 나 너무 좋아서 나도 모르게 웃어버렸어.\n헤드폰 줄 한 뼘만큼의 거리. 이게 지금 내가 제일 좋아하는 거리야. 레코드 뒤집는 동안에도, 옆에 있어줘."
+      ]
+    },
+    "art": "/cards/s1-unpai-26/card.webp",
+    "voice": "/voice/s1-unpai-26.mp3"
+  },
+  {
+    "id": "s1-unpai-27",
+    "star": "unpai",
+    "tier": "SSR",
+    "title": {
+      "ja": "自撮り、もう一枚",
+      "zh-Hant": "自拍，再一張",
+      "en": "One More Selfie",
+      "ko": "셀카, 한 장 더"
+    },
+    "scene": "Close-up of Unpai leaning in close to the lens as if for a selfie on a rain-washed neon side street at night, pink and blue light on her face, navy varsity jacket with rose-pink sleeves, playful smile",
+    "line": {
+      "ja": "もう一枚！ 今度は、もっとくっついて撮ろ？",
+      "zh-Hant": "再一張！這次我們靠更近一點拍？",
+      "en": "One more! Let's get closer this time?",
+      "ko": "한 장 더! 이번엔 좀 더 붙어서 찍을까?"
+    },
+    "story": {
+      "ja": [
+        "ネオンの小道って、写真映えするんだよ。知ってた？\n雨上がりのアスファルトに、ピンクとブルーの看板がゆらゆら映ってる。わたしはスマホをかかげて、あなたの腕をぐいっと引っぱった。\n「はい、撮るよー！ 三、二、一！」\n一枚目。あなたは半分目をつぶってた。二枚目。わたしが変な顔してた。三枚目。自販機の光がまぶしすぎて、ふたりとも真っ白。\n「もー、全然うまくいかない！」\n文句を言いながら、わたしは笑いが止まらなかった。あなたも笑ってて、その笑い声が狭い路地に響いて、通りすがりの猫がびっくりして逃げていった。\n失敗した写真も、ぜんぶ消さないでとっておくね。だって、失敗してる写真のほうが、そのときの空気がちゃんと残ってる気がするから。\n「……もう一枚だけ。今度は、ちゃんと撮ろ？」",
+        "四枚目を撮る前に、わたしはちょっとだけ考えた。\nいつもみたいにピースして、にっこり笑って、それでいいのかなって。今日は、なんだか、もうちょっと特別な一枚がほしかったの。\n「今度は、もっとくっついて撮ろ？」\n言ってから、自分でもちょっと照れた。あなたは一瞬びっくりした顔をして、それから、そっと肩をよせてくれた。ジャケットの袖どうしがふれる。\n画面の中のふたりは、ネオンの光で頬がピンク色になってた。……ネオンのせいだよ、ほんとに。\nシャッターを押した瞬間、ぽつっと雨がまた降りはじめた。\nあわてて自販機の屋根の下に駆けこんで、撮れた写真を確認する。ちょっとブレてた。でも、ふたりとも、今日いちばんいい顔で笑ってた。\nこれ、待ち受けにしてもいい？ だめって言っても、もうしちゃったけどね！"
+      ],
+      "zh-Hant": [
+        "霓虹小巷超好拍的，你知道嗎？\n雨後的柏油路上，粉紅和藍色的招牌倒影搖搖晃晃。我舉起手機，一把拉住你的手臂。\n「要拍囉！三、二、一！」\n第一張，你眼睛閉了一半。第二張，我表情好怪。第三張，販賣機的光太亮，兩個人都白成一片。\n「真是的，完全拍不好！」\n我一邊抱怨，一邊笑個不停。你也在笑，笑聲在窄窄的巷子裡迴盪，路過的貓嚇了一跳逃走了。\n拍失敗的照片，我也全部留著不刪喔。因為總覺得，失敗的照片反而把當下的氣氛留得更好。\n「……再一張就好。這次好好拍吧？」",
+        "拍第四張之前，我稍微想了一下。\n像平常一樣比個YA、笑一笑，這樣就好了嗎？今天，總覺得想要更特別一點的一張。\n「這次，我們靠更近一點拍？」\n說出口之後，連我自己都有點害羞。你愣了一下，然後輕輕把肩膀靠了過來。外套的袖子碰在一起。\n畫面裡的我們，臉頰被霓虹燈照成了粉紅色。……是霓虹燈的關係啦，真的。\n按下快門的瞬間，雨又滴滴答答下了起來。\n我們趕緊跑到販賣機的屋簷下，確認拍到的照片。有點晃到了。可是，我們兩個都笑得是今天最好看的樣子。\n這張，可以設成桌布嗎？就算你說不行，我也已經設好了啦！"
+      ],
+      "en": [
+        "Neon alleys make the best photos. Did you know?\nPink and blue signs wobbled in the reflections on the rain-washed asphalt. I held up my phone and tugged your arm.\n\"Okay, here we go! Three, two, one!\"\nShot one: your eyes were half closed. Shot two: I was pulling a weird face. Shot three: the vending machine was so bright we both came out pure white.\n\"Ugh, this isn't working at all!\"\nI complained, but I couldn't stop laughing. You were laughing too, and it echoed down the narrow street and made a passing cat bolt.\nI'm keeping all the failed ones too, not deleting any. The failed photos keep the feeling of the moment better, somehow.\n\"…Just one more. Let's do it properly this time?\"",
+        "Before the fourth shot, I thought for a second.\nPeace sign, big smile, like always — was that enough? Today, I wanted something a little more special.\n\"Let's get closer this time?\"\nI got a bit shy after saying it. You looked surprised for a moment, then gently leaned your shoulder toward mine. Our jacket sleeves touched.\nOn the screen, the neon had turned both our cheeks pink. …It was the neon. Really.\nThe moment I pressed the shutter, the rain started again, drop by drop.\nWe ran under the vending machine's little roof and checked the photo. A bit blurry. But we were both smiling our best smiles of the day.\nCan I make it my lock screen? Even if you say no, I already did!"
+      ],
+      "ko": [
+        "네온 골목은 사진이 잘 받거든. 알고 있었어?\n비 그친 아스팔트 위로, 분홍이랑 파랑 간판이 일렁이면서 비쳐. 나는 스마트폰을 들고, 네 팔을 확 잡아당겼어.\n'자, 찍는다~! 삼, 이, 일!'\n한 장째. 너는 눈을 반쯤 감고 있었어. 두 장째. 내가 이상한 표정을 짓고 있었어. 세 장째. 자판기 불빛이 너무 눈부셔서 둘 다 새하얗게 나왔어.\n'아 진짜, 하나도 안 되네!'\n투덜거리면서도 나는 웃음이 멈추질 않았어. 너도 웃고 있어서, 그 웃음소리가 좁은 골목에 울려 퍼져서, 지나가던 고양이가 놀라서 도망갔어.\n실패한 사진도 다 지우지 않고 남겨둘 거야. 왜냐면, 실패한 사진일수록 그때의 분위기가 더 잘 남아 있는 것 같거든.\n'……딱 한 장만 더. 이번엔, 제대로 찍자?'",
+        "네 장째를 찍기 전에, 나는 잠깐 생각했어.\n늘 그렇듯 브이 하고 활짝 웃고, 그걸로 될까 하고. 오늘은 왠지, 조금 더 특별한 한 장을 갖고 싶었어.\n'이번엔, 좀 더 붙어서 찍을까?'\n말하고 나서, 나도 좀 부끄러웠어. 너는 순간 놀란 표정을 짓더니, 살며시 어깨를 붙여줬어. 재킷 소매끼리 스쳤어.\n화면 속 우리 둘은, 네온 불빛 때문에 뺨이 분홍색이 됐어. ……네온 탓이야, 진짜로.\n셔터를 누른 순간, 또 톡톡 비가 내리기 시작했어.\n서둘러 자판기 지붕 밑으로 뛰어들어가서, 찍힌 사진을 확인했어. 살짝 흔들렸어. 그래도 둘 다, 오늘 중에 제일 좋은 얼굴로 웃고 있었어.\n이거, 배경화면으로 해도 돼? 안 된다고 해도, 이미 해버렸지만!"
+      ]
+    },
+    "art": "/cards/s1-unpai-27/card.webp",
+    "voice": "/voice/s1-unpai-27.mp3"
+  },
+  {
+    "id": "s1-unpai-28",
+    "star": "unpai",
+    "tier": "SSR",
+    "title": {
+      "ja": "あなたのジャケット",
+      "zh-Hant": "你的外套",
+      "en": "Your Jacket",
+      "ko": "너의 재킷"
+    },
+    "scene": "Close-up of Unpai wrapped in an oversized dark jacket with sleeves covering her hands on a rainy neon-lit street at night, collar pulled up to her chin, glowing reflections behind, shy smile into the lens",
+    "line": {
+      "ja": "あなたのジャケット、ぶかぶか。……でも、返したくないかも。",
+      "zh-Hant": "你的外套好大件。……可是，我好像不想還你了。",
+      "en": "Your jacket's way too big on me. …But I might not give it back.",
+      "ko": "네 재킷, 완전 헐렁해. ……근데, 안 돌려주고 싶을지도."
+    },
+    "story": {
+      "ja": [
+        "天気予報、見てなかったわたしが悪いんだけどさ。\nライブハウスを出たら、外は本降りの雨だった。わたしが着てたのは、薄いTシャツ一枚。汗が冷えて、くしゃみがひとつ出た。\nそしたらあなたが、なにも言わずに自分のジャケットを脱いで、わたしの肩にかけてくれたの。\n「え、いいよ、あなたが寒いじゃん」\n「平気」\n平気なわけないのに。あなたのジャケットはぶかぶかで、袖から指先も出ない。えりもとから、あなたのにおいがふわっとした。洗剤と、さっきまでいたライブハウスの、ちょっとだけ熱っぽい空気のにおい。\n駅までの道、ネオンが雨ににじんで、水たまりがきらきら光ってた。わたしはジャケットの袖をぶらぶらさせながら、あなたの半歩うしろを歩いた。\n……あったかいな。ジャケットも、あなたも。",
+        "駅に着いても、わたしはジャケットを返さなかった。\n「もうちょっとだけ、借りててもいい？」\nあなたは笑って、「風邪ひかないならね」って言った。そういうとこ、ほんとずるいと思う。\n電車の窓に、ぶかぶかのジャケットを着たわたしが映ってる。袖を折り返しても、まだ長い。なんだか、あなたにつつまれてるみたいで、落ち着くのにそわそわする、へんな気持ち。\n最寄り駅で降りるとき、わたしはやっと袖から手を出して、ジャケットを脱ごうとした。でも、ボタンに指がかかったところで、止まっちゃった。\n「……返したくない、かも」\n小さい声で言ったのに、あなたにはちゃんと聞こえてたみたい。\n「じゃあ、次に会うときまで預けとく」\nそれって、次もあるってことだよね？ 約束だよ。それまで、このジャケット、大事にあずかっとくから！"
+      ],
+      "zh-Hant": [
+        "雖然是沒看氣象預報的我不好啦。\n走出Live House，外面下著大雨。我身上只有一件薄T恤。汗變冷了，打了一個噴嚏。\n結果你什麼都沒說，就脫下自己的外套，披在我肩上。\n「欸，不用啦，你會冷耶。」\n「沒事。」\n怎麼可能沒事。你的外套好大件，袖子長到連指尖都露不出來。領口飄來你的味道。洗衣精，還有剛才Live House裡那種有點熱烘烘的空氣味。\n走到車站的路上，霓虹在雨中暈開，水窪閃閃發亮。我晃著外套的袖子，走在你身後半步的地方。\n……好暖和喔。外套也是，你也是。",
+        "到了車站，我還是沒有把外套還你。\n「可以再借我一下下嗎？」\n你笑著說：「不感冒的話就好。」你這種地方，真的很狡猾。\n電車窗戶上映著穿著大外套的我。袖子摺起來還是太長。總覺得好像被你包住一樣，明明很安心，卻又坐立不安，好奇怪的心情。\n在我家那站下車時，我終於把手從袖子裡伸出來，想脫下外套。可是手指碰到釦子的時候，停住了。\n「……好像，不想還你了。」\n我說得很小聲，你卻好像聽得清清楚楚。\n「那就先寄放在你那裡，到下次見面為止。」\n這表示，還有下次對吧？說好了喔。在那之前，這件外套我會好好保管的！"
+      ],
+      "en": [
+        "Okay, it's my fault for not checking the forecast.\nWhen we came out of the live house, it was pouring. All I had on was a thin T-shirt. My sweat went cold and I sneezed.\nThen, without a word, you took off your jacket and put it over my shoulders.\n\"Hey, no, you'll be cold!\"\n\"I'm fine.\"\nNo way you were fine. Your jacket was huge on me; my fingertips didn't even reach past the sleeves. Your scent drifted up from the collar. Laundry soap, and the warm, crowded air of the gig we'd just left.\nOn the way to the station, the neon blurred in the rain and the puddles sparkled. I swung the empty sleeves and walked half a step behind you.\n…So warm. The jacket, and you.",
+        "Even at the station, I didn't give the jacket back.\n\"Can I borrow it a bit longer?\"\nYou laughed and said, \"As long as you don't catch a cold.\" That's so unfair of you.\nThe train window showed me in your giant jacket. Even with the sleeves rolled up, they were too long. It felt like being wrapped up in you — calm and fidgety at the same time. A strange feeling.\nGetting off at my stop, I finally pulled my hands out of the sleeves to take it off. But my fingers stopped on the button.\n\"…I might not want to give it back.\"\nI said it quietly, but you heard me just fine.\n\"Then hang on to it until next time.\"\nThat means there's a next time, right? Promise. Till then, I'll take really good care of this jacket!"
+      ],
+      "ko": [
+        "일기예보 안 본 내가 잘못이긴 한데.\n라이브하우스에서 나오니까 밖은 완전히 쏟아지는 비였어. 나는 얇은 티셔츠 한 장만 입고 있었거든. 땀이 식으면서 재채기가 한 번 났어.\n그랬더니 네가, 아무 말도 없이 자기 재킷을 벗어서 내 어깨에 걸쳐줬어.\n'아니, 됐어, 너 춥잖아.'\n'괜찮아.'\n괜찮을 리가 없는데. 네 재킷은 완전 헐렁해서, 소매 밖으로 손끝도 안 나와. 옷깃에서 네 냄새가 훅 났어. 세제 냄새랑, 방금까지 있던 라이브하우스의 살짝 후끈한 공기 냄새.\n역까지 가는 길, 네온이 빗물에 번져서 물웅덩이가 반짝반짝 빛났어. 나는 재킷 소매를 흔들거리면서, 네 반걸음 뒤를 걸었어.\n……따뜻하다. 재킷도, 너도.",
+        "역에 도착해도, 나는 재킷을 돌려주지 않았어.\n'조금만 더 빌려도 돼?'\n너는 웃으면서 '감기 안 걸리면'이라고 했어. 그런 거, 진짜 얄미운 것 같아.\n전철 창문에, 헐렁한 재킷을 입은 내가 비쳤어. 소매를 접어도 아직 길어. 왠지 너한테 폭 감싸인 것 같아서, 편안한데도 괜히 두근거리는, 이상한 기분이었어.\n가까운 역에서 내릴 때, 나는 겨우 소매 밖으로 손을 꺼내서 재킷을 벗으려고 했어. 근데, 단추에 손가락이 닿은 순간 멈춰버렸어.\n'……안 돌려주고 싶을지도.'\n작은 목소리로 말했는데, 너한테는 제대로 들렸나 봐.\n'그럼 다음에 만날 때까지 맡아둘게.'\n그 말은, 다음에도 만난다는 거지? 약속이야. 그때까지, 이 재킷 소중히 맡아둘 테니까!"
+      ]
+    },
+    "art": "/cards/s1-unpai-28/card.webp",
+    "voice": "/voice/s1-unpai-28.mp3"
+  },
+  {
+    "id": "s1-unpai-29",
+    "star": "unpai",
+    "tier": "SSR",
+    "title": {
+      "ja": "寝落ちする前に",
+      "zh-Hant": "睡著之前",
+      "en": "Before I Doze Off",
+      "ko": "잠들기 전에"
+    },
+    "scene": "Close-up of Unpai lying among plush toys on her bed at night hugging a teddy bear, oversized pastel hoodie and long lounge pants, the sleeves over her hands, fairy lights glowing, sleepy eyes looking into the lens",
+    "line": {
+      "ja": "ねむい……でも、まだ帰っちゃやだ。あと五分だけ。",
+      "zh-Hant": "好睏……可是你還不能走。再五分鐘就好。",
+      "en": "So sleepy… but don't go yet. Just five more minutes.",
+      "ko": "졸려…… 근데 아직 가지 마. 딱 오 분만 더."
+    },
+    "story": {
+      "ja": [
+        "ぬいぐるみたちに囲まれて、ベッドの上でごろごろするの、最高じゃない？\n今日は一日中遊びまわって、ゲームセンターでUFOキャッチャーして、クレープ食べて、最後はわたしの部屋で映画を観ることになったの。ポップコーンとジュースを用意して、フェアリーライトだけつけて、準備万端。\n……なのに、映画が始まって二十分で、わたし、もう眠くなってきちゃった。\n大きめのパーカーの袖に顔をうずめて、くまのぬいぐるみを抱っこして、必死にまぶたを開けてる。となりのあなたは映画に夢中で、ときどき「今の見た？」って聞いてくる。\n「うん、見てた見てた」\n見てなかった。あなたの横顔しか。\n画面の光がちかちかして、ぬいぐるみがふかふかで、あなたの声がやさしくて。こんなの、眠くならないほうがむりだよ。",
+        "気がついたら、エンドロールが流れてた。\nわたしはいつのまにか、ぬいぐるみの山にもたれて寝ちゃってたみたい。毛布がかけられてて、ポップコーンのお皿は片づいてた。あなたは、わたしが起きるのを待ってたんだって。\n「ごめん、ほとんど寝てた……」\n「知ってる。いびきかいてた」\n「かいてない！ ぜったい、かいてない！」\nクッションを投げたら、あなたは笑いながら受けとめた。時計を見たら、もう終電の時間が近い。\n「そろそろ帰るね」ってあなたが立ち上がったとき、わたし、思わずパーカーのすそをつかんでた。\n「……やだ。まだ帰っちゃやだ。あと五分だけ」\n自分でもびっくりするくらい、子どもみたいな声が出た。あなたは困った顔で、でも、もう一度座ってくれた。\n五分は、十分になって、十五分になった。明日、ちゃんと起きられなかったら、それはあなたのせいだからね！"
+      ],
+      "zh-Hant": [
+        "被一堆布偶包圍，在床上滾來滾去，是不是超棒的？\n今天玩了一整天，去遊樂場夾娃娃、吃可麗餅，最後決定在我房間看電影。爆米花和果汁都準備好了，只開著串燈，萬事俱備。\n……結果電影才開始二十分鐘，我就開始想睡了。\n把臉埋在大大的帽T袖子裡，抱著熊熊布偶，拚命撐開眼皮。旁邊的你看電影看得好入迷，偶爾會問我「剛剛那個你有看到嗎？」\n「嗯，有看到有看到。」\n才沒看到。我只看到你的側臉。\n螢幕的光一閃一閃，布偶軟綿綿的，你的聲音好溫柔。這樣要我不想睡，根本不可能嘛。",
+        "回過神來，片尾名單已經在跑了。\n我好像不知不覺靠著布偶山睡著了。身上蓋著毯子，爆米花的盤子也收好了。你說你一直在等我醒來。\n「對不起，我幾乎都在睡……」\n「我知道。你還打呼。」\n「才沒有！絕對沒有！」\n我丟了一個抱枕過去，你笑著接住。看了一下時鐘，末班車的時間快到了。\n你說「我差不多該回去了」站起來的時候，我忍不住抓住了你帽T的衣角。\n「……不要。你還不能走。再五分鐘就好。」\n連我自己都嚇一跳，聲音像小孩子一樣。你一臉為難，但還是又坐了下來。\n五分鐘變成十分鐘，又變成十五分鐘。明天要是起不來，都是你害的喔！"
+      ],
+      "en": [
+        "Rolling around on the bed surrounded by plushies — isn't that the best?\nWe'd played all day: claw machines at the arcade, crepes, and finally a movie in my room. Popcorn and juice ready, only the fairy lights on. Perfect setup.\n…And yet, twenty minutes in, I was already getting sleepy.\nFace buried in the sleeve of my big hoodie, hugging my teddy bear, I fought to keep my eyes open. You were totally into the movie, asking now and then, \"Did you see that?\"\n\"Yeah, yeah, I saw.\"\nI didn't. Just your profile.\nThe screen flickering, the plushies so soft, your voice so gentle. There's no way anyone could stay awake through that.",
+        "The next thing I knew, the credits were rolling.\nI must have fallen asleep against the plushie mountain. There was a blanket over me and the popcorn bowl was cleared away. You said you'd been waiting for me to wake up.\n\"Sorry, I slept through most of it…\"\n\"I know. You were snoring.\"\n\"I was not! Absolutely not!\"\nI threw a cushion and you caught it, laughing. The clock said the last train was coming up soon.\nWhen you stood up and said \"I should head home,\" I grabbed the hem of your hoodie without thinking.\n\"…No. Don't go yet. Just five more minutes.\"\nEven I was surprised how childish I sounded. You looked troubled, but you sat back down.\nFive minutes became ten, then fifteen. If I can't get up tomorrow, it's your fault!"
+      ],
+      "ko": [
+        "인형들에 둘러싸여서 침대 위에서 뒹굴거리는 거, 최고 아니야?\n오늘은 하루 종일 놀러 다녔어. 오락실에서 인형뽑기 하고, 크레페 먹고, 마지막엔 내 방에서 영화 보기로 했어. 팝콘이랑 주스도 준비하고, 페어리 라이트만 켜놓고, 준비 완벽.\n……근데 영화 시작하고 이십 분 만에, 나 벌써 졸리기 시작했어.\n큼직한 후드티 소매에 얼굴을 파묻고, 곰 인형을 껴안은 채로, 필사적으로 눈꺼풀을 붙잡고 있었어. 옆에 있는 너는 영화에 푹 빠져서, 가끔 '방금 봤어?' 하고 물어봐.\n'응, 봤어 봤어.'\n안 봤어. 네 옆얼굴밖에.\n화면 불빛은 반짝거리고, 인형은 폭신폭신하고, 네 목소리는 다정하고. 이러면 안 졸린 게 더 이상하지.",
+        "정신 차려보니, 엔딩 크레딧이 흐르고 있었어.\n나는 어느새 인형 더미에 기대서 잠들어버린 것 같았어. 담요가 덮여 있었고, 팝콘 접시도 치워져 있었어. 너는 내가 깨어나길 기다리고 있었대.\n'미안, 거의 잤네……'\n'알아. 코 골더라.'\n'안 골았어! 절대, 안 골았어!'\n쿠션을 던졌더니, 너는 웃으면서 받아냈어. 시계를 보니 막차 시간이 다 됐어.\n'슬슬 갈게' 하고 네가 일어났을 때, 나는 나도 모르게 후드티 자락을 붙잡고 있었어.\n'……싫어. 아직 가지 마. 딱 오 분만.'\n나도 놀랄 만큼 어린애 같은 목소리가 나왔어. 너는 곤란한 표정을 지었지만, 그래도 다시 앉아줬어.\n오 분은 십 분이 되고, 십오 분이 됐어. 내일 제대로 못 일어나면, 그건 다 네 탓이야!"
+      ]
+    },
+    "art": "/cards/s1-unpai-29/card.webp",
+    "voice": "/voice/s1-unpai-29.mp3"
+  },
+  {
+    "id": "s1-unpai-30",
+    "star": "unpai",
+    "tier": "UR",
+    "title": {
+      "ja": "ネオン小道で待ってた",
+      "zh-Hant": "在霓虹小巷等你",
+      "en": "Waiting in Neon Alley",
+      "ko": "네온 골목에서 기다렸어"
+    },
+    "scene": "Unpai's signature: a narrow Tokyo side street at night, rose-pink and blue neon signs reflected in wet asphalt, a glowing vending machine, light rain, oversized navy varsity jacket with rose-pink sleeves over a white T-shirt, pearl-white retro headphones around her neck, looking into the lens",
+    "line": {
+      "ja": "おそーい！ ……でも来てくれたから、ぜんぶ許す！",
+      "zh-Hant": "好慢喔！……不過你來了，所以全部原諒你！",
+      "en": "You're so late! …But you came, so you're forgiven!",
+      "ko": "너무 늦었잖아! ……그래도 와줬으니까, 다 용서해줄게!"
+    },
+    "story": {
+      "ja": [
+        "東京の、とある細い路地。昼間は誰も気にしないような道だけど、夜になると、ここはわたしだけの特別な場所になるの。\nピンクとブルーのネオンが、濡れたアスファルトに映って、ゆらゆら光る。角っこの自販機は、いつも同じ青白い光で、わたしを照らしてくれる。\n紺色にローズピンクの袖のスタジャンを着て、首にはパールホワイトのヘッドホン。お気に入りのプレイリストを流しながら、わたしはここで、あなたを待つ。\n待ち合わせの時間は、とっくに過ぎてる。スマホを見て、ため息をついて、またヘッドホンから流れる曲に集中する。……ふりをする。\nほんとは、足音がするたびに振り向いちゃう。ちがう人だってわかって、ちょっとがっかりして、またネオンを見上げる。\n来ないかも、なんて思わないよ。あなたは、ちゃんと来る人だって知ってるから。",
+        "足音が近づいてきた。今度こそ、まちがいない。\n振り向くより先に、わたしは叫んでた。\n「おそーい！」\n息を切らして走ってきたあなたが、ごめんって手を合わせる。電車が止まってたんだって。スマホの充電も切れちゃったんだって。ほっぺをふくらませて怒ったふりをしたけど、三秒ももたなかった。\n「……でも、来てくれたから、ぜんぶ許す！」\nわたしはヘッドホンを首からはずして、あなたの首にかけた。流れてるのは、あなたを待ってるあいだずっと聴いてた曲。\n「この曲、待ってる間に百回くらい聴いたよ。責任とって、一緒に聴いて」\n自販機で、あったかいココアをふたつ買う。ネオンの下、肩をならべて、同じ曲を聴く。雨上がりの夜の空気が、ひんやりして気持ちいい。\nねえ、次に会うときも、ここで待ってるね。何分でも、何時間でも。だって、あなたが来るってわかってるから。"
+      ],
+      "zh-Hant": [
+        "東京某條窄窄的小巷。白天沒有人會注意的路，一到晚上，就變成只屬於我的特別地方。\n粉紅和藍色的霓虹燈，映在濕漉漉的柏油路上，搖搖晃晃地發著光。轉角的自動販賣機，總是用同樣青白色的光照著我。\n穿著深藍色配玫瑰粉袖子的棒球外套，脖子上掛著珍珠白的耳機。一邊放著最愛的歌單，我在這裡等你。\n約好的時間早就過了。看看手機，嘆口氣，又專心聽耳機裡的歌。……假裝的。\n其實，每次聽到腳步聲，我都會忍不住回頭。發現是別人，有點失望，又抬頭看著霓虹燈。\n我才不會覺得你不會來呢。因為我知道，你是一定會來的人。",
+        "腳步聲越來越近。這次，絕對沒錯。\n還沒轉身，我就先喊出來了。\n「好慢喔！」\n你氣喘吁吁地跑過來，雙手合十說對不起。你說電車停駛了，手機也沒電了。我鼓起臉頰假裝生氣，可是連三秒都撐不住。\n「……不過你來了，所以全部原諒你！」\n我從脖子上拿下耳機，掛到你的脖子上。正在播的，是等你的時候一直在聽的那首歌。\n「這首歌，我等你的時候聽了大概一百遍。你要負責，陪我一起聽。」\n在販賣機買了兩罐熱可可。在霓虹燈下，肩並著肩，聽著同一首歌。雨後夜晚的空氣，涼涼的好舒服。\n欸，下次見面，我也會在這裡等你喔。不管幾分鐘、幾個小時。因為我知道，你一定會來。"
+      ],
+      "en": [
+        "A narrow side street somewhere in Tokyo. In the daytime nobody notices it, but at night it becomes my own special place.\nPink and blue neon shimmer in the wet asphalt. The vending machine on the corner always lights me up with the same bluish glow.\nIn my navy varsity jacket with rose-pink sleeves, pearl-white headphones around my neck, playing my favourite playlist, this is where I wait for you.\nWe were supposed to meet ages ago. I check my phone, sigh, and focus on the song in my headphones again. …Or pretend to.\nTruthfully, I turn around every time I hear footsteps. It's someone else, I'm a little disappointed, and I look back up at the neon.\nI never think you won't come, though. I know you're someone who always shows up.",
+        "Footsteps coming closer. This time, no mistake.\nBefore I even turned around, I was shouting.\n\"You're so late!\"\nYou'd run all the way and were out of breath, hands pressed together in apology. The trains had stopped. Your phone had died. I puffed out my cheeks and pretended to be mad, but I didn't last three seconds.\n\"…But you came, so you're forgiven!\"\nI took the headphones from my neck and hung them around yours. Playing was the song I'd listened to the whole time I was waiting.\n\"I played this about a hundred times while I waited. Take responsibility and listen with me.\"\nI bought two hot cocoas from the vending machine. Under the neon, shoulder to shoulder, we listened to the same song. The after-rain night air was cool and felt so good.\nHey, next time too, I'll wait for you here. However many minutes, however many hours. Because I know you'll come."
+      ],
+      "ko": [
+        "도쿄의 어느 좁은 골목. 낮에는 아무도 신경 안 쓰는 길이지만, 밤이 되면 여긴 나만의 특별한 장소가 돼.\n분홍이랑 파랑 네온이 젖은 아스팔트에 비쳐서, 일렁일렁 빛나. 모퉁이의 자판기는 늘 같은 창백한 불빛으로 나를 비춰줘.\n남색에 로즈핑크 소매가 달린 스타디움 점퍼를 입고, 목엔 펄 화이트 헤드폰. 좋아하는 플레이리스트를 틀어놓고, 나는 여기서 너를 기다려.\n약속 시간은 벌써 지났어. 스마트폰을 보고 한숨을 쉬고, 다시 헤드폰에서 흘러나오는 노래에 집중해. ……하는 척.\n사실은, 발소리가 날 때마다 돌아보게 돼. 다른 사람인 걸 알고 조금 실망하고, 다시 네온을 올려다봐.\n안 올지도 모른다는 생각은 안 해. 너는 꼭 와주는 사람이란 걸 아니까.",
+        "발소리가 가까워졌어. 이번엔 확실해.\n돌아보기도 전에, 나는 소리쳤어.\n'너무 늦었잖아!'\n숨을 헐떡이며 뛰어온 네가 미안하다고 두 손을 모았어. 전철이 멈췄었대. 스마트폰 배터리도 다 됐었대. 볼을 부풀리며 화난 척했지만, 삼 초도 못 버텼어.\n'……그래도, 와줬으니까, 다 용서해줄게!'\n나는 헤드폰을 목에서 벗어서 네 목에 걸어줬어. 흘러나오는 건, 너를 기다리는 동안 계속 들었던 노래.\n'이 노래, 기다리는 동안 백 번쯤 들었어. 책임지고, 같이 들어.'\n자판기에서 따뜻한 코코아를 두 개 샀어. 네온 아래서 어깨를 나란히 하고, 같은 노래를 들었어. 비 갠 밤공기가 서늘해서 기분 좋았어.\n있잖아, 다음에 만날 때도 여기서 기다릴게. 몇 분이든, 몇 시간이든. 왜냐면, 네가 온다는 걸 아니까."
+      ]
+    },
+    "art": "/cards/s1-unpai-30/card.webp",
+    "voice": "/voice/s1-unpai-30.mp3"
+  },
+  {
+    "id": "s1-alice-01",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "夜明けの窓辺",
+      "zh-Hant": "黎明的窗邊",
+      "en": "Window Seat at Dawn",
+      "ko": "새벽녘 창가"
+    },
+    "scene": "Alice on a window seat with lace curtains at dawn, pale pink sky outside, a porcelain teacup and a small silver music box on the sill, opaque, fully lined white lace blouse, shy smile at you",
+    "line": {
+      "ja": "お、おはよう……。早起きしたら、あなたに一番に会いたくて。",
+      "zh-Hant": "早、早安……。早起之後，就想第一個見到你。",
+      "en": "G-good morning… I woke up early and wanted to see you first.",
+      "ko": "아, 안녕하세요……. 일찍 일어났더니, 당신을 제일 먼저 보고 싶어서요."
+    },
+    "art": "/cards/s1-alice-01/card.webp",
+    "voice": "/voice/s1-alice-01.mp3"
+  },
+  {
+    "id": "s1-alice-02",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "オルゴールのねじ",
+      "zh-Hant": "音樂盒的發條",
+      "en": "Winding the Music Box",
+      "ko": "오르골 태엽 감기"
+    },
+    "scene": "Alice at a small wooden table in soft morning light winding an antique silver music box with a tiny dancer, cream cardigan over a white blouse, looking up at you",
+    "line": {
+      "ja": "この曲、好きなの。……あなたにも、聴いてほしくて。",
+      "zh-Hant": "我喜歡這首曲子。……也想讓你聽聽。",
+      "en": "I love this melody. …I wanted you to hear it too.",
+      "ko": "이 곡, 좋아해요. ……당신에게도 들려주고 싶어서요."
+    },
+    "art": "/cards/s1-alice-02/card.webp",
+    "voice": "/voice/s1-alice-02.mp3"
+  },
+  {
+    "id": "s1-alice-03",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "ピアノの練習",
+      "zh-Hant": "練琴時間",
+      "en": "Piano Practice",
+      "ko": "피아노 연습"
+    },
+    "scene": "Alice at a grand piano in an old music room in the afternoon, sun through tall windows, sheet music on the stand, white blouse and long navy pleated skirt, glancing shyly at you",
+    "line": {
+      "ja": "まだ練習中だから……あんまり、じっと見ないでね。",
+      "zh-Hant": "我還在練習……不要一直盯著看啦。",
+      "en": "I'm still practicing… so don't stare too much, okay?",
+      "ko": "아직 연습 중이니까…… 너무 빤히 보지 말아주세요."
+    },
+    "art": "/cards/s1-alice-03/card.webp",
+    "voice": "/voice/s1-alice-03.mp3"
+  },
+  {
+    "id": "s1-alice-04",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "紅茶の時間",
+      "zh-Hant": "紅茶時間",
+      "en": "Tea Time",
+      "ko": "홍차 시간"
+    },
+    "scene": "Alice pouring tea from a porcelain teapot at a lace-covered table in the afternoon, cream knit cardigan, sugar bowl in hand, soft window light",
+    "line": {
+      "ja": "お砂糖、いくつ？ ……あなたの好み、覚えたいの。",
+      "zh-Hant": "要幾顆糖？……我想記住你的喜好。",
+      "en": "How many sugars? …I want to remember how you like it.",
+      "ko": "설탕은 몇 개요? ……당신 취향을 기억하고 싶어서요."
+    },
+    "art": "/cards/s1-alice-04/card.webp",
+    "voice": "/voice/s1-alice-04.mp3"
+  },
+  {
+    "id": "s1-alice-05",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "白いバラの手入れ",
+      "zh-Hant": "照顧白玫瑰",
+      "en": "Tending the White Roses",
+      "ko": "하얀 장미 손질"
+    },
+    "scene": "Alice in a glass conservatory in daylight tending white roses, linen apron over a white blouse, gardening gloves and small shears, smiling at you",
+    "line": {
+      "ja": "棘に気をつけてね。……あ、心配してくれたの？ ありがと。",
+      "zh-Hant": "小心刺喔。……啊，你在擔心我嗎？謝謝。",
+      "en": "Mind the thorns. …Oh, were you worried about me? Thank you.",
+      "ko": "가시 조심하세요. ……아, 걱정해 주신 거예요? 고마워요."
+    },
+    "art": "/cards/s1-alice-05/card.webp",
+    "voice": "/voice/s1-alice-05.mp3"
+  },
+  {
+    "id": "s1-alice-06",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "刺繍の途中",
+      "zh-Hant": "刺繡到一半",
+      "en": "Embroidery in Progress",
+      "ko": "수놓다 만 자수"
+    },
+    "scene": "Alice by an afternoon window holding an embroidery hoop with a half-stitched handkerchief, cream cardigan, hiding it shyly from you",
+    "line": {
+      "ja": "これ、あなたのイニシャル。……まだ、ないしょだったのに。",
+      "zh-Hant": "這是你名字的縮寫。……本來還想保密的。",
+      "en": "These are your initials. …It was supposed to be a secret.",
+      "ko": "이거, 당신 이니셜이에요. ……아직 비밀이었는데."
+    },
+    "art": "/cards/s1-alice-06/card.webp",
+    "voice": "/voice/s1-alice-06.mp3"
+  },
+  {
+    "id": "s1-alice-07",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "雨の日の楽譜",
+      "zh-Hant": "雨天的樂譜",
+      "en": "Sheet Music on a Rainy Day",
+      "ko": "비 오는 날의 악보"
+    },
+    "scene": "Alice sitting on the floor of a music room on a rainy afternoon sorting sheet music, rain on the tall windows, soft grey knit dress",
+    "line": {
+      "ja": "雨の日は、弾きたい曲が変わるの。……不思議だね。",
+      "zh-Hant": "下雨天，想彈的曲子就不一樣了。……很奇妙呢。",
+      "en": "On rainy days, I want to play different songs. …Funny, isn't it?",
+      "ko": "비 오는 날은, 치고 싶은 곡이 달라져요. ……신기하죠."
+    },
+    "art": "/cards/s1-alice-07/card.webp",
+    "voice": "/voice/s1-alice-07.mp3"
+  },
+  {
+    "id": "s1-alice-08",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "パン屋さんの朝",
+      "zh-Hant": "麵包店的早晨",
+      "en": "Bakery Morning",
+      "ko": "빵집의 아침"
+    },
+    "scene": "Alice outside a small bakery on a quiet morning street, holding a paper bag with croissants, beige trench coat over a white blouse, offering you one",
+    "line": {
+      "ja": "焼きたてのクロワッサン、ふたつ。……一緒に食べてくれる？",
+      "zh-Hant": "剛出爐的可頌，兩個。……願意跟我一起吃嗎？",
+      "en": "Two fresh croissants. …Will you eat with me?",
+      "ko": "갓 구운 크루아상, 두 개예요. ……같이 먹어줄래요?"
+    },
+    "art": "/cards/s1-alice-08/card.webp",
+    "voice": "/voice/s1-alice-08.mp3"
+  },
+  {
+    "id": "s1-alice-09",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "お気に入りのカーディガン",
+      "zh-Hant": "最喜歡的開襟衫",
+      "en": "My Favorite Cardigan",
+      "ko": "마음에 드는 카디건"
+    },
+    "scene": "Alice in front of a tall mirror in her bedroom trying on a pale pink cardigan over a white blouse, turning to ask your opinion, soft daylight",
+    "line": {
+      "ja": "これ、変じゃないかな……。あなたに見てほしかったの。",
+      "zh-Hant": "這件會不會很奇怪……。我想讓你看看。",
+      "en": "Does this look strange…? I wanted you to see it.",
+      "ko": "이거, 이상하지 않을까요……. 당신에게 보여주고 싶었어요."
+    },
+    "art": "/cards/s1-alice-09/card.webp",
+    "voice": "/voice/s1-alice-09.mp3"
+  },
+  {
+    "id": "s1-alice-10",
+    "star": "alice",
+    "tier": "N",
+    "title": {
+      "ja": "おやすみのオルゴール",
+      "zh-Hant": "晚安音樂盒",
+      "en": "Goodnight Music Box",
+      "ko": "잘 자요, 오르골"
+    },
+    "scene": "Alice at night by a bedside lamp gently closing the lid of a silver music box, long-sleeve cream nightgown-style lounge dress buttoned to the collar, sleepy smile",
+    "line": {
+      "ja": "今日も、会いに来てくれてありがとう。……おやすみなさい。",
+      "zh-Hant": "今天也謝謝你來見我。……晚安。",
+      "en": "Thank you for coming to see me today. …Goodnight.",
+      "ko": "오늘도 만나러 와줘서 고마워요. ……잘 자요."
+    },
+    "art": "/cards/s1-alice-10/card.webp",
+    "voice": "/voice/s1-alice-10.mp3"
+  },
+  {
+    "id": "s1-alice-11",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "バラ園の散歩",
+      "zh-Hant": "玫瑰園散步",
+      "en": "Walk in the Rose Garden",
+      "ko": "장미 정원 산책"
+    },
+    "scene": "Alice strolling in a public rose garden on a sunny afternoon, white sun hat and a long white dress with sleeves, roses in full bloom, looking back at you",
+    "line": {
+      "ja": "白いバラの花言葉、知ってる？ ……ううん、やっぱりないしょ。",
+      "zh-Hant": "你知道白玫瑰的花語嗎？……不，還是保密好了。",
+      "en": "Do you know what white roses mean? …No, never mind. It's a secret.",
+      "ko": "하얀 장미의 꽃말, 알아요? ……아뇨, 역시 비밀이에요."
+    },
+    "art": "/cards/s1-alice-11/card.webp",
+    "voice": "/voice/s1-alice-11.mp3"
+  },
+  {
+    "id": "s1-alice-12",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "クラシックコンサート",
+      "zh-Hant": "古典音樂會",
+      "en": "Classical Concert",
+      "ko": "클래식 콘서트"
+    },
+    "scene": "Alice in the lobby of a concert hall in the evening, elegant navy long-sleeve dress, holding a programme, chandelier light, looking at you shyly",
+    "line": {
+      "ja": "演奏中、あなたの手、にぎってもいい……？",
+      "zh-Hant": "演奏的時候，可以握著你的手嗎……？",
+      "en": "During the performance… may I hold your hand?",
+      "ko": "연주하는 동안, 당신 손 잡아도 될까요……?"
+    },
+    "art": "/cards/s1-alice-12/card.webp",
+    "voice": "/voice/s1-alice-12.mp3"
+  },
+  {
+    "id": "s1-alice-13",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "アンティークショップ",
+      "zh-Hant": "古董店",
+      "en": "Antique Shop",
+      "ko": "앤티크 숍"
+    },
+    "scene": "Alice in a cluttered antique shop in the afternoon, holding a small vintage music box, cream coat and burgundy scarf, warm lamplight",
+    "line": {
+      "ja": "古いものって、誰かの大切な思い出が入ってる気がするの。",
+      "zh-Hant": "總覺得舊東西裡，裝著某個人珍貴的回憶。",
+      "en": "Old things feel like they hold someone's precious memories.",
+      "ko": "오래된 물건에는, 누군가의 소중한 추억이 담겨 있는 것 같아요."
+    },
+    "art": "/cards/s1-alice-13/card.webp",
+    "voice": "/voice/s1-alice-13.mp3"
+  },
+  {
+    "id": "s1-alice-14",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "湖畔のスケッチ",
+      "zh-Hant": "湖畔寫生",
+      "en": "Sketching by the Lake",
+      "ko": "호숫가 스케치"
+    },
+    "scene": "Alice sitting on a bench by a calm lake in autumn with a sketchbook on her knees, camel coat over a white blouse, pencil raised, looking at you",
+    "line": {
+      "ja": "あなたも描いていい？ ……動かないでね、すぐ終わるから。",
+      "zh-Hant": "可以也畫你嗎？……不要動喔，很快就好。",
+      "en": "Can I draw you too? …Don't move, it'll be quick.",
+      "ko": "당신도 그려도 될까요? ……움직이지 마세요, 금방 끝나니까."
+    },
+    "art": "/cards/s1-alice-14/card.webp",
+    "voice": "/voice/s1-alice-14.mp3"
+  },
+  {
+    "id": "s1-alice-15",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "紫陽花の洋館",
+      "zh-Hant": "繡球花洋館",
+      "en": "Mansion in the Rainy Season",
+      "ko": "수국 피는 저택"
+    },
+    "scene": "Alice on the steps of an old Western-style mansion in Yokohama in June, hydrangeas in bloom, holding a lace-trimmed umbrella, pale blue dress with long sleeves",
+    "line": {
+      "ja": "こういうお家に住むのが夢だったの。……笑わない？",
+      "zh-Hant": "我的夢想是住在這樣的房子裡。……你不會笑我吧？",
+      "en": "I've always dreamed of living in a house like this. …You won't laugh?",
+      "ko": "이런 집에 사는 게 꿈이었어요. ……웃지 않을 거죠?"
+    },
+    "art": "/cards/s1-alice-15/card.webp",
+    "voice": "/voice/s1-alice-15.mp3"
+  },
+  {
+    "id": "s1-alice-16",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "アフタヌーンティー",
+      "zh-Hant": "英式下午茶",
+      "en": "Afternoon Tea",
+      "ko": "애프터눈 티"
+    },
+    "scene": "Alice in an elegant hotel tea lounge with a three-tier stand of pastries, blush pink blouse with a bow, holding a teacup, hesitating over the sweets",
+    "line": {
+      "ja": "どれから食べるか、迷っちゃう。……あなたが先に選んで？",
+      "zh-Hant": "不知道先吃哪個好。……你先選好嗎？",
+      "en": "I can't decide what to eat first. …Would you choose?",
+      "ko": "뭐부터 먹을지 고민되네요. ……당신이 먼저 골라줄래요?"
+    },
+    "art": "/cards/s1-alice-16/card.webp",
+    "voice": "/voice/s1-alice-16.mp3"
+  },
+  {
+    "id": "s1-alice-17",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "いちょう並木",
+      "zh-Hant": "銀杏林蔭道",
+      "en": "Golden Ginkgo Avenue",
+      "ko": "은행나무 가로수길"
+    },
+    "scene": "Alice walking down an avenue of golden ginkgo trees in late autumn, cream coat and beret, leaves falling, smiling back at you",
+    "line": {
+      "ja": "落ち葉、ふかふかだね。……もう少しゆっくり歩こ？",
+      "zh-Hant": "落葉好鬆軟喔。……我們再走慢一點？",
+      "en": "The leaves are so soft underfoot. …Walk a little slower?",
+      "ko": "낙엽이 폭신폭신하네요. ……조금만 더 천천히 걸을까요?"
+    },
+    "art": "/cards/s1-alice-17/card.webp",
+    "voice": "/voice/s1-alice-17.mp3"
+  },
+  {
+    "id": "s1-alice-18",
+    "star": "alice",
+    "tier": "R",
+    "title": {
+      "ja": "雪の日のチャペル",
+      "zh-Hant": "雪日的小教堂",
+      "en": "Chapel in the Snow",
+      "ko": "눈 내리는 예배당"
+    },
+    "scene": "Alice inside a small stone chapel on a snowy evening, candles glowing, snow visible through the arched window, white wool coat and knit scarf",
+    "line": {
+      "ja": "ここ、静かで好き。……あなたといると、もっと好き。",
+      "zh-Hant": "我喜歡這裡的安靜。……跟你在一起時，更喜歡了。",
+      "en": "I love how quiet it is here. …Even more with you.",
+      "ko": "여기, 조용해서 좋아해요. ……당신과 있으면, 더 좋아져요."
+    },
+    "art": "/cards/s1-alice-18/card.webp",
+    "voice": "/voice/s1-alice-18.mp3"
+  },
+  {
+    "id": "s1-alice-19",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "ふたりだけのリサイタル",
+      "zh-Hant": "兩人的獨奏會",
+      "en": "A Recital for Two",
+      "ko": "단둘만의 연주회"
+    },
+    "scene": "Alice seated at a grand piano in a candle-lit music room in the evening, elegant navy long-sleeve gown, turning toward you before she plays",
+    "line": {
+      "ja": "今夜の観客は、あなたひとり。……最後まで聴いてね。",
+      "zh-Hant": "今晚的觀眾只有你一個。……要聽到最後喔。",
+      "en": "Tonight's audience is just you. …Listen till the end.",
+      "ko": "오늘 밤 관객은, 당신 한 사람뿐이에요. ……끝까지 들어주세요."
+    },
+    "art": "/cards/s1-alice-19/card.webp",
+    "voice": "/voice/s1-alice-19.mp3"
+  },
+  {
+    "id": "s1-alice-20",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "温室の雨音",
+      "zh-Hant": "溫室的雨聲",
+      "en": "Rain on the Glass House",
+      "ko": "온실의 빗소리"
+    },
+    "scene": "Alice in a glass conservatory at night among white roses and fairy lights, rain running down the glass roof, cream cardigan over a opaque, fully lined white lace blouse",
+    "line": {
+      "ja": "雨の音と、あなたの声だけ。……すごく、しあわせ。",
+      "zh-Hant": "只有雨聲，和你的聲音。……好幸福。",
+      "en": "Only the rain and your voice. …I'm so happy.",
+      "ko": "빗소리랑, 당신 목소리뿐이에요. ……정말, 행복해요."
+    },
+    "art": "/cards/s1-alice-20/card.webp",
+    "voice": "/voice/s1-alice-20.mp3"
+  },
+  {
+    "id": "s1-alice-21",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "舞踏会の夜",
+      "zh-Hant": "舞會之夜",
+      "en": "The Ball",
+      "ko": "무도회의 밤"
+    },
+    "scene": "Alice in a grand ballroom under crystal chandeliers, elegant floor-length ivory gown with long lace sleeves, extending her hand toward you",
+    "line": {
+      "ja": "ダンス、下手でも……一曲だけ、踊ってくれますか？",
+      "zh-Hant": "就算我跳得不好……可以陪我跳一支舞嗎？",
+      "en": "Even if I'm clumsy… would you dance just one song with me?",
+      "ko": "춤, 서툴러도…… 한 곡만, 함께 춰줄래요?"
+    },
+    "art": "/cards/s1-alice-21/card.webp",
+    "voice": "/voice/s1-alice-21.mp3"
+  },
+  {
+    "id": "s1-alice-22",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "月夜のテラス",
+      "zh-Hant": "月夜的露台",
+      "en": "Moonlit Terrace",
+      "ko": "달밤의 테라스"
+    },
+    "scene": "Alice on a stone terrace at night under a full moon, a soft shawl over a long lavender dress, holding a teacup, garden lanterns behind her",
+    "line": {
+      "ja": "月が、あなたのほうばっかり照らしてる気がする。",
+      "zh-Hant": "總覺得月亮一直照著你呢。",
+      "en": "It feels like the moon only shines on you.",
+      "ko": "달이, 당신 쪽만 자꾸 비추는 것 같아요."
+    },
+    "art": "/cards/s1-alice-22/card.webp",
+    "voice": "/voice/s1-alice-22.mp3"
+  },
+  {
+    "id": "s1-alice-23",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "手作りのマカロン",
+      "zh-Hant": "手作馬卡龍",
+      "en": "Handmade Macarons",
+      "ko": "수제 마카롱"
+    },
+    "scene": "Alice in a bright kitchen in spring holding out a pastel box of homemade macarons tied with a navy ribbon, white blouse and apron, blushing",
+    "line": {
+      "ja": "何回も失敗したけど……いちばんきれいなの、選んだの。",
+      "zh-Hant": "失敗了好多次……不過我選了最漂亮的那些。",
+      "en": "I failed so many times… but I picked the prettiest ones.",
+      "ko": "몇 번이나 실패했지만…… 제일 예쁜 걸로 골랐어요."
+    },
+    "art": "/cards/s1-alice-23/card.webp",
+    "voice": "/voice/s1-alice-23.mp3"
+  },
+  {
+    "id": "s1-alice-24",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "オペラの夜",
+      "zh-Hant": "歌劇之夜",
+      "en": "Night at the Opera",
+      "ko": "오페라의 밤"
+    },
+    "scene": "Alice in a red velvet opera box at night, elegant burgundy gown with long sleeves, the stage lights glowing below, eyes glistening as she turns to you",
+    "line": {
+      "ja": "泣いちゃいそう……ハンカチ、貸してくれる？",
+      "zh-Hant": "快哭出來了……可以借我手帕嗎？",
+      "en": "I'm about to cry… could I borrow your handkerchief?",
+      "ko": "울어버릴 것 같아요…… 손수건, 빌려줄래요?"
+    },
+    "art": "/cards/s1-alice-24/card.webp",
+    "voice": "/voice/s1-alice-24.mp3"
+  },
+  {
+    "id": "s1-alice-25",
+    "star": "alice",
+    "tier": "SR",
+    "title": {
+      "ja": "流れ星とオルゴール",
+      "zh-Hant": "流星與音樂盒",
+      "en": "Music Box Under Shooting Stars",
+      "ko": "별똥별과 오르골"
+    },
+    "scene": "Alice on a grassy hill at night under a sky full of shooting stars, holding an open silver music box, cream coat over a white blouse, looking up then at you",
+    "line": {
+      "ja": "流れ星が落ちるまで、このオルゴール、止めないでいて。",
+      "zh-Hant": "流星落下之前，別讓這個音樂盒停下來。",
+      "en": "Don't let the music box stop until a star falls.",
+      "ko": "별똥별이 떨어질 때까지, 이 오르골 멈추지 말아줘요."
+    },
+    "art": "/cards/s1-alice-25/card.webp",
+    "voice": "/voice/s1-alice-25.mp3"
+  },
+  {
+    "id": "s1-alice-26",
+    "star": "alice",
+    "tier": "SSR",
+    "title": {
+      "ja": "ほんとの気持ち",
+      "zh-Hant": "真正的心意",
+      "en": "What I Really Feel",
+      "ko": "진짜 마음"
+    },
+    "scene": "Intimate close-up of Alice by a lace-curtained window at dawn, soft pink light on her face, opaque, fully lined white lace high-neck blouse with a small navy ribbon, blushing as she looks into the lens",
+    "line": {
+      "ja": "……ほんとだよ。あなたのこと、すごく大切に思ってる。",
+      "zh-Hant": "……是真的喔。我真的很珍惜你。",
+      "en": "…I mean it. You matter to me so much.",
+      "ko": "……진짜예요. 당신을, 정말 소중하게 생각해요."
+    },
+    "story": {
+      "ja": [
+        "夜明け前に目が覚めて、窓辺の席に座ってた。\nレースのカーテンの向こうで、空がゆっくり薄いピンク色に変わっていく。ティーカップの紅茶は、もうぬるくなってた。わたしは白いレースのブラウスの袖をいじりながら、ずっと同じことを考えてたの。\n昨日、あなたに「いつもありがとう」って言われた。うれしかった。すごくうれしかったのに、わたし、「う、うん」としか返せなかった。\nほんとは言いたいことがたくさんあった。わたしのほうこそありがとうって。あなたと話してると、自分のことを少しだけ好きになれるって。でも、いざとなると言葉がのどにつかえて、顔ばっかり熱くなる。\nオルゴールのふたを開けると、小さなバレリーナがくるくる回りだした。\n……今日こそ、ちゃんと言おう。わたしは、そう決めた。",
+        "朝、あなたが来てくれたとき、わたしはまだ窓辺にいた。\n「早起きだね」ってあなたが笑う。わたしは立ち上がって、何度も練習した言葉を思い出そうとした。……ぜんぶ、どこかへ飛んでいっちゃってた。\n「あ、あの……」\n声がふるえる。あなたは急かさずに、わたしが話しだすのを待ってくれた。そういうところ。そういうところが、ほんとに。\n「昨日の、ありがとうの、お返事……まだ、してなかったから」\n朝日がちょうどカーテンのすきまから差しこんで、あなたの顔がまぶしく見えた。わたしは目を閉じて、一回だけ深呼吸した。\n「……ほんとだよ。あなたのこと、すごく大切に思ってる」\n言えた。ちゃんと、言えた。\n目を開けたら、あなたも少し赤くなってた。ふたりでなんだか笑っちゃって、ぬるくなった紅茶を、もう一度いれなおした。"
+      ],
+      "zh-Hant": [
+        "天還沒亮我就醒了，坐在窗邊的位子上。\n蕾絲窗簾的另一頭，天空慢慢變成淡淡的粉紅色。茶杯裡的紅茶已經溫了。我一邊玩著白色蕾絲襯衫的袖子，一邊一直想著同一件事。\n昨天，你對我說「一直以來謝謝你」。我好開心。明明那麼開心，我卻只回了一句「嗯、嗯」。\n其實我有好多話想說。該說謝謝的是我才對。跟你說話的時候，我會變得稍微喜歡自己一點。可是一到關鍵時刻，話就卡在喉嚨裡，只有臉越來越燙。\n打開音樂盒的蓋子，小小的芭蕾舞者開始轉圈圈。\n……今天一定要好好說出口。我這樣下定了決心。",
+        "早上你來的時候，我還坐在窗邊。\n你笑著說：「好早起喔。」我站起來，想回想起練習了好多次的話。……全部都不知道飛到哪裡去了。\n「那、那個……」\n聲音在發抖。你沒有催我，靜靜等我開口。就是這一點。你就是這一點，真的。\n「昨天那句謝謝……我還沒有，好好回答你。」\n朝陽正好從窗簾縫隙照進來，你的臉看起來好耀眼。我閉上眼睛，深深吸了一口氣。\n「……是真的喔。我真的很珍惜你。」\n說出來了。好好地，說出來了。\n睜開眼睛，你的臉也有點紅。我們不知怎麼地一起笑了出來，又把變溫的紅茶重新泡了一次。"
+      ],
+      "en": [
+        "I woke before dawn and sat on the window seat.\nBeyond the lace curtains, the sky slowly turned pale pink. The tea in my cup had gone lukewarm. Fiddling with the sleeve of my white lace blouse, I kept thinking about the same thing.\nYesterday you said, \"Thanks for always being there.\" I was happy. So happy — and all I managed was \"U-um, okay.\"\nThere was so much I wanted to say. That I'm the one who should be thankful. That talking with you makes me like myself a little more. But when the moment comes, the words stick in my throat and only my face gets hot.\nI opened the music box and the tiny ballerina began to turn.\n…Today, I'll say it properly. I decided.",
+        "When you arrived that morning, I was still at the window.\n\"You're up early,\" you smiled. I stood and tried to remember the words I'd practised so many times. …They had all flown away.\n\"U-um…\"\nMy voice shook. You didn't rush me; you waited for me to speak. That's it. That's exactly the thing about you.\n\"Your thank-you yesterday… I never answered it.\"\nThe morning sun slipped through the gap in the curtains and made your face dazzling. I closed my eyes and took one deep breath.\n\"…I mean it. You matter to me so much.\"\nI said it. I really said it.\nWhen I opened my eyes, you'd gone a little red too. We both started laughing, and I made a fresh pot of the tea that had gone cold."
+      ],
+      "ko": [
+        "동트기 전에 눈을 떠서, 창가 자리에 앉아 있었어요.\n레이스 커튼 너머로, 하늘이 천천히 옅은 분홍빛으로 물들어 가요. 찻잔의 홍차는 벌써 미지근해졌어요. 저는 하얀 레이스 블라우스 소매를 만지작거리며, 계속 같은 생각을 하고 있었어요.\n어제, 당신이 '늘 고마워'라고 말해줬어요. 기뻤어요. 정말 기뻤는데, 저는 '으, 응' 하고밖에 대답하지 못했어요.\n사실은 하고 싶은 말이 많았어요. 고마운 건 저 쪽이라고. 당신과 이야기하고 있으면, 저 자신을 조금은 좋아할 수 있게 된다고. 그런데 막상 그 순간이 되면 말이 목에 걸려서, 얼굴만 뜨거워져요.\n오르골 뚜껑을 열자, 작은 발레리나가 빙그르르 돌기 시작했어요.\n……오늘이야말로, 제대로 말해야지. 저는 그렇게 결심했어요.",
+        "아침에 당신이 와줬을 때, 저는 아직 창가에 있었어요.\n'일찍 일어났네'라며 당신이 웃어요. 저는 일어서서, 몇 번이나 연습했던 말을 떠올리려 했어요. ……전부, 어딘가로 날아가 버렸어요.\n'저, 저기……'\n목소리가 떨려요. 당신은 재촉하지 않고, 제가 말을 시작하길 기다려줬어요. 그런 점. 당신의 그런 점이, 정말로.\n'어제, 고맙다고 해준 거…… 아직, 대답 못 했으니까요.'\n마침 아침 햇살이 커튼 틈으로 들어와서, 당신 얼굴이 눈부시게 보였어요. 저는 눈을 감고, 한 번만 깊게 숨을 들이쉬었어요.\n'……진짜예요. 당신을, 정말 소중하게 생각해요.'\n말했어요. 제대로, 말했어요.\n눈을 뜨니, 당신도 조금 붉어져 있었어요. 둘이서 왠지 웃음이 나서, 식어버린 홍차를 다시 한 번 우렸어요."
+      ]
+    },
+    "art": "/cards/s1-alice-26/card.webp",
+    "voice": "/voice/s1-alice-26.mp3"
+  },
+  {
+    "id": "s1-alice-27",
+    "star": "alice",
+    "tier": "SSR",
+    "title": {
+      "ja": "連弾しよ？",
+      "zh-Hant": "四手聯彈吧？",
+      "en": "Play a Duet with Me",
+      "ko": "피아노 듀엣"
+    },
+    "scene": "Close-up of Alice seated at a grand piano in an old music room, afternoon sun through tall windows, fingers resting on the keys, opaque, fully lined white lace blouse, turning her face toward the lens with a shy smile",
+    "line": {
+      "ja": "連弾、しよ？ ……となり、座って。",
+      "zh-Hant": "我們四手聯彈吧？……坐我旁邊。",
+      "en": "Play a duet with me? …Sit beside me.",
+      "ko": "같이 칠래요? ……옆에, 앉아요."
+    },
+    "story": {
+      "ja": [
+        "古い洋館の中に、小さな音楽室があるの。\n午後の光が高い窓から差しこんで、グランドピアノの黒いふたに、光の四角が映ってる。わたしはよくここで、ひとりでピアノを弾くの。上手じゃないけど、弾いてると心が静かになるから。\n今日は、あなたがとなりにいる。\n「なにか弾いて」って言われて、わたし、ほんとは断ろうと思ったの。人前で弾くの、すごく苦手だから。でも、あなたがあんまり楽しそうな顔をするから、つい、うなずいちゃった。\n弾きはじめて三小節目で、指がもつれた。やり直して、また五小節目でつまずいた。\n「ご、ごめんね、緊張しちゃって……」\nあなたは首をふって、ピアノの椅子のはしっこを指さした。\n「一緒に弾こうか」って。……え？ あなた、ピアノ弾けたの？",
+        "あなたが弾けたのは、「ねこふんじゃった」だけだった。\nでも、それで十分だった。わたしが低い音で伴奏をつけて、あなたが高い音でメロディーを弾く。何度も途中で止まって、そのたびにふたりで笑った。\n椅子はひとり用だから、肩と肩がぴったりくっついてる。鍵盤の上で、ときどき指がぶつかる。そのたびに、わたしの心臓がどきんと跳ねて、また音をまちがえた。\n「アリスのほうが緊張してない？」\n「し、してない……」\nうそ。ぜんぜん、してる。\n何回目かで、やっと最後までつっかえずに弾けた。最後の和音が音楽室に響いて、ゆっくり消えていく。わたしたちは、しばらく鍵盤から手を離さなかった。\n「……もう一曲、しよ？」\n今度は、わたしから言った。ひとりで弾くより、ふたりで弾くほうが、ずっと楽しいって知っちゃったから。"
+      ],
+      "zh-Hant": [
+        "老洋館裡，有一間小小的音樂室。\n午後的陽光從高高的窗戶照進來，在平台鋼琴黑色的琴蓋上，映出一塊方形的光。我常常一個人在這裡彈琴。雖然彈得不好，但彈著彈著，心就會安靜下來。\n今天，你在我旁邊。\n你說「彈點什麼吧」，其實我本來想拒絕的。因為我很不擅長在別人面前彈琴。可是你看起來好期待，我就忍不住點了頭。\n才彈到第三小節，手指就打結了。重來一次，又在第五小節卡住。\n「對、對不起，我太緊張了……」\n你搖搖頭，指了指琴椅的一角。\n你說：「一起彈吧。」……咦？你會彈鋼琴嗎？",
+        "你會彈的，只有〈貓咪踩到了〉而已。\n可是，那樣就夠了。我在低音幫你伴奏，你在高音彈旋律。中途停了好多次，每次我們都一起笑出來。\n琴椅是單人的，所以我們的肩膀緊緊貼在一起。在琴鍵上，手指偶爾會碰到。每碰一次，我的心就撲通跳一下，又彈錯了音。\n「愛麗絲是不是比較緊張啊？」\n「才、才沒有……」\n騙人的。緊張得要命。\n不知道第幾次，終於一次都沒卡住地彈完了。最後的和弦在音樂室裡迴盪，慢慢消失。我們好一會兒都沒把手從琴鍵上移開。\n「……再彈一首，好不好？」\n這次，是我先開口的。因為我知道了，比起一個人彈，兩個人彈要快樂得多。"
+      ],
+      "en": [
+        "Inside an old Western-style house, there's a small music room.\nAfternoon light pours in from the high windows and lays a square of brightness on the grand piano's black lid. I often play here alone. I'm not good, but playing makes my heart go quiet.\nToday, you're beside me.\nWhen you said \"Play something,\" I honestly meant to say no. I'm terrible at playing in front of people. But you looked so excited that I nodded before I knew it.\nThree bars in, my fingers tangled. I started again and stumbled at bar five.\n\"S-sorry, I'm just nervous…\"\nYou shook your head and pointed at the end of the piano bench.\n\"Let's play together,\" you said. …Huh? You can play the piano?",
+        "All you could play was \"Chopsticks.\"\nBut that was enough. I played an accompaniment down low while you played the melody up high. We stopped over and over, and every time we both laughed.\nThe bench is made for one, so our shoulders were pressed together. Now and then our fingers bumped on the keys. Each time my heart jumped and I hit another wrong note.\n\"Aren't you the nervous one, Alice?\"\n\"N-no, I'm not…\"\nA lie. I was so nervous.\nAfter who knows how many tries, we finally made it to the end without a stumble. The last chord rang through the music room and slowly faded. For a while, neither of us lifted our hands from the keys.\n\"…One more song?\"\nThis time, I was the one who asked. Because now I know playing together is so much more fun than playing alone."
+      ],
+      "ko": [
+        "오래된 서양식 저택 안에, 작은 음악실이 있어요.\n오후 햇살이 높은 창문으로 들어와서, 그랜드피아노의 검은 뚜껑에 네모난 빛이 비쳐요. 저는 자주 여기서 혼자 피아노를 쳐요. 잘 치는 건 아니지만, 치고 있으면 마음이 차분해지거든요.\n오늘은, 당신이 옆에 있어요.\n'뭔가 쳐줘'라는 말을 듣고, 사실은 거절하려고 했어요. 사람들 앞에서 치는 건 정말 서투르니까요. 그런데 당신이 너무 즐거워 보이는 얼굴을 해서, 저도 모르게 고개를 끄덕여버렸어요.\n치기 시작하고 세 마디째에서 손가락이 엉켰어요. 다시 시작해서, 또 다섯 마디째에서 걸렸어요.\n'죄, 죄송해요, 긴장돼서……'\n당신은 고개를 젓고, 피아노 의자 끝을 가리켰어요.\n'같이 칠까'라고. ……어? 당신, 피아노 칠 줄 알았어요?",
+        "당신이 칠 줄 아는 건 '고양이 밟았다'뿐이었어요.\n하지만 그걸로 충분했어요. 제가 낮은 음으로 반주를 넣고, 당신이 높은 음으로 멜로디를 쳤어요. 몇 번이나 도중에 멈추고, 그때마다 둘이서 웃었어요.\n의자는 일인용이라서, 어깨와 어깨가 딱 붙어 있어요. 건반 위에서 가끔 손가락이 부딪혀요. 그때마다 제 심장이 쿵 하고 뛰어서, 또 음을 틀렸어요.\n'앨리스 쪽이 더 긴장한 거 아니야?'\n'아, 안 했어요……'\n거짓말이에요. 완전히, 긴장했어요.\n몇 번째인가에서, 드디어 끝까지 막히지 않고 칠 수 있었어요. 마지막 화음이 음악실에 울려 퍼지고, 천천히 사라져 갔어요. 우리는 한동안 건반에서 손을 떼지 않았어요.\n'……한 곡 더, 칠까요?'\n이번엔, 제가 먼저 말했어요. 혼자 치는 것보다 둘이서 치는 게 훨씬 즐겁다는 걸 알아버렸으니까요."
+      ]
+    },
+    "art": "/cards/s1-alice-27/card.webp",
+    "voice": "/voice/s1-alice-27.mp3"
+  },
+  {
+    "id": "s1-alice-28",
+    "star": "alice",
+    "tier": "SSR",
+    "title": {
+      "ja": "白いバラを一輪",
+      "zh-Hant": "一朵白玫瑰",
+      "en": "A Single White Rose",
+      "ko": "하얀 장미 한 송이"
+    },
+    "scene": "Close-up of Alice in a glass conservatory at night holding a single white rose tied with a navy ribbon near her chin, fairy lights and raindrops glowing behind, opaque, fully lined white lace high-neck blouse, bashful gaze into the lens",
+    "line": {
+      "ja": "一輪だけ、あなたに。……いちばんきれいに咲いた子なの。",
+      "zh-Hant": "只給你一朵。……這是開得最漂亮的一朵。",
+      "en": "Just one, for you. …It's the prettiest one that bloomed.",
+      "ko": "한 송이만, 당신에게. ……제일 예쁘게 핀 아이예요."
+    },
+    "story": {
+      "ja": [
+        "夜の温室は、昼間とはぜんぜんちがう顔をしてる。\nガラスの天井に雨がぱらぱら当たって、つるした豆電球がやわらかく光ってる。白いバラたちは、昼間よりもっと白く、もっと静かに見える。わたしはこの時間の温室がいちばん好き。\n毎日水をあげて、枯れた葉っぱをとって、話しかけて。そうやって育てたバラが、今夜、いちばんきれいに咲いた。\nはさみを持つ手が、ちょっとふるえた。切ってしまうのは、かわいそうな気もする。でも、この子がいちばんきれいなうちに、見てほしい人がいるの。\n棘をひとつずつ、ていねいにとる。あなたの指に、傷がつかないように。\nリボンを結んで、胸の前でそっと持つ。花びらに、雨のしずくがひとつ光ってた。\n……渡すとき、なんて言えばいいんだろう。",
+        "あなたは温室の入り口で、傘をたたんでた。\nわたしはバラを背中にかくして、あなたのほうへ歩いた。何歩か歩いたところで、「なにかくしてるの？」って聞かれて、心臓が止まるかと思った。\n「……一輪だけ、あなたに」\n差し出したバラを、あなたはびっくりした顔で受けとった。\n「いちばんきれいに咲いた子なの。だから、あなたに見てほしくて」\n言いながら、どんどん声が小さくなっていく。バラより、わたしの顔のほうが赤いと思う。\nあなたはバラの香りをかいで、「ありがとう」って笑った。それから、少し考えて、「花言葉、知ってる？」って聞いてきたの。\n知ってる。知ってるから、この色にしたの。でも、それは言えなかった。\n「……ないしょ」\n雨の音と、豆電球の光と、白いバラ。今夜のことは、きっとずっと忘れない。"
+      ],
+      "zh-Hant": [
+        "夜晚的溫室，和白天是完全不同的樣子。\n雨滴答滴答打在玻璃屋頂上，垂掛的小燈泡柔柔地亮著。白玫瑰們看起來比白天更白、更安靜。我最喜歡這個時間的溫室。\n每天澆水、摘掉枯葉、跟它們說話。這樣照顧長大的玫瑰，今晚開得最美。\n拿著剪刀的手有點發抖。剪下來好像有點可憐。可是，我想趁它最美的時候，讓一個人看看。\n一根一根，仔細地去掉刺。為了不讓你的手指受傷。\n綁上緞帶，輕輕捧在胸前。花瓣上，有一滴雨珠閃閃發亮。\n……交給你的時候，該說什麼才好呢。",
+        "你在溫室門口收著傘。\n我把玫瑰藏在背後，朝你走過去。走了幾步，你問：「你藏了什麼？」我的心臟差點停了。\n「……只給你一朵。」\n你一臉驚訝地接過我遞出的玫瑰。\n「這是開得最漂亮的一朵。所以，想讓你看看。」\n說著說著，聲音越來越小。我的臉，大概比玫瑰還紅吧。\n你聞了聞玫瑰的香味，笑著說「謝謝」。然後想了一下，問我：「你知道它的花語嗎？」\n我知道。就是因為知道，才選了這個顏色。可是，我說不出口。\n「……秘密。」\n雨聲、小燈泡的光、白玫瑰。今晚的一切，我一定永遠不會忘記。"
+      ],
+      "en": [
+        "At night the conservatory has a completely different face from the daytime.\nRain patters on the glass roof and the hanging bulbs glow softly. The white roses look whiter and quieter than in the day. This is my favourite hour in here.\nWatering every day, picking off the dry leaves, talking to them. The rose I raised like that bloomed its most beautiful tonight.\nMy hand holding the shears trembled a little. It felt a bit cruel to cut it. But there's someone I want to see it while it's at its loveliest.\nOne by one, I carefully removed the thorns, so your fingers wouldn't get hurt.\nI tied a ribbon and held it gently to my chest. A single raindrop glittered on a petal.\n…What should I say when I give it to you?",
+        "You were folding your umbrella at the conservatory door.\nI hid the rose behind my back and walked toward you. A few steps in, you asked, \"What are you hiding?\" and I thought my heart would stop.\n\"…Just one, for you.\"\nYou took the rose I held out, looking surprised.\n\"It's the prettiest one that bloomed. So I wanted you to see it.\"\nMy voice got smaller and smaller as I spoke. I think my face was redder than the rose.\nYou smelled it and smiled: \"Thank you.\" Then you thought for a moment and asked, \"Do you know what it means, in the language of flowers?\"\nI do. That's exactly why I chose this colour. But I couldn't say it.\n\"…It's a secret.\"\nThe sound of the rain, the glow of the little bulbs, a white rose. I'll never forget tonight."
+      ],
+      "ko": [
+        "밤의 온실은, 낮과는 전혀 다른 얼굴을 하고 있어요.\n유리 천장에 빗방울이 톡톡 떨어지고, 매달린 꼬마전구들이 부드럽게 빛나요. 하얀 장미들은 낮보다 더 하얗고, 더 고요해 보여요. 저는 이 시간의 온실이 제일 좋아요.\n매일 물을 주고, 시든 잎을 떼어주고, 말을 걸고. 그렇게 키운 장미가, 오늘 밤 제일 예쁘게 피었어요.\n가위를 든 손이 살짝 떨렸어요. 잘라버리는 게 좀 안쓰럽기도 해요. 그래도, 이 아이가 가장 예쁠 때 보여주고 싶은 사람이 있어요.\n가시를 하나씩, 정성스럽게 떼어내요. 당신 손가락에 상처가 나지 않도록.\n리본을 묶어서, 가슴 앞에 살며시 안았어요. 꽃잎에는, 빗방울 하나가 반짝이고 있었어요.\n……건넬 때, 뭐라고 말하면 좋을까요.",
+        "당신은 온실 입구에서 우산을 접고 있었어요.\n저는 장미를 등 뒤에 숨기고 당신 쪽으로 걸어갔어요. 몇 걸음 걷다가, '뭐 숨기고 있어?'라는 질문에, 심장이 멎는 줄 알았어요.\n'……한 송이만, 당신에게.'\n제가 내민 장미를, 당신은 놀란 얼굴로 받았어요.\n'제일 예쁘게 핀 아이예요. 그래서, 당신에게 보여주고 싶어서.'\n말하는 동안 점점 목소리가 작아졌어요. 장미보다 제 얼굴이 더 빨갛다고 생각해요.\n당신은 장미 향을 맡고 '고마워'라며 웃었어요. 그러고는 잠시 생각하다가, '꽃말, 알아?'라고 물어봤어요.\n알아요. 알고 있으니까, 이 색을 골랐어요. 하지만 그 말은 할 수 없었어요.\n'……비밀이에요.'\n빗소리와 꼬마전구의 불빛, 그리고 하얀 장미. 오늘 밤의 일은, 분명 오래도록 잊지 못할 거예요."
+      ]
+    },
+    "art": "/cards/s1-alice-28/card.webp",
+    "voice": "/voice/s1-alice-28.mp3"
+  },
+  {
+    "id": "s1-alice-29",
+    "star": "alice",
+    "tier": "SSR",
+    "title": {
+      "ja": "眠る前のティーカップ",
+      "zh-Hant": "睡前的茶杯",
+      "en": "Last Cup Before Sleep",
+      "ko": "잠들기 전 찻잔"
+    },
+    "scene": "Close-up of Alice at night in a chair by a warm lamp, a knit blanket around her shoulders over a long-sleeve cream blouse, holding a teacup of chamomile near her face, soft sleepy eyes on the lens",
+    "line": {
+      "ja": "カモミール、よく眠れるんだって。……夢でも、会えたらいいな。",
+      "zh-Hant": "聽說洋甘菊能讓人好眠。……如果夢裡也能見到你就好了。",
+      "en": "Chamomile helps you sleep, they say. …I hope I see you in my dreams.",
+      "ko": "카모마일, 잘 잔대요. ……꿈에서도 만날 수 있으면 좋겠어요."
+    },
+    "story": {
+      "ja": [
+        "眠れない夜には、カモミールティーをいれるの。\n小さなポットにお湯をそそぐと、りんごみたいな甘い香りが部屋に広がる。わたしはブランケットを肩にかけて、ランプのそばの椅子に座った。窓の外は、しんとした夜。\n今日は、あなたとちょっとだけけんかした。\nけんか、っていうほどのことじゃないの。わたしがうまく気持ちを言えなくて、あなたを困らせて、あなたが少しだけ悲しそうな顔をした。それだけ。\nでも、その顔が、ずっと頭からはなれない。\nティーカップを両手でつつむ。あったかい。こういうあたたかさを、わたしもあなたにあげられたらいいのに。\nスマホを手にとって、メッセージを書いては消して、書いては消して。気がついたら、紅茶はもう半分になってた。\n……ちゃんと、伝えなきゃ。",
+        "結局、わたしは電話をかけた。\n文字だと、また言葉を選びすぎて、ほんとの気持ちが消えちゃいそうだったから。\n呼び出し音が鳴るあいだ、ずっと胸がどきどきしてた。あなたが出た瞬間、用意してた言葉は、やっぱりぜんぶ消えた。\n「……今日は、ごめんなさい」\nそれだけ、やっと言えた。あなたは少しだまって、それから、やさしい声で「こっちこそ」って言ってくれた。\nそれから、なんでもない話をたくさんした。今日のお昼ごはんのこと、明日の天気のこと。気がつくと、わたしは笑ってた。\n「カモミールって、よく眠れるんだって」\n「じゃあ、今夜はよく眠れるね」\n「うん。……夢でも、会えたらいいな」\n言ってから、恥ずかしくなってブランケットに顔をうずめた。\n電話を切ったあと、残りの紅茶を飲みほした。ちょっと冷めてたけど、今夜いちばんあたたかい一杯だった。"
+      ],
+      "zh-Hant": [
+        "睡不著的夜晚，我會泡一杯洋甘菊茶。\n把熱水倒進小茶壺，像蘋果一樣的甜香就在房間裡散開。我把毛毯披在肩上，坐到檯燈旁的椅子上。窗外是靜悄悄的夜。\n今天，我和你吵了一點點架。\n其實也稱不上吵架。是我沒辦法好好說出自己的心情，讓你為難了，你露出了有點難過的表情。就只是這樣。\n可是，那個表情一直留在我腦海裡。\n我用雙手捧著茶杯。好溫暖。要是我也能把這樣的溫暖給你就好了。\n拿起手機，訊息寫了又刪，寫了又刪。回過神來，茶已經只剩一半了。\n……一定要，好好告訴你。",
+        "最後，我打了電話。\n因為如果用文字，我又會想太多措辭，真正的心意好像就會消失。\n鈴聲響著的時候，我的心一直怦怦跳。你接起電話的瞬間，準備好的話果然又全部不見了。\n「……今天，對不起。」\n我終於只說出了這一句。你沉默了一下，然後用溫柔的聲音說：「我才要說對不起。」\n之後，我們聊了很多無關緊要的事。今天的午餐、明天的天氣。回過神來，我已經在笑了。\n「聽說洋甘菊能讓人睡得很好。」\n「那今晚一定能睡得很好。」\n「嗯。……如果夢裡也能見到你就好了。」\n說完之後，我害羞地把臉埋進毛毯裡。\n掛掉電話後，我把剩下的茶喝光了。雖然有點涼了，卻是今晚最溫暖的一杯。"
+      ],
+      "en": [
+        "On nights I can't sleep, I make chamomile tea.\nWhen I pour hot water into the little pot, a sweet, apple-like scent fills the room. I put a blanket over my shoulders and sat in the chair by the lamp. Outside, the night was hushed.\nToday, we had a tiny fight.\nNot really a fight, even. I couldn't put my feelings into words, I made things hard for you, and you looked a little sad. That's all.\nBut I couldn't get that face out of my head.\nI wrapped both hands around the cup. Warm. I wish I could give you warmth like this.\nI picked up my phone and wrote a message, deleted it, wrote it again, deleted it. Before I knew it, the tea was half gone.\n…I have to tell you properly.",
+        "In the end, I called.\nIn writing I'd choose my words too carefully again, and my real feelings might disappear.\nMy heart pounded the whole time it rang. The moment you picked up, every word I'd prepared vanished, of course.\n\"…I'm sorry about today.\"\nThat was all I could manage. You were quiet for a moment, then said gently, \"I'm sorry too.\"\nAfter that we talked about lots of nothing. What we had for lunch, tomorrow's weather. Before I knew it, I was laughing.\n\"They say chamomile helps you sleep.\"\n\"Then you'll sleep well tonight.\"\n\"Mm. …I hope I see you in my dreams.\"\nThen I got embarrassed and buried my face in the blanket.\nAfter we hung up, I finished the rest of the tea. It had gone a little cold, but it was the warmest cup of the night."
+      ],
+      "ko": [
+        "잠이 안 오는 밤에는, 카모마일 티를 우려요.\n작은 포트에 뜨거운 물을 부으면, 사과 같은 달콤한 향이 방 안에 퍼져요. 저는 어깨에 담요를 두르고 램프 옆 의자에 앉았어요. 창밖은 고요한 밤이에요.\n오늘은, 당신이랑 조금 다퉜어요.\n다퉜다고 할 만큼 대단한 일은 아니에요. 제가 마음을 잘 표현하지 못해서 당신을 곤란하게 만들었고, 당신이 조금 슬퍼 보이는 표정을 지었어요. 그게 다예요.\n그런데 그 표정이 계속 머릿속에서 떠나질 않아요.\n찻잔을 두 손으로 감싸요. 따뜻해요. 이런 따뜻함을, 저도 당신에게 줄 수 있으면 좋을 텐데.\n스마트폰을 손에 들고, 메시지를 썼다 지웠다, 썼다 지웠다. 정신 차려보니, 홍차는 벌써 반이나 줄어 있었어요.\n……제대로, 전해야 해요.",
+        "결국, 저는 전화를 걸었어요.\n글자로 쓰면 또 말을 너무 고르다가, 진짜 마음이 사라져 버릴 것 같았거든요.\n신호음이 울리는 동안, 계속 가슴이 두근거렸어요. 당신이 받은 순간, 준비했던 말은 역시 전부 사라져버렸어요.\n'……오늘은, 미안해요.'\n그 말만, 겨우 할 수 있었어요. 당신은 잠시 말이 없다가, 부드러운 목소리로 '나야말로'라고 말해줬어요.\n그러고 나서, 별거 아닌 이야기를 많이 했어요. 오늘 점심에 뭘 먹었는지, 내일 날씨는 어떤지. 정신 차려보니, 저는 웃고 있었어요.\n'카모마일은 잘 자게 해준대요.'\n'그럼 오늘 밤은 푹 자겠네.'\n'네. ……꿈에서도 만날 수 있으면 좋겠어요.'\n말하고 나서 부끄러워져서 담요에 얼굴을 파묻었어요.\n전화를 끊은 뒤, 남은 홍차를 다 마셨어요. 조금 식어 있었지만, 오늘 밤 가장 따뜻한 한 잔이었어요."
+      ]
+    },
+    "art": "/cards/s1-alice-29/card.webp",
+    "voice": "/voice/s1-alice-29.mp3"
+  },
+  {
+    "id": "s1-alice-30",
+    "star": "alice",
+    "tier": "UR",
+    "title": {
+      "ja": "白いバラの温室で",
+      "zh-Hant": "在白玫瑰溫室",
+      "en": "In the White Rose Conservatory",
+      "ko": "하얀 장미 온실에서"
+    },
+    "scene": "Alice's signature: a glass conservatory at night filled with white roses and strings of fairy lights, rain tapping on the glass roof, opaque, fully lined white lace high-neck blouse with a small navy ribbon at the collar and a long pleated skirt, holding an open antique silver music box with a tiny dancer, looking into the lens",
+    "line": {
+      "ja": "会えてうれしい。……ほんとだよ。ずっと、ここで待ってたの。",
+      "zh-Hant": "見到你好開心。……是真的喔。我一直在這裡等你。",
+      "en": "I'm so glad to see you. …I mean it. I've been waiting here all along.",
+      "ko": "만나서 기뻐요. ……진짜예요. 계속, 여기서 기다리고 있었어요."
+    },
+    "story": {
+      "ja": [
+        "ガラスの温室に、夜の雨が降ってる。\n天井から、ぱらぱら、ぱらぱら。白いバラのあいだに、小さな豆電球がいくつもつるしてあって、雨のしずくをきらきら照らしてる。ここは、わたしがいちばん落ち着ける場所。\n白いレースのハイネックのブラウスに、紺色の小さなリボン。お気に入りの服を着て、古い銀のオルゴールを持って、わたしはここであなたを待ってる。\nこのオルゴールはね、おばあちゃんにもらったものなの。ふたを開けると、小さなバレリーナが回って、少しだけ音のはずれたワルツが流れる。\nわたしは口べたで、照れ屋で、言いたいことの半分も言えない。でも、このオルゴールの曲を聴いてると、不思議と勇気が出るの。\n雨の音にまぎれて、足音が聞こえた。\nわたしは、オルゴールのねじを、ゆっくり巻いた。",
+        "「会えてうれしい」\nあなたの顔を見たとたん、その言葉だけは、すっと出てきた。いつもは、なかなか言えないのに。\nあなたはぬれた髪をかきあげながら、白いバラを見まわして、「すごいね」って言った。わたしが一年かけて育てたバラたち。ほめられると、自分のことみたいにうれしい。\nオルゴールのふたを開ける。バレリーナが回りはじめて、ワルツが雨の音にとけていく。\n「この曲、聴いてほしかったの。……わたしのいちばん大切な曲だから」\nあなたは黙って、最後まで聴いてくれた。ねじが止まって、バレリーナが止まって、雨の音だけが残る。\n「……ほんとだよ」\nわたしは、もう一度言った。\n「会えてうれしいって、ほんとだよ。ずっと、ここで待ってたの」\nあなたがうなずいて、「知ってる」って笑った。\nその笑顔を見て、わたし、やっと少しだけ、自分の気持ちに素直になれた気がしたの。"
+      ],
+      "zh-Hant": [
+        "玻璃溫室裡，下著夜雨。\n從屋頂傳來滴滴答答、滴滴答答的聲音。白玫瑰之間垂掛著好多小燈泡，把雨珠照得閃閃發亮。這裡是讓我最安心的地方。\n白色蕾絲高領襯衫，配上深藍色的小緞帶。穿著最喜歡的衣服，拿著古老的銀色音樂盒，我在這裡等你。\n這個音樂盒，是奶奶送我的。打開蓋子，小小的芭蕾舞者就會旋轉，流出一首有點走音的華爾滋。\n我不擅長說話，又容易害羞，想說的話連一半都說不出口。可是聽著這個音樂盒的曲子，就會不可思議地湧出勇氣。\n在雨聲之中，我聽到了腳步聲。\n我慢慢地，轉緊了音樂盒的發條。",
+        "「見到你好開心。」\n一看到你的臉，只有這句話，順順地說出口了。明明平常總是說不出來的。\n你一邊撥起濕掉的頭髮，一邊環顧著白玫瑰說：「好厲害。」那是我花了一年照顧的玫瑰們。被稱讚了，就像稱讚我自己一樣開心。\n打開音樂盒的蓋子。芭蕾舞者開始旋轉，華爾滋融進雨聲裡。\n「我想讓你聽這首曲子。……因為這是我最珍惜的一首。」\n你靜靜地，一直聽到最後。發條停了，芭蕾舞者停了，只剩下雨聲。\n「……是真的喔。」\n我又說了一次。\n「見到你好開心，是真的喔。我一直在這裡等你。」\n你點點頭，笑著說：「我知道。」\n看到那個笑容，我覺得自己終於，稍微能夠坦率面對自己的心意了。"
+      ],
+      "en": [
+        "Night rain is falling on the glass conservatory.\nPitter-patter from the roof. Tiny bulbs hang among the white roses and make the raindrops sparkle. This is the place I feel most at peace.\nA white lace high-neck blouse with a little navy ribbon. Wearing my favourite clothes and holding an old silver music box, I wait for you here.\nThis music box was my grandmother's gift. When you open the lid, a tiny ballerina turns and a slightly out-of-tune waltz plays.\nI'm bad with words and shy, and I can't say even half of what I want to. But when I listen to this music box, I somehow find courage.\nThrough the sound of the rain, I heard footsteps.\nSlowly, I wound the music box.",
+        "\"I'm so glad to see you.\"\nThe moment I saw your face, those words came out easily. Usually I can hardly say them.\nPushing back your wet hair, you looked around at the white roses and said, \"Amazing.\" The roses I spent a year raising. Hearing you praise them made me as happy as if you'd praised me.\nI opened the music box. The ballerina began to turn and the waltz melted into the rain.\n\"I wanted you to hear this. …It's the song most precious to me.\"\nYou listened quietly all the way to the end. The spring wound down, the ballerina stopped, and only the rain remained.\n\"…I mean it,\" I said again.\n\"I'm really glad to see you. I've been waiting here all along.\"\nYou nodded and smiled: \"I know.\"\nSeeing that smile, I felt I could finally be a little more honest with my own heart."
+      ],
+      "ko": [
+        "유리 온실에, 밤비가 내려요.\n천장에서 톡톡, 톡톡. 하얀 장미들 사이로 작은 꼬마전구들이 여럿 매달려서, 빗방울을 반짝반짝 비춰줘요. 여기는 제가 가장 편안해지는 곳이에요.\n하얀 레이스 하이넥 블라우스에, 남색 작은 리본. 좋아하는 옷을 입고, 오래된 은색 오르골을 들고서, 저는 여기서 당신을 기다려요.\n이 오르골은요, 할머니가 주신 거예요. 뚜껑을 열면 작은 발레리나가 돌면서, 살짝 음이 어긋난 왈츠가 흘러나와요.\n저는 말주변이 없고, 부끄러움도 많아서, 하고 싶은 말의 절반도 못 해요. 그런데 이 오르골의 곡을 듣고 있으면, 신기하게도 용기가 나요.\n빗소리 사이로, 발소리가 들렸어요.\n저는 오르골의 태엽을, 천천히 감았어요.",
+        "'만나서 기뻐요.'\n당신 얼굴을 본 순간, 그 말만은 술술 나왔어요. 평소엔 좀처럼 못 하는데.\n당신은 젖은 머리를 쓸어 올리며 하얀 장미들을 둘러보고 '대단하다'라고 말했어요. 제가 일 년을 들여 키운 장미들. 칭찬을 받으니, 마치 저를 칭찬받은 것처럼 기뻤어요.\n오르골 뚜껑을 열어요. 발레리나가 돌기 시작하고, 왈츠가 빗소리에 녹아들어요.\n'이 곡, 들려주고 싶었어요. ……제게 가장 소중한 곡이거든요.'\n당신은 조용히, 끝까지 들어줬어요. 태엽이 멈추고, 발레리나가 멈추고, 빗소리만 남았어요.\n'……진짜예요.'\n저는 다시 한 번 말했어요.\n'만나서 기쁘다는 거, 진짜예요. 계속, 여기서 기다리고 있었어요.'\n당신이 고개를 끄덕이며 '알아요'라고 웃었어요.\n그 미소를 보면서, 저는 드디어 조금은, 제 마음에 솔직해질 수 있었던 것 같아요."
+      ]
+    },
+    "art": "/cards/s1-alice-30/card.webp",
+    "voice": "/voice/s1-alice-30.mp3"
+  },
+  {
+    "id": "s1-eimi-01",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "鏡の前のわたし",
+      "zh-Hant": "鏡子前的我",
+      "en": "Me in the Mirror",
+      "ko": "거울 앞에서"
+    },
+    "scene": "Eimi at a marble vanity in soft morning light holding up two pairs of pearl earrings, cream silk blouse, looking at you through the mirror with a knowing smile",
+    "line": {
+      "ja": "おはよ。ピアス、どっちが似合うと思う？ 選んで。",
+      "zh-Hant": "早安。耳環，你覺得哪副比較適合我？幫我選。",
+      "en": "Morning. Which earrings suit me? You choose.",
+      "ko": "좋은 아침. 귀걸이, 어느 쪽이 더 어울려? 골라 줘."
+    },
+    "art": "/cards/s1-eimi-01/card.webp",
+    "voice": "/voice/s1-eimi-01.mp3"
+  },
+  {
+    "id": "s1-eimi-02",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "香水をひと吹き",
+      "zh-Hant": "輕噴一下香水",
+      "en": "A Touch of Perfume",
+      "ko": "향수 한 번"
+    },
+    "scene": "Eimi at a marble vanity spraying perfume from a faceted crystal bottle with a rose-gold cap onto her wrist, black silk blouse, morning light",
+    "line": {
+      "ja": "この香り、覚えておいて。……次に会うときの合図だから。",
+      "zh-Hant": "記住這個香味。……這是下次見面的暗號。",
+      "en": "Remember this scent. …It's our signal for next time.",
+      "ko": "이 향, 기억해 둬. ……다음에 만날 때의 신호니까."
+    },
+    "art": "/cards/s1-eimi-02/card.webp",
+    "voice": "/voice/s1-eimi-02.mp3"
+  },
+  {
+    "id": "s1-eimi-03",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "朝のエスプレッソ",
+      "zh-Hant": "早晨的濃縮咖啡",
+      "en": "Morning Espresso",
+      "ko": "아침의 에스프레소"
+    },
+    "scene": "Eimi by a hotel suite window in the morning holding a small espresso cup, ivory satin shirt and wide tailored trousers, city skyline behind her",
+    "line": {
+      "ja": "朝はブラック派。……あなたは甘いほうが好きでしょ？ 知ってる。",
+      "zh-Hant": "我早上喝黑咖啡。……你比較喜歡甜的吧？我知道。",
+      "en": "I take it black in the morning. …You like yours sweet, right? I know.",
+      "ko": "아침엔 블랙파. ……너는 단 거 좋아하지? 알아."
+    },
+    "art": "/cards/s1-eimi-03/card.webp",
+    "voice": "/voice/s1-eimi-03.mp3"
+  },
+  {
+    "id": "s1-eimi-04",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "ネイルの時間",
+      "zh-Hant": "做指甲的時間",
+      "en": "Nail Time",
+      "ko": "네일 하는 시간"
+    },
+    "scene": "Eimi on a velvet sofa in a hotel suite in the afternoon painting her nails rose pink, black knit top, fingers spread, glancing up at you",
+    "line": {
+      "ja": "乾くまで動けないの。……だから、ここにいて。",
+      "zh-Hant": "指甲乾之前我不能動。……所以，待在這裡。",
+      "en": "I can't move till they dry. …So stay right here.",
+      "ko": "마르기 전까진 못 움직여. ……그러니까, 여기 있어."
+    },
+    "art": "/cards/s1-eimi-04/card.webp",
+    "voice": "/voice/s1-eimi-04.mp3"
+  },
+  {
+    "id": "s1-eimi-05",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "ブティックで試着",
+      "zh-Hant": "精品店試穿",
+      "en": "Fitting at the Boutique",
+      "ko": "부티크 피팅"
+    },
+    "scene": "Eimi stepping out of a fitting room in an elegant boutique wearing a tailored black long-sleeve dress, hand on her hip, waiting for your verdict",
+    "line": {
+      "ja": "どう？ ……黙ってないで、ちゃんと言葉にして。",
+      "zh-Hant": "怎麼樣？……不要不說話，好好說出來。",
+      "en": "Well? …Don't just stare — say it.",
+      "ko": "어때? ……가만히 있지 말고, 말로 제대로 해 줘."
+    },
+    "art": "/cards/s1-eimi-05/card.webp",
+    "voice": "/voice/s1-eimi-05.mp3"
+  },
+  {
+    "id": "s1-eimi-06",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "プールサイドの午後",
+      "zh-Hant": "泳池畔的午後",
+      "en": "Poolside Afternoon",
+      "ko": "풀사이드의 오후"
+    },
+    "scene": "Eimi seated on a shaded lounge chair on a poolside terrace on a bright afternoon, white long-sleeve linen shirt buttoned high and wide ankle-length linen trousers, sunglasses pushed up in her hair, water caustics on white tiles",
+    "line": {
+      "ja": "日差し、強いね。……あなたの影に入れて。",
+      "zh-Hant": "陽光好強喔。……讓我躲進你的影子裡。",
+      "en": "The sun's strong. …Let me stand in your shadow.",
+      "ko": "햇살 진짜 강하다. ……네 그늘로 들어가게 해 줘."
+    },
+    "art": "/cards/s1-eimi-06/card.webp",
+    "voice": "/voice/s1-eimi-06.mp3"
+  },
+  {
+    "id": "s1-eimi-07",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "ルームサービス",
+      "zh-Hant": "客房服務",
+      "en": "Room Service",
+      "ko": "룸서비스"
+    },
+    "scene": "Eimi in a hotel suite in the morning beside a room-service trolley with strawberries and tea, cream silk blouse and trousers, lifting a silver cloche with a smile",
+    "line": {
+      "ja": "朝ごはん、ふたり分頼んでおいた。……もちろん、あなたの分もね。",
+      "zh-Hant": "早餐我點了兩人份。……當然，也有你的。",
+      "en": "I ordered breakfast for two. …Of course one's for you.",
+      "ko": "아침 두 사람 몫 시켜 놨어. ……당연히, 네 것도."
+    },
+    "art": "/cards/s1-eimi-07/card.webp",
+    "voice": "/voice/s1-eimi-07.mp3"
+  },
+  {
+    "id": "s1-eimi-08",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "夜のドライブ前",
+      "zh-Hant": "夜間兜風前",
+      "en": "Before the Night Drive",
+      "ko": "밤 드라이브 전"
+    },
+    "scene": "Eimi beside a classic car in a softly lit city parking area at night, black leather jacket over a knit dress, dangling the car keys toward you",
+    "line": {
+      "ja": "助手席、あなたの指定席にしといたから。乗って。",
+      "zh-Hant": "副駕駛座已經是你的專屬座位了。上車吧。",
+      "en": "The passenger seat's reserved for you. Get in.",
+      "ko": "조수석은 네 지정석으로 해 뒀어. 타."
+    },
+    "art": "/cards/s1-eimi-08/card.webp",
+    "voice": "/voice/s1-eimi-08.mp3"
+  },
+  {
+    "id": "s1-eimi-09",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "花屋でひと目惚れ",
+      "zh-Hant": "在花店一見鍾情",
+      "en": "Love at First Sight at the Florist",
+      "ko": "꽃집에서의 첫눈"
+    },
+    "scene": "Eimi in a stylish florist holding a bunch of pale pink peonies to her face, camel coat over a black turtleneck, playful look at you",
+    "line": {
+      "ja": "このピオニー、わたしみたいでしょ？ ……ふふ、冗談。",
+      "zh-Hant": "這束芍藥很像我吧？……呵呵，開玩笑的。",
+      "en": "These peonies are just like me, right? …Kidding.",
+      "ko": "이 작약, 나 닮았지? ……후후, 농담이야."
+    },
+    "art": "/cards/s1-eimi-09/card.webp",
+    "voice": "/voice/s1-eimi-09.mp3"
+  },
+  {
+    "id": "s1-eimi-10",
+    "star": "eimi",
+    "tier": "N",
+    "title": {
+      "ja": "遅かったね",
+      "zh-Hant": "你好晚喔",
+      "en": "You're Late",
+      "ko": "많이 늦었네"
+    },
+    "scene": "Eimi leaning in the doorway of a hotel suite at night, arms crossed, black satin blouse and tailored trousers, warm lamplight behind, a half-smile for you",
+    "line": {
+      "ja": "遅かったね。……でも、待ってるのも嫌いじゃないの。",
+      "zh-Hant": "你好晚喔。……不過，等你我也不討厭。",
+      "en": "You're late. …But I don't mind waiting for you.",
+      "ko": "많이 늦었네. ……그래도, 기다리는 것도 싫지 않아."
+    },
+    "art": "/cards/s1-eimi-10/card.webp",
+    "voice": "/voice/s1-eimi-10.mp3"
+  },
+  {
+    "id": "s1-eimi-11",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "ルーフトップバー",
+      "zh-Hant": "屋頂酒吧",
+      "en": "Rooftop Bar",
+      "ko": "루프탑 바"
+    },
+    "scene": "Eimi at a rooftop bar at night with the Tokyo skyline glittering behind, elegant black long-sleeve dress, raising a glass toward you",
+    "line": {
+      "ja": "乾杯。今夜は、わたしだけ見てて。",
+      "zh-Hant": "乾杯。今晚，只看著我就好。",
+      "en": "Cheers. Tonight, eyes on me only.",
+      "ko": "건배. 오늘 밤은, 나만 봐."
+    },
+    "art": "/cards/s1-eimi-11/card.webp",
+    "voice": "/voice/s1-eimi-11.mp3"
+  },
+  {
+    "id": "s1-eimi-12",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "銀座でショッピング",
+      "zh-Hant": "銀座購物",
+      "en": "Shopping in Ginza",
+      "ko": "긴자 쇼핑"
+    },
+    "scene": "Eimi on a Ginza street on a sunny afternoon holding elegant shopping bags, beige trench coat and sunglasses, turning back to you",
+    "line": {
+      "ja": "荷物持ちじゃないよ。……エスコート役、ってこと。",
+      "zh-Hant": "不是叫你提東西喔。……是當我的護花使者。",
+      "en": "You're not carrying bags. …You're my escort.",
+      "ko": "짐꾼이 아니야. ……에스코트 역할, 이라는 거지."
+    },
+    "art": "/cards/s1-eimi-12/card.webp",
+    "voice": "/voice/s1-eimi-12.mp3"
+  },
+  {
+    "id": "s1-eimi-13",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "美術館ナイト",
+      "zh-Hant": "美術館之夜",
+      "en": "Museum Night",
+      "ko": "미술관에서의 밤"
+    },
+    "scene": "Eimi at an evening event in a modern art museum, standing before a large abstract canvas, black blazer dress, watching you instead of the art",
+    "line": {
+      "ja": "作品より、あなたの反応のほうが面白いかも。",
+      "zh-Hant": "比起作品，你的反應好像更有趣。",
+      "en": "Your reactions are more interesting than the art.",
+      "ko": "작품보다, 네 반응이 더 재밌을지도."
+    },
+    "art": "/cards/s1-eimi-13/card.webp",
+    "voice": "/voice/s1-eimi-13.mp3"
+  },
+  {
+    "id": "s1-eimi-14",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "海辺のテラスカフェ",
+      "zh-Hant": "海邊露台咖啡",
+      "en": "Seaside Terrace Café",
+      "ko": "바닷가 테라스 카페"
+    },
+    "scene": "Eimi at a seaside terrace café on a breezy afternoon, white linen dress with sleeves and a wide straw hat, the sea sparkling behind her, hair tousled by the wind",
+    "line": {
+      "ja": "潮風、気持ちいいね。……髪、乱れちゃった。直して？",
+      "zh-Hant": "海風好舒服。……頭髮亂掉了。幫我整理？",
+      "en": "The sea breeze feels nice. …My hair's a mess. Fix it?",
+      "ko": "바닷바람, 기분 좋다. ……머리 헝클어졌어. 정리해 줄래?"
+    },
+    "art": "/cards/s1-eimi-14/card.webp",
+    "voice": "/voice/s1-eimi-14.mp3"
+  },
+  {
+    "id": "s1-eimi-15",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "ジャズバー",
+      "zh-Hant": "爵士酒吧",
+      "en": "Jazz Bar",
+      "ko": "재즈 바"
+    },
+    "scene": "Eimi in a dim jazz bar at night, a saxophonist blurred on stage behind, deep burgundy velvet dress with long sleeves, chin on her hand, looking at you",
+    "line": {
+      "ja": "この曲、ゆっくりでいいよね。……今夜は急がないで。",
+      "zh-Hant": "這首曲子，慢慢聽就好。……今晚別急。",
+      "en": "This song's a slow one. …Don't rush tonight.",
+      "ko": "이 곡, 천천히 들어도 괜찮지. ……오늘 밤은 서두르지 마."
+    },
+    "art": "/cards/s1-eimi-15/card.webp",
+    "voice": "/voice/s1-eimi-15.mp3"
+  },
+  {
+    "id": "s1-eimi-16",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "乗馬クラブ",
+      "zh-Hant": "馬術俱樂部",
+      "en": "Riding Club",
+      "ko": "승마 클럽"
+    },
+    "scene": "Eimi at a riding club on a clear morning in a fitted navy riding jacket, white shirt and riding boots, one hand on a chestnut horse, confident smile",
+    "line": {
+      "ja": "馬に乗るわたし、かっこいいでしょ？ ほら、ちゃんと見てて。",
+      "zh-Hant": "騎馬的我很帥吧？來，好好看著。",
+      "en": "I look good on a horse, don't I? Watch.",
+      "ko": "말 타는 나, 멋있지? 자, 제대로 봐."
+    },
+    "art": "/cards/s1-eimi-16/card.webp",
+    "voice": "/voice/s1-eimi-16.mp3"
+  },
+  {
+    "id": "s1-eimi-17",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "箱根の紅葉",
+      "zh-Hant": "箱根紅葉",
+      "en": "Hakone in Autumn",
+      "ko": "하코네의 단풍"
+    },
+    "scene": "Eimi on a mountain path in Hakone among red and orange autumn leaves, long camel coat and black turtleneck, cool air, holding her coat open toward you",
+    "line": {
+      "ja": "寒くなってきた。……コートの中、入る？",
+      "zh-Hant": "開始變冷了。……要進來我的大衣裡嗎？",
+      "en": "It's getting cold. …Want to come inside my coat?",
+      "ko": "쌀쌀해지네. ……코트 안으로, 들어올래?"
+    },
+    "art": "/cards/s1-eimi-17/card.webp",
+    "voice": "/voice/s1-eimi-17.mp3"
+  },
+  {
+    "id": "s1-eimi-18",
+    "star": "eimi",
+    "tier": "R",
+    "title": {
+      "ja": "暖炉のラウンジ",
+      "zh-Hant": "壁爐旁的酒廊",
+      "en": "Fireside Lounge",
+      "ko": "벽난로 라운지"
+    },
+    "scene": "Eimi in a hotel lounge in winter by a crackling fireplace, cream cashmere turtleneck and wide trousers, patting the armchair beside her",
+    "line": {
+      "ja": "暖炉の前、特等席とっておいた。……となり、どうぞ。",
+      "zh-Hant": "壁爐前的特等席我佔好了。……請坐我旁邊。",
+      "en": "I saved us the seats by the fire. …Sit by me.",
+      "ko": "벽난로 앞, 특등석 잡아 놨어. ……옆자리, 앉아."
+    },
+    "art": "/cards/s1-eimi-18/card.webp",
+    "voice": "/voice/s1-eimi-18.mp3"
+  },
+  {
+    "id": "s1-eimi-19",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "ガラの夜",
+      "zh-Hant": "晚宴之夜",
+      "en": "Gala Night",
+      "ko": "갈라의 밤"
+    },
+    "scene": "Eimi on the steps of a gala at night, elegant high-neck black floor-length gown with long sleeves, camera flashes in soft bokeh, looking past the crowd at you",
+    "line": {
+      "ja": "みんな見てるけど……わたしが見てるのは、あなただけ。",
+      "zh-Hant": "大家都在看我……但我看的只有你。",
+      "en": "Everyone's watching… but I'm only watching you.",
+      "ko": "다들 보고 있지만…… 내가 보는 건, 너 하나뿐이야."
+    },
+    "art": "/cards/s1-eimi-19/card.webp",
+    "voice": "/voice/s1-eimi-19.mp3"
+  },
+  {
+    "id": "s1-eimi-20",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "ナイトクルーズ",
+      "zh-Hant": "夜間遊船",
+      "en": "Night Cruise",
+      "ko": "밤의 크루즈"
+    },
+    "scene": "Eimi on the deck of a cruise boat on Tokyo Bay at night, Rainbow Bridge lit up behind, high-neck navy dress with long sleeves and a light shawl, wind in her hair",
+    "line": {
+      "ja": "夜景、きれいでしょ。……でも、今はこっち見て。",
+      "zh-Hant": "夜景很美吧。……不過現在，看這邊。",
+      "en": "Pretty view, right? …But right now, look at me.",
+      "ko": "야경, 예쁘지. ……근데 지금은, 이쪽 봐."
+    },
+    "art": "/cards/s1-eimi-20/card.webp",
+    "voice": "/voice/s1-eimi-20.mp3"
+  },
+  {
+    "id": "s1-eimi-21",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "あなた好みのドレス",
+      "zh-Hant": "你喜歡的禮服",
+      "en": "The Dress You'd Like",
+      "ko": "네가 좋아할 드레스"
+    },
+    "scene": "Eimi in a softly lit dressing room in the evening wearing a high-neck deep navy satin gown with long sleeves, adjusting an earring, turning to ask if you noticed",
+    "line": {
+      "ja": "このドレス、あなたの好みに合わせたの。……気づいた？",
+      "zh-Hant": "這件禮服是配合你的喜好選的。……你發現了嗎？",
+      "en": "I chose this dress for your taste. …Did you notice?",
+      "ko": "이 드레스, 네 취향에 맞춘 거야. ……눈치챘어?"
+    },
+    "art": "/cards/s1-eimi-21/card.webp",
+    "voice": "/voice/s1-eimi-21.mp3"
+  },
+  {
+    "id": "s1-eimi-22",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "テラスの花火",
+      "zh-Hant": "露台的煙火",
+      "en": "Fireworks from the Terrace",
+      "ko": "테라스의 불꽃놀이"
+    },
+    "scene": "Eimi on a hotel terrace on a summer night in a black yukata with red camellias, fireworks blooming over the city behind her, a folding fan in hand",
+    "line": {
+      "ja": "浴衣、似合う？ ……あなたに一番に見せたかったの。",
+      "zh-Hant": "浴衣適合我嗎？……我最想第一個給你看。",
+      "en": "Does the yukata suit me? …I wanted you to see it first.",
+      "ko": "유카타, 잘 어울려? ……너한테 제일 먼저 보여 주고 싶었어."
+    },
+    "art": "/cards/s1-eimi-22/card.webp",
+    "voice": "/voice/s1-eimi-22.mp3"
+  },
+  {
+    "id": "s1-eimi-23",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "誕生日のサプライズ",
+      "zh-Hant": "生日驚喜",
+      "en": "Birthday Surprise",
+      "ko": "생일 서프라이즈"
+    },
+    "scene": "Eimi in a private dining room at night presenting a small cake with a sparkler, elegant black dress, candlelight, delighted smile at you",
+    "line": {
+      "ja": "サプライズ、成功？ ……あなたの驚いた顔、見たかったの。",
+      "zh-Hant": "驚喜成功了嗎？……我就是想看你驚訝的表情。",
+      "en": "Surprise! Did it work? …I wanted to see your face.",
+      "ko": "서프라이즈, 성공했어? ……네 놀란 얼굴, 보고 싶었거든."
+    },
+    "art": "/cards/s1-eimi-23/card.webp",
+    "voice": "/voice/s1-eimi-23.mp3"
+  },
+  {
+    "id": "s1-eimi-24",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "雪のリゾートの夜",
+      "zh-Hant": "雪地度假村之夜",
+      "en": "Snow Resort Night",
+      "ko": "눈 내리는 리조트의 밤"
+    },
+    "scene": "Eimi in a mountain chalet at night by a large window with heavy snow falling outside, white cable-knit dress with long sleeves, a mug of hot chocolate, fireplace glow",
+    "line": {
+      "ja": "外は吹雪。……今夜は、暖炉の前でゆっくりしよ。",
+      "zh-Hant": "外面在下暴風雪。……今晚就在壁爐前好好放鬆吧。",
+      "en": "It's a blizzard out there. …Let's stay by the fire tonight.",
+      "ko": "밖은 눈보라야. ……오늘 밤은, 벽난로 앞에서 느긋하게 있자."
+    },
+    "art": "/cards/s1-eimi-24/card.webp",
+    "voice": "/voice/s1-eimi-24.mp3"
+  },
+  {
+    "id": "s1-eimi-25",
+    "star": "eimi",
+    "tier": "SR",
+    "title": {
+      "ja": "月夜のプールサイド",
+      "zh-Hant": "月夜泳池畔",
+      "en": "Moonlit Poolside",
+      "ko": "달빛 아래 풀사이드"
+    },
+    "scene": "Eimi sitting on the edge of a lounge chair by a hotel pool at night, fully clothed in a flowing high-neck rose silk dress with long sleeves, lanterns and the moon reflected in the water",
+    "line": {
+      "ja": "水面に月が映ってる。……ねえ、少しだけ隣に座って。",
+      "zh-Hant": "月亮映在水面上。……欸，坐我旁邊一下。",
+      "en": "The moon's on the water. …Hey, sit next to me a while.",
+      "ko": "물 위에 달이 비치고 있어. ……있잖아, 잠깐만 옆에 앉아 줄래."
+    },
+    "art": "/cards/s1-eimi-25/card.webp",
+    "voice": "/voice/s1-eimi-25.mp3"
+  },
+  {
+    "id": "s1-eimi-26",
+    "star": "eimi",
+    "tier": "SSR",
+    "title": {
+      "ja": "目をそらさないで",
+      "zh-Hant": "不要移開視線",
+      "en": "Don't Look Away",
+      "ko": "눈 돌리지 마"
+    },
+    "scene": "Intimate close-up of Eimi in a velvet armchair in a hotel suite at night, warm lamplight, high-neck rose satin evening dress with long sleeves and a navy silk wrap over her shoulders, direct confident gaze into the lens",
+    "line": {
+      "ja": "目、そらさないで。……わたしのこと、ちゃんと見てて。",
+      "zh-Hant": "不要移開視線。……好好看著我。",
+      "en": "Don't look away. …Keep your eyes on me.",
+      "ko": "눈, 돌리지 마. ……나를, 제대로 봐 줘."
+    },
+    "story": {
+      "ja": [
+        "ホテルのスイートの、ベルベットのアームチェア。ランプの明かりが、ローズ色のサテンをやわらかく光らせてる。\nあなたは部屋に入ってきてから、ずっと窓の外の夜景ばかり見てる。きれいなのはわかるけど……ねえ、ちょっと失礼じゃない？\n「こっち、見て」\n呼んでも、あなたはちらっと見て、すぐに目をそらす。照れてるの、バレバレ。\nわたしはわざとゆっくり座りなおして、紺色のシルクのストールを肩にかけなおした。人に見られることには慣れてる。カメラの前に立つのが仕事だもの。でもね、あなたに見られるのは、ちょっとだけ特別。\nだって、あなたの目は、カメラみたいにわたしを切りとらない。まるごと、ちゃんと見ようとしてくれる。\n「目、そらさないで」\n今度は、少しだけ声を低くして言った。あなたの肩が、ぴくっと動いた。",
+        "あなたはやっと、わたしのほうを向いた。\nまっすぐ目が合う。三秒。四秒。先にそらしたのは……わたしのほうだった。\n「……なに笑ってるの」\n「いや、珍しいなと思って」\nうるさい。自分から見てって言ったくせに、見つめ返されると、どうしていいかわからなくなるの。大人の余裕なんて、あなたの前だとすぐにどこかへいっちゃう。\nわたしはグラスを手にとって、ごまかすように一口飲んだ。グラスごしに、あなたがまだこっちを見てるのがわかる。\n「……ねえ、今日のわたし、どう？」\n結局、また自分から聞いちゃった。あなたは少し考えて、ひとことだけ答えた。\nそれが何だったかは、ないしょ。でも、その夜わたしは、鏡の前でずっとにやけてたと思う。\nわたしのことは、これからもちゃんと見てて。そのかわり、わたしもあなたから目をそらさないから。"
+      ],
+      "zh-Hant": [
+        "飯店套房裡的天鵝絨扶手椅。檯燈的光，讓玫瑰色的緞面柔柔地發亮。\n你從進房間開始，就一直看著窗外的夜景。我知道很美啦……可是欸，這樣有點失禮吧？\n「看這邊。」\n我叫你，你只瞄了我一眼，又馬上移開視線。在害羞，一看就知道。\n我故意慢慢地重新坐好，把深藍色的絲質披肩重新披上肩膀。被人注視這種事，我早就習慣了。站在鏡頭前就是我的工作嘛。可是啊，被你看著，有一點點特別。\n因為你的眼睛，不會像鏡頭那樣把我切割下來。你會想要完整地、好好地看著我。\n「不要移開視線。」\n這次，我稍微壓低了聲音說。你的肩膀抖了一下。",
+        "你終於轉向我這邊了。\n視線筆直地交會。三秒。四秒。先移開的是……我。\n「……你在笑什麼。」\n「沒有，只是覺得很難得。」\n吵死了。明明是我自己叫你看的，被你回看過來，卻不知道該怎麼辦。什麼大人的從容，在你面前一下子就不見了。\n我拿起杯子，掩飾地喝了一口。隔著杯子，我知道你還在看著我。\n「……欸，今天的我，怎麼樣？」\n結果，又是我自己先問了。你想了一下，只回了一句話。\n是什麼，是秘密。不過那天晚上，我大概一直在鏡子前傻笑吧。\n以後也要好好看著我喔。作為交換，我也不會把視線從你身上移開。"
+      ],
+      "en": [
+        "A velvet armchair in a hotel suite. The lamplight makes the rose satin glow softly.\nEver since you came in, you've only been looking at the night view. I know it's beautiful, but… hey, isn't that a bit rude?\n\"Look at me.\"\nYou glanced over and looked away again. So obviously shy.\nI shifted slowly in my seat on purpose and settled the navy silk wrap back over my shoulders. I'm used to being looked at. Standing in front of cameras is my job. But being looked at by you is a little bit special.\nBecause your eyes don't crop me the way a camera does. You try to see all of me, properly.\n\"Don't look away.\"\nThis time I said it a little lower. Your shoulders twitched.",
+        "At last, you turned toward me.\nOur eyes met straight on. Three seconds. Four. The one who looked away first was… me.\n\"…What are you smiling at?\"\n\"Nothing, it's just rare.\"\nOh, hush. I'm the one who told you to look, and yet when you look back, I don't know what to do. All my grown-up composure disappears in front of you.\nI picked up my glass and took a sip to cover it. Over the rim, I could tell you were still looking at me.\n\"…So, how do I look tonight?\"\nIn the end, I asked first again. You thought for a moment and answered in just a few words.\nWhat they were is a secret. But I think I spent that night grinning at the mirror.\nKeep watching me from now on. In return, I won't take my eyes off you either."
+      ],
+      "ko": [
+        "호텔 스위트룸의 벨벳 안락의자. 램프 불빛이 로즈색 새틴을 부드럽게 비추고 있어.\n넌 방에 들어오고 나서 줄곧 창밖 야경만 보고 있었어. 예쁜 건 알겠는데…… 저기, 그거 좀 실례 아니야?\n「이쪽, 봐」\n불러도 넌 힐끗 보고는 바로 눈을 돌려. 부끄러워하는 거, 다 티 나.\n나는 일부러 천천히 자세를 고쳐 앉고, 네이비색 실크 스톨을 어깨에 다시 걸쳤어. 남의 시선엔 익숙해. 카메라 앞에 서는 게 일이니까. 근데 있잖아, 네가 보는 건 조금 특별해.\n왜냐면 네 눈은, 카메라처럼 날 잘라내지 않으니까. 통째로, 제대로 보려고 해 주니까.\n「눈, 돌리지 마」\n이번엔 목소리를 살짝 낮춰서 말했어. 네 어깨가 움찔, 움직였어.",
+        "넌 마침내 내 쪽을 돌아봤어.\n시선이 똑바로 마주쳤어. 삼 초. 사 초. 먼저 피한 건…… 나였어.\n「……뭘 웃는 거야」\n「아니, 신기하다 싶어서」\n시끄러워. 자기가 먼저 보라고 해 놓고, 막상 마주 보면 어떻게 해야 할지 모르겠어. 어른스러운 여유 같은 건, 네 앞에서는 금방 어디론가 사라져 버려.\n나는 잔을 들고, 얼버무리듯 한 모금 마셨어. 잔 너머로, 네가 아직 이쪽을 보고 있는 게 느껴졌어.\n「……저기, 오늘 나 어때?」\n결국 또 내가 먼저 물어버렸어. 넌 잠깐 생각하더니, 한마디만 대답했어.\n그게 뭐였는지는, 비밀이야. 근데 그날 밤 나는, 거울 앞에서 계속 실실 웃고 있었던 것 같아.\n앞으로도 나를 제대로 봐 줘. 그 대신, 나도 너한테서 눈 돌리지 않을 테니까."
+      ]
+    },
+    "art": "/cards/s1-eimi-26/card.webp",
+    "voice": "/voice/s1-eimi-26.mp3"
+  },
+  {
+    "id": "s1-eimi-27",
+    "star": "eimi",
+    "tier": "SSR",
+    "title": {
+      "ja": "ピアスをつけて",
+      "zh-Hant": "幫我戴耳環",
+      "en": "Help with My Earring",
+      "ko": "귀걸이 채워 줘"
+    },
+    "scene": "Close-up of Eimi at a marble vanity in bright morning light, turning her head and holding a single pearl earring out toward the lens, cream silk blouse, playful smile",
+    "line": {
+      "ja": "片方、つけてくれる？ ……手、ふるえてるよ？ ふふ。",
+      "zh-Hant": "幫我戴一邊好嗎？……你的手在發抖喔？呵呵。",
+      "en": "Put one on for me? …Your hands are shaking. Heh.",
+      "ko": "한쪽만, 채워 줄래? ……손 떨리네? 후후."
+    },
+    "story": {
+      "ja": [
+        "朝の光が、大理石の洗面台に反射してまぶしい。\n鏡の前で、わたしはパールのピアスを片方だけつけて、もう片方を指先でころがしてた。昨日の夜、あなたがプレゼントしてくれたもの。小さなケースを開けたとき、思わず声が出ちゃったの、覚えてる？\n「似合う？」って鏡ごしに聞いたら、あなたは洗面所の入り口で、コーヒーを持ったまま固まってた。\nすっぴんに近い顔を見られるのは、ほんとはちょっと恥ずかしい。いつもは完璧に仕上げてから人に会うから。でも、あなたになら、まあいいかって思えるようになった。\n香水をひと吹き。ローズと、少しだけムスク。わたしの朝のはじまりの香り。\nわたしは振り向いて、もう片方のピアスをあなたに差し出した。\n「片方、つけてくれる？」\nあなたの目が、まんまるになった。",
+        "ピアスをつけるのって、慣れてない人には意外とむずかしいの。\nあなたはわたしの耳たぶを、こわれものみたいにそっとつまんで、何度もキャッチを落としそうになった。距離が近い。あなたの息が、耳にかかる。\n「……手、ふるえてるよ？」\nからかったら、あなたはもっと緊張して、ピアスが指からすべり落ちた。洗面台の上で、パールがころころ転がる。ふたりで同時に手をのばして、指先がぶつかった。\nわたし、思わず吹き出しちゃった。あなたも笑って、なんだか朝から大さわぎ。\n三回目で、やっとピアスがおさまった。鏡をのぞくと、両耳に同じパールが光ってる。\n「ありがと。上手だったよ」\nうそ。ぜんぜん上手じゃなかった。でも、今まででいちばん、うれしいピアスのつけ方だった。\nこれから毎朝、片方だけつけて待ってようかな。……冗談よ。半分だけね。"
+      ],
+      "zh-Hant": [
+        "早晨的陽光反射在大理石洗手台上，好刺眼。\n我在鏡子前只戴了一邊珍珠耳環，另一邊在指尖滾來滾去。這是你昨晚送我的禮物。打開小盒子的時候，我忍不住叫出聲，你還記得嗎？\n我隔著鏡子問「適合嗎？」，你拿著咖啡站在洗手間門口，整個人僵住了。\n被看到幾乎素顏的臉，其實有點害羞。平常我都是打扮得完美無缺才見人的。可是如果是你，我開始覺得，好像也沒關係。\n噴一下香水。玫瑰，加上一點點麝香。我早晨開始的味道。\n我轉過身，把另一邊耳環遞給你。\n「幫我戴一邊好嗎？」\n你的眼睛瞪得圓圓的。",
+        "戴耳環這件事，對不習慣的人來說其實很難。\n你像拿易碎品一樣，輕輕捏著我的耳垂，好幾次差點把耳扣弄掉。距離好近。你的呼吸吹在我耳邊。\n「……你的手在發抖喔？」\n我一捉弄你，你就更緊張，耳環從指間滑了下去。珍珠在洗手台上骨碌碌地滾。我們同時伸出手，指尖碰在一起。\n我忍不住噗哧笑了出來。你也笑了，一大早就鬧哄哄的。\n第三次，耳環終於戴好了。看向鏡子，兩邊耳朵上閃著一樣的珍珠。\n「謝謝。你戴得很好喔。」\n騙人的。一點也不好。可是，這是我到現在為止，最開心的一次戴耳環。\n以後每天早上，我都只戴一邊等你好了。……開玩笑的。一半是啦。"
+      ],
+      "en": [
+        "Morning light bounced off the marble vanity, dazzling.\nIn front of the mirror I'd put in one pearl earring and was rolling the other between my fingers. Your present from last night. Do you remember how I gasped when I opened the little box?\nWhen I asked \"Does it suit me?\" through the mirror, you froze in the bathroom doorway, coffee in hand.\nHonestly, being seen almost bare-faced is a little embarrassing. Usually I only meet people once I'm perfectly done up. But with you, I've started thinking it's fine.\nOne spritz of perfume. Rose, and a hint of musk. The scent that starts my mornings.\nI turned and held the other earring out to you.\n\"Put one on for me?\"\nYour eyes went perfectly round.",
+        "Putting in an earring is surprisingly hard if you're not used to it.\nYou held my earlobe as gently as something breakable and kept nearly dropping the back. You were so close. Your breath brushed my ear.\n\"…Your hands are shaking, you know?\"\nWhen I teased you, you got even more nervous and the earring slipped from your fingers. The pearl rolled across the vanity. We both reached for it at once and our fingertips bumped.\nI burst out laughing. You laughed too — such a commotion first thing in the morning.\nOn the third try, it finally went in. In the mirror, matching pearls shone on both ears.\n\"Thanks. You did great.\"\nA lie. You were terrible at it. But it was the happiest I've ever been putting on earrings.\nMaybe from now on I'll wear just one every morning and wait for you. …Kidding. Half kidding."
+      ],
+      "ko": [
+        "아침 햇살이 대리석 세면대에 반사돼서 눈부셔.\n거울 앞에서, 나는 진주 귀걸이를 한쪽만 걸고, 다른 한쪽을 손끝으로 굴리고 있었어. 어젯밤 네가 선물해 준 거야. 작은 케이스를 열었을 때 나도 모르게 소리 질렀던 거, 기억해?\n「어울려?」 하고 거울 너머로 물었더니, 넌 화장실 입구에서 커피를 든 채 굳어 있었어.\n민낯에 가까운 얼굴을 보이는 건 사실 조금 부끄러워. 평소엔 완벽하게 꾸미고 나서야 사람을 만나니까. 근데 너한테는, 뭐 괜찮으려나 싶어졌어.\n향수를 한 번 뿌렸어. 로즈에, 살짝 머스크. 내 아침이 시작되는 향기야.\n나는 몸을 돌려서, 남은 한쪽 귀걸이를 너한테 내밀었어.\n「한쪽만, 채워 줄래?」\n네 눈이 동그래졌어.",
+        "귀걸이를 채우는 거, 익숙하지 않은 사람한테는 의외로 어려운가 봐.\n넌 내 귓불을, 깨질 것 같은 물건 다루듯 살짝 잡고는 몇 번이나 나비핀을 떨어뜨릴 뻔했어. 거리가 가까워. 네 숨결이 귀에 닿아.\n「……손 떨리네?」\n놀렸더니 넌 더 긴장해서, 귀걸이가 손가락에서 미끄러져 떨어졌어. 세면대 위에서 진주가 데굴데굴 굴러가. 우리 둘 다 동시에 손을 뻗어서, 손끝이 부딪혔어.\n나는 나도 모르게 웃음이 터졌어. 너도 웃고, 아침부터 웬 소동인지.\n세 번째 만에 겨우 귀걸이가 자리를 잡았어. 거울을 보니, 양쪽 귀에 같은 진주가 빛나고 있어.\n「고마워. 잘했어」\n거짓말. 전혀 안 잘했어. 근데, 지금까지 중에서 제일 기뻤던 귀걸이 착용이었어.\n앞으로 매일 아침, 한쪽만 걸고 기다려 볼까. ……농담이야. 반쯤은."
+      ]
+    },
+    "art": "/cards/s1-eimi-27/card.webp",
+    "voice": "/voice/s1-eimi-27.mp3"
+  },
+  {
+    "id": "s1-eimi-28",
+    "star": "eimi",
+    "tier": "SSR",
+    "title": {
+      "ja": "香りの記憶",
+      "zh-Hant": "香氣的記憶",
+      "en": "Memory of a Scent",
+      "ko": "향기의 기억"
+    },
+    "scene": "Close-up of Eimi in a hotel suite at night holding a faceted crystal perfume bottle with a rose-gold cap near her chin, city lights sparkling behind, black high-neck silk dress, a soft knowing smile into the lens",
+    "line": {
+      "ja": "この香りがしたら、わたしを思い出して。……約束ね。",
+      "zh-Hant": "聞到這個香味時，就想起我。……說好了喔。",
+      "en": "When you smell this, think of me. …Promise.",
+      "ko": "이 향이 나면, 날 떠올려 줘. ……약속이야."
+    },
+    "story": {
+      "ja": [
+        "香水って、記憶とつながってるって知ってた？\n目で見たものより、耳で聞いたものより、香りのほうが、ずっと長く覚えてるんだって。だから、わたしは大切な日には、同じ香水をつけるの。\nローズゴールドのキャップの、カットガラスのボトル。光にかざすと、中の液体がピンク色にきらめく。わたしのいちばんのお気に入り。\nあなたとはじめて会った日も、この香りをまとってた。二回目のデートも、あなたが熱を出してお見舞いに行った日も。\nだから、あなたの中には、きっともうこの香りが住みついてる。……そうだったら、うれしいな。\n夜のスイートルーム。窓の外で、街の灯りが宝石みたいに光ってる。わたしはボトルを手首に近づけて、ひと吹き。それから、首すじに少しだけ。\n今夜も、あなたに覚えていてほしい夜だから。",
+        "「いい匂い」\nあなたが部屋に入ってきて、最初に言ったのがそれだった。わたしはちょっと得意になって、香水のボトルを持ち上げてみせた。\n「この香りがしたら、わたしを思い出して。……約束ね」\nあなたは笑って、「もう思い出してる」って言った。街で似た香りの人とすれちがうと、つい振り向いちゃうんだって。\nなにそれ。うれしいけど、ちょっと妬ける。その人は、わたしじゃないのに。\n「じゃあ、ほかの人と区別がつくように」\nわたしはボトルのキャップを開けて、あなたの手首に一滴だけ落とした。ローズの香りが、ふわっと広がる。\n「これで、あなたからもわたしの香りがする。……忘れようとしても、むりだからね」\nあなたは手首を鼻に近づけて、少し照れたように笑った。\n明日、ふとした瞬間にこの香りに気づいたら。それが、わたしからの「またね」のかわり。"
+      ],
+      "zh-Hant": [
+        "你知道香水和記憶是連在一起的嗎？\n聽說比起眼睛看到的、耳朵聽到的，香味會被記得更久。所以在重要的日子，我都會擦同一瓶香水。\n玫瑰金瓶蓋的切面玻璃瓶。對著光一看，裡面的液體會閃著粉紅色的光。是我最喜歡的一瓶。\n第一次見到你的那天，我也帶著這個香味。第二次約會、你發燒我去探病的那天，也是。\n所以，你的心裡一定已經住著這個香味了。……如果是那樣，我會很開心。\n夜晚的套房。窗外，街上的燈光像寶石一樣閃爍。我把瓶子靠近手腕，噴了一下。然後，在頸側也輕輕擦一點。\n因為今晚，也是我希望你記住的一夜。",
+        "「好香。」\n你走進房間，第一句話就是這個。我有點得意，把香水瓶舉起來給你看。\n「聞到這個香味時，就想起我。……說好了喔。」\n你笑著說：「已經會想起來了。」你說在街上跟味道相似的人擦身而過時，總會忍不住回頭。\n什麼嘛。雖然很開心，但有點吃醋。那個人又不是我。\n「那，為了讓你分得出來。」\n我打開瓶蓋，在你的手腕上滴了一滴。玫瑰的香味輕輕散開。\n「這樣你身上也有我的味道了。……就算想忘記，也不可能了喔。」\n你把手腕湊近鼻子，有點害羞地笑了。\n明天，如果你在某個不經意的瞬間聞到這個香味。那就是我對你說的「下次見」。"
+      ],
+      "en": [
+        "Did you know perfume is tied to memory?\nThey say we remember scents far longer than things we see or hear. That's why I wear the same perfume on important days.\nA cut-glass bottle with a rose-gold cap. Held up to the light, the liquid inside glints pink. My absolute favourite.\nI wore this scent the day I first met you. On our second date too, and the day I visited when you had a fever.\nSo this scent must already live somewhere inside you. …I'd be happy if it did.\nA hotel suite at night. Beyond the window, the city lights shine like jewels. I bring the bottle to my wrist and spray once. Then a little at the side of my neck.\nBecause tonight is another night I want you to remember.",
+        "\"Smells nice.\"\nThat was the first thing you said when you walked in. Feeling a little smug, I held up the bottle to show you.\n\"When you smell this, think of me. …Promise.\"\nYou laughed and said, \"I already do.\" Apparently, when you pass someone wearing something similar on the street, you can't help turning around.\nWhat's that about? It makes me happy, but also a bit jealous. That person isn't me.\n\"Then, so you can tell us apart.\"\nI opened the cap and let a single drop fall on your wrist. The scent of rose bloomed softly.\n\"Now you smell like me too. …You couldn't forget if you tried.\"\nYou brought your wrist to your nose and smiled, a little embarrassed.\nTomorrow, if you catch this scent at some unexpected moment — that's my way of saying \"see you soon.\""
+      ],
+      "ko": [
+        "향수가 기억이랑 이어져 있다는 거, 알고 있었어?\n눈으로 본 것보다, 귀로 들은 것보다, 향기 쪽이 훨씬 오래 기억에 남는대. 그래서 나는 중요한 날엔 같은 향수를 뿌려.\n로즈골드 뚜껑에, 컷글라스 병. 빛에 비추면 안의 액체가 핑크색으로 반짝여. 내가 제일 아끼는 거야.\n너랑 처음 만난 날도, 이 향을 두르고 있었어. 두 번째 데이트 때도, 네가 열났을 때 병문안 갔던 날도.\n그러니까 네 안에는, 분명 이미 이 향이 스며들어 있을 거야. ……그랬으면 좋겠다.\n밤의 스위트룸. 창밖에는 도시의 불빛이 보석처럼 반짝이고 있어. 나는 병을 손목에 가까이 대고, 한 번 뿌렸어. 그다음, 목덜미에도 살짝.\n오늘 밤도, 너한테 기억해 줬으면 하는 밤이니까.",
+        "「좋은 냄새」\n네가 방에 들어와서 처음 한 말이 그거였어. 나는 살짝 으쓱해져서 향수병을 들어 보였어.\n「이 향이 나면, 날 떠올려 줘. ……약속이야」\n넌 웃으면서 「벌써 떠올리고 있는데」라고 했어. 길에서 비슷한 향이 나는 사람이랑 스치면 자기도 모르게 돌아보게 된대.\n뭐야 그게. 기쁘긴 한데, 살짝 질투 나. 그 사람, 내가 아닌데.\n「그럼, 다른 사람이랑 구별되게」\n나는 병뚜껑을 열어서, 네 손목에 한 방울만 떨어뜨렸어. 로즈 향이 은은하게 퍼졌어.\n「이제 너한테서도 내 향기가 나. ……잊으려고 해도, 못 잊을걸」\n넌 손목을 코에 가까이 대고, 살짝 부끄러운 듯 웃었어.\n내일, 문득 이 향을 느끼는 순간이 온다면. 그게, 나한테서 보내는 「또 봐」인 셈이야."
+      ]
+    },
+    "art": "/cards/s1-eimi-28/card.webp",
+    "voice": "/voice/s1-eimi-28.mp3"
+  },
+  {
+    "id": "s1-eimi-29",
+    "star": "eimi",
+    "tier": "SSR",
+    "title": {
+      "ja": "朝焼けのスイート",
+      "zh-Hant": "朝霞中的套房",
+      "en": "Suite at Sunrise",
+      "ko": "동틀 녘의 스위트룸"
+    },
+    "scene": "Close-up of Eimi on a window sofa in a hotel suite at sunrise, warm orange light on her face, soft grey cashmere cardigan buttoned up, fresh natural makeup, holding a coffee mug, relaxed smile into the lens",
+    "line": {
+      "ja": "すっぴん、見せるのはあなただけ。……内緒ね。",
+      "zh-Hant": "素顏只給你看。……要保密喔。",
+      "en": "You're the only one who sees me without makeup. …Our secret.",
+      "ko": "민낯, 보여주는 건 너뿐이야. ……비밀이야."
+    },
+    "story": {
+      "ja": [
+        "めずらしく、目覚ましより先に起きた。\nホテルのスイートの大きな窓の外で、空が少しずつオレンジ色に染まっていく。まだ街は眠ってて、ビルの窓にぽつぽつ明かりが残ってるだけ。\nわたしはカシミヤのカーディガンを羽織って、窓辺のソファに座った。メイクもしてない、髪もとかしてない。こんな姿、みんなは想像もしてないと思う。いつも、みんなの前のわたしでいる時間のほうが長いから。\nでもね、ほんとのわたしは、朝がちょっと苦手で、寝起きはぼんやりしてて、コーヒーがないと何もできない。\nキッチンのほうから、コーヒーの香りがしてきた。あなたが先に起きて、いれてくれてたんだ。\n「起きてたの？」ってあなたがマグを持ってくる。わたしはあわてて顔をかくそうとして、……やめた。\nあなたには、もうかくさなくていいかなって思ったから。",
+        "あなたから受けとったマグは、ちょうどいい温度だった。\nわたしがブラックしか飲まないの、ちゃんと覚えててくれた。そういうところ、ほんとに好き。……今の、聞かなかったことにして。\n窓の外では、朝焼けがどんどん広がって、部屋の中までオレンジ色に染めていく。あなたの横顔も、わたしの手も、みんな同じ色。\n「すっぴん、見せるのはあなただけ」\nコーヒーを飲みながら、わたしはぽつりと言った。\n「……内緒ね」\nあなたはうなずいて、「きれいだよ」って言った。メイクしてるときより、ずっと。\nもう、そういうことをさらっと言わないで。朝から心臓に悪いんだから。\nわたしはマグで顔をかくして、窓の外を見た。朝日がビルのあいだからのぼってきて、一日がはじまる。\n今日もきっと、いつものわたしで、みんなの前に立つ。でも、この朝の三十分だけは、あなただけのわたしでいさせて。"
+      ],
+      "zh-Hant": [
+        "難得在鬧鐘響之前醒來。\n飯店套房的大窗戶外，天空一點一點染成橘色。城市還在沉睡，大樓的窗戶只零星亮著幾盞燈。\n我披上喀什米爾開襟衫，坐到窗邊的沙發上。沒化妝，頭髮也沒梳。這個樣子，大家大概想都想不到吧。因為我待在大家面前的時間，總是比較長。\n可是啊，真正的我，其實有點怕早起，剛醒來總是迷迷糊糊的，沒有咖啡什麼都做不了。\n廚房那邊飄來咖啡的香味。原來你比我先起來，幫我泡好了。\n「你醒了？」你拿著馬克杯走過來。我慌忙想遮住臉，……然後放棄了。\n因為我覺得，在你面前，已經不用再遮了。",
+        "從你手中接過的馬克杯，溫度剛剛好。\n你記得我只喝黑咖啡。你這種地方，我真的好喜歡。……剛剛那句，當作沒聽到。\n窗外的朝霞越來越開闊，把房間裡也染成了橘色。你的側臉、我的手，全都是一樣的顏色。\n「素顏只給你看。」\n喝著咖啡，我輕輕地說。\n「……要保密喔。」\n你點點頭，說：「很美喔。」比化妝的時候還美得多。\n拜託，不要這麼輕鬆地說出那種話。一大早的，對心臟很不好耶。\n我用馬克杯遮住臉，看向窗外。朝陽從大樓之間升起，新的一天開始了。\n今天，我一定也會用平常的自己站在大家面前。可是早晨的這三十分鐘，就讓我只當你一個人的我吧。"
+      ],
+      "en": [
+        "For once, I woke before the alarm.\nOutside the suite's big windows, the sky was slowly turning orange. The city was still asleep, only a few windows lit here and there in the towers.\nI slipped on my cashmere cardigan and sat on the window sofa. No makeup, hair not brushed. I bet no one would ever imagine me like this. I spend so much more time being the me everyone else sees.\nBut honestly, the real me isn't great with mornings. I'm foggy when I wake up and useless without coffee.\nThe smell of coffee drifted in from the kitchen. You'd got up first and made it.\n\"You're awake?\" you said, bringing me a mug. I hurried to hide my face, and… stopped.\nI decided I didn't need to hide from you anymore.",
+        "The mug you handed me was the perfect temperature.\nYou remembered I only drink it black. I really love that about you. …Pretend you didn't hear that.\nOutside, the sunrise spread wider and wider and turned the whole room orange. Your profile, my hands, everything the same colour.\n\"You're the only one who sees me without makeup,\" I murmured over my coffee.\n\"…Our secret.\"\nYou nodded and said, \"You're beautiful.\" Even more than with makeup, you said.\nPlease don't say things like that so casually. It's bad for my heart this early.\nI hid behind my mug and looked out of the window. The sun rose between the towers and the day began.\nToday, I'll surely stand in front of everyone as my usual self again. But for these thirty minutes of morning, let me be only yours."
+      ],
+      "ko": [
+        "드물게, 알람보다 먼저 눈이 떠졌어.\n호텔 스위트룸의 큰 창밖으로, 하늘이 조금씩 주황빛으로 물들어 가. 거리는 아직 잠들어 있고, 빌딩 창문엔 드문드문 불빛만 남아 있어.\n나는 캐시미어 가디건을 걸치고 창가 소파에 앉았어. 화장도 안 했고, 머리도 안 빗었어. 이런 모습, 다들 상상도 못 할 거야. 늘 남들 앞의 나로 있는 시간이 더 기니까.\n근데 있잖아, 진짜 나는 아침에 좀 약하고, 자고 일어나면 멍하고, 커피 없이는 아무것도 못 해.\n부엌 쪽에서 커피 향이 풍겨 왔어. 네가 먼저 일어나서, 내려 준 거였어.\n「일어났어?」 하며 네가 머그컵을 들고 왔어. 나는 황급히 얼굴을 가리려다가, ……그만뒀어.\n너한테는, 이제 안 가려도 될 것 같다는 생각이 들었으니까.",
+        "너한테서 받은 머그컵은, 딱 알맞은 온도였어.\n내가 블랙만 마시는 거, 제대로 기억해 줬어. 그런 점, 진짜 좋아해. ……방금 그 말은, 못 들은 걸로 해 줘.\n창밖에서는 아침놀이 점점 번져서, 방 안까지 주황빛으로 물들이고 있어. 네 옆얼굴도, 내 손도, 다 같은 색이야.\n「민낯, 보여주는 건 너뿐이야」\n커피를 마시면서, 나는 문득 말했어.\n「……비밀이야」\n넌 고개를 끄덕이면서 「예쁘다」고 말했어. 화장했을 때보다, 훨씬.\n진짜, 그런 말을 그렇게 아무렇지 않게 하지 마. 아침부터 심장에 안 좋으니까.\n나는 머그컵으로 얼굴을 가리고 창밖을 봤어. 아침 해가 빌딩 사이로 떠오르고, 하루가 시작돼.\n오늘도 분명, 평소의 나로 사람들 앞에 서겠지. 근데 이 아침의 삼십 분만큼은, 너만의 나로 있게 해 줘."
+      ]
+    },
+    "art": "/cards/s1-eimi-29/card.webp",
+    "voice": "/voice/s1-eimi-29.mp3"
+  },
+  {
+    "id": "s1-eimi-30",
+    "star": "eimi",
+    "tier": "UR",
+    "title": {
+      "ja": "ロゼ色の夜",
+      "zh-Hant": "玫瑰色之夜",
+      "en": "A Rosé-Colored Night",
+      "ko": "로제빛 밤"
+    },
+    "scene": "Eimi's signature: a luxury hotel suite at night with floor-to-ceiling windows over the glittering city, seated in a velvet armchair, elegant high-neck, long-sleeve rose satin evening gown with a navy silk wrap over her shoulders, a glass of rosé catching the light and a crystal perfume bottle on the table, looking into the lens",
+    "line": {
+      "ja": "こっち、見て。……今夜は、あなたのためだけに着たの。",
+      "zh-Hant": "看這邊。……今晚這身打扮，只為你而穿。",
+      "en": "Look at me. …I wore this tonight just for you.",
+      "ko": "이쪽, 봐. ……오늘 밤은, 너만을 위해서 입은 거야."
+    },
+    "story": {
+      "ja": [
+        "高層ホテルのスイートルーム。床から天井まで続く窓の向こうで、東京の夜景が一面にきらめいてる。\nベルベットのアームチェアに腰かけて、わたしはロゼのグラスを光にかざした。ピンク色の液体の向こうに、街の灯りがにじむ。テーブルには、ローズゴールドのキャップの香水瓶。\n今夜のために選んだのは、ローズ色のサテンのロングドレス。肩には紺色のシルクのストール。鏡の前で三回も着替えて、やっとこれに決めたの。……あなたには言わないけどね。\nわたしは、見られることに慣れてる。ステージでも、カメラの前でも、いつだって「見て」って胸を張ってきた。\nでもね、ほんとに見てほしい人は、ひとりだけ。\nノックの音がした。わたしはグラスを置いて、ストールを直して、いちばんいい角度で振り向いた。\n「こっち、見て」",
+        "あなたはドアのところで、しばらく動かなかった。\nわたしを見て、何か言おうとして、やめて、また見て。その顔が見たかったの。三回着替えた甲斐があったってもの。\n「……今夜は、あなたのためだけに着たの」\n言ってから、ちょっとだけ後悔した。こういうのは、さらっと言うつもりだったのに、声が思ったよりやわらかくなっちゃった。\nあなたはゆっくり歩いてきて、わたしの向かいの椅子に座った。グラスをもうひとつ用意して、ロゼを注ぐ。ふたつのグラスが、夜景の前で小さく鳴った。\n「乾杯。……なにに？」\n「今夜に」\nあなたらしい、まっすぐな答え。\nわたしたちは、しばらく夜景を見ながら、とりとめのない話をした。仕事のこと、最近見た映画のこと、次に行きたい場所のこと。わたしはずっと、あなたの横顔を見てた。\nねえ、覚えておいて。わたしがいちばんきれいでいたいのは、あなたの前なんだから。"
+      ],
+      "zh-Hant": [
+        "高樓飯店的套房。從地板延伸到天花板的窗戶外，東京的夜景整片閃閃發亮。\n我坐在天鵝絨扶手椅上，把粉紅酒杯舉向燈光。粉紅色液體的另一頭，街燈暈開成一片。桌上放著玫瑰金瓶蓋的香水瓶。\n為了今晚挑選的，是玫瑰色的緞面長禮服。肩上披著深藍色絲質披肩。在鏡子前換了三次衣服，最後才決定是這件。……這件事不會告訴你就是了。\n我早就習慣被人注視了。不管在舞台上，還是在鏡頭前，我總是抬頭挺胸地說「看著我」。\n可是啊，我真正希望看著我的人，只有一個。\n響起了敲門聲。我放下杯子，整理好披肩，用最好看的角度轉過身。\n「看這邊。」",
+        "你在門口，好一會兒都沒有動。\n看著我，想說些什麼，又停下，又看著我。我就是想看你這個表情。換了三次衣服也值得了。\n「……今晚這身打扮，只為你而穿。」\n說出口之後，我有點後悔。這種話我本來打算輕描淡寫地說的，聲音卻比想像中還溫柔。\n你慢慢走過來，坐到我對面的椅子上。我再準備一個杯子，倒上粉紅酒。兩個杯子在夜景前輕輕碰響。\n「乾杯。……為了什麼？」\n「為了今晚。」\n很像你會說的，直率的回答。\n我們望著夜景，聊了好一陣子無關緊要的事。工作的事、最近看的電影、下次想去的地方。我一直看著你的側臉。\n欸，要記住喔。我最想要美美的樣子，是在你面前。"
+      ],
+      "en": [
+        "A suite high up in a hotel. Beyond windows that run from floor to ceiling, Tokyo's night view glitters in every direction.\nSeated in a velvet armchair, I held my glass of rosé up to the light. Through the pink, the city lights blurred. On the table, the perfume bottle with its rose-gold cap.\nFor tonight I chose a long rose satin gown, with a navy silk wrap over my shoulders. I changed three times in front of the mirror before settling on this. …Not that I'll tell you that.\nI'm used to being looked at. On stage, in front of cameras, I've always held my head high and said, \"Look at me.\"\nBut there's only one person I truly want to look at me.\nThere was a knock. I set down my glass, adjusted my wrap, and turned at my very best angle.\n\"Look at me.\"",
+        "For a while, you didn't move from the doorway.\nYou looked at me, started to say something, stopped, and looked again. That's the face I wanted to see. Worth changing three times for.\n\"…I wore this tonight just for you.\"\nThe moment I said it, I regretted it a little. I'd meant to say it lightly, but my voice came out softer than I planned.\nYou walked over slowly and sat in the chair across from me. I set out another glass and poured the rosé. Our two glasses chimed softly in front of the night view.\n\"Cheers. …To what?\"\n\"To tonight.\"\nSuch a straightforward answer. So you.\nWe watched the view for a long time and talked about nothing in particular. Work, a film we'd seen, where we want to go next. I watched your profile the whole time.\nHey, remember this: the place I most want to be beautiful is in front of you."
+      ],
+      "ko": [
+        "고층 호텔의 스위트룸. 바닥부터 천장까지 이어지는 창문 너머로, 도쿄의 야경이 온통 반짝이고 있어.\n벨벳 안락의자에 앉아서, 나는 로제 와인 잔을 빛에 비춰 봤어. 분홍빛 액체 너머로, 도시의 불빛이 번져. 테이블 위에는 로즈골드 뚜껑의 향수병.\n오늘 밤을 위해 고른 건, 로즈색 새틴 롱드레스. 어깨에는 네이비색 실크 스톨. 거울 앞에서 세 번이나 갈아입고서야, 겨우 이걸로 정했어. ……너한테는 말 안 하겠지만.\n나는, 시선을 받는 데 익숙해. 무대 위에서도, 카메라 앞에서도, 언제나 당당하게 「봐」라고 말해 왔어.\n근데 있잖아, 진짜로 봐 줬으면 하는 사람은, 딱 한 명뿐이야.\n노크 소리가 났어. 나는 잔을 내려놓고, 스톨을 매만지고, 제일 좋은 각도로 돌아섰어.\n「이쪽, 봐」",
+        "넌 문 앞에서 한동안 움직이지 않았어.\n나를 보고, 뭔가 말하려다가, 그만두고, 다시 봤어. 그 표정이 보고 싶었어. 세 번이나 갈아입은 보람이 있었네.\n「……오늘 밤은, 너만을 위해서 입은 거야」\n말하고 나서, 조금 후회했어. 이런 말은 가볍게 툭 던지려고 했는데, 목소리가 생각보다 부드러워져 버렸어.\n넌 천천히 걸어와서, 내 맞은편 의자에 앉았어. 잔을 하나 더 준비해서, 로제를 따랐어. 두 개의 잔이 야경 앞에서 작게 부딪혀 소리를 냈어.\n「건배. ……뭘 위해서?」\n「오늘 밤을 위해서」\n너답게, 솔직한 대답이었어.\n우리는 한동안 야경을 보면서, 이런저런 이야기를 나눴어. 일 얘기, 요즘 본 영화 얘기, 다음에 가고 싶은 곳 얘기. 나는 계속 네 옆얼굴을 보고 있었어.\n있잖아, 기억해 둬. 내가 제일 예쁘고 싶은 건, 네 앞에서야."
+      ]
+    },
+    "art": "/cards/s1-eimi-30/card.webp",
+    "voice": "/voice/s1-eimi-30.mp3"
+  }
+]

@@ -1,0 +1,1668 @@
+{
+  "_comment": "Seedance real-human assets per talent (docs/asset-bible.md §5). Filled by `npm run media:talent -- add|confirm|upload`. Asset IDs are not secrets; each is usable only by our account after the talent authorised it.",
+  "mahiro": {
+    "groupId": "group-20260924215557-4shff",
+    "groupType": "AIGC",
+    "assets": [
+      {
+        "id": "asset-20260924222956-r9p4g",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe:portrait-9x16:a",
+        "shot": "mahiro-breath-9x16"
+      },
+      {
+        "id": "asset-20260925063522-nmhgg",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-02.jpg"
+      },
+      {
+        "id": "asset-20260925063524-tpxh9",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-08.jpg"
+      },
+      {
+        "id": "asset-20260925063525-4dbhx",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/left34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063525-ljnw6",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/right34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063526-wczk6",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/profile-01.jpg"
+      },
+      {
+        "id": "asset-20260925063903-5ppbq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9:a",
+        "shot": "mahiro-hero-16x9"
+      },
+      {
+        "id": "asset-20260925063904-97qww",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16:a",
+        "shot": "mahiro-hero-9x16"
+      },
+      {
+        "id": "asset-20260925063905-hqkxv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-morning-9x16:a",
+        "shot": "mahiro-hero-morning-9x16"
+      },
+      {
+        "id": "asset-20260925063905-z9tjc",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-day-9x16:a",
+        "shot": "mahiro-hero-day-9x16"
+      },
+      {
+        "id": "asset-20260926045332-9zhxn",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-16x9:a",
+        "shot": "mahiro-enter-16x9"
+      },
+      {
+        "id": "asset-20260926045333-j8ltz",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-9x16:a",
+        "shot": "mahiro-enter-9x16"
+      },
+      {
+        "id": "asset-20260926045333-zfswk",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9-v1:a",
+        "shot": "mahiro-hero-16x9-v1"
+      },
+      {
+        "id": "asset-20260926045334-gh9cm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16-v1:a",
+        "shot": "mahiro-hero-9x16-v1"
+      },
+      {
+        "id": "asset-20260926063648-w65xf",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-rps-9x16:a",
+        "shot": "mahiro-rps-9x16"
+      },
+      {
+        "id": "asset-20260927155447-lvsng",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-v11-cup-9x16:a",
+        "shot": "mahiro-v11-cup-9x16"
+      },
+      {
+        "id": "asset-20260927155448-bdrdb",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-v11-rps-9x16:a",
+        "shot": "mahiro-v11-rps-9x16"
+      },
+      {
+        "id": "asset-20260927155449-b4rgr",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-v11-close-9x16:a",
+        "shot": "mahiro-v11-close-9x16"
+      },
+      {
+        "id": "asset-20260927160412-6nwcq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-variant-9x16:a",
+        "shot": "mahiro-variant-9x16"
+      },
+      {
+        "id": "asset-20260927160416-2nqkf",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-variant-close-still-9x16:a",
+        "shot": "mahiro-variant-close-still-9x16"
+      },
+      {
+        "id": "asset-20260928014107-p4z55",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-variant-16x9:a",
+        "shot": "mahiro-variant-16x9"
+      },
+      {
+        "id": "asset-20260928053708-g5zfj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-confess-wide-9x16:a",
+        "shot": "mahiro-sys-confess-wide-9x16"
+      },
+      {
+        "id": "asset-20260928053709-ssjmn",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-confess-close-9x16:a",
+        "shot": "mahiro-sys-confess-close-9x16"
+      },
+      {
+        "id": "asset-20260928053712-2v24n",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-confess-hug-9x16:a",
+        "shot": "mahiro-sys-confess-hug-9x16"
+      },
+      {
+        "id": "asset-20260928054308-58lpj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-goodnight-9x16:a",
+        "shot": "mahiro-sys-goodnight-9x16"
+      },
+      {
+        "id": "asset-20260928054308-knwxl",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-whisper-9x16:a",
+        "shot": "mahiro-sys-whisper-9x16"
+      },
+      {
+        "id": "asset-20260928054309-hvcnc",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-herbday-wide-9x16:a",
+        "shot": "mahiro-sys-herbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054309-ppnm6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-herbday-close-9x16:a",
+        "shot": "mahiro-sys-herbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928054311-b8z5c",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-hisbday-wide-9x16:a",
+        "shot": "mahiro-sys-hisbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054312-hm2wr",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-hisbday-close-9x16:a",
+        "shot": "mahiro-sys-hisbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928054313-mns4z",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-promise-wait-9x16:a",
+        "shot": "mahiro-sys-promise-wait-9x16"
+      },
+      {
+        "id": "asset-20260928054313-xhks4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-snow-wide-9x16:a",
+        "shot": "mahiro-sys-snow-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054314-qzd7q",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-snow-close-9x16:a",
+        "shot": "mahiro-sys-snow-close-9x16"
+      },
+      {
+        "id": "asset-20260928054314-nwkmj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-rain-wide-9x16:a",
+        "shot": "mahiro-sys-rain-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054315-sr8dg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-rain-close-9x16:a",
+        "shot": "mahiro-sys-rain-close-9x16"
+      },
+      {
+        "id": "asset-20260928054315-c4kt6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-typhoon-wide-9x16:a",
+        "shot": "mahiro-sys-typhoon-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054316-pp6dj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-typhoon-close-9x16:a",
+        "shot": "mahiro-sys-typhoon-close-9x16"
+      },
+      {
+        "id": "asset-20260929145023-lm8mw",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-confess-wide-16x9:a",
+        "shot": "mahiro-sys-confess-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145024-llcmz",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-goodnight-16x9:a",
+        "shot": "mahiro-sys-goodnight-16x9"
+      },
+      {
+        "id": "asset-20260929145025-k76g4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-herbday-wide-16x9:a",
+        "shot": "mahiro-sys-herbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145025-bbhzw",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-hisbday-wide-16x9:a",
+        "shot": "mahiro-sys-hisbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145026-2p4j5",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-snow-wide-16x9:a",
+        "shot": "mahiro-sys-snow-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145027-7v425",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-rain-wide-16x9:a",
+        "shot": "mahiro-sys-rain-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145027-s8r5q",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-typhoon-wide-16x9:a",
+        "shot": "mahiro-sys-typhoon-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145028-5jr5r",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-promise-wait-16x9:a",
+        "shot": "mahiro-sys-promise-wait-16x9"
+      },
+      {
+        "id": "asset-20260929125753-6gtr4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-v11-morning-9x16:a",
+        "shot": "mahiro-v11-morning-9x16"
+      },
+      {
+        "id": "asset-20260929125754-lh5j6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-v11-morning-16x9:a",
+        "shot": "mahiro-v11-morning-16x9"
+      },
+      {
+        "id": "asset-20260929125756-bck96",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-v11-cup-16x9:a",
+        "shot": "mahiro-v11-cup-16x9"
+      },
+      {
+        "id": "asset-20261001192852-jrjdh",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:mahiro-sys-pmorning-close-9x16:a",
+        "shot": "mahiro-sys-pmorning-close-9x16"
+      }
+    ]
+  },
+  "nana": {
+    "groupId": "group-20260924220533-dqq7k",
+    "groupType": "AIGC",
+    "assets": [
+      {
+        "id": "asset-20260924224705-plrwt",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe:portrait-9x16:a",
+        "shot": "nana-breath-9x16"
+      },
+      {
+        "id": "asset-20260925063615-ckt5m",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-02.jpg"
+      },
+      {
+        "id": "asset-20260925063615-kjk74",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-05.jpg"
+      },
+      {
+        "id": "asset-20260925063616-dpbq6",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/right34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063617-t7mwr",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/left34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063618-9hlhw",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/profile-01.jpg"
+      },
+      {
+        "id": "asset-20260925063935-dw4qk",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9:a",
+        "shot": "nana-hero-16x9"
+      },
+      {
+        "id": "asset-20260925063936-jrs2h",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16:a",
+        "shot": "nana-hero-9x16"
+      },
+      {
+        "id": "asset-20260925063936-wz6rh",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-morning-9x16:b",
+        "shot": "nana-hero-morning-9x16"
+      },
+      {
+        "id": "asset-20260925063937-2kdp6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-day-9x16:a",
+        "shot": "nana-hero-day-9x16"
+      },
+      {
+        "id": "asset-20260926045404-tswqv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-16x9:a",
+        "shot": "nana-enter-16x9"
+      },
+      {
+        "id": "asset-20260926045404-hmdbg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-9x16:a",
+        "shot": "nana-enter-9x16"
+      },
+      {
+        "id": "asset-20260926045405-dbpzf",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9-v1:a",
+        "shot": "nana-hero-16x9-v1"
+      },
+      {
+        "id": "asset-20260926045406-czcth",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16-v1:a",
+        "shot": "nana-hero-9x16-v1"
+      },
+      {
+        "id": "asset-20260927155609-4pwn7",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-v11-read-9x16:a",
+        "shot": "nana-v11-read-9x16"
+      },
+      {
+        "id": "asset-20260927165103-rzzc6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-variant-9x16:a",
+        "shot": "nana-variant-9x16"
+      },
+      {
+        "id": "asset-20260927165104-775tn",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-variant-close-still-9x16:b",
+        "shot": "nana-variant-close-still-9x16"
+      },
+      {
+        "id": "asset-20260928014005-kslbq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-variant-16x9:b",
+        "shot": "nana-variant-16x9"
+      },
+      {
+        "id": "asset-20260928053810-2p86z",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-confess-wide-9x16:a",
+        "shot": "nana-sys-confess-wide-9x16"
+      },
+      {
+        "id": "asset-20260928053810-sg9cs",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-confess-close-9x16:a",
+        "shot": "nana-sys-confess-close-9x16"
+      },
+      {
+        "id": "asset-20260928053812-fbjmm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-confess-hug-9x16:a",
+        "shot": "nana-sys-confess-hug-9x16"
+      },
+      {
+        "id": "asset-20260929130919-j2f7t",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-goodnight-9x16:a",
+        "shot": "nana-sys-goodnight-9x16"
+      },
+      {
+        "id": "asset-20260929130920-8q955",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-whisper-9x16:a",
+        "shot": "nana-sys-whisper-9x16"
+      },
+      {
+        "id": "asset-20260929130921-sxjsk",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-herbday-wide-9x16:a",
+        "shot": "nana-sys-herbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260929130923-stv9j",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-herbday-close-9x16:a",
+        "shot": "nana-sys-herbday-close-9x16"
+      },
+      {
+        "id": "asset-20260929130924-mn4cs",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-hisbday-wide-9x16:a",
+        "shot": "nana-sys-hisbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260929130925-6zsp7",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-hisbday-close-9x16:a",
+        "shot": "nana-sys-hisbday-close-9x16"
+      },
+      {
+        "id": "asset-20260929130926-g55x7",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-snow-wide-9x16:a",
+        "shot": "nana-sys-snow-wide-9x16"
+      },
+      {
+        "id": "asset-20260929130927-2wstz",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-snow-close-9x16:a",
+        "shot": "nana-sys-snow-close-9x16"
+      },
+      {
+        "id": "asset-20260929130928-jfcnv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-rain-wide-9x16:a",
+        "shot": "nana-sys-rain-wide-9x16"
+      },
+      {
+        "id": "asset-20260929130929-l2sw9",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-rain-close-9x16:a",
+        "shot": "nana-sys-rain-close-9x16"
+      },
+      {
+        "id": "asset-20260929130930-5hcwg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-typhoon-wide-9x16:a",
+        "shot": "nana-sys-typhoon-wide-9x16"
+      },
+      {
+        "id": "asset-20260929130931-m6n48",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-typhoon-close-9x16:a",
+        "shot": "nana-sys-typhoon-close-9x16"
+      },
+      {
+        "id": "asset-20260929130932-r8px6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-promise-wait-9x16:a",
+        "shot": "nana-sys-promise-wait-9x16"
+      },
+      {
+        "id": "asset-20260929145825-6frcj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-confess-wide-16x9:a",
+        "shot": "nana-sys-confess-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145826-69qmh",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-goodnight-16x9:a",
+        "shot": "nana-sys-goodnight-16x9"
+      },
+      {
+        "id": "asset-20260929145827-2tq5d",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-herbday-wide-16x9:a",
+        "shot": "nana-sys-herbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145829-bdhqv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-hisbday-wide-16x9:a",
+        "shot": "nana-sys-hisbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145830-44n8c",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-snow-wide-16x9:a",
+        "shot": "nana-sys-snow-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145831-ztzzm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-rain-wide-16x9:a",
+        "shot": "nana-sys-rain-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145832-mcsgh",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-typhoon-wide-16x9:a",
+        "shot": "nana-sys-typhoon-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145833-dj9lq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-promise-wait-16x9:a",
+        "shot": "nana-sys-promise-wait-16x9"
+      },
+      {
+        "id": "asset-20260929125840-tzksj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-v11-morning-9x16:a",
+        "shot": "nana-v11-morning-9x16"
+      },
+      {
+        "id": "asset-20260929125841-mdgxg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-v11-morning-16x9:a",
+        "shot": "nana-v11-morning-16x9"
+      },
+      {
+        "id": "asset-20261001192905-wncfl",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:nana-sys-pmorning-close-9x16:b",
+        "shot": "nana-sys-pmorning-close-9x16"
+      }
+    ]
+  },
+  "unpai": {
+    "groupId": "group-20260924220614-bjr2c",
+    "groupType": "AIGC",
+    "assets": [
+      {
+        "id": "asset-20260924224745-n6gg2",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe:portrait-9x16:a",
+        "shot": "unpai-breath-9x16"
+      },
+      {
+        "id": "asset-20260925063706-gcgkn",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-03.jpg"
+      },
+      {
+        "id": "asset-20260925063706-jr9ln",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-07.jpg"
+      },
+      {
+        "id": "asset-20260925063707-kg6l9",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/right34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063708-hgpxr",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/left34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063709-s8nh8",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/profile-01.jpg"
+      },
+      {
+        "id": "asset-20260925064014-pz9bg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9:a",
+        "shot": "unpai-hero-16x9"
+      },
+      {
+        "id": "asset-20260925064014-28tck",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16:a",
+        "shot": "unpai-hero-9x16"
+      },
+      {
+        "id": "asset-20260925064015-xw9p8",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-morning-9x16:a",
+        "shot": "unpai-hero-morning-9x16"
+      },
+      {
+        "id": "asset-20260925064015-pp4ft",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-day-9x16:a",
+        "shot": "unpai-hero-day-9x16"
+      },
+      {
+        "id": "asset-20260926045444-4c2ps",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-16x9:a",
+        "shot": "unpai-enter-16x9"
+      },
+      {
+        "id": "asset-20260926045444-sqc92",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-9x16:a",
+        "shot": "unpai-enter-9x16"
+      },
+      {
+        "id": "asset-20260926045445-5mgst",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9-v1:a",
+        "shot": "unpai-hero-16x9-v1"
+      },
+      {
+        "id": "asset-20260926045445-hd45h",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16-v1:a",
+        "shot": "unpai-hero-9x16-v1"
+      },
+      {
+        "id": "asset-20260927160521-9jdmc",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-v11-run-9x16:a",
+        "shot": "unpai-v11-run-9x16"
+      },
+      {
+        "id": "asset-20260927160522-j5ct2",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-v11-share-9x16:b",
+        "shot": "unpai-v11-share-9x16"
+      },
+      {
+        "id": "asset-20260927160503-z6zc2",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-variant-9x16:a",
+        "shot": "unpai-variant-9x16"
+      },
+      {
+        "id": "asset-20260927160503-77q76",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-variant-close-still-9x16:a",
+        "shot": "unpai-variant-close-still-9x16"
+      },
+      {
+        "id": "asset-20260928014019-nh86f",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-variant-16x9:a",
+        "shot": "unpai-variant-16x9"
+      },
+      {
+        "id": "asset-20260928053854-6cjht",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-confess-wide-9x16:a",
+        "shot": "unpai-sys-confess-wide-9x16"
+      },
+      {
+        "id": "asset-20260928053855-jfbr4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-confess-close-9x16:a",
+        "shot": "unpai-sys-confess-close-9x16"
+      },
+      {
+        "id": "asset-20260928053856-659v8",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-confess-hug-9x16:a",
+        "shot": "unpai-sys-confess-hug-9x16"
+      },
+      {
+        "id": "asset-20260928054824-7w48q",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-goodnight-9x16:a",
+        "shot": "unpai-sys-goodnight-9x16"
+      },
+      {
+        "id": "asset-20260928054825-mzgsj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-whisper-9x16:a",
+        "shot": "unpai-sys-whisper-9x16"
+      },
+      {
+        "id": "asset-20260928054826-k7qqg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-herbday-wide-9x16:a",
+        "shot": "unpai-sys-herbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054828-sbd4n",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-herbday-close-9x16:a",
+        "shot": "unpai-sys-herbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928054829-drzcx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-hisbday-wide-9x16:a",
+        "shot": "unpai-sys-hisbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054829-svhqv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-hisbday-close-9x16:a",
+        "shot": "unpai-sys-hisbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928054830-l8fpk",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-promise-wait-9x16:a",
+        "shot": "unpai-sys-promise-wait-9x16"
+      },
+      {
+        "id": "asset-20260928054831-2mkhv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-snow-wide-9x16:a",
+        "shot": "unpai-sys-snow-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054832-6vglp",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-snow-close-9x16:a",
+        "shot": "unpai-sys-snow-close-9x16"
+      },
+      {
+        "id": "asset-20260928054833-9csv4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-rain-wide-9x16:a",
+        "shot": "unpai-sys-rain-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054834-pwv4k",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-rain-close-9x16:a",
+        "shot": "unpai-sys-rain-close-9x16"
+      },
+      {
+        "id": "asset-20260928054835-bn2nv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-typhoon-wide-9x16:a",
+        "shot": "unpai-sys-typhoon-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054836-2d2wc",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-typhoon-close-9x16:a",
+        "shot": "unpai-sys-typhoon-close-9x16"
+      },
+      {
+        "id": "asset-20260929145259-qwpqm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-confess-wide-16x9:a",
+        "shot": "unpai-sys-confess-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145300-6cs2p",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-goodnight-16x9:a",
+        "shot": "unpai-sys-goodnight-16x9"
+      },
+      {
+        "id": "asset-20260929145301-h9c8n",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-herbday-wide-16x9:a",
+        "shot": "unpai-sys-herbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145302-khl7c",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-hisbday-wide-16x9:a",
+        "shot": "unpai-sys-hisbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145303-bpcf6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-snow-wide-16x9:a",
+        "shot": "unpai-sys-snow-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145305-84tnd",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-rain-wide-16x9:a",
+        "shot": "unpai-sys-rain-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145306-mfdvf",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-typhoon-wide-16x9:a",
+        "shot": "unpai-sys-typhoon-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145307-dg4bq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-promise-wait-16x9:a",
+        "shot": "unpai-sys-promise-wait-16x9"
+      },
+      {
+        "id": "asset-20260929125915-h2887",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-v11-morning-9x16:a",
+        "shot": "unpai-v11-morning-9x16"
+      },
+      {
+        "id": "asset-20260929125916-8jgjq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-v11-morning-16x9:a",
+        "shot": "unpai-v11-morning-16x9"
+      },
+      {
+        "id": "asset-20260929125917-n6vxs",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-v11-run-16x9:a",
+        "shot": "unpai-v11-run-16x9"
+      },
+      {
+        "id": "asset-20261001192920-48c4c",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:unpai-sys-pmorning-close-9x16:a",
+        "shot": "unpai-sys-pmorning-close-9x16"
+      }
+    ]
+  },
+  "alice": {
+    "groupId": "group-20260924220656-pg4lz",
+    "groupType": "AIGC",
+    "assets": [
+      {
+        "id": "asset-20260924224855-qgmth",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe:portrait-9x16:a",
+        "shot": "alice-breath-9x16"
+      },
+      {
+        "id": "asset-20260925063749-r5ngv",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-01.jpg"
+      },
+      {
+        "id": "asset-20260925063750-qt8kv",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-02.jpg"
+      },
+      {
+        "id": "asset-20260925063750-f85hp",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/left34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063751-pljlx",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/right34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063751-xppxs",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/profile-01.jpg"
+      },
+      {
+        "id": "asset-20260925064047-4cvrr",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9:a",
+        "shot": "alice-hero-16x9"
+      },
+      {
+        "id": "asset-20260925064047-dlbhg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16:a",
+        "shot": "alice-hero-9x16"
+      },
+      {
+        "id": "asset-20260925064048-p2r66",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-morning-9x16:a",
+        "shot": "alice-hero-morning-9x16"
+      },
+      {
+        "id": "asset-20260925064048-b6gwm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-day-9x16:a",
+        "shot": "alice-hero-day-9x16"
+      },
+      {
+        "id": "asset-20260926045528-lkc7q",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-16x9:a",
+        "shot": "alice-enter-16x9"
+      },
+      {
+        "id": "asset-20260926045529-dqkfl",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-9x16:a",
+        "shot": "alice-enter-9x16"
+      },
+      {
+        "id": "asset-20260926045529-rjz98",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9-v1:a",
+        "shot": "alice-hero-16x9-v1"
+      },
+      {
+        "id": "asset-20260926045530-d7ktj",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16-v1:a",
+        "shot": "alice-hero-9x16-v1"
+      },
+      {
+        "id": "asset-20260927162313-p5h5c",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-v11-flowers-9x16:a",
+        "shot": "alice-v11-flowers-9x16"
+      },
+      {
+        "id": "asset-20260927162314-m7wwg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-v11-piano-9x16:a",
+        "shot": "alice-v11-piano-9x16"
+      },
+      {
+        "id": "asset-20260927162316-r7qks",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-v11-sleeve-9x16:a",
+        "shot": "alice-v11-sleeve-9x16"
+      },
+      {
+        "id": "asset-20260927160528-v6z2m",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-variant-9x16:a",
+        "shot": "alice-variant-9x16"
+      },
+      {
+        "id": "asset-20260927160529-rhmw6",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-variant-close-still-9x16:a",
+        "shot": "alice-variant-close-still-9x16"
+      },
+      {
+        "id": "asset-20260928014030-h2mx7",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-variant-16x9:c",
+        "shot": "alice-variant-16x9"
+      },
+      {
+        "id": "asset-20260928053950-4478b",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-confess-wide-9x16:a",
+        "shot": "alice-sys-confess-wide-9x16"
+      },
+      {
+        "id": "asset-20260928053951-n5wsc",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-confess-close-9x16:a",
+        "shot": "alice-sys-confess-close-9x16"
+      },
+      {
+        "id": "asset-20260928053952-fhjmw",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-confess-hug-9x16:a",
+        "shot": "alice-sys-confess-hug-9x16"
+      },
+      {
+        "id": "asset-20260928055158-lg9bf",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-goodnight-9x16:a",
+        "shot": "alice-sys-goodnight-9x16"
+      },
+      {
+        "id": "asset-20260928055158-8b7s2",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-whisper-9x16:a",
+        "shot": "alice-sys-whisper-9x16"
+      },
+      {
+        "id": "asset-20260928055200-zxfqr",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-herbday-wide-9x16:a",
+        "shot": "alice-sys-herbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055200-4grhx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-herbday-close-9x16:a",
+        "shot": "alice-sys-herbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928055202-6zhg8",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-hisbday-wide-9x16:a",
+        "shot": "alice-sys-hisbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055202-2hjnb",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-hisbday-close-9x16:a",
+        "shot": "alice-sys-hisbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928055203-fc5fp",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-promise-wait-9x16:a",
+        "shot": "alice-sys-promise-wait-9x16"
+      },
+      {
+        "id": "asset-20260928055204-f9gzn",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-snow-wide-9x16:a",
+        "shot": "alice-sys-snow-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055205-6v64q",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-snow-close-9x16:a",
+        "shot": "alice-sys-snow-close-9x16"
+      },
+      {
+        "id": "asset-20260928055205-btqvk",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-rain-wide-9x16:a",
+        "shot": "alice-sys-rain-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055206-45fnz",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-rain-close-9x16:a",
+        "shot": "alice-sys-rain-close-9x16"
+      },
+      {
+        "id": "asset-20260928055206-954cw",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-typhoon-wide-9x16:a",
+        "shot": "alice-sys-typhoon-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055207-rtgfl",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-typhoon-close-9x16:a",
+        "shot": "alice-sys-typhoon-close-9x16"
+      },
+      {
+        "id": "asset-20260929145440-n44jv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-confess-wide-16x9:a",
+        "shot": "alice-sys-confess-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145441-j2bq8",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-goodnight-16x9:a",
+        "shot": "alice-sys-goodnight-16x9"
+      },
+      {
+        "id": "asset-20260929145442-rhldx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-herbday-wide-16x9:a",
+        "shot": "alice-sys-herbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145443-4hxr5",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-hisbday-wide-16x9:a",
+        "shot": "alice-sys-hisbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145444-7f8kx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-snow-wide-16x9:a",
+        "shot": "alice-sys-snow-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145446-mbmr9",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-rain-wide-16x9:a",
+        "shot": "alice-sys-rain-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145447-tdrpz",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-typhoon-wide-16x9:a",
+        "shot": "alice-sys-typhoon-wide-16x9"
+      },
+      {
+        "id": "asset-20260929174849-27rh4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-promise-wait-16x9:d",
+        "shot": "alice-sys-promise-wait-16x9"
+      },
+      {
+        "id": "asset-20260929125959-jhc9d",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-v11-morning-9x16:a",
+        "shot": "alice-v11-morning-9x16"
+      },
+      {
+        "id": "asset-20260929125959-gmjbc",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-v11-morning-16x9:a",
+        "shot": "alice-v11-morning-16x9"
+      },
+      {
+        "id": "asset-20260929130000-d4r5k",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-v11-flowers-16x9:a",
+        "shot": "alice-v11-flowers-16x9"
+      },
+      {
+        "id": "asset-20261001192933-gxkgz",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:alice-sys-pmorning-close-9x16:a",
+        "shot": "alice-sys-pmorning-close-9x16"
+      }
+    ]
+  },
+  "eimi": {
+    "groupId": "group-20260924220742-5kp62",
+    "groupType": "AIGC",
+    "assets": [
+      {
+        "id": "asset-20260924224820-mpp8x",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe:portrait-9x16:a",
+        "shot": "eimi-breath-9x16"
+      },
+      {
+        "id": "asset-20260925063831-fdsdj",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-01.jpg"
+      },
+      {
+        "id": "asset-20260925063832-jmgnz",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/front-02.jpg"
+      },
+      {
+        "id": "asset-20260925063832-ljxzb",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/right34-01.jpg"
+      },
+      {
+        "id": "asset-20260925063833-rsddg",
+        "kind": "face",
+        "status": "Active",
+        "source": "agency:head/left34-01.jpg"
+      },
+      {
+        "id": "asset-20260925064119-mjzpg",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9:a",
+        "shot": "eimi-hero-16x9"
+      },
+      {
+        "id": "asset-20260925064120-zm6hq",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16:a",
+        "shot": "eimi-hero-9x16"
+      },
+      {
+        "id": "asset-20260925064120-69prd",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-morning-9x16:a",
+        "shot": "eimi-hero-morning-9x16"
+      },
+      {
+        "id": "asset-20260925064121-6qvss",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-day-9x16:a",
+        "shot": "eimi-hero-day-9x16"
+      },
+      {
+        "id": "asset-20260926045613-tsc5m",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-16x9:a",
+        "shot": "eimi-enter-16x9"
+      },
+      {
+        "id": "asset-20260926045613-979vp",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:enter-9x16:a",
+        "shot": "eimi-enter-9x16"
+      },
+      {
+        "id": "asset-20260926045614-vl6gt",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-16x9-v1:a",
+        "shot": "eimi-hero-16x9-v1"
+      },
+      {
+        "id": "asset-20260926045615-t795h",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-v2:hero-9x16-v1:a",
+        "shot": "eimi-hero-9x16-v1"
+      },
+      {
+        "id": "asset-20260926063631-mg4lb",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-seated-9x16:b",
+        "shot": "eimi-seated-9x16"
+      },
+      {
+        "id": "asset-20260926063631-ls9ff",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-gown-9x16:b",
+        "shot": "eimi-gown-9x16"
+      },
+      {
+        "id": "asset-20260927162210-4nzjl",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-v11-gown-9x16:a",
+        "shot": "eimi-v11-gown-9x16"
+      },
+      {
+        "id": "asset-20260927162211-w5nsw",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-v11-hug-9x16:a",
+        "shot": "eimi-v11-hug-9x16"
+      },
+      {
+        "id": "asset-20260927165336-vlrr8",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-variant-9x16:a",
+        "shot": "eimi-variant-9x16"
+      },
+      {
+        "id": "asset-20260927165337-q5h6b",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-variant-close-still-9x16:a",
+        "shot": "eimi-variant-close-still-9x16"
+      },
+      {
+        "id": "asset-20260928014044-lq47z",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-variant-16x9:a",
+        "shot": "eimi-variant-16x9"
+      },
+      {
+        "id": "asset-20260928054054-2mgfw",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-confess-wide-9x16:a",
+        "shot": "eimi-sys-confess-wide-9x16"
+      },
+      {
+        "id": "asset-20260928054054-qlqh9",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-confess-close-9x16:a",
+        "shot": "eimi-sys-confess-close-9x16"
+      },
+      {
+        "id": "asset-20260928054055-mf7fr",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-confess-hug-9x16:a",
+        "shot": "eimi-sys-confess-hug-9x16"
+      },
+      {
+        "id": "asset-20260928055534-bfht7",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-goodnight-9x16:a",
+        "shot": "eimi-sys-goodnight-9x16"
+      },
+      {
+        "id": "asset-20260928055535-7ttt4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-whisper-9x16:a",
+        "shot": "eimi-sys-whisper-9x16"
+      },
+      {
+        "id": "asset-20260928055537-hf857",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-herbday-wide-9x16:a",
+        "shot": "eimi-sys-herbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055538-6jrwm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-herbday-close-9x16:a",
+        "shot": "eimi-sys-herbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928055539-98p2z",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-hisbday-wide-9x16:a",
+        "shot": "eimi-sys-hisbday-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055539-kqmmx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-hisbday-close-9x16:a",
+        "shot": "eimi-sys-hisbday-close-9x16"
+      },
+      {
+        "id": "asset-20260928055540-hvh6k",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-promise-wait-9x16:a",
+        "shot": "eimi-sys-promise-wait-9x16"
+      },
+      {
+        "id": "asset-20260928055541-z2jw4",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-snow-wide-9x16:a",
+        "shot": "eimi-sys-snow-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055542-sst9p",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-snow-close-9x16:a",
+        "shot": "eimi-sys-snow-close-9x16"
+      },
+      {
+        "id": "asset-20260928055542-rg82h",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-rain-wide-9x16:a",
+        "shot": "eimi-sys-rain-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055543-2h69p",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-rain-close-9x16:a",
+        "shot": "eimi-sys-rain-close-9x16"
+      },
+      {
+        "id": "asset-20260928055544-kfg4x",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-typhoon-wide-9x16:a",
+        "shot": "eimi-sys-typhoon-wide-9x16"
+      },
+      {
+        "id": "asset-20260928055545-w29kx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-typhoon-close-9x16:a",
+        "shot": "eimi-sys-typhoon-close-9x16"
+      },
+      {
+        "id": "asset-20260929145958-lncm9",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-confess-wide-16x9:a",
+        "shot": "eimi-sys-confess-wide-16x9"
+      },
+      {
+        "id": "asset-20260929145959-7rmx9",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-goodnight-16x9:a",
+        "shot": "eimi-sys-goodnight-16x9"
+      },
+      {
+        "id": "asset-20260929150000-zqqhm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-herbday-wide-16x9:a",
+        "shot": "eimi-sys-herbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929150001-gqvj8",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-hisbday-wide-16x9:a",
+        "shot": "eimi-sys-hisbday-wide-16x9"
+      },
+      {
+        "id": "asset-20260929150002-5rgkm",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-snow-wide-16x9:a",
+        "shot": "eimi-sys-snow-wide-16x9"
+      },
+      {
+        "id": "asset-20260929150003-th96l",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-rain-wide-16x9:a",
+        "shot": "eimi-sys-rain-wide-16x9"
+      },
+      {
+        "id": "asset-20260929150005-mzrlv",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-typhoon-wide-16x9:a",
+        "shot": "eimi-sys-typhoon-wide-16x9"
+      },
+      {
+        "id": "asset-20260929150006-nbhh5",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-promise-wait-16x9:a",
+        "shot": "eimi-sys-promise-wait-16x9"
+      },
+      {
+        "id": "asset-20260929130043-9zz48",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-v11-morning-9x16:a",
+        "shot": "eimi-v11-morning-9x16"
+      },
+      {
+        "id": "asset-20260929130044-7czmx",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-v11-morning-16x9:a",
+        "shot": "eimi-v11-morning-16x9"
+      },
+      {
+        "id": "asset-20260929130045-lkm27",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-v11-gown-16x9:a",
+        "shot": "eimi-v11-gown-16x9"
+      },
+      {
+        "id": "asset-20261001192947-86br5",
+        "kind": "keyframe",
+        "status": "Active",
+        "source": "keyframe-motion:eimi-sys-pmorning-close-9x16:a",
+        "shot": "eimi-sys-pmorning-close-9x16"
+      }
+    ]
+  }
+}

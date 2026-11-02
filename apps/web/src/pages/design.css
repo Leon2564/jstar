@@ -1,0 +1,39 @@
+/* /#/design (#162): the reference page's own frame — tokens only. */
+.ds { min-height: 100dvh; padding: var(--sp-8) var(--sp-5) var(--sp-10); background: var(--surface); color: var(--navy); font-family: var(--sans); }
+.ds-head { max-width: 1100px; margin: 0 auto var(--sp-8); display: flex; flex-direction: column; gap: var(--sp-3); }
+.ds-head .js-brand { color: var(--navy); }
+.ds-head h1 { margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 500; letter-spacing: 0.06em; }
+.ds-head h1 small { margin-left: var(--sp-3); font-size: var(--fs-label); letter-spacing: var(--ls-label); color: var(--rose-text); }
+.ds-head p { margin: 0; max-width: 760px; font-size: var(--fs-body); line-height: 1.85; color: var(--soft); }
+.ds-sec { max-width: 1100px; margin: 0 auto var(--sp-10); display: flex; flex-direction: column; gap: var(--sp-4); }
+.ds-sec h2 { margin: 0; display: flex; align-items: baseline; gap: var(--sp-3); font-family: var(--serif); font-size: 18px; font-weight: 500; letter-spacing: 0.08em; border-bottom: var(--hairline) solid var(--hair); padding-bottom: var(--sp-2); }
+.ds-swatches { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--sp-3); }
+.ds-swatches li { display: flex; align-items: center; gap: var(--sp-2); font-size: var(--fs-small); }
+.ds-swatches i { flex: none; width: 36px; height: 36px; border-radius: var(--r-sharp); box-shadow: inset 0 0 0 1px var(--hair); background-image: linear-gradient(45deg, var(--mist-deep) 25%, transparent 25%); }
+.ds-swatches b { font-weight: 500; font-family: ui-monospace, monospace; font-size: 12px; }
+.ds-fades { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--sp-3); }
+.ds-fades figure { margin: 0; }
+.ds-fades figcaption { margin-top: var(--sp-1); font-size: var(--fs-meta); color: var(--soft); }
+.ds-type { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--sp-2); }
+.ds-type li { display: flex; align-items: baseline; gap: var(--sp-4); flex-wrap: wrap; }
+.ds-type code, .ds-space code { width: 100px; flex: none; font-size: 12px; color: var(--soft); }
+.ds-type-serif { font-family: var(--serif); }
+.ds-type-sans { font-family: var(--sans); }
+.ds-type-label { font-family: var(--serif); letter-spacing: var(--ls-label); color: var(--rose-text); }
+.ds-type-meta { font-family: var(--serif); letter-spacing: var(--ls-meta); color: var(--soft); }
+.ds-note { margin: 0; font-size: var(--fs-small); color: var(--soft); font-family: var(--serif); }
+.ds-space { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.ds-space li { display: flex; align-items: center; gap: var(--sp-3); }
+.ds-space i { display: block; height: 10px; background: var(--rose); }
+.ds-shapes { display: flex; gap: var(--sp-3); flex-wrap: wrap; }
+.ds-shape { min-height: var(--tap); padding: 0 var(--sp-4); display: inline-flex; align-items: center; border: var(--hairline) solid var(--navy); font-size: var(--fs-small); }
+.ds-shape.hair { border-color: var(--hair); }
+.ds-night { position: relative; overflow: hidden; border-radius: var(--r-sharp); background: var(--navy-deep); color: var(--ivory); }
+.ds-still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 20% 40%; }
+.ds-night-body { position: relative; display: flex; flex-direction: column; justify-content: flex-end; gap: var(--sp-3); min-height: inherit; padding: var(--sp-5); }
+.ds-row { display: flex; gap: var(--sp-3); flex-wrap: wrap; align-items: center; }
+.ds-stack { display: flex; flex-direction: column; gap: var(--sp-2); }
+.ds-light { padding: var(--sp-4) 0; }
+.ds-p { margin: var(--sp-2) 0 0; font-family: var(--serif); font-size: var(--fs-body); letter-spacing: 0.06em; }
+.ds-rules { margin: 0; padding-left: var(--sp-5); display: flex; flex-direction: column; gap: var(--sp-2); font-size: var(--fs-body); line-height: var(--lh-body); }
+@media (min-width: 1024px) { .ds { padding: var(--sp-10) var(--sp-10) 64px; } }

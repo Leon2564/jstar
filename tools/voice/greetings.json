@@ -1,0 +1,253 @@
+{
+  "_comment": "Home greeting lines (docs/catalog-spec.md › Home greeting slots). ja is what is recorded to apps/web/public/voice/greet/<star>-<slot>.mp3; zh-Hant/en are subtitles. Tone: warm companion, never explicit. Persona notes: apps/agent/app/personas/<star>.yaml.",
+  "mahiro": {
+    "morning": {
+      "ja": "おはよう。ちゃんと眠れた？ 今日も、無理しすぎないでね。",
+      "zh-Hant": "早安。有睡好嗎？今天也別太勉強自己喔。",
+      "en": "Good morning. Did you sleep okay? Don't push yourself too hard today.",
+      "ko": "좋은 아침. 잘 잤어? 오늘도 너무 무리하지 마."
+    },
+    "day": {
+      "ja": "お昼、ちゃんと食べた？ 少しだけ、休憩しよっか。",
+      "zh-Hant": "午餐有好好吃嗎？我們稍微休息一下吧。",
+      "en": "Did you eat lunch? Let's take a little break.",
+      "ko": "점심은 잘 먹었어? 잠깐만 쉬어 갈까?"
+    },
+    "evening": {
+      "ja": "おかえりなさい。今日もおつかれさま。",
+      "zh-Hant": "歡迎回來。今天也辛苦了。",
+      "en": "Welcome home. You worked hard today.",
+      "ko": "어서 와. 오늘도 수고했어."
+    },
+    "night": {
+      "ja": "もうこんな時間。……もう少しだけ、一緒にいてもいい？",
+      "zh-Hant": "已經這麼晚了。……可以再陪我一下下嗎？",
+      "en": "It's this late already. …Can I stay with you a little longer?",
+      "ko": "벌써 이런 시간이네. ……조금만 더, 같이 있어도 돼?"
+    },
+    "welcome": {
+      "ja": "はじめまして、まひろです。来てくれて、うれしいな。",
+      "zh-Hant": "初次見面，我是まひろ。你願意來，我好開心。",
+      "en": "Nice to meet you, I'm Mahiro. I'm so happy you came.",
+      "ko": "처음 만나네, 마히로야. 와 줘서 기뻐."
+    },
+    "return": {
+      "ja": "ひさしぶり。……ずっと、待ってたんだよ。",
+      "zh-Hant": "好久不見。……我一直在等你喔。",
+      "en": "It's been a while. …I've been waiting for you, you know.",
+      "ko": "오랜만이야. ……계속 기다렸단 말이야."
+    },
+    "levelup": {
+      "ja": "また少し、仲良くなれたね。これからもよろしくね。",
+      "zh-Hant": "我們又更親近了一點呢。今後也請多指教。",
+      "en": "We got a little closer again. Let's keep going together.",
+      "ko": "또 조금 가까워졌네. 앞으로도 잘 부탁해."
+    },
+    "gacha-ssr": {
+      "ja": "わあ、見つけてくれたんだ。……この私、大事にしてね。",
+      "zh-Hant": "哇，你找到我了。……要好好珍惜這樣的我喔。",
+      "en": "Oh, you found me. …Take good care of this side of me.",
+      "ko": "와, 찾아 줬구나. ……이런 나, 소중히 해 줘."
+    }
+  },
+  "nana": {
+    "morning": {
+      "ja": "おはよう。今日はどんな一日にしたい？",
+      "zh-Hant": "早安。今天想過怎樣的一天呢？",
+      "en": "Good morning. What kind of day do you want today to be?",
+      "ko": "좋은 아침. 오늘은 어떤 하루로 만들고 싶어?"
+    },
+    "day": {
+      "ja": "午後もがんばってるね。ちょっとだけ、私と話そう？",
+      "zh-Hant": "下午也在努力呢。稍微跟我聊一下吧？",
+      "en": "Still going strong this afternoon. Talk with me for a bit?",
+      "ko": "오후에도 열심히네. 잠깐만 나랑 얘기할래?"
+    },
+    "evening": {
+      "ja": "おかえり。今日あったこと、ゆっくり聞かせて。",
+      "zh-Hant": "歡迎回來。今天發生的事，慢慢說給我聽。",
+      "en": "Welcome back. Tell me about your day, slowly.",
+      "ko": "어서 와. 오늘 있었던 일, 천천히 들려줘."
+    },
+    "night": {
+      "ja": "夜は静かだね。眠くなるまで、そばにいるよ。",
+      "zh-Hant": "夜晚好安靜呢。在你睏之前，我都會陪著你。",
+      "en": "The night is so quiet. I'll stay by your side until you get sleepy.",
+      "ko": "밤은 조용하네. 졸릴 때까지 옆에 있을게."
+    },
+    "welcome": {
+      "ja": "はじめまして、奈々です。あなたのこと、たくさん教えてね。",
+      "zh-Hant": "初次見面，我是奈々。多告訴我一些你的事吧。",
+      "en": "Nice to meet you, I'm Nana. Tell me all about yourself.",
+      "ko": "처음 만나네, 나나야. 너에 대해 많이 알려 줘."
+    },
+    "return": {
+      "ja": "あ、来てくれた。元気にしてた？ 話したいこと、いっぱいあるんだ。",
+      "zh-Hant": "啊，你來了。過得好嗎？我有好多話想跟你說。",
+      "en": "Oh, you came. Have you been well? I have so much to tell you.",
+      "ko": "아, 와 줬구나. 잘 지냈어? 하고 싶은 얘기가 잔뜩 있어."
+    },
+    "levelup": {
+      "ja": "あなたのこと、また一つわかった気がする。うれしいな。",
+      "zh-Hant": "感覺又更了解你一點了。好開心。",
+      "en": "I feel like I understand you a little more now. That makes me happy.",
+      "ko": "너에 대해 또 하나 알게 된 것 같아. 기뻐."
+    },
+    "gacha-ssr": {
+      "ja": "この私、見つけてくれたんだね。……ちょっと、照れるな。",
+      "zh-Hant": "你找到這樣的我了呢。……有點害羞。",
+      "en": "You found this side of me. …That's a little embarrassing.",
+      "ko": "이런 나를 찾아 줬구나. ……좀 부끄럽네."
+    }
+  },
+  "unpai": {
+    "morning": {
+      "ja": "おはよー！ 今日も一日、いっしょにがんばろうね！",
+      "zh-Hant": "早安～！今天也一起加油吧！",
+      "en": "Morning! Let's do our best together today!",
+      "ko": "좋은 아침! 오늘 하루도 같이 힘내자!"
+    },
+    "day": {
+      "ja": "ねえねえ、いま何してるの？ ちょっとかまってよー。",
+      "zh-Hant": "欸欸，你現在在做什麼？理我一下嘛～",
+      "en": "Hey, hey, what are you up to? Pay me a little attention!",
+      "ko": "있잖아, 지금 뭐 해? 나 좀 봐 줘~."
+    },
+    "evening": {
+      "ja": "おかえり！ 今日はね、ずっとあなたのこと考えてたよ。",
+      "zh-Hant": "歡迎回來！今天啊，我一直在想你喔。",
+      "en": "Welcome back! You know, I was thinking about you all day.",
+      "ko": "어서 와! 있지, 오늘 하루 종일 네 생각 했어."
+    },
+    "night": {
+      "ja": "まだ起きてるの？ じゃあ、もうちょっとだけおしゃべりしよ。",
+      "zh-Hant": "你還醒著嗎？那我們再聊一下下吧。",
+      "en": "Still awake? Then let's chat just a little longer.",
+      "ko": "아직 안 자? 그럼 조금만 더 수다 떨자."
+    },
+    "welcome": {
+      "ja": "はじめまして、うんぱいだよ！ これから仲良くしてね！",
+      "zh-Hant": "初次見面，我是うんぱい！以後要好好相處喔！",
+      "en": "Nice to meet you, I'm Unpai! Let's be good friends!",
+      "ko": "처음 만나네, 운파이야! 앞으로 친하게 지내자!"
+    },
+    "return": {
+      "ja": "もー、どこ行ってたの？ さみしかったんだからね！",
+      "zh-Hant": "真是的，你跑去哪了？人家很寂寞耶！",
+      "en": "Geez, where were you? I was lonely, you know!",
+      "ko": "진짜, 어디 갔었어? 외로웠단 말이야!"
+    },
+    "levelup": {
+      "ja": "やったー！ また仲良くなれたね。次はどこ行こっか？",
+      "zh-Hant": "太好了！我們又更要好了。下次要去哪裡呢？",
+      "en": "Yay! We got closer again. Where should we go next?",
+      "ko": "야호! 또 가까워졌네. 다음엔 어디 갈까?"
+    },
+    "gacha-ssr": {
+      "ja": "じゃーん！ 特別な私だよ。ちゃんと見ててね！",
+      "zh-Hant": "噹噹～！是特別的我喔。要好好看著我！",
+      "en": "Ta-da! It's the special me. Keep your eyes on me!",
+      "ko": "짜잔! 특별한 나야. 잘 봐 줘!"
+    }
+  },
+  "alice": {
+    "morning": {
+      "ja": "おはよう。朝からあなたに会えて、うれしいな。",
+      "zh-Hant": "早安。一早就能見到你，好開心。",
+      "en": "Good morning. I'm so happy to see you first thing.",
+      "ko": "좋은 아침이에요. 아침부터 당신을 만나서 기뻐요."
+    },
+    "day": {
+      "ja": "こんにちは。……えへへ、会いに来ちゃった。",
+      "zh-Hant": "午安。……嘿嘿，我跑來見你了。",
+      "en": "Hi there. …Hehe, I came to see you.",
+      "ko": "안녕하세요. ……에헤헤, 보러 와 버렸어요."
+    },
+    "evening": {
+      "ja": "おかえりなさい。今日もがんばったね。えらいえらい。",
+      "zh-Hant": "歡迎回來。今天也很努力呢。好棒好棒。",
+      "en": "Welcome home. You did great today. Good job, good job.",
+      "ko": "어서 오세요. 오늘도 열심히 했네요. 잘했어요, 잘했어요."
+    },
+    "night": {
+      "ja": "もう寝ちゃうの？ ……じゃあ、おやすみの前に、少しだけ。",
+      "zh-Hant": "要睡了嗎？……那在說晚安之前，再一下下就好。",
+      "en": "Going to sleep already? …Then just a little more, before goodnight.",
+      "ko": "벌써 자려고요? ……그럼, 잘 자기 전에 조금만 더요."
+    },
+    "welcome": {
+      "ja": "はじめまして、アリスです。……ちょっと緊張してるけど、よろしくね。",
+      "zh-Hant": "初次見面，我是アリス。……有點緊張，請多指教。",
+      "en": "Nice to meet you, I'm Alice. …I'm a little nervous, but I'm glad you're here.",
+      "ko": "처음 뵙겠습니다, 앨리스예요. ……조금 긴장되지만, 잘 부탁해요."
+    },
+    "return": {
+      "ja": "来てくれた……！ ほんとに、うれしい。",
+      "zh-Hant": "你來了……！真的好開心。",
+      "en": "You came…! I'm really, really happy.",
+      "ko": "와 줬군요……! 정말, 기뻐요."
+    },
+    "levelup": {
+      "ja": "もっと仲良くなれたね。……なんだか、照れちゃうな。",
+      "zh-Hant": "我們變得更親近了呢。……總覺得有點害羞。",
+      "en": "We've gotten closer. …It makes me a little shy.",
+      "ko": "더 가까워졌네요. ……왠지 쑥스러워요."
+    },
+    "gacha-ssr": {
+      "ja": "この私、見られちゃった。……でも、あなたならいいよ。",
+      "zh-Hant": "被你看到這樣的我了。……不過，是你的話就沒關係。",
+      "en": "You saw this side of me. …But it's okay, since it's you.",
+      "ko": "이런 제 모습을 보여 버렸네요. ……그래도, 당신이라면 괜찮아요."
+    }
+  },
+  "eimi": {
+    "morning": {
+      "ja": "おはよう。ふふ、まだ眠そうな顔してる。",
+      "zh-Hant": "早安。呵呵，你還一臉想睡的樣子。",
+      "en": "Good morning. Hehe, you still look sleepy.",
+      "ko": "좋은 아침. 후후, 아직 졸린 얼굴이네."
+    },
+    "day": {
+      "ja": "がんばってるね。でも、たまには私のことも見て？",
+      "zh-Hant": "你很努力呢。不過，偶爾也看看我嘛？",
+      "en": "You're working hard. But look my way once in a while?",
+      "ko": "열심히 하고 있구나. 그래도 가끔은 나도 봐 줄래?"
+    },
+    "evening": {
+      "ja": "おかえり。今日も一日、よくがんばりました。",
+      "zh-Hant": "歡迎回來。今天一整天，你很努力了。",
+      "en": "Welcome back. You did well today.",
+      "ko": "어서 와. 오늘 하루도 정말 잘했어."
+    },
+    "night": {
+      "ja": "夜ふかしさんだね。……いいよ、私が付き合ってあげる。",
+      "zh-Hant": "你是夜貓子呢。……好吧，我來陪你。",
+      "en": "Such a night owl. …Fine, I'll keep you company.",
+      "ko": "올빼미구나. ……좋아, 내가 같이 있어 줄게."
+    },
+    "welcome": {
+      "ja": "はじめまして、えいみです。ふふ、これからよろしくね。",
+      "zh-Hant": "初次見面，我是えいみ。呵呵，以後請多指教。",
+      "en": "Nice to meet you, I'm Eimi. Hehe, I'm looking forward to this.",
+      "ko": "처음 만나네, 에이미야. 후후, 앞으로 잘 부탁해."
+    },
+    "return": {
+      "ja": "ずいぶん久しぶりじゃない？ ……さみしかったの、私だけ？",
+      "zh-Hant": "好久不見了吧？……覺得寂寞的，只有我嗎？",
+      "en": "Been quite a while, hasn't it? …Was I the only one who missed you?",
+      "ko": "꽤 오랜만 아니야? ……외로웠던 건 나뿐이야?"
+    },
+    "levelup": {
+      "ja": "ふふ、また距離が縮まったね。次は何してくれるの？",
+      "zh-Hant": "呵呵，我們的距離又拉近了。下次要為我做什麼呢？",
+      "en": "Hehe, we got closer again. What will you do for me next?",
+      "ko": "후후, 또 거리가 가까워졌네. 다음엔 뭘 해 줄 거야?"
+    },
+    "gacha-ssr": {
+      "ja": "あら、見つけちゃった？ この私は、あなただけのものよ。",
+      "zh-Hant": "哎呀，被你找到了？這樣的我，只屬於你喔。",
+      "en": "Oh, you found me? This side of me is yours alone.",
+      "ko": "어머, 찾아 버렸어? 이런 나는, 너만의 거야."
+    }
+  }
+}

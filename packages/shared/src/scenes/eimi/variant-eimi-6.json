@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "id": "variant-eimi-6",
+    "star": "eimi",
+    "title": {"ja": "香水と、近くで", "zh-Hant": "香水，靠近一點", "en": "Perfume, Up Close", "ko": "향수, 가까이에서"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 6},
+    "idle": "eimi-variant-home"
+  },
+  "steps": [
+    {"id": "close", "type": "clip", "shot": "close", "media": "eimi-variant-close", "hold": 0},
+    {"id": "come", "type": "line", "voice": "/voice/scene/eimi/6ccde9268183.mp3", "text": {"ja": "ねえ、気づいた？ この服に合わせて、香水変えたの。", "zh-Hant": "欸，你發現了嗎？我配合這套衣服換了香水。", "en": "Hey, did you notice? I changed my perfume to go with this.", "ko": "저기, 눈치챘어? 이 옷에 맞춰서 향수 바꿨거든."}},
+    {"id": "why", "type": "line", "voice": "/voice/scene/eimi/9f80fc69e94f.mp3", "text": {"ja": "……近くに来ないと、わかんないでしょ？", "zh-Hant": "……不靠近一點，是聞不出來的吧？", "en": "…You can't tell unless you come closer, can you?", "ko": "……가까이 오지 않으면 모르잖아?"}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "near", "options": [{"id": "near", "next": "near", "label": {"ja": "そばに寄る", "zh-Hant": "靠近一點", "en": "Move closer", "ko": "가까이 다가간다"}}, {"id": "more", "next": "too-near", "label": {"ja": "もっと近くで", "zh-Hant": "想更近一點", "en": "Closer still", "ko": "더 가까이"}}]},
+    {"id": "near", "type": "line", "voice": "/voice/scene/eimi/5ce3f64b46a7.mp3", "next": "reward", "text": {"ja": "……いい香りでしょ？ キミのために選んだんだから。", "zh-Hant": "……很香吧？這可是為你挑的。", "en": "…Nice, isn't it? I picked it for you.", "ko": "……좋은 향기지? 너를 위해 고른 거니까."}},
+    {"id": "too-near", "type": "line", "voice": "/voice/scene/eimi/31c8f38db4af.mp3", "text": {"ja": "ふふっ、欲張り。……それ以上は、また今度ね？", "zh-Hant": "呵呵，貪心鬼。……再近的話，下次再說？", "en": "Hehe, greedy. …Any closer can wait till next time.", "ko": "후훗, 욕심쟁이. ……그 이상은 다음에, 알았지?"}},
+    {"id": "reward", "type": "effect", "affinity": 8, "variantXp": 30},
+    {"id": "secret", "type": "line", "voice": "/voice/scene/eimi/e647037b7e93.mp3", "text": {"ja": "……この香り、キミだけが知ってればいいの。", "zh-Hant": "……這個香味，只要你知道就好。", "en": "…Only you need to know this scent.", "ko": "……이 향기는 너만 알고 있으면 돼."}},
+    {"id": "end", "type": "end", "outcome": "close"}
+  ]
+}

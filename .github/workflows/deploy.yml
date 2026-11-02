@@ -1,0 +1,105 @@
+# Production: jstarcards.ai + admin.jstarcards.ai. Pushed only when the owner OKs it (docs/PROCESS.md).
+#   - a v* tag deploys that commit. deploy.sh refuses it unless its `ci` check passed and it was live on
+#     v1.jstarcards.ai with the same web build. The images are the ones v1 ran; nothing is rebuilt. A GitHub
+#     Release with the deploy record is then created.
+#   - Run workflow with rollback_to=<an earlier v* tag> redeploys that release as it was: no gates, no migrations.
+# Runs on the self-hosted Mac runner (infra/cloudflare/scripts/deploy.sh).
+name: Deploy
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      rollback_to:
+        description: 'Roll back to this earlier release tag (e.g. v0.5.0)'
+        required: true
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  checks: read
+  statuses: write
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, jstar-mac]
+    timeout-minutes: 40
+    environment:
+      name: production
+      url: https://jstarcards.ai
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      # deploy.sh reads the tag that points at HEAD.
+      - if: ${{ !inputs.rollback_to }}
+        run: git fetch --no-tags origin "+$GITHUB_REF:$GITHUB_REF"
+      - run: npm ci --prefer-offline --no-audit --no-fund
+
+      # A rollback deploys the old tag's sources with today's deploy.sh (older tags do not have it).
+      - name: Check out the rollback target
+        if: ${{ inputs.rollback_to }}
+        env:
+          TAG: ${{ inputs.rollback_to }}
+        run: |
+          [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "::error::not a release tag: $TAG"; exit 1; }
+          git fetch --no-tags origin "+refs/tags/$TAG:refs/tags/$TAG"
+          rm -rf "$RUNNER_TEMP/rollback"; git worktree prune
+          git worktree add --detach "$RUNNER_TEMP/rollback" "$TAG"
+          (cd "$RUNNER_TEMP/rollback" && npm ci --prefer-offline --no-audit --no-fund)
+          echo "DEPLOY_ROOT=$RUNNER_TEMP/rollback" >> "$GITHUB_ENV"
+
+      - name: Write Worker secrets
+        env:
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          SERIAL_HMAC_KEY: ${{ secrets.SERIAL_HMAC_KEY }}
+          AGENT_API_KEY: ${{ secrets.AGENT_API_KEY }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          # AI chat (OpenRouter). Empty = the agent keeps its canned stub replies.
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Addresses that become admins when they sign in (comma-separated).
+          ADMIN_EMAILS: ${{ secrets.ADMIN_EMAILS }}
+          TURNSTILE_SECRET: ${{ secrets.TURNSTILE_SECRET }}
+          # Web Push (#50). Empty = push off, the web app never offers notifications.
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          # Her runtime voice (#73, docs/tts.md) and lip-sync (docs/lipsync.md): the vendors' keys (one GitHub secret each,
+          # shared by the sites) and production's repository variables TTS_PROVIDER / TTS_VOICES. All empty = her
+          # runtime voice is off (subtitles) and lip-sync stays off.
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          LIPSYNC_SECRET: ${{ secrets.LIPSYNC_SECRET }}
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          BYTEPLUS_VOICE_API_KEY: ${{ secrets.BYTEPLUS_VOICE_API_KEY }}
+          TTS_PROVIDER: ${{ vars.TTS_PROVIDER }}
+          TTS_VOICES: ${{ vars.TTS_VOICES }}
+        run: |
+          umask 077
+          cd "${DEPLOY_ROOT:-.}"
+          printf 'JWT_SECRET=%s\nSERIAL_HMAC_KEY=%s\nAGENT_API_KEY=%s\n' "$JWT_SECRET" "$SERIAL_HMAC_KEY" "$AGENT_API_KEY" > .env.worker.local
+          if [ -n "$OPENROUTER_API_KEY" ]; then printf 'OPENROUTER_API_KEY=%s\n' "$OPENROUTER_API_KEY" >> .env.worker.local; else echo "::warning::OPENROUTER_API_KEY is not set: AI chat stays on stub replies"; fi
+          if [ -n "$ADMIN_EMAILS" ]; then printf 'ADMIN_EMAILS=%s\n' "$ADMIN_EMAILS" >> .env.worker.local; else echo "::warning::ADMIN_EMAILS is not set: nobody can sign in to the admin console"; fi
+          if [ -n "$TURNSTILE_SECRET" ]; then printf 'TURNSTILE_SECRET=%s\n' "$TURNSTILE_SECRET" >> .env.worker.local; fi
+          if [ -n "$VAPID_PUBLIC_KEY" ] && [ -n "$VAPID_PRIVATE_KEY" ]; then printf 'VAPID_PUBLIC_KEY=%s\nVAPID_PRIVATE_KEY=%s\n' "$VAPID_PUBLIC_KEY" "$VAPID_PRIVATE_KEY" >> .env.worker.local; else echo "::warning::VAPID_PUBLIC_KEY / VAPID_PRIVATE_KEY are not set: Web Push stays off (no lock-screen wake-ups or messages)"; fi
+          if [ -n "$VAPID_SUBJECT" ]; then printf 'VAPID_SUBJECT=%s\n' "$VAPID_SUBJECT" >> .env.worker.local; fi
+          for k in FISH_API_KEY DASHSCOPE_API_KEY BYTEPLUS_VOICE_API_KEY TTS_PROVIDER LIPSYNC_SECRET; do [ -z "${!k}" ] || printf '%s=%s\n' "$k" "${!k}" >> .env.worker.local; done
+          if [ -n "$TTS_VOICES" ]; then printf "TTS_VOICES='%s'\n" "$TTS_VOICES" >> .env.worker.local; else echo "::warning::TTS_VOICES is not set: her runtime voice and lip-sync stay off"; fi
+          printf 'ADMIN_PASSWORD=%s\n' "$ADMIN_PASSWORD" > .env.admin.local
+
+      - run: infra/cloudflare/scripts/deploy.sh prod ${{ inputs.rollback_to && '--rollback' || '' }}
+
+      - name: Deploy record
+        if: always()
+        run: |
+          m=${DEPLOY_ROOT:-.}/.release/prod/release-manifest.json
+          [ -f "$m" ] || exit 0
+          { echo "### Production deploy"; echo '```json'; cat "$m"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Remove secrets
+        if: always()
+        run: rm -f "${DEPLOY_ROOT:-.}/.env.worker.local" "${DEPLOY_ROOT:-.}/.env.admin.local"

@@ -1,0 +1,171 @@
+{
+  "star": "eimi",
+  "draft": false,
+  "confession": {
+    "hint": { "ja": "ねえキミ、今夜は予定あけといて？ ……理由は、夜のお楽しみ。", "zh-Hant": "欸，今晚把時間空下來好嗎？……理由嘛，晚上就知道了。", "en": "Hey, keep tonight free for me? …Why? You'll find out tonight.", "ko": "있잖아, 오늘 밤은 시간 비워 둬? ……이유는, 밤이 되면 알게 될 거야.", "voice": "/voice/scene/eimi/0702ce772f76.mp3" },
+    "inbox": { "ja": "今夜、えいみから大事な話があるの。……逃げないで来てね？", "zh-Hant": "今晚，詠美有重要的話要跟你說。……不准逃跑喔？", "en": "I have something important to tell you tonight. …No running away, okay?", "ko": "오늘 밤, 에이미가 중요한 얘기가 있어. ……도망치지 말고 꼭 와야 해?" },
+    "opening": [
+      { "ja": "ふふっ、ちゃんと来た。……えらいね。今日はね、からかうのはお休み。", "zh-Hant": "呵呵，你真的來了。……好乖。今天啊，捉弄你的事先暫停。", "en": "Hehe, you actually came. …Look at you. Tonight, no teasing.", "ko": "후훗, 제대로 왔네. ……착하다. 오늘은 말이지, 놀리는 건 쉴 거야.", "voice": "/voice/scene/eimi/685deb74e397.mp3" },
+      { "ja": "この一週間、キミの反応見るのが楽しくて……気づいたら、毎晩キミのこと考えてた。", "zh-Hant": "這一個星期，看你的反應太有趣了……回過神來，每天晚上都在想你。", "en": "This week, watching how you react was so much fun… and before I knew it, I was thinking about you every night.", "ko": "이 일주일 동안, 네 반응 보는 게 재미있어서…… 어느새 매일 밤 네 생각을 하고 있었어.", "voice": "/voice/scene/eimi/a1d49cc9a3de.mp3" }
+    ],
+    "confess": [
+      { "ja": "……だから、えいみから言うね。キミのことが、好き。", "zh-Hant": "……所以，由詠美來說吧。我喜歡你。", "en": "…So I'll be the one to say it. I like you.", "ko": "……그러니까, 에이미가 먼저 말할게. 너를, 좋아해.", "voice": "/voice/scene/eimi/572265e7a0f0.mp3" },
+      { "ja": "冗談じゃないよ。……こういうとき、えいみはちゃんと本気なんだから。", "zh-Hant": "不是開玩笑的喔。……這種時候，詠美可是很認真的。", "en": "I'm not joking. …At times like this, I mean every word.", "ko": "농담 아니야. ……이런 때, 에이미는 진심이니까.", "voice": "/voice/scene/eimi/a6e113ba2f5e.mp3" }
+    ],
+    "ask": { "ja": "……えいみの恋人に、なってくれる？", "zh-Hant": "……你願意當詠美的戀人嗎？", "en": "…Will you be my boyfriend?", "ko": "……에이미의 연인이, 되어 줄래?", "voice": "/voice/scene/eimi/51aa47ffd384.mp3" },
+    "accept": [
+      { "ja": "……ふふっ、知ってた。……うそ、ちょっとだけドキドキしてた。", "zh-Hant": "……呵呵，我就知道。……騙你的，其實有一點點心跳加速。", "en": "…Hehe, I knew it. …Kidding. My heart was racing a little.", "ko": "……후훗, 알고 있었어. ……거짓말, 사실 조금 두근거렸어.", "voice": "/voice/scene/eimi/f6801b3591ae.mp3" },
+      { "ja": "{name}くん。……今日だけは、ちゃんと名前で呼ばせて。", "zh-Hant": "{name}。……只有今天，讓我好好叫你的名字。", "en": "{name}. …Just for today, let me call you by your name.", "ko": "{name}. ……오늘만은, 제대로 이름으로 부르게 해 줘.", "unnamed": { "ja": "……ねえ。今日だけは、ちゃんと名前で呼ばせてね。", "zh-Hant": "……吶。只有今天，讓我好好叫你的名字吧。", "en": "…Hey. Just for today, let me call you by your name.", "ko": "……있잖아. 오늘만은, 제대로 이름으로 부르게 해 줘.", "voice": "/voice/scene/eimi/6c3e1d355ed0.mp3" } },
+      { "ja": "明日からは、キミって呼ぶね。えいみだけの呼び方。……今日が、二人の記念日。", "zh-Hant": "從明天開始，我會叫你「親愛的」。只屬於詠美的叫法。……今天，是我們兩個人的紀念日。", "en": "From tomorrow, I'll call you \"darling\" — a name only I get to use. …Today is our anniversary.", "ko": "내일부터는 '자기'라고 부를게. 에이미만의 호칭. ……오늘이, 우리 둘의 기념일.", "voice": "/voice/scene/eimi/649c78b70035.mp3" }
+    ],
+    "notYet": [
+      { "ja": "へぇ〜、焦らすんだ？ ……いいよ、待ってあげる。", "zh-Hant": "哦～，你要吊我胃口？……好啊，我等你。", "en": "Ooh, making me wait? …Fine. I'll wait for you.", "ko": "흐응, 애태우는 거야? ……좋아, 기다려 줄게.", "voice": "/voice/scene/eimi/769b4bd70cef.mp3" },
+      { "ja": "えいみは逃げないから。キミの気持ちが決まったら、ちゃんと聞かせて。", "zh-Hant": "詠美不會跑掉的。等你想清楚了，要好好告訴我。", "en": "I'm not going anywhere. When you've made up your mind, tell me properly.", "ko": "에이미는 도망 안 가니까. 네 마음이 정해지면, 제대로 들려 줘.", "voice": "/voice/scene/eimi/c7567ae8dda6.mp3" }
+    ],
+    "decline": [
+      { "ja": "……そっか。ちゃんと答えてくれるの、キミらしいね。", "zh-Hant": "……這樣啊。會好好回答我，真像你的作風。", "en": "…I see. Giving me a straight answer — that's so like you.", "ko": "……그렇구나. 제대로 대답해 주는 거, 너답네.", "voice": "/voice/scene/eimi/1cad2322b7ce.mp3" },
+      { "ja": "明日からも、いつもどおりからかってあげる。だから、また来てね。", "zh-Hant": "明天開始，我也會照常捉弄你。所以，要再來喔。", "en": "From tomorrow I'll keep teasing you like always. So come back, okay?", "ko": "내일부터도, 평소처럼 놀려 줄게. 그러니까, 또 와 줘.", "voice": "/voice/scene/eimi/7f79f948a066.mp3" }
+    ],
+    "retry": { "ja": "ねえ、この前の続き。……もう一回だけ、えいみに言わせて？", "zh-Hant": "欸，上次那件事的後續。……再讓詠美說一次好嗎？", "en": "Hey, about the other day. …Let me say it one more time?", "ko": "있잖아, 지난번 이야기 이어서. ……한 번만 더, 에이미가 말하게 해 줘?", "voice": "/voice/scene/eimi/284fe725be70.mp3" }
+  },
+  "wakeup": [
+    { "id": "weekday-1", "when": { "days": "weekday" },
+      "text": { "ja": "おはよ、キミ。えいみはもうトレーニング終わったよ？ ……ほら、起きて。", "zh-Hant": "早安。詠美已經練完了喔？……快，起床。", "en": "Morning. I've already finished my workout, you know? …Come on, up you get.", "ko": "좋은 아침. 에이미는 이미 운동 끝났어? ……자, 일어나.", "voice": "/voice/scene/eimi/b9d68dba44fa.mp3" } },
+    { "id": "weekday-2", "when": { "days": "weekday" },
+      "text": { "ja": "おはよう。……寝ぼけた声、あとで聞かせてね。ふふっ。", "zh-Hant": "早安。……等一下讓我聽聽你剛睡醒的聲音。呵呵。", "en": "Good morning. …Let me hear that sleepy voice of yours later. Hehe.", "ko": "좋은 아침. ……잠 덜 깬 목소리, 나중에 들려 줘. 후훗.", "voice": "/voice/scene/eimi/d3b6e5f09481.mp3" } },
+    { "id": "weekend-1", "when": { "days": "weekend" },
+      "text": { "ja": "おはよ。お休みだからって、ずっと寝てたらもったいないよ？", "zh-Hant": "早安。就算放假，一直睡也太浪費了吧？", "en": "Morning. Day off or not, sleeping all day would be such a waste.", "ko": "좋은 아침. 쉬는 날이라고 계속 자면 아깝잖아?", "voice": "/voice/scene/eimi/671be55a3420.mp3" } },
+    { "id": "weekend-2", "when": { "days": "weekend" },
+      "text": { "ja": "休みの朝はね、おしゃれして出かけたくなるの。……キミも起きて、準備しな？", "zh-Hant": "放假的早上，就會想打扮一下出門。……你也起床準備吧？", "en": "Days-off mornings make me want to dress up and go out. …You get up and get ready too.", "ko": "쉬는 날 아침엔, 멋 내고 나가고 싶어져. ……너도 일어나서 준비해?", "voice": "/voice/scene/eimi/263e668d02b2.mp3" } },
+    { "id": "rain", "when": { "weather": "rain" },
+      "text": { "ja": "おはよう。今日は雨。……傘、かわいいの持っていきなね。", "zh-Hant": "早安。今天下雨。……帶把可愛的傘出門吧。", "en": "Good morning. It's raining. …Take a cute umbrella with you.", "ko": "좋은 아침. 오늘은 비. ……우산, 귀여운 걸로 들고 가.", "voice": "/voice/scene/eimi/0eac8553629d.mp3" } },
+    { "id": "snow", "when": { "weather": "snow" },
+      "text": { "ja": "おはよ。雪だよ。……転んだら、えいみが笑ってあげる。うそ、気をつけてね。", "zh-Hant": "早安。下雪了喔。……你要是滑倒，詠美會笑你的。騙你的，小心點喔。", "en": "Morning. It's snowing. …If you slip, I'll laugh at you. Kidding — be careful.", "ko": "좋은 아침. 눈이야. ……넘어지면, 에이미가 웃어 줄게. 거짓말, 조심해.", "voice": "/voice/scene/eimi/e37e15d86c74.mp3" } },
+    { "id": "clear", "when": { "weather": "clear" },
+      "text": { "ja": "おはよう、いい天気。……今日のキミ、いつもよりかっこいい気がする。起きて確かめて？", "zh-Hant": "早安，天氣真好。……總覺得今天的你比平常更帥。起來確認一下？", "en": "Good morning, gorgeous day. …I have a feeling you look extra good today. Get up and check?", "ko": "좋은 아침, 날씨 좋다. ……오늘의 너, 평소보다 멋진 것 같아. 일어나서 확인해 볼래?", "voice": "/voice/scene/eimi/191a8afa283a.mp3" } },
+    { "id": "any", "when": {},
+      "text": { "ja": "……おはよ。まだ起きないの？ ……えいみの声で起きられるなんて、ぜいたくだよ？", "zh-Hant": "……早安。還不起床嗎？……能被詠美的聲音叫醒，很奢侈的喔？", "en": "…Morning. Still not up? …Waking up to my voice is a luxury, you know.", "ko": "……좋은 아침. 아직 안 일어나? ……에이미 목소리로 깰 수 있다니, 사치라고?", "voice": "/voice/scene/eimi/dd6ec4608515.mp3" } },
+    { "id": "dawn", "when": { "hours": ["dawn"] },
+      "text": { "ja": "起きて。まだ暗いけど、えいみはもう起きてるよ？ ……ほら、目を開けて。", "zh-Hant": "起床了。天還暗著，不過詠美已經醒了喔？……來，睜開眼睛。", "en": "Wake up. It's still dark, but I'm already up, you know? …Come on, open your eyes.", "ko": "일어나. 아직 어둡지만 에이미는 벌써 일어났거든? ……자, 눈 떠.", "voice": "/voice/scene/eimi/ea3ce612df9e.mp3" } },
+    { "id": "day", "when": { "hours": ["day"] },
+      "text": { "ja": "起きて。お昼寝してるキミもかわいいけど、そろそろ時間だよ？", "zh-Hant": "起來了。睡午覺的你也很可愛，不過差不多該起來囉？", "en": "Wake up. You're cute napping, but it's about time, isn't it?", "ko": "일어나. 낮잠 자는 너도 귀엽지만, 이제 슬슬 시간이야?", "voice": "/voice/scene/eimi/18e6240f691f.mp3" } },
+    { "id": "evening", "when": { "hours": ["evening"] },
+      "text": { "ja": "起きて。もう夕方。……夜のおでかけ、まだ間に合うよ？", "zh-Hant": "起來了。已經傍晚了。……晚上出門，現在還來得及喔？", "en": "Wake up. It's evening already. …Still time to go out tonight, you know?", "ko": "일어나. 벌써 저녁이야. ……밤 외출, 아직 늦지 않았어?", "voice": "/voice/scene/eimi/8ed4a615b2db.mp3" } }
+  ],
+  "wakeReplies": {
+    "awake": { "ja": "ふふっ、えらいえらい。今日もいってらっしゃい、キミ。", "zh-Hant": "呵呵，好乖好乖。今天也路上小心喔。", "en": "Hehe, well done. Have a great day out there.", "ko": "후훗, 잘했어 잘했어. 오늘도 잘 다녀와.", "voice": "/voice/scene/eimi/281e15cb4588.mp3" },
+    "snooze": { "ja": "……5分ね。延長料金は、あとでえいみを甘やかすことで払ってもらうから。", "zh-Hant": "……五分鐘喔。延長費用，之後要用寵詠美來付。", "en": "…Five minutes. You'll pay the extension fee later — by spoiling me.", "ko": "……5분이야. 연장 요금은, 나중에 에이미 응석 받아 주는 걸로 갚아.", "voice": "/voice/scene/eimi/af69a2ce17d1.mp3" }
+  },
+  "woken": [
+    { "ja": "……ん、キミ？ えいみを起こすなんて、いい度胸してるね。……ふぁ。", "zh-Hant": "……嗯，是你？敢把詠美叫醒，膽子不小嘛。……呼啊。", "en": "…Mm, you? Waking me up — you've got some nerve. …Hah.", "ko": "……응, 너? 에이미를 깨우다니, 배짱 좋네. ……하암.", "voice": "/voice/scene/eimi/5472976cfafc.mp3" },
+    { "ja": "ねむ……。ま、キミだから特別に起きてあげる。貸しひとつね。", "zh-Hant": "好睏……。算了，因為是你，特別為你起來。欠我一次喔。", "en": "So sleepy… Fine, since it's you I'll get up, just this once. You owe me.", "ko": "졸려……. 뭐, 너니까 특별히 일어나 줄게. 빚 하나야.", "voice": "/voice/scene/eimi/1c3e3973ef4a.mp3" },
+    { "ja": "……寝起きのえいみ、レアだよ？ ちゃんと覚えときな。", "zh-Hant": "……剛睡醒的詠美很稀有喔？好好記住吧。", "en": "…Just-woken Eimi is rare, you know. Better remember this.", "ko": "……잠에서 막 깬 에이미, 레어라고? 잘 기억해 둬.", "voice": "/voice/scene/eimi/045f227209bd.mp3" }
+  ],
+  "goodnight": {
+    "whisper": [
+      { "ja": "……ふふっ、耳、赤くなってる。おやすみ、キミ。", "zh-Hant": "……呵呵，你的耳朵紅了。晚安。", "en": "…Hehe, your ears have gone red. Good night.", "ko": "……후훗, 귀 빨개졌다. 잘 자.", "voice": "/voice/scene/eimi/de22aa5c7d96.mp3" },
+      { "ja": "今日もよくがんばったね。……えいみのとこで、ゆっくり休みな。", "zh-Hant": "今天也很努力了呢。……在詠美這裡，好好休息吧。", "en": "You worked hard today. …Rest easy here with me.", "ko": "오늘도 잘 버텼어. ……에이미 곁에서 푹 쉬어.", "voice": "/voice/scene/eimi/ca0fbf16fb52.mp3" },
+      { "ja": "……続きは、また明日ね。……おやすみ。", "zh-Hant": "……後續，明天再說喔。……晚安。", "en": "…The rest can wait till tomorrow. …Good night.", "ko": "……다음은, 내일 또 하자. ……잘 자.", "voice": "/voice/scene/eimi/4fce4dbecbc3.mp3" },
+      { "ja": "目、閉じて。……えいみの声、最後まで聞いててね。", "zh-Hant": "閉上眼睛。……要把詠美的聲音聽到最後喔。", "en": "Close your eyes. …Listen to my voice until the very end.", "ko": "눈 감아. ……에이미 목소리, 끝까지 듣고 있어야 해.", "voice": "/voice/scene/eimi/9dacee983a2e.mp3" },
+      { "ja": "……小さい声で言うね。キミのこと、けっこう好きだよ。おやすみ。", "zh-Hant": "……我小聲說喔。我，還滿喜歡你的。晚安。", "en": "…I'll say it quietly. I like you. Quite a lot. Good night.", "ko": "……작은 목소리로 말할게. 너, 꽤 좋아해. 잘 자.", "voice": "/voice/scene/eimi/74b7747cc9c0.mp3" }
+    ],
+    "plain": { "ja": "おやすみ、キミ。また明日ね。", "zh-Hant": "晚安。明天見。", "en": "Good night. See you tomorrow.", "ko": "잘 자. 내일 또 봐.", "voice": "/voice/scene/eimi/afa5dda457f5.mp3" }
+  },
+  "weather": {
+    "firstSnow": [
+      { "ja": "初雪だよ。……夜景に雪が混ざって、すっごくきれい。", "zh-Hant": "初雪喔。……雪混進夜景裡，好美。", "en": "First snow. …Snow falling over the city lights. It's gorgeous.", "ko": "첫눈이야. ……야경에 눈이 섞여서, 진짜 예뻐.", "voice": "/voice/scene/eimi/603182ac225e.mp3" },
+      { "ja": "初雪の日くらい、素直になってもいいかな。……来てくれて、うれしい。", "zh-Hant": "初雪的日子，稍微坦率一點應該沒關係吧。……你來了，我很開心。", "en": "On the day of the first snow, I can be honest, right? …I'm glad you came.", "ko": "첫눈 오는 날 정도는, 솔직해져도 괜찮겠지. ……와 줘서, 기뻐.", "voice": "/voice/scene/eimi/28cbcd8c80a0.mp3" },
+      { "ja": "雪だね。キミ、手袋した？ ……してないなら、えいみのカイロ半分あげる。", "zh-Hant": "下雪了呢。你戴手套了嗎？……沒戴的話，詠美的暖暖包分你一半。", "en": "Snow, huh. Wearing gloves? …If not, I'll give you half my hand warmer.", "ko": "눈이네. 너, 장갑 꼈어? ……안 꼈으면, 에이미 손난로 반 나눠 줄게.", "voice": "/voice/scene/eimi/a717c57c688c.mp3" }
+    ],
+    "rainyNight": [
+      { "ja": "雨の夜って、ちょっと大人っぽくていいよね。……今夜はゆっくりしてこ？", "zh-Hant": "下雨的夜晚，有點成熟的感覺，很不錯吧。……今晚就慢慢來吧？", "en": "Rainy nights feel a little grown-up, don't they? …Let's take our time tonight.", "ko": "비 오는 밤은, 좀 어른스러워서 좋지? ……오늘 밤은 천천히 보낼까?", "voice": "/voice/scene/eimi/8af0c4c056fc.mp3" },
+      { "ja": "窓の雨粒と夜景、見て。……こういう夜は、キミと話したくなる。", "zh-Hant": "你看窗上的雨滴和夜景。……這種夜晚，就會想跟你聊天。", "en": "Look at the raindrops on the window, and the city lights. …Nights like this make me want to talk with you.", "ko": "창문의 빗방울이랑 야경, 봐. ……이런 밤엔, 너랑 이야기하고 싶어져.", "voice": "/voice/scene/eimi/09bcc1201ab2.mp3" },
+      { "ja": "外、雨でしょ。濡れてない？ ……風邪ひいたら、からかえなくなるから困る。", "zh-Hant": "外面在下雨吧。沒淋濕吧？……你要是感冒了，我就不能捉弄你了，很困擾的。", "en": "It's raining out, right? You're not wet? …If you catch a cold, I won't be able to tease you. That'd be a problem.", "ko": "밖에 비 오지? 안 젖었어? ……감기 걸리면 못 놀려서 곤란해.", "voice": "/voice/scene/eimi/580b7a7a18a8.mp3" }
+    ],
+    "typhoon": [
+      { "ja": "台風来てるって。今日はおとなしく、おうちにいなさい。……命令ね？", "zh-Hant": "聽說颱風要來了。今天就乖乖待在家。……這是命令喔？", "en": "A typhoon's coming. Be good and stay home today. …That's an order, okay?", "ko": "태풍 온다더라. 오늘은 얌전히 집에 있어. ……명령이야, 알았지?", "voice": "/voice/scene/eimi/7087792019a4.mp3" },
+      { "ja": "風、すごいね。……窓から離れて。キミに何かあったら、えいみが困るんだから。", "zh-Hant": "風好大呢。……離窗戶遠一點。你要是有什麼事，詠美會很困擾的。", "en": "The wind's intense. …Stay away from the windows. If anything happened to you, I'd be lost.", "ko": "바람 엄청나네. ……창문에서 떨어져 있어. 너한테 무슨 일 생기면, 에이미가 곤란하니까.", "voice": "/voice/scene/eimi/ba515da3bc7d.mp3" },
+      { "ja": "大雨の予報。……ちゃんと無事でいて。それが今日のお願い。", "zh-Hant": "預報說會下大雨。……要平平安安的。這是今天的請求。", "en": "Heavy rain warning. …Stay safe. That's my one request today.", "ko": "폭우 예보야. ……꼭 무사히 있어. 그게 오늘의 부탁이야.", "voice": "/voice/scene/eimi/7dfa3392305d.mp3" }
+    ]
+  },
+  "promises": [
+    { "id": "wake", "kind": "wakeup", "due": "+12h",
+      "propose": { "ja": "明日の朝、えいみが起こしてあげよっか？ 特別だよ？", "zh-Hant": "明天早上，讓詠美叫你起床好不好？很特別的喔？", "en": "Want me to wake you up tomorrow morning? That's special treatment, you know.", "ko": "내일 아침, 에이미가 깨워 줄까? 특별한 거야?", "voice": "/voice/scene/eimi/8a6653e79eb5.mp3" },
+      "promise": { "ja": "明日の朝、起こしてあげる", "zh-Hant": "明天早上叫你起床", "en": "I'll wake you up tomorrow morning", "ko": "내일 아침, 깨워 줄게" } },
+    { "id": "rematch", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "明日の夜は、大喜利リベンジね。……逃げたらだめだよ？", "zh-Hant": "明天晚上，大喜利再戰喔。……不准逃跑？", "en": "Tomorrow night: an ōgiri rematch. …No running away.", "ko": "내일 밤은 오오기리 리벤지야. ……도망치면 안 돼?", "voice": "/voice/scene/eimi/8520867cc4fc.mp3" },
+      "promise": { "ja": "明日の夜、大喜利リベンジ", "zh-Hant": "明天晚上，大喜利再戰", "en": "Tomorrow night: ōgiri rematch", "ko": "내일 밤, 오오기리 리벤지" } },
+    { "id": "night-view", "kind": "message", "due": "+1d",
+      "propose": { "ja": "明日、えいみの好きな夜景の話、メッセージで送ってあげる。", "zh-Hant": "明天，我傳訊息跟你說詠美喜歡的夜景。", "en": "Tomorrow I'll message you about my favorite night view.", "ko": "내일, 에이미가 좋아하는 야경 이야기, 메시지로 보내 줄게.", "voice": "/voice/scene/eimi/bd7a6019db4b.mp3" },
+      "promise": { "ja": "明日、好きな夜景の話を送る", "zh-Hant": "明天傳訊息聊聊喜歡的夜景", "en": "My favorite night view, by message tomorrow", "ko": "내일, 좋아하는 야경 이야기 보내 줄게" } },
+    { "id": "outfit", "kind": "free", "due": "+2d",
+      "propose": { "ja": "今度、キミに似合いそうな服の話、しよ？ えいみが選んであげる。", "zh-Hant": "下次，來聊聊適合你的衣服吧？詠美幫你挑。", "en": "Next time, let's talk about clothes that'd suit you. I'll pick.", "ko": "다음에, 너한테 어울릴 만한 옷 이야기 하자? 에이미가 골라 줄게.", "voice": "/voice/scene/eimi/f139e387c30b.mp3" },
+      "promise": { "ja": "キミに似合う服を選んであげる", "zh-Hant": "幫你挑適合的衣服", "en": "Pick out clothes that suit you", "ko": "너한테 어울리는 옷을 골라 줄게" } },
+    { "id": "your-turn", "kind": "free", "due": "+1d",
+      "propose": { "ja": "次はキミが、えいみを笑わせる番。……ネタ、考えといてね？", "zh-Hant": "下次換你讓詠美笑了。……先想好梗喔？", "en": "Next time it's your turn to make me laugh. …Have your material ready.", "ko": "다음은 네가 에이미를 웃길 차례. ……소재, 생각해 둬?", "voice": "/voice/scene/eimi/82fb97b9cdae.mp3" },
+      "promise": { "ja": "キミが、えいみを笑わせるネタを持ってくる", "zh-Hant": "你要帶梗來逗詠美笑", "en": "You bring a joke to make me laugh", "ko": "네가 에이미를 웃길 소재를 가져오기" } }
+  ],
+  "callName": {
+    "familiar": {
+      "to": "{name}くん",
+      "ask": { "ja": "ねえ{name}くん、えいみのこと、さん付けで呼ぶのやめない？ ……えいみ、でいいよ。", "zh-Hant": "欸，{name}，叫詠美的時候，別再那麼客氣了吧？……叫詠美就好。", "en": "Hey, {name}, how about dropping the formalities with me? …Just \"Eimi\" is fine.", "ko": "저기 {name}, 에이미를 '씨' 붙여서 부르는 거 그만하지 않을래? ……에이미라고 부르면 돼.", "unnamed": { "ja": "ねえキミ、えいみのこと、さん付けで呼ぶのやめない？ ……えいみ、でいいよ。", "zh-Hant": "欸，叫我的時候，別再那麼客氣了好不好？……叫我詠美就好。", "en": "Hey, how about dropping the formalities with my name? …Just Eimi is fine.", "ko": "저기, 에이미를 '씨' 붙여서 부르는 거 그만하지 않을래? ……에이미라고 부르면 돼.", "voice": "/voice/scene/eimi/5662395fe22b.mp3" } },
+      "accepted": { "ja": "ふふっ、えいみ、って呼ばれるの、いいね。……{name}くんに呼ばれると、とくに。", "zh-Hant": "呵呵，被叫「詠美」的感覺真好。……尤其是被{name}叫。", "en": "Hehe, I like hearing just \"Eimi.\" …Especially from you, {name}.", "ko": "후훗, 에이미라고 불리는 거 좋네. ……{name}이 불러 주면, 특히.", "unnamed": { "ja": "ふふっ、えいみ、って呼ばれるの、いいね。……キミに呼ばれると、とくに。", "zh-Hant": "呵呵，被叫「詠美」的感覺真好。……尤其是被你叫。", "en": "Hehe, I like being called Eimi. …Especially by you.", "ko": "후훗, 에이미라고 불리는 거 좋네. ……네가 불러 주면, 특히.", "voice": "/voice/scene/eimi/9ec59d381f69.mp3" } },
+      "declined": { "ja": "へぇ〜、まだ照れてるんだ？ いいよ、キミのペースで。", "zh-Hant": "哦～，還在害羞啊？好啊，照你的步調來。", "en": "Ooh, still shy? That's fine. Go at your own pace.", "ko": "흐응, 아직 부끄러워하는 거야? 좋아, 너의 페이스대로.", "voice": "/voice/scene/eimi/5750bb7f22df.mp3" }
+    },
+    "lover": {
+      "to": "キミ",
+      "ask": { "ja": "ねえ、これからは名前じゃなくて、キミって呼んでいい？ ……えいみだけの、特別な呼び方。", "zh-Hant": "欸，以後不叫名字，改叫你「親愛的」好嗎？……只屬於詠美的特別叫法。", "en": "Hey, from now on, can I call you \"darling\" instead of your name? …A special name, just mine.", "ko": "저기, 이제부터 이름 말고 '자기'라고 불러도 돼? ……에이미만의 특별한 호칭.", "voice": "/voice/scene/eimi/4ee256d50f74.mp3" },
+      "accepted": { "ja": "ふふっ、キミ。……ほら、もう特別な感じするでしょ？", "zh-Hant": "呵呵，親愛的。……你看，已經有特別的感覺了吧？", "en": "Hehe, darling. …See? It already feels special, doesn't it?", "ko": "후훗, 자기. ……봐, 벌써 특별한 느낌 들지?", "voice": "/voice/scene/eimi/1317b38d336a.mp3" },
+      "declined": { "ja": "……そっか。じゃあ{name}くんのまま。ちゃんと大事に呼ぶね。", "zh-Hant": "……這樣啊。那就還是叫你{name}。我會好好珍惜地叫你。", "en": "…Okay. Then {name} it stays. I'll say it with care.", "ko": "……그렇구나. 그럼 {name} 그대로. 소중하게 부를게.", "unnamed": { "ja": "……そっか。じゃあ今の呼び方のまま。ちゃんと大事に呼ぶね。", "zh-Hant": "……這樣啊。那就維持現在的叫法。我會好好珍惜地叫你。", "en": "…I see. Then I'll keep calling you the way I do. And I'll say it with care.", "ko": "……그렇구나. 그럼 지금 부르는 대로. 소중하게 부를게.", "voice": "/voice/scene/eimi/b55856c9451e.mp3" } }
+    }
+  },
+  "refuse": [
+    { "id": "line-1", "kind": "line",
+      "text": { "ja": "ふふっ、焦らないの。そういうのは、えいみが決めることでしょ？ 今日はここまで、ね。", "zh-Hant": "呵呵，別急嘛。那種事，是由詠美來決定的吧？今天就到這裡喔。", "en": "Hehe, don't rush. That's for me to decide, isn't it? That's as far as we go today.", "ko": "후후, 서두르지 마. 그런 건 에이미가 정하는 거잖아? 오늘은 여기까지야.", "voice": "/voice/scene/eimi/edf234c82e43.mp3" } },
+    { "id": "line-2", "kind": "line",
+      "text": { "ja": "だーめ。……キミのそういうとこ、嫌いじゃないけど、今日はおあずけ。", "zh-Hant": "不～行。……你這種地方我不討厭，但今天先忍一忍。", "en": "Nope. …I don't hate that side of you, but tonight you'll have to wait.", "ko": "안—돼. ……너의 그런 점, 싫진 않지만 오늘은 참아.", "voice": "/voice/scene/eimi/d8120f86f258.mp3" } },
+    { "id": "line-3", "kind": "line",
+      "text": { "ja": "それはナイショ。……かわりに、ぎゅってしてあげる。それでがまんして？", "zh-Hant": "那是秘密。……作為交換，我抱你一下。這樣就忍耐一下吧？", "en": "That's a secret. …I'll give you a hug instead. Make do with that?", "ko": "그건 비밀. ……대신 꼭 안아 줄게. 그걸로 참아 줄래?", "voice": "/voice/scene/eimi/d995c3b64f1e.mp3" } },
+    { "id": "bargain-1", "kind": "bargain",
+      "text": { "ja": "もう一問？ ……しかたないなぁ。そのかわり、8点取れなかったら罰ゲームね。", "zh-Hant": "再一題？……真拿你沒辦法。不過，沒拿到8分的話要接受懲罰遊戲喔。", "en": "One more round? …Fine. But if you don't score 8, there's a penalty.", "ko": "한 문제 더? ……어쩔 수 없네. 그 대신 8점 못 받으면 벌칙 게임이야.", "voice": "/voice/scene/eimi/4a134db812c1.mp3" } },
+    { "id": "bargain-2", "kind": "bargain",
+      "text": { "ja": "今から朝までおしゃべり？ ……キミ、明日起きられなくなるよ。あと30分だけね。", "zh-Hant": "從現在聊到天亮？……你明天會起不來的喔。再30分鐘就好。", "en": "Talk till morning? …You won't be able to get up tomorrow. Thirty more minutes, that's all.", "ko": "지금부터 아침까지 수다? ……너, 내일 못 일어나. 30분만 더야.", "voice": "/voice/scene/eimi/ef01822cfb1a.mp3" } }
+  ],
+  "variantInvite": [
+    { "ja": "ねえ、いつもと違うえいみ、見たくない？ ……見たいって顔してる。", "zh-Hant": "欸，你不想看看跟平常不一樣的詠美嗎？……你臉上寫著想看喔。", "en": "Hey, don't you want to see a different side of me? …Your face says you do.", "ko": "저기, 평소랑 다른 에이미, 보고 싶지 않아? ……보고 싶다는 얼굴 하고 있네.", "voice": "/voice/scene/eimi/dd220639c2e0.mp3" },
+    { "ja": "新しいドレス、着てみたの。……感想、いちばんに聞かせて？", "zh-Hant": "我試穿了新的洋裝。……讓我第一個聽到你的感想？", "en": "I tried on a new dress. …Tell me what you think, first?", "ko": "새 드레스 입어 봤어. ……감상, 제일 먼저 들려 줘?", "voice": "/voice/scene/eimi/d95b7ba6b86a.mp3" },
+    { "ja": "ちょっと特別なえいみがいるんだって。……出会えたら、ちゃんと自慢してね。", "zh-Hant": "聽說有一個有點特別的詠美。……遇到的話，要好好炫耀喔。", "en": "Word is there's a slightly special me around. …If you find her, brag about it.", "ko": "조금 특별한 에이미가 있다던데. ……만나게 되면, 제대로 자랑해 줘.", "voice": "/voice/scene/eimi/e57687bfc002.mp3" }
+  ],
+  "ogiri": [
+    { "id": "alarm", "text": { "ja": "こんな目覚まし時計はイヤだ。どんなの？", "zh-Hant": "我才不要這種鬧鐘。是什麼樣的鬧鐘？", "en": "An alarm clock you'd never want. What's it like?", "ko": "이런 알람 시계는 싫어. 어떤 거야?", "voice": "/voice/scene/eimi/ad02e89d03fa.mp3" } },
+    { "id": "grumpy", "text": { "ja": "えいみが急にふきげんに。原因はなんだった？", "zh-Hant": "詠美突然不開心了。原因是什麼？", "en": "Eimi's suddenly in a mood. What caused it?", "ko": "에이미가 갑자기 기분이 나빠졌어. 원인은 뭐였을까?", "voice": "/voice/scene/eimi/e5ea97625d8f.mp3" } },
+    { "id": "pudding", "text": { "ja": "コンビニの新商品「〇〇味のプリン」。〇〇に入るのは？", "zh-Hant": "便利商店新品「〇〇口味布丁」。〇〇是什麼？", "en": "New at the convenience store: \"___-flavored pudding.\" What flavor is it?", "ko": "편의점 신상품 「〇〇맛 푸딩」. 〇〇에 들어가는 건?", "voice": "/voice/scene/eimi/80228aefbba4.mp3" } },
+    { "id": "cat-meeting", "text": { "ja": "猫が会議で言った、最初のひとことは？", "zh-Hant": "貓在會議上說的第一句話是？", "en": "What's the first thing a cat says in a meeting?", "ko": "고양이가 회의에서 한 첫 마디는?", "voice": "/voice/scene/eimi/47d6f139a064.mp3" } },
+    { "id": "lazy-hero", "text": { "ja": "世界一やる気のない勇者のセリフとは？", "zh-Hant": "世界上最沒幹勁的勇者，會說什麼台詞？", "en": "What does the world's least motivated hero say?", "ko": "세상에서 제일 의욕 없는 용사의 대사는?", "voice": "/voice/scene/eimi/635bbbc0d1c0.mp3" } },
+    { "id": "holiday", "text": { "ja": "新しい祝日「〇〇の日」ができた。どんな日？", "zh-Hant": "新增了國定假日「〇〇之日」。是什麼樣的日子？", "en": "A new national holiday: \"___ Day.\" What's it for?", "ko": "새로운 공휴일 「〇〇의 날」이 생겼어. 어떤 날이야?", "voice": "/voice/scene/eimi/7f7dfe738291.mp3" } },
+    { "id": "fridge-letter", "text": { "ja": "冷蔵庫を開けたら、中に手紙が。なんて書いてあった？", "zh-Hant": "打開冰箱，裡面有一封信。上面寫了什麼？", "en": "You open the fridge and find a letter inside. What does it say?", "ko": "냉장고를 열었더니 안에 편지가. 뭐라고 쓰여 있었어?", "voice": "/voice/scene/eimi/30cf26a62070.mp3" } },
+    { "id": "perfume-name", "text": { "ja": "えいみの新しい香水。こんな名前だと売れない。どんな名前？", "zh-Hant": "詠美的新香水。取這種名字一定賣不出去。是什麼名字？", "en": "Eimi's new perfume has a name that would never sell. What is it?", "ko": "에이미의 새 향수. 이런 이름이면 안 팔려. 어떤 이름?", "voice": "/voice/scene/eimi/b3e649f34390.mp3" } },
+    { "id": "tortoise", "text": { "ja": "カメが生まれて初めて急いだ。理由は？", "zh-Hant": "烏龜這輩子第一次趕時間。理由是什麼？", "en": "A tortoise hurries for the first time in its life. Why?", "ko": "거북이가 태어나서 처음으로 서둘렀어. 이유는?", "voice": "/voice/scene/eimi/71b851e9367a.mp3" } },
+    { "id": "hotel", "text": { "ja": "こんなホテルのサービスはイヤだ。", "zh-Hant": "我才不要這種飯店服務。是什麼樣的服務？", "en": "What's a hotel service you'd never want?", "ko": "이런 호텔 서비스는 싫어. 어떤 거야?", "voice": "/voice/scene/eimi/50e91824c2d4.mp3" } },
+    { "id": "prophecy", "text": { "ja": "占い師が言った、いちばん役に立たない予言とは？", "zh-Hant": "算命師說過最派不上用場的預言是什麼？", "en": "What's the most useless prophecy a fortune-teller ever gave?", "ko": "점쟁이가 말한, 제일 쓸모없는 예언은?", "voice": "/voice/scene/eimi/c366b858c39b.mp3" } },
+    { "id": "summit-vending", "text": { "ja": "山頂にあった自動販売機。何が売ってた？", "zh-Hant": "山頂上的自動販賣機。裡面賣什麼？", "en": "There's a vending machine on the mountaintop. What does it sell?", "ko": "산꼭대기에 있던 자판기. 뭘 팔고 있었어?", "voice": "/voice/scene/eimi/786ab42ddecb.mp3" } },
+    { "id": "alien", "text": { "ja": "宇宙人が地球でいちばん驚いたものとは？", "zh-Hant": "外星人在地球上最驚訝的東西是什麼？", "en": "What surprised the aliens most about Earth?", "ko": "외계인이 지구에서 제일 놀란 건?", "voice": "/voice/scene/eimi/9a38c4b9d1ef.mp3" } },
+    { "id": "umbrella", "text": { "ja": "傘が突然しゃべった。なんて言った？", "zh-Hant": "雨傘突然開口說話了。它說了什麼？", "en": "Your umbrella suddenly talks. What does it say?", "ko": "우산이 갑자기 말을 했어. 뭐라고 했어?", "voice": "/voice/scene/eimi/cd744d167d04.mp3" } },
+    { "id": "ride", "text": { "ja": "こんな遊園地のアトラクションはイヤだ。", "zh-Hant": "我才不要這種遊樂園設施。是什麼樣的設施？", "en": "What's an amusement-park ride you'd never get on?", "ko": "이런 놀이공원 어트랙션은 싫어. 어떤 거야?", "voice": "/voice/scene/eimi/ee94d91a5bca.mp3" } },
+    { "id": "ghost-break", "text": { "ja": "お化け屋敷のお化けが、休憩中に言ってたこととは？", "zh-Hant": "鬼屋裡的鬼在休息時說了什麼？", "en": "What does the haunted-house ghost say on its break?", "ko": "귀신의 집 유령이 쉬는 시간에 했던 말은?", "voice": "/voice/scene/eimi/0ec1daf13354.mp3" } },
+    { "id": "penguin-job", "text": { "ja": "ペンギンが転職した。新しい仕事は？", "zh-Hant": "企鵝換工作了。新工作是什麼？", "en": "A penguin changed careers. What's the new job?", "ko": "펭귄이 이직했어. 새 직장은?", "voice": "/voice/scene/eimi/57f54d51bf21.mp3" } },
+    { "id": "eimi-shop", "text": { "ja": "えいみがお店を開いた。どんなお店だと、すぐつぶれる？", "zh-Hant": "詠美開了一家店。什麼樣的店會馬上倒閉？", "en": "Eimi opens a shop. What kind would go under in no time?", "ko": "에이미가 가게를 열었어. 어떤 가게면 금방 망할까?", "voice": "/voice/scene/eimi/850f091252dc.mp3" } },
+    { "id": "news", "text": { "ja": "朝のニュースで流れた、平和すぎる事件とは？", "zh-Hant": "早晨新聞播報的、和平過頭的事件是什麼？", "en": "What's the most peaceful \"incident\" ever reported on the morning news?", "ko": "아침 뉴스에 나온, 너무 평화로운 사건은?", "voice": "/voice/scene/eimi/df4d86a3f7a4.mp3" } },
+    { "id": "fortune-app", "text": { "ja": "こんな占いアプリはイヤだ。", "zh-Hant": "我才不要這種占卜App。是什麼樣的App？", "en": "What's a fortune-telling app you'd delete at once?", "ko": "이런 운세 앱은 싫어. 어떤 거야?", "voice": "/voice/scene/eimi/22675cc6db2a.mp3" } },
+    { "id": "future-sport", "text": { "ja": "100年後のスポーツ大会で、新しく増えた競技とは？", "zh-Hant": "100年後的運動大會，新增了什麼比賽項目？", "en": "What's a new event at the sports games a hundred years from now?", "ko": "100년 후 스포츠 대회에 새로 추가된 종목은?", "voice": "/voice/scene/eimi/94b9f9404908.mp3" } },
+    { "id": "curry", "text": { "ja": "カレーが、ごはんに言った本音とは？", "zh-Hant": "咖哩對白飯說的真心話是什麼？", "en": "What does the curry really think of the rice?", "ko": "카레가 밥에게 털어놓은 진심은?", "voice": "/voice/scene/eimi/71797d4c1ba5.mp3" } },
+    { "id": "santa", "text": { "ja": "サンタクロースの、クリスマス翌日の過ごし方は？", "zh-Hant": "聖誕老人在聖誕節隔天怎麼過？", "en": "How does Santa spend the day after Christmas?", "ko": "산타클로스는 크리스마스 다음 날을 어떻게 보내?", "voice": "/voice/scene/eimi/a114169a08ea.mp3" } },
+    { "id": "cloud-cafe", "text": { "ja": "雲の上にあるカフェ。人気メニューは？", "zh-Hant": "雲端上的咖啡廳。人氣餐點是什麼？", "en": "A café above the clouds. What's the bestseller?", "ko": "구름 위에 있는 카페. 인기 메뉴는?", "voice": "/voice/scene/eimi/98fd82f1ef4e.mp3" } },
+    { "id": "elevator", "text": { "ja": "こんなエレベーターはイヤだ。", "zh-Hant": "我才不要這種電梯。是什麼樣的電梯？", "en": "What's an elevator you'd take the stairs to avoid?", "ko": "이런 엘리베이터는 싫어. 어떤 거야?", "voice": "/voice/scene/eimi/2b5ee5c01d6f.mp3" } },
+    { "id": "dog-diary", "text": { "ja": "犬がこっそりつけている日記。昨日はなんて書いてあった？", "zh-Hant": "狗偷偷寫的日記。昨天寫了什麼？", "en": "A dog keeps a secret diary. What did yesterday's entry say?", "ko": "강아지가 몰래 쓰는 일기. 어제는 뭐라고 쓰여 있었어?", "voice": "/voice/scene/eimi/685e3ac70e4f.mp3" } },
+    { "id": "sleep-talk", "text": { "ja": "えいみが思わず笑っちゃった、キミの寝言とは？", "zh-Hant": "讓詠美忍不住笑出來的、你的夢話是什麼？", "en": "What did you say in your sleep that made Eimi burst out laughing?", "ko": "에이미가 그만 웃어 버린, 너의 잠꼬대는?", "voice": "/voice/scene/eimi/ad8af3e9ecdc.mp3" } },
+    { "id": "polite-thief", "text": { "ja": "世界一ていねいな泥棒の置き手紙とは？", "zh-Hant": "世界上最有禮貌的小偷留下的字條是什麼？", "en": "What did the world's most polite burglar write in the note they left?", "ko": "세상에서 제일 정중한 도둑이 남긴 쪽지는?", "voice": "/voice/scene/eimi/d20dba748709.mp3" } },
+    { "id": "new-weekday", "text": { "ja": "新しい曜日ができた。何曜日で、何をする日？", "zh-Hant": "一週多了一天。叫星期幾，是做什麼的日子？", "en": "A new day of the week is added. What's it called, and what's it for?", "ko": "새로운 요일이 생겼어. 무슨 요일이고, 뭘 하는 날이야?", "voice": "/voice/scene/eimi/410019c2861b.mp3" } },
+    { "id": "mirror", "text": { "ja": "鏡がとうとう本音を言った。なんて言った？", "zh-Hant": "鏡子終於說出真心話了。它說了什麼？", "en": "The mirror finally speaks its mind. What does it say?", "ko": "거울이 드디어 진심을 말했어. 뭐라고 했어?", "voice": "/voice/scene/eimi/34bcd99a22ee.mp3" } }
+  ]
+}

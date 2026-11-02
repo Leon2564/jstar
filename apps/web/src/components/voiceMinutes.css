@@ -1,0 +1,10 @@
+/* Voice minutes (#74): the meter chip and My page's panel. The sheet borrows gift.css. */
+.voice-meter { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 0 10px; border: 0; font-size: 12px; white-space: nowrap; cursor: pointer; }
+/* In her room it is one of the chips under her name (N-01), dressed like them. */
+.rewards .voice-meter { min-height: 34px; border: 1px solid var(--iv-line); font-size: 12px; }
+.voice-meter.low { box-shadow: 0 0 0 1px var(--rose) inset; }
+.voice-today { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px; }
+.scn-voice-out { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+/* In a scene (A2): a hint strip on the night, its button a hairline (scene.css dresses the meter). */
+.scn-voice-out button { min-height: var(--tap); padding: 0 12px; border-radius: var(--r-sharp); border: var(--hairline) solid var(--iv-line); background: transparent; color: inherit; font: var(--fs-meta) var(--serif); letter-spacing: 0.08em; }
+.scn-voice-out { margin: 0; padding: 4px 12px; border-left: 2px solid var(--rose); background: rgba(var(--nd), 0.72); font: var(--fs-meta) var(--serif); letter-spacing: 0.06em; }

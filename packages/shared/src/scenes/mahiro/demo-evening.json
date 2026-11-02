@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "id": "demo-evening",
+    "star": "mahiro",
+    "title": { "ja": "おかえりの夜", "zh-Hant": "歡迎回家的夜晚", "en": "A Night Back Home", "ko": "돌아온 밤" },
+    "trigger": { "slots": ["morning", "day", "evening", "night"] },
+    "idle": "mahiro-hero",
+    "audio": { "bgm": "bgm/home-evening" },
+    "demo": true
+  },
+  "steps": [
+    { "id": "wide", "type": "clip", "shot": "wide", "media": "mahiro-hero", "hold": 1.5 },
+    { "id": "hello", "type": "line", "voice": "/voice/greet/mahiro-evening.mp3",
+      "text": { "ja": "おかえりなさい。今日もおつかれさま。", "zh-Hant": "歡迎回來。今天也辛苦了。", "en": "Welcome home. You worked hard today.", "ko": "어서 와. 오늘도 수고했어." } },
+    { "id": "ask", "type": "choice", "timeout": 45, "onTimeout": "quiet",
+      "prompt": { "ja": "なんて答える？", "zh-Hant": "要怎麼回她？", "en": "What do you say?", "ko": "뭐라고 답할까?" },
+      "options": [
+        { "id": "missed", "next": "missed", "effect": { "affinity": 5 },
+          "label": { "ja": "ただいま。会いたかった", "zh-Hant": "我回來了。好想妳", "en": "I'm home. I missed you.", "ko": "다녀왔어. 보고 싶었어" } },
+        { "id": "tired", "next": "tired", "effect": { "affinity": 3 },
+          "label": { "ja": "今日はちょっと疲れた", "zh-Hant": "今天有點累了", "en": "I'm a little tired today.", "ko": "오늘은 좀 피곤해" } }
+      ] },
+    { "id": "missed", "type": "line", "voice": "/voice/scene/mahiro/e97080eebaf3.mp3", "next": "away",
+      "text": { "ja": "……ふふ、わたしも。ずっと待ってたんだよ。", "zh-Hant": "……呵呵，我也是。我一直在等你喔。", "en": "…Heh, me too. I've been waiting for you.", "ko": "……후후, 나도. 계속 기다리고 있었어." } },
+    { "id": "tired", "type": "line", "voice": "/voice/scene/mahiro/b5ba407ffba4.mp3", "next": "away",
+      "text": { "ja": "そっか。じゃあ今夜は、わたしが甘やかしてあげる。", "zh-Hant": "這樣啊。那今晚就讓我來寵你吧。", "en": "I see. Then tonight, let me spoil you.", "ko": "그렇구나. 그럼 오늘 밤은, 내가 응석 다 받아 줄게." } },
+    { "id": "quiet", "type": "line", "voice": "/voice/scene/mahiro/3331c3e990ff.mp3",
+      "text": { "ja": "……言葉がなくても、いいよ。隣にいてくれるなら。", "zh-Hant": "……不說話也沒關係。只要你在我身邊。", "en": "…You don't have to say anything. Just stay next to me.", "ko": "……말하지 않아도 괜찮아. 옆에 있어 주기만 하면." } },
+    { "id": "away", "type": "line", "voice": "/voice/scene/mahiro/9b348e787efb.mp3",
+      "text": { "ja": "ちょっと待ってて。すぐ戻るね。", "zh-Hant": "等我一下。馬上回來喔。", "en": "Wait a moment. I'll be right back.", "ko": "잠깐만 기다려. 금방 돌아올게." } },
+    { "id": "empty", "type": "clip", "shot": "empty", "media": "mahiro-night", "hold": 2.5 },
+    { "id": "close", "type": "clip", "shot": "close", "media": "mahiro-breath", "hold": 1 },
+    { "id": "late", "type": "line", "voice": "/voice/greet/mahiro-night.mp3",
+      "text": { "ja": "もうこんな時間。……もう少しだけ、一緒にいてもいい？", "zh-Hant": "已經這麼晚了。……可以再陪我一下下嗎？", "en": "It's this late already. …Can I stay with you a little longer?", "ko": "벌써 이런 시간이네. ……조금만 더, 같이 있어도 돼?" } },
+    { "id": "talk", "type": "input", "mode": "free", "timeout": 90, "next": "thanks", "onTimeout": "sleepy",
+      "prompt": { "ja": "今日あったこと、聞かせて", "zh-Hant": "跟我說說今天發生的事吧", "en": "Tell me about your day.", "ko": "오늘 있었던 일, 들려줘" },
+      "jumps": [
+        { "to": "sleepy", "hint": "He says he is sleepy, worn out or wants to go to bed now.",
+          "words": ["眠い", "ねむい", "眠たい", "寝たい", "もう寝る", "sleepy", "go to bed", "想睡", "好睏", "睏了"] }
+      ] },
+    { "id": "thanks", "type": "line", "voice": "/voice/scene/mahiro/a86a750e97b1.mp3", "next": "reward",
+      "text": { "ja": "……聞かせてくれて、ありがとう。今夜のこと、ちゃんと覚えておくね。", "zh-Hant": "……謝謝你跟我說。今晚的事，我會好好記住的。", "en": "…Thank you for telling me. I'll remember tonight.", "ko": "……이야기해 줘서 고마워. 오늘 밤 일, 잘 기억해 둘게." } },
+    { "id": "sleepy", "type": "line", "voice": "/voice/scene/mahiro/90f1f004f0d0.mp3",
+      "text": { "ja": "眠くなっちゃった？ ……じゃあ、今夜はこのままで。", "zh-Hant": "想睡了嗎？……那今晚就這樣待著吧。", "en": "Getting sleepy? …Then let's just stay like this tonight.", "ko": "졸려졌어? ……그럼 오늘 밤은 이대로 있자." } },
+    { "id": "reward", "type": "effect", "affinity": 10,
+      "memory": { "title": { "ja": "おかえりの夜", "zh-Hant": "歡迎回家的夜晚", "en": "A Night Back Home", "ko": "돌아온 밤" } },
+      "promise": { "due": "+1d", "text": { "ja": "明日も、ここで待ってるね", "zh-Hant": "明天我也會在這裡等你", "en": "I'll be waiting here tomorrow too.", "ko": "내일도, 여기서 기다릴게" } } },
+    { "id": "bye", "type": "line", "voice": "/voice/greet/mahiro-levelup.mp3",
+      "text": { "ja": "また少し、仲良くなれたね。これからもよろしくね。", "zh-Hant": "我們又更親近了一點呢。今後也請多指教。", "en": "We got a little closer again. Let's keep going together.", "ko": "또 조금 친해졌네. 앞으로도 잘 부탁해." } },
+    { "id": "end", "type": "end", "outcome": "complete" }
+  ]
+}

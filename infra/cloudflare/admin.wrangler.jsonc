@@ -1,0 +1,19 @@
+// admin.jstarcards.ai: admin console static build behind Basic auth (ADMIN_PASSWORD).
+// Deploy jstar-web first; this binds to its AdminGateway. workers.dev stays off so the password is the only door.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "jstar-admin",
+  "main": "src/admin.ts",
+  "compatibility_date": "2026-09-20",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "admin.jstarcards.ai", "custom_domain": true }],
+  "assets": {
+    "directory": "../../apps/admin/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "services": [{ "binding": "APP", "service": "jstar-web", "entrypoint": "AdminGateway" }],
+  "observability": { "enabled": true }
+}

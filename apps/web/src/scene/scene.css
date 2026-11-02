@@ -1,0 +1,196 @@
+/* Scene player (#64) in A2「夜畫廊」 (docs/design-system.md), laid out as her room's B「電影字幕」: the same film. Three
+   bands that never meet her face: the top band (✕, ✦ the title, her voice time, CC; the countdown and notes under it),
+   her picture, and the subtitle band at the foot (his line, her words in ivory serif, his numbered choices on
+   hairlines, the hairline input), which brings its own night. Tokens and system components (system.css) only.
+   Kept terse: every CSS file counts against the CSS budget (tests/e2e/perf.spec.ts). */
+.scn { --top: max(6px, env(safe-area-inset-top)); --band: 56px; --gut: 20px; --fs-sub: 19px; --lh-sub: 1.8; --measure: calc(100vw - 2 * var(--gut)); --fade: 76px; --veil: 128px;
+  position: fixed; inset: 0; z-index: 20; overflow: hidden; background: var(--navy-deep); color: var(--ivory); }
+@media (min-width: 600px) { .scn { --gut: 24px; --fs-sub: 20px; --measure: min(calc(100vw - 2 * var(--gut)), 680px); --fade: 56px; } }
+.scn-stage, .scn-layer, .scn-media, .scn-scrim, .scn-tap, .scn-end, .scn-card-art { position: absolute; inset: 0; }
+/* Hard cuts: a layer is on screen or not, never a dissolve (two takes blended read as a glitch). */
+.scn-layer { visibility: hidden; }
+.scn-layer.on { visibility: visible; }
+.scn-media { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+/* M13: a 9:16 shot on a wide screen is shown whole, between soft bars of itself — never blown up past her head. */
+@media (orientation: landscape) {
+  .scn-layer[data-ratio="9:16"] .scn-media, .scn-lipsync[data-src*="-9x16/"] .scn-media { object-fit: contain; object-position: 50% 50%; }
+  .scn-layer[data-ratio="9:16"]::before { content: ''; position: absolute; inset: -48px; background: var(--still) 50% 30% / cover; filter: blur(32px) brightness(0.5); }
+}
+/* The poster is the first frame: the video shows only once it really plays, so iOS never flashes black. */
+.scn-video { opacity: 0; }
+.is-playing .scn-video { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  /* A slow push-in on close shots; never under reduced motion. */
+  .scn[data-shot="close"] .on .scn-media { animation: scn-push 18s var(--ease) both; }
+  .scn-wave.on i { animation: scn-wave 0.9s ease-in-out infinite; }
+  .scn-wave.on i:nth-child(even) { animation-delay: 0.3s; }
+  .scn-card { animation: scn-card 0.9s var(--ease) both; }
+}
+@keyframes scn-push { to { transform: scale(1.07); } }
+@keyframes scn-wave { 50% { height: 10px; } }
+@keyframes scn-card { from { opacity: 0; transform: translateY(16px); } }
+@keyframes scn-float { 15%, 75% { opacity: 1; transform: none; } from, to { opacity: 0; transform: translateY(8px); } }
+
+/* The night: a veil under the top band only (it ends above her brow); the subtitle band brings its own. */
+.scn-scrim { pointer-events: none; background: linear-gradient(180deg, rgba(var(--nd), 0.82) 0, rgba(var(--nd), 0.5) calc(var(--veil) * 0.45), rgba(var(--nd), 0) var(--veil)); }
+.scn-tap { z-index: 1; background: none; border: 0; }
+.scn p, .scn h1, .scn h2 { text-shadow: 0 1px 6px rgba(var(--nd), 0.5); }
+
+/* ---- the top band */
+.scn-top, .scn-count, .scn-float, .scn-note, .scn-bottom { position: absolute; z-index: 3; }
+.scn-top { top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 4px; padding: var(--top) 8px 0; }
+.scn-top > :not(.scn-title) { flex: none; }
+/* A long title (en, ko, zh-Hant) takes two lines at most and ends in an ellipsis: ✕ and CC stay clear (N-04). */
+.scn-title { margin: 0; flex: 1; min-width: 0; text-align: center; font: 500 15px/1.35 var(--serif); letter-spacing: 0.12em; }
+.scn-title-text { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; }
+/* ✦: the scene's accent, in place of her colour. */
+.scn-title-text::before, .scn-float::before { content: '✦'; margin-right: 0.5em; letter-spacing: 0; color: var(--rose-glow); }
+/* N-22: Japanese and Korean break between phrases only (scene/phrases.tsx puts <wbr> between Japanese ones). */
+.scn-title:lang(ja), .scn-title :lang(ja), .scn-title:lang(ko), .scn-title :lang(ko), .scn-title :lang(zh-Hant), .scn-sub p:lang(ja), .scn-sub p:lang(zh-Hant), .scn-sub p:lang(ko) { word-break: keep-all; }
+@supports (word-break: auto-phrase) { .scn-title :lang(ja), .scn-title:lang(ja), .scn-sub p:lang(ja) { word-break: auto-phrase; } }
+/* L2: on a phone the title takes a row of its own under ✕ and CC, the full width, so a long one (en) is not cut. */
+@media (max-width: 599px) {
+  .scn { --veil: 150px; --band: 96px; }
+  .scn-top { flex-wrap: wrap; row-gap: 0; }
+  /* The rows under the top band (--band) move down by the title's row. */
+  .scn-top > .scn-title { order: 1; flex-basis: 100%; padding: 0 12px; font-size: 14px; letter-spacing: 0.06em; }
+  .scn-top > .scn-icon:first-child { margin-right: auto; }
+}
+.scn-preview { display: block; margin-top: 2px; font-size: var(--fs-meta); letter-spacing: var(--ls-meta); color: var(--rose-glow); }
+/* Hairline icons in a 44 px target: no glass, no circle. */
+.scn-icon { width: var(--tap); height: var(--tap); display: grid; place-items: center; padding: 0; border: 0; border-radius: var(--r-sharp); background: transparent; color: var(--ivory); filter: drop-shadow(0 1px 3px rgba(var(--nd), 0.6)); }
+.scn-cc { font: 500 var(--fs-small) var(--serif); letter-spacing: 0.12em; }
+.scn-cc[aria-pressed="true"] { text-decoration: underline var(--hairline) var(--rose); text-underline-offset: 6px; }
+.scn-cc[aria-pressed="false"] { color: var(--iv-meta); }
+.scn .scn-meter { min-height: var(--tap); padding: 0 6px; border: 0; background: transparent; color: var(--iv-meta); font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: 0.12em; }
+.scn .scn-meter.low { box-shadow: none; color: var(--rose-glow); }
+.scn-count, .scn-note, .scn-float { top: calc(var(--top) + var(--band)); }
+/* Her patience: a meta line over a hairline that shortens, a rose segment on it. */
+.scn-count { left: 50%; transform: translateX(-50%); min-width: 120px; padding-bottom: 6px; text-align: center; font: var(--fs-meta) var(--serif); letter-spacing: var(--ls-meta); color: var(--iv-meta); font-variant-numeric: tabular-nums; border-bottom: var(--hairline) solid var(--iv-hair); white-space: nowrap; }
+.scn-count.second { top: calc(var(--top) + var(--band) + 28px); }
+/* M8: on her stream LIVE holds the left of that row: her patience moves to the right of it. */
+.scn[data-live] .scn-count { left: auto; right: var(--gut); transform: none; min-width: 0; }
+.scn-count i { position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--rose); transform-origin: left; transition: transform 0.25s linear; }
+.scn-float { right: 20px; margin: 0; font: 500 17px var(--serif); letter-spacing: 0.08em; color: var(--rose-glow); animation: scn-float 1.8s both; opacity: 0; }
+.scn-note { left: var(--gut); margin: 0; padding: 6px 12px; border-left: 2px solid var(--rose); background: rgba(var(--nd), 0.72); font: var(--fs-small) var(--serif); letter-spacing: 0.06em; }
+
+/* ---- the subtitle band: his line, her words (centred, ivory serif), the prompt, his choices, the input */
+.scn-bottom { left: calc((100vw - var(--measure)) / 2); width: var(--measure); bottom: calc(env(safe-area-inset-bottom) + 12px); display: flex; flex-direction: column; gap: 10px; isolation: isolate; }
+.scn-bottom::before { content: ''; position: absolute; z-index: -1; pointer-events: none; left: calc((var(--measure) - 100vw) / 2); width: 100vw;
+  top: calc(-1 * var(--fade)); bottom: calc(-1 * (env(safe-area-inset-bottom) + 12px));
+  background: linear-gradient(180deg, rgba(var(--nd), 0) 0, rgba(var(--nd), 0.74) var(--fade), rgba(var(--nd), 0.9) 100%); }
+.scn-bottom:empty::before { display: none; }
+.scn-sub { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; pointer-events: none; }
+/* M4: where her line is measured into pages of three lines (ui.tsx Subtitle): the same box, never seen. */
+.scn-sub .scn-measure { position: absolute; left: 0; right: 0; margin: auto; visibility: hidden; }
+.scn-sub p { margin: 0; max-width: 23em; font: var(--fs-sub)/var(--lh-sub) var(--serif); letter-spacing: 0.06em; text-align: center; white-space: pre-line; text-wrap: pretty;
+  text-shadow: 0 1px 2px rgba(var(--nd), 0.95), 0 0 14px rgba(var(--nd), 0.7); }
+/* She speaks: a small rose wave over her words. */
+.scn-wave { display: flex; align-items: center; gap: 3px; height: 12px; }
+.scn-wave i { width: 2px; height: 3px; border-radius: 1px; background: var(--rose); opacity: 0.5; }
+.scn-wave.on i { opacity: 1; }
+.scn-mine { margin: 0; text-align: center; font: 14px/1.6 var(--serif); letter-spacing: 0.06em; color: var(--iv-meta); }
+.scn-mine::before { content: '— '; }
+.scn .typing.scn-thinking { align-self: center; padding: 8px; background: transparent; }
+.scn .typing i { background: var(--ivory); }
+.scn-prompt { margin: 0; text-align: center; font: 14px/1.6 var(--serif); letter-spacing: 0.08em; color: var(--iv-meta); }
+/* M10 (C-room): the scene getting ready waits in the subtitle band, where her words will be — never on her mouth once her clip paints. */
+.scn-wait { position: absolute; z-index: 3; left: 0; right: 0; bottom: calc(env(safe-area-inset-bottom) + 64px); text-shadow: 0 1px 2px rgba(var(--nd), 0.95), 0 0 14px rgba(var(--nd), 0.7); }
+/* A note to him lands in the top band, never on her words or her face. */
+.scn .toast { top: calc(var(--top) + var(--band) - 6px); bottom: auto; border: var(--hairline) solid var(--iv-hair); background: rgba(var(--nd), 0.86); font-family: var(--serif); letter-spacing: 0.04em; }
+/* His choices: numbered double-rule lines (system.css .js-reply), a column on a phone, a row of equals wider. */
+.scn-choices { display: flex; flex-direction: column; gap: 8px; }
+.scn-choices .js-reply, .scn-bottom > .scn-choice { max-width: 100%; min-width: 0; height: auto; min-height: var(--tap); padding-block: 8px; white-space: normal; text-align: left; line-height: 1.4; }
+.scn-choices .js-reply { justify-content: flex-start; }
+.scn-choices .js-reply kbd { flex: none; width: 20px; font-size: var(--fs-meta); }
+@media (min-width: 600px) { .scn-choices { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 10px; } }
+/* The hairline input: a bottom line, the mic and the send arrow as hairline icons. */
+.scn-input { display: flex; align-items: center; gap: 2px; border-bottom: var(--hairline) solid var(--iv-line); }
+.scn-input:focus-within { border-bottom-color: var(--ivory); }
+/* 16px keeps iOS from zooming into the field. */
+.scn-input input { flex: 1; min-width: 0; height: var(--tap); padding: 0 6px; border: 0; outline: 0; background: none; color: var(--ivory); font: 16px var(--sans); letter-spacing: var(--ls-line); }
+.scn-input input::placeholder { color: var(--iv-meta); }
+.scn-mic, .scn-send { flex: none; width: var(--tap); height: var(--tap); display: grid; place-items: center; padding: 0; border: 0; background: none; color: var(--ivory); }
+.scn-send { color: var(--rose-glow); }
+.scn-send:disabled { color: var(--iv-line); }
+/* Her confession (#55): his choice to keep the recording of his answer, off unless he ticks it. */
+.scn-keep { display: flex; align-items: flex-start; gap: 10px; padding: 10px 14px; border: var(--hairline) solid var(--iv-hair); border-radius: var(--r-sharp); background: rgba(var(--nd), 0.6); font-size: 14px; line-height: 1.5; }
+.scn-keep input { width: 20px; height: 20px; margin: 1px 0 0; flex: none; accent-color: var(--rose); }
+.scn-keep small { display: block; font-size: var(--fs-meta); color: var(--iv-meta); }
+
+/* ---- the end: the memory card on the night, a double-rule print; the shot the evening ended on is its picture */
+.scn-end { z-index: 4; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; text-align: center;
+  background: linear-gradient(180deg, rgba(var(--nd), 0.7), rgba(var(--nd), 0.9)); }
+.scn-end p, .scn-end h2 { margin: 0; }
+.scn-end .small { font-size: var(--fs-small); color: var(--iv-meta); }
+.scn-card { position: relative; overflow: hidden; width: min(280px, 76vw); aspect-ratio: 3 / 4; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; padding: 22px;
+  border: var(--hairline) solid var(--iv-line); border-radius: var(--r-sharp); text-align: left; background: var(--night); box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45); }
+.scn-card::after { content: ''; position: absolute; inset: 4px; border: var(--hairline) solid var(--iv-hair); pointer-events: none; }
+.scn-card > :not(.scn-card-art) { position: relative; }
+.scn-card-art { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; -webkit-mask-image: linear-gradient(#000 45%, transparent 85%); mask-image: linear-gradient(#000 45%, transparent 85%); }
+.scn-card h2 { font-size: 22px; font-weight: 500; letter-spacing: 0.08em; }
+.scn-card-tag { font: var(--fs-meta) var(--serif); letter-spacing: var(--ls-label); color: var(--rose-glow); }
+.scn-card-tag::before { content: '✦ '; }
+.scn-card .tiny { color: var(--iv-meta); letter-spacing: 0.08em; }
+.scn-end-msg { max-width: 420px; font-size: 19px; line-height: 1.7; }
+/* A label never breaks inside a word (ko 「방으로 돌아가기」, N-13): too long for one row, the buttons stack. */
+.scn-end-actions { display: flex; flex-wrap: wrap; gap: 10px; width: min(360px, 100%); }
+.scn-end-actions > * { flex: 1 1 auto; white-space: nowrap; word-break: keep-all; }
+.scn-end .btn-line { color: var(--ivory); border-color: var(--iv-line); box-shadow: inset 0 0 0 3px var(--navy-deep), inset 0 0 0 4px var(--iv-hair); }
+.scn-error { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; }
+
+/* うんぱい's stream (#68): LIVE and one viewer, his comments flowing across, 「配信終了」 as she ends it (scene/stream.tsx).
+   His comments run in lanes under her face, never over it: her face box in the stream's clips (unpai-hero / -talk /
+   -idle / -talkclose, Apple Vision on their posters: tools/media/face) ends at 53% of a 9:16 clip and 54% of a 16:9
+   one; with the stage's cover crop (object-position 50% 30%) that is --fb on screen. */
+.scn-live { --ar: 1.7778; --fy: 0.54; --ih: calc(max(100vw, 100dvh * var(--ar)) / var(--ar)); --fb: calc((100dvh - var(--ih)) * 0.3 + var(--fy) * var(--ih));
+  position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+@media (orientation: portrait) { .scn-live { --ar: 0.5625; --fy: 0.53; } }
+.scn-live-badge, .scn-offair { position: absolute; top: calc(var(--top) + var(--band)); left: var(--gut); margin: 0; display: flex; align-items: center; gap: 14px; font: var(--fs-meta) var(--serif); letter-spacing: var(--ls-meta); }
+.scn-live-badge b { font-weight: 500; letter-spacing: var(--ls-label); }
+.scn-live-badge b::before { content: ''; display: inline-block; width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--rose); vertical-align: 1px; }
+.scn-live-badge span { color: var(--iv-meta); }
+.scn-live.ending .scn-live-badge { visibility: hidden; }
+.scn[data-live] .scn-note { top: calc(var(--top) + var(--band) + 30px); }
+.scn-dm { position: absolute; top: calc(var(--fb) + 14px); left: 0; right: 0; height: 96px; margin: 0; padding: 0; list-style: none; }
+.scn-dm li { position: absolute; right: var(--gut); top: calc(var(--row) * 32px); max-width: 70%; font-size: 14px; line-height: 24px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  text-shadow: 0 1px 2px rgba(var(--nd), 0.95), 0 0 10px rgba(var(--nd), 0.8); }
+.scn-dm li.gift { color: var(--rose-glow); }
+.scn-dm li.gift::before { content: '✦ '; }
+@media (prefers-reduced-motion: reduce) {
+  /* Still, the last three only, in the same three lanes. */
+  .scn-dm li:nth-last-child(n+4) { display: none; }
+  .scn-dm li:nth-last-child(1) { top: 64px; } .scn-dm li:nth-last-child(2) { top: 32px; } .scn-dm li:nth-last-child(3) { top: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .scn-dm li { right: auto; left: 100%; top: calc(var(--lane) * 32px); animation: scn-dm 9s linear both; }
+  .scn-live.ending { animation: scn-fade 1.8s ease-in forwards; }
+}
+@keyframes scn-dm { to { transform: translateX(calc(-100vw - 100%)); } }
+@keyframes scn-fade { 70% { opacity: 1; } to { opacity: 0; } }
+
+/* #73: her recorded line lip-synced onto the clip on screen (components/lipsyncVideo.tsx), crossfaded over it. */
+.scn-lipsync { position: absolute; inset: 0; pointer-events: none; }
+.scn-lipsync .scn-video { transition: opacity 180ms ease-out; } /* LIPSYNC_FADE_MS */
+/* It joins the shot's slow push-in where the shot is (its animation-delay is set to the shot's age). */
+@media (prefers-reduced-motion: no-preference) {
+  .scn[data-shot="close"] .scn-lipsync .scn-media { animation: scn-push 18s var(--ease) both; }
+}
+@media (prefers-reduced-motion: reduce) { .scn-lipsync .scn-video { transition: none; } }
+
+/* #67: the weather a scene plays at her window (`meta.audio.ambience`, set on .scn as data-weather): 奈々's 雨夜限定
+   reading is rainy on screen too. Her room's rain (components/weatherRoom.tsx, #63: the same two sheets of streaks, the
+   same seeds, sizes and speeds), drawn here in CSS so the scene player carries no weather code. Over her clips and
+   lip-sync, under her subtitles; moved by transform alone; with reduced motion the streaks stand still. */
+.scn[data-weather="rain"] .scn-scrim, .scn[data-weather="storm"] .scn-scrim { background: linear-gradient(var(--glass), transparent 22% 55%, rgba(27, 30, 61, 0.8)), linear-gradient(rgba(70, 84, 120, 0.26), rgba(60, 70, 104, 0.1)); }
+.scn[data-weather="rain"] .scn-scrim::before, .scn[data-weather="rain"] .scn-scrim::after, .scn[data-weather="storm"] .scn-scrim::before, .scn[data-weather="storm"] .scn-scrim::after {
+  content: ""; position: absolute; left: -15%; right: -15%; top: calc(-1 * var(--h)); bottom: 0; background-repeat: repeat; will-change: transform;
+}
+/* M6: the rain is outside her window, never over her face: the falling sheets keep to the sides of the frame. */
+.scn[data-weather] .scn-scrim::before, .scn[data-weather] .scn-scrim::after { -webkit-mask-image: var(--wx-side); mask-image: var(--wx-side); }
+.scn { --wx-side: linear-gradient(90deg, #000 0 21%, transparent 35% 65%, #000 79%); }
+@media (orientation: landscape) { .scn { --wx-side: linear-gradient(90deg, #000 0 31%, transparent 40% 60%, #000 69%); } }
+.scn[data-weather] .scn-scrim::before { --h: 320px; background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27320%27 height=%27320%27%3E%3Cpath d=%27M4 20v32M4 -300v32M313 224v27M313 -96v27M167 130v40M167 -190v40M149 77v27M149 -243v27M177 234v47M177 -86v47M83 50v34M83 -270v34M245 166v48M245 -154v48M63 118v30M63 -202v30M94 171v27M94 -149v27M95 313v48M95 -7v48M79 281v49M79 -39v49M61 46v61M61 -274v61M49 93v46M49 -227v46M175 244v37M175 -76v37M24 292v60M24 -28v60M177 199v61M177 -121v61%27 stroke=%27%23d7e4ff%27 stroke-opacity=%27.6%27 stroke-width=%271.1%27 stroke-linecap=%27round%27/%3E%3C/svg%3E"); opacity: 0.85; animation: scn-rain 0.48s linear infinite; }
+.scn[data-weather] .scn-scrim::after { --h: 220px; background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27220%27 height=%27220%27%3E%3Cpath d=%27M158 9v21M158 -211v21M100 16v20M100 -204v20M168 106v28M168 -114v28M107 36v17M107 -184v17M58 122v27M58 -98v27M43 18v26M43 -202v26M157 105v21M157 -115v21M175 194v20M175 -26v20M71 152v18M71 -68v18M63 148v30M63 -72v30M116 183v22M116 -37v22M119 3v36M119 -217v36M193 68v18M193 -152v18M206 169v20M206 -51v20M93 157v35M93 -63v35M34 81v24M34 -139v24M159 0v35M159 -220v35M2 105v18M2 -115v18M190 133v36M190 -87v36M150 173v28M150 -47v28M129 128v31M129 -92v31M16 82v25M16 -138v25M117 184v21M117 -36v21M91 102v36M91 -118v36M109 126v21M109 -94v21M171 188v17M171 -32v17%27 stroke=%27%23d7e4ff%27 stroke-opacity=%27.4%27 stroke-width=%271.1%27 stroke-linecap=%27round%27/%3E%3C/svg%3E"); opacity: 0.5; animation: scn-rain 0.62s linear infinite; }
+@keyframes scn-rain { to { transform: translate3d(0, var(--h), 0); } }
+@media (prefers-reduced-motion: reduce) { .scn[data-weather] .scn-scrim::before, .scn[data-weather] .scn-scrim::after { animation: none; } }

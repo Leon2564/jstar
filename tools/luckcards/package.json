@@ -1,0 +1,20 @@
+{
+  "name": "@jstar/luckcards",
+  "version": "1.0.0",
+  "private": true,
+  "description": "幸运卡印前工具（方案 1・通用二维码）：验证码生成与自检、卡池配额、通用二维码、打样确认表",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "codes:gen": "node scripts/code-gen/generate.mjs",
+    "codes:verify": "node scripts/code-gen/verify.mjs",
+    "codes:d1-sql": "node scripts/code-gen/d1-sql.mjs",
+    "pool:build": "node scripts/pool/build.mjs config/pool.S1.json",
+    "pool:simulate": "node scripts/pool/simulate.mjs out/pool/S1-designs.csv",
+    "qr:generic": "node scripts/qr/generic.mjs && python3 scripts/qr/optimize_png.py out/qr-generic",
+    "proof": "node scripts/qr/proof-sheet.mjs"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

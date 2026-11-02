@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "id": "variant-nana-3",
+    "star": "nana",
+    "title": {"ja": "この服でワンステージ", "zh-Hant": "穿這套衣服的一場表演", "en": "A Little Stage in This Outfit", "ko": "이 옷으로 한 무대"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 3},
+    "idle": "nana-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "nana-variant-home", "hold": 1.5},
+    {"id": "hi", "type": "line", "voice": "/voice/scene/nana/9c0dcb48f8c1.mp3", "text": {"ja": "キミ、来た来た！ ねえ見て、この服でダンスの練習してたの！", "zh-Hant": "你來了你來了！欸你看，我穿這套衣服在練舞喔！", "en": "You're here! Look, I've been practicing a dance in this outfit!", "ko": "왔다 왔다! 저기 봐, 이 옷 입고 댄스 연습하고 있었어!"}},
+    {"id": "watch", "type": "line", "voice": "/voice/scene/nana/13ba58e55a2a.mp3", "text": {"ja": "ワンフレーズだけ踊るから、ちゃんと見ててね？", "zh-Hant": "我只跳一小段，要好好看著喔？", "en": "Just one short bit, so watch properly, okay?", "ko": "한 소절만 춤출 테니까, 잘 보고 있어야 해?"}},
+    {"id": "dance", "type": "clip", "shot": "wide", "media": "nana-variant-home", "hold": 3},
+    {"id": "done", "type": "line", "voice": "/voice/scene/nana/69a9a5c8d8f0.mp3", "text": {"ja": "……じゃん！ どうだった？", "zh-Hant": "……鏘！怎麼樣？", "en": "…Ta-da! How was it?", "ko": "……짜잔! 어땠어?"}},
+    {"id": "cheer", "type": "choice", "timeout": 30, "onTimeout": "shy", "options": [{"id": "cute", "next": "cute", "label": {"ja": "かわいかった", "zh-Hant": "好可愛", "en": "That was adorable", "ko": "귀여웠어"}}, {"id": "again", "next": "again", "label": {"ja": "もう一回見たい", "zh-Hant": "還想再看一次", "en": "I want to see it again", "ko": "한 번 더 보고 싶어"}}]},
+    {"id": "cute", "type": "line", "voice": "/voice/scene/nana/fc8f53aef6c4.mp3", "next": "reward", "text": {"ja": "えへへ、でしょ？ この服だと、いつもよりくるって回れる気がするんだ！", "zh-Hant": "嘿嘿，對吧？穿這套衣服，總覺得轉圈都比平常輕快！", "en": "Hehe, right? In this outfit I feel like I spin better than usual!", "ko": "에헤헤, 그치? 이 옷 입으면 평소보다 더 빙글 돌 수 있는 것 같아!"}},
+    {"id": "again", "type": "line", "voice": "/voice/scene/nana/5a57d7385ed4.mp3", "next": "reward", "text": {"ja": "え、ほんとに？ ……もう、しょうがないなぁ。次は特等席で見せてあげる！", "zh-Hant": "咦，真的嗎？……真拿你沒辦法。下次讓你坐特等席看！", "en": "Wait, really? …Oh, fine. Next time you get the best seat!", "ko": "어, 진짜? ……진짜, 못 말려. 다음엔 특등석에서 보여 줄게!"}},
+    {"id": "shy", "type": "line", "voice": "/voice/scene/nana/ee6f746748ce.mp3", "text": {"ja": "……あれ、固まってる？ もしかして、見とれてた？ えへへ。", "zh-Hant": "……咦，你僵住了？難道是看呆了？嘿嘿。", "en": "…Huh, you froze? Were you that mesmerized? Hehe.", "ko": "……어라, 굳었어? 혹시 넋 놓고 봤어? 에헤헤."}},
+    {"id": "reward", "type": "effect", "affinity": 6, "variantXp": 30},
+    {"id": "close", "type": "clip", "shot": "close", "media": "nana-variant-close", "hold": 0},
+    {"id": "bye", "type": "line", "voice": "/voice/scene/nana/b026b4b07cbd.mp3", "text": {"ja": "キミが見ててくれると、奈々、もっとがんばれちゃう。", "zh-Hant": "只要有你看著，奈奈就能更努力。", "en": "When you're watching, I can try even harder.", "ko": "네가 봐 주면 나나, 더 힘낼 수 있어."}},
+    {"id": "end", "type": "end", "outcome": "stage"}
+  ]
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--CSP-->
+<!--PRELOAD-->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#1B1E3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%22-10 -10 20 20%22%3E%3Cpath d=%22M0 -10 C1 -2 2 -1 10 0 C2 1 1 2 0 10 C-1 2 -2 1 -10 0 C-2 -1 -1 -2 0 -10 Z%22 fill=%22%23D38A97%22/%3E%3C/svg%3E">
+<!-- Installable app (#50): iOS only delivers Web Push to a site added to the home screen. -->
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="JSTAR">
+<meta name="mobile-web-app-capable" content="yes">
+<title>JSTAR — 彼女と話す</title>
+<!-- M9 (C-room): her room's boot shell is her night (navy, still) until she paints — boot.js marks the route first.
+     M11: a night screen ('night': the home, JSTARS, the trial…) paints the night until the app renders into #root. -->
+<script src="/boot.js"></script>
+<style>html[data-boot=room],html[data-boot=room] body{background:#1b1e3d}html[data-boot=room] #root .page{animation:none}html[data-boot=night] #root:empty{min-height:100vh;min-height:100dvh;background:#1b1e3d}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/*
+ * JSTAR visual system v1 — components (#162). Tokens (styles/tokens.css) only: her sparkles are plain white and
+ * shadows black, nothing else of their own. Loaded with the screens that use them (her room, /#/design), never with
+ * the first paint. "On the night" means over her video's lower half, sunk into navy-deep (NightFade).
+ */
+
+/* ---- brand and her name */
+.js-brand { display: inline-flex; align-items: center; font-family: var(--serif); font-size: var(--fs-ui); letter-spacing: 0.32em; color: var(--ivory); white-space: nowrap; }
+.js-brand .js-spark { margin-right: var(--sp-2); letter-spacing: 0; color: var(--rose); }
+.js-spark { color: var(--rose); }
+.js-vname { display: inline-flex; gap: 6px; align-items: flex-start; }
+.js-vname-jp { writing-mode: vertical-rl; font-family: var(--serif); font-size: var(--fs-name); font-weight: 500; letter-spacing: 0.14em; line-height: 1; color: var(--ivory); }
+.js-vname-ro { writing-mode: vertical-rl; font-family: var(--serif); font-size: var(--fs-label); letter-spacing: var(--ls-label); line-height: 1; padding-top: 4px; color: var(--rose); }
+.js-vname.large .js-vname-jp { font-size: var(--fs-name-desk); }
+.js-vname.large .js-vname-ro { font-size: var(--fs-meta); }
+
+/* ---- small labels: letter-spaced serif capitals (HER ROOM 01 / 05) */
+.js-label { font-family: var(--serif); font-size: var(--fs-label); letter-spacing: var(--ls-label); color: var(--rose); text-transform: uppercase; }
+.js-label.meta { font-size: var(--fs-meta); letter-spacing: var(--ls-meta); color: var(--iv-meta); text-transform: none; }
+.js-label.light { color: var(--rose-text); }
+.js-dot { display: inline-block; width: 5px; height: 5px; margin-right: var(--sp-2); border-radius: 50%; background: var(--rose); vertical-align: 2px; }
+
+/* ---- buttons: rose block (primary, the one rose solid on screen), double-rule line (secondary) */
+.js-btn-rose { min-height: var(--tap); padding: 0 var(--sp-6); display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); border: 0; border-radius: var(--r-sharp); background: var(--rose); color: var(--navy-deep); font-family: var(--serif); font-size: var(--fs-body); font-weight: 600; letter-spacing: var(--ls-ui); white-space: nowrap; transition: filter var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease); }
+.js-btn-rose.large { min-height: 56px; font-size: var(--fs-ui); }
+.js-btn-line { position: relative; min-height: var(--tap); padding: 0 var(--sp-4); display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); border: var(--hairline) solid var(--iv-line); border-radius: var(--r-sharp); background: rgba(var(--nd), 0.35); color: var(--ivory); font-family: var(--serif); font-size: var(--fs-body); letter-spacing: 0.08em; white-space: nowrap; transition: background-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease); }
+.js-btn-line::after { content: ''; position: absolute; inset: 2px; border: var(--hairline) solid var(--iv-hair); border-radius: 1px; pointer-events: none; }
+.js-btn-line.light { border-color: rgba(36, 40, 77, 0.7); background: transparent; color: var(--navy); }
+.js-btn-line.light::after { border-color: var(--hair); }
+.js-btn-text { min-height: var(--tap); padding: 0 var(--sp-3); display: inline-flex; align-items: center; border: 0; background: transparent; color: var(--iv-meta); font-family: var(--serif); font-size: var(--fs-body); letter-spacing: 0.08em; }
+.js-btn-rose:active:not(:disabled), .js-btn-line:active:not(:disabled) { transform: scale(0.98); }
+@media (hover: hover) { .js-btn-rose:hover:not(:disabled) { filter: brightness(1.05); } .js-btn-line:hover:not(:disabled) { background: rgba(var(--nd), 0.55); } }
+
+/* ---- reply choices: double-rule lines on the night; the highlighted one (✦ an invitation) is the rose block */
+.js-replies { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
+.js-replies.column { flex-direction: column; flex-wrap: nowrap; }
+.js-reply { justify-content: flex-start; }
+.js-replies:not(.column) .js-reply { justify-content: center; }
+.js-reply kbd { width: 24px; font-family: var(--serif); font-size: var(--fs-label); color: var(--rose); }
+
+/* ---- the hairline input: a bottom line, her voice minutes as a meta, a small mic */
+.js-input { min-height: var(--tap); display: flex; align-items: center; gap: var(--sp-3); border-bottom: var(--hairline) solid var(--iv-hair); }
+.js-input input { flex: 1; min-width: 0; height: var(--tap); padding: 0; border: 0; background: transparent; color: var(--ivory); font-family: var(--sans); font-size: 16px; letter-spacing: var(--ls-line); }
+.js-input input::placeholder { color: var(--iv-meta); }
+.js-input input:focus { outline: none; }
+.js-input:focus-within { border-bottom-color: var(--iv-line); }
+.js-input .js-input-meta { font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: 0.12em; color: var(--iv-meta); white-space: nowrap; }
+.js-icon-btn { flex: none; width: var(--tap); height: var(--tap); display: grid; place-items: center; border: 0; background: transparent; color: var(--ivory); }
+
+/* ---- the five as thin rules, names under them; hers has the rose segment */
+.js-stars { display: flex; gap: 6px; }
+.js-star { flex: 1; min-width: 0; min-height: var(--tap); padding: 0; border: 0; background: transparent; text-align: left; color: var(--iv-meta); font-family: var(--serif); font-size: var(--fs-small); }
+.js-star i { display: block; height: 1px; background: var(--iv-line); position: relative; }
+.js-star[aria-pressed='true'] { color: var(--ivory); }
+.js-star[aria-pressed='true'] i::after { content: ''; position: absolute; left: 0; top: -1px; height: 3px; width: 42%; background: var(--rose); }
+.js-star span { display: block; padding-top: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.js-rules { display: flex; gap: 6px; }
+.js-rules i { flex: 1; height: 1px; background: var(--iv-line); position: relative; }
+.js-rules i.on::after { content: ''; position: absolute; left: 0; top: -1px; height: 3px; width: 100%; background: var(--rose); }
+
+/* ---- composition: the ┌ corner frame, the night fade, sparkles */
+.js-corner { position: absolute; width: 18px; height: 18px; border-left: var(--hairline) solid var(--iv-line); border-top: var(--hairline) solid var(--iv-line); pointer-events: none; }
+.js-night { position: absolute; inset: 0; pointer-events: none; background: var(--night-fade-room), var(--night-fade-side), var(--night-fade-vignette); }
+.js-night.pure { background: linear-gradient(rgba(var(--nd), 0.45), rgba(var(--nd), 0) 22%, rgba(var(--nd), 0) 58%, rgba(var(--nd), 0.86)), radial-gradient(120% 80% at 50% 38%, rgba(var(--nt), 0) 55%, rgba(var(--nt), 0.4)); }
+.js-night.morning { background: linear-gradient(180deg, rgba(var(--nd), 0.92) 0, rgba(var(--nd), 0.8) 160px, rgba(var(--nd), 0) 250px, rgba(var(--nd), 0) 51%, rgba(var(--nd), 0.7) 63%, rgba(var(--nd), 0.92) 72%, rgba(var(--nd), 0.95) 100%), linear-gradient(270deg, rgba(var(--nd), 0.72) 0, rgba(var(--nd), 0) 100px), var(--night-fade-vignette); }
+.js-night.index { background: linear-gradient(180deg, rgba(var(--nd), 0.82) 0, rgba(var(--nd), 0.4) 130px, rgba(var(--nd), 0) 200px, rgba(var(--nd), 0) 40%, rgba(var(--nd), 0.82) 50%, rgba(var(--nd), 0.95) 58%, rgba(var(--nd), 0.96) 100%), var(--night-fade-vignette); }
+.js-night.desk { background: var(--night-fade-desk), linear-gradient(180deg, rgba(var(--nd), 0.6) 0, rgba(var(--nd), 0) 160px, rgba(var(--nd), 0) 71%, rgba(var(--nd), 0.82) 100%), radial-gradient(110% 90% at 72% 36%, rgba(var(--nt), 0) 50%, rgba(var(--nt), 0.45) 100%); }
+.js-sparkles { position: absolute; inset: 0; pointer-events: none; }
+.js-sparkles span { position: absolute; color: #FFFFFF; line-height: 1; opacity: 0.8; animation: js-twinkle 4.8s var(--ease) infinite; }
+@keyframes js-twinkle { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.3; } }
+
+/* ---- panels and hints */
+.js-panel { position: relative; padding: var(--sp-4); border: var(--hairline) solid var(--iv-line); border-radius: var(--r-sharp); background: rgba(var(--nd), 0.6); color: var(--ivory); }
+.js-panel::after { content: ''; position: absolute; inset: 3px; border: var(--hairline) solid var(--iv-hair); border-radius: 1px; pointer-events: none; }
+.js-panel.light { border-color: rgba(36, 40, 77, 0.5); background: var(--surface); color: var(--navy); }
+.js-panel.light::after { border-color: var(--hair); }
+.js-hint { display: flex; align-items: center; gap: var(--sp-2); padding: var(--sp-2) var(--sp-3); border-left: 2px solid var(--rose); background: rgba(var(--nd), 0.72); color: var(--ivory); font-family: var(--serif); font-size: var(--fs-small); letter-spacing: 0.06em; }
+.js-hint.light { background: var(--bubble); color: var(--navy); }
+
+/* ---- her voice note and her photo */
+.js-voice { display: flex; align-items: center; gap: var(--sp-3); min-height: var(--tap); }
+.js-voice-play { flex: none; width: var(--tap); height: var(--tap); display: grid; place-items: center; border: var(--hairline) solid var(--iv-line); border-radius: 50%; background: rgba(var(--nd), 0.35); color: var(--ivory); }
+.js-wave { flex: 1; height: 26px; display: flex; align-items: center; gap: 2px; }
+.js-wave i { width: 2px; border-radius: 1px; background: rgba(239, 232, 237, 0.4); }
+.js-wave i.on { background: var(--rose); }
+.js-voice-time { font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: 0.04em; color: var(--iv-meta); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.js-print { display: block; width: 138px; height: 92px; object-fit: cover; object-position: center 30%; outline: 3px solid var(--ivory); box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45); transform: rotate(-2deg); background: var(--night); }
+
+/* ---- her line on the night (Shippori Mincho, 18.5px, AA over the fade) */
+.js-line { margin: 0; font-family: var(--serif); font-size: var(--fs-line); line-height: var(--lh-line); letter-spacing: var(--ls-line); color: var(--ivory); text-shadow: 0 1px 6px rgba(var(--nd), 0.35); }
+.js-more { display: inline-block; margin-left: 6px; font-size: 10px; color: var(--rose); vertical-align: 2px; }
+.js-cursor { display: inline-block; width: 1px; height: 19px; margin-left: 3px; vertical-align: -3px; background: var(--ivory); animation: js-blink 1s steps(2) infinite; }
+@keyframes js-blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-sparkles span, .js-cursor { animation: none; }
+}
+
+/* ---- a page on the night: the member pages around her room (the gacha, cards and memories, her alarm, the scene
+   previews, My page, the shop, the histories, the account deletion, a card) keep their shared classes; the light tokens those read turn to the night, the few literal light colours
+   are overridden here. Pressed chips and tabs are the ivory inverse (never rose: rose is the one main action). */
+.js-nightpage { --soft: var(--iv-meta); --hair: var(--iv-hair); --rose-text: var(--rose); --err: var(--rose-glow); background: var(--navy-deep); color: var(--ivory); color-scheme: dark; }
+.js-nightpage :is(.btn-line, .btn-ghost, .chip, .tabs, .input) { border-color: var(--iv-line); background: transparent; color: var(--ivory); }
+.js-nightpage .chip { min-height: var(--tap); border-radius: var(--r-sharp); }
+.js-nightpage .btn-line { box-shadow: inset 0 0 0 3px var(--navy-deep), inset 0 0 0 4px var(--iv-hair); }
+.js-nightpage :is(.chip[aria-pressed='true'], .tabs [aria-selected='true']) { border-color: var(--ivory); background: var(--ivory); color: var(--navy-deep); }
+.js-nightpage :is(.panel, .btn-navy) { background: var(--navy-deep); box-shadow: inset 0 0 0 1px var(--iv-line), inset 0 0 0 4px var(--navy-deep), inset 0 0 0 5px var(--iv-hair); }
+.js-nightpage :is(.rowlist, .rowlist li, .tabbar) { border-color: var(--iv-hair); }
+.js-nightpage .tabbar { background: rgba(var(--nd), 0.96); }
+.js-nightpage .tabbar a { color: var(--iv-meta); }
+.js-nightpage .tabbar a[aria-current='page'], .js-nightpage .card .cap { color: var(--ivory); }
+.js-nightpage .card:not(.has-art) .cap { background: rgba(var(--nd), 0.9); }
+.js-nightpage .chips { padding-inline: 24px; background: none; }
+/* B-N7: the iPhone steps' number and glyph in ivory; a bottom sheet (the shop's) is a night panel. */
+.js-nightpage .push-step-n { background: var(--ivory); color: var(--navy-deep); }
+.js-nightpage .push-step-g { color: var(--ivory); }
+.js-nightpage .sheet { background: var(--night); }

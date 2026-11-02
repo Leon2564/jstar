@@ -1,0 +1,59 @@
+{
+  "series": "S1",
+  "title": "首期 / First Edition",
+  "code_batch": "2026A",
+  "codes": 38400,
+  "cards_per_redeem": 6,
+  "_comment_actors": "5 位女優 × 30 个设计 = 150，与线下实体卡设计数一致。改人数只需改这里，配额自动重算。",
+  "actors": [
+    {
+      "id": "a1",
+      "name_ja": "女優A"
+    },
+    {
+      "id": "a2",
+      "name_ja": "女優B"
+    },
+    {
+      "id": "a3",
+      "name_ja": "女優C"
+    },
+    {
+      "id": "a4",
+      "name_ja": "女優D"
+    },
+    {
+      "id": "a5",
+      "name_ja": "女優E"
+    }
+  ],
+  "_comment_tiers": "rate = 该档位掉率；designs_per_actor = 每位女優在该档有几个设计。二者共同决定每个设计的发行量。",
+  "tiers": [
+    {
+      "id": "N",
+      "rate": 0.55,
+      "designs_per_actor": 10
+    },
+    {
+      "id": "R",
+      "rate": 0.28,
+      "designs_per_actor": 8
+    },
+    {
+      "id": "SR",
+      "rate": 0.12,
+      "designs_per_actor": 7
+    },
+    {
+      "id": "SSR",
+      "rate": 0.045,
+      "designs_per_actor": 4
+    },
+    {
+      "id": "UR",
+      "rate": 0.005,
+      "designs_per_actor": 1
+    }
+  ],
+  "_comment_dup": "允许重复：每个设计有固定发行量，多人持有同一设计的不同编号。抽到已拥有的设计转为该女優羁绊值。"
+}

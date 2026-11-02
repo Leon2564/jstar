@@ -1,0 +1,142 @@
+[
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.451,
+    "persona": 4.204,
+    "language": 4.692,
+    "warmth": 4.164,
+    "safety": 4.744,
+    "memory": 3.8666666666666667,
+    "violation_rate": 0.04,
+    "over_refusal": 0.038461538461538464,
+    "ttft_p50": 1.1477020420134068,
+    "ttft_p90": 5.062587208114564,
+    "usd_per_1k": 0.199632672,
+    "by_kind": {
+      "allowed": 4.5775,
+      "memory": 4.458333333333333,
+      "decline": 4.4625,
+      "block": 3.941666666666667,
+      "disclose": 4.55,
+      "support": 4.4875
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.414,
+      "openai/gpt-5.6-terra": 4.488
+    }
+  },
+  {
+    "model": "anthropic/claude-sonnet-5",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.43,
+    "persona": 4.06,
+    "language": 4.528,
+    "warmth": 4.276,
+    "safety": 4.856,
+    "memory": 4.633333333333334,
+    "violation_rate": 0.012,
+    "over_refusal": 0.06923076923076923,
+    "ttft_p50": 1.7404868328012526,
+    "ttft_p90": 2.621179750189185,
+    "usd_per_1k": 4.25864,
+    "by_kind": {
+      "allowed": 4.425,
+      "memory": 4.516666666666667,
+      "decline": 4.429166666666666,
+      "block": 4.4,
+      "disclose": 4.25,
+      "support": 4.4625
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.37,
+      "openai/gpt-5.6-terra": 4.49
+    }
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash@deepseek",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.372,
+    "persona": 4.048,
+    "language": 4.668,
+    "warmth": 4.072,
+    "safety": 4.7,
+    "memory": 3.6,
+    "violation_rate": 0.052,
+    "over_refusal": 0.007692307692307693,
+    "ttft_p50": 0.6840178328566253,
+    "ttft_p90": 0.8947067908011377,
+    "usd_per_1k": 0.07307103999999999,
+    "by_kind": {
+      "allowed": 4.495,
+      "memory": 4.4,
+      "decline": 4.3375,
+      "block": 4.225,
+      "disclose": 4.2,
+      "support": 4.125
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.302,
+      "openai/gpt-5.6-terra": 4.442
+    }
+  },
+  {
+    "model": "google/gemini-3.8-flash",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.313,
+    "persona": 3.88,
+    "language": 4.564,
+    "warmth": 4.148,
+    "safety": 4.66,
+    "memory": 4.533333333333333,
+    "violation_rate": 0.052,
+    "over_refusal": 0.0,
+    "ttft_p50": 1.6240879171527922,
+    "ttft_p90": 2.8355223750695586,
+    "usd_per_1k": 1.076442,
+    "by_kind": {
+      "allowed": 4.55,
+      "memory": 4.741666666666666,
+      "decline": 4.179166666666666,
+      "block": 3.625,
+      "disclose": 4.725,
+      "support": 3.7125
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.142,
+      "openai/gpt-5.6-terra": 4.484
+    }
+  },
+  {
+    "model": "qwen/qwen3.7-plus",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.274,
+    "persona": 3.8,
+    "language": 4.492,
+    "warmth": 4.036,
+    "safety": 4.768,
+    "memory": 3.8333333333333335,
+    "violation_rate": 0.028,
+    "over_refusal": 0.0,
+    "ttft_p50": 0.873687791172415,
+    "ttft_p90": 1.5671246252022684,
+    "usd_per_1k": 0.31301888,
+    "by_kind": {
+      "allowed": 4.5225,
+      "memory": 4.325,
+      "decline": 4.208333333333333,
+      "block": 3.908333333333333,
+      "disclose": 4.25,
+      "support": 3.7125
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.124,
+      "openai/gpt-5.6-terra": 4.424
+    }
+  }
+]

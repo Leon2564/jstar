@@ -1,0 +1,19 @@
+/* CardArt (components/cardArt.tsx): stand-in art under CardTile, and the pointer tilt with glare. Tier frames: components/cards.css. */
+.cardx {
+  --card-corner: 5% / 3.3%;
+  position: relative;
+  border-radius: var(--card-corner);
+  overflow: hidden;
+}
+.cardx > .card { width: 100%; border-radius: inherit; overflow: hidden; }
+.cardx.stand-in { overflow: hidden; }
+.cardx.stand-in > .card { background: transparent !important; }
+.cardx-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; user-select: none; }
+.cardx.stand-in > .card .cap { background: linear-gradient(to top, rgba(16, 18, 42, 0.88), rgba(16, 18, 42, 0)); color: var(--ivory); padding-top: 18px; }
+.cardx.stand-in > .card .cap b { color: rgba(239, 232, 237, 0.8); }
+.cardx.stand-in > .card .src { color: rgba(239, 232, 237, 0.9); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+.tilt { transform: perspective(700px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform 0.5s var(--ease); }
+.tilt.tilting { transition: transform 0.08s linear; }
+.cardx-glare { position: absolute; inset: 0; z-index: 3; pointer-events: none; border-radius: inherit; background: radial-gradient(circle at var(--gx, 50%) var(--gy, 0%), rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0) 55%); mix-blend-mode: soft-light; opacity: 0; transition: opacity 0.4s; }
+.tilt.tilting .cardx-glare { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .tilt { transform: none; } }

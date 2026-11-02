@@ -1,0 +1,19 @@
+# Build context for infra/*.Dockerfile is the repo root. Keep secrets and bulk out of it.
+**/node_modules
+**/dist
+**/dist-single
+**/__pycache__
+**/.pytest_cache
+**/test-results
+.env
+.env.*
+*.secret
+assets
+tools
+# …except her recorded greeting lines, which the API bundles (the #57 wake-up's fallback).
+!tools/voice/greetings.json
+docs
+apps/web
+apps/admin
+.wrangler
+**/.wrangler

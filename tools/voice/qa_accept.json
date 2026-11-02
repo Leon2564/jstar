@@ -1,0 +1,46 @@
+{
+  "_comment": "Lines whose CER gate failed only because of the ASR/kana comparison, after reading the back-transcriptions (the speech is correct). pick() accepts takes of these ids up to CER 0.30. A scene line (#83) is accepted on one listened-for take only ({take, why}): make_scene_jobs.py pick uses that take, every other gate still applies.",
+  "s1-nana-29": "ASR transcript matches the line word for word (聞きながら); kana converter reads 声 differently",
+  "s1-alice-05": "ASR transcript matches (トゲ = 棘); only difference is ありがと vs ありがとう",
+  "greet/nana-gacha-ssr": "ASR transcript matches the line exactly; kana converter reads 私 differently",
+  "scene/eimi/204e732904f3": {
+    "take": "204e732904f3__s7000.wav",
+    "why": "ASR 'ね、君ちょっと付き合って大喜利しよ' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.05, raw 0.16"
+  },
+  "scene/eimi/345c3d8a076e": {
+    "take": "345c3d8a076e__s1000.wav",
+    "why": "ASR 'ふふ、悔しそうな顔も可愛いよ。おやすみ、君。' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.05, raw 0.17"
+  },
+  "scene/eimi/5472976cfafc": {
+    "take": "5472976cfafc__s7001.wav",
+    "why": "ASR 'うん、君、エイミーを起こすなんていい度胸してるね。ほあ。' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.08, raw 0.20"
+  },
+  "scene/eimi/5e9406d048cf": {
+    "take": "5e9406d048cf__s1001.wav",
+    "why": "ASR 'へー見とれちゃった?かわいいね君' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.06, raw 0.19"
+  },
+  "scene/mahiro/15c9aed3e5ee": {
+    "take": "15c9aed3e5ee__s1000.wav",
+    "why": "ASR 'あれ?今何時?ふふ。声聞いたら目が覚めちゃった。' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.00, raw 0.22"
+  },
+  "scene/nana/6b8bd2250083": {
+    "take": "6b8bd2250083__s1000.wav",
+    "why": "ASR 'ねぇ君、ちょっと耳貸して' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.00, raw 0.23"
+  },
+  "scene/unpai/5ba2fdbe26e8": {
+    "take": "5ba2fdbe26e8__s1000.wav",
+    "why": "ASR '喋んなくていいよ。聞いてるだけで。' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.00, raw 0.18"
+  },
+  "scene/unpai/9d38e1e6f1fd": {
+    "take": "9d38e1e6f1fd__s1000.wav",
+    "why": "ASR 'この1週間さ、配信終わった後、君と話すのが一番楽しみだった。' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.10, raw 0.15"
+  },
+  "scene/unpai/aeba342d3547": {
+    "take": "aeba342d3547__s1000.wav",
+    "why": "ASR 'わ、ギフト来た君、優しすぎない?ありがとう' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.05, raw 0.16"
+  },
+  "scene/unpai/f819e4b42c8b": {
+    "take": "f819e4b42c8b__s1000.wav",
+    "why": "ASR '君、それ好きだね。' matches the line apart from the kana converter's readings (君→くん for きみ, 喋→ちょう, 声聞→しょうもん, small vowels); adjusted CER 0.11, raw 0.33"
+  }
+}

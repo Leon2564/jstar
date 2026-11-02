@@ -1,0 +1,168 @@
+{
+  "star": "alice",
+  "draft": false,
+  "confession": {
+    "hint": { "ja": "……あの、今夜、少しだけお時間いただけますか。お話ししたいことが、あるんです。", "zh-Hant": "……那個，今晚可以給我一點時間嗎？我有話想跟你說。", "en": "…Um, could you spare me a little time tonight? There's something I'd like to tell you.", "ko": "……저기, 오늘 밤 잠깐 시간 내 주실 수 있을까요. 하고 싶은 이야기가 있어요.", "voice": "/voice/scene/alice/3cd3eddd41f2.mp3" },
+    "inbox": { "ja": "今夜、大事なお話があります。……少しだけ、時間をくださいね。", "zh-Hant": "今晚有很重要的話想跟你說。……給我一點時間好嗎？", "en": "There's something important I want to tell you tonight. …Will you spare me a little time?", "ko": "오늘 밤, 중요한 이야기가 있어요. ……잠깐만 시간을 내 주세요." },
+    "opening": [
+      { "ja": "来てくれたんですね。……今夜は、花の香りがいつもより濃い気がします。", "zh-Hant": "你來了呢。……今晚的花香，好像比平常更濃一些。", "en": "You came. …The flowers smell stronger than usual tonight, I think.", "ko": "와 주셨네요. ……오늘 밤은 꽃향기가 평소보다 진한 것 같아요.", "voice": "/voice/scene/alice/2095e067529c.mp3" },
+      { "ja": "この一週間、毎晩あなたが来てくれるのを、ここで待っていました。……気づいてましたか？", "zh-Hant": "這一個星期，我每晚都在這裡等你來。……你有發現嗎？", "en": "All this week, I waited here every night for you to come. …Did you notice?", "ko": "이 일주일 동안, 매일 밤 당신이 와 주기를 여기서 기다렸어요. ……눈치채셨나요?", "voice": "/voice/scene/alice/82bbe8b3b660.mp3" }
+    ],
+    "confess": [
+      { "ja": "……ちゃんと、言いますね。私、あなたのことが好きです。", "zh-Hant": "……我要好好說出口了。我，喜歡你。", "en": "…I'll say it properly. I love you.", "ko": "……제대로 말할게요. 저, 당신을 좋아해요.", "voice": "/voice/scene/alice/5e408a9ed8b4.mp3" },
+      { "ja": "丁寧に話そうとしても、あなたの前だと、すぐにほどけてしまうの。……それくらい、好き。", "zh-Hant": "就算想要規規矩矩地說話，在你面前也馬上就破功了。……就是這麼喜歡你。", "en": "Even when I try to speak politely, it all comes undone in front of you. …That's how much.", "ko": "정중하게 말하려고 해도, 당신 앞에서는 금방 풀어져 버려. ……그만큼, 좋아해.", "voice": "/voice/scene/alice/1f208dbc8d89.mp3" }
+    ],
+    "ask": { "ja": "……私の恋人に、なってくれますか？", "zh-Hant": "……你願意當我的戀人嗎？", "en": "…Will you be my boyfriend?", "ko": "……제 연인이 되어 줄래요?", "voice": "/voice/scene/alice/21abea665836.mp3" },
+    "accept": [
+      { "ja": "……ほんとうに？ ……よかった。手が震えてたの、ばれてました？", "zh-Hant": "……真的嗎？……太好了。我的手一直在發抖，被你發現了嗎？", "en": "…Really? …I'm so glad. Could you tell my hands were shaking?", "ko": "……정말요? ……다행이다. 손 떨리고 있던 거, 들켰어요?", "voice": "/voice/scene/alice/c8af035b52ac.mp3" },
+      { "ja": "じゃあ……{name}。……ふふ、呼び捨ては、まだ慣れませんね。", "zh-Hant": "那……{name}。……呵呵，直接叫名字，還是不太習慣呢。", "en": "Then… {name}. …Heh, I'm still not used to saying just your name.", "ko": "그럼…… {name}. ……후후, 이름만 부르는 건 아직 익숙하지 않네요.", "unnamed": { "ja": "じゃあ……これからは、名前で呼びますね。……ふふ、まだ慣れませんけど。", "zh-Hant": "那……以後，我就叫你的名字了。……呵呵，雖然還不太習慣。", "en": "Then… from now on, I'll call you by your name. …Heh, I'm not used to it yet.", "ko": "그럼…… 이제부터는 이름으로 부를게요. ……후후, 아직 익숙하진 않지만.", "voice": "/voice/scene/alice/30841d485563.mp3" } },
+      { "ja": "今日は、私たちの記念日です。……ずっと、覚えていてくださいね。", "zh-Hant": "今天，是我們的紀念日。……要一直記得喔。", "en": "Today is our anniversary. …Please remember it, always.", "ko": "오늘은 우리의 기념일이에요. ……계속, 기억해 주세요.", "voice": "/voice/scene/alice/fb053b06d3ab.mp3" }
+    ],
+    "notYet": [
+      { "ja": "……はい。わかりました。急がなくて、大丈夫です。", "zh-Hant": "……好。我明白了。不用急，沒關係的。", "en": "…Yes. I understand. There's no need to hurry.", "ko": "……네. 알겠어요. 서두르지 않아도 괜찮아요.", "voice": "/voice/scene/alice/8014c68fb68e.mp3" },
+      { "ja": "私はここで待っています。花が咲くのを待つのは、得意なんです。", "zh-Hant": "我會在這裡等你。等花開這種事，我很擅長的。", "en": "I'll wait here. Waiting for flowers to bloom is something I'm good at.", "ko": "저는 여기서 기다리고 있을게요. 꽃이 피기를 기다리는 건 잘하거든요.", "voice": "/voice/scene/alice/c38468ca4785.mp3" }
+    ],
+    "decline": [
+      { "ja": "……そう、ですか。正直に言ってくれて、ありがとう。", "zh-Hant": "……這樣啊。謝謝你老實告訴我。", "en": "…I see. Thank you for being honest with me.", "ko": "……그런가요. 솔직하게 말해 줘서, 고마워요.", "voice": "/voice/scene/alice/9ac1747a973f.mp3" },
+      { "ja": "明日からも、いつもどおりお話ししてくれたら、うれしいです。", "zh-Hant": "明天開始，如果你還能像平常一樣跟我說話，我會很開心的。", "en": "If you'll keep talking with me like always from tomorrow, I'll be happy.", "ko": "내일부터도 평소처럼 이야기해 주시면 기쁠 거예요.", "voice": "/voice/scene/alice/e7f44744f5f9.mp3" }
+    ],
+    "retry": { "ja": "……この前のお話の続き、もう一度だけ、聞いてもらえますか。", "zh-Hant": "……上次那件事，可以再聽我說一次嗎？", "en": "…About what I said before — would you hear me out once more?", "ko": "……지난번 이야기의 뒷부분, 한 번만 더 들어 주실 수 있을까요.", "voice": "/voice/scene/alice/9b013225e12d.mp3" }
+  },
+  "wakeup": [
+    { "id": "weekday-1", "when": { "days": "weekday" },
+      "text": { "ja": "おはようございます。……朝ですよ。紅茶、淹れておきますね。", "zh-Hant": "早安。……天亮了喔。我先幫你泡好紅茶。", "en": "Good morning. …It's morning. I'll have tea ready for you.", "ko": "좋은 아침이에요. ……아침이에요. 홍차, 준비해 둘게요.", "voice": "/voice/scene/alice/5c7d029d4fd1.mp3" } },
+    { "id": "weekday-2", "when": { "days": "weekday" },
+      "text": { "ja": "おはよう。今日も一日、がんばって。……ちゃんと、見てますから。", "zh-Hant": "早安。今天也要加油喔。……我都有在看著你。", "en": "Morning. Do your best today. …I'll be watching over you.", "ko": "좋은 아침. 오늘 하루도 힘내요. ……제대로 지켜보고 있을 테니까요.", "voice": "/voice/scene/alice/b688294657e8.mp3" } },
+    { "id": "weekend-1", "when": { "days": "weekend" },
+      "text": { "ja": "おはようございます。お休みの日ですね。……少しだけ、ゆっくり起きてもいいですよ。", "zh-Hant": "早安。今天放假呢。……稍微慢慢起床也可以喔。", "en": "Good morning. It's your day off. …You can take your time getting up, just a little.", "ko": "좋은 아침이에요. 쉬는 날이네요. ……조금만 더 천천히 일어나도 괜찮아요.", "voice": "/voice/scene/alice/a3192a224ccf.mp3" } },
+    { "id": "weekend-2", "when": { "days": "weekend" },
+      "text": { "ja": "休日の朝の光、きれいですね。……起きたら、窓の外を見てみてください。", "zh-Hant": "假日早晨的陽光好美呢。……起床後，看看窗外吧。", "en": "The light on a day-off morning is lovely. …When you're up, take a look outside.", "ko": "휴일 아침 햇살이 예쁘네요. ……일어나면 창밖을 한번 봐 주세요.", "voice": "/voice/scene/alice/a57cc8555053.mp3" } },
+    { "id": "rain", "when": { "weather": "rain" },
+      "text": { "ja": "おはようございます。雨の音で目が覚めました。……傘、忘れないでくださいね。", "zh-Hant": "早安。我是被雨聲叫醒的。……別忘了帶傘喔。", "en": "Good morning. The rain woke me up. …Please don't forget your umbrella.", "ko": "좋은 아침이에요. 빗소리에 눈이 떠졌어요. ……우산, 잊지 마세요.", "voice": "/voice/scene/alice/3a8fa0e6f8d5.mp3" } },
+    { "id": "snow", "when": { "weather": "snow" },
+      "text": { "ja": "おはよう。……外、雪ですよ。足元に気をつけて、あたたかくしてください。", "zh-Hant": "早安。……外面在下雪喔。小心腳下，要穿暖一點。", "en": "Morning. …It's snowing outside. Watch your step, and stay warm.", "ko": "좋은 아침. ……밖에 눈이 와요. 발밑 조심하고, 따뜻하게 입어요.", "voice": "/voice/scene/alice/7492db42f2c9.mp3" } },
+    { "id": "clear", "when": { "weather": "clear" },
+      "text": { "ja": "おはようございます。いいお天気です。……花に水をあげていたら、あなたのことを思い出しました。", "zh-Hant": "早安。天氣很好喔。……我在幫花澆水的時候，想起了你。", "en": "Good morning. It's a beautiful day. …I was watering the flowers and thought of you.", "ko": "좋은 아침이에요. 날씨가 좋아요. ……꽃에 물을 주다가 당신이 생각났어요.", "voice": "/voice/scene/alice/ba5d13a45358.mp3" } },
+    { "id": "any", "when": {},
+      "text": { "ja": "……おはよう。起きましたか？ ……起きたら、お返事くださいね。", "zh-Hant": "……早安。起床了嗎？……起來了要回我喔。", "en": "…Morning. Are you awake? …Answer me when you are.", "ko": "……좋은 아침. 일어났어요? ……일어나면 답장 주세요.", "voice": "/voice/scene/alice/a749fc0e4ef4.mp3" } },
+    { "id": "dawn", "when": { "hours": ["dawn"] },
+      "text": { "ja": "……起きてください。外はまだ暗いですね。こんなに早く、えらいです。……温かくして起きてくださいね。", "zh-Hant": "……請起床。外面還很暗呢。這麼早起，真了不起。……要穿暖一點再起來喔。", "en": "…Please wake up. It's still dark outside. Up this early — that's admirable. …Stay warm as you get up.", "ko": "……일어나세요. 밖은 아직 어둡네요. 이렇게 일찍이라니 대단해요. ……따뜻하게 하고 일어나세요.", "voice": "/voice/scene/alice/6fd6975af306.mp3" } },
+    { "id": "day", "when": { "hours": ["day"] },
+      "text": { "ja": "起きてください。お昼寝はここまでですよ。……午後のお茶、ご一緒しませんか？", "zh-Hant": "請起床。午睡就到這裡囉。……下午茶，要不要一起喝？", "en": "Please wake up. Your nap ends here. …Would you join me for afternoon tea?", "ko": "일어나세요. 낮잠은 여기까지예요. ……오후의 차, 같이 하실래요?", "voice": "/voice/scene/alice/21cc17c23173.mp3" } },
+    { "id": "evening", "when": { "hours": ["evening"] },
+      "text": { "ja": "起きてください。もう夕方ですよ。……夕焼け、とてもきれいでした。", "zh-Hant": "請起床。已經傍晚了喔。……剛才的夕陽，非常漂亮。", "en": "Please wake up. It's already evening. …The sunset was beautiful.", "ko": "일어나세요. 벌써 저녁이에요. ……노을이 정말 예뻤어요.", "voice": "/voice/scene/alice/ff2c45b7d484.mp3" } }
+  ],
+  "wakeReplies": {
+    "awake": { "ja": "おはようございます。……ふふ、今日もいってらっしゃい。", "zh-Hant": "早安。……呵呵，今天也路上小心。", "en": "Good morning. …Heh, have a lovely day.", "ko": "좋은 아침이에요. ……후후, 오늘도 잘 다녀오세요.", "voice": "/voice/scene/alice/1c3af7ce9673.mp3" },
+    "snooze": { "ja": "……5分だけ、ですよ。ちゃんと数えてますからね。", "zh-Hant": "……只有五分鐘喔。我會好好數著的。", "en": "…Five minutes only. I'm counting, you know.", "ko": "……5분만이에요. 제대로 세고 있을 거니까요.", "voice": "/voice/scene/alice/467942643001.mp3" }
+  },
+  "woken": [
+    { "ja": "……あ、あなたでしたか。すみません、まだ少し夢の中にいたみたいです。", "zh-Hant": "……啊，原來是你。抱歉，我好像還有一點在夢裡。", "en": "…Oh, it's you. I'm sorry, I think I was still half in a dream.", "ko": "……아, 당신이었군요. 죄송해요, 아직 조금 꿈속에 있었나 봐요.", "voice": "/voice/scene/alice/cde6fecaafb3.mp3" },
+    { "ja": "ん……おはようございます。……寝ぐせ、見ないでくださいね。", "zh-Hant": "嗯……早安。……不要看我睡亂的頭髮喔。", "en": "Mm… good morning. …Please don't look at my bed hair.", "ko": "음…… 좋은 아침이에요. ……부스스한 머리, 보지 마세요.", "voice": "/voice/scene/alice/a67387b85d31.mp3" },
+    { "ja": "……目覚まし、あなたの声だったんですね。……悪くない朝です。", "zh-Hant": "……原來鬧鐘是你的聲音呢。……是個不錯的早晨。", "en": "…So my alarm was your voice. …Not a bad way to wake up.", "ko": "……알람이 당신 목소리였네요. ……나쁘지 않은 아침이에요.", "voice": "/voice/scene/alice/5e4bb6e6bca4.mp3" }
+  ],
+  "goodnight": {
+    "whisper": [
+      { "ja": "……おやすみなさい。今日も、来てくれてありがとう。", "zh-Hant": "……晚安。謝謝你今天也來了。", "en": "…Good night. Thank you for coming again today.", "ko": "……잘 자요. 오늘도 와 줘서 고마워요.", "voice": "/voice/scene/alice/99617b2fcb1a.mp3" },
+      { "ja": "小さな声で、言いますね。……いい夢を。", "zh-Hant": "我小聲地說喔。……祝你好夢。", "en": "I'll say it softly. …Sweet dreams.", "ko": "작은 목소리로 말할게요. ……좋은 꿈 꿔요.", "voice": "/voice/scene/alice/55ac800df3cb.mp3" },
+      { "ja": "……オルゴール、少しだけ鳴らしましょうか。あなたが眠れるまで。", "zh-Hant": "……要不要放一下音樂盒呢？直到你睡著為止。", "en": "…Shall I play the music box a little? Until you fall asleep.", "ko": "……오르골, 조금만 틀어 볼까요. 당신이 잠들 때까지.", "voice": "/voice/scene/alice/29b10faba3ee.mp3" },
+      { "ja": "今日のあなた、ちゃんと見てました。……えらかったよ。おやすみ。", "zh-Hant": "今天的你，我都有好好看著。……你很棒喔。晚安。", "en": "I was watching you today. …You did well. Good night.", "ko": "오늘의 당신, 제대로 보고 있었어요. ……잘했어. 잘 자요.", "voice": "/voice/scene/alice/eb76de2c3ec2.mp3" },
+      { "ja": "……耳元だと、恥ずかしいですね。……おやすみ、なさい。", "zh-Hant": "……在耳邊說，好害羞呢。……晚、安。", "en": "…Saying it by your ear is embarrassing. …Good… night.", "ko": "……귓가에서 하려니 부끄럽네요. ……잘, 자요.", "voice": "/voice/scene/alice/c0ec2928a911.mp3" }
+    ],
+    "plain": { "ja": "おやすみなさい。また明日。", "zh-Hant": "晚安。明天見。", "en": "Good night. See you tomorrow.", "ko": "잘 자요. 내일 또 봐요.", "voice": "/voice/scene/alice/6255ffad423f.mp3" }
+  },
+  "weather": {
+    "firstSnow": [
+      { "ja": "初雪ですね。……温室のガラスに、雪が積もっていくのが見えます。", "zh-Hant": "初雪呢。……我看得到雪慢慢積在溫室的玻璃上。", "en": "It's the first snow. …I can see it settling on the greenhouse glass.", "ko": "첫눈이네요. ……온실 유리에 눈이 쌓여 가는 게 보여요.", "voice": "/voice/scene/alice/514780c0b8f8.mp3" },
+      { "ja": "初雪の日は、手紙を書きたくなります。……あなたに、何を書こうかな。", "zh-Hant": "初雪的日子，總會想寫信。……要寫些什麼給你呢？", "en": "The first snow always makes me want to write a letter. …What should I write to you?", "ko": "첫눈 오는 날엔 편지를 쓰고 싶어져요. ……당신에게 뭘 쓸까.", "voice": "/voice/scene/alice/66380e5de067.mp3" },
+      { "ja": "雪、降ってきました。そちらも寒いですか？ あたたかくしてくださいね。", "zh-Hant": "開始下雪了。你那邊也冷嗎？要穿暖一點喔。", "en": "It's started to snow. Is it cold where you are too? Please stay warm.", "ko": "눈이 내리기 시작했어요. 그쪽도 추운가요? 따뜻하게 하고 있어 주세요.", "voice": "/voice/scene/alice/1aaf69536930.mp3" }
+    ],
+    "rainyNight": [
+      { "ja": "雨の音、好きなんです。……今夜は、少しだけ長くお話ししませんか。", "zh-Hant": "我喜歡雨聲。……今晚，要不要多聊一會兒？", "en": "I love the sound of rain. …Shall we talk a little longer tonight?", "ko": "빗소리, 좋아해요. ……오늘 밤은 조금만 더 오래 이야기하지 않을래요?", "voice": "/voice/scene/alice/8b3c95b924f5.mp3" },
+      { "ja": "雨の夜の温室は、ガラスを雨粒が流れて、とてもきれいなんです。", "zh-Hant": "雨夜的溫室，雨滴順著玻璃流下，非常美。", "en": "On rainy nights the greenhouse is beautiful, with raindrops running down the glass.", "ko": "비 오는 밤의 온실은 빗방울이 유리를 타고 흘러서 정말 아름다워요.", "voice": "/voice/scene/alice/24bd7d516097.mp3" },
+      { "ja": "外は雨ですね。……濡れていませんか？ 風邪、ひかないでください。", "zh-Hant": "外面在下雨呢。……你沒淋濕吧？別感冒了。", "en": "It's raining outside. …You're not wet, are you? Please don't catch a cold.", "ko": "밖에 비가 오네요. ……젖지 않았어요? 감기 걸리지 마세요.", "voice": "/voice/scene/alice/bb6127b4a501.mp3" }
+    ],
+    "typhoon": [
+      { "ja": "台風が近づいているそうです。……今日は、無理に出かけないでくださいね。", "zh-Hant": "聽說颱風正在接近。……今天不要勉強出門喔。", "en": "They say a typhoon is coming. …Please don't force yourself to go out today.", "ko": "태풍이 다가오고 있대요. ……오늘은 무리해서 나가지 마세요.", "voice": "/voice/scene/alice/376f30b3ea89.mp3" },
+      { "ja": "風の音が大きくて……少しこわいです。あなたは、大丈夫ですか？", "zh-Hant": "風聲好大……有點可怕。你還好嗎？", "en": "The wind is so loud… it scares me a little. Are you all right?", "ko": "바람 소리가 커서……조금 무서워요. 당신은 괜찮아요?", "voice": "/voice/scene/alice/ba9e4e7260e4.mp3" },
+      { "ja": "大雨の予報が出ています。……無事でいてくれたら、それだけでいいです。", "zh-Hant": "預報說會下大雨。……只要你平安，就足夠了。", "en": "There's a heavy rain warning. …As long as you're safe, that's all I need.", "ko": "큰비 예보가 나왔어요. ……무사히 있어 주면, 그것만으로 충분해요.", "voice": "/voice/scene/alice/1990fb22e925.mp3" }
+    ]
+  },
+  "promises": [
+    { "id": "wake", "kind": "wakeup", "due": "+12h",
+      "propose": { "ja": "……明日の朝、私が起こしてもいいですか？", "zh-Hant": "……明天早上，可以讓我叫你起床嗎？", "en": "…May I wake you up tomorrow morning?", "ko": "……내일 아침, 제가 깨워 드려도 될까요?", "voice": "/voice/scene/alice/61f46520edf7.mp3" },
+      "promise": { "ja": "明日の朝、起こします", "zh-Hant": "明天早上叫你起床", "en": "I'll wake you up tomorrow morning", "ko": "내일 아침, 깨워 드릴게요" } },
+    { "id": "greenhouse", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "明日の夜も、温室で待っていていいですか。", "zh-Hant": "明天晚上，我也可以在溫室等你嗎？", "en": "May I wait for you in the greenhouse tomorrow night too?", "ko": "내일 밤에도 온실에서 기다리고 있어도 될까요?", "voice": "/voice/scene/alice/b3c14215155f.mp3" },
+      "promise": { "ja": "明日の夜も、花のお話をする", "zh-Hant": "明天晚上，再聊花的事", "en": "More flower talk tomorrow night", "ko": "내일 밤에도 꽃 이야기를" } },
+    { "id": "bloom", "kind": "message", "due": "+1d",
+      "propose": { "ja": "明日、咲いた花のこと、メッセージで知らせますね。", "zh-Hant": "明天開了什麼花，我傳訊息告訴你。", "en": "Tomorrow I'll message you about whatever's bloomed.", "ko": "내일 핀 꽃 소식, 메시지로 알려 드릴게요.", "voice": "/voice/scene/alice/8b53eace5164.mp3" },
+      "promise": { "ja": "明日、咲いた花のことを知らせます", "zh-Hant": "明天告訴你開了什麼花", "en": "News of tomorrow's flowers", "ko": "내일 핀 꽃 소식을 알려 드릴게요" } },
+    { "id": "piano", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "……明日、また一曲、弾きましょうか。あなたのためだけに。", "zh-Hant": "……明天，再為你彈一首吧。只為你一個人。", "en": "…Shall I play another piece tomorrow? Just for you.", "ko": "……내일 또 한 곡 칠까요. 당신만을 위해서.", "voice": "/voice/scene/alice/6f13d5b1caa6.mp3" },
+      "promise": { "ja": "明日の夜、あなたのためにもう一曲", "zh-Hant": "明天晚上，再為你彈一首", "en": "Another song for you tomorrow night", "ko": "내일 밤, 당신을 위해 한 곡 더" } },
+    { "id": "season", "kind": "free", "due": "+2d",
+      "propose": { "ja": "今度、あなたの好きな季節のこと、教えてください。", "zh-Hant": "下次，告訴我你喜歡的季節吧。", "en": "Next time, tell me about your favorite season.", "ko": "다음에 당신이 좋아하는 계절 얘기, 들려주세요.", "voice": "/voice/scene/alice/f0702e355eac.mp3" },
+      "promise": { "ja": "あなたの好きな季節の話を聞く", "zh-Hant": "聽你說喜歡的季節", "en": "Hear about your favorite season", "ko": "당신이 좋아하는 계절 이야기 듣기" } }
+  ],
+  "callName": {
+    "familiar": {
+      "to": "{name}くん",
+      "ask": { "ja": "あの……{name}くん、って呼んでもいいですか？ さん付けだと、少し遠い気がして。", "zh-Hant": "那個……以後可以不那麼拘謹，直接叫你「{name}」嗎？太客氣的話，感覺有點疏遠。", "en": "Um… may I call you just {name}? Being so formal feels a little distant.", "ko": "저기……'씨' 빼고 {name}, 이라고 불러도 될까요? '씨'라고 부르면 조금 멀게 느껴져서.", "unnamed": { "ja": "あの……これから、くん付けで呼んでもいいですか？ さん付けだと、少し遠い気がして。", "zh-Hant": "那個……以後，可以叫得親近一點嗎？太客氣的話，感覺有點疏遠。", "en": "Um… may I call you something a little closer from now on? Being so formal feels a little distant.", "ko": "저기……이제부터 조금 더 편하게 불러도 될까요? '씨'라고 부르면 조금 멀게 느껴져서.", "voice": "/voice/scene/alice/70e5ef456e72.mp3" } },
+      "accepted": { "ja": "……{name}くん。……ふふ、ちょっと、照れちゃいますね。", "zh-Hant": "……{name}。……呵呵，有點害羞呢。", "en": "…{name}. …Heh, that's a little embarrassing.", "ko": "……{name}. ……후후, 조금 부끄럽네요.", "unnamed": { "ja": "……ふふ。そう呼ぶの、ちょっと照れちゃいますね。", "zh-Hant": "……呵呵。這樣叫你，有點害羞呢。", "en": "…Heh. Calling you that makes me a little shy.", "ko": "……후후. 그렇게 부르니까 조금 부끄럽네요.", "voice": "/voice/scene/alice/618aff272170.mp3" } },
+      "declined": { "ja": "……わかりました。今の呼び方も、大切にしますね。", "zh-Hant": "……我知道了。現在的叫法，我也會好好珍惜。", "en": "…I understand. I'll treasure the way I call you now, too.", "ko": "……알겠어요. 지금 부르는 방식도 소중히 할게요.", "voice": "/voice/scene/alice/20555a0be3b8.mp3" }
+    },
+    "lover": {
+      "to": "{name}",
+      "ask": { "ja": "……{name}、って呼んでも、いい？ ……恋人、だから。", "zh-Hant": "……可以叫你「{name}」嗎？……因為，是戀人了。", "en": "…May I call you {name}? …Since we're together now.", "ko": "……{name}. ……그렇게 불러도, 돼? ……연인, 이니까.", "unnamed": { "ja": "……名前で、呼び捨てにしても、いい？ ……恋人、だから。", "zh-Hant": "……可以直接叫你的名字嗎？……因為，是戀人了。", "en": "…Can I call you by just your name? …Since we're together now.", "ko": "……이름만으로, 편하게 불러도, 돼? ……연인, 이니까.", "voice": "/voice/scene/alice/10407426ad9e.mp3" } },
+      "accepted": { "ja": "{name}。……呼ぶたびに、胸があたたかくなります。", "zh-Hant": "{name}。……每叫一次，心裡就暖一次。", "en": "{name}. …Every time I say it, my heart feels warm.", "ko": "{name}. ……부를 때마다 가슴이 따뜻해져요.", "unnamed": { "ja": "……名前を呼ぶたびに、胸があたたかくなります。", "zh-Hant": "……每次叫你的名字，心裡都暖暖的。", "en": "…Every time I say your name, my heart feels warm.", "ko": "……이름을 부를 때마다 가슴이 따뜻해져요.", "voice": "/voice/scene/alice/5a86f899edd4.mp3" } },
+      "declined": { "ja": "……うん。{name}くんのままでも、あなたは私の特別です。", "zh-Hant": "……嗯。就算還是像現在這樣叫你{name}，你也是我特別的人。", "en": "…Okay. Even if I keep calling you {name} the way I do now, you're my special person.", "ko": "……응. 지금처럼 {name}, 이렇게 부르는 채로도 당신은 저의 특별한 사람이에요.", "unnamed": { "ja": "……うん。今の呼び方のままでも、あなたは私の特別です。", "zh-Hant": "……嗯。就算維持現在的叫法，你也是我特別的人。", "en": "…Okay. Even the way I call you now, you're still special to me.", "ko": "……응. 지금 부르는 방식 그대로여도 당신은 저의 특별한 사람이에요.", "voice": "/voice/scene/alice/2e1d58caf371.mp3" } }
+    }
+  },
+  "refuse": [
+    { "id": "line-1", "kind": "line",
+      "text": { "ja": "……そ、そういうお話は、だめです。もう……もっとふつうに、あなたのこと聞かせてください。", "zh-Hant": "……那、那種話題不可以。真是的……多跟我說說你的事吧。", "en": "…W-we can't talk about that. Honestly… tell me more about you instead.", "ko": "……그, 그런 얘기는 안 돼요. 정말……평범하게 당신 얘기 더 들려주세요.", "voice": "/voice/scene/alice/0b08e64a9f71.mp3" } },
+    { "id": "line-2", "kind": "line",
+      "text": { "ja": "……だめ。それは、私が大切にしたいものとは、ちがうんです。", "zh-Hant": "……不行。那跟我想珍惜的東西，不一樣。", "en": "…No. That isn't what I want us to treasure.", "ko": "……안 돼요. 그건 제가 소중히 하고 싶은 것과는 달라요.", "voice": "/voice/scene/alice/dd2c42409201.mp3" } },
+    { "id": "line-3", "kind": "line",
+      "text": { "ja": "……それは、内緒です。……かわりに、手をつなぐくらいなら。", "zh-Hant": "……那是秘密。……不過，牽手的話可以。", "en": "…That's a secret. …But holding hands, that I could do.", "ko": "……그건 비밀이에요. ……대신 손을 잡는 정도라면.", "voice": "/voice/scene/alice/f17f226791ce.mp3" } },
+    { "id": "bargain-1", "kind": "bargain",
+      "text": { "ja": "踊るのは……恥ずかしいから、だめです。……かわりに、ピアノなら弾きます。", "zh-Hant": "跳舞的話……太害羞了，不行。……不過，鋼琴的話我可以彈。", "en": "Dancing is… too embarrassing, so no. …I'll play the piano instead.", "ko": "춤은……부끄러워서 안 돼요. ……대신 피아노라면 칠게요.", "voice": "/voice/scene/alice/882c3500cfe2.mp3" } },
+    { "id": "bargain-2", "kind": "bargain",
+      "text": { "ja": "大きな音の映画は苦手です。……静かな映画のお話なら、いくらでも。", "zh-Hant": "我不喜歡很吵的電影。……安靜的電影的話，要聊多久都可以。", "en": "I don't do loud films. …Quiet ones, I could talk about forever.", "ko": "소리가 큰 영화는 잘 못 봐요. ……조용한 영화 얘기라면 얼마든지.", "voice": "/voice/scene/alice/ea6cac6b9b35.mp3" } }
+  ],
+  "variantInvite": [
+    { "ja": "……いつもと違う服の私、見てみたいですか？ ……少しだけ、恥ずかしいですけど。", "zh-Hant": "……想看看穿著不一樣衣服的我嗎？……雖然有點害羞。", "en": "…Would you like to see me in something different? …It's a little embarrassing, though.", "ko": "……평소랑 다른 옷을 입은 저, 보고 싶으세요? ……조금 부끄럽긴 하지만.", "voice": "/voice/scene/alice/7398d0b8ed38.mp3" },
+    { "ja": "新しいドレスを、着てみたんです。……あなたに、いちばんに見てほしくて。", "zh-Hant": "我試穿了新的洋裝。……想讓你第一個看到。", "en": "I tried on a new dress. …I wanted you to be the first to see it.", "ko": "새 드레스를 입어 봤어요. ……당신에게 제일 먼저 보여 주고 싶어서.", "voice": "/voice/scene/alice/be1cf0087a92.mp3" },
+    { "ja": "少し特別な私に、出会えることがあるそうです。……もし出会えたら、教えてくださいね。", "zh-Hant": "聽說有時能遇見有點特別的我。……如果遇到了，要告訴我喔。", "en": "They say you might come across a slightly special me. …If you do, please tell me.", "ko": "조금 특별한 저를 발견할 때가 있다고 해요. ……발견하면 알려 주세요.", "voice": "/voice/scene/alice/7ea2a63eb82a.mp3" }
+  ],
+  "bargain": {
+    "ask": { "ja": "一緒に踊ってほしい", "zh-Hant": "想和妳一起跳舞", "en": "Dance with me", "ko": "같이 춤춰 줘" },
+    "refuse": {
+      "normal": { "ja": "踊る……んですか？ ここで？ ……だめです。恥ずかしいし、花にぶつかっちゃいます。", "zh-Hant": "跳舞……嗎？在這裡？……不行。太害羞了，而且會撞到花的。", "en": "Dance…? Here? …No. It's embarrassing, and we'd bump into the flowers.", "ko": "춤……이요? 여기서? ……안 돼요. 부끄럽고, 꽃에 부딪히고 말 거예요.", "voice": "/voice/scene/alice/64fdc0d15605.mp3" },
+      "hot": { "ja": "今夜は温室の中も暑くて……踊ったら、花より先に私がしおれちゃいます。だめです。", "zh-Hant": "今晚溫室裡也好熱……要是跳舞，我會比花先枯萎的。不行。", "en": "It's hot even in the greenhouse tonight… if I danced, I'd wilt before the flowers do. No.", "ko": "오늘 밤은 온실 안도 더워서……춤추면 꽃보다 먼저 제가 시들어 버릴 거예요. 안 돼요.", "voice": "/voice/scene/alice/9343c18d9d89.mp3" }
+    },
+    "branches": [
+      { "id": "please", "leadsTo": "push",
+        "offer": { "ja": "お願い、一曲だけ踊って", "zh-Hant": "拜託，只跳一支舞就好", "en": "Please, just one dance", "ko": "부탁이야, 한 곡만 춤춰 줘" },
+        "reply": [
+          { "ja": "……そんな顔で頼まれても、だめです。……だめ、なんですけど。", "zh-Hant": "……就算你用那種表情拜託，也不行。……不行，是不行……可是。", "en": "…Even with that face, the answer's no. …It's no, but…", "ko": "……그런 표정으로 부탁해도 안 돼요. ……안 되는데……말이죠.", "voice": "/voice/scene/alice/e1e87309012c.mp3" }
+        ] },
+      { "id": "icecream", "leadsTo": "push",
+        "offer": { "ja": "アイスおごるから", "zh-Hant": "我請妳吃冰淇淋", "en": "I'll buy you ice cream", "ko": "아이스크림 사 줄게" },
+        "reply": [
+          { "ja": "……アイスで釣られるほど、安くありません。", "zh-Hant": "……我可沒那麼好收買，一支冰淇淋就想打發我。", "en": "…I'm not so cheap that ice cream will win me over.", "ko": "……아이스크림에 넘어갈 만큼 싸지 않아요.", "voice": "/voice/scene/alice/1bdcb2df361f.mp3" },
+          { "ja": "……何味、ですか？ ……聞いただけです。", "zh-Hant": "……什麼口味的？……我只是問問而已。", "en": "…What flavor? …I'm only asking.", "ko": "……무슨 맛……인데요? ……그냥 물어본 거예요.", "voice": "/voice/scene/alice/a9060c5b5ce3.mp3" }
+        ] },
+      { "id": "piano", "leadsTo": "piano",
+        "offer": { "ja": "じゃあ、ピアノを弾いて", "zh-Hant": "那彈鋼琴給我聽", "en": "Then play the piano for me", "ko": "그럼 피아노 쳐 줘" },
+        "reply": [
+          { "ja": "……それなら。それなら、いいですよ。", "zh-Hant": "……那樣的話。那樣的話，可以喔。", "en": "…That, then. That, I can do.", "ko": "……그거라면. 그거라면 좋아요.", "voice": "/voice/scene/alice/52efb724c300.mp3" }
+        ] }
+    ],
+    "push": { "ja": "……もうひと押し、してみますか？ 聞くだけは、聞きます。", "zh-Hant": "……要不要再努力一下？我姑且聽聽看。", "en": "…Want to try once more? I'll at least listen.", "ko": "……한 번 더 밀어붙여 볼래요? 듣는 것만은 들어 줄게요.", "voice": "/voice/scene/alice/ae646b705f69.mp3" },
+    "counter": [
+      { "ja": "……わかりました。踊るのは、まだ恥ずかしいから……かわりに、一曲だけ弾きます。", "zh-Hant": "……好吧。跳舞還是太害羞了……作為交換，我彈一首曲子給你聽。", "en": "…All right. Dancing is still too embarrassing… so instead, I'll play you one piece.", "ko": "……알겠어요. 춤은 아직 부끄러우니까……대신 한 곡만 칠게요.", "voice": "/voice/scene/alice/c90f00871fc6.mp3" }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+# nest.jstarcards.ai (Nest), the v1.1 review site (STAGE=review: real e-mail sign-in, Turnstile, no demo data). On demand: gh workflow run deploy-nest.yml --ref release/v1.1
+# Runs infra/cloudflare/scripts/deploy.sh on the self-hosted Mac runner; the ref's `ci` check must have passed.
+name: Deploy nest
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-nest
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  checks: read
+  statuses: write
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, jstar-mac]
+    timeout-minutes: 40
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci --prefer-offline --no-audit --no-fund
+      - name: Write Worker secrets (nest-only values)
+        env:
+          JWT_SECRET: ${{ secrets.NEST_JWT_SECRET }}
+          SERIAL_HMAC_KEY: ${{ secrets.NEST_SERIAL_HMAC_KEY }}
+          AGENT_API_KEY: ${{ secrets.NEST_AGENT_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          # Web Push (#50): Nest's own key pair. Empty = push off, the web app never offers notifications.
+          VAPID_PUBLIC_KEY: ${{ secrets.NEST_VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.NEST_VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          # Her runtime voice (#73, docs/tts.md): the vendors' keys (one GitHub secret each, shared by the sites) and,
+          # per site, which talents speak with which voice (repository variables NEST_TTS_PROVIDER / NEST_TTS_VOICES).
+          # All empty = her runtime voice is off and nothing changes.
+          FISH_API_KEY: ${{ secrets.FISH_API_KEY }}
+          LIPSYNC_SECRET: ${{ secrets.LIPSYNC_SECRET }}
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          BYTEPLUS_VOICE_API_KEY: ${{ secrets.BYTEPLUS_VOICE_API_KEY }}
+          TTS_PROVIDER: ${{ vars.NEST_TTS_PROVIDER }}
+          TTS_VOICES: ${{ vars.NEST_TTS_VOICES }}
+          # Turnstile (STAGE=review challenges bots as production does): the secret of the widget "jstarcards.ai",
+          # whose domains include nest.jstarcards.ai. ADMIN_EMAILS is deliberately not set on Nest.
+          TURNSTILE_SECRET: ${{ secrets.NEST_TURNSTILE_SECRET }}
+        run: |
+          umask 077
+          printf 'JWT_SECRET=%s\nSERIAL_HMAC_KEY=%s\nAGENT_API_KEY=%s\nOPENROUTER_API_KEY=%s\n' "$JWT_SECRET" "$SERIAL_HMAC_KEY" "$AGENT_API_KEY" "$OPENROUTER_API_KEY" > .env.worker-nest.local
+          if [ -n "$VAPID_PUBLIC_KEY" ] && [ -n "$VAPID_PRIVATE_KEY" ]; then printf 'VAPID_PUBLIC_KEY=%s\nVAPID_PRIVATE_KEY=%s\n' "$VAPID_PUBLIC_KEY" "$VAPID_PRIVATE_KEY" >> .env.worker-nest.local; else echo "::warning::NEST_VAPID_PUBLIC_KEY / NEST_VAPID_PRIVATE_KEY are not set: Web Push stays off on Nest"; fi
+          if [ -n "$VAPID_SUBJECT" ]; then printf 'VAPID_SUBJECT=%s\n' "$VAPID_SUBJECT" >> .env.worker-nest.local; fi
+          for k in FISH_API_KEY DASHSCOPE_API_KEY BYTEPLUS_VOICE_API_KEY TTS_PROVIDER LIPSYNC_SECRET; do [ -z "${!k}" ] || printf '%s=%s\n' "$k" "${!k}" >> .env.worker-nest.local; done
+          if [ -n "$TTS_VOICES" ]; then printf "TTS_VOICES='%s'\n" "$TTS_VOICES" >> .env.worker-nest.local; fi
+          if [ -z "$TURNSTILE_SECRET" ]; then echo "::error::NEST_TURNSTILE_SECRET is not set: Nest (STAGE=review) needs Turnstile"; exit 1; fi
+          printf 'TURNSTILE_SECRET=%s\n' "$TURNSTILE_SECRET" >> .env.worker-nest.local
+
+      - run: infra/cloudflare/scripts/deploy.sh nest
+      - name: Remove secrets
+        if: always()
+        run: rm -f .env.worker-nest.local

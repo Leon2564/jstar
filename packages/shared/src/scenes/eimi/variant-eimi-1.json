@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "id": "variant-eimi-1",
+    "star": "eimi",
+    "title": {"ja": "新しい服、見せてあげる", "zh-Hant": "新衣服，讓你看看", "en": "Let Me Show You My New Outfit", "ko": "새 옷, 보여 줄게"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 1},
+    "idle": "eimi-variant-home"
+  },
+  "steps": [
+    {"id": "room", "type": "clip", "shot": "empty", "media": "eimi-night", "hold": 1.5},
+    {"id": "wait", "type": "line", "voice": "/voice/scene/eimi/cb7aa75cb836.mp3", "text": {"ja": "ちょっと待ってて。……のぞいたら、おしおきね？", "zh-Hant": "等我一下。……偷看的話，要處罰喔？", "en": "Wait a moment. …Peek, and there'll be a penalty.", "ko": "잠깐만 기다려. ……훔쳐보면 벌 줄 거야?"}},
+    {"id": "enter", "type": "clip", "shot": "enter", "media": "eimi-variant-enter", "hold": 0},
+    {"id": "ta-da", "type": "line", "voice": "/voice/scene/eimi/16e7bfbc2ff7.mp3", "text": {"ja": "……おまたせ。新しい服、届いたの。……ほら、ちゃんと見て？", "zh-Hant": "……久等了。新衣服到了。……來，好好看著？", "en": "…There. My new outfit came. …Go on, look properly.", "ko": "……기다렸지. 새 옷이 왔어. ……자, 제대로 봐 줄래?"}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "quiet", "options": [{"id": "suits", "next": "suits", "label": {"ja": "似合ってる", "zh-Hant": "很適合你", "en": "It suits you", "ko": "잘 어울려"}}, {"id": "stare", "next": "stare", "label": {"ja": "見とれてた", "zh-Hant": "看呆了", "en": "I was staring", "ko": "넋 놓고 봤어"}}]},
+    {"id": "suits", "type": "line", "voice": "/voice/scene/eimi/f064b336f291.mp3", "next": "close", "text": {"ja": "ふふっ、でしょ？ ……キミに言わせたかったの、その言葉。", "zh-Hant": "呵呵，對吧？……我就是想讓你說出那句話。", "en": "Hehe, right? …That's exactly what I wanted to hear from you.", "ko": "후훗, 그렇지? ……너한테서 듣고 싶었어, 그 말."}},
+    {"id": "stare", "type": "line", "voice": "/voice/scene/eimi/5e9406d048cf.mp3", "next": "close", "text": {"ja": "へぇ〜、見とれちゃった？ ……かわいいね、キミ。", "zh-Hant": "哦～，看呆了？……你真可愛。", "en": "Ooh, were you staring? …You're cute.", "ko": "흐응, 넋 놓고 봤어? ……귀엽네, 너."}},
+    {"id": "quiet", "type": "line", "voice": "/voice/scene/eimi/b0342eee4a3f.mp3", "text": {"ja": "……だまっちゃって。ふふっ、言葉にならないくらい、よかったんだ？", "zh-Hant": "……不說話了。呵呵，好看到說不出話來了？", "en": "…Gone quiet. Hehe, so good you're lost for words?", "ko": "……말이 없어졌네. 후훗, 말도 안 나올 만큼 좋았어?"}},
+    {"id": "close", "type": "clip", "shot": "close", "media": "eimi-variant-close", "hold": 0},
+    {"id": "first", "type": "line", "voice": "/voice/scene/eimi/5bd25b62ea69.mp3", "text": {"ja": "この服で会うの、キミがいちばん最初。……光栄に思いなさい？", "zh-Hant": "穿這套衣服給人看，你是第一個。……要覺得榮幸喔？", "en": "You're the very first to see me in this. …Feel honored, okay?", "ko": "이 옷 입고 만나는 건 네가 제일 처음이야. ……영광으로 여겨야지?"}},
+    {"id": "reward", "type": "effect", "affinity": 5, "variantXp": 30, "memory": {"title": {"ja": "新しい服と、キミの顔", "zh-Hant": "新衣服與你的表情", "en": "New Outfit, Your Face", "ko": "새 옷과, 너의 표정"}}},
+    {"id": "more", "type": "line", "voice": "/voice/scene/eimi/25534a691abf.mp3", "text": {"ja": "もっと仲良くなったら……この服のえいみ、もっと見せてあげる。続きは、また今度ね。", "zh-Hant": "等更親近一點……再讓你多看看穿這套衣服的詠美。後續，下次再說。", "en": "Once we're closer… I'll show you even more of Eimi in this outfit. The rest can wait till next time.", "ko": "더 친해지면…… 이 옷을 입은 에이미, 더 보여 줄게. 나머지는 또 다음에."}},
+    {"id": "end", "type": "end", "outcome": "reveal"}
+  ]
+}

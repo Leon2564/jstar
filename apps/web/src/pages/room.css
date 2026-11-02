@@ -1,0 +1,510 @@
+/* Her room v2: A2「夜畫廊」's look (docs/design/room-v2/) laid out as B「電影字幕」 (owner, 10/3: 按B做). Three bands that
+   never meet: the top band (✦ JSTAR, the status line: a film's title-safe line), her picture, and the subtitle band
+   (her words, at most three lines, ▼ to page; his choices take its place once she is done). Tokens and system only. */
+.home.room-v2 .tabbar { display: none; }
+html.private-live-route-leave .home-fp { opacity: 0; transition: opacity 320ms ease; }
+/* QA #11: her room never scrolls as a page (a failed send, a focused sheet): it is the screen. */
+.home.room-v2 { position: fixed; inset: 0; overflow: hidden; }
+html:has(.home.room-v2), body:has(.home.room-v2) { overflow: hidden; overscroll-behavior: none; }
+/* A note from the room (check-in, the demo, the call's end): in the top band, over the label row for its moment —
+   never on her hair or face (QA #19), never over her words. */
+.home.room-v2 .toast { top: calc(env(safe-area-inset-top) + 52px); bottom: auto; max-width: calc(100vw - 40px); padding: 8px 16px; border: var(--hairline) solid var(--iv-line); background: rgba(var(--nd), 0.92); font-family: var(--serif); letter-spacing: 0.06em; }
+
+/* ---- the geometry, by aspect ratio (roomV2.tsx useStagePortrait draws the same line at 17:20):
+   P  < 17:20     her 9:16 clip, full-bleed
+   M  17:20–3:2   her 16:9 clip in a soft letterbox: a night bar above (the status) and below (her words)
+   W  ≥ 3:2       her 16:9 clip, full-bleed; past 2:1 it is pillarboxed (a 16:9 film on an ultrawide), never cut more
+   --sb*: the stage box for a clip of the screen's own ratio; --tyf: how far down her face's centre is put in it. */
+.home.room-v2 {
+  --vh: 100dvh; --safe-t: env(safe-area-inset-top, 0px); --safe-b: env(safe-area-inset-bottom, 0px);
+  --sbx: 0px; --sby: 0px; --sbw: 100vw; --sbh: var(--vh); --tyf: 0.33;
+  --gut: 20px; --fs-sub: 19px; --lh-sub: 1.8; --sub-lines: 3; --measure: calc(100vw - 2 * var(--gut));
+  --fade: 76px; --veil: 128px; --lane-top: calc(var(--safe-t) + 150px); --stage-min: 196px;
+  --s1x: 90%; --s1y: 40%; --s2x: 6%; --s2y: 30%;
+  background: var(--navy-deep);
+}
+.home.room-v2 .home-stage { mask-image: linear-gradient(180deg, #000 0, #000 60%, rgba(0, 0, 0, 0.34) 100%); }
+/* Each clip in its box, cropped around her face (data/faces.gen.json via roomV2.tsx clipLook: --fx / --fy): her face's
+   centre goes to the box's upper centre, clamped so no empty edge shows. Her talk loop, her listening loop and her
+   lip-synced sentence take the same rules from the same entry: they line up to the pixel. */
+.home.room-v2 .home-stage .scene {
+  --bx: var(--sbx); --by: var(--sby); --bw: var(--sbw); --bh: var(--sbh);
+  inset: auto; left: var(--bx); top: var(--by); width: var(--bw); height: var(--bh);
+}
+/* QA #9: her poster paints at once and sharp (the small one first, then the full one), never a blur without her. */
+.home.room-v2 .home-stage .scene-poster[data-lqip] { filter: none !important; transform: none !important; }
+.home.room-v2 .home-stage .clip-169 { --ar: 1.7778; }
+.home.room-v2 .home-stage .clip-916 { --ar: 0.5625; }
+.home.room-v2 .home-stage .scene > .scene-poster, .home.room-v2 .home-stage .scene > .scene-video {
+  --iw: max(var(--bw), calc(var(--bh) * var(--ar, 0.5625))); --ih: calc(var(--iw) / var(--ar, 0.5625));
+  object-position: clamp(calc(var(--bw) - var(--iw)), calc(var(--bw) * 0.5 - var(--fx, 0.5) * var(--iw)), 0px)
+    clamp(calc(var(--bh) - var(--ih)), calc(var(--bh) * var(--tyf) - var(--fy, 0.36) * var(--ih)), 0px);
+}
+
+.room2 { --room-top: calc(env(safe-area-inset-top) + 6px); --room-bottom: calc(env(safe-area-inset-bottom) + 18px); --fs-label: 12px; /* B-L6: ≥ 12 px */
+  position: fixed; inset: 0; z-index: 5; color: var(--ivory); font-family: var(--sans); pointer-events: none; }
+.room2 > * { pointer-events: auto; }
+.room2 > .js-night, .room2 > .js-sparkles { pointer-events: none; }
+/* QA #7: his swipes are hers to read (pure view up / down, the five left / right), touch as well as mouse. */
+.room2-surface { position: absolute; inset: 0; touch-action: none; -webkit-user-select: none; user-select: none; }
+.room2 .js-spark, .room2-call .js-spark { font-size: 12px; color: var(--rose-glow); } /* QA #10: ≥ 12 px and AA where it means something */
+
+/* 1v1 live: a desktop-live layout over the same digital-human stage. The cover and RTC video share the exact box,
+   so the provider can take over without a crop or position jump. */
+.private-live { overflow: hidden; background: #090b18; }
+.private-live-avatar { position: absolute; inset: 0; z-index: 0; background: #090b18; overflow: hidden; }
+.private-live-cover-image, .private-live-cover, .private-live-stream, .private-live-stream > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.private-live[data-star='eimi'] .private-live-cover-image, .private-live[data-star='eimi'] .private-live-cover, .private-live[data-star='eimi'] .private-live-stream > video { object-position: 62% center; }
+.private-live-cover-image { z-index: 0; }
+.private-live-cover { z-index: 1; transition: opacity 700ms var(--ease); }
+.private-live-stream { z-index: 2; opacity: 0; transition: opacity 700ms var(--ease); }
+.private-live.is-ready .private-live-stream { opacity: 1; }
+.private-live.is-ready .private-live-cover { opacity: 0; }
+.private-live-bonus { position: absolute !important; inset: 0; z-index: 3; }
+.private-live-bonus > .scene-poster, .private-live-bonus > .scene-video { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.private-live-vignette { position: absolute; inset: 0; z-index: 4; pointer-events: none; background: linear-gradient(90deg, rgba(7,9,24,.72), transparent 38%, transparent 72%, rgba(7,9,24,.3)), linear-gradient(0deg, rgba(7,9,24,.82), transparent 38%); }
+.private-live > :not(.private-live-avatar) { z-index: 4; }
+.private-live.is-entering .private-live-head, .private-live.is-entering .private-live-actions, .private-live.is-entering .private-live-chat, .private-live.is-entering .private-live-composer { opacity: 0; transform: translateY(10px); }
+.private-live-head, .private-live-actions, .private-live-chat, .private-live-composer { transition: opacity 420ms var(--ease), transform 420ms var(--ease); }
+.private-live-head { position: absolute; top: calc(env(safe-area-inset-top) + 22px); left: 28px; right: 28px; display: flex; align-items: flex-start; justify-content: space-between; pointer-events: none; }
+.private-live-head > * { pointer-events: auto; }
+.private-live-exit { min-height: 46px; padding: 0 17px; display: flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: rgba(9,11,24,.62); backdrop-filter: blur(14px); color: var(--ivory); font: 13px var(--sans); cursor: pointer; }
+.private-live-identity { padding: 9px 13px; display: grid; grid-template-columns: auto auto; gap: 2px 12px; justify-items: end; background: rgba(9,11,24,.38); backdrop-filter: blur(12px); border-radius: 10px; }
+.private-live-identity span { grid-column: 1 / -1; font-size: 10px; letter-spacing: .18em; color: var(--iv-meta); }
+.private-live-identity span i { display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; background: var(--rose); box-shadow: 0 0 12px var(--rose); }
+.private-live-identity strong { font: 16px var(--serif); letter-spacing: .1em; }.private-live-identity small { align-self: end; color: var(--iv-meta); }
+.private-live-actions { position: absolute; right: 28px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 14px; }
+.private-live-actions button { width: 70px; min-height: 70px; display: grid; place-items: center; gap: 2px; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: rgba(9,11,24,.56); backdrop-filter: blur(14px); color: var(--ivory); cursor: pointer; }
+.private-live-actions button:hover, .private-live-actions button.on { border-color: var(--rose); background: rgba(210,135,154,.18); }
+.private-live-actions span { font-size: 22px; }.private-live-actions b { font: 11px var(--sans); font-weight: 500; }
+.private-live-chat { position: absolute; left: 34px; bottom: 98px; width: min(390px, calc(100vw - 140px)); display: flex; flex-direction: column; gap: 7px; }
+.private-live-chat p { width: fit-content; max-width: 100%; margin: 0; padding: 8px 11px; border-radius: 10px; background: rgba(9,11,24,.48); backdrop-filter: blur(12px); font-size: 13px; line-height: 1.45; animation: liveBubbleIn 260ms ease both; }
+.private-live-chat p.me { margin-left: auto; background: rgba(210,135,154,.25); }.private-live-chat b { margin-right: 8px; color: var(--rose-glow); font-size: 10px; font-weight: 500; }
+.private-live-composer { position: absolute; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 24px); width: min(620px, calc(100vw - 220px)); height: 54px; transform: translateX(-50%); display: flex; align-items: center; padding: 0 8px 0 18px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: rgba(9,11,24,.72); backdrop-filter: blur(18px); }
+.private-live.is-entering .private-live-composer { transform: translate(-50%, 10px); }
+.private-live-composer input { flex: 1; min-width: 0; height: 100%; border: 0; outline: 0; background: transparent; color: var(--ivory); font: 15px var(--sans); }
+.private-live-composer input::placeholder { color: rgba(239,232,237,.52); }.private-live-composer button { width: 40px; height: 40px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--rose); color: var(--navy-deep); cursor: pointer; }.private-live-composer button:disabled { opacity: .32; }
+.private-live-scenes { position: absolute; right: 112px; top: 50%; width: min(380px, calc(100vw - 150px)); max-height: min(580px, 72vh); transform: translateY(-50%); padding: 18px; border: 1px solid rgba(255,255,255,.2); border-radius: 18px; background: rgba(9,11,24,.88); backdrop-filter: blur(24px); overflow: auto; animation: liveBubbleIn 260ms ease both; }
+.private-live-scene-head { display: flex; justify-content: space-between; align-items: center; letter-spacing: .22em; }.private-live-scene-head button { border: 0; background: none; color: var(--ivory); }
+.private-live-tiers { display: grid; grid-template-columns: 1fr 1fr; margin: 14px 0; border-bottom: 1px solid rgba(255,255,255,.15); }.private-live-tiers button { padding: 10px; border: 0; border-bottom: 2px solid transparent; background: none; color: var(--iv-meta); }.private-live-tiers button[aria-selected=true] { border-color: var(--rose); color: var(--ivory); }
+.private-live-card-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }.private-live-card-list > button { padding: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.13); border-radius: 10px; background: rgba(255,255,255,.04); color: var(--ivory); text-align: left; }.private-live-card-list > button.selected { border-color: var(--rose); }.private-live-card-list img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }.private-live-card-list span { display: block; padding: 7px; font-size: 10px; }.private-live-card-list b { margin-right: 5px; color: var(--rose-glow); }.private-live-card-list p { grid-column: 1/-1; color: var(--iv-meta); }
+.private-live-card-list > .private-live-default { grid-column: 1/-1; min-height: 48px; display: grid; place-items: center; text-align: center; }
+.private-live-card-list > .private-live-default span { letter-spacing: .08em; }
+.private-live-current { position: absolute; top: 26px; left: 50%; transform: translateX(-50%); padding: 7px 11px; border-radius: 999px; background: rgba(9,11,24,.54); backdrop-filter: blur(12px); font: 11px var(--serif); }.private-live-current span { margin-right: 7px; color: var(--rose-glow); }
+/* Desktop 1v1 follows a live-room layout: the digital human keeps her complete camera frame in a dedicated
+   stage, while identity, chat and interaction tools live in a fixed side rail. */
+@media (min-width: 901px) {
+  .private-live {
+    --private-live-rail: clamp(340px, 23vw, 430px);
+    background: #070914;
+  }
+  .private-live::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: var(--private-live-rail);
+    border-left: 1px solid rgba(239,232,237,.12);
+    background: linear-gradient(180deg, rgba(28,31,55,.98), rgba(10,12,27,.99));
+    box-shadow: -24px 0 60px rgba(0,0,0,.18);
+    pointer-events: none;
+  }
+  .private-live-avatar {
+    right: var(--private-live-rail);
+    background: #050611;
+  }
+  .private-live-cover-image,
+  .private-live-cover,
+  .private-live-stream,
+  .private-live-stream > video,
+  .private-live-bonus > .scene-poster,
+  .private-live-bonus > .scene-video,
+  .private-live[data-star='eimi'] .private-live-cover-image,
+  .private-live[data-star='eimi'] .private-live-cover,
+  .private-live[data-star='eimi'] .private-live-stream > video {
+    object-fit: contain !important;
+    object-position: 50% 50% !important;
+  }
+  .private-live-vignette {
+    background: linear-gradient(0deg, rgba(7,9,24,.48), transparent 24%), linear-gradient(90deg, rgba(7,9,24,.22), transparent 18%, transparent 82%, rgba(7,9,24,.18));
+  }
+  .private-live-head {
+    top: 18px;
+    left: 20px;
+    right: 18px;
+  }
+  .private-live-exit { background: rgba(9,11,24,.78); }
+  .private-live-identity {
+    width: calc(var(--private-live-rail) - 36px);
+    min-height: 64px;
+    padding: 10px 14px;
+    align-content: center;
+    background: rgba(10,12,27,.72);
+    border: 1px solid rgba(239,232,237,.09);
+  }
+  .private-live-actions {
+    top: 100px;
+    right: 18px;
+    width: calc(var(--private-live-rail) - 36px);
+    transform: none;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .private-live-actions button {
+    width: auto;
+    min-height: 62px;
+    flex: 1;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: center;
+    gap: 9px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.035);
+  }
+  .private-live-actions span { font-size: 18px; }
+  .private-live-chat {
+    top: 180px;
+    right: 18px;
+    bottom: 92px;
+    left: auto;
+    width: calc(var(--private-live-rail) - 36px);
+    padding: 8px 3px;
+    overflow: auto;
+    justify-content: flex-end;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(239,232,237,.2) transparent;
+  }
+  .private-live-chat p { width: 100%; background: rgba(255,255,255,.045); }
+  .private-live-composer {
+    right: 18px;
+    left: auto;
+    bottom: 20px;
+    width: calc(var(--private-live-rail) - 36px);
+    height: 54px;
+    transform: none;
+    background: rgba(5,7,18,.9);
+  }
+  .private-live.is-entering .private-live-composer { transform: translateY(10px); }
+  .private-live-current {
+    left: calc((100vw - var(--private-live-rail)) / 2);
+  }
+  .private-live-scenes {
+    right: calc(var(--private-live-rail) + 18px);
+    width: min(400px, calc(100vw - var(--private-live-rail) - 56px));
+  }
+}
+@media (max-width: 700px) {
+  .private-live[data-star='eimi'] .private-live-cover-image, .private-live[data-star='eimi'] .private-live-cover, .private-live[data-star='eimi'] .private-live-stream > video { object-position: 80% center; }
+  .private-live-head { left: 14px; right: 14px; top: calc(env(safe-area-inset-top) + 12px); }.private-live-exit span { display: none; }.private-live-exit { width: 44px; padding: 0; justify-content: center; }
+  .private-live-identity strong { font-size: 13px; }.private-live-actions { right: 12px; top: auto; bottom: 92px; transform: none; }.private-live-actions button { width: 54px; min-height: 54px; border-radius: 50%; }.private-live-actions b { display: none; }
+  .private-live-chat { left: 14px; bottom: 92px; width: calc(100vw - 86px); }.private-live-composer { width: calc(100vw - 28px); bottom: calc(env(safe-area-inset-bottom) + 14px); }
+  .private-live-scenes { left: 14px; right: 14px; top: auto; bottom: 82px; width: auto; max-height: 58vh; transform: none; }.private-live-card-list { grid-template-columns: repeat(3, 1fr); }
+  .private-live-vignette { background: linear-gradient(0deg, rgba(7,9,24,.78), transparent 42%), linear-gradient(90deg, rgba(7,9,24,.18), transparent 35%); }
+}
+.room2 p, .room2 span, .room2 div { text-shadow: 0 1px 6px rgba(var(--nd), 0.35); }
+/* The night: a veil under the top band only (it ends above her brow); the subtitle band brings its own. */
+.room2 > .js-night { background: linear-gradient(180deg, rgba(var(--nd), 0.82) 0, rgba(var(--nd), 0.5) calc(var(--veil) * 0.45), rgba(var(--nd), 0) var(--veil)); }
+.room2 > .js-night.index { background: linear-gradient(180deg, rgba(var(--nd), 0.82) 0, rgba(var(--nd), 0) var(--veil), rgba(var(--nd), 0) 43%, rgba(var(--nd), 0.88) 51%, rgba(var(--nd), 0.95) 100%); }
+
+/* ---- the top band: ✦ JSTAR · 目錄 / ┌ HER ROOM 01 / 05 · 通話中 / date · city · sky · ♥ day */
+.room2-head { position: absolute; top: calc(var(--safe-t) + 6px); left: var(--gut); right: calc(var(--gut) - 10px); display: grid; grid-template-columns: auto 1fr auto;
+  grid-template-areas: "brand . idx" "lab lab call" "exif exif exif" "off off off"; align-items: center; row-gap: 2px; pointer-events: none; }
+.room2-head > * { pointer-events: auto; }
+.room2-head .js-brand { grid-area: brand; }
+.room2-head .room2-idx { grid-area: idx; }
+.room2-head .room2-calltime { grid-area: call; padding-right: 10px; white-space: nowrap; }
+.room2-lab { position: relative; grid-area: lab; display: flex; gap: 18px; align-items: baseline; white-space: nowrap; }
+.room2-lab .js-corner { left: -12px; top: -6px; }
+/* H1: another of the five calling — a tap takes him to her room, where her call is. */
+.room2-ringing { min-height: var(--tap); padding: 0; border: 0; background: none; align-items: center; color: var(--ivory); cursor: pointer; }
+.room2-exif { grid-area: exif; margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px 18px; font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: var(--ls-meta); color: var(--iv-meta); }
+/* N10: the status line is one line — its place gives way first (…), never a second line under her brow. */
+.room2-status { flex-wrap: nowrap; white-space: nowrap; overflow: hidden; }
+.room2-status > span { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+/* C-room N10: both clocks stay whole; her place gives way — the sky first (…, then gone), then the city. */
+.room2-status > .room2-clocks, .room2-status > .room2-days { flex-shrink: 0; }
+.room2-place { display: flex; }
+.room2-place > span { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.room2-place > .room2-sky { flex-shrink: 99; }
+/* N6: offline, a quiet line under the status line, in the top band (the page's pill steps aside here). */
+.room2.pure > .offline-line.room2-offline { position: absolute; top: calc(var(--safe-t, 0px) + 10px); left: var(--gut); }
+.offline-line.room2-offline { grid-area: off; position: static; justify-self: start; margin: 6px 0 0; padding: 3px 10px; border: var(--hairline) solid var(--iv-line); background: rgba(var(--nd), 0.85); }
+/* B-L4: his voice minutes in the input are a tap (the extension sheet). */
+.room2-left { min-height: var(--tap); padding: 0; border: 0; background: none; font: inherit; letter-spacing: inherit; color: inherit; cursor: pointer; }
+.room2-away { flex-direction: column; gap: 8px; font-size: 15px; letter-spacing: 0.06em; color: var(--ivory); }
+.room2-away b { color: var(--rose); font-weight: 500; }
+.room2-away .js-rules { width: 132px; }
+.room2-idx { height: var(--tap); min-width: var(--tap); padding: 0 10px; display: flex; white-space: nowrap; align-items: center; gap: 10px; border: 0; background: transparent; color: var(--ivory); font-family: var(--serif); font-size: var(--fs-small); letter-spacing: 0.24em; }
+.room2-menu { margin-left: auto; color: var(--iv-meta); }
+
+/* ---- her name: a small lane at the edge away from her face (P: the right; M, W: the left), between the bands.
+   R05: a soft local wash under it (it hugs the name, never her face) and the brighter rose: AA on her brightest frames. */
+.room2-vname { position: absolute; top: var(--lane-top); right: 10px; isolation: isolate; pointer-events: none; }
+/* P3 (C-room): one wash for every name — the same width whatever the name (two columns or one), soft at its edge,
+   so it never reads as a capsule of its own size behind each of the five. */
+.room2-vname::before { content: ''; position: absolute; inset: -32px auto; left: calc(50% - 56px); width: 112px; z-index: -1; pointer-events: none;
+  background: rgba(var(--nd), 0.94); mask-image: radial-gradient(closest-side, #000 80%, transparent); }
+.room2-vname .js-vname-jp { font-size: 22px; text-shadow: 0 0 10px rgba(var(--nd), 0.9), 0 1px 3px rgba(var(--nd), 0.9); }
+.room2-vname .js-vname-ro { color: var(--rose-glow); text-shadow: 0 0 8px rgba(var(--nd), 0.95), 0 1px 2px rgba(var(--nd), 0.95); }
+/* #12: her ringtone refused by autoplay (or his sound off): the meta line is the tap that plays it. */
+.room2-ringtap { display: block; width: 100%; min-height: 44px; padding: 0; border: 0; background: none; text-align: center; cursor: pointer; color: var(--iv-meta); }
+
+/* ---- the subtitle band: his line + 已讀, her line (≤ 3 lines, ▼ pages it), the page rules; his choices in the same
+   cell once she is done (never stacked under her words); the hairline input under it all. It brings its own night,
+   which starts at its top and never higher: her face stays clear of it at every size. */
+.room2-bottom { position: absolute; z-index: 2; left: calc((100vw - var(--measure)) / 2); width: var(--measure); bottom: calc(var(--safe-b) + 12px); display: flex; flex-direction: column; gap: 6px; isolation: isolate; }
+.room2-bottom::before { content: ''; position: absolute; z-index: -1; pointer-events: none; left: calc((var(--measure) - 100vw) / 2); width: 100vw;
+  top: calc(-1 * var(--fade)); bottom: calc(-1 * (var(--safe-b) + 12px));
+  background: linear-gradient(180deg, rgba(var(--nd), 0) 0, rgba(var(--nd), 0.84) var(--fade), rgba(var(--nd), 0.92) 100%); }
+.room2-stage { display: grid; align-items: end; min-height: var(--stage-min); }
+.room2-stage > * { grid-area: 1 / 1; min-width: 0; }
+.room2-cap { display: flex; flex-direction: column; gap: 10px; }
+.room2[data-choose] .room2-stage > .room2-cap { visibility: hidden; }
+.room2-bottom .js-line { position: relative; width: 100%; max-width: 23em; margin: 0 auto; min-height: 32px; max-height: calc(var(--fs-sub) * var(--lh-sub) * var(--sub-lines)); overflow: hidden;
+  font-size: var(--fs-sub); line-height: var(--lh-sub); letter-spacing: 0.06em; text-align: center; cursor: pointer; text-wrap: pretty;
+  text-shadow: 0 1px 2px rgba(var(--nd), 0.95), 0 0 14px rgba(var(--nd), 0.7); }
+.room2-tail { white-space: nowrap; }
+.room2-measure { position: absolute; left: 0; right: 0; top: 0; visibility: hidden; pointer-events: none; }
+.room2-bottom .js-line .typing { margin: 0 auto; }
+.room2-pages { display: flex; justify-content: center; }
+.room2-pages .js-rules i { flex: none; width: 18px; }
+.room2-him { margin: 0; text-align: center; text-wrap: pretty; font-family: var(--serif); font-size: 14px; line-height: 1.6; color: rgba(239, 232, 237, 0.9); }
+.room2-him small { margin-left: 10px; font-family: var(--sans); font-size: var(--fs-meta); letter-spacing: 0.1em; color: var(--iv-meta); white-space: nowrap; }
+.room2-him.failed span[data-testid='room-mine'] { opacity: 0.7; }
+.room2-failed { display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; font-family: var(--sans); font-size: var(--fs-meta); color: var(--rose); }
+/* L1: 再送一次 is a whole tap (44 px), however short its words. */
+.room2-failed .js-btn-text { min-height: var(--tap); min-width: var(--tap); padding: 0 8px; font-size: var(--fs-meta); color: var(--ivory); text-decoration: underline; }
+.room2-meta { margin: 0; text-align: center; font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: var(--ls-meta); color: var(--iv-meta); }
+.room2-attach { display: flex; justify-content: center; align-items: center; gap: 16px; }
+.room2-attach .js-print { width: 96px; height: 64px; outline-width: 2px; }
+.room2-attach .js-voice { min-width: 0; flex: 0 1 220px; }
+/* His choices: the sentences she ends on stay over them, a quiet line; then the choices (a row of equals on wide
+   screens, as in an interactive film's lower third; a column on a phone). */
+.room2-choose { display: flex; flex-direction: column; gap: 10px; }
+.room2-echo { margin: 0; text-align: center; font-family: var(--serif); font-size: 14px; line-height: 1.55; letter-spacing: 0.06em; color: rgba(239, 232, 237, 0.88); text-wrap: balance;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.room2-replies { display: flex; flex-direction: column; gap: 8px; overflow: visible; }
+.room2-replies .js-reply { max-width: 100%; min-width: 0; height: auto; min-height: var(--tap); padding-block: 8px; white-space: normal; text-align: left; line-height: 1.4; justify-content: flex-start; }
+.room2-replies .js-reply kbd { flex: none; width: 20px; }
+.room2-invite { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+.room2-invite .js-reply { justify-content: center; }
+.room2-next { align-self: center; min-height: 32px; border: 0; background: transparent; font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: 0.24em; color: var(--iv-meta); }
+.room2-limit { display: flex; flex-direction: column; gap: 4px; padding: var(--sp-3); border: var(--hairline) solid var(--iv-line); border-radius: var(--r-sharp); background: rgba(var(--nd), 0.6); font-size: var(--fs-small); }
+.room2-limit b { font-family: var(--serif); font-size: var(--fs-body); }
+.room2 .js-btn-text { color: var(--iv-meta); }
+.room2 .js-icon-btn { margin-right: -12px; }
+.room2 .js-icon-btn.on { color: var(--rose); }
+/* QA #18: while her words are coming, 「…」 breathes in ivory serif where they will be — never a chat bubble. */
+.room2 .typing { padding: 0; gap: 7px; align-items: center; background: none; border-radius: 0; }
+.room2 .typing::before, .room2 .typing::after { font-family: var(--serif); color: var(--iv-meta); }
+.room2 .typing::before { content: '「'; } .room2 .typing::after { content: '」'; }
+.room2 .typing i { width: 4px; height: 4px; background: var(--ivory); }
+.room2 .promise-made, .room2 [data-testid='promise-made'] { margin: 0; padding: var(--sp-2) var(--sp-3); background: rgba(var(--nd), 0.6); color: var(--ivory); border-left: 2px solid var(--rose); border-radius: 0; }
+
+/* ---- ⑤ pure view: only her and one subtitle, where her words always are */
+.room2 > .js-night.pure { background: linear-gradient(180deg, rgba(var(--nd), 0.45) 0, rgba(var(--nd), 0) var(--veil)); }
+.room2.pure .room2-sub { position: absolute; left: calc((100vw - var(--measure)) / 2); width: var(--measure); bottom: calc(var(--safe-b) + 64px); margin: 0; isolation: isolate; text-wrap: pretty;
+  max-height: calc(var(--fs-sub) * var(--lh-sub) * var(--sub-lines)); font-size: var(--fs-sub); line-height: var(--lh-sub); letter-spacing: 0.06em; text-align: center; text-shadow: 0 1px 10px rgba(27, 30, 61, 0.8); }
+.room2.pure .room2-sub::before { content: ''; position: absolute; z-index: -1; left: calc((var(--measure) - 100vw) / 2); width: 100vw; top: calc(-1 * var(--fade)); bottom: calc(-1 * (var(--safe-b) + 64px));
+  background: linear-gradient(180deg, rgba(var(--nd), 0) 0, rgba(var(--nd), 0.7) var(--fade), rgba(var(--nd), 0.82) 100%); pointer-events: none; }
+.room2-tap { position: fixed; width: 56px; height: 56px; border-radius: 50%; border: var(--hairline) solid rgba(239, 232, 237, 0.6); pointer-events: none; animation: room2-tap var(--dur-slow) var(--ease) forwards; }
+.room2-tap::after { content: ''; position: absolute; inset: -14px; border-radius: 50%; border: var(--hairline) solid rgba(239, 232, 237, 0.24); }
+@keyframes room2-tap { from { transform: scale(0.6); opacity: 0; } 30% { opacity: 1; } to { transform: scale(1); opacity: 0.85; } }
+
+/* ---- 目錄: she stays above; the index lives in the night below her face (a phone), at the far side of it (wider) */
+.room2-top { position: absolute; top: var(--room-top); left: 20px; right: 10px; height: var(--tap); display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.room2-top > * { pointer-events: auto; }
+.room2-ttl { font-family: var(--serif); font-size: 20px; letter-spacing: 0.2em; color: var(--ivory); }
+.room2-ttl small { margin-left: 10px; font-size: var(--fs-label); letter-spacing: var(--ls-label); color: var(--rose); }
+.room2-index > .room2-lab { position: absolute; top: calc(var(--room-top) + 50px); left: 20px; right: 20px; justify-content: space-between; flex-wrap: wrap; row-gap: 6px; pointer-events: none; }
+.room2-index:focus { outline: none; }
+.room2-index { position: absolute; inset: 0; }
+.room2-index-body { position: absolute; left: 20px; right: 20px; top: 46%; bottom: var(--room-bottom); display: flex; flex-direction: column; gap: 0; }
+.room2-index-scroll { margin-top: auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; padding-top: 20px; mask-image: linear-gradient(180deg, transparent 0, #000 20px); }
+.room2-index-scroll::-webkit-scrollbar { display: none; }
+/* M8: more below — its foot fades and a small ▼ says so. */
+.room2-index-scroll.more { mask-image: linear-gradient(transparent, #000 20px, #000 calc(100% - 32px), #0004); }
+.room2-scrollcue { align-self: center; font-size: 10px; line-height: 1; color: var(--rose-glow); }
+.room2-sec { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+.room2-stars { position: relative; margin-bottom: 8px; }
+.room2-badge { position: absolute; top: -9px; min-width: 20px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--rose); color: var(--navy-deep); font-size: 12px; line-height: 18px; text-align: center; text-shadow: none !important; }
+.room2-presence { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 2px 0 8px; }
+.room2-presence .presence { justify-content: flex-start; font-size: 12px; color: var(--iv-meta); }
+.room2-now .now-line { margin-bottom: 4px; color: var(--iv-meta); font-family: var(--serif); font-size: var(--fs-meta); }
+.room2-index .js-star.dim span { opacity: 0.6; }
+.room2-bond { display: flex; align-items: baseline; gap: 12px; margin: 6px 0 14px; font-family: var(--serif); font-size: var(--fs-body); letter-spacing: 0.08em; }
+.room2-bond small { font-size: var(--fs-meta); color: var(--iv-meta); letter-spacing: 0.1em; white-space: nowrap; }
+.room2-rel { margin: -10px 0 16px; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: var(--fs-meta); color: var(--iv-meta); letter-spacing: 0.06em; }
+.room2-rel .serif { font-family: var(--serif); color: var(--ivory); }
+.room2-bar { flex: 1; height: 1px; background: var(--iv-line); position: relative; align-self: center; min-width: 40px; }
+.room2-bar i { position: absolute; left: 0; top: -1px; height: 3px; background: var(--rose); }
+.room2-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: var(--hairline) solid var(--iv-hair); }
+.room2-cell { min-height: 80px; padding: 14px 0 0 2px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; border: 0; border-bottom: var(--hairline) solid var(--iv-hair); background: transparent; color: var(--ivory); text-align: left; }
+.room2-cell b { font-family: var(--serif); font-weight: 500; font-size: var(--fs-body); letter-spacing: 0.1em; }
+.room2-cell b em { font-style: normal; font-size: 12px; color: var(--rose); margin-right: 6px; letter-spacing: 0.06em; }
+.room2-cell small { font-size: var(--fs-meta); color: var(--iv-meta); text-wrap: balance; } /* N10: no widow */
+.room2-extra:empty { display: none; }
+.room2-extra { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.room2-extra .rewards { display: flex; flex-wrap: wrap; gap: 6px; }
+/* L10: 目錄's meta lines and its test-site chips at 12 px or more (WCAG: meta ≥ 12 px on the night). */
+.room2-extra .reward, .room2-extra .reward .badge { font-size: var(--fs-meta); }
+.room2-extra .reward { background: rgba(var(--nd), 0.6); color: var(--ivory); border: var(--hairline) solid var(--iv-hair); border-radius: var(--r-sharp); }
+.room2-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; }
+.room2-voice { font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: var(--ls-meta); color: var(--iv-meta); }
+.room2-voice b { color: var(--ivory); font-weight: 500; font-size: var(--fs-body); margin-left: 6px; }
+/* Her voice switch (#73): the same words, pressable; off reads dimmer. */
+button.room2-voice { background: none; border: 0; padding: 4px 0; cursor: pointer; text-align: left; }
+button.room2-voice[aria-pressed="false"] b { color: var(--iv-meta); }
+.room2-foot .js-btn-line { width: 150px; min-height: 48px; }
+
+/* ---- ⑥ her call: the same bands — her name in its lane, the ring and the two answers in the subtitle band */
+/* While she calls, her call is all there is over her video: the room's layer waits under it, unseen. */
+.room2.ringing > :not(.room2-call) { visibility: hidden; }
+.room2-call { position: fixed; inset: 0; z-index: 70; color: var(--ivory); --veil: 150px; }
+.room2-call > .js-night { background: linear-gradient(180deg, rgba(var(--nd), 0.88) 0, rgba(var(--nd), 0.55) calc(var(--veil) * 0.55), rgba(var(--nd), 0) var(--veil)); }
+.room2-clockrow { align-items: baseline; gap: 4px 16px; color: var(--ivory); font-size: var(--fs-small); }
+.room2-clock { font-size: 40px; letter-spacing: 0.06em; line-height: 1; }
+.room2-call .room2-bottom { gap: 14px; }
+.room2-call .room2-bottom .js-line:not(.room2-paged) { cursor: default; }
+.room2-acts { display: flex; gap: 12px; }
+.room2-acts > * { flex: 1; min-height: 56px; font-size: var(--fs-ui); letter-spacing: var(--ls-ui); }
+.room2-ihint { margin: 0; text-align: center; font-family: var(--serif); font-size: var(--fs-meta); letter-spacing: 0.14em; color: var(--iv-meta); }
+
+/* Desktop's keys (A2): a quiet stack in the bottom bar's far corner, where there is room beside her words. */
+.room2-keys { display: none; }
+
+/* ---- P on a tablet: her words larger, her choices in a row */
+@media (max-aspect-ratio: 17/20) and (min-width: 600px) {
+  .home.room-v2 { --gut: 32px; --fs-sub: 21px; --measure: min(calc(100vw - 2 * var(--gut)), 620px); --lane-top: 190px; --stage-min: 0px; }
+  .room2-vname { right: 18px; }
+  .room2-vname .js-vname-jp { font-size: 26px; }
+}
+@media (max-aspect-ratio: 17/20) and (min-height: 900px) { .home.room-v2 { --lane-top: calc(var(--safe-t) + 168px); } }
+/* M8: on a phone the whole 目錄 grid, its words under each entry included, fits under her face; what follows scrolls. */
+@media (max-aspect-ratio: 17/20) {
+  .room2-cell { min-height: 62px; padding-top: 10px; gap: 4px; }
+}
+@media (min-width: 600px) {
+  .room2-choose .room2-replies:not(.room2-invite) { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 10px; }
+}
+
+/* ---- M: her 16:9 clip in a soft letterbox; the status in the bar above, her words in the bar below */
+@media (min-aspect-ratio: 17/20) {
+  .home.room-v2 {
+    --tb: calc(var(--safe-t) + 90px);
+    --sbw: min(100vw, calc(var(--vh) * 1.99)); --sbx: calc((100vw - var(--sbw)) / 2); --sby: var(--tb);
+    --sbh: min(calc(var(--vh) - var(--tb)), max(calc(var(--sbw) * 9 / 16), calc(var(--vh) * 0.74))); --tyf: 0.36;
+    --gut: 24px; --fs-sub: 20px; --measure: min(calc(100vw - 2 * var(--gut)), 680px); --fade: 56px; --stage-min: 0px;
+    --lane-top: calc(var(--safe-t) + 118px); --s1x: 18%; --s1y: 44%; --s2x: 9%; --s2y: 64%;
+  }
+  .home.room-v2 .home-stage {
+    mask-image: linear-gradient(180deg, transparent var(--sby), #000 calc(var(--sby) + var(--sbh) * 0.1), #000 calc(var(--sby) + var(--sbh) * 0.72), transparent calc(var(--sby) + var(--sbh)));
+  }
+  /* A clip with no 16:9 version (her close-up talk loop): the 9:16 clip whole, in soft night pillar bars — never cut. */
+  .home.room-v2 .home-stage .scene.clip-916 { --bh: var(--sbh); --bw: calc(var(--sbh) * 0.5625); --bx: calc((100vw - var(--bw)) / 2);
+    mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent); }
+  .room2 > .js-night, .room2 > .js-night.pure { background: none; }
+  /* 目錄 beside her face: as wide as it may be, its edge (and its night's) short of her hair (740×675). */
+  .room2 { --ib: min(400px, 46vw); }
+  .room2[data-face='right'] { --ib: clamp(280px, calc(var(--face-l) - (var(--face-r) - var(--face-l)) * 0.6 - var(--gut) - 40px), min(400px, 46vw)); }
+  .room2 > .js-night.index { background: linear-gradient(90deg, rgba(var(--nd), 0.9) 0, rgba(var(--nd), 0.82) calc(var(--gut) + var(--ib)), rgba(var(--nd), 0) calc(var(--gut) + var(--ib) + 40px)); }
+  .room2-head { grid-template-columns: auto auto 1fr auto auto; grid-template-areas: "brand brand . call idx" "lab exif exif exif exif" "off off off off off"; column-gap: 22px; }
+  .room2-head .room2-calltime { padding-right: 0; }
+  .room2-exif { margin-top: 0; }
+  .room2-away { flex-direction: row; align-items: center; gap: 18px; font-size: 14px; }
+  .room2-vname { right: auto; left: max(14px, calc(var(--sbx) + 14px)); }
+  .room2-vname .js-vname-jp { font-size: 24px; }
+  .room2-index-body { left: var(--gut); right: auto; width: var(--ib); top: calc(var(--room-top) + 96px); }
+  .room2-index-scroll { margin-top: 0; }
+  .room2-call > .js-night { background: none; }
+  .room2-clock { font-size: 26px; }
+}
+/* ---- W: full-bleed again (pillarboxed past 2:1); the status on a veil that ends above her brow */
+@media (min-aspect-ratio: 3/2) {
+  .home.room-v2 { --sby: 0px; --sbh: var(--vh); --tyf: 0.38; --gut: 40px; --fs-sub: 21px; --measure: min(calc(100vw - 2 * var(--gut)), 720px); --fade: 52px; --veil: 104px;
+    --lane-top: 132px; --s1x: 94%; --s1y: 22%; --s2x: 9%; --s2y: 62%; }
+  .home.room-v2 .home-stage { mask-image: linear-gradient(transparent var(--sby), #000 calc(var(--sby) * 2.5), #000 62%, rgba(0, 0, 0, 0.3)); }
+  .room2 > .js-night { background: linear-gradient(180deg, rgba(var(--nd), 0.82) 0, rgba(var(--nd), 0.5) calc(var(--veil) * 0.45), rgba(var(--nd), 0) var(--veil)); }
+  .room2 > .js-night.pure { background: linear-gradient(180deg, rgba(var(--nd), 0.45) 0, rgba(var(--nd), 0) var(--veil)); }
+  .room2-index-body { top: calc(var(--room-top) + 120px); }
+  .room2-call { --veil: 112px; }
+  .room2-call > .js-night { background: linear-gradient(180deg, rgba(var(--nd), 0.85) 0, rgba(var(--nd), 0.5) calc(var(--veil) * 0.5), rgba(var(--nd), 0) var(--veil)); }
+}
+@media (min-aspect-ratio: 2/1) {
+  .home.room-v2 .home-stage { mask-image: linear-gradient(90deg, transparent var(--sbx), #000 calc(var(--sbx) + var(--sbw) * 0.06), #000 calc(var(--sbx) + var(--sbw) * 0.94), transparent calc(var(--sbx) + var(--sbw))); }
+}
+/* A large screen: her words and her name grow a little with it. */
+@media (min-aspect-ratio: 17/20) and (min-width: 1360px) and (min-height: 860px) {
+  .home.room-v2 { --gut: 56px; --fs-sub: 23px; --measure: 760px; --lane-top: 150px; }
+  .room2-vname .js-vname-jp { font-size: 30px; }
+  .room2-vname .js-vname-ro { font-size: var(--fs-meta); }
+  .room2-replies .js-reply { font-size: 16px; }
+  .room2-him, .room2-echo { font-size: 15px; }
+}
+@media (min-aspect-ratio: 17/20) and (min-width: 1800px) and (min-height: 1000px) {
+  .home.room-v2 { --fs-sub: 25px; --measure: 820px; --lane-top: 170px; }
+  .room2-vname .js-vname-jp { font-size: 34px; }
+}
+/* The keys, where the bottom bar has room beside her words (a wide desktop). */
+@media (min-aspect-ratio: 3/2) and (min-width: 1280px) {
+  .room2-keys { position: absolute; z-index: 3; right: var(--gut); bottom: calc(var(--safe-b) + 14px); margin: 0; padding: 10px 14px; display: flex; flex-direction: column; gap: 6px;
+    font-family: var(--serif); font-size: 12px; letter-spacing: 0.12em; color: var(--ivory); pointer-events: none;
+    background: rgba(var(--nd), 0.78); border: var(--hairline) solid var(--iv-hair); border-radius: 2px; }
+  .room2-keys span { display: inline-flex; align-items: center; gap: 8px; }
+  .room2-keys kbd { min-width: 44px; padding: 2px 6px; border: var(--hairline) solid var(--iv-line); border-radius: 2px; font: inherit; font-size: 11px; letter-spacing: 0.1em; color: var(--ivory); text-align: center; }
+}
+/* ---- H2 (C-room): a short landscape window (a phone on its side, 844×390). Her face fills its height, so her words —
+   two lines at most — and 目錄 keep to the side away from it (roomV2.tsx measures her face: data-face, --face-l / -r),
+   their night fading towards her; her name goes to the far edge on her side. */
+@media (min-aspect-ratio: 3/2) and (max-height: 500px) {
+  .home.room-v2, .room2-call { --sub-lines: 2; --fs-sub: 18px; --gut: 24px; --lane-top: calc(var(--safe-t) + 96px); --sby: 28px; --sbh: calc(var(--vh) - 28px); --tyf: 0.45; --veil: 84px; }
+  .room2 { --band: clamp(240px, calc(var(--face-l, 60vw) - 56px), 400px); --to: 90deg; }
+  .room2[data-face='left'] { --band: clamp(240px, calc(100vw - var(--face-r, 40vw) - 56px), 400px); --to: 270deg; }
+  .room2-bottom, .room2.pure .room2-sub, .room2-index-body { left: var(--gut); right: auto; width: var(--band); }
+  .room2-bottom::before, .room2.pure .room2-sub::before { left: -24px; right: auto; width: calc(var(--band) + 56px); top: -28px; mask-image: linear-gradient(transparent, #000 28px);
+    background: linear-gradient(var(--to), rgba(var(--nd), 0.9), rgba(var(--nd), 0.82) calc(100% - 32px), rgba(var(--nd), 0)); }
+  .room2 > .js-night.index { inset: 0 auto 0 0; width: calc(var(--band) + 80px); background: linear-gradient(var(--to), rgba(var(--nd), 0.9), rgba(var(--nd), 0.82) calc(100% - 32px), rgba(var(--nd), 0)); }
+  .room2[data-face='left'] :is(.room2-bottom, .room2-sub, .room2-index-body) { left: auto; right: var(--gut); }
+  .room2[data-face='left'] :is(.room2-bottom, .room2-sub)::before { left: auto; right: -24px; }
+  .room2[data-face='left'] > .js-night.index { inset: 0 0 0 auto; }
+  .room2-bottom { bottom: calc(var(--safe-b) + 8px); gap: 4px; }
+  .room2.pure .room2-sub { bottom: calc(var(--safe-b) + 24px); }
+  .room2-choose .room2-replies:not(.room2-invite) { display: flex; }
+  .room2-echo { -webkit-line-clamp: 1; }
+  .room2-vname { left: auto; right: 10px; }
+  .room2[data-face='left'] .room2-vname { right: auto; left: 10px; }
+  .room2-index > .room2-lab { top: 50px; }
+  .room2-index-body { top: 86px; bottom: 8px; }
+  .room2-bond { margin: 2px 0 10px; }
+  .room2-cell { min-height: 52px; padding-top: 8px; gap: 2px; }
+  .room2-foot { margin-top: 6px; }
+}
+/* Short windows: her lines sit tighter, her name keeps only its characters. */
+@media (max-height: 560px) { .home.room-v2 { --lh-sub: 1.65; } .room2-vname .js-vname-ro { display: none; } }
+
+/* Moved here from immersive.css to keep the entry sheet under 11 KiB. Her room (#73): while her idle (listening) loop is on, the paused talking loop above it steps aside, and they swap
+   in a short crossfade — it reads as her starting and stopping to speak (the talk loop follows her audio,
+   lib/herVoice.ts). At rest the room looks as before. */
+.home-stage .room-talk-clip { transition: opacity 420ms cubic-bezier(0.4, 0, 0.2, 1); }
+.home-stage[data-listening] .room-talk-clip:not(.room-listen-clip):not(.on) { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .home-stage .room-talk-clip { transition: none; } }
+/* #73: her sentence lip-synced onto her talk loop (components/lipsyncVideo.tsx), over it while her audio sounds. */
+.home-stage .room-lipsync { background: transparent; }
+/* QA #5: her reaction clip shows once it plays — never its poster (nor a blurred one) over the whole frame first. */
+.home-stage .room-react { background: transparent; }
+.home-stage .room-react .scene-poster { display: none; }
+.home-stage .room-react.is-dissolving { opacity: 0; }
+.home-stage .room-lipsync .scene-video { transition: opacity 320ms ease-out; }
+/* M17: where his keys go is visible: the input's hairline turns ivory and doubles while it has focus. */
+.room2 .js-input:focus-within { border-bottom-color: var(--ivory); box-shadow: 0 1px 0 var(--ivory); }
+
+/* C-room L9: 約定 and 記錄, her room's own sheets (gift.css's night sheet, opaque). */
+.room2-sheet p { margin: 0; font-family: var(--serif); line-height: 1.7; text-wrap: pretty; }
+@media (min-aspect-ratio: 17/20) { .gift-sheet.room2-sheet { align-self: flex-start; } }
+.room2-sheet-none { color: var(--iv-meta); }
+.room2-promise { display: grid; gap: 6px; padding: 8px 0 6px 14px; border-left: 2px solid var(--rose); font-family: var(--serif); letter-spacing: 0.06em; }
+.room2-log { display: grid; gap: 10px; overflow-y: auto; font-size: var(--fs-small); }
+.room2-log small { display: block; font: 12px var(--sans); letter-spacing: 0.1em; color: var(--rose-glow); }
+.room2-log .me, .room2-log .me small { color: var(--iv-meta); }

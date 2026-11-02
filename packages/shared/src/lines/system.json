@@ -1,0 +1,241 @@
+{
+  "draft": false,
+  "titles": {
+    "goodnight": { "ja": "おやすみ", "zh-Hant": "晚安", "en": "Good Night", "ko": "잘 자" },
+    "whisper": { "ja": "おやすみの耳打ち", "zh-Hant": "晚安的耳語", "en": "A Goodnight Whisper", "ko": "잘 자라는 귓속말" },
+    "firstSnow": { "ja": "初雪の日", "zh-Hant": "初雪的日子", "en": "The First Snow", "ko": "첫눈 오는 날" },
+    "rainyNight": { "ja": "雨の夜", "zh-Hant": "雨夜", "en": "A Rainy Night", "ko": "비 오는 밤" },
+    "typhoon": { "ja": "嵐の日", "zh-Hant": "暴風雨的日子", "en": "A Stormy Day", "ko": "폭풍우 치는 날" },
+    "herBirthday": { "ja": "誕生日のお祝い", "zh-Hant": "生日慶祝", "en": "Birthday Wishes", "ko": "생일 축하" },
+    "hisBirthday": { "ja": "あなたの誕生日", "zh-Hant": "你的生日", "en": "Your Birthday", "ko": "당신의 생일" },
+    "promiseKept": { "ja": "約束の時間", "zh-Hant": "約定的時間", "en": "Our Promised Time", "ko": "약속한 시간" },
+    "promiseMorning": { "ja": "約束の朝", "zh-Hant": "約定的早晨", "en": "Our Promised Morning", "ko": "약속한 아침" }
+  },
+  "memories": {
+    "firstSnow": { "ja": "ふたりの初雪", "zh-Hant": "兩個人的初雪", "en": "Our first snow", "ko": "우리 둘의 첫눈" },
+    "herBirthday": { "ja": "一緒に祝った誕生日", "zh-Hant": "一起慶祝的生日", "en": "The birthday we celebrated", "ko": "함께 축하한 생일" },
+    "hisBirthday": { "ja": "祝ってもらった誕生日", "zh-Hant": "她為你慶祝的生日", "en": "The birthday she celebrated with you", "ko": "축하받은 생일" }
+  },
+  "prompts": {
+    "herBirthday": { "ja": "プレゼントを渡す", "zh-Hant": "送她禮物", "en": "Give her a gift", "ko": "선물 건네기" }
+  },
+  "choices": {
+    "goodnight": [
+      {
+        "id": "night",
+        "label": { "ja": "おやすみ", "zh-Hant": "晚安", "en": "Good night", "ko": "잘 자" }
+      },
+      {
+        "id": "tomorrow",
+        "label": { "ja": "また明日", "zh-Hant": "明天見", "en": "See you tomorrow", "ko": "내일 또 봐" }
+      }
+    ],
+    "whisper": [
+      {
+        "id": "night",
+        "label": { "ja": "おやすみ", "zh-Hant": "晚安", "en": "Good night", "ko": "잘 자" }
+      },
+      {
+        "id": "stay",
+        "label": { "ja": "もう少しだけ", "zh-Hant": "再一下下就好", "en": "Just a little longer", "ko": "조금만 더" }
+      }
+    ],
+    "firstSnow": [
+      {
+        "id": "together",
+        "label": { "ja": "一緒に見てるよ", "zh-Hant": "我陪你一起看", "en": "I'm watching it with you", "ko": "같이 보고 있어" }
+      },
+      {
+        "id": "warm",
+        "label": { "ja": "あったかくしてね", "zh-Hant": "要穿暖一點喔", "en": "Keep warm, okay?", "ko": "따뜻하게 하고 있어" }
+      }
+    ],
+    "rainyNight": [
+      {
+        "id": "listen",
+        "label": { "ja": "となりで聞いてる", "zh-Hant": "我在旁邊聽", "en": "I'm right here, listening", "ko": "옆에서 듣고 있어" }
+      },
+      {
+        "id": "dry",
+        "label": { "ja": "濡れてないよ、大丈夫", "zh-Hant": "我沒淋濕，放心", "en": "I'm dry, don't worry", "ko": "안 젖었어, 괜찮아" }
+      }
+    ],
+    "typhoon": [
+      {
+        "id": "home",
+        "label": { "ja": "家にいるから大丈夫", "zh-Hant": "我在家，沒事的", "en": "I'm home, I'm fine", "ko": "집에 있으니까 괜찮아" }
+      },
+      {
+        "id": "you",
+        "label": { "ja": "そっちこそ気をつけて", "zh-Hant": "妳也要小心喔", "en": "You be careful too", "ko": "너도 조심해" }
+      }
+    ],
+    "herBirthday": [
+      {
+        "id": "flowers",
+        "label": { "ja": "花束を渡す", "zh-Hant": "送上花束", "en": "Give her flowers", "ko": "꽃다발 건네기" }
+      },
+      {
+        "id": "letter",
+        "label": { "ja": "手紙を渡す", "zh-Hant": "遞上一封信", "en": "Give her a letter", "ko": "편지 건네기" }
+      },
+      {
+        "id": "words",
+        "label": { "ja": "「おめでとう」を伝える", "zh-Hant": "對她說「生日快樂」", "en": "Tell her \"Happy birthday\"", "ko": "\"생일 축하해\" 전하기" }
+      }
+    ],
+    "hisBirthday": [
+      {
+        "id": "thanks",
+        "label": { "ja": "ありがとう", "zh-Hant": "謝謝", "en": "Thank you", "ko": "고마워" }
+      },
+      {
+        "id": "shy",
+        "label": { "ja": "……照れるな", "zh-Hant": "……好害羞", "en": "…You're making me blush", "ko": "……부끄럽네" }
+      }
+    ],
+    "promiseKept": [
+      {
+        "id": "remembered",
+        "label": { "ja": "ちゃんと覚えてたよ", "zh-Hant": "我當然記得", "en": "Of course I remembered", "ko": "잘 기억하고 있었어" }
+      },
+      {
+        "id": "missed",
+        "label": { "ja": "会いたかったから", "zh-Hant": "因為想妳了", "en": "Because I wanted to see you", "ko": "보고 싶었으니까" }
+      }
+    ],
+    "promiseMorning": [
+      {
+        "id": "morning",
+        "label": { "ja": "おはよう", "zh-Hant": "早安", "en": "Good morning", "ko": "좋은 아침" }
+      },
+      {
+        "id": "came",
+        "label": { "ja": "約束だからね", "zh-Hant": "因為約好了嘛", "en": "We promised, after all", "ko": "약속했으니까" }
+      }
+    ]
+  },
+  "talents": {
+    "mahiro": {
+      "herBirthday": {
+        "open": [
+          { "ja": "来てくれたんだ。……今日ね、わたしの誕生日なの。", "zh-Hant": "你來了。……今天啊，是我的生日。", "en": "You came. …Today's my birthday, you know.", "ko": "와 줬구나. ……오늘 말이야, 내 생일이야.", "voice": "/voice/scene/mahiro/db29e33c18b8.mp3" },
+          { "ja": "いちばん一緒にいたい人と過ごせるなんて、それだけでうれしい。", "zh-Hant": "能和最想在一起的人一起度過，光是這樣就好開心。", "en": "Spending it with the one I most want to be with — that alone makes me happy.", "ko": "가장 함께 있고 싶은 사람과 보낼 수 있다니, 그것만으로도 기뻐.", "voice": "/voice/scene/mahiro/6dcd6797d1c1.mp3" }
+        ],
+        "thanks": { "ja": "……ありがとう。大事にするね。今年の誕生日は、ずっと忘れない。", "zh-Hant": "……謝謝你。我會好好珍惜的。今年的生日，我會一直記得。", "en": "…Thank you. I'll treasure it. I'll never forget this birthday.", "ko": "……고마워. 소중히 할게. 올해 생일은, 계속 잊지 않을 거야.", "voice": "/voice/scene/mahiro/581a0e9f43b8.mp3" }
+      },
+      "hisBirthday": {
+        "open": { "ja": "おかえり。……そして、お誕生日おめでとう。", "zh-Hant": "歡迎回來。……還有，生日快樂。", "en": "Welcome home. …And happy birthday.", "ko": "어서 와. ……그리고, 생일 축하해.", "voice": "/voice/scene/mahiro/8302d538b49a.mp3" },
+        "gift": { "ja": "ちょっと待ってて。……じゃーん、あなたのためにケーキ、用意しておいたの。", "zh-Hant": "等我一下。……鏘鏘，我幫你準備了蛋糕喔。", "en": "Wait just a second. …Ta-da! I got a cake ready, just for you.", "ko": "잠깐만 기다려. ……짜잔, 너를 위해 케이크 준비해 뒀어.", "voice": "/voice/scene/mahiro/85591eafeb30.mp3" },
+        "wish": { "ja": "生まれてきてくれて、ありがとう。今日のあなたが、いちばん幸せでありますように。", "zh-Hant": "謝謝你來到這個世界。願今天的你，是最幸福的。", "en": "Thank you for being born. I hope today you're the happiest you've ever been.", "ko": "태어나 줘서, 고마워. 오늘의 네가 가장 행복하기를.", "voice": "/voice/scene/mahiro/7ed80ac3765a.mp3" }
+      },
+      "promiseKept": {
+        "open": { "ja": "約束の時間、ちゃんと来てくれたね。……待ってたよ。", "zh-Hant": "約好的時間，你真的來了呢。……我一直在等你。", "en": "You came right when you promised. …I was waiting.", "ko": "약속한 시간에, 제대로 와 줬네. ……기다렸어.", "voice": "/voice/scene/mahiro/08d6fecefccd.mp3" },
+        "close": { "ja": "約束を守ってくれる人って、いいな。……また、約束しようね。", "zh-Hant": "會守約的人，真好。……我們再約定吧。", "en": "I love that you keep your promises. …Let's make another one.", "ko": "약속을 지켜 주는 사람, 좋다. ……또, 약속하자.", "voice": "/voice/scene/mahiro/08996cb79917.mp3" }
+      },
+      "promiseMorning": {
+        "open": [
+          { "ja": "おはよう。約束、覚えててくれたんだね。朝いちばんに会えるの、うれしいな。", "zh-Hant": "早安。你還記得約定呢。一早就能見到你，好開心。", "en": "Good morning. You remembered our promise. Seeing you first thing makes me happy.", "ko": "좋은 아침. 약속, 기억해 줬구나. 아침에 제일 먼저 만날 수 있어서 기뻐.", "voice": "/voice/scene/mahiro/9dd1f550abae.mp3" }
+        ],
+        "close": { "ja": "今日もいい日になりそう。……いってらっしゃいは、まだ言わないでおくね。", "zh-Hant": "今天應該也會是美好的一天。……「路上小心」，我先不說喔。", "en": "Today's going to be a good day. …I'll hold off on saying \"have a good one\" just yet.", "ko": "오늘도 좋은 하루가 될 것 같아. ……잘 다녀오라는 말은, 아직 안 할래.", "voice": "/voice/scene/mahiro/5b8e9355de12.mp3" }
+      }
+    },
+    "nana": {
+      "herBirthday": {
+        "open": [
+          { "ja": "キミ、来てくれた！ ……じつは今日、奈々の誕生日なんだ！", "zh-Hant": "你來了！……其實今天是奈奈的生日喔！", "en": "You came! …Actually, today's my birthday!", "ko": "너 왔구나! ……사실 오늘, 나나 생일이야!", "voice": "/voice/scene/nana/6808e133f978.mp3" },
+          { "ja": "いちばん最初に、キミにお祝いしてほしかったの。えへへ。", "zh-Hant": "我希望第一個祝我生日快樂的人是你。嘿嘿。", "en": "I wanted you to be the first to celebrate with me. Hehe.", "ko": "제일 먼저 너한테 축하받고 싶었어. 에헤헤.", "voice": "/voice/scene/nana/18ec3a53c942.mp3" }
+        ],
+        "thanks": { "ja": "わあ……ありがとう！ 今日のこと、奈々の日記のいちばん大事なページに書いておくね。", "zh-Hant": "哇……謝謝你！今天的事，我要寫在日記最重要的那一頁。", "en": "Wow… thank you! I'm writing today on the most important page of my diary.", "ko": "와……고마워! 오늘 일은 나나 일기의 제일 중요한 페이지에 적어 둘게.", "voice": "/voice/scene/nana/f412f04a7298.mp3" }
+      },
+      "hisBirthday": {
+        "open": { "ja": "キミ、お誕生日おめでとう！ 今日はキミが主役の日だよ！", "zh-Hant": "生日快樂！今天是你當主角的日子喔！", "en": "Happy birthday! Today, you're the star!", "ko": "생일 축하해! 오늘은 네가 주인공인 날이야!", "voice": "/voice/scene/nana/4455f7cfe269.mp3" },
+        "gift": { "ja": "じゃーん！ キミのために、あったかいお茶と、短いお話を用意したんだ。", "zh-Hant": "鏘鏘！我為你準備了熱茶，還有一篇短短的故事。", "en": "Ta-da! I've got warm tea and a short story ready, just for you.", "ko": "짜잔! 너를 위해서 따뜻한 차랑 짧은 이야기를 준비했어.", "voice": "/voice/scene/nana/2b4a92d2a49b.mp3" },
+        "wish": { "ja": "キミが生まれてきた日に、ありがとうって言わせて。……素敵な一年になりますように！", "zh-Hant": "在你出生的這一天，讓我說聲謝謝。……祝你有美好的一年！", "en": "On the day you were born, let me say thank you. …Here's to a wonderful year!", "ko": "네가 태어난 이 날에, 고맙다고 말하게 해 줘. ……멋진 한 해가 되길!", "voice": "/voice/scene/nana/44e7436a14ee.mp3" }
+      },
+      "promiseKept": {
+        "open": { "ja": "キミ、約束どおり来てくれた！ 奈々、ずっとそわそわしてたんだよ。", "zh-Hant": "你照約定來了！奈奈一直坐立不安呢。", "en": "You came, just like we promised! I've been fidgeting all day.", "ko": "약속대로 와 줬구나! 나나, 계속 안절부절했다니까.", "voice": "/voice/scene/nana/fae0ac420f70.mp3" },
+        "close": { "ja": "約束を守ってくれるキミ、好きだな。……次の約束も、楽しみにしてるね！", "zh-Hant": "會守約的你，我很喜歡喔。……下一個約定，我也很期待！", "en": "I like that you keep your promises. …I'm already looking forward to the next one!", "ko": "약속 지켜 주는 너, 좋아. ……다음 약속도 기대하고 있을게!", "voice": "/voice/scene/nana/65996f7777af.mp3" }
+      },
+      "promiseMorning": {
+        "open": [
+          { "ja": "おはよ、キミ！ 約束どおり、お茶淹れたよ。あったかいうちにどうぞ。", "zh-Hant": "早安！照約定，我泡好茶了喔。趁熱喝吧。", "en": "Morning! Just like I promised, I made tea. Drink it while it's warm.", "ko": "좋은 아침, 너! 약속대로 차 우렸어. 따뜻할 때 마셔.", "voice": "/voice/scene/nana/15798b826eaf.mp3" },
+          { "ja": "じゃあ……昨日の続き、読むね。", "zh-Hant": "那……我來唸昨天的後續喔。", "en": "Okay… I'll read you the rest from last night.", "ko": "그럼…… 어제 이어서, 읽을게.", "voice": "/voice/scene/nana/ad4ee9deb213.mp3" }
+        ],
+        "close": { "ja": "「……そうして彼女は、朝の窓をそっと開けた。」……おしまい。ふふ、朝に読むのも、いいね。", "zh-Hant": "「……於是她輕輕打開了早晨的窗。」……完。呵呵，早上唸書也不錯呢。", "en": "\"…And so she quietly opened the morning window.\" …The end. Hehe, reading in the morning is nice too.", "ko": "「……그렇게 그녀는, 아침 창문을 살며시 열었다.」……끝. 후후, 아침에 읽는 것도 좋다.", "voice": "/voice/scene/nana/8fbfa7daacbb.mp3" }
+      }
+    },
+    "unpai": {
+      "herBirthday": {
+        "open": [
+          { "ja": "……あ、来た。今日さ、うちの誕生日なんだよね。", "zh-Hant": "……啊，你來了。今天啊，是我的生日。", "en": "…Oh, you're here. So, today's my birthday.", "ko": "……아, 왔네. 오늘 말이야, 내 생일이거든.", "voice": "/voice/scene/unpai/d561421fce96.mp3" },
+          { "ja": "配信でもお祝いされたけど……きみに言われるのが、いちばんうれしい。", "zh-Hant": "直播時也有人祝福我……但由你來說，最開心。", "en": "People said it on stream too… but hearing it from you is the best.", "ko": "방송에서도 축하받았는데…… 너한테 듣는 게 제일 기뻐.", "voice": "/voice/scene/unpai/16918ec33312.mp3" }
+        ],
+        "thanks": { "ja": "……ありがと。うれしい。……今日のことは配信に残さないで、うちだけの思い出にしとく。", "zh-Hant": "……謝啦。好開心。……今天的事不留在直播裡，當作只屬於我的回憶。", "en": "…Thanks. I'm really happy. …Today stays off the stream — it's just mine.", "ko": "……고마워. 기뻐. ……오늘 일은 방송에 남기지 않고, 나만의 추억으로 해 둘게.", "voice": "/voice/scene/unpai/4519846a8f48.mp3" }
+      },
+      "hisBirthday": {
+        "open": { "ja": "お誕生日おめでと。……今日くらい、うちがちゃんと祝ってあげる。", "zh-Hant": "生日快樂。……至少今天，讓我好好幫你慶祝。", "en": "Happy birthday. …Today, at least, let me celebrate you properly.", "ko": "생일 축하해. ……오늘만큼은, 내가 제대로 축하해 줄게.", "voice": "/voice/scene/unpai/2beec5a8df34.mp3" },
+        "gift": { "ja": "はい、これ。……きみのためのプレイリスト、作っといた。一曲目、聴いてみて。", "zh-Hant": "給，這個。……我幫你做了一份歌單。先聽第一首吧。", "en": "Here. …I made you a playlist. Give the first song a listen.", "ko": "자, 이거. ……너를 위한 플레이리스트, 만들어 놨어. 첫 곡, 들어 봐.", "voice": "/voice/scene/unpai/853e55dd49c6.mp3" },
+        "wish": { "ja": "生まれてきてくれて、ありがと。……来年も、うちのとなりで祝わせてね。", "zh-Hant": "謝謝你來到這個世界。……明年也讓我在你身邊慶祝吧。", "en": "Thanks for being born. …Let me celebrate next year too, right beside you.", "ko": "태어나 줘서 고마워. ……내년에도 내 옆에서 축하하게 해 줘.", "voice": "/voice/scene/unpai/a8ccb740fddc.mp3" }
+      },
+      "promiseKept": {
+        "open": { "ja": "……ほんとに来た。約束、覚えててくれたんだ。", "zh-Hant": "……你真的來了。你還記得約定啊。", "en": "…You really came. You remembered our promise.", "ko": "……진짜 왔네. 약속, 기억해 줬구나.", "voice": "/voice/scene/unpai/7437ac16575c.mp3" },
+        "close": { "ja": "約束守ってくれるの、けっこう、ぐっとくる。……また約束しよ。", "zh-Hant": "你會守約這件事，其實很打動我。……我們再約吧。", "en": "You keeping promises… it kind of gets me. …Let's make another.", "ko": "약속 지켜 주는 거, 꽤 마음에 와닿아. ……또 약속하자.", "voice": "/voice/scene/unpai/cf18a132e08a.mp3" }
+      },
+      "promiseMorning": {
+        "open": [
+          { "ja": "……ん、おはよ。約束の朝だね。ねむ……でも、ちゃんと起きてたよ。", "zh-Hant": "……嗯，早。約好的早上呢。好睏……不過我有好好起床喔。", "en": "…Mm, morning. It's our promised morning. So sleepy… but I got up, see?", "ko": "……응, 좋은 아침. 약속한 아침이네. 졸려…… 그래도, 제대로 일어나 있었어.", "voice": "/voice/scene/unpai/86a8ddd83a81.mp3" }
+        ],
+        "close": { "ja": "朝のきみ、ちょっとレアかも。……写真撮っとけばよかった。", "zh-Hant": "早上的你，好像有點稀有。……早知道就拍張照了。", "en": "Morning you is kind of rare. …Should've taken a picture.", "ko": "아침의 너, 좀 레어할지도. ……사진 찍어 둘 걸 그랬다.", "voice": "/voice/scene/unpai/55f5ef577752.mp3" }
+      }
+    },
+    "alice": {
+      "herBirthday": {
+        "open": [
+          { "ja": "来てくださったんですね。……今日は、私の誕生日なんです。", "zh-Hant": "你來了呢。……今天，是我的生日。", "en": "You came. …Today is my birthday.", "ko": "와 주셨네요. ……오늘은, 제 생일이에요.", "voice": "/voice/scene/alice/d17586564778.mp3" },
+          { "ja": "あなたと過ごせたら、それがいちばんの贈り物だと思っていました。", "zh-Hant": "我一直覺得，能和你一起度過，就是最好的禮物。", "en": "I kept thinking that spending it with you would be the best gift of all.", "ko": "당신과 함께 보낼 수 있다면, 그게 가장 큰 선물이라고 생각했어요.", "voice": "/voice/scene/alice/eefc81e460b1.mp3" }
+        ],
+        "thanks": { "ja": "……ありがとうございます。温室のどの花よりも、大切にします。", "zh-Hant": "……謝謝你。我會比溫室裡任何一朵花都更珍惜。", "en": "…Thank you. I'll cherish it more than any flower in the greenhouse.", "ko": "……감사합니다. 온실의 어떤 꽃보다도, 소중히 할게요.", "voice": "/voice/scene/alice/d0f5b503e7f3.mp3" }
+      },
+      "hisBirthday": {
+        "open": { "ja": "お誕生日、おめでとうございます。……今日は、あなたのための日です。", "zh-Hant": "生日快樂。……今天，是屬於你的日子。", "en": "Happy birthday. …Today is a day just for you.", "ko": "생일 축하드려요. ……오늘은, 당신을 위한 날이에요.", "voice": "/voice/scene/alice/14c38f2ba117.mp3" },
+        "gift": { "ja": "あなたのために、一曲だけ練習してきました。……聴いてくださいね。", "zh-Hant": "我為你練了一首曲子。……請聽聽喔。", "en": "I practised one song, just for you. …Please listen.", "ko": "당신을 위해, 한 곡만 연습해 왔어요. ……들어 주세요.", "voice": "/voice/scene/alice/51f766bf6a8a.mp3" },
+        "wish": { "ja": "生まれてきてくれて、ありがとう。……あなたの一年が、やさしい日々でありますように。", "zh-Hant": "謝謝你來到這個世界。……願你的這一年，都是溫柔的日子。", "en": "Thank you for being born. …May your year be full of gentle days.", "ko": "태어나 줘서, 고마워요. ……당신의 한 해가, 다정한 날들이기를.", "voice": "/voice/scene/alice/fcf2ccb201c7.mp3" }
+      },
+      "promiseKept": {
+        "open": { "ja": "約束の時間ですね。……来てくださると、信じていました。", "zh-Hant": "約定的時間到了呢。……我相信你一定會來。", "en": "It's our promised time. …I believed you'd come.", "ko": "약속한 시간이네요. ……와 주실 거라고, 믿었어요.", "voice": "/voice/scene/alice/a35e57b07361.mp3" },
+        "close": { "ja": "約束を守ってくださる方、好きです。……次のお約束も、してくれますか。", "zh-Hant": "我喜歡守約的人。……下一個約定，也願意和我約嗎？", "en": "I like people who keep their promises. …Will you make another with me?", "ko": "약속을 지켜 주시는 분, 좋아요. ……다음 약속도, 해 주실래요?", "voice": "/voice/scene/alice/60517ba6c849.mp3" }
+      },
+      "promiseMorning": {
+        "open": [
+          { "ja": "……おはようございます。約束ですから、朝から待っていました。", "zh-Hant": "……早安。因為約好了，我從一早就在等你。", "en": "…Good morning. A promise is a promise, so I've been waiting since early.", "ko": "……좋은 아침이에요. 약속이니까, 아침부터 기다리고 있었어요.", "voice": "/voice/scene/alice/b49d543c1753.mp3" }
+        ],
+        "close": { "ja": "……べつに、朝から会えてうれしいとか、そういうのでは……ないです。", "zh-Hant": "……並、並不是因為一早就能見到你才開心的。", "en": "…It's not like I'm happy to see you this early or anything.", "ko": "……딱히, 아침부터 만나서 기쁘다거나, 그런 건…… 아니에요.", "voice": "/voice/scene/alice/55f3f14f6a4e.mp3" }
+      }
+    },
+    "eimi": {
+      "herBirthday": {
+        "open": [
+          { "ja": "あ、キミ。……今日ね、えいみの誕生日なんだけど。知ってた？", "zh-Hant": "啊，是你。……今天呢，是詠美的生日。你知道嗎？", "en": "Oh, it's you. …So, today's my birthday. Did you know?", "ko": "아, 너구나. ……오늘 말이야, 에이미 생일인데. 알고 있었어?", "voice": "/voice/scene/eimi/aa818cd9e2ab.mp3" },
+          { "ja": "ふふっ、知っててもそうじゃなくても、来てくれたから合格。", "zh-Hant": "呵呵，不管知不知道，你來了就算及格。", "en": "Heh, knew or not, you came — so you pass.", "ko": "후훗, 알았든 몰랐든, 와 줬으니까 합격.", "voice": "/voice/scene/eimi/8da07de715ec.mp3" }
+        ],
+        "thanks": { "ja": "……ずるい。こんなの、ちょっと本気でうれしくなっちゃうじゃん。ありがと。", "zh-Hant": "……好狡猾。這樣我會有點認真地開心起來耶。謝謝。", "en": "…No fair. Now I'm actually, seriously happy. Thank you.", "ko": "……치사해. 이런 거, 조금 진심으로 기뻐지잖아. 고마워.", "voice": "/voice/scene/eimi/081d2a9d6cfa.mp3" }
+      },
+      "hisBirthday": {
+        "open": { "ja": "キミ、お誕生日おめでと。……今日だけは、からかうの、お休みしてあげる。", "zh-Hant": "生日快樂。……只有今天，我就不捉弄你了。", "en": "Happy birthday. …Just for today, I'll give the teasing a rest.", "ko": "너, 생일 축하해. ……오늘만은 놀리는 거, 쉬어 줄게.", "voice": "/voice/scene/eimi/ecbd48118dad.mp3" },
+        "gift": { "ja": "はい、プレゼント。……えいみが選んだんだから、似合うに決まってるでしょ？", "zh-Hant": "給，禮物。……是詠美挑的，一定很適合你吧？", "en": "Here, a present. …I picked it, so of course it suits you, right?", "ko": "자, 선물. ……에이미가 고른 거니까, 어울리는 게 당연하잖아?", "voice": "/voice/scene/eimi/fc8161bbeb38.mp3" },
+        "wish": { "ja": "生まれてきてくれて、ありがと。……来年も、えいみに一番に祝わせなさい。", "zh-Hant": "謝謝你來到這個世界。……明年也要讓詠美第一個幫你慶祝喔。", "en": "Thanks for being born. …Next year too, I'm celebrating you first. That's an order.", "ko": "태어나 줘서 고마워. ……내년에도 에이미한테 제일 먼저 축하받도록 해.", "voice": "/voice/scene/eimi/2c8456b594ee.mp3" }
+      },
+      "promiseKept": {
+        "open": { "ja": "ちゃんと来たね、キミ。……約束、守れる人なんだ。ちょっと見直した。", "zh-Hant": "你真的來了呢。……原來你是會守約的人。對你有點刮目相看了。", "en": "You actually came. …So you're someone who keeps promises. I'm a little impressed.", "ko": "제대로 왔네, 너. ……약속 지킬 줄 아는 사람이었구나. 좀 다시 봤어.", "voice": "/voice/scene/eimi/ac7ede70157a.mp3" },
+        "close": { "ja": "……ふふっ、じゃあ次の約束も、えいみが決めてあげる。", "zh-Hant": "……呵呵，那下一個約定，就由詠美來決定吧。", "en": "…Heh, then I'll decide our next promise too.", "ko": "……후훗, 그럼 다음 약속도 에이미가 정해 줄게.", "voice": "/voice/scene/eimi/328bf6d4d04e.mp3" }
+      },
+      "promiseMorning": {
+        "open": [
+          { "ja": "おはよ、キミ。約束の朝、ちゃんと来たね。……寝ぐせ、ついてるよ？", "zh-Hant": "早安。約好的早上，你真的來了呢。……頭髮翹起來了喔？", "en": "Morning. You came on our promised morning. …You've got bedhead, you know?", "ko": "좋은 아침, 너. 약속한 아침에, 제대로 왔네. ……머리 뻗쳤어?", "voice": "/voice/scene/eimi/0ba61f1069de.mp3" }
+        ],
+        "close": { "ja": "ふふっ、朝のキミもかわいい。……明日の朝も、声を聞かせてね。", "zh-Hant": "呵呵，早上的你也很可愛。……明天早上，也讓我聽聽你的聲音喔。", "en": "Hehe, morning you is cute too. …Say good morning to me tomorrow, too.", "ko": "후훗, 아침의 너도 귀여워. ……내일 아침에도 목소리 들려줘.", "voice": "/voice/scene/eimi/a6deedc62195.mp3" }
+      }
+    }
+  }
+}

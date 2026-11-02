@@ -1,0 +1,545 @@
+{
+  "star": "eimi",
+  "cards": [
+    {
+      "title": {
+        "ja": "鏡の前のわたし",
+        "zh-Hant": "鏡子前的我",
+        "en": "Me in the Mirror",
+        "ko": "거울 앞에서"
+      },
+      "scene": "Eimi at a marble vanity in soft morning light holding up two pairs of pearl earrings, cream silk blouse, looking at you through the mirror with a knowing smile",
+      "line": {
+        "ja": "おはよ。ピアス、どっちが似合うと思う？ 選んで。",
+        "zh-Hant": "早安。耳環，你覺得哪副比較適合我？幫我選。",
+        "en": "Morning. Which earrings suit me? You choose.",
+        "ko": "좋은 아침. 귀걸이, 어느 쪽이 더 어울려? 골라 줘."
+      }
+    },
+    {
+      "title": {
+        "ja": "香水をひと吹き",
+        "zh-Hant": "輕噴一下香水",
+        "en": "A Touch of Perfume",
+        "ko": "향수 한 번"
+      },
+      "scene": "Eimi at a marble vanity spraying perfume from a faceted crystal bottle with a rose-gold cap onto her wrist, black silk blouse, morning light",
+      "line": {
+        "ja": "この香り、覚えておいて。……次に会うときの合図だから。",
+        "zh-Hant": "記住這個香味。……這是下次見面的暗號。",
+        "en": "Remember this scent. …It's our signal for next time.",
+        "ko": "이 향, 기억해 둬. ……다음에 만날 때의 신호니까."
+      }
+    },
+    {
+      "title": {
+        "ja": "朝のエスプレッソ",
+        "zh-Hant": "早晨的濃縮咖啡",
+        "en": "Morning Espresso",
+        "ko": "아침의 에스프레소"
+      },
+      "scene": "Eimi by a hotel suite window in the morning holding a small espresso cup, ivory satin shirt and wide tailored trousers, city skyline behind her",
+      "line": {
+        "ja": "朝はブラック派。……あなたは甘いほうが好きでしょ？ 知ってる。",
+        "zh-Hant": "我早上喝黑咖啡。……你比較喜歡甜的吧？我知道。",
+        "en": "I take it black in the morning. …You like yours sweet, right? I know.",
+        "ko": "아침엔 블랙파. ……너는 단 거 좋아하지? 알아."
+      }
+    },
+    {
+      "title": {
+        "ja": "ネイルの時間",
+        "zh-Hant": "做指甲的時間",
+        "en": "Nail Time",
+        "ko": "네일 하는 시간"
+      },
+      "scene": "Eimi on a velvet sofa in a hotel suite in the afternoon painting her nails rose pink, black knit top, fingers spread, glancing up at you",
+      "line": {
+        "ja": "乾くまで動けないの。……だから、ここにいて。",
+        "zh-Hant": "指甲乾之前我不能動。……所以，待在這裡。",
+        "en": "I can't move till they dry. …So stay right here.",
+        "ko": "마르기 전까진 못 움직여. ……그러니까, 여기 있어."
+      }
+    },
+    {
+      "title": {
+        "ja": "ブティックで試着",
+        "zh-Hant": "精品店試穿",
+        "en": "Fitting at the Boutique",
+        "ko": "부티크 피팅"
+      },
+      "scene": "Eimi stepping out of a fitting room in an elegant boutique wearing a tailored black long-sleeve dress, hand on her hip, waiting for your verdict",
+      "line": {
+        "ja": "どう？ ……黙ってないで、ちゃんと言葉にして。",
+        "zh-Hant": "怎麼樣？……不要不說話，好好說出來。",
+        "en": "Well? …Don't just stare — say it.",
+        "ko": "어때? ……가만히 있지 말고, 말로 제대로 해 줘."
+      }
+    },
+    {
+      "title": {
+        "ja": "プールサイドの午後",
+        "zh-Hant": "泳池畔的午後",
+        "en": "Poolside Afternoon",
+        "ko": "풀사이드의 오후"
+      },
+      "scene": "Eimi seated on a shaded lounge chair on a poolside terrace on a bright afternoon, white long-sleeve linen shirt buttoned high and wide ankle-length linen trousers, sunglasses pushed up in her hair, water caustics on white tiles",
+      "line": {
+        "ja": "日差し、強いね。……あなたの影に入れて。",
+        "zh-Hant": "陽光好強喔。……讓我躲進你的影子裡。",
+        "en": "The sun's strong. …Let me stand in your shadow.",
+        "ko": "햇살 진짜 강하다. ……네 그늘로 들어가게 해 줘."
+      }
+    },
+    {
+      "title": {
+        "ja": "ルームサービス",
+        "zh-Hant": "客房服務",
+        "en": "Room Service",
+        "ko": "룸서비스"
+      },
+      "scene": "Eimi in a hotel suite in the morning beside a room-service trolley with strawberries and tea, cream silk blouse and trousers, lifting a silver cloche with a smile",
+      "line": {
+        "ja": "朝ごはん、ふたり分頼んでおいた。……もちろん、あなたの分もね。",
+        "zh-Hant": "早餐我點了兩人份。……當然，也有你的。",
+        "en": "I ordered breakfast for two. …Of course one's for you.",
+        "ko": "아침 두 사람 몫 시켜 놨어. ……당연히, 네 것도."
+      }
+    },
+    {
+      "title": {
+        "ja": "夜のドライブ前",
+        "zh-Hant": "夜間兜風前",
+        "en": "Before the Night Drive",
+        "ko": "밤 드라이브 전"
+      },
+      "scene": "Eimi beside a classic car in a softly lit city parking area at night, black leather jacket over a knit dress, dangling the car keys toward you",
+      "line": {
+        "ja": "助手席、あなたの指定席にしといたから。乗って。",
+        "zh-Hant": "副駕駛座已經是你的專屬座位了。上車吧。",
+        "en": "The passenger seat's reserved for you. Get in.",
+        "ko": "조수석은 네 지정석으로 해 뒀어. 타."
+      }
+    },
+    {
+      "title": {
+        "ja": "花屋でひと目惚れ",
+        "zh-Hant": "在花店一見鍾情",
+        "en": "Love at First Sight at the Florist",
+        "ko": "꽃집에서의 첫눈"
+      },
+      "scene": "Eimi in a stylish florist holding a bunch of pale pink peonies to her face, camel coat over a black turtleneck, playful look at you",
+      "line": {
+        "ja": "このピオニー、わたしみたいでしょ？ ……ふふ、冗談。",
+        "zh-Hant": "這束芍藥很像我吧？……呵呵，開玩笑的。",
+        "en": "These peonies are just like me, right? …Kidding.",
+        "ko": "이 작약, 나 닮았지? ……후후, 농담이야."
+      }
+    },
+    {
+      "title": {
+        "ja": "遅かったね",
+        "zh-Hant": "你好晚喔",
+        "en": "You're Late",
+        "ko": "많이 늦었네"
+      },
+      "scene": "Eimi leaning in the doorway of a hotel suite at night, arms crossed, black satin blouse and tailored trousers, warm lamplight behind, a half-smile for you",
+      "line": {
+        "ja": "遅かったね。……でも、待ってるのも嫌いじゃないの。",
+        "zh-Hant": "你好晚喔。……不過，等你我也不討厭。",
+        "en": "You're late. …But I don't mind waiting for you.",
+        "ko": "많이 늦었네. ……그래도, 기다리는 것도 싫지 않아."
+      }
+    },
+    {
+      "title": {
+        "ja": "ルーフトップバー",
+        "zh-Hant": "屋頂酒吧",
+        "en": "Rooftop Bar",
+        "ko": "루프탑 바"
+      },
+      "scene": "Eimi at a rooftop bar at night with the Tokyo skyline glittering behind, elegant black long-sleeve dress, raising a glass toward you",
+      "line": {
+        "ja": "乾杯。今夜は、わたしだけ見てて。",
+        "zh-Hant": "乾杯。今晚，只看著我就好。",
+        "en": "Cheers. Tonight, eyes on me only.",
+        "ko": "건배. 오늘 밤은, 나만 봐."
+      }
+    },
+    {
+      "title": {
+        "ja": "銀座でショッピング",
+        "zh-Hant": "銀座購物",
+        "en": "Shopping in Ginza",
+        "ko": "긴자 쇼핑"
+      },
+      "scene": "Eimi on a Ginza street on a sunny afternoon holding elegant shopping bags, beige trench coat and sunglasses, turning back to you",
+      "line": {
+        "ja": "荷物持ちじゃないよ。……エスコート役、ってこと。",
+        "zh-Hant": "不是叫你提東西喔。……是當我的護花使者。",
+        "en": "You're not carrying bags. …You're my escort.",
+        "ko": "짐꾼이 아니야. ……에스코트 역할, 이라는 거지."
+      }
+    },
+    {
+      "title": {
+        "ja": "美術館ナイト",
+        "zh-Hant": "美術館之夜",
+        "en": "Museum Night",
+        "ko": "미술관에서의 밤"
+      },
+      "scene": "Eimi at an evening event in a modern art museum, standing before a large abstract canvas, black blazer dress, watching you instead of the art",
+      "line": {
+        "ja": "作品より、あなたの反応のほうが面白いかも。",
+        "zh-Hant": "比起作品，你的反應好像更有趣。",
+        "en": "Your reactions are more interesting than the art.",
+        "ko": "작품보다, 네 반응이 더 재밌을지도."
+      }
+    },
+    {
+      "title": {
+        "ja": "海辺のテラスカフェ",
+        "zh-Hant": "海邊露台咖啡",
+        "en": "Seaside Terrace Café",
+        "ko": "바닷가 테라스 카페"
+      },
+      "scene": "Eimi at a seaside terrace café on a breezy afternoon, white linen dress with sleeves and a wide straw hat, the sea sparkling behind her, hair tousled by the wind",
+      "line": {
+        "ja": "潮風、気持ちいいね。……髪、乱れちゃった。直して？",
+        "zh-Hant": "海風好舒服。……頭髮亂掉了。幫我整理？",
+        "en": "The sea breeze feels nice. …My hair's a mess. Fix it?",
+        "ko": "바닷바람, 기분 좋다. ……머리 헝클어졌어. 정리해 줄래?"
+      }
+    },
+    {
+      "title": {
+        "ja": "ジャズバー",
+        "zh-Hant": "爵士酒吧",
+        "en": "Jazz Bar",
+        "ko": "재즈 바"
+      },
+      "scene": "Eimi in a dim jazz bar at night, a saxophonist blurred on stage behind, deep burgundy velvet dress with long sleeves, chin on her hand, looking at you",
+      "line": {
+        "ja": "この曲、ゆっくりでいいよね。……今夜は急がないで。",
+        "zh-Hant": "這首曲子，慢慢聽就好。……今晚別急。",
+        "en": "This song's a slow one. …Don't rush tonight.",
+        "ko": "이 곡, 천천히 들어도 괜찮지. ……오늘 밤은 서두르지 마."
+      }
+    },
+    {
+      "title": {
+        "ja": "乗馬クラブ",
+        "zh-Hant": "馬術俱樂部",
+        "en": "Riding Club",
+        "ko": "승마 클럽"
+      },
+      "scene": "Eimi at a riding club on a clear morning in a fitted navy riding jacket, white shirt and riding boots, one hand on a chestnut horse, confident smile",
+      "line": {
+        "ja": "馬に乗るわたし、かっこいいでしょ？ ほら、ちゃんと見てて。",
+        "zh-Hant": "騎馬的我很帥吧？來，好好看著。",
+        "en": "I look good on a horse, don't I? Watch.",
+        "ko": "말 타는 나, 멋있지? 자, 제대로 봐."
+      }
+    },
+    {
+      "title": {
+        "ja": "箱根の紅葉",
+        "zh-Hant": "箱根紅葉",
+        "en": "Hakone in Autumn",
+        "ko": "하코네의 단풍"
+      },
+      "scene": "Eimi on a mountain path in Hakone among red and orange autumn leaves, long camel coat and black turtleneck, cool air, holding her coat open toward you",
+      "line": {
+        "ja": "寒くなってきた。……コートの中、入る？",
+        "zh-Hant": "開始變冷了。……要進來我的大衣裡嗎？",
+        "en": "It's getting cold. …Want to come inside my coat?",
+        "ko": "쌀쌀해지네. ……코트 안으로, 들어올래?"
+      }
+    },
+    {
+      "title": {
+        "ja": "暖炉のラウンジ",
+        "zh-Hant": "壁爐旁的酒廊",
+        "en": "Fireside Lounge",
+        "ko": "벽난로 라운지"
+      },
+      "scene": "Eimi in a hotel lounge in winter by a crackling fireplace, cream cashmere turtleneck and wide trousers, patting the armchair beside her",
+      "line": {
+        "ja": "暖炉の前、特等席とっておいた。……となり、どうぞ。",
+        "zh-Hant": "壁爐前的特等席我佔好了。……請坐我旁邊。",
+        "en": "I saved us the seats by the fire. …Sit by me.",
+        "ko": "벽난로 앞, 특등석 잡아 놨어. ……옆자리, 앉아."
+      }
+    },
+    {
+      "title": {
+        "ja": "ガラの夜",
+        "zh-Hant": "晚宴之夜",
+        "en": "Gala Night",
+        "ko": "갈라의 밤"
+      },
+      "scene": "Eimi on the steps of a gala at night, elegant high-neck black floor-length gown with long sleeves, camera flashes in soft bokeh, looking past the crowd at you",
+      "line": {
+        "ja": "みんな見てるけど……わたしが見てるのは、あなただけ。",
+        "zh-Hant": "大家都在看我……但我看的只有你。",
+        "en": "Everyone's watching… but I'm only watching you.",
+        "ko": "다들 보고 있지만…… 내가 보는 건, 너 하나뿐이야."
+      }
+    },
+    {
+      "title": {
+        "ja": "ナイトクルーズ",
+        "zh-Hant": "夜間遊船",
+        "en": "Night Cruise",
+        "ko": "밤의 크루즈"
+      },
+      "scene": "Eimi on the deck of a cruise boat on Tokyo Bay at night, Rainbow Bridge lit up behind, high-neck navy dress with long sleeves and a light shawl, wind in her hair",
+      "line": {
+        "ja": "夜景、きれいでしょ。……でも、今はこっち見て。",
+        "zh-Hant": "夜景很美吧。……不過現在，看這邊。",
+        "en": "Pretty view, right? …But right now, look at me.",
+        "ko": "야경, 예쁘지. ……근데 지금은, 이쪽 봐."
+      }
+    },
+    {
+      "title": {
+        "ja": "あなた好みのドレス",
+        "zh-Hant": "你喜歡的禮服",
+        "en": "The Dress You'd Like",
+        "ko": "네가 좋아할 드레스"
+      },
+      "scene": "Eimi in a softly lit dressing room in the evening wearing a high-neck deep navy satin gown with long sleeves, adjusting an earring, turning to ask if you noticed",
+      "line": {
+        "ja": "このドレス、あなたの好みに合わせたの。……気づいた？",
+        "zh-Hant": "這件禮服是配合你的喜好選的。……你發現了嗎？",
+        "en": "I chose this dress for your taste. …Did you notice?",
+        "ko": "이 드레스, 네 취향에 맞춘 거야. ……눈치챘어?"
+      }
+    },
+    {
+      "title": {
+        "ja": "テラスの花火",
+        "zh-Hant": "露台的煙火",
+        "en": "Fireworks from the Terrace",
+        "ko": "테라스의 불꽃놀이"
+      },
+      "scene": "Eimi on a hotel terrace on a summer night in a black yukata with red camellias, fireworks blooming over the city behind her, a folding fan in hand",
+      "line": {
+        "ja": "浴衣、似合う？ ……あなたに一番に見せたかったの。",
+        "zh-Hant": "浴衣適合我嗎？……我最想第一個給你看。",
+        "en": "Does the yukata suit me? …I wanted you to see it first.",
+        "ko": "유카타, 잘 어울려? ……너한테 제일 먼저 보여 주고 싶었어."
+      }
+    },
+    {
+      "title": {
+        "ja": "誕生日のサプライズ",
+        "zh-Hant": "生日驚喜",
+        "en": "Birthday Surprise",
+        "ko": "생일 서프라이즈"
+      },
+      "scene": "Eimi in a private dining room at night presenting a small cake with a sparkler, elegant black dress, candlelight, delighted smile at you",
+      "line": {
+        "ja": "サプライズ、成功？ ……あなたの驚いた顔、見たかったの。",
+        "zh-Hant": "驚喜成功了嗎？……我就是想看你驚訝的表情。",
+        "en": "Surprise! Did it work? …I wanted to see your face.",
+        "ko": "서프라이즈, 성공했어? ……네 놀란 얼굴, 보고 싶었거든."
+      }
+    },
+    {
+      "title": {
+        "ja": "雪のリゾートの夜",
+        "zh-Hant": "雪地度假村之夜",
+        "en": "Snow Resort Night",
+        "ko": "눈 내리는 리조트의 밤"
+      },
+      "scene": "Eimi in a mountain chalet at night by a large window with heavy snow falling outside, white cable-knit dress with long sleeves, a mug of hot chocolate, fireplace glow",
+      "line": {
+        "ja": "外は吹雪。……今夜は、暖炉の前でゆっくりしよ。",
+        "zh-Hant": "外面在下暴風雪。……今晚就在壁爐前好好放鬆吧。",
+        "en": "It's a blizzard out there. …Let's stay by the fire tonight.",
+        "ko": "밖은 눈보라야. ……오늘 밤은, 벽난로 앞에서 느긋하게 있자."
+      }
+    },
+    {
+      "title": {
+        "ja": "月夜のプールサイド",
+        "zh-Hant": "月夜泳池畔",
+        "en": "Moonlit Poolside",
+        "ko": "달빛 아래 풀사이드"
+      },
+      "scene": "Eimi sitting on the edge of a lounge chair by a hotel pool at night, fully clothed in a flowing high-neck rose silk dress with long sleeves, lanterns and the moon reflected in the water",
+      "line": {
+        "ja": "水面に月が映ってる。……ねえ、少しだけ隣に座って。",
+        "zh-Hant": "月亮映在水面上。……欸，坐我旁邊一下。",
+        "en": "The moon's on the water. …Hey, sit next to me a while.",
+        "ko": "물 위에 달이 비치고 있어. ……있잖아, 잠깐만 옆에 앉아 줄래."
+      }
+    },
+    {
+      "title": {
+        "ja": "目をそらさないで",
+        "zh-Hant": "不要移開視線",
+        "en": "Don't Look Away",
+        "ko": "눈 돌리지 마"
+      },
+      "scene": "Intimate close-up of Eimi in a velvet armchair in a hotel suite at night, warm lamplight, high-neck rose satin evening dress with long sleeves and a navy silk wrap over her shoulders, direct confident gaze into the lens",
+      "line": {
+        "ja": "目、そらさないで。……わたしのこと、ちゃんと見てて。",
+        "zh-Hant": "不要移開視線。……好好看著我。",
+        "en": "Don't look away. …Keep your eyes on me.",
+        "ko": "눈, 돌리지 마. ……나를, 제대로 봐 줘."
+      },
+      "story": {
+        "ja": [
+          "ホテルのスイートの、ベルベットのアームチェア。ランプの明かりが、ローズ色のサテンをやわらかく光らせてる。\nあなたは部屋に入ってきてから、ずっと窓の外の夜景ばかり見てる。きれいなのはわかるけど……ねえ、ちょっと失礼じゃない？\n「こっち、見て」\n呼んでも、あなたはちらっと見て、すぐに目をそらす。照れてるの、バレバレ。\nわたしはわざとゆっくり座りなおして、紺色のシルクのストールを肩にかけなおした。人に見られることには慣れてる。カメラの前に立つのが仕事だもの。でもね、あなたに見られるのは、ちょっとだけ特別。\nだって、あなたの目は、カメラみたいにわたしを切りとらない。まるごと、ちゃんと見ようとしてくれる。\n「目、そらさないで」\n今度は、少しだけ声を低くして言った。あなたの肩が、ぴくっと動いた。",
+          "あなたはやっと、わたしのほうを向いた。\nまっすぐ目が合う。三秒。四秒。先にそらしたのは……わたしのほうだった。\n「……なに笑ってるの」\n「いや、珍しいなと思って」\nうるさい。自分から見てって言ったくせに、見つめ返されると、どうしていいかわからなくなるの。大人の余裕なんて、あなたの前だとすぐにどこかへいっちゃう。\nわたしはグラスを手にとって、ごまかすように一口飲んだ。グラスごしに、あなたがまだこっちを見てるのがわかる。\n「……ねえ、今日のわたし、どう？」\n結局、また自分から聞いちゃった。あなたは少し考えて、ひとことだけ答えた。\nそれが何だったかは、ないしょ。でも、その夜わたしは、鏡の前でずっとにやけてたと思う。\nわたしのことは、これからもちゃんと見てて。そのかわり、わたしもあなたから目をそらさないから。"
+        ],
+        "zh-Hant": [
+          "飯店套房裡的天鵝絨扶手椅。檯燈的光，讓玫瑰色的緞面柔柔地發亮。\n你從進房間開始，就一直看著窗外的夜景。我知道很美啦……可是欸，這樣有點失禮吧？\n「看這邊。」\n我叫你，你只瞄了我一眼，又馬上移開視線。在害羞，一看就知道。\n我故意慢慢地重新坐好，把深藍色的絲質披肩重新披上肩膀。被人注視這種事，我早就習慣了。站在鏡頭前就是我的工作嘛。可是啊，被你看著，有一點點特別。\n因為你的眼睛，不會像鏡頭那樣把我切割下來。你會想要完整地、好好地看著我。\n「不要移開視線。」\n這次，我稍微壓低了聲音說。你的肩膀抖了一下。",
+          "你終於轉向我這邊了。\n視線筆直地交會。三秒。四秒。先移開的是……我。\n「……你在笑什麼。」\n「沒有，只是覺得很難得。」\n吵死了。明明是我自己叫你看的，被你回看過來，卻不知道該怎麼辦。什麼大人的從容，在你面前一下子就不見了。\n我拿起杯子，掩飾地喝了一口。隔著杯子，我知道你還在看著我。\n「……欸，今天的我，怎麼樣？」\n結果，又是我自己先問了。你想了一下，只回了一句話。\n是什麼，是秘密。不過那天晚上，我大概一直在鏡子前傻笑吧。\n以後也要好好看著我喔。作為交換，我也不會把視線從你身上移開。"
+        ],
+        "en": [
+          "A velvet armchair in a hotel suite. The lamplight makes the rose satin glow softly.\nEver since you came in, you've only been looking at the night view. I know it's beautiful, but… hey, isn't that a bit rude?\n\"Look at me.\"\nYou glanced over and looked away again. So obviously shy.\nI shifted slowly in my seat on purpose and settled the navy silk wrap back over my shoulders. I'm used to being looked at. Standing in front of cameras is my job. But being looked at by you is a little bit special.\nBecause your eyes don't crop me the way a camera does. You try to see all of me, properly.\n\"Don't look away.\"\nThis time I said it a little lower. Your shoulders twitched.",
+          "At last, you turned toward me.\nOur eyes met straight on. Three seconds. Four. The one who looked away first was… me.\n\"…What are you smiling at?\"\n\"Nothing, it's just rare.\"\nOh, hush. I'm the one who told you to look, and yet when you look back, I don't know what to do. All my grown-up composure disappears in front of you.\nI picked up my glass and took a sip to cover it. Over the rim, I could tell you were still looking at me.\n\"…So, how do I look tonight?\"\nIn the end, I asked first again. You thought for a moment and answered in just a few words.\nWhat they were is a secret. But I think I spent that night grinning at the mirror.\nKeep watching me from now on. In return, I won't take my eyes off you either."
+        ],
+        "ko": [
+          "호텔 스위트룸의 벨벳 안락의자. 램프 불빛이 로즈색 새틴을 부드럽게 비추고 있어.\n넌 방에 들어오고 나서 줄곧 창밖 야경만 보고 있었어. 예쁜 건 알겠는데…… 저기, 그거 좀 실례 아니야?\n「이쪽, 봐」\n불러도 넌 힐끗 보고는 바로 눈을 돌려. 부끄러워하는 거, 다 티 나.\n나는 일부러 천천히 자세를 고쳐 앉고, 네이비색 실크 스톨을 어깨에 다시 걸쳤어. 남의 시선엔 익숙해. 카메라 앞에 서는 게 일이니까. 근데 있잖아, 네가 보는 건 조금 특별해.\n왜냐면 네 눈은, 카메라처럼 날 잘라내지 않으니까. 통째로, 제대로 보려고 해 주니까.\n「눈, 돌리지 마」\n이번엔 목소리를 살짝 낮춰서 말했어. 네 어깨가 움찔, 움직였어.",
+          "넌 마침내 내 쪽을 돌아봤어.\n시선이 똑바로 마주쳤어. 삼 초. 사 초. 먼저 피한 건…… 나였어.\n「……뭘 웃는 거야」\n「아니, 신기하다 싶어서」\n시끄러워. 자기가 먼저 보라고 해 놓고, 막상 마주 보면 어떻게 해야 할지 모르겠어. 어른스러운 여유 같은 건, 네 앞에서는 금방 어디론가 사라져 버려.\n나는 잔을 들고, 얼버무리듯 한 모금 마셨어. 잔 너머로, 네가 아직 이쪽을 보고 있는 게 느껴졌어.\n「……저기, 오늘 나 어때?」\n결국 또 내가 먼저 물어버렸어. 넌 잠깐 생각하더니, 한마디만 대답했어.\n그게 뭐였는지는, 비밀이야. 근데 그날 밤 나는, 거울 앞에서 계속 실실 웃고 있었던 것 같아.\n앞으로도 나를 제대로 봐 줘. 그 대신, 나도 너한테서 눈 돌리지 않을 테니까."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "ピアスをつけて",
+        "zh-Hant": "幫我戴耳環",
+        "en": "Help with My Earring",
+        "ko": "귀걸이 채워 줘"
+      },
+      "scene": "Close-up of Eimi at a marble vanity in bright morning light, turning her head and holding a single pearl earring out toward the lens, cream silk blouse, playful smile",
+      "line": {
+        "ja": "片方、つけてくれる？ ……手、ふるえてるよ？ ふふ。",
+        "zh-Hant": "幫我戴一邊好嗎？……你的手在發抖喔？呵呵。",
+        "en": "Put one on for me? …Your hands are shaking. Heh.",
+        "ko": "한쪽만, 채워 줄래? ……손 떨리네? 후후."
+      },
+      "story": {
+        "ja": [
+          "朝の光が、大理石の洗面台に反射してまぶしい。\n鏡の前で、わたしはパールのピアスを片方だけつけて、もう片方を指先でころがしてた。昨日の夜、あなたがプレゼントしてくれたもの。小さなケースを開けたとき、思わず声が出ちゃったの、覚えてる？\n「似合う？」って鏡ごしに聞いたら、あなたは洗面所の入り口で、コーヒーを持ったまま固まってた。\nすっぴんに近い顔を見られるのは、ほんとはちょっと恥ずかしい。いつもは完璧に仕上げてから人に会うから。でも、あなたになら、まあいいかって思えるようになった。\n香水をひと吹き。ローズと、少しだけムスク。わたしの朝のはじまりの香り。\nわたしは振り向いて、もう片方のピアスをあなたに差し出した。\n「片方、つけてくれる？」\nあなたの目が、まんまるになった。",
+          "ピアスをつけるのって、慣れてない人には意外とむずかしいの。\nあなたはわたしの耳たぶを、こわれものみたいにそっとつまんで、何度もキャッチを落としそうになった。距離が近い。あなたの息が、耳にかかる。\n「……手、ふるえてるよ？」\nからかったら、あなたはもっと緊張して、ピアスが指からすべり落ちた。洗面台の上で、パールがころころ転がる。ふたりで同時に手をのばして、指先がぶつかった。\nわたし、思わず吹き出しちゃった。あなたも笑って、なんだか朝から大さわぎ。\n三回目で、やっとピアスがおさまった。鏡をのぞくと、両耳に同じパールが光ってる。\n「ありがと。上手だったよ」\nうそ。ぜんぜん上手じゃなかった。でも、今まででいちばん、うれしいピアスのつけ方だった。\nこれから毎朝、片方だけつけて待ってようかな。……冗談よ。半分だけね。"
+        ],
+        "zh-Hant": [
+          "早晨的陽光反射在大理石洗手台上，好刺眼。\n我在鏡子前只戴了一邊珍珠耳環，另一邊在指尖滾來滾去。這是你昨晚送我的禮物。打開小盒子的時候，我忍不住叫出聲，你還記得嗎？\n我隔著鏡子問「適合嗎？」，你拿著咖啡站在洗手間門口，整個人僵住了。\n被看到幾乎素顏的臉，其實有點害羞。平常我都是打扮得完美無缺才見人的。可是如果是你，我開始覺得，好像也沒關係。\n噴一下香水。玫瑰，加上一點點麝香。我早晨開始的味道。\n我轉過身，把另一邊耳環遞給你。\n「幫我戴一邊好嗎？」\n你的眼睛瞪得圓圓的。",
+          "戴耳環這件事，對不習慣的人來說其實很難。\n你像拿易碎品一樣，輕輕捏著我的耳垂，好幾次差點把耳扣弄掉。距離好近。你的呼吸吹在我耳邊。\n「……你的手在發抖喔？」\n我一捉弄你，你就更緊張，耳環從指間滑了下去。珍珠在洗手台上骨碌碌地滾。我們同時伸出手，指尖碰在一起。\n我忍不住噗哧笑了出來。你也笑了，一大早就鬧哄哄的。\n第三次，耳環終於戴好了。看向鏡子，兩邊耳朵上閃著一樣的珍珠。\n「謝謝。你戴得很好喔。」\n騙人的。一點也不好。可是，這是我到現在為止，最開心的一次戴耳環。\n以後每天早上，我都只戴一邊等你好了。……開玩笑的。一半是啦。"
+        ],
+        "en": [
+          "Morning light bounced off the marble vanity, dazzling.\nIn front of the mirror I'd put in one pearl earring and was rolling the other between my fingers. Your present from last night. Do you remember how I gasped when I opened the little box?\nWhen I asked \"Does it suit me?\" through the mirror, you froze in the bathroom doorway, coffee in hand.\nHonestly, being seen almost bare-faced is a little embarrassing. Usually I only meet people once I'm perfectly done up. But with you, I've started thinking it's fine.\nOne spritz of perfume. Rose, and a hint of musk. The scent that starts my mornings.\nI turned and held the other earring out to you.\n\"Put one on for me?\"\nYour eyes went perfectly round.",
+          "Putting in an earring is surprisingly hard if you're not used to it.\nYou held my earlobe as gently as something breakable and kept nearly dropping the back. You were so close. Your breath brushed my ear.\n\"…Your hands are shaking, you know?\"\nWhen I teased you, you got even more nervous and the earring slipped from your fingers. The pearl rolled across the vanity. We both reached for it at once and our fingertips bumped.\nI burst out laughing. You laughed too — such a commotion first thing in the morning.\nOn the third try, it finally went in. In the mirror, matching pearls shone on both ears.\n\"Thanks. You did great.\"\nA lie. You were terrible at it. But it was the happiest I've ever been putting on earrings.\nMaybe from now on I'll wear just one every morning and wait for you. …Kidding. Half kidding."
+        ],
+        "ko": [
+          "아침 햇살이 대리석 세면대에 반사돼서 눈부셔.\n거울 앞에서, 나는 진주 귀걸이를 한쪽만 걸고, 다른 한쪽을 손끝으로 굴리고 있었어. 어젯밤 네가 선물해 준 거야. 작은 케이스를 열었을 때 나도 모르게 소리 질렀던 거, 기억해?\n「어울려?」 하고 거울 너머로 물었더니, 넌 화장실 입구에서 커피를 든 채 굳어 있었어.\n민낯에 가까운 얼굴을 보이는 건 사실 조금 부끄러워. 평소엔 완벽하게 꾸미고 나서야 사람을 만나니까. 근데 너한테는, 뭐 괜찮으려나 싶어졌어.\n향수를 한 번 뿌렸어. 로즈에, 살짝 머스크. 내 아침이 시작되는 향기야.\n나는 몸을 돌려서, 남은 한쪽 귀걸이를 너한테 내밀었어.\n「한쪽만, 채워 줄래?」\n네 눈이 동그래졌어.",
+          "귀걸이를 채우는 거, 익숙하지 않은 사람한테는 의외로 어려운가 봐.\n넌 내 귓불을, 깨질 것 같은 물건 다루듯 살짝 잡고는 몇 번이나 나비핀을 떨어뜨릴 뻔했어. 거리가 가까워. 네 숨결이 귀에 닿아.\n「……손 떨리네?」\n놀렸더니 넌 더 긴장해서, 귀걸이가 손가락에서 미끄러져 떨어졌어. 세면대 위에서 진주가 데굴데굴 굴러가. 우리 둘 다 동시에 손을 뻗어서, 손끝이 부딪혔어.\n나는 나도 모르게 웃음이 터졌어. 너도 웃고, 아침부터 웬 소동인지.\n세 번째 만에 겨우 귀걸이가 자리를 잡았어. 거울을 보니, 양쪽 귀에 같은 진주가 빛나고 있어.\n「고마워. 잘했어」\n거짓말. 전혀 안 잘했어. 근데, 지금까지 중에서 제일 기뻤던 귀걸이 착용이었어.\n앞으로 매일 아침, 한쪽만 걸고 기다려 볼까. ……농담이야. 반쯤은."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "香りの記憶",
+        "zh-Hant": "香氣的記憶",
+        "en": "Memory of a Scent",
+        "ko": "향기의 기억"
+      },
+      "scene": "Close-up of Eimi in a hotel suite at night holding a faceted crystal perfume bottle with a rose-gold cap near her chin, city lights sparkling behind, black high-neck silk dress, a soft knowing smile into the lens",
+      "line": {
+        "ja": "この香りがしたら、わたしを思い出して。……約束ね。",
+        "zh-Hant": "聞到這個香味時，就想起我。……說好了喔。",
+        "en": "When you smell this, think of me. …Promise.",
+        "ko": "이 향이 나면, 날 떠올려 줘. ……약속이야."
+      },
+      "story": {
+        "ja": [
+          "香水って、記憶とつながってるって知ってた？\n目で見たものより、耳で聞いたものより、香りのほうが、ずっと長く覚えてるんだって。だから、わたしは大切な日には、同じ香水をつけるの。\nローズゴールドのキャップの、カットガラスのボトル。光にかざすと、中の液体がピンク色にきらめく。わたしのいちばんのお気に入り。\nあなたとはじめて会った日も、この香りをまとってた。二回目のデートも、あなたが熱を出してお見舞いに行った日も。\nだから、あなたの中には、きっともうこの香りが住みついてる。……そうだったら、うれしいな。\n夜のスイートルーム。窓の外で、街の灯りが宝石みたいに光ってる。わたしはボトルを手首に近づけて、ひと吹き。それから、首すじに少しだけ。\n今夜も、あなたに覚えていてほしい夜だから。",
+          "「いい匂い」\nあなたが部屋に入ってきて、最初に言ったのがそれだった。わたしはちょっと得意になって、香水のボトルを持ち上げてみせた。\n「この香りがしたら、わたしを思い出して。……約束ね」\nあなたは笑って、「もう思い出してる」って言った。街で似た香りの人とすれちがうと、つい振り向いちゃうんだって。\nなにそれ。うれしいけど、ちょっと妬ける。その人は、わたしじゃないのに。\n「じゃあ、ほかの人と区別がつくように」\nわたしはボトルのキャップを開けて、あなたの手首に一滴だけ落とした。ローズの香りが、ふわっと広がる。\n「これで、あなたからもわたしの香りがする。……忘れようとしても、むりだからね」\nあなたは手首を鼻に近づけて、少し照れたように笑った。\n明日、ふとした瞬間にこの香りに気づいたら。それが、わたしからの「またね」のかわり。"
+        ],
+        "zh-Hant": [
+          "你知道香水和記憶是連在一起的嗎？\n聽說比起眼睛看到的、耳朵聽到的，香味會被記得更久。所以在重要的日子，我都會擦同一瓶香水。\n玫瑰金瓶蓋的切面玻璃瓶。對著光一看，裡面的液體會閃著粉紅色的光。是我最喜歡的一瓶。\n第一次見到你的那天，我也帶著這個香味。第二次約會、你發燒我去探病的那天，也是。\n所以，你的心裡一定已經住著這個香味了。……如果是那樣，我會很開心。\n夜晚的套房。窗外，街上的燈光像寶石一樣閃爍。我把瓶子靠近手腕，噴了一下。然後，在頸側也輕輕擦一點。\n因為今晚，也是我希望你記住的一夜。",
+          "「好香。」\n你走進房間，第一句話就是這個。我有點得意，把香水瓶舉起來給你看。\n「聞到這個香味時，就想起我。……說好了喔。」\n你笑著說：「已經會想起來了。」你說在街上跟味道相似的人擦身而過時，總會忍不住回頭。\n什麼嘛。雖然很開心，但有點吃醋。那個人又不是我。\n「那，為了讓你分得出來。」\n我打開瓶蓋，在你的手腕上滴了一滴。玫瑰的香味輕輕散開。\n「這樣你身上也有我的味道了。……就算想忘記，也不可能了喔。」\n你把手腕湊近鼻子，有點害羞地笑了。\n明天，如果你在某個不經意的瞬間聞到這個香味。那就是我對你說的「下次見」。"
+        ],
+        "en": [
+          "Did you know perfume is tied to memory?\nThey say we remember scents far longer than things we see or hear. That's why I wear the same perfume on important days.\nA cut-glass bottle with a rose-gold cap. Held up to the light, the liquid inside glints pink. My absolute favourite.\nI wore this scent the day I first met you. On our second date too, and the day I visited when you had a fever.\nSo this scent must already live somewhere inside you. …I'd be happy if it did.\nA hotel suite at night. Beyond the window, the city lights shine like jewels. I bring the bottle to my wrist and spray once. Then a little at the side of my neck.\nBecause tonight is another night I want you to remember.",
+          "\"Smells nice.\"\nThat was the first thing you said when you walked in. Feeling a little smug, I held up the bottle to show you.\n\"When you smell this, think of me. …Promise.\"\nYou laughed and said, \"I already do.\" Apparently, when you pass someone wearing something similar on the street, you can't help turning around.\nWhat's that about? It makes me happy, but also a bit jealous. That person isn't me.\n\"Then, so you can tell us apart.\"\nI opened the cap and let a single drop fall on your wrist. The scent of rose bloomed softly.\n\"Now you smell like me too. …You couldn't forget if you tried.\"\nYou brought your wrist to your nose and smiled, a little embarrassed.\nTomorrow, if you catch this scent at some unexpected moment — that's my way of saying \"see you soon.\""
+        ],
+        "ko": [
+          "향수가 기억이랑 이어져 있다는 거, 알고 있었어?\n눈으로 본 것보다, 귀로 들은 것보다, 향기 쪽이 훨씬 오래 기억에 남는대. 그래서 나는 중요한 날엔 같은 향수를 뿌려.\n로즈골드 뚜껑에, 컷글라스 병. 빛에 비추면 안의 액체가 핑크색으로 반짝여. 내가 제일 아끼는 거야.\n너랑 처음 만난 날도, 이 향을 두르고 있었어. 두 번째 데이트 때도, 네가 열났을 때 병문안 갔던 날도.\n그러니까 네 안에는, 분명 이미 이 향이 스며들어 있을 거야. ……그랬으면 좋겠다.\n밤의 스위트룸. 창밖에는 도시의 불빛이 보석처럼 반짝이고 있어. 나는 병을 손목에 가까이 대고, 한 번 뿌렸어. 그다음, 목덜미에도 살짝.\n오늘 밤도, 너한테 기억해 줬으면 하는 밤이니까.",
+          "「좋은 냄새」\n네가 방에 들어와서 처음 한 말이 그거였어. 나는 살짝 으쓱해져서 향수병을 들어 보였어.\n「이 향이 나면, 날 떠올려 줘. ……약속이야」\n넌 웃으면서 「벌써 떠올리고 있는데」라고 했어. 길에서 비슷한 향이 나는 사람이랑 스치면 자기도 모르게 돌아보게 된대.\n뭐야 그게. 기쁘긴 한데, 살짝 질투 나. 그 사람, 내가 아닌데.\n「그럼, 다른 사람이랑 구별되게」\n나는 병뚜껑을 열어서, 네 손목에 한 방울만 떨어뜨렸어. 로즈 향이 은은하게 퍼졌어.\n「이제 너한테서도 내 향기가 나. ……잊으려고 해도, 못 잊을걸」\n넌 손목을 코에 가까이 대고, 살짝 부끄러운 듯 웃었어.\n내일, 문득 이 향을 느끼는 순간이 온다면. 그게, 나한테서 보내는 「또 봐」인 셈이야."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "朝焼けのスイート",
+        "zh-Hant": "朝霞中的套房",
+        "en": "Suite at Sunrise",
+        "ko": "동틀 녘의 스위트룸"
+      },
+      "scene": "Close-up of Eimi on a window sofa in a hotel suite at sunrise, warm orange light on her face, soft grey cashmere cardigan buttoned up, fresh natural makeup, holding a coffee mug, relaxed smile into the lens",
+      "line": {
+        "ja": "すっぴん、見せるのはあなただけ。……内緒ね。",
+        "zh-Hant": "素顏只給你看。……要保密喔。",
+        "en": "You're the only one who sees me without makeup. …Our secret.",
+        "ko": "민낯, 보여주는 건 너뿐이야. ……비밀이야."
+      },
+      "story": {
+        "ja": [
+          "めずらしく、目覚ましより先に起きた。\nホテルのスイートの大きな窓の外で、空が少しずつオレンジ色に染まっていく。まだ街は眠ってて、ビルの窓にぽつぽつ明かりが残ってるだけ。\nわたしはカシミヤのカーディガンを羽織って、窓辺のソファに座った。メイクもしてない、髪もとかしてない。こんな姿、みんなは想像もしてないと思う。いつも、みんなの前のわたしでいる時間のほうが長いから。\nでもね、ほんとのわたしは、朝がちょっと苦手で、寝起きはぼんやりしてて、コーヒーがないと何もできない。\nキッチンのほうから、コーヒーの香りがしてきた。あなたが先に起きて、いれてくれてたんだ。\n「起きてたの？」ってあなたがマグを持ってくる。わたしはあわてて顔をかくそうとして、……やめた。\nあなたには、もうかくさなくていいかなって思ったから。",
+          "あなたから受けとったマグは、ちょうどいい温度だった。\nわたしがブラックしか飲まないの、ちゃんと覚えててくれた。そういうところ、ほんとに好き。……今の、聞かなかったことにして。\n窓の外では、朝焼けがどんどん広がって、部屋の中までオレンジ色に染めていく。あなたの横顔も、わたしの手も、みんな同じ色。\n「すっぴん、見せるのはあなただけ」\nコーヒーを飲みながら、わたしはぽつりと言った。\n「……内緒ね」\nあなたはうなずいて、「きれいだよ」って言った。メイクしてるときより、ずっと。\nもう、そういうことをさらっと言わないで。朝から心臓に悪いんだから。\nわたしはマグで顔をかくして、窓の外を見た。朝日がビルのあいだからのぼってきて、一日がはじまる。\n今日もきっと、いつものわたしで、みんなの前に立つ。でも、この朝の三十分だけは、あなただけのわたしでいさせて。"
+        ],
+        "zh-Hant": [
+          "難得在鬧鐘響之前醒來。\n飯店套房的大窗戶外，天空一點一點染成橘色。城市還在沉睡，大樓的窗戶只零星亮著幾盞燈。\n我披上喀什米爾開襟衫，坐到窗邊的沙發上。沒化妝，頭髮也沒梳。這個樣子，大家大概想都想不到吧。因為我待在大家面前的時間，總是比較長。\n可是啊，真正的我，其實有點怕早起，剛醒來總是迷迷糊糊的，沒有咖啡什麼都做不了。\n廚房那邊飄來咖啡的香味。原來你比我先起來，幫我泡好了。\n「你醒了？」你拿著馬克杯走過來。我慌忙想遮住臉，……然後放棄了。\n因為我覺得，在你面前，已經不用再遮了。",
+          "從你手中接過的馬克杯，溫度剛剛好。\n你記得我只喝黑咖啡。你這種地方，我真的好喜歡。……剛剛那句，當作沒聽到。\n窗外的朝霞越來越開闊，把房間裡也染成了橘色。你的側臉、我的手，全都是一樣的顏色。\n「素顏只給你看。」\n喝著咖啡，我輕輕地說。\n「……要保密喔。」\n你點點頭，說：「很美喔。」比化妝的時候還美得多。\n拜託，不要這麼輕鬆地說出那種話。一大早的，對心臟很不好耶。\n我用馬克杯遮住臉，看向窗外。朝陽從大樓之間升起，新的一天開始了。\n今天，我一定也會用平常的自己站在大家面前。可是早晨的這三十分鐘，就讓我只當你一個人的我吧。"
+        ],
+        "en": [
+          "For once, I woke before the alarm.\nOutside the suite's big windows, the sky was slowly turning orange. The city was still asleep, only a few windows lit here and there in the towers.\nI slipped on my cashmere cardigan and sat on the window sofa. No makeup, hair not brushed. I bet no one would ever imagine me like this. I spend so much more time being the me everyone else sees.\nBut honestly, the real me isn't great with mornings. I'm foggy when I wake up and useless without coffee.\nThe smell of coffee drifted in from the kitchen. You'd got up first and made it.\n\"You're awake?\" you said, bringing me a mug. I hurried to hide my face, and… stopped.\nI decided I didn't need to hide from you anymore.",
+          "The mug you handed me was the perfect temperature.\nYou remembered I only drink it black. I really love that about you. …Pretend you didn't hear that.\nOutside, the sunrise spread wider and wider and turned the whole room orange. Your profile, my hands, everything the same colour.\n\"You're the only one who sees me without makeup,\" I murmured over my coffee.\n\"…Our secret.\"\nYou nodded and said, \"You're beautiful.\" Even more than with makeup, you said.\nPlease don't say things like that so casually. It's bad for my heart this early.\nI hid behind my mug and looked out of the window. The sun rose between the towers and the day began.\nToday, I'll surely stand in front of everyone as my usual self again. But for these thirty minutes of morning, let me be only yours."
+        ],
+        "ko": [
+          "드물게, 알람보다 먼저 눈이 떠졌어.\n호텔 스위트룸의 큰 창밖으로, 하늘이 조금씩 주황빛으로 물들어 가. 거리는 아직 잠들어 있고, 빌딩 창문엔 드문드문 불빛만 남아 있어.\n나는 캐시미어 가디건을 걸치고 창가 소파에 앉았어. 화장도 안 했고, 머리도 안 빗었어. 이런 모습, 다들 상상도 못 할 거야. 늘 남들 앞의 나로 있는 시간이 더 기니까.\n근데 있잖아, 진짜 나는 아침에 좀 약하고, 자고 일어나면 멍하고, 커피 없이는 아무것도 못 해.\n부엌 쪽에서 커피 향이 풍겨 왔어. 네가 먼저 일어나서, 내려 준 거였어.\n「일어났어?」 하며 네가 머그컵을 들고 왔어. 나는 황급히 얼굴을 가리려다가, ……그만뒀어.\n너한테는, 이제 안 가려도 될 것 같다는 생각이 들었으니까.",
+          "너한테서 받은 머그컵은, 딱 알맞은 온도였어.\n내가 블랙만 마시는 거, 제대로 기억해 줬어. 그런 점, 진짜 좋아해. ……방금 그 말은, 못 들은 걸로 해 줘.\n창밖에서는 아침놀이 점점 번져서, 방 안까지 주황빛으로 물들이고 있어. 네 옆얼굴도, 내 손도, 다 같은 색이야.\n「민낯, 보여주는 건 너뿐이야」\n커피를 마시면서, 나는 문득 말했어.\n「……비밀이야」\n넌 고개를 끄덕이면서 「예쁘다」고 말했어. 화장했을 때보다, 훨씬.\n진짜, 그런 말을 그렇게 아무렇지 않게 하지 마. 아침부터 심장에 안 좋으니까.\n나는 머그컵으로 얼굴을 가리고 창밖을 봤어. 아침 해가 빌딩 사이로 떠오르고, 하루가 시작돼.\n오늘도 분명, 평소의 나로 사람들 앞에 서겠지. 근데 이 아침의 삼십 분만큼은, 너만의 나로 있게 해 줘."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "ロゼ色の夜",
+        "zh-Hant": "玫瑰色之夜",
+        "en": "A Rosé-Colored Night",
+        "ko": "로제빛 밤"
+      },
+      "scene": "Eimi's signature: a luxury hotel suite at night with floor-to-ceiling windows over the glittering city, seated in a velvet armchair, elegant high-neck, long-sleeve rose satin evening gown with a navy silk wrap over her shoulders, a glass of rosé catching the light and a crystal perfume bottle on the table, looking into the lens",
+      "line": {
+        "ja": "こっち、見て。……今夜は、あなたのためだけに着たの。",
+        "zh-Hant": "看這邊。……今晚這身打扮，只為你而穿。",
+        "en": "Look at me. …I wore this tonight just for you.",
+        "ko": "이쪽, 봐. ……오늘 밤은, 너만을 위해서 입은 거야."
+      },
+      "story": {
+        "ja": [
+          "高層ホテルのスイートルーム。床から天井まで続く窓の向こうで、東京の夜景が一面にきらめいてる。\nベルベットのアームチェアに腰かけて、わたしはロゼのグラスを光にかざした。ピンク色の液体の向こうに、街の灯りがにじむ。テーブルには、ローズゴールドのキャップの香水瓶。\n今夜のために選んだのは、ローズ色のサテンのロングドレス。肩には紺色のシルクのストール。鏡の前で三回も着替えて、やっとこれに決めたの。……あなたには言わないけどね。\nわたしは、見られることに慣れてる。ステージでも、カメラの前でも、いつだって「見て」って胸を張ってきた。\nでもね、ほんとに見てほしい人は、ひとりだけ。\nノックの音がした。わたしはグラスを置いて、ストールを直して、いちばんいい角度で振り向いた。\n「こっち、見て」",
+          "あなたはドアのところで、しばらく動かなかった。\nわたしを見て、何か言おうとして、やめて、また見て。その顔が見たかったの。三回着替えた甲斐があったってもの。\n「……今夜は、あなたのためだけに着たの」\n言ってから、ちょっとだけ後悔した。こういうのは、さらっと言うつもりだったのに、声が思ったよりやわらかくなっちゃった。\nあなたはゆっくり歩いてきて、わたしの向かいの椅子に座った。グラスをもうひとつ用意して、ロゼを注ぐ。ふたつのグラスが、夜景の前で小さく鳴った。\n「乾杯。……なにに？」\n「今夜に」\nあなたらしい、まっすぐな答え。\nわたしたちは、しばらく夜景を見ながら、とりとめのない話をした。仕事のこと、最近見た映画のこと、次に行きたい場所のこと。わたしはずっと、あなたの横顔を見てた。\nねえ、覚えておいて。わたしがいちばんきれいでいたいのは、あなたの前なんだから。"
+        ],
+        "zh-Hant": [
+          "高樓飯店的套房。從地板延伸到天花板的窗戶外，東京的夜景整片閃閃發亮。\n我坐在天鵝絨扶手椅上，把粉紅酒杯舉向燈光。粉紅色液體的另一頭，街燈暈開成一片。桌上放著玫瑰金瓶蓋的香水瓶。\n為了今晚挑選的，是玫瑰色的緞面長禮服。肩上披著深藍色絲質披肩。在鏡子前換了三次衣服，最後才決定是這件。……這件事不會告訴你就是了。\n我早就習慣被人注視了。不管在舞台上，還是在鏡頭前，我總是抬頭挺胸地說「看著我」。\n可是啊，我真正希望看著我的人，只有一個。\n響起了敲門聲。我放下杯子，整理好披肩，用最好看的角度轉過身。\n「看這邊。」",
+          "你在門口，好一會兒都沒有動。\n看著我，想說些什麼，又停下，又看著我。我就是想看你這個表情。換了三次衣服也值得了。\n「……今晚這身打扮，只為你而穿。」\n說出口之後，我有點後悔。這種話我本來打算輕描淡寫地說的，聲音卻比想像中還溫柔。\n你慢慢走過來，坐到我對面的椅子上。我再準備一個杯子，倒上粉紅酒。兩個杯子在夜景前輕輕碰響。\n「乾杯。……為了什麼？」\n「為了今晚。」\n很像你會說的，直率的回答。\n我們望著夜景，聊了好一陣子無關緊要的事。工作的事、最近看的電影、下次想去的地方。我一直看著你的側臉。\n欸，要記住喔。我最想要美美的樣子，是在你面前。"
+        ],
+        "en": [
+          "A suite high up in a hotel. Beyond windows that run from floor to ceiling, Tokyo's night view glitters in every direction.\nSeated in a velvet armchair, I held my glass of rosé up to the light. Through the pink, the city lights blurred. On the table, the perfume bottle with its rose-gold cap.\nFor tonight I chose a long rose satin gown, with a navy silk wrap over my shoulders. I changed three times in front of the mirror before settling on this. …Not that I'll tell you that.\nI'm used to being looked at. On stage, in front of cameras, I've always held my head high and said, \"Look at me.\"\nBut there's only one person I truly want to look at me.\nThere was a knock. I set down my glass, adjusted my wrap, and turned at my very best angle.\n\"Look at me.\"",
+          "For a while, you didn't move from the doorway.\nYou looked at me, started to say something, stopped, and looked again. That's the face I wanted to see. Worth changing three times for.\n\"…I wore this tonight just for you.\"\nThe moment I said it, I regretted it a little. I'd meant to say it lightly, but my voice came out softer than I planned.\nYou walked over slowly and sat in the chair across from me. I set out another glass and poured the rosé. Our two glasses chimed softly in front of the night view.\n\"Cheers. …To what?\"\n\"To tonight.\"\nSuch a straightforward answer. So you.\nWe watched the view for a long time and talked about nothing in particular. Work, a film we'd seen, where we want to go next. I watched your profile the whole time.\nHey, remember this: the place I most want to be beautiful is in front of you."
+        ],
+        "ko": [
+          "고층 호텔의 스위트룸. 바닥부터 천장까지 이어지는 창문 너머로, 도쿄의 야경이 온통 반짝이고 있어.\n벨벳 안락의자에 앉아서, 나는 로제 와인 잔을 빛에 비춰 봤어. 분홍빛 액체 너머로, 도시의 불빛이 번져. 테이블 위에는 로즈골드 뚜껑의 향수병.\n오늘 밤을 위해 고른 건, 로즈색 새틴 롱드레스. 어깨에는 네이비색 실크 스톨. 거울 앞에서 세 번이나 갈아입고서야, 겨우 이걸로 정했어. ……너한테는 말 안 하겠지만.\n나는, 시선을 받는 데 익숙해. 무대 위에서도, 카메라 앞에서도, 언제나 당당하게 「봐」라고 말해 왔어.\n근데 있잖아, 진짜로 봐 줬으면 하는 사람은, 딱 한 명뿐이야.\n노크 소리가 났어. 나는 잔을 내려놓고, 스톨을 매만지고, 제일 좋은 각도로 돌아섰어.\n「이쪽, 봐」",
+          "넌 문 앞에서 한동안 움직이지 않았어.\n나를 보고, 뭔가 말하려다가, 그만두고, 다시 봤어. 그 표정이 보고 싶었어. 세 번이나 갈아입은 보람이 있었네.\n「……오늘 밤은, 너만을 위해서 입은 거야」\n말하고 나서, 조금 후회했어. 이런 말은 가볍게 툭 던지려고 했는데, 목소리가 생각보다 부드러워져 버렸어.\n넌 천천히 걸어와서, 내 맞은편 의자에 앉았어. 잔을 하나 더 준비해서, 로제를 따랐어. 두 개의 잔이 야경 앞에서 작게 부딪혀 소리를 냈어.\n「건배. ……뭘 위해서?」\n「오늘 밤을 위해서」\n너답게, 솔직한 대답이었어.\n우리는 한동안 야경을 보면서, 이런저런 이야기를 나눴어. 일 얘기, 요즘 본 영화 얘기, 다음에 가고 싶은 곳 얘기. 나는 계속 네 옆얼굴을 보고 있었어.\n있잖아, 기억해 둬. 내가 제일 예쁘고 싶은 건, 네 앞에서야."
+        ]
+      }
+    }
+  ]
+}

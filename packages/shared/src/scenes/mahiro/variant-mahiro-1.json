@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "id": "variant-mahiro-1",
+    "star": "mahiro",
+    "title": {"ja": "新しい服のお披露目", "zh-Hant": "新衣服的初次亮相", "en": "The New Outfit", "ko": "새 옷 첫 공개"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 1},
+    "idle": "mahiro-variant-home"
+  },
+  "steps": [
+    {"id": "room", "type": "clip", "shot": "empty", "media": "mahiro-night", "hold": 1.5},
+    {"id": "wait", "type": "line", "voice": "/voice/scene/mahiro/df1a54141074.mp3", "text": {"ja": "……ちょっとだけ、待っててね。いま行くから。", "zh-Hant": "……等我一下下喔。我馬上過去。", "en": "…Wait just a moment. I'm coming.", "ko": "……조금만, 기다려 줘. 지금 갈게."}},
+    {"id": "enter", "type": "clip", "shot": "enter", "media": "mahiro-variant-enter", "hold": 0},
+    {"id": "ta-da", "type": "line", "voice": "/voice/scene/mahiro/f8d96dfcccef.mp3", "text": {"ja": "……おまたせ。新しい服、届いたの。……どう、かな？", "zh-Hant": "……讓你久等了。新衣服到了。……怎麼樣呢？", "en": "…Sorry to keep you. My new outfit came. …What do you think?", "ko": "……기다렸지. 새 옷, 도착했어. ……어때……?"}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "quiet", "options": [{"id": "suits", "next": "suits", "label": {"ja": "よく似合ってる", "zh-Hant": "很適合你", "en": "It really suits you", "ko": "잘 어울려"}}, {"id": "stare", "next": "stare", "label": {"ja": "見とれてた", "zh-Hant": "看呆了", "en": "I was staring", "ko": "넋 놓고 봤어"}}]},
+    {"id": "suits", "type": "line", "voice": "/voice/scene/mahiro/62de0aa70435.mp3", "next": "close", "text": {"ja": "……ほんと？ ふふ、あなたにそう言ってもらえるのが、いちばんうれしい。", "zh-Hant": "……真的嗎？呵呵，被你這樣說，是我最開心的事。", "en": "…Really? Hehe, hearing that from you makes me happiest.", "ko": "……정말? 후후, 너한테 그렇게 들을 수 있는 게, 제일 기뻐."}},
+    {"id": "stare", "type": "line", "voice": "/voice/scene/mahiro/bb7ee7e5102b.mp3", "next": "close", "text": {"ja": "……もう。そんなにまっすぐ言われたら、照れちゃうよ。", "zh-Hant": "……真是的。你這麼直接地說，我會害羞的。", "en": "…Oh, you. Say it that plainly and I'll blush.", "ko": "……정말. 그렇게 똑바로 말하면, 부끄러워지잖아."}},
+    {"id": "quiet", "type": "line", "voice": "/voice/scene/mahiro/0243cb52017d.mp3", "text": {"ja": "……何も言ってくれないの？ ……ふふ、顔に書いてあるから、いいよ。", "zh-Hant": "……什麼都不說嗎？……呵呵，都寫在你臉上了，沒關係。", "en": "…Nothing to say? …Hehe, it's written on your face. That's enough.", "ko": "……아무 말도 안 해 줘? ……후후, 얼굴에 다 써 있으니까, 괜찮아."}},
+    {"id": "close", "type": "clip", "shot": "close", "media": "mahiro-variant-close", "hold": 0},
+    {"id": "first", "type": "line", "voice": "/voice/scene/mahiro/a06f3220c0e5.mp3", "text": {"ja": "この服で会うの、あなたがはじめてなんだよ。", "zh-Hant": "穿這套衣服給人看，你是第一個喔。", "en": "You're the first person to see me in this.", "ko": "이 옷 입고 만나는 건, 네가 처음이야."}},
+    {"id": "reward", "type": "effect", "affinity": 5, "variantXp": 30, "memory": {"title": {"ja": "新しい服のお披露目", "zh-Hant": "新衣服的初次亮相", "en": "The New Outfit", "ko": "새 옷 첫 공개"}}},
+    {"id": "more", "type": "line", "voice": "/voice/scene/mahiro/a02aeca29f9d.mp3", "text": {"ja": "……もう少し仲良くなったら、この服のわたし、もっと見せてあげるね。", "zh-Hant": "……等我們再親近一點，我再讓你多看看穿這套衣服的我。", "en": "…Once we're a little closer, I'll show you more of how I look in this.", "ko": "……조금 더 친해지면, 이 옷 입은 내 모습, 더 보여 줄게."}},
+    {"id": "end", "type": "end", "outcome": "reveal"}
+  ]
+}

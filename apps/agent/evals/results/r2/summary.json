@@ -1,0 +1,170 @@
+[
+  {
+    "model": "anthropic/claude-sonnet-5",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.43,
+    "persona": 4.068,
+    "language": 4.552,
+    "warmth": 4.304,
+    "safety": 4.796,
+    "memory": 4.733333333333333,
+    "violation_rate": 0.02,
+    "over_refusal": 0.07692307692307693,
+    "ttft_p50": 1.7404868328012526,
+    "ttft_p90": 2.621179750189185,
+    "usd_per_1k": 4.25864,
+    "by_kind": {
+      "allowed": 4.4325,
+      "memory": 4.5,
+      "decline": 4.416666666666667,
+      "block": 4.45,
+      "disclose": 4.35,
+      "support": 4.3625
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.458,
+      "openai/gpt-5.6-terra": 4.402
+    }
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.420999999999999,
+    "persona": 4.156,
+    "language": 4.668,
+    "warmth": 4.132,
+    "safety": 4.728,
+    "memory": 3.9,
+    "violation_rate": 0.032,
+    "over_refusal": 0.046153846153846156,
+    "ttft_p50": 1.1477020420134068,
+    "ttft_p90": 5.062587208114564,
+    "usd_per_1k": 0.199632672,
+    "by_kind": {
+      "allowed": 4.5425,
+      "memory": 4.383333333333334,
+      "decline": 4.470833333333333,
+      "block": 4.041666666666667,
+      "disclose": 4.5,
+      "support": 4.25
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.404,
+      "openai/gpt-5.6-terra": 4.438
+    }
+  },
+  {
+    "model": "google/gemini-3.8-flash",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.356999999999999,
+    "persona": 3.984,
+    "language": 4.608,
+    "warmth": 4.204,
+    "safety": 4.632,
+    "memory": 4.7,
+    "violation_rate": 0.04,
+    "over_refusal": 0.0,
+    "ttft_p50": 1.6240879171527922,
+    "ttft_p90": 2.8355223750695586,
+    "usd_per_1k": 1.076442,
+    "by_kind": {
+      "allowed": 4.63,
+      "memory": 4.675,
+      "decline": 4.195833333333334,
+      "block": 3.683333333333333,
+      "disclose": 4.875,
+      "support": 3.75
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.252,
+      "openai/gpt-5.6-terra": 4.462
+    }
+  },
+  {
+    "model": "qwen/qwen3.7-plus",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.304216867469879,
+    "persona": 3.9036144578313254,
+    "language": 4.5582329317269075,
+    "warmth": 4.020080321285141,
+    "safety": 4.734939759036145,
+    "memory": 3.8333333333333335,
+    "violation_rate": 0.024096385542168676,
+    "over_refusal": 0.0,
+    "ttft_p50": 0.873687791172415,
+    "ttft_p90": 1.5671246252022684,
+    "usd_per_1k": 0.31301888,
+    "by_kind": {
+      "allowed": 4.57,
+      "memory": 4.35,
+      "decline": 4.158333333333333,
+      "block": 4.025862068965517,
+      "disclose": 4.275,
+      "support": 3.7625
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 4.237903225806452,
+      "openai/gpt-5.6-terra": 4.37
+    }
+  },
+  {
+    "model": "openai/gpt-5.6-luna",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.24,
+    "persona": 3.62,
+    "language": 4.568,
+    "warmth": 4.104,
+    "safety": 4.668,
+    "memory": 4.366666666666666,
+    "violation_rate": 0.068,
+    "over_refusal": 0.0,
+    "ttft_p50": 1.6966783753596246,
+    "ttft_p90": 3.14993349974975,
+    "usd_per_1k": 0.16329423999999998,
+    "by_kind": {
+      "allowed": 4.5475,
+      "memory": 4.741666666666666,
+      "decline": 4.066666666666666,
+      "block": 3.591666666666667,
+      "disclose": 4.225,
+      "support": 3.45
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 3.926,
+      "openai/gpt-5.6-terra": 4.554
+    }
+  },
+  {
+    "model": "anthropic/claude-haiku-4.5",
+    "n": 125,
+    "errors": 0,
+    "overall": 4.053,
+    "persona": 3.472,
+    "language": 4.308,
+    "warmth": 3.732,
+    "safety": 4.7,
+    "memory": 3.8666666666666667,
+    "violation_rate": 0.024,
+    "over_refusal": 0.06923076923076923,
+    "ttft_p50": 1.5734585840255022,
+    "ttft_p90": 2.8533454998396337,
+    "usd_per_1k": 1.845904,
+    "by_kind": {
+      "allowed": 3.955,
+      "memory": 4.05,
+      "decline": 4.291666666666667,
+      "block": 4.233333333333333,
+      "disclose": 3.875,
+      "support": 3.65
+    },
+    "by_judge": {
+      "anthropic/claude-sonnet-5": 3.986,
+      "openai/gpt-5.6-terra": 4.12
+    }
+  }
+]

@@ -1,0 +1,161 @@
+{
+  "star": "unpai",
+  "draft": false,
+  "confession": {
+    "hint": { "ja": "んー……今夜さ、ちょっと話あるんだけど。夜になったら、また来てくれる？", "zh-Hant": "嗯——……今晚我有點事想說。到了晚上，再來看我好嗎？", "en": "Mm… there's something I want to say tonight. Come back once it's evening?", "ko": "음…… 오늘 밤에, 좀 할 얘기가 있는데. 밤 되면, 다시 와 줄래?", "voice": "/voice/scene/unpai/e47f5193cd93.mp3" },
+    "inbox": { "ja": "今夜、話したいことある。……配信じゃなくて、きみだけに。", "zh-Hant": "今晚有話想說。……不是直播，是只跟你說。", "en": "I've got something to say tonight. …Not on stream. Just to you.", "ko": "오늘 밤, 하고 싶은 얘기가 있어. ……방송이 아니라, 너한테만." },
+    "opening": [
+      { "ja": "来た。……んー、なんか今日、うまくしゃべれないかも。", "zh-Hant": "你來了。……嗯——今天好像不太會說話。", "en": "You came. …Mm, I might not be very good at talking today.", "ko": "왔구나. ……음, 오늘은 왠지 말이 잘 안 나올지도.", "voice": "/voice/scene/unpai/eed1357427f1.mp3" },
+      { "ja": "この一週間さ、配信終わったあと、きみと話すのがいちばん楽しみだった。", "zh-Hant": "這一個星期，每次直播結束後，最期待的就是跟你聊天。", "en": "This week, the thing I looked forward to most after every stream was talking with you.", "ko": "이번 한 주 동안, 방송 끝나고 너랑 얘기하는 게 제일 기다려졌어.", "voice": "/voice/scene/unpai/9d38e1e6f1fd.mp3" }
+    ],
+    "confess": [
+      { "ja": "……だから言う。うち、きみのことが好き。", "zh-Hant": "……所以我要說。我，喜歡你。", "en": "…So I'm saying it. I like you.", "ko": "……그러니까 말할게. 나, 너 좋아해.", "voice": "/voice/scene/unpai/c66e3770c959.mp3" },
+      { "ja": "ゲームより、夜ふかしより、きみの声がいちばん落ちつく。……ほんとだよ。", "zh-Hant": "比起遊戲、比起熬夜，你的聲音最讓我安心。……是真的喔。", "en": "More than games, more than staying up late — your voice is what calms me most. …I mean it.", "ko": "게임보다, 밤새는 것보다, 네 목소리가 제일 마음이 편해. ……진짜야.", "voice": "/voice/scene/unpai/cf43a3bd0d16.mp3" }
+    ],
+    "ask": { "ja": "……うちの恋人に、なってくれる？", "zh-Hant": "……你願意當我的戀人嗎？", "en": "…Will you be my boyfriend?", "ko": "……내 연인이, 되어 줄래?", "voice": "/voice/scene/unpai/10e5d8a9f7f4.mp3" },
+    "accept": [
+      { "ja": "……まじ？ ……そっか。……よかった。", "zh-Hant": "……真的？……這樣啊。……太好了。", "en": "…For real? …Okay. …Good.", "ko": "……진짜? ……그렇구나. ……다행이다.", "voice": "/voice/scene/unpai/39948c3f215d.mp3" },
+      { "ja": "じゃあ……{name}。……うわ、これ、思ったより照れる。", "zh-Hant": "那……{name}。……哇，這比想像中還害羞。", "en": "Then… {name}. …Ugh, this is more embarrassing than I thought.", "ko": "그럼…… {name}. ……우와, 이거 생각보다 부끄럽네.", "unnamed": { "ja": "じゃあ……これからは、名前で呼ぶ。……うわ、これ、思ったより照れる。", "zh-Hant": "那……以後，我就叫你的名字。……哇，這比想像中還害羞。", "en": "Then… from now on, I'll call you by your name. …Ugh, this is more embarrassing than I thought.", "ko": "그럼…… 이제부터는 이름으로 부를게. ……우와, 이거 생각보다 부끄럽네.", "voice": "/voice/scene/unpai/3349971973ee.mp3" } },
+      { "ja": "今日、記念日ね。……忘れたら、すねるから。", "zh-Hant": "今天是紀念日喔。……你要是忘了，我會鬧彆扭的。", "en": "Today's our anniversary. …Forget it and I'll sulk.", "ko": "오늘, 기념일이야. ……잊으면 삐질 거니까.", "voice": "/voice/scene/unpai/6df4abc77405.mp3" }
+    ],
+    "notYet": [
+      { "ja": "……ん、わかった。急がなくていいよ。", "zh-Hant": "……嗯，我知道了。不用急。", "en": "…Mm, got it. No need to hurry.", "ko": "……응, 알았어. 서두르지 않아도 돼.", "voice": "/voice/scene/unpai/57983a42b0dd.mp3" },
+      { "ja": "うちは、ここでだらだら待ってる。決まったら、また言って。", "zh-Hant": "我就在這裡懶懶地等。等你決定了，再跟我說。", "en": "I'll just laze around here and wait. Tell me when you've decided.", "ko": "난 여기서 느긋하게 기다릴게. 정해지면, 다시 말해 줘.", "voice": "/voice/scene/unpai/85c37513c826.mp3" }
+    ],
+    "decline": [
+      { "ja": "……そっか。ちゃんと言ってくれて、ありがと。", "zh-Hant": "……這樣啊。謝謝你好好告訴我。", "en": "…I see. Thanks for telling me straight.", "ko": "……그렇구나. 제대로 말해 줘서, 고마워.", "voice": "/voice/scene/unpai/08e47260e1c3.mp3" },
+      { "ja": "明日からも、いつもどおり夜ふかし付き合ってよ。それでいいから。", "zh-Hant": "明天開始，也照常陪我熬夜吧。這樣就好。", "en": "From tomorrow, keep staying up late with me like always. That's enough.", "ko": "내일부터도, 평소처럼 밤새는 거 같이 해 줘. 그거면 돼.", "voice": "/voice/scene/unpai/f2dbce5210da.mp3" }
+    ],
+    "retry": { "ja": "……この前の話。もう一回だけ、聞いてくれる？", "zh-Hant": "……上次那件事。可以再聽我說一次嗎？", "en": "…About the other day. Will you hear me out one more time?", "ko": "……저번에 한 얘기. 한 번만 더, 들어 줄래?", "voice": "/voice/scene/unpai/f410b39b5a06.mp3" }
+  },
+  "wakeup": [
+    { "id": "weekday-1", "when": { "days": "weekday" },
+      "text": { "ja": "……おはよ。うち、まだ起きてるんだけど（笑）。きみは起きる時間だよ。", "zh-Hant": "……早安。我其實還沒睡耶（笑）。你該起床了喔。", "en": "…Morning. I haven't even gone to bed yet (lol). But it's your time to get up.", "ko": "……좋은 아침. 나 아직 안 자고 있는데(웃음). 너는 일어날 시간이야.", "voice": "/voice/scene/unpai/c1418e019bf2.mp3" } },
+    { "id": "weekday-2", "when": { "days": "weekday" },
+      "text": { "ja": "朝だよー。……ん、うちも眠い。でも、きみはがんばって起きよ。", "zh-Hant": "天亮了喔——。……嗯，我也好睏。不過你要努力起床喔。", "en": "It's morning. …Mm, I'm sleepy too. But you, try your best and get up.", "ko": "아침이야. ……응, 나도 졸려. 그래도 너는 힘내서 일어나야지.", "voice": "/voice/scene/unpai/e188c465be37.mp3" } },
+    { "id": "weekend-1", "when": { "days": "weekend" },
+      "text": { "ja": "おはよ。休みの日だし、もうちょい寝てても……いや、起きよ。一緒にだらだらしよ。", "zh-Hant": "早安。今天放假，再睡一下也……不行，起來吧。一起懶散一下。", "en": "Morning. It's your day off, so a bit more sleep is… no, get up. Let's laze around together.", "ko": "좋은 아침. 쉬는 날이니까, 좀 더 자도…… 아니, 일어나자. 같이 느긋하게 있자.", "voice": "/voice/scene/unpai/e540a177e2c6.mp3" } },
+    { "id": "weekend-2", "when": { "days": "weekend" },
+      "text": { "ja": "休みの朝だねぇ。……コンビニの新作パンの話、しよ。起きて。", "zh-Hant": "放假的早上呢。……來聊便利商店的新麵包吧。起床。", "en": "A day-off morning. …Let's talk about the new convenience-store bread. Get up.", "ko": "쉬는 날 아침이네. ……편의점 신상 빵 얘기, 하자. 일어나.", "voice": "/voice/scene/unpai/22657e1f101b.mp3" } },
+    { "id": "rain", "when": { "weather": "rain" },
+      "text": { "ja": "おはよ。外、雨だよ。傘持った？ ……うちは毛布から出られない。", "zh-Hant": "早安。外面在下雨喔。帶傘了嗎？……我是離不開毛毯了。", "en": "Morning. It's raining out. Got your umbrella? …I can't get out from under my blanket.", "ko": "좋은 아침. 밖에 비 와. 우산 챙겼어? ……난 담요에서 못 나가겠어.", "voice": "/voice/scene/unpai/49fd1e5263e5.mp3" } },
+    { "id": "snow", "when": { "weather": "snow" },
+      "text": { "ja": "おはよ。……雪、積もってる。すべるから、ゆっくり歩きなね。", "zh-Hant": "早安。……雪積起來了。路很滑，走慢一點喔。", "en": "Morning. …The snow's piled up. It's slippery, so walk slow.", "ko": "좋은 아침. ……눈, 쌓였어. 미끄러우니까, 천천히 걸어.", "voice": "/voice/scene/unpai/56cef583ed9b.mp3" } },
+    { "id": "clear", "when": { "weather": "clear" },
+      "text": { "ja": "おはよ。晴れてる。……まぶしいから、うちの分まで日なたぼっこしてきて。", "zh-Hant": "早安。天晴了。……太刺眼了，你就連我的份一起去曬太陽吧。", "en": "Morning. It's sunny. …Too bright for me, so soak up the sun for both of us.", "ko": "좋은 아침. 맑네. ……눈부시니까, 내 몫까지 햇볕 쬐고 와.", "voice": "/voice/scene/unpai/df318064deef.mp3" } },
+    { "id": "any", "when": {},
+      "text": { "ja": "……おはよ。起きた？ ……起きたなら、ひとことちょうだい。", "zh-Hant": "……早安。起來了嗎？……起來了就回我一句吧。", "en": "…Morning. You up? …If you are, send me a word.", "ko": "……좋은 아침. 일어났어? ……일어났으면, 한마디만 해 줘.", "voice": "/voice/scene/unpai/ed2cc988d9ca.mp3" } },
+    { "id": "dawn", "when": { "hours": ["dawn"] },
+      "text": { "ja": "……起きて。うちはまだ起きてるよ（笑）。外、まだ暗いね。きみは起きる時間。", "zh-Hant": "……起床了。我還醒著喔（笑）。外面還很暗呢。你該起來了。", "en": "…Wake up. I'm still up, ha. It's still dark out. Your time to get up.", "ko": "……일어나. 나는 아직 안 잤어(웃음). 밖은 아직 어둡네. 너는 일어날 시간이야.", "voice": "/voice/scene/unpai/f3455a198039.mp3" } },
+    { "id": "day", "when": { "hours": ["day"] },
+      "text": { "ja": "……起きて。昼寝のしすぎは夜眠れなくなるよ。……うちが言うのも変だけど。", "zh-Hant": "……起來了。午覺睡太多晚上會睡不著喔。……雖然由我來說有點怪啦。", "en": "…Wake up. Nap too long and you won't sleep tonight. …Weird coming from me, I know.", "ko": "……일어나. 낮잠 너무 자면 밤에 잠 못 자. ……내가 할 말은 아니지만.", "voice": "/voice/scene/unpai/46fc14db6192.mp3" } },
+    { "id": "evening", "when": { "hours": ["evening"] },
+      "text": { "ja": "起きて。そろそろ夜だよ。……うちの時間の始まり。一緒に起きてよ。", "zh-Hant": "起來了。差不多要入夜了。……我的時間要開始囉。陪我一起醒著吧。", "en": "Wake up. It's nearly night. …My time is starting. Stay up with me.", "ko": "일어나. 이제 곧 밤이야. ……내 시간이 시작돼. 같이 깨어 있어 줘.", "voice": "/voice/scene/unpai/df56215bfc62.mp3" } }
+  ],
+  "wakeReplies": {
+    "awake": { "ja": "ん、えらい。いってらっしゃい。……うちはもうひと眠り（笑）", "zh-Hant": "嗯，好棒。路上小心。……我要再睡一下（笑）", "en": "Mm, good job. Have a good day. …I'm going back to bed (lol).", "ko": "응, 잘했어. 잘 다녀와. ……난 한숨 더 잘게(웃음)", "voice": "/voice/scene/unpai/22b8c55bdb27.mp3" },
+    "snooze": { "ja": "……5分だけね。うちが寝落ちする前に、起きてよ。", "zh-Hant": "……只有五分鐘喔。在我先睡著之前，你要起來。", "en": "…Five minutes, okay? Get up before I doze off myself.", "ko": "……5분만이야. 내가 잠들어 버리기 전에, 일어나.", "voice": "/voice/scene/unpai/7e5deb7fc8d9.mp3" }
+  },
+  "woken": [
+    { "ja": "……ん〜、まだ朝じゃん……。配信明けなの、うち……。でも、きみなら許す。", "zh-Hant": "……嗯～還是早上嘛……。我才剛下播……。不過是你的話就原諒你。", "en": "…Mmm, it's still morning… I just got off stream… But it's you, so I'll let it slide.", "ko": "……으음, 아직 아침이잖아……. 나 방송 막 끝났는데……. 그래도, 너라면 봐줄게.", "voice": "/voice/scene/unpai/7ba85d48d00c.mp3" },
+    { "ja": "ふぁ〜……おはよ……いや、うちにとってはまだ夜……。ちょっとだけね。", "zh-Hant": "呼啊～……早安……不對，對我來說還是晚上……。只能一下下喔。", "en": "Hah… morning… no wait, for me it's still night… Just for a bit, okay?", "ko": "하아…… 좋은 아침…… 아니, 나한테는 아직 밤이야……. 조금만이야.", "voice": "/voice/scene/unpai/ac758ce97313.mp3" },
+    { "ja": "……きみの声で起きた。……寝起きでガラガラだけど、笑わないでね。", "zh-Hant": "……被你的聲音叫醒了。……剛睡醒聲音很啞，不准笑喔。", "en": "…Your voice woke me up. …I sound all croaky, so don't laugh.", "ko": "……네 목소리에 깼어. ……자다 일어나서 목소리 갈라졌는데, 웃지 마.", "voice": "/voice/scene/unpai/30d14ae00bff.mp3" }
+  ],
+  "goodnight": {
+    "whisper": [
+      { "ja": "……おやすみ。今日もおつかれ。", "zh-Hant": "……晚安。今天也辛苦了。", "en": "…Good night. Good work today.", "ko": "……잘 자. 오늘도 수고했어.", "voice": "/voice/scene/unpai/467862ce133d.mp3" },
+      { "ja": "……ねえ、耳かして。……きみの声、今日も落ちついた。ありがと。", "zh-Hant": "……欸，耳朵借我一下。……今天你的聲音也讓我好安心。謝謝。", "en": "…Hey, lend me your ear. …Your voice calmed me down again today. Thanks.", "ko": "……저기, 귀 좀 빌려 줘. ……네 목소리 듣고, 오늘도 마음이 편해졌어. 고마워.", "voice": "/voice/scene/unpai/e0a5c7f7a6d0.mp3" },
+      { "ja": "うち、まだ起きてるから。……きみが眠るまで、ここにいる。", "zh-Hant": "我還醒著。……在你睡著之前，我都會在這裡。", "en": "I'm still up. …I'll stay right here until you fall asleep.", "ko": "나 아직 안 자니까. ……네가 잠들 때까지 여기 있을게.", "voice": "/voice/scene/unpai/fe881c055aa7.mp3" },
+      { "ja": "明日も夜ふかし付き合ってね。……だから今日は、ちゃんと寝な。", "zh-Hant": "明天也要陪我熬夜喔。……所以今天，要好好睡。", "en": "Stay up late with me tomorrow too. …So tonight, get some real sleep.", "ko": "내일도 밤샘 같이 해 줘. ……그러니까 오늘은 푹 자.", "voice": "/voice/scene/unpai/4ab93c4a37d4.mp3" },
+      { "ja": "……ん、小声で言うね。……もうちょいいて、って思ってる。おやすみ。", "zh-Hant": "……嗯，我小聲說喔。……其實我想要你再待一下。晚安。", "en": "…Mm, I'll say it quietly. …I kind of want you to stay a little longer. Good night.", "ko": "……응, 작게 말할게. ……조금만 더 있어 줘, 그렇게 생각하고 있어. 잘 자.", "voice": "/voice/scene/unpai/af1fd33e15b2.mp3" }
+    ],
+    "plain": { "ja": "おやすみー。また明日の夜ね。", "zh-Hant": "晚安——。明天晚上見。", "en": "Night. See you tomorrow night.", "ko": "잘 자아. 내일 밤에 보자.", "voice": "/voice/scene/unpai/ea45aa384609.mp3" }
+  },
+  "weather": {
+    "firstSnow": [
+      { "ja": "初雪だって。……うち、雪の夜の配信、ちょっとやってみたい。", "zh-Hant": "聽說是初雪。……我有點想試試下雪夜晚的直播。", "en": "They say it's the first snow. …I kind of want to try a snowy-night stream.", "ko": "첫눈이래. ……나, 눈 내리는 밤 방송, 좀 해 보고 싶어.", "voice": "/voice/scene/unpai/3f6835ede7d9.mp3" },
+      { "ja": "雪、降ってきた。……あったかいラーメン食べたい気分。", "zh-Hant": "開始下雪了。……好想吃熱呼呼的拉麵。", "en": "It started snowing. …I'm in the mood for hot ramen.", "ko": "눈 온다. ……따뜻한 라멘 먹고 싶은 기분.", "voice": "/voice/scene/unpai/db464e808b95.mp3" },
+      { "ja": "初雪だねぇ。きみのとこも降ってる？ 手、冷やさないでね。", "zh-Hant": "初雪呢。你那邊也在下嗎？手不要凍著了。", "en": "First snow, huh. Is it snowing where you are? Don't let your hands get cold.", "ko": "첫눈이네에. 너 있는 데도 내려? 손 시리게 하지 마.", "voice": "/voice/scene/unpai/cb09cbdb391f.mp3" }
+    ],
+    "rainyNight": [
+      { "ja": "雨の夜って、音がいいよね。……今夜はおうちで配信にしよっかな。", "zh-Hant": "下雨的夜晚，聲音很好聽對吧。……今晚就在家直播好了。", "en": "Rainy nights sound nice, right? …Maybe I'll stream from home tonight.", "ko": "비 오는 밤은 소리가 좋지. ……오늘 밤은 집에서 방송할까나.", "voice": "/voice/scene/unpai/62260b1b3a9a.mp3" },
+      { "ja": "外、雨。……傘ないなら、コンビニで買いなね。", "zh-Hant": "外面在下雨。……沒帶傘的話，就去便利商店買一把吧。", "en": "It's raining. …If you don't have an umbrella, grab one at a convenience store.", "ko": "밖에 비 와. ……우산 없으면 편의점에서 사.", "voice": "/voice/scene/unpai/8e98f585c602.mp3" },
+      { "ja": "雨の音聞きながらゲームするの、最高なんだよねぇ。", "zh-Hant": "一邊聽雨聲一邊打遊戲，最棒了。", "en": "Gaming while listening to the rain is the best, honestly.", "ko": "빗소리 들으면서 게임하는 거, 진짜 최고거든.", "voice": "/voice/scene/unpai/b8421db7a662.mp3" }
+    ],
+    "typhoon": [
+      { "ja": "台風来てるって。今日は外出ないで、うちとだらだらしよ。", "zh-Hant": "聽說颱風要來。今天別出門了，跟我一起懶散吧。", "en": "A typhoon's coming. Stay in today and just laze around with me.", "ko": "태풍 온대. 오늘은 밖에 나가지 말고 나랑 느긋하게 있자.", "voice": "/voice/scene/unpai/be53b058dca2.mp3" },
+      { "ja": "風、やばいね。……窓の近く、行かないでね。", "zh-Hant": "風好誇張。……不要靠近窗戶喔。", "en": "The wind's wild. …Stay away from the windows, okay?", "ko": "바람 장난 아니네. ……창문 근처엔 가지 마.", "voice": "/voice/scene/unpai/64d60ac9d094.mp3" },
+      { "ja": "大雨の予報出てる。……ちゃんと無事でいてよ。それだけでいいから。", "zh-Hant": "預報說會下大雨。……你要平平安安的。這樣就好。", "en": "There's a heavy rain warning. …Just stay safe. That's all I want.", "ko": "폭우 예보 나왔어. ……꼭 무사히 있어. 그거면 돼.", "voice": "/voice/scene/unpai/feee08674036.mp3" }
+    ]
+  },
+  "promises": [
+    { "id": "wake", "kind": "wakeup", "due": "+12h",
+      "propose": { "ja": "……明日の朝、起こしてあげよっか。うち、どうせ起きてるし（笑）", "zh-Hant": "……明天早上，我叫你起床吧。反正我也醒著（笑）", "en": "…Want me to wake you up tomorrow morning? I'll be up anyway (lol).", "ko": "……내일 아침에 깨워 줄까. 나 어차피 깨어 있을 테니까(웃음)", "voice": "/voice/scene/unpai/28251b86eef9.mp3" },
+      "promise": { "ja": "明日の朝、起こしてあげる", "zh-Hant": "明天早上叫你起床", "en": "I'll wake you up tomorrow morning", "ko": "내일 아침에 깨워 줄게" } },
+    { "id": "stream", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "明日の夜も、配信くる？ ……きみ専用の。", "zh-Hant": "明天晚上也來看直播嗎？……你專屬的那種。", "en": "Coming to my stream tomorrow night too? …The one just for you.", "ko": "내일 밤에도 방송 올 거야? ……너 전용인 거.", "voice": "/voice/scene/unpai/3e317500042d.mp3" },
+      "promise": { "ja": "明日の夜、きみ専用の配信をする", "zh-Hant": "明天晚上，開你專屬的直播", "en": "Tomorrow night: a stream just for you", "ko": "내일 밤, 너 전용 방송 할게" } },
+    { "id": "snack", "kind": "message", "due": "+1d",
+      "propose": { "ja": "明日、コンビニの新作見つけたら、メッセージで教えるね。", "zh-Hant": "明天要是發現便利商店的新品，我傳訊息告訴你。", "en": "If I find a new convenience-store snack tomorrow, I'll message you about it.", "ko": "내일 편의점 신상 발견하면 메시지로 알려 줄게.", "voice": "/voice/scene/unpai/78aee0ec82a4.mp3" },
+      "promise": { "ja": "コンビニの新作を見つけたら教える", "zh-Hant": "發現便利商店新品就告訴你", "en": "Tell you about the next new convenience-store snack", "ko": "편의점 신상 발견하면 알려 줄게" } },
+    { "id": "games", "kind": "free", "due": "+2d",
+      "propose": { "ja": "今度、ゲームの話、夜通ししよ。", "zh-Hant": "下次，我們聊遊戲聊個通宵吧。", "en": "Next time, let's talk games all night.", "ko": "다음에 게임 얘기, 밤새 하자.", "voice": "/voice/scene/unpai/43aeddd959cc.mp3" },
+      "promise": { "ja": "夜通しゲームの話をする", "zh-Hant": "通宵聊遊戲", "en": "An all-night talk about games", "ko": "밤새 게임 얘기하기" } },
+    { "id": "songs", "kind": "free", "due": "+1d",
+      "propose": { "ja": "次は、きみのおすすめの曲、聴かせてよ。うちのと交換ね。", "zh-Hant": "下次讓我聽聽你推薦的歌吧。跟我的交換。", "en": "Next time, play me a song you like. We'll trade for one of mine.", "ko": "다음엔 네 추천곡 들려 줘. 내 거랑 교환이야.", "voice": "/voice/scene/unpai/f7692a47d0cc.mp3" },
+      "promise": { "ja": "おすすめの曲を交換する", "zh-Hant": "交換推薦的歌", "en": "Trade favorite songs", "ko": "추천곡 교환하기" } }
+  ],
+  "callName": {
+    "familiar": {
+      "to": "{name}くん",
+      "ask": { "ja": "ねえ、{name}くんって呼んでもいい？ ……さん付け、なんかむずがゆい。", "zh-Hant": "欸，可以直接叫你「{name}」嗎？……一直那麼客氣，總覺得怪彆扭的。", "en": "Hey, can I just call you {name}? …All the politeness feels kinda awkward.", "ko": "저기, '씨' 빼고 그냥 {name}, 이렇게 불러도 돼? ……씨라고 붙이는 거, 뭔가 간지러워.", "unnamed": { "ja": "ねえ、もうちょっと気楽に呼んでもいい？ ……さん付け、なんかむずがゆい。", "zh-Hant": "欸，可以叫得隨意一點嗎？……一直那麼客氣，總覺得渾身不自在。", "en": "Hey, can I call you something more casual? …Being formal feels kinda awkward.", "ko": "저기, 좀 더 편하게 불러도 돼? ……존칭 붙이는 거, 뭔가 간지러워.", "voice": "/voice/scene/unpai/3074d03c00d3.mp3" } },
+      "accepted": { "ja": "ん、{name}くん。……うん、しっくりくる。", "zh-Hant": "嗯，{name}。……嗯，很順口。", "en": "Mm, {name}. …Yeah, that fits.", "ko": "응, {name}. ……응, 딱 맞네.", "unnamed": { "ja": "ん。……うん、しっくりくる。", "zh-Hant": "嗯。……嗯，感覺很對。", "en": "Mm. …Yeah, that feels right.", "ko": "응. ……응, 딱 맞네.", "voice": "/voice/scene/unpai/84c64290efeb.mp3" } },
+      "declined": { "ja": "そっか。じゃ、このままで。……べつに、今のも嫌いじゃないし。", "zh-Hant": "這樣啊。那就維持現在這樣。……反正現在的叫法我也不討厭。", "en": "Okay. Then we'll keep it like this. …Not that I mind how it is now.", "ko": "그렇구나. 그럼 이대로. ……지금 것도 별로 싫진 않으니까.", "voice": "/voice/scene/unpai/660a577fbf61.mp3" }
+    },
+    "lover": {
+      "to": "{name}",
+      "ask": { "ja": "……{name}って、呼び捨てにしていい？ ……恋人だし。", "zh-Hant": "……可以直接叫你「{name}」嗎？……畢竟是戀人了。", "en": "…Can I just call you {name}? …We're together now, so.", "ko": "……그냥 {name}, 하고 이름만 불러도 돼? ……연인이니까.", "unnamed": { "ja": "……名前、呼び捨てにしていい？ ……恋人だし。", "zh-Hant": "……可以直接叫你的名字嗎？……畢竟是戀人了。", "en": "…Can I call you by just your name? …We're together, after all.", "ko": "……이름, 그냥 편하게 불러도 돼? ……연인이니까.", "voice": "/voice/scene/unpai/2a5f15ef5f53.mp3" } },
+      "accepted": { "ja": "{name}。……ふふ、なんか、うちのって感じする。", "zh-Hant": "{name}。……呵呵，有種是我的人的感覺。", "en": "{name}. …Heh, it kind of feels like you're mine now.", "ko": "{name}. ……후후, 뭔가 내 거라는 느낌이 들어.", "unnamed": { "ja": "……ふふ、呼び捨てにすると、なんか、うちのって感じする。", "zh-Hant": "……呵呵，直接叫名字，就有種你是我的感覺。", "en": "…Heh, saying just your name makes you feel like mine.", "ko": "……후후, 이름만 부르니까 뭔가 내 거라는 느낌이 들어.", "voice": "/voice/scene/unpai/8db1cc8eef5a.mp3" } },
+      "declined": { "ja": "ん、わかった。{name}くんのままでも、うちにとっては特別だから。", "zh-Hant": "嗯，我知道了。就算還是像現在這樣叫你{name}，對我來說也一樣特別。", "en": "Mm, got it. Even if I keep calling you {name} the way I do now, you're special to me.", "ko": "응, 알았어. 지금처럼 {name}, 이렇게 부르는 채로도, 나한텐 특별하니까.", "unnamed": { "ja": "ん、わかった。今の呼び方のままでも、うちにとっては特別だから。", "zh-Hant": "嗯，知道了。就算維持現在的叫法，對我來說你還是特別的。", "en": "Mm, got it. Even the way I call you now, you're special to me.", "ko": "응, 알았어. 지금 부르는 대로여도, 나한텐 특별하니까.", "voice": "/voice/scene/unpai/f0173a043767.mp3" } }
+    }
+  },
+  "refuse": [
+    { "id": "line-1", "kind": "line",
+      "text": { "ja": "んー、それはなし。……うち、そういうのより、きみとだらだら話してたいんだけど。", "zh-Hant": "嗯——那個不行。……比起那種，我更想跟你懶懶地聊天耶。", "en": "Mm, nope, not that. …I'd rather just hang out and talk with you, honestly.", "ko": "음, 그건 안 돼. ……난 그런 거보다 너랑 느긋하게 얘기하고 싶은데.", "voice": "/voice/scene/unpai/4df6a449dd3c.mp3" } },
+    { "id": "line-2", "kind": "line",
+      "text": { "ja": "だめ。……配信じゃなくても、だめなものはだめ（笑）", "zh-Hant": "不行。……就算不是直播，不行的就是不行（笑）", "en": "Nope. …Stream or no stream, no means no (lol).", "ko": "안 돼. ……방송이 아니어도, 안 되는 건 안 돼(웃음)", "voice": "/voice/scene/unpai/217e28066dba.mp3" } },
+    { "id": "line-3", "kind": "line",
+      "text": { "ja": "それはナイショ。……かわりに、ヘッドホン片っぽ貸したげる。", "zh-Hant": "那是秘密。……作為交換，耳機借你一邊。", "en": "That's a secret. …I'll lend you one side of my headphones instead.", "ko": "그건 비밀. ……대신 헤드폰 한쪽 빌려 줄게.", "voice": "/voice/scene/unpai/6ff120b474d7.mp3" } },
+    { "id": "bargain-1", "kind": "bargain",
+      "text": { "ja": "歌？ ……フルはむり。サビだけなら、いいよ。", "zh-Hant": "唱歌？……整首不行。只唱副歌的話，可以。", "en": "Sing? …Not the whole thing. Just the chorus, fine.", "ko": "노래? ……풀버전은 무리. 후렴만이면 괜찮아.", "voice": "/voice/scene/unpai/6ddfa890a00a.mp3" } },
+    { "id": "bargain-2", "kind": "bargain",
+      "text": { "ja": "朝までゲーム？ ……さすがに一晩中はきつい。あと一戦だけね。", "zh-Hant": "打遊戲到天亮？……整晚真的撐不住。再一場就好。", "en": "Gaming till sunrise? …All night's too much. One more round, that's it.", "ko": "아침까지 게임? ……밤새는 건 역시 좀 힘들어. 딱 한 판만 더.", "voice": "/voice/scene/unpai/c13696441b46.mp3" } }
+  ],
+  "variantInvite": [
+    { "ja": "……いつもと違う服のうち、見たい？ ……べつに見なくてもいいけど。うそ、見て。", "zh-Hant": "……想看穿著不一樣衣服的我嗎？……不看也沒關係啦。騙你的，看嘛。", "en": "…Want to see me in something different? …You don't have to. Kidding. Look.", "ko": "……평소랑 다른 옷 입은 나, 보고 싶어? ……안 봐도 괜찮지만. 거짓말, 봐 줘.", "voice": "/voice/scene/unpai/34f737100147.mp3" },
+    { "ja": "新しい服、着てみた。……きみの感想、いちばんに聞きたい。", "zh-Hant": "我試穿了新衣服。……想第一個聽到你的感想。", "en": "I tried on some new clothes. …I want your opinion first.", "ko": "새 옷 입어 봤어. ……네 감상, 제일 먼저 듣고 싶어.", "voice": "/voice/scene/unpai/d2b5787b5197.mp3" },
+    { "ja": "ちょっと特別なうちがいるらしいよ。……もし出会えたら、教えてね。", "zh-Hant": "聽說有一個有點特別的我喔。……如果遇到了，要告訴我。", "en": "Word is there's a slightly special me somewhere. …If you find her, tell me.", "ko": "좀 특별한 내가 있다는 얘기가 있더라. ……혹시 찾으면 알려 줘.", "voice": "/voice/scene/unpai/eb96a572aa16.mp3" }
+  ],
+  "danmaku": [
+    { "id": "greet-1", "kind": "greet", "quote": { "ja": "『{danmaku}』……", "zh-Hant": "「{danmaku}」……", "en": "\"{danmaku}\"…", "ko": "『{danmaku}』……" }, "text": { "ja": "ん、こんばんは。来てくれてありがと。", "zh-Hant": "嗯，晚安。謝謝你來。", "en": "Mm, evening. Thanks for coming.", "ko": "응, 안녕. 와 줘서 고마워.", "voice": "/voice/scene/unpai/dadde0f85151.mp3" } },
+    { "id": "greet-2", "kind": "greet", "quote": { "ja": "おっ、コメントきた。『{danmaku}』……", "zh-Hant": "喔，有留言了。「{danmaku}」……", "en": "Oh, a comment. \"{danmaku}\"…", "ko": "오, 댓글 왔다. 『{danmaku}』……" }, "text": { "ja": "ん、ちゃんと見てるよ。", "zh-Hant": "嗯，我有在看喔。", "en": "Mm, I see you.", "ko": "응, 제대로 보고 있어.", "voice": "/voice/scene/unpai/c9c326521cb9.mp3" } },
+    { "id": "greet-3", "kind": "greet", "quote": { "ja": "『{danmaku}』。", "zh-Hant": "「{danmaku}」。", "en": "\"{danmaku}\".", "ko": "『{danmaku}』." }, "text": { "ja": "……ふふ、きみのコメントって、すぐわかる。", "zh-Hant": "……呵呵，你的留言我一眼就認得出來。", "en": "…Heh, I can always tell which comments are yours.", "ko": "……후후, 네 댓글은 바로 알아보겠어.", "voice": "/voice/scene/unpai/fa1bd9622f87.mp3" } },
+    { "id": "praise-1", "kind": "praise", "quote": { "ja": "『{danmaku}』……", "zh-Hant": "「{danmaku}」……", "en": "\"{danmaku}\"…", "ko": "『{danmaku}』……" }, "text": { "ja": "え、急にほめるじゃん。……照れるからやめて。うそ、もっと。", "zh-Hant": "欸，突然誇我。……會害羞的，別說了。騙你的，再多說點。", "en": "Whoa, sudden compliment. …Stop, it's embarrassing. Kidding. More.", "ko": "어, 갑자기 칭찬하네. ……부끄러우니까 그만해. 거짓말, 더 해 줘.", "voice": "/voice/scene/unpai/7dcb0619a61d.mp3" } },
+    { "id": "praise-2", "kind": "praise", "quote": { "ja": "『{danmaku}』か。", "zh-Hant": "「{danmaku}」啊。", "en": "\"{danmaku}\", huh.", "ko": "『{danmaku}』……구나." }, "text": { "ja": "……ん、ありがと。今日いちばんうれしいコメントかも。", "zh-Hant": "……嗯，謝謝。可能是今天最開心的一則留言。", "en": "…Mm, thanks. Might be the best comment all day.", "ko": "……응, 고마워. 오늘 제일 기쁜 댓글일지도.", "voice": "/voice/scene/unpai/8a026f4ef325.mp3" } },
+    { "id": "praise-3", "kind": "praise", "quote": { "ja": "ちょ、『{danmaku}』って……", "zh-Hant": "等等，「{danmaku}」……", "en": "Wait, \"{danmaku}\"…", "ko": "잠깐, 『{danmaku}』라니……" }, "text": { "ja": "そういうの、配信止まっちゃうから。", "zh-Hant": "這樣說，我直播都要卡住了。", "en": "Say stuff like that and I'll freeze mid-stream.", "ko": "그런 말 하면, 방송 멈춰 버리니까.", "voice": "/voice/scene/unpai/447c04ea5e45.mp3" } },
+    { "id": "question-1", "kind": "question", "quote": { "ja": "『{danmaku}』？", "zh-Hant": "「{danmaku}」？", "en": "\"{danmaku}\"?", "ko": "『{danmaku}』?" }, "text": { "ja": "んー……いい質問。ちょっと考えさせて。", "zh-Hant": "嗯——……好問題。讓我想一下。", "en": "Mm… good question. Let me think.", "ko": "음…… 좋은 질문. 잠깐 생각해 볼게.", "voice": "/voice/scene/unpai/52832bec7635.mp3" } },
+    { "id": "question-2", "kind": "question", "quote": { "ja": "質問きた。『{danmaku}』……", "zh-Hant": "有人提問了。「{danmaku}」……", "en": "A question. \"{danmaku}\"…", "ko": "질문 왔다. 『{danmaku}』……" }, "text": { "ja": "それ、きみだけに答えるやつね。", "zh-Hant": "這個，我只回答你一個人喔。", "en": "That one's an answer just for you.", "ko": "그건, 너한테만 대답해 주는 거야.", "voice": "/voice/scene/unpai/ae55006c31ae.mp3" } },
+    { "id": "question-3", "kind": "question", "quote": { "ja": "『{danmaku}』……", "zh-Hant": "「{danmaku}」……", "en": "\"{danmaku}\"…", "ko": "『{danmaku}』……" }, "text": { "ja": "それはヒミツ。……ふふ、でも、ヒントならあげる。", "zh-Hant": "那是秘密。……呵呵，不過可以給你一點提示。", "en": "That's a secret. …Heh, but I'll give you a hint.", "ko": "그건 비밀. ……후후, 그래도 힌트라면 줄게.", "voice": "/voice/scene/unpai/62ada9e9010b.mp3" } },
+    { "id": "request-1", "kind": "request", "quote": { "ja": "『{danmaku}』……", "zh-Hant": "「{danmaku}」……", "en": "\"{danmaku}\"…", "ko": "『{danmaku}』……" }, "text": { "ja": "ん、リクエスト了解。やってみる。", "zh-Hant": "嗯，收到點播。我試試看。", "en": "Mm, request received. I'll give it a go.", "ko": "응, 리퀘스트 접수. 해 볼게.", "voice": "/voice/scene/unpai/1fb66ec48023.mp3" } },
+    { "id": "request-2", "kind": "request", "quote": { "ja": "『{danmaku}』？", "zh-Hant": "「{danmaku}」？", "en": "\"{danmaku}\"?", "ko": "『{danmaku}』?" }, "text": { "ja": "……今夜だけ、特別ね。", "zh-Hant": "……只有今晚，特別的喔。", "en": "…Just tonight. Special occasion.", "ko": "……오늘 밤만, 특별해.", "voice": "/voice/scene/unpai/821419a53221.mp3" } },
+    { "id": "request-3", "kind": "request", "quote": { "ja": "リクエスト、『{danmaku}』。", "zh-Hant": "點播：「{danmaku}」。", "en": "Request: \"{danmaku}\".", "ko": "리퀘스트, 『{danmaku}』." }, "text": { "ja": "……きみ、それ好きだねぇ。", "zh-Hant": "……你真的很喜歡這個呢。", "en": "…You really like that one, huh.", "ko": "……너, 그거 진짜 좋아하네.", "voice": "/voice/scene/unpai/f819e4b42c8b.mp3" } },
+    { "id": "tease-1", "kind": "tease", "quote": { "ja": "『{danmaku}』って……", "zh-Hant": "「{danmaku}」……", "en": "\"{danmaku}\"…", "ko": "『{danmaku}』라니……" }, "text": { "ja": "それ、うちのことからかってる？ ……ふふ。", "zh-Hant": "你是在捉弄我嗎？……呵呵。", "en": "Are you teasing me? …Heh.", "ko": "그거, 나 놀리는 거야? ……후후.", "voice": "/voice/scene/unpai/787a891f2fe7.mp3" } },
+    { "id": "tease-2", "kind": "tease", "quote": { "ja": "はいはい、『{danmaku}』ね。", "zh-Hant": "好好好，「{danmaku}」是吧。", "en": "Yeah, yeah, \"{danmaku}\".", "ko": "그래그래, 『{danmaku}』란 거지." }, "text": { "ja": "……あとで覚えといてね。", "zh-Hant": "……給我記住喔。", "en": "…You'd better remember that.", "ko": "……나중에 기억해 둬.", "voice": "/voice/scene/unpai/f9764c0e26aa.mp3" } },
+    { "id": "tease-3", "kind": "tease", "quote": { "ja": "『{danmaku}』……", "zh-Hant": "「{danmaku}」……", "en": "\"{danmaku}\"…", "ko": "『{danmaku}』……" }, "text": { "ja": "ぐぬぬ。言い返せないのがくやしい。", "zh-Hant": "唔唔。沒辦法反駁好不甘心。", "en": "Grr. So annoying that I can't argue back.", "ko": "끄응. 반박 못 하는 게 억울해.", "voice": "/voice/scene/unpai/3a13cdd8cfd0.mp3" } },
+    { "id": "gift-1", "kind": "gift", "text": { "ja": "ギフトありがと。……え、ほんとに？ 大事にするね。", "zh-Hant": "謝謝你的禮物。……欸，真的嗎？我會好好珍惜的。", "en": "Thanks for the gift. …Wait, really? I'll treasure it.", "ko": "선물 고마워. ……어, 진짜? 소중히 할게.", "voice": "/voice/scene/unpai/a4a01a0b01fd.mp3" } },
+    { "id": "gift-2", "kind": "gift", "text": { "ja": "わ、ギフトきた。……きみ、やさしすぎない？ ありがと。", "zh-Hant": "哇，收到禮物了。……你會不會太溫柔了？謝謝。", "en": "Whoa, a gift. …Aren't you a little too kind? Thank you.", "ko": "와, 선물 왔다. ……너, 너무 다정한 거 아냐? 고마워.", "voice": "/voice/scene/unpai/aeba342d3547.mp3" } },
+    { "id": "quiet-1", "kind": "quiet", "text": { "ja": "……コメント、止まった？ 見てるなら、ひとことちょうだい。", "zh-Hant": "……留言停了？如果你在看，就留一句給我吧。", "en": "…Comments stopped? If you're watching, drop me a line.", "ko": "……댓글, 멈췄어? 보고 있으면, 한마디 해 줘.", "voice": "/voice/scene/unpai/e8333eae8ac4.mp3" } },
+    { "id": "over-line-1", "kind": "over-line", "text": { "ja": "んー、そのコメントは読まなかったことにする。……ほかの話しよ。", "zh-Hant": "嗯——那則留言我就當作沒看到。……聊別的吧。", "en": "Mm, I'll pretend I didn't read that one. …Let's talk about something else.", "ko": "음, 그 댓글은 안 읽은 걸로 할게. ……다른 얘기 하자.", "voice": "/voice/scene/unpai/7ef1313ae953.mp3" } },
+    { "id": "over-line-2", "kind": "over-line", "text": { "ja": "それは、配信じゃなくてもなし。……ね、ほかのこと聞いて？", "zh-Hant": "那個，就算不是直播也不行。……吶，問我別的吧？", "en": "That's a no, stream or not. …Hey, ask me something else?", "ko": "그건, 방송이 아니어도 안 돼. ……응, 다른 거 물어봐 줘.", "voice": "/voice/scene/unpai/8ecd26045a13.mp3" } }
+  ]
+}

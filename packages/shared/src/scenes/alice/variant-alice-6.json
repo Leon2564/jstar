@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "id": "variant-alice-6",
+    "star": "alice",
+    "title": {"ja": "手紙に書けなかったこと", "zh-Hant": "信裡寫不出來的話", "en": "What I Couldn't Write", "ko": "편지에 쓰지 못한 것"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 6},
+    "idle": "alice-variant-home"
+  },
+  "steps": [
+    {"id": "close", "type": "clip", "shot": "close", "media": "alice-variant-close", "hold": 0},
+    {"id": "come", "type": "line", "voice": "/voice/scene/alice/ef5d0090e63c.mp3", "text": {"ja": "……耳を、貸してもらえますか？", "zh-Hant": "……可以把耳朵，借給我一下嗎？", "en": "…May I borrow your ear?", "ko": "……귀를, 잠깐 빌려주시겠어요?"}},
+    {"id": "why", "type": "line", "voice": "/voice/scene/alice/bb3d0bfa5522.mp3", "text": {"ja": "手紙には書けなかったこと、この服のときなら言える気がして。", "zh-Hant": "信裡寫不出來的話，穿這套衣服時好像就說得出口。", "en": "What I couldn't put in a letter, I think I can say in this dress.", "ko": "편지에는 쓸 수 없었던 말, 이 옷을 입고 있을 때라면 말할 수 있을 것 같아서요."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "near", "options": [{"id": "near", "next": "near", "label": {"ja": "耳を寄せる", "zh-Hant": "把耳朵靠過去", "en": "Lean in to listen", "ko": "귀를 가까이 댄다"}}, {"id": "more", "next": "too-near", "label": {"ja": "もっと近くに", "zh-Hant": "再近一點", "en": "Even closer", "ko": "더 가까이"}}]},
+    {"id": "near", "type": "line", "voice": "/voice/scene/alice/93dc7078f6ec.mp3", "next": "reward", "text": {"ja": "……あなたが来てくれる夜が、いちばん好きです。……言えました。", "zh-Hant": "……你來看我的夜晚，是我最喜歡的。……說出來了。", "en": "…The nights you come are my favorite. …There. I said it.", "ko": "……당신이 와 주는 밤이, 제일 좋아요. ……말했어요."}},
+    {"id": "too-near", "type": "line", "voice": "/voice/scene/alice/6ad86a462409.mp3", "text": {"ja": "……そ、それ以上は、だめです。まだ、心の準備が。……でも、いやじゃないですよ？", "zh-Hant": "……再、再近就不行了。我還沒準備好。……不過，並不討厭喔？", "en": "…N-no closer, please. I'm not ready yet. …But I don't mind, you know?", "ko": "……그, 그 이상은 안 돼요. 아직 마음의 준비가…… ……그래도, 싫지는 않아요, 알죠?"}},
+    {"id": "reward", "type": "effect", "affinity": 8, "variantXp": 30},
+    {"id": "secret", "type": "line", "voice": "/voice/scene/alice/887c439092f1.mp3", "text": {"ja": "……今夜のことは、ふたりだけの秘密にしてくださいね。", "zh-Hant": "……今晚的事，請當作我們兩個人的秘密。", "en": "…Please keep tonight a secret between us.", "ko": "……오늘 밤 일은, 우리 둘만의 비밀로 해 주세요."}},
+    {"id": "end", "type": "end", "outcome": "close"}
+  ]
+}

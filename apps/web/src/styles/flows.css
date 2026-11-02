@@ -1,0 +1,133 @@
+/* pages/flows.tsx's own styles, lazy with it. Sign-up and log-in (#21), in A2「夜畫廊」 (docs/design-system.md): her picture on the night, her name set vertically,
+   her line in Shippori Mincho, and the e-mail form under it — the rose block is its one action. Tokens only; lazy
+   with pages/flows.tsx. On a phone her picture fills the top and sinks into navy-deep under her face; from 900 px
+   (or any landscape screen) the form occupies the left half and her portrait the right half. */
+.login { position: relative; min-height: 100dvh; background: var(--navy-deep); color: var(--ivory); isolation: isolate; }
+.login-art { position: absolute; z-index: -1; top: 0; left: 0; width: 100%; height: 64dvh; object-fit: cover; object-position: var(--login-face-x, 50%) 22%;
+  -webkit-mask-image: linear-gradient(180deg, #000 0, #000 58%, transparent 100%); mask-image: linear-gradient(180deg, #000 0, #000 58%, transparent 100%); }
+.signup-login[data-star='mahiro'] { --login-face-x: 74%; }
+.signup-login[data-star='nana'] { --login-face-x: 57%; }
+.signup-login[data-star='unpai'] { --login-face-x: 80%; }
+.signup-login[data-star='alice'] { --login-face-x: 57%; }
+.signup-login[data-star='eimi'] { --login-face-x: 80%; }
+.login::before { content: ''; position: absolute; z-index: -1; inset: 0 0 auto; height: 140px; pointer-events: none; background: var(--night-fade-top); }
+.login .hdr { color: var(--ivory); }
+.login .hdr > span:first-of-type::before { content: '✦ JSTAR'; font-family: var(--serif); font-size: var(--fs-ui); letter-spacing: 0.32em; }
+.login-name { position: absolute; top: 76px; right: 18px; filter: drop-shadow(0 0 10px rgba(var(--nd), 0.9)); }
+.login-name .js-vname-ro { color: var(--rose-glow); font-size: 12px; } /* B-L6: ≥ 12 px */
+.login-col { justify-content: flex-end; padding: 0 24px calc(28px + env(safe-area-inset-bottom)); }
+.login-form { display: flex; flex-direction: column; gap: 14px; }
+.login-her { margin: 0 0 4px; font: var(--fs-line)/var(--lh-line) var(--serif); letter-spacing: var(--ls-line); white-space: pre-line; text-shadow: 0 1px 6px rgba(var(--nd), 0.6); }
+.login .h1 { font-size: 22px; font-weight: 500; letter-spacing: 0.12em; }
+.login .field label { font-size: var(--fs-small); letter-spacing: 0.08em; color: var(--iv-meta); }
+.login .input { background: rgba(var(--nd), 0.6); border-color: var(--iv-line); color: var(--ivory); }
+.login .input::placeholder { color: var(--iv-meta); }
+.login .input:focus { border-color: var(--rose); }
+.login-otp { letter-spacing: 0.5em; font-size: 22px; text-align: center; }
+.login .err { margin: 0; color: var(--rose-glow); font-size: var(--fs-small); }
+.login .btn-text { color: var(--iv-meta); font-size: var(--fs-small); }
+.login-note { margin: 0; font-size: 14px; line-height: var(--lh-body); color: var(--iv-meta); }
+.login-legal { margin: 0; padding-top: 12px; border-top: var(--hairline) solid var(--iv-hair); font-size: var(--fs-meta); line-height: 1.9; color: var(--iv-meta); }
+/* A-L4: each link a 44 px target, the paragraph's lines kept as they are (the margin takes back the padding). */
+.login-legal a { display: inline-block; padding: 10px 2px; margin: -10px 0; line-height: 24px; color: var(--ivory); text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 900px), (min-aspect-ratio: 1/1) {
+  .login { display: grid; grid-template-columns: 1fr 1fr; }
+  .login-art { position: fixed; width: 50vw; height: 100dvh; object-position: var(--login-face-x, 50%) 26%;
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 70%, transparent 100%); mask-image: linear-gradient(90deg, #000 0, #000 70%, transparent 100%); }
+  .signup-login .login-art { left: 50vw;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 30%, #000 100%); mask-image: linear-gradient(90deg, transparent 0, #000 30%, #000 100%); }
+  .signup-login[data-star='mahiro'] { --login-face-x: 76%; }
+  .signup-login[data-star='nana'] { --login-face-x: 57%; }
+  .signup-login[data-star='unpai'] { --login-face-x: 83%; }
+  .signup-login[data-star='alice'] { --login-face-x: 57%; }
+  .signup-login[data-star='eimi'] { --login-face-x: 83%; }
+  .login .hdr { position: fixed; top: 0; left: 0; width: 50vw; }
+  .login-name { position: fixed; top: 104px; right: auto; left: calc(50vw - 64px); }
+  .signup-login .login-name { position: fixed; top: 104px; right: auto; left: calc(50vw + 28px); }
+  .login-name .js-vname-jp { font-size: 34px; }
+  .login-col { grid-column: 2; justify-content: center; max-width: 440px; margin: 0 auto; padding: 72px 24px 48px; }
+  .signup-login .login-col { grid-column: 1; justify-content: center; width: min(100%, 440px); margin: 0 auto; padding: 72px 24px 48px; }
+}
+
+/* Trial chat: her scene stays visually primary. The conversation is a glass layer, not an opaque split screen. */
+.chat.trial { position: relative; min-height: 100dvh; overflow: hidden; isolation: isolate; background: var(--navy-deep); }
+.trial-backdrop { display: none; position: absolute; z-index: 0; inset: -3%; width: 106%; height: 106%; object-fit: cover; object-position: 50% 18%;
+  opacity: 0.62; filter: blur(16px) brightness(0.58) saturate(0.9); }
+.trial-still { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; overflow: hidden; opacity: 1; }
+.trial-still :is(.scene-poster, .scene-video) { width: 100%; height: 100%; object-fit: cover; object-position: var(--trial-face-x, 50%) 18%; }
+.trial-col { position: relative; z-index: 2; flex: 1; min-height: 0; height: 100dvh; display: flex; flex-direction: column;
+  background: linear-gradient(180deg, rgba(var(--nd), 0.14) 0%, rgba(var(--nd), 0.06) 42%, rgba(var(--nd), 0.62) 100%); }
+.chat.trial .chat-body, .chat.trial .chips { background: transparent; }
+.chat.trial .chat-hdr { background: transparent; border-color: rgba(255,255,255,0.12); backdrop-filter: none; }
+.chat.trial .composer { background: transparent; border-color: rgba(255,255,255,0.12); backdrop-filter: none; }
+.chat.trial .composer input { background: rgba(var(--nd), 0.34); }
+.trial-left { padding: 4px 10px; border: var(--hairline) solid var(--iv-line); border-radius: var(--r-sharp); white-space: nowrap; }
+.trial .msg-row { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.trial .msg-row.me { align-items: flex-end; }
+.trial .msg.is-failed { opacity: 0.6; }
+.msg-fail { display: flex; align-items: center; gap: 4px; font-size: var(--fs-meta); color: var(--rose-glow); }
+.msg-retry { min-height: var(--tap); padding: 0 8px; background: none; border: 0; color: var(--ivory); font-size: var(--fs-small); text-decoration: underline; }
+.trial .chip { min-height: var(--tap); }
+.trial-send { background: var(--rose); color: var(--navy-deep); }
+.trial-send:disabled { background: var(--iv-hair); color: var(--iv-meta); opacity: 1; }
+.trial-end { display: flex; flex-direction: column; gap: 10px; padding: 18px 16px 16px; border-top: var(--hairline) solid var(--iv-line); }
+.trial-end p { margin: 0; color: var(--iv-meta); }
+.trial-end .trial-end-h { font-size: var(--fs-line); color: var(--ivory); }
+.trial .toast { bottom: calc(136px + env(safe-area-inset-bottom)); max-width: min(90%, 420px); text-align: center; }
+@media (min-width: 1024px) {
+  .chat.trial { display: grid; grid-template-columns: clamp(380px, 36vw, 680px) minmax(0, 1fr); }
+  .trial-backdrop { display: block; }
+  .trial-still { position: relative; grid-column: 2; grid-row: 1; height: 100dvh; }
+  .trial-still :is(.scene-poster, .scene-video) { object-position: 100% 18%; }
+  .trial-col { grid-column: 1; grid-row: 1; height: 100dvh; min-width: 0;
+    background: rgba(var(--nd), 0.26); border-right: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 28px 0 72px rgba(var(--nd), 0.14); backdrop-filter: blur(18px) saturate(1.08); }
+  .trial :is(.chat-hdr, .chat-body, .chips, .composer) { width: 100%; max-width: none; margin: 0; box-sizing: border-box; }
+  .trial .chat-hdr { flex-wrap: nowrap; padding-inline: clamp(18px, 2vw, 34px); }
+  .trial .chat-hdr > span { min-width: 0; writing-mode: horizontal-tb; white-space: nowrap; }
+  .trial .chat-body { padding-inline: clamp(24px, 2.6vw, 44px); }
+  .trial .chips { padding-inline: clamp(18px, 2vw, 34px); }
+  .trial .composer { padding-inline: clamp(18px, 2vw, 34px); }
+  .trial .composer input { width: 100%; min-width: 0; flex: 1 1 auto; }
+  .trial .toast { bottom: 140px; left: 18%; }
+}
+.serial-charge { margin: 16px 24px 0; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid rgba(239,232,237,.16); background: rgba(255,255,255,.025); }
+.serial-charge .js-label { color: var(--rose-glow); font-size: 9px; letter-spacing: .22em; }
+.serial-charge p { margin: 5px 0 0; color: var(--iv-meta); font-size: 11px; line-height: 1.6; }
+.serial-charge .btn { min-width: 132px; min-height: 42px; flex: 0 0 auto; }
+@media (max-width:520px) { .serial-charge { align-items: stretch; flex-direction: column; } .serial-charge .btn { width: 100%; } }
+
+@media (max-width: 1023px) {
+  .chat.trial[data-star='unpai'] { --trial-face-x: 70%; }
+  .chat.trial[data-star='eimi'] { --trial-face-x: 82%; }
+  .chat.trial .trial-still { clip-path: inset(0); contain: paint; }
+  .chat.trial .chat-body { padding-top: 12px; }
+  .trial .msg-row { max-height: 320px; opacity: 1; transform: translateY(0); overflow: hidden;
+    transition: opacity 0.28s ease, max-height 0.34s ease, transform 0.34s ease, margin 0.34s ease; }
+  .trial:not(.history-open) .msg-row.is-old { max-height: 0; margin-block: -6px; opacity: 0; transform: translateY(-10px); pointer-events: none; }
+  .trial .msg { max-width: min(82%, 360px); background: rgba(var(--nd), 0.42); backdrop-filter: blur(12px); }
+  .trial .msg.me { background: rgba(230, 164, 180, 0.86); }
+  .trial .chips { background: linear-gradient(180deg, transparent, rgba(var(--nd), 0.24)); }
+}
+/* Lucky codes' result (the printed card's draws) and its published rates. */
+.page.reveal-page { align-items: center; min-height: 100dvh; padding: 48px 20px 28px; background: var(--night); color: var(--ivory); }
+.rv-title { margin: 0; font-size: 22px; font-weight: 400; letter-spacing: 0.2em; }
+.rv-sub { margin: 8px 0 0; color: var(--iv-meta); }
+.rv-grid.rv-lucky { max-width: 380px; margin: 34px 0 0; padding: 0; list-style: none; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 12px; }
+.rv-after { width: 100%; max-width: 460px; margin-top: 28px; gap: 14px; animation-delay: 350ms; }
+.rv-foot { width: 100%; max-width: 460px; margin-top: auto; padding-top: 20px; }
+.rates-sum { min-height: 44px; display: flex; align-items: center; justify-content: center; text-decoration: underline; cursor: pointer; }
+/* The v1 pages in A2 (UX round 1): pick and the code form on the night, like sign-up; the form is a hairline panel. */
+.night-page { background: var(--navy-deep); color: var(--ivory); }
+.night-page .muted { color: var(--iv-meta); }
+.serial-page .panel { background: rgba(var(--nd), 0.6); box-shadow: inset 0 0 0 3px var(--navy-deep), inset 0 0 0 4px var(--iv-hair); border: var(--hairline) solid var(--iv-line); }
+.serial-page .input { background: rgba(var(--nd), 0.6); border-color: var(--iv-line); color: var(--ivory); }
+.serial-page .input::placeholder { color: var(--iv-meta); }
+.serial-page .err { color: var(--rose-glow); }
+.serial-page .ok { color: var(--ivory); }
+.serial-demo { display: grid; gap: 7px; }
+.serial-demo > div { display: flex; flex-wrap: wrap; gap: 6px; }
+.serial-demo button { min-height: 32px; padding: 5px 9px; border: var(--hairline) solid var(--iv-line); border-radius: var(--r-pill); background: rgba(255,255,255,.06); color: var(--ivory); font: 500 var(--fs-meta)/1 var(--sans); letter-spacing: .05em; }
+.serial-demo button:hover:not(:disabled), .serial-demo button:focus-visible { border-color: var(--rose); background: rgba(230,164,180,.14); }
+.serial-demo button:disabled { opacity: .35; text-decoration: line-through; }
+

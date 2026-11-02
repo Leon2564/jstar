@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "id": "variant-mahiro-6",
+    "star": "mahiro",
+    "title": {"ja": "耳もとで、ないしょ話", "zh-Hant": "在耳邊說悄悄話", "en": "A Secret at Your Ear", "ko": "귓가에서, 비밀 이야기"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 6},
+    "idle": "mahiro-variant-home"
+  },
+  "steps": [
+    {"id": "close", "type": "clip", "shot": "close", "media": "mahiro-variant-close", "hold": 0},
+    {"id": "come", "type": "line", "voice": "/voice/scene/mahiro/591343d2853d.mp3", "text": {"ja": "……ねえ、もうちょっと近くに来て？", "zh-Hant": "……欸，再靠近一點好嗎？", "en": "…Hey, come a little closer?", "ko": "……저기, 조금만 더 가까이 와 줄래?"}},
+    {"id": "why", "type": "line", "voice": "/voice/scene/mahiro/0a770ee5e592.mp3", "text": {"ja": "この服、あなたにいちばん近くで見てほしかったの。", "zh-Hant": "這件衣服，我想讓你在最近的距離好好看看。", "en": "I wanted you to see this outfit from up close.", "ko": "이 옷, 너한테 가장 가까이에서 보여 주고 싶었어."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "near", "options": [{"id": "near", "next": "near", "label": {"ja": "そばに行く", "zh-Hant": "走到你身邊", "en": "Go to her side", "ko": "곁으로 가기"}}, {"id": "more", "next": "too-near", "label": {"ja": "もっと近くに", "zh-Hant": "再近一點", "en": "Even closer", "ko": "더 가까이"}}]},
+    {"id": "near", "type": "line", "voice": "/voice/scene/mahiro/cfc007202ff9.mp3", "next": "reward", "text": {"ja": "……ふふ、聞こえる？ ……いつも来てくれて、ありがとう。", "zh-Hant": "……呵呵，聽得到嗎？……謝謝你總是來看我。", "en": "…Hehe, can you hear me? …Thank you for always coming.", "ko": "……후후, 들려? ……늘 와 줘서, 고마워."}},
+    {"id": "too-near", "type": "line", "voice": "/voice/scene/mahiro/2182c48986c4.mp3", "text": {"ja": "……だーめ。これ以上は、どきどきしすぎちゃうから。……ここまでね？", "zh-Hant": "……不行。再近下去，我的心會跳得太厲害。……就到這裡喔？", "en": "…Nope. Any closer and my heart can't take it. …This far, okay?", "ko": "……안 돼. 이 이상은, 너무 두근거려 버리니까. ……여기까지, 알았지?"}},
+    {"id": "reward", "type": "effect", "affinity": 8, "variantXp": 30},
+    {"id": "secret", "type": "line", "voice": "/voice/scene/mahiro/60bb655f6a4b.mp3", "text": {"ja": "……今夜のこと、ふたりだけのひみつね。", "zh-Hant": "……今晚的事，是我們兩個人的秘密喔。", "en": "…Tonight stays our secret, okay?", "ko": "……오늘 밤 일은, 우리 둘만의 비밀이야."}},
+    {"id": "end", "type": "end", "outcome": "close"}
+  ]
+}

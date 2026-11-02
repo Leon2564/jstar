@@ -1,0 +1,37 @@
+# The PR gate: scripts/ci-local.sh on the self-hosted Mac runner (label jstar-mac), so it costs no Actions minutes.
+# The job's check is named `ci`; deploys refuse a commit whose `ci` is not green (docs/PROCESS.md).
+# The runner is started by hand (~/actions-runner/run.sh); while it is off, runs wait in the queue.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, release/v1.1]
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: [self-hosted, jstar-mac]
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      # The secret scan reads every commit of this branch. Only this ref: all branches would pull the
+      # screenshot and media branches too (hundreds of MB).
+      - run: git fetch --unshallow --no-tags origin "$GITHUB_SHA" || true
+      - run: npm ci --prefer-offline --no-audit --no-fund
+      # Its own port and log folder, so it never collides with a ci:local run or a preview on this Mac.
+      - name: scripts/ci-local.sh
+        env:
+          PW_PORT: '4373'
+          CI_LOG_DIR: ${{ runner.temp }}/ci-logs
+        run: |
+          set -o pipefail
+          bash scripts/ci-local.sh | tee "$RUNNER_TEMP/ci-summary.txt"
+      - name: Summary
+        if: always()
+        run: sed -n '/^### Local CI/,$p' "$RUNNER_TEMP/ci-summary.txt" >> "$GITHUB_STEP_SUMMARY" || true

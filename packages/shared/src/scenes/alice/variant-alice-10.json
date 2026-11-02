@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "variant-alice-10",
+    "star": "alice",
+    "title": {"ja": "この服で、腕のなかに", "zh-Hant": "穿這套衣服，在你懷裡", "en": "In Your Arms, in This Dress", "ko": "이 옷을 입고, 당신 품 안에"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 10},
+    "idle": "alice-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "alice-variant-home", "hold": 1.5},
+    {"id": "came", "type": "line", "voice": "/voice/scene/alice/602be67a1fe2.mp3", "text": {"ja": "……来てくださったんですね。今夜は、ちゃんとお伝えしたいことがあって。", "zh-Hant": "……你來了呢。今晚，我有話想好好告訴你。", "en": "…You came. Tonight there's something I want to tell you properly.", "ko": "……와 주셨네요. 오늘 밤은 제대로 전하고 싶은 게 있어서요."}},
+    {"id": "think", "type": "line", "voice": "/voice/scene/alice/d951c2836045.mp3", "text": {"ja": "この服を着ると、あなたのことばかり思い出すんです。", "zh-Hant": "穿上這套衣服，我就一直想起你。", "en": "In this dress, all I think of is you.", "ko": "이 옷을 입으면, 당신 생각만 나요."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "stay", "options": [{"id": "hug", "next": "hug", "label": {"ja": "ぎゅってしていい？", "zh-Hant": "可以抱你嗎？", "en": "Can I hold you?", "ko": "꼭 안아도 돼?"}}, {"id": "stay", "next": "stay", "label": {"ja": "そばにいるよ", "zh-Hant": "我在你身邊", "en": "I'm right here", "ko": "곁에 있을게"}}, {"id": "more", "next": "beyond", "label": {"ja": "もっと……", "zh-Hant": "還想再多一點……", "en": "More…", "ko": "더……"}}]},
+    {"id": "hug", "type": "clip", "shot": "close", "media": "alice-variant-close", "hold": 0},
+    {"id": "hug-line", "type": "line", "voice": "/voice/scene/alice/5e85100212f7.mp3", "next": "held", "text": {"ja": "……はい。……ぎゅって、してください。", "zh-Hant": "……好。……請抱緊我。", "en": "…Yes. …Please hold me.", "ko": "……네. ……꼭, 안아 주세요."}},
+    {"id": "stay", "type": "clip", "shot": "close", "media": "alice-variant-close", "hold": 0},
+    {"id": "stay-line", "type": "line", "voice": "/voice/scene/alice/0a0167682c6c.mp3", "next": "held", "text": {"ja": "……では、私から。……少しだけ、失礼しますね。", "zh-Hant": "……那麼，由我來。……稍微失禮一下喔。", "en": "…Then I'll go first. …Excuse me, just for a moment.", "ko": "……그럼, 제가 먼저. ……잠깐만, 실례할게요."}},
+    {"id": "beyond", "type": "line", "voice": "/voice/scene/alice/a5ace7bb734e.mp3", "next": "held", "text": {"ja": "……そ、そこまでです。今夜は、これで胸がいっぱいですから。", "zh-Hant": "……到、到此為止。今晚這樣，我的心就已經滿滿的了。", "en": "…Th-that's enough. Tonight my heart is already full.", "ko": "……거, 거기까지예요. 오늘 밤은 이것만으로도 마음이 가득하니까요."}},
+    {"id": "held", "type": "line", "voice": "/voice/scene/alice/fa98ca0f091d.mp3", "text": {"ja": "……あたたかいです。……もう少しだけ、このままで。", "zh-Hant": "……好溫暖。……再這樣一下就好。", "en": "…You're warm. …Just a little longer, like this.", "ko": "……따뜻해요. ……조금만 더, 이대로."}},
+    {"id": "home", "type": "clip", "shot": "wide", "media": "alice-variant-home", "hold": 2},
+    {"id": "wait-home", "type": "line", "voice": "/voice/scene/alice/ce292d8e40f4.mp3", "text": {"ja": "これからは、この服でお部屋で待っています。……帰ってきたら、いちばんに見つけてくださいね。", "zh-Hant": "以後我會穿這套衣服在房間等你。……回來的時候，請第一個找到我喔。", "en": "From now on I'll wait in my room in this dress. …When you come home, please find me first.", "ko": "이제부터는 이 옷을 입고 방에서 기다리고 있을게요. ……돌아오면, 제일 먼저 저를 찾아 주세요."}},
+    {"id": "reward", "type": "effect", "affinity": 12, "variantXp": 30, "memory": {"title": {"ja": "この服で、腕のなかに", "zh-Hant": "穿這套衣服，在你懷裡", "en": "In Your Arms, in This Dress", "ko": "이 옷을 입고, 당신 품 안에"}}},
+    {"id": "end", "type": "end", "outcome": "hug"}
+  ]
+}

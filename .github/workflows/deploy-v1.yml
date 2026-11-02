@@ -1,0 +1,54 @@
+# v1.jstarcards.ai, the v1.0 acceptance site: every commit on main whose `ci` check passed is deployed here,
+# on the self-hosted Mac runner (infra/cloudflare/scripts/deploy.sh). Production takes only commits that were
+# live here (commit status deploy/v1).
+name: Deploy v1
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-v1
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  checks: read
+  statuses: write
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
+    runs-on: [self-hosted, jstar-mac]
+    timeout-minutes: 40
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - run: npm ci --prefer-offline --no-audit --no-fund
+      - name: Write Worker secrets (test-only values)
+        env:
+          JWT_SECRET: ${{ secrets.V1_JWT_SECRET }}
+          SERIAL_HMAC_KEY: ${{ secrets.V1_SERIAL_HMAC_KEY }}
+          AGENT_API_KEY: ${{ secrets.V1_AGENT_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          umask 077
+          printf 'JWT_SECRET=%s\nSERIAL_HMAC_KEY=%s\nAGENT_API_KEY=%s\nOPENROUTER_API_KEY=%s\n' "$JWT_SECRET" "$SERIAL_HMAC_KEY" "$AGENT_API_KEY" "$OPENROUTER_API_KEY" > .env.worker-v1.local
+      - run: infra/cloudflare/scripts/deploy.sh v1
+      - name: Deploy record
+        if: always()
+        run: |
+          m=.release/v1/release-manifest.json
+          [ -f "$m" ] || exit 0
+          { echo "### v1 deploy"; echo '```json'; cat "$m"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Remove secrets
+        if: always()
+        run: rm -f .env.worker-v1.local

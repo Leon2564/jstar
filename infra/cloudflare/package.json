@@ -1,0 +1,22 @@
+{
+  "name": "@jstar/edge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare deployment: web + admin static assets, API and agent containers",
+  "scripts": {
+    "build:web": "VITE_API_BASE=/ npm run build -w @jstar/web",
+    "build:admin": "VITE_SESSION_HEADER=x-admin-session npm run build -w @jstar/admin",
+    "typecheck": "tsc --noEmit",
+    "deploy:v1": "scripts/deploy.sh v1",
+    "deploy:test": "scripts/deploy.sh test",
+    "deploy:nest": "scripts/deploy.sh nest",
+    "deploy:prod": "scripts/deploy.sh prod"
+  },
+  "devDependencies": {
+    "@cloudflare/containers": "^0.3.7",
+    "@cloudflare/workers-types": "^5.20260924.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.138.0"
+  }
+}

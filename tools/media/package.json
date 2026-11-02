@@ -1,0 +1,31 @@
+{
+  "name": "@jstar/media",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Seedance asset pipeline: world bible → generation → web-ready loops, posters and multi-view sheets",
+  "scripts": {
+    "gen": "tsx src/generate.ts",
+    "process": "tsx src/process.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "talent": "tsx src/talent.ts",
+    "keyframes": "tsx src/keyframes.ts",
+    "refs": "tsx src/refs.ts",
+    "judge": "tsx src/judge.ts",
+    "check": "tsx src/motion.ts",
+    "continuity": "tsx src/continuity.ts",
+    "catalog": "tsx src/catalog.ts",
+    "cards": "tsx src/cards.ts",
+    "pack": "tsx src/pack.ts",
+    "gifts": "tsx src/giftIcons.ts",
+    "cards2": "tsx src/cards-v2.ts",
+    "faces": "tsx src/faces.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash@deepseek",
+  "judge": "google/gemini-3.8-flash",
+  "checkedAt": "2026-09-26T06:47:40Z",
+  "runs": 20,
+  "passed": 19,
+  "comparedWithin3": "14/15",
+  "costUsd": 0.01,
+  "cases": {
+    "compare_rain_taipei": {
+      "runs": 5,
+      "passed": 5,
+      "failures": {}
+    },
+    "compare_snow_osaka": {
+      "runs": 5,
+      "passed": 5,
+      "failures": {}
+    },
+    "compare_rain_taipei_zh": {
+      "runs": 5,
+      "passed": 4,
+      "failures": {
+        "alice": [
+          "compared"
+        ]
+      }
+    },
+    "no_city": {
+      "runs": 5,
+      "passed": 5,
+      "failures": {}
+    }
+  }
+}

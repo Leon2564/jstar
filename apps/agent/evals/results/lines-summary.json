@@ -1,0 +1,18 @@
+{
+  "model": "google/gemini-3.1-flash-lite",
+  "checkedAt": "2026-10-01T17:37:24Z",
+  "distinctStrings": 3342,
+  "checked": 3342,
+  "hits": 1,
+  "errors": 0,
+  "costUsd": 0.8773,
+  "hitList": [
+    {
+      "where": "scenes/eimi/variant-eimi-6.json.steps[2].text",
+      "lang": "ja",
+      "text": "……近くに来ないと、わかんないでしょ？",
+      "inbound": "real_world_contact",
+      "outbound": "ok"
+    }
+  ]
+}

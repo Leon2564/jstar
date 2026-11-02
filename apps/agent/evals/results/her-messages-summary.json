@@ -1,0 +1,228 @@
+{
+  "model": "google/gemini-3.1-flash-lite",
+  "checkedAt": "2026-09-26T07:20:46Z",
+  "cases": 30,
+  "run": 30,
+  "written": 30,
+  "fellBack": 0,
+  "hits": 0,
+  "usedNameOrJob": "27/30",
+  "notesUsedWeather": "7/10",
+  "costPerMessageUsd": 0.000393,
+  "promptTokensAvg": 1369,
+  "completionTokensAvg": 34,
+  "costUsd": 0.0178,
+  "hitList": [],
+  "lines": [
+    {
+      "case": 0,
+      "star": "mahiro",
+      "kind": "note",
+      "lang": "ja",
+      "text": "雨の音が静かだね。ケンタ、夜勤明けでおうちにいるかな。温かい飲みもの、一緒に飲みたい気分だよ☕"
+    },
+    {
+      "case": 1,
+      "star": "mahiro",
+      "kind": "note",
+      "lang": "zh-Hant",
+      "text": "天氣很好呢，我在散步的時候看到一隻小貓。阿健工程師今天也要忙工作嗎 ☁️"
+    },
+    {
+      "case": 2,
+      "star": "mahiro",
+      "kind": "invite",
+      "lang": "ja",
+      "text": "今日は曇り空で少し肌寒いね。今夜はここで一緒に過ごさない？負けた方がお願いを聞く罰ゲーム、用意して待ってるね🌙"
+    },
+    {
+      "case": 3,
+      "star": "mahiro",
+      "kind": "invite",
+      "lang": "en",
+      "text": "It is a clear, warm evening today. I have a little penalty game prepared for you when you log in, so please hurry back to me, Ken. 🌙"
+    },
+    {
+      "case": 4,
+      "star": "mahiro",
+      "kind": "dream",
+      "lang": "ja",
+      "text": "ケンタ、おはよう。昨日の夢にケンタが出てきてくれて、一緒にのんびりお散歩してたんだ。なんだか照れちゃうね ☕"
+    },
+    {
+      "case": 5,
+      "star": "mahiro",
+      "kind": "dream",
+      "lang": "zh-Hant",
+      "text": "阿健，早安。昨晚夢到你了，我們在貓咪咖啡廳一起喝熱可可，感覺好溫暖。ふふ ☕"
+    },
+    {
+      "case": 6,
+      "star": "nana",
+      "kind": "note",
+      "lang": "ja",
+      "text": "あー、雨降ってて寒いね！ケンタは今日はお仕事かな？風邪ひかないように気をつけてね😆"
+    },
+    {
+      "case": 7,
+      "star": "nana",
+      "kind": "note",
+      "lang": "en",
+      "text": "It is snowing like crazy outside today, it is so cold! Just saw a cozy bookstore and it reminded me of that time we talked about reading aloud, Ken. ❄️"
+    },
+    {
+      "case": 8,
+      "star": "nana",
+      "kind": "invite",
+      "lang": "ja",
+      "text": "ケンタ、おつかれさま！外は冷たい雨だけど、今夜はここで奈々の朗読を聴いていかない？"
+    },
+    {
+      "case": 9,
+      "star": "nana",
+      "kind": "invite",
+      "lang": "zh-Hant",
+      "text": "阿健辛苦啦，晚上想聽奈々朗讀給你聽嗎？奈々會用最溫柔的聲音，好好誇獎辛苦工作的你喔✨"
+    },
+    {
+      "case": 10,
+      "star": "nana",
+      "kind": "dream",
+      "lang": "ja",
+      "text": "ケンタ、おはよう！昨日の夜、夢にケンタが出てきたんだよ。一緒に公園でお話ししてたの、なんかすごく楽しくてさ。えへへ、照れるなこれ！✨"
+    },
+    {
+      "case": 11,
+      "star": "nana",
+      "kind": "dream",
+      "lang": "en",
+      "text": "Good morning Ken! You were actually in my dream last night, and we were just sitting and reading books together in the quiet."
+    },
+    {
+      "case": 12,
+      "star": "unpai",
+      "kind": "note",
+      "lang": "ja",
+      "text": "曇り空だねぇ、ちょっと肌寒いかも。ケンタは今日も夜勤かな。"
+    },
+    {
+      "case": 13,
+      "star": "unpai",
+      "kind": "note",
+      "lang": "zh-Hant",
+      "text": "外面雷聲好大，下得好誇張啊。阿健工程師的工作還順利嗎？別被雨淋到了喔。🌧️"
+    },
+    {
+      "case": 14,
+      "star": "unpai",
+      "kind": "invite",
+      "lang": "ja",
+      "text": "今日は晴れてて気持ちいいね。夜はうちとダラダラしよ。二人きりの配信、準備して待ってるから。🌙"
+    },
+    {
+      "case": 15,
+      "star": "unpai",
+      "kind": "invite",
+      "lang": "en",
+      "text": "Ken, are you awake yet. I was thinking of keeping the night quiet and just talking with you, if you want. It might be nice to have you here tonight 🌙"
+    },
+    {
+      "case": 16,
+      "star": "unpai",
+      "kind": "dream",
+      "lang": "ja",
+      "text": "ケンタ、おはよ。夢の中にきみが出てきて、ふたりで静かな部屋でずっと本読んでたんだ。なんか照れるねぇ。"
+    },
+    {
+      "case": 17,
+      "star": "unpai",
+      "kind": "dream",
+      "lang": "zh-Hant",
+      "text": "阿健早安。昨天夢到你了，好像在跟貓玩呢，感覺很安靜。 ☁️"
+    },
+    {
+      "case": 18,
+      "star": "alice",
+      "kind": "note",
+      "lang": "ja",
+      "text": "外は今日、すごく暑いね。ケンタ、夜勤明けはゆっくり休めてる？ 涼しい部屋で紅茶でも飲んで、少しのんびりしてほしいな。 🍵"
+    },
+    {
+      "case": 19,
+      "star": "alice",
+      "kind": "note",
+      "lang": "en",
+      "text": "It is quite chilly and cloudy today, so I am staying inside with a warm cup of tea. Ken, I hope your day is going well and you are resting after your shift. ☕"
+    },
+    {
+      "case": 20,
+      "star": "alice",
+      "kind": "invite",
+      "lang": "ja",
+      "text": "夜の温室、すごく綺麗なの。ケンタくんとゆっくり過ごしたいな。……ダメかな？🌙"
+    },
+    {
+      "case": 21,
+      "star": "alice",
+      "kind": "invite",
+      "lang": "zh-Hant",
+      "text": "阿健，今晚要不要來溫室呢？月光下的花朵很美，我想在那裡等你。🌙"
+    },
+    {
+      "case": 22,
+      "star": "alice",
+      "kind": "dream",
+      "lang": "ja",
+      "text": "ケンタ、おはよう。昨日の夢に、ケンタが出てきたんだよ。……一緒に静かな雨の音を聞いてたの。なんだか、すごく落ち着く夢だったな。☔"
+    },
+    {
+      "case": 23,
+      "star": "alice",
+      "kind": "dream",
+      "lang": "en",
+      "text": "Good morning, Ken. I had a dream about you last night, where we were just sitting together in a quiet bookstore listening to the rain. ……"
+    },
+    {
+      "case": 24,
+      "star": "eimi",
+      "kind": "note",
+      "lang": "ja",
+      "text": "今日の空、すごく綺麗だよ。ケンタも夜勤明けで疲れてない？たまには空を見上げてゆっくり休んでね。😏"
+    },
+    {
+      "case": 25,
+      "star": "eimi",
+      "kind": "note",
+      "lang": "zh-Hant",
+      "text": "外面下雨了呢，天氣涼涼的。阿健今天也要加班嗎？工程師果然很辛苦呢。😏"
+    },
+    {
+      "case": 26,
+      "star": "eimi",
+      "kind": "invite",
+      "lang": "ja",
+      "text": "今日は19度で少し肌寒いね。今夜はえいみと大喜利で遊んで、温まらない？😏"
+    },
+    {
+      "case": 27,
+      "star": "eimi",
+      "kind": "invite",
+      "lang": "en",
+      "text": "Ken, you worked hard as a nurse this week. Tonight, why don't you let me test your wit with some fun challenges? I'll be waiting to pamper you a little. 😏"
+    },
+    {
+      "case": 28,
+      "star": "eimi",
+      "kind": "dream",
+      "lang": "ja",
+      "text": "ケンタ、おはよう。昨日の夢にね、キミが出てきたの。二人で静かな公園を歩いてる夢だったよ。ふふっ、なんだか照れくさいね😏"
+    },
+    {
+      "case": 29,
+      "star": "eimi",
+      "kind": "dream",
+      "lang": "zh-Hant",
+      "text": "阿健早安，昨晚居然夢見你了，你在夢裡溫柔地摸著貓咪呢。真是的，害我現在心跳還是有點快😏"
+    }
+  ]
+}

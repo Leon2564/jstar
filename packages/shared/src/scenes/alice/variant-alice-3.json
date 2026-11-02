@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "id": "variant-alice-3",
+    "star": "alice",
+    "title": {"ja": "この服で、お茶会", "zh-Hant": "穿這套衣服的茶會", "en": "Tea in This Dress", "ko": "이 옷을 입고, 티타임"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 3},
+    "idle": "alice-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "alice-variant-home", "hold": 1.5},
+    {"id": "hi", "type": "line", "voice": "/voice/scene/alice/b2ac38faf1ff.mp3", "text": {"ja": "こんばんは。……この服のまま、お茶をいれてみました。", "zh-Hant": "晚安。……我就穿著這套衣服泡了茶。", "en": "Good evening. …I made tea, still in this dress.", "ko": "안녕하세요. ……이 옷을 입은 채로, 차를 우려 봤어요."}},
+    {"id": "box", "type": "line", "voice": "/voice/scene/alice/ca4f3aa4298e.mp3", "text": {"ja": "オルゴールも、出してきたんです。……一緒に聴いてくれますか？", "zh-Hant": "我也把音樂盒拿出來了。……願意一起聽嗎？", "en": "I brought out my music box too. …Will you listen with me?", "ko": "오르골도 꺼내 왔어요. ……같이 들어 주실래요?"}},
+    {"id": "tea", "type": "choice", "timeout": 30, "onTimeout": "listen", "options": [{"id": "listen", "next": "listen", "label": {"ja": "よろこんで", "zh-Hant": "樂意之至", "en": "I'd love to", "ko": "기꺼이"}}, {"id": "praise", "next": "praise", "label": {"ja": "先に服をほめたい", "zh-Hant": "想先稱讚你的衣服", "en": "Let me praise the dress first", "ko": "먼저 옷을 칭찬하고 싶어"}}]},
+    {"id": "praise", "type": "line", "voice": "/voice/scene/alice/e13b0652e0f4.mp3", "next": "listen", "text": {"ja": "……っ。そ、そういうのは、先に言われると照れます。……ありがとうございます。", "zh-Hant": "……唔。那、那種話先說出來，我會害羞的。……謝謝你。", "en": "…Oh. S-saying that first makes me shy. …Thank you.", "ko": "……읏. 그, 그런 말은 먼저 들으면 부끄러워요. ……고마워요."}},
+    {"id": "listen", "type": "clip", "shot": "close", "media": "alice-variant-close", "hold": 3},
+    {"id": "song", "type": "line", "voice": "/voice/scene/alice/956283634f88.mp3", "text": {"ja": "……この曲、あなたと聴くと、少しだけ違って聞こえます。", "zh-Hant": "……這首曲子，和你一起聽，好像有點不一樣。", "en": "…This tune sounds a little different when I hear it with you.", "ko": "……이 곡, 당신과 함께 들으면 조금 다르게 들려요."}},
+    {"id": "reward", "type": "effect", "affinity": 6, "variantXp": 30},
+    {"id": "bye", "type": "line", "voice": "/voice/scene/alice/79910bba0652.mp3", "text": {"ja": "……また、この服でお茶会しましょうね。", "zh-Hant": "……下次再穿這套衣服辦茶會吧。", "en": "…Let's have tea in this dress again.", "ko": "……다음에 또 이 옷 입고 티타임 해요."}},
+    {"id": "end", "type": "end", "outcome": "tea"}
+  ]
+}

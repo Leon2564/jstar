@@ -1,0 +1,21 @@
+/* Who's home now (#60): each face carries her presence and her city's sky; asleep faces dim but stay tappable. */
+/* Never cut (N-12): the sky and the word share a line when they fit, else the word (with its dot) takes a second one. */
+.presence { max-width: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1px 3px; font-size: 10px; line-height: 1.2; text-align: center; text-shadow: 0 1px 6px rgba(27, 30, 61, 0.8); }
+.presence-label { min-width: 0; overflow-wrap: anywhere; }
+.presence-label::before { content: ''; display: inline-block; vertical-align: 0.15em; width: 5px; height: 5px; margin-right: 3px; border-radius: 50%; background: var(--dot); }
+.presence-home { --dot: #9be3b0; }
+.presence-out { --dot: #f3c97a; }
+.presence-asleep { --dot: rgba(239, 232, 237, 0.45); }
+.presence-asleep:not(.now-line) { opacity: 0.72; }
+.presence-sky { font-style: normal; }
+
+.now-line { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; font-size: 11px; letter-spacing: 0.04em; text-shadow: 0 1px 8px rgba(27, 30, 61, 0.6); }
+.now-line::before { content: ''; align-self: center; width: 6px; height: 6px; border-radius: 50%; background: var(--dot); }
+.now-clock { opacity: 0.7; font-variant-numeric: tabular-nums; }
+.now-line .wx-credit { font-size: 9px; letter-spacing: 0; color: inherit; opacity: 0.62; text-decoration: none; }
+
+/* Desktop (N-15): her room's status text is 12 px or more. */
+@media (min-width: 1024px) {
+  .member.home .presence, .member.home .reward, .member.home .wx-chip, .member.home .wx-credit { font-size: 12px; }
+  .member.home .now-line { font-size: 13px; }
+}

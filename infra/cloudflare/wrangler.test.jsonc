@@ -1,0 +1,53 @@
+// test.jstarcards.ai: the same Worker, API and agent as production, with its own D1 database and containers.
+// Every change is tried here first (deploy-test.yml, on each push to main); production changes only on a v* tag.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "jstar-test",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "test.jstarcards.ai", "custom_domain": true }],
+  // Demo mode: fixed sign-in code, demo lucky codes, nothing mailed (src/index.ts reads STAGE).
+  "vars": { "STAGE": "test", "LIPSYNC_URL": "https://lionellong099--jstar-lipsync.modal.run", "LIPSYNC_STARS": "*" },
+  "assets": {
+    "directory": "../../apps/web/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "containers": [
+    { "class_name": "Api", "image": "../api.Dockerfile", "image_build_context": "../..", "max_instances": 1, "instance_type": "basic" },
+    { "class_name": "Agent", "image": "../agent.Dockerfile", "image_build_context": "../..", "max_instances": 1, "instance_type": "basic" }
+  ],
+  "durable_objects": {
+    "bindings": [
+      { "name": "API", "class_name": "Api" },
+      { "name": "AGENT", "class_name": "Agent" }
+    ]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "jstar-test", "database_id": "b2cf76c3-0d93-4ecf-9b2f-53f9fdb8b61e", "migrations_dir": "../../apps/api/migrations" }
+  ],
+  // His memory files (#51): the recording of his yes, scene stills later. Private; the API reaches it only through the
+  // Worker's memory.internal relay. Create it once before the first deploy that carries this binding:
+  //   npx wrangler r2 bucket create jstar-test-memory
+  // Her lip-sync (#73, src/lipsync.ts): rendered recorded lines, shared by every site (read-only use). LIPSYNC_URL is
+  // the Modal service (infra/lipsync); secret LIPSYNC_SECRET; LIPSYNC=off is the kill switch; LIPSYNC_STARS who has it.
+  "r2_buckets": [{ "binding": "MEMORY", "bucket_name": "jstar-test-memory" }, { "binding": "LIPSYNC_MEDIA", "bucket_name": "jstar-lipsync" }],
+  // Lip-sync's GPU routes (#73, src/lipsync.ts LIPSYNC_LIMITS; keep the numbers equal there and in every config):
+  // members only, per account and per IP. Namespace ids are this site's own, so no two sites share a counter.
+  "ratelimits": [
+    { "name": "LIPSYNC_WARM_USER", "namespace_id": "1101", "simple": { "limit": 1, "period": 60 } },
+    { "name": "LIPSYNC_WARM_IP", "namespace_id": "1102", "simple": { "limit": 10, "period": 60 } },
+    { "name": "LIPSYNC_RENDER_USER", "namespace_id": "1103", "simple": { "limit": 8, "period": 10 } },
+    { "name": "LIPSYNC_RENDER_IP", "namespace_id": "1104", "simple": { "limit": 120, "period": 60 } }
+  ],
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Api", "Agent"] }],
+  // The API's tick (#49): delivers her inbox and runs every job she does on her own (src/index.ts `scheduled`).
+  "triggers": { "crons": ["*/5 * * * *"] },
+  // Workers AI: speech to text for voice input from browsers without their own recogniser (#72).
+  "ai": { "binding": "AI" },
+  "observability": { "enabled": true }
+}

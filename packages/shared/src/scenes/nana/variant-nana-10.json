@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "variant-nana-10",
+    "star": "nana",
+    "title": {"ja": "この服で、ぎゅー", "zh-Hant": "穿這套衣服，抱抱", "en": "A Squeeze in This Outfit", "ko": "이 옷 입고, 꼬옥"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 10},
+    "idle": "nana-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "nana-variant-home", "hold": 1.5},
+    {"id": "came", "type": "line", "voice": "/voice/scene/nana/808090dee999.mp3", "text": {"ja": "キミ、来てくれた！ ……えへへ、今日はね、ちゃんと言いたいことがあるんだ。", "zh-Hant": "你來了！……嘿嘿，今天呢，我有話想好好說。", "en": "You came! …Hehe, today there's something I really want to say.", "ko": "너, 와 줬구나! ……에헤헤, 오늘은 말이야, 제대로 하고 싶은 얘기가 있어."}},
+    {"id": "think", "type": "line", "voice": "/voice/scene/nana/20af16eee5c5.mp3", "text": {"ja": "この服着るとね、キミの顔が浮かぶの。", "zh-Hant": "穿上這套衣服，腦中就會浮現你的臉。", "en": "Whenever I wear this, your face pops into my head.", "ko": "이 옷 입으면 말이야, 네 얼굴이 떠올라."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "stay", "options": [{"id": "hug", "next": "hug", "label": {"ja": "ぎゅってしていい？", "zh-Hant": "可以抱你嗎？", "en": "Can I hug you?", "ko": "꼭 안아도 돼?"}}, {"id": "stay", "next": "stay", "label": {"ja": "そばにいるよ", "zh-Hant": "我在你身邊", "en": "I'm right here", "ko": "곁에 있을게"}}, {"id": "more", "next": "beyond", "label": {"ja": "もっと……", "zh-Hant": "還想再多一點……", "en": "More…", "ko": "더……"}}]},
+    {"id": "hug", "type": "clip", "shot": "close", "media": "nana-variant-close", "hold": 0},
+    {"id": "hug-line", "type": "line", "voice": "/voice/scene/nana/11004f75aacd.mp3", "next": "held", "text": {"ja": "……うん！ ぎゅーってして！", "zh-Hant": "……嗯！緊緊抱住我！", "en": "…Yes! Hug me tight!", "ko": "……응! 꼬옥 안아 줘!"}},
+    {"id": "stay", "type": "clip", "shot": "close", "media": "nana-variant-close", "hold": 0},
+    {"id": "stay-line", "type": "line", "voice": "/voice/scene/nana/ec280fb59ca2.mp3", "next": "held", "text": {"ja": "じゃあ奈々から行っちゃう！ ……ぎゅー！", "zh-Hant": "那奈奈就主動出擊了！……抱～！", "en": "Then I'm going first! …Squeeze!", "ko": "그럼 나나가 먼저 간다! ……꼬옥!"}},
+    {"id": "beyond", "type": "line", "voice": "/voice/scene/nana/f76bbde26add.mp3", "next": "held", "text": {"ja": "わ、わ、それはまだ早いって！ ……今日はぎゅーまで！", "zh-Hant": "哇、哇，那個還太早了啦！……今天只到抱抱！", "en": "Whoa, whoa, that's way too soon! …Today it's hugs only!", "ko": "와, 와, 그건 아직 이르다니까! ……오늘은 꼬옥까지만!"}},
+    {"id": "held", "type": "line", "voice": "/voice/scene/nana/626187ee30cf.mp3", "text": {"ja": "……へへ、あったかいね。もうちょっとだけ、このままね？", "zh-Hant": "……嘿嘿，好溫暖喔。再這樣一下下就好？", "en": "…Hehe, so warm. Just a little longer like this?", "ko": "……헤헤, 따뜻하네. 조금만 더, 이대로 있자?"}},
+    {"id": "home", "type": "clip", "shot": "wide", "media": "nana-variant-home", "hold": 2},
+    {"id": "wait-home", "type": "line", "voice": "/voice/scene/nana/f9f8817cd6e4.mp3", "text": {"ja": "これからはこの服で、お部屋で待ってるから！ 帰ってきたら、いちばんに奈々を見つけてね？", "zh-Hant": "以後我會穿這套衣服在房間等你！回來的時候，要第一個找到奈奈喔？", "en": "From now on I'll wait in my room in this! When you get home, find me first, okay?", "ko": "이제부터는 이 옷 입고 방에서 기다릴 테니까! 집에 오면 제일 먼저 나나를 찾아 줘, 알았지?"}},
+    {"id": "reward", "type": "effect", "affinity": 12, "variantXp": 30, "memory": {"title": {"ja": "この服で、ぎゅー", "zh-Hant": "穿這套衣服，抱抱", "en": "A Squeeze in This Outfit", "ko": "이 옷 입고, 꼬옥"}}},
+    {"id": "end", "type": "end", "outcome": "hug"}
+  ]
+}

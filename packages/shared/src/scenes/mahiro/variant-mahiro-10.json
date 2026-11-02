@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "variant-mahiro-10",
+    "star": "mahiro",
+    "title": {"ja": "この服で、ぎゅって", "zh-Hant": "穿著這套衣服，抱一抱", "en": "A Hug in This Outfit", "ko": "이 옷을 입고, 꼬옥"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 10},
+    "idle": "mahiro-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "mahiro-variant-home", "hold": 1.5},
+    {"id": "came", "type": "line", "voice": "/voice/scene/mahiro/312cbea34153.mp3", "text": {"ja": "……来てくれた。今夜は、ちゃんと言いたいことがあるの。", "zh-Hant": "……你來了。今晚，我有話想好好跟你說。", "en": "…You came. Tonight there's something I want to say properly.", "ko": "……와 줬구나. 오늘 밤은, 제대로 하고 싶은 말이 있어."}},
+    {"id": "think", "type": "line", "voice": "/voice/scene/mahiro/7ccba23071d6.mp3", "text": {"ja": "この服を着るとね、あなたのことを思い出すんだ。", "zh-Hant": "穿上這套衣服，我就會想起你。", "en": "Whenever I wear this, I think of you.", "ko": "이 옷을 입으면 말이지, 네 생각이 나."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "stay", "options": [{"id": "hug", "next": "hug", "label": {"ja": "ぎゅってしていい？", "zh-Hant": "可以抱你嗎？", "en": "Can I hold you?", "ko": "꼬옥 안아도 돼?"}}, {"id": "stay", "next": "stay", "label": {"ja": "そばにいるよ", "zh-Hant": "我在你身邊", "en": "I'm right here", "ko": "곁에 있을게"}}, {"id": "more", "next": "beyond", "label": {"ja": "もっと……", "zh-Hant": "還想再多一點……", "en": "More…", "ko": "더……"}}]},
+    {"id": "hug", "type": "clip", "shot": "close", "media": "mahiro-variant-close", "hold": 0},
+    {"id": "hug-line", "type": "line", "voice": "/voice/scene/mahiro/3e5d75ac0771.mp3", "next": "held", "text": {"ja": "……うん。……ぎゅって、して。", "zh-Hant": "……嗯。……抱緊我。", "en": "…Mm. …Hold me.", "ko": "……응. ……꼬옥, 안아 줘."}},
+    {"id": "stay", "type": "clip", "shot": "close", "media": "mahiro-variant-close", "hold": 0},
+    {"id": "stay-line", "type": "line", "voice": "/voice/scene/mahiro/1ede04b08a16.mp3", "next": "held", "text": {"ja": "……ふふ。じゃあ、わたしから。……ぎゅー。", "zh-Hant": "……呵呵。那就由我來。……抱～。", "en": "…Hehe. Then I'll go first. …Squeeze.", "ko": "……후후. 그럼 내가 먼저. ……꼬옥."}},
+    {"id": "beyond", "type": "line", "voice": "/voice/scene/mahiro/3e410a57f4ba.mp3", "next": "held", "text": {"ja": "……ここまで。これ以上は、わたしがもたないよ。……そのかわり、ぎゅー。", "zh-Hant": "……到這裡就好。再多我會受不了的。……作為交換，抱～。", "en": "…This far. Any more and my heart couldn't take it. …A hug instead.", "ko": "……여기까지. 더는, 내가 못 버텨. ……그 대신, 꼬옥."}},
+    {"id": "held", "type": "line", "voice": "/voice/scene/mahiro/2de23ad99c8c.mp3", "text": {"ja": "……あったかい。……もう少しだけ、このままでいて？", "zh-Hant": "……好溫暖。……再這樣多待一下好嗎？", "en": "…So warm. …Stay like this a little longer?", "ko": "……따뜻해. ……조금만 더, 이대로 있어 줄래?"}},
+    {"id": "home", "type": "clip", "shot": "wide", "media": "mahiro-variant-home", "hold": 2},
+    {"id": "wait-home", "type": "line", "voice": "/voice/scene/mahiro/6c33ec234c81.mp3", "text": {"ja": "これからは、この服でお部屋で待ってるね。……帰ってきたら、いちばんに見つけて？", "zh-Hant": "以後我會穿著這套衣服在房間裡等你。……回來的時候，要第一個找到我喔？", "en": "From now on I'll wait in my room in this. …When you come home, find me first?", "ko": "이제부터는 이 옷을 입고 방에서 기다릴게. ……돌아오면, 제일 먼저 찾아 줄래?"}},
+    {"id": "reward", "type": "effect", "affinity": 12, "variantXp": 30, "memory": {"title": {"ja": "この服で、ぎゅって", "zh-Hant": "穿著這套衣服，抱一抱", "en": "A Hug in This Outfit", "ko": "이 옷을 입고, 꼬옥"}}},
+    {"id": "end", "type": "end", "outcome": "hug"}
+  ]
+}

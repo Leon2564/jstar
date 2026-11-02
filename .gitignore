@@ -1,0 +1,59 @@
+node_modules/
+dist/
+.env
+.env.local
+.env.development
+.DS_Store
+*.secret
+*.log
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.pnpm-store/
+.tmp/
+# 幸运卡明文验证码与 HMAC 密钥
+tools/luckcards/out/
+
+# Seedance credentials and raw generation output
+.env.seedance
+.env.*.local
+
+# Media pipeline: raw generations and agency reference photos stay local
+tools/media/out/
+# Her voice references, enrolled voice ids and pilot takes (#73): private, never committed
+tools/voice/out/
+# Card generation: candidates and contact sheets stay local (prompts and review.html are committed)
+tools/media/cards/candidates/
+tools/media/cards/out/
+assets/refs/
+assets/archive/
+
+# Talent originals stay local (licensed material)
+assets/originals/
+!assets/talents.json
+
+# Wrangler local state
+.wrangler/
+apps/web/test-results/
+# Agency-supplied talent material (photos, videos, voice): private, never committed
+assets/agency/
+assets/*.pdf
+assets/*.jpg
+assets/*.png
+
+# Agent worktrees and the local voice-cloning workspace (recordings, models, venvs): never committed
+.claude/worktrees/
+.voice/
+
+
+# Local CI logs (scripts/ci-local.sh)
+.ci-local/
+
+# Deploy records and configs rendered with image references (infra/cloudflare/scripts/deploy.sh)
+.release/
+infra/cloudflare/*.rendered.jsonc
+
+# Lip-sync pilot (docs/lipsync.md): renders of her face and voice, and the local model workspace — never committed
+tools/lipsync/out/
+tools/bin/
+.lipsync/

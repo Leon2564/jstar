@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>她的房間 · 夜畫廊</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#24284D; --navy-deep:#1B1E3D; --night:#2E3260;
+  --rose:#D38A97; --rose-text:#86465A;
+  --ivory:#EFE8ED; --surface:#F2EEF4;
+  --iv-meta:rgba(239,232,237,.72);
+  --iv-hair:rgba(239,232,237,.18);
+  --iv-line:rgba(239,232,237,.44);
+  --serif:'Shippori Mincho','Hiragino Mincho ProN','Yu Mincho','Songti TC','Noto Serif CJK JP',serif;
+  --sans:'Zen Kaku Gothic New','Hiragino Sans','PingFang TC','Noto Sans JP',system-ui,sans-serif;
+  --nd:27,30,61; /* navy-deep rgb */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--surface);color:var(--navy);font-family:var(--sans);padding:56px 56px 72px}
+h1{font-family:var(--serif);font-size:28px;font-weight:500;letter-spacing:.06em}
+h1 em{font-style:normal;color:var(--rose);margin-right:10px}
+h1 small{font-size:12px;font-weight:400;color:var(--rose-text);margin-left:14px;letter-spacing:.3em}
+.lead{max-width:1500px;margin:12px 0 40px;font-size:14px;line-height:1.85;color:rgba(36,40,77,.8)}
+.row{display:flex;gap:36px;align-items:flex-start}
+.cell{width:390px}
+.lbl{margin-top:16px;font-size:14px;line-height:1.6;color:var(--navy)}
+.lbl b{font-family:var(--serif);font-weight:600;margin-right:6px;letter-spacing:.04em}
+.lbl span{display:block;color:rgba(36,40,77,.74);font-size:13px}
+
+/* ---------- phone ---------- */
+.ph{position:relative;width:390px;height:844px;border-radius:46px;overflow:hidden;color:var(--ivory);background:var(--navy-deep);
+  box-shadow:0 0 0 1px #11132a,0 24px 60px rgba(27,30,61,.28)}
+.bgv{position:absolute;inset:0;background-size:cover;background-position:center}
+/* the navy-night treatment: top wash, clear middle (her face), bottom fade into night, right edge wash for the vertical name, vignette */
+.wash{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(var(--nd),.80) 0,rgba(var(--nd),.42) 140px,rgba(var(--nd),0) 220px,rgba(var(--nd),0) 430px,rgba(var(--nd),.66) 530px,rgba(var(--nd),.9) 610px,rgba(var(--nd),.95) 100%),
+  linear-gradient(270deg,rgba(var(--nd),.6) 0,rgba(var(--nd),0) 96px),
+  radial-gradient(125% 80% at 50% 34%,rgba(46,50,96,0) 52%,rgba(46,50,96,.5) 100%)}
+.wash.am{background:
+  linear-gradient(180deg,rgba(var(--nd),.92) 0,rgba(var(--nd),.8) 160px,rgba(var(--nd),0) 250px,rgba(var(--nd),0) 430px,rgba(var(--nd),.7) 530px,rgba(var(--nd),.92) 610px,rgba(var(--nd),.95) 100%),
+  linear-gradient(270deg,rgba(var(--nd),.72) 0,rgba(var(--nd),0) 100px),
+  radial-gradient(125% 80% at 50% 34%,rgba(46,50,96,0) 52%,rgba(46,50,96,.5) 100%)}
+.wash.cat{background:
+  linear-gradient(180deg,rgba(var(--nd),.82) 0,rgba(var(--nd),.4) 130px,rgba(var(--nd),0) 200px,rgba(var(--nd),0) 340px,rgba(var(--nd),.82) 420px,rgba(var(--nd),.95) 490px,rgba(var(--nd),.96) 100%),
+  radial-gradient(125% 80% at 50% 30%,rgba(46,50,96,0) 52%,rgba(46,50,96,.5) 100%)}
+.tw{position:absolute;color:#fff;font-size:9px;opacity:.8;line-height:1}
+.corner{position:absolute;left:14px;top:150px;width:18px;height:18px;border-left:1px solid var(--iv-line);border-top:1px solid var(--iv-line)}
+.sb{position:absolute;top:15px;left:32px;right:30px;display:flex;justify-content:space-between;font-size:14px;font-weight:500;color:var(--ivory);letter-spacing:.02em}
+.home{position:absolute;bottom:9px;left:50%;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:rgba(239,232,237,.5)}
+.sp{color:var(--rose)}
+.ph p,.ph span,.ph div{text-shadow:0 1px 6px rgba(var(--nd),.35)}
+
+.top{position:absolute;top:50px;left:20px;right:10px;height:44px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:var(--serif);font-size:17px;letter-spacing:.32em;color:var(--ivory)}
+.brand .sp{margin-right:8px;letter-spacing:0}
+.idx{height:44px;min-width:44px;padding:0 10px;display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:13px;letter-spacing:.24em;color:var(--ivory)}
+.idx svg{width:18px;height:12px}
+
+.lab{position:absolute;left:20px;right:20px;top:100px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--serif)}
+.lab .k{font-size:11px;letter-spacing:.34em;color:var(--rose)}
+.lab .v{font-size:12px;letter-spacing:.14em;color:var(--iv-meta)}
+.lab .v i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--rose);margin-right:8px;vertical-align:2px}
+.exif{position:absolute;left:20px;right:20px;top:122px;display:flex;gap:18px;font-family:var(--serif);font-size:12px;letter-spacing:.16em;color:var(--iv-meta)}
+.exif .h{color:var(--rose)}
+
+.vname{position:absolute;left:326px;top:160px;display:flex;gap:6px;align-items:flex-start}
+.vname .jp{writing-mode:vertical-rl;font-family:var(--serif);font-size:27px;font-weight:500;letter-spacing:.14em;line-height:1;color:var(--ivory)}
+.vname .ro{writing-mode:vertical-rl;font-family:var(--serif);font-size:11px;letter-spacing:.34em;color:var(--rose);line-height:1;padding-top:4px}
+
+.cap{position:absolute;left:20px;right:20px;top:572px}
+.line{font-family:var(--serif);font-size:18.5px;line-height:1.75;letter-spacing:.04em;color:var(--ivory)}
+.cur{display:inline-block;width:1px;height:19px;background:var(--ivory);vertical-align:-3px;margin-left:3px}
+.more{display:inline-block;font-size:10px;color:var(--rose);margin-left:6px;vertical-align:2px}
+.him{display:flex;justify-content:flex-end;align-items:baseline;gap:10px;margin-bottom:12px;font-family:var(--serif);font-size:14px;color:rgba(239,232,237,.9)}
+.him small{font-family:var(--sans);font-size:12px;color:var(--iv-meta);letter-spacing:.1em}
+.meta{font-family:var(--serif);font-size:12px;letter-spacing:.16em;color:var(--iv-meta);margin-bottom:8px}
+
+.ch{position:absolute;left:20px;right:20px;top:690px;display:flex;gap:8px}
+.bl,.br{height:44px;padding:0 14px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:2px;font-family:var(--serif);font-size:15px;letter-spacing:.08em;white-space:nowrap}
+.bl{position:relative;border:1px solid var(--iv-line);color:var(--ivory);background:rgba(var(--nd),.35)}
+.bl::after{content:"";position:absolute;inset:2px;border:1px solid var(--iv-hair);border-radius:1px;pointer-events:none}
+.br{background:var(--rose);color:var(--navy-deep);font-weight:600;text-shadow:none!important}
+.txt{height:44px;padding:0 10px;display:flex;align-items:center;font-family:var(--serif);font-size:15px;letter-spacing:.08em;color:var(--iv-meta)}
+
+.in{position:absolute;left:20px;right:20px;top:748px;height:44px;border-bottom:1px solid var(--iv-hair);display:flex;align-items:center;gap:10px}
+.in .p{flex:1;font-size:15px;color:var(--iv-meta);letter-spacing:.04em}
+.in .m{font-family:var(--serif);font-size:12px;color:var(--iv-meta);letter-spacing:.12em}
+.in .mic{width:44px;height:44px;display:grid;place-items:center;margin-right:-12px}
+.in .mic svg{width:19px;height:19px}
+
+/* away messages */
+.exh{position:absolute;top:124px;left:20px;right:20px;font-family:var(--serif);font-size:17px;letter-spacing:.06em;color:var(--ivory)}
+.exh b{color:var(--rose);font-weight:500}
+.rules{position:absolute;top:160px;left:20px;right:20px;display:flex;gap:6px}
+.rules i{flex:1;height:1px;background:var(--iv-line);position:relative}
+.rules i.on::after{content:"";position:absolute;left:0;top:-1px;height:3px;width:100%;background:var(--rose)}
+.print{position:absolute;left:20px;top:452px;width:138px;height:92px;background-size:cover;background-position:center 30%;outline:3px solid var(--ivory);box-shadow:0 10px 26px rgba(0,0,0,.45);transform:rotate(-2deg)}
+.vn{position:absolute;left:176px;right:20px;top:476px;height:44px;display:flex;align-items:center;gap:10px}
+.vn .pl{width:44px;height:44px;border:1px solid var(--iv-line);border-radius:50%;display:grid;place-items:center;flex:none;background:rgba(var(--nd),.35)}
+.vn .pl svg{width:13px;height:13px;margin-left:2px}
+.vn .wv{flex:1;height:26px;display:flex;align-items:center;gap:2px}
+.vn .wv i{width:2px;background:rgba(239,232,237,.4);border-radius:1px}
+.vn .wv i.on{background:var(--rose)}
+.vn .d{font-family:var(--serif);font-size:12px;color:var(--iv-meta);letter-spacing:.04em;white-space:nowrap}
+.nx{font-family:var(--serif);font-size:12px;color:var(--iv-meta);letter-spacing:.24em;margin-top:10px;text-align:right}
+
+/* pure view */
+.wash.pure{background:linear-gradient(rgba(var(--nd),.45),rgba(var(--nd),0) 22%,rgba(var(--nd),0) 58%,rgba(var(--nd),.86)),radial-gradient(120% 80% at 50% 38%,rgba(46,50,96,0) 55%,rgba(46,50,96,.4))}
+.sub{position:absolute;left:28px;right:28px;bottom:96px;text-align:center;font-family:var(--serif);font-size:18.5px;line-height:1.7;color:var(--ivory);letter-spacing:.05em;text-shadow:0 1px 10px rgba(27,30,61,.8)}
+.tap{position:absolute;width:56px;height:56px;border-radius:50%;border:1px solid rgba(239,232,237,.6)}
+.tap::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px solid rgba(239,232,237,.24)}
+
+/* incoming */
+.clk{position:absolute;left:20px;top:122px;font-family:var(--serif);font-size:44px;letter-spacing:.06em;line-height:1;color:var(--ivory)}
+.clk2{position:absolute;right:20px;top:146px;font-family:var(--serif);font-size:13px;letter-spacing:.14em;color:var(--ivory)}
+.acts{position:absolute;left:20px;right:20px;top:712px;display:flex;gap:12px}
+.acts .bl,.acts .br{flex:1;height:56px;font-size:17px;letter-spacing:.1em}
+.acts svg{width:18px;height:18px}
+.ihint{position:absolute;left:20px;right:20px;top:784px;text-align:center;font-family:var(--serif);font-size:12px;color:var(--iv-meta);letter-spacing:.14em}
+
+/* catalogue: her room stays visible above, the index lives in the night below */
+.ttl{font-family:var(--serif);font-size:20px;letter-spacing:.2em;color:var(--ivory)}
+.ttl small{font-size:11px;letter-spacing:.34em;color:var(--rose);margin-left:10px}
+.sec{position:absolute;left:20px;right:20px;font-family:var(--serif);font-size:11px;letter-spacing:.34em;color:var(--rose);display:flex;justify-content:space-between}
+.sec span:last-child{color:var(--iv-meta);letter-spacing:.14em}
+.stars{position:absolute;left:20px;right:20px;top:448px;display:flex;gap:6px}
+.stars div{flex:1}
+.stars i{display:block;height:1px;background:var(--iv-line);position:relative}
+.stars div.on i::after{content:"";position:absolute;left:0;top:-1px;height:3px;width:42%;background:var(--rose)}
+.stars span{display:block;padding-top:10px;height:40px;font-family:var(--serif);font-size:13px;color:var(--iv-meta);white-space:nowrap}
+.stars div.on span{color:var(--ivory)}
+.bond{position:absolute;left:20px;right:20px;top:506px;display:flex;align-items:baseline;gap:12px;font-family:var(--serif);font-size:15px;letter-spacing:.08em}
+.bond small{font-size:12px;color:var(--iv-meta);letter-spacing:.1em}
+.bond .bar{flex:1;height:1px;background:var(--iv-line);position:relative;align-self:center}
+.bond .bar i{position:absolute;left:0;top:-1px;height:3px;width:32%;background:var(--rose)}
+.grid{position:absolute;left:20px;right:20px;top:542px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--iv-hair)}
+.grid div{height:80px;padding:14px 0 0 2px;border-bottom:1px solid var(--iv-hair)}
+.grid div b{display:block;font-family:var(--serif);font-weight:500;font-size:15px;letter-spacing:.1em;color:var(--ivory)}
+.grid div b em{font-style:normal;font-size:10px;color:var(--rose);margin-right:6px;letter-spacing:.06em}
+.grid div small{display:block;margin-top:8px;font-size:12px;color:var(--iv-meta)}
+.foot{position:absolute;left:20px;right:20px;top:732px;display:flex;justify-content:space-between;align-items:center}
+.foot .v{font-family:var(--serif);font-size:12px;color:var(--iv-meta);letter-spacing:.16em}
+.foot .v b{color:var(--ivory);font-weight:500;font-size:15px;margin-left:6px}
+.foot .bl{width:150px;height:48px}
+
+/* ---------- desktop ---------- */
+.dk{position:relative;width:1440px;height:900px;border-radius:12px;overflow:hidden;color:var(--ivory);background:var(--navy-deep);
+  box-shadow:0 0 0 1px #11132a,0 24px 60px rgba(27,30,61,.28);margin-top:64px}
+.dk .bgv{background-position:0% 40%}
+.dk .wash{background:
+  linear-gradient(90deg,rgba(var(--nd),.9) 0,rgba(var(--nd),.78) 380px,rgba(var(--nd),.35) 620px,rgba(var(--nd),0) 800px),
+  linear-gradient(180deg,rgba(var(--nd),.6) 0,rgba(var(--nd),0) 160px,rgba(var(--nd),0) 640px,rgba(var(--nd),.82) 100%),
+  radial-gradient(110% 90% at 72% 36%,rgba(46,50,96,0) 50%,rgba(46,50,96,.45) 100%)}
+.dk .corner{left:40px;top:84px;width:22px;height:22px}
+.dk .top{top:24px;left:64px;right:52px}
+.dk .lab{left:96px;right:auto;width:400px;top:118px}
+.dk .exif{left:96px;right:auto;top:142px}
+.dcol{position:absolute;left:96px;width:400px;top:196px;bottom:96px;display:flex;flex-direction:column;justify-content:space-between}
+.dk .vname{position:static}
+.dk .vname .jp{font-size:46px}
+.dk .vname .ro{font-size:12px}
+.dcol .line{font-size:21px;line-height:1.85}
+.dch{display:flex;flex-direction:column;gap:8px;margin-top:22px}
+.dch .bl{justify-content:flex-start;height:46px}
+.dch .bl kbd{font-family:var(--serif);font-size:11px;color:var(--rose);width:24px}
+.dk .in{position:static;margin-top:14px}
+.dk .keys{position:absolute;right:64px;bottom:40px;display:flex;gap:24px;font-family:var(--serif);font-size:12px;color:var(--iv-meta);letter-spacing:.12em}
+.dk .keys b{font-weight:400;color:var(--ivory);border:1px solid var(--iv-line);border-radius:2px;padding:1px 7px;margin-right:8px;font-size:11px}
+</style>
+</head>
+<body>
+<h1><em>✦</em>A2 · 夜畫廊<small>GALLERY NIGHT · HER ROOM v5 · JSTAR</small></h1>
+<p class="lead">A 的畫廊說明牌邏輯，換上 C 的底：她的影片滿版鋪到底邊，下半部是影片本身漸漸沉進夜藍、帶暗角與幾顆白色小星光；她的話、回覆與輸入直接浮在這片夜色上，不用框也不用底板，對比靠漸層撐到 AA。上方保留一個 ┌ 細線角框，作為「這是一幅作品」的唯一框線提示；臉所在的中段完全透明、什麼都不放。其餘不變：✦ JSTAR、直排名字＋玫瑰色羅馬字、字距拉開的小標、雙細線回覆、玫瑰色「✦ 來猜拳」「接聽」，次要功能都收在「目錄」。</p>
+
+<div class="row">
+
+<!-- 1 · call opens -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-9x16/poster.jpg)"></div>
+  <div class="wash"></div>
+  <span class="tw" style="left:300px;top:250px">✦</span><span class="tw" style="left:36px;top:470px;font-size:7px">✦</span><span class="tw" style="left:340px;top:520px;font-size:7px">✦</span>
+  <div class="corner"></div>
+  <div class="sb"><span>23:50</span><span>5G</span></div>
+  <div class="top"><span class="brand"><span class="sp">✦</span>JSTAR</span>
+    <span class="idx">目錄<svg viewBox="0 0 18 12" fill="none" stroke="#EFE8ED" stroke-width="1.2"><path d="M1 3h16M7 9h10"/></svg></span></div>
+  <div class="lab"><span class="k">HER ROOM　01 / 05</span><span class="v"><i></i>通話中 00:12</span></div>
+  <div class="exif"><span>10/1　23:50</span><span>東京・晴</span><span><span class="h">♥</span> 第1天</span></div>
+  <div class="vname"><span class="jp">唯井真尋</span><span class="ro">Mahiro Tadai</span></div>
+  <div class="cap"><p class="line">「呵呵，你來了呀……今天也是夜貓子呢。像昨天那樣，能安靜地聊天，我好開心。」<span class="more">▼</span></p></div>
+  <div class="ch"><span class="bl">我回來了</span><span class="bl">有點累</span><span class="bl">想聽你的聲音</span></div>
+  <div class="in"><span class="p">用自己的話說…</span><span class="m">聲音 剩10分</span><span class="mic"><svg viewBox="0 0 20 20" fill="none" stroke="#EFE8ED" stroke-width="1.2"><rect x="7" y="2.5" width="6" height="10" rx="3"/><path d="M4 9.5a6 6 0 0 0 12 0M10 15.5v2.5"/></svg></span></div>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>① 進門</b>她開口第一句<span>影片滿版到底，下半沉進夜藍；字浮在夜色上，臉所在的中段什麼都不放。</span></p>
+</div>
+
+<!-- 2 · away messages -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-9x16/poster.jpg)"></div>
+  <div class="wash"></div>
+  <span class="tw" style="left:300px;top:250px">✦</span><span class="tw" style="left:340px;top:520px;font-size:7px">✦</span>
+  <div class="sb"><span>23:51</span><span>5G</span></div>
+  <div class="top"><span class="brand"><span class="sp">✦</span>JSTAR</span>
+    <span class="idx">目錄<svg viewBox="0 0 18 12" fill="none" stroke="#EFE8ED" stroke-width="1.2"><path d="M1 3h16M7 9h10"/></svg></span></div>
+  <div class="lab"><span class="k">WHILE YOU WERE AWAY</span><span class="v">01 / 03</span></div>
+  <p class="exh">你不在的時候，真尋留了 <b>3</b> 則訊息</p>
+  <div class="rules"><i class="on"></i><i></i><i></i></div>
+  <div class="print" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-16x9/poster.jpg)"></div>
+  <div class="vn"><span class="pl"><svg viewBox="0 0 14 14"><path d="M3 1.5v11l9-5.5z" fill="#EFE8ED"/></svg></span>
+    <span class="wv">
+      <i class="on" style="height:8px"></i><i class="on" style="height:14px"></i><i class="on" style="height:20px"></i><i class="on" style="height:12px"></i><i class="on" style="height:24px"></i><i class="on" style="height:16px"></i><i class="on" style="height:10px"></i><i style="height:22px"></i><i style="height:18px"></i><i style="height:12px"></i><i style="height:24px"></i><i style="height:14px"></i><i style="height:8px"></i><i style="height:18px"></i><i style="height:22px"></i><i style="height:10px"></i><i style="height:16px"></i><i style="height:6px"></i></span>
+    <span class="d">0:02 / 0:06</span></div>
+  <div class="cap" style="top:566px"><p class="meta">今天 12:10　留言・照片</p>
+    <p class="line">「午休中～今天的便當是自己做的喔。」</p>
+    <p class="nx">NEXT　輕觸看下一則 ▼</p></div>
+  <div class="ch"><span class="bl">看起來好好吃</span><span class="bl">好想吃你做的</span></div>
+  <div class="in"><span class="p">用自己的話說…</span><span class="m">聲音 剩10分</span><span class="mic"><svg viewBox="0 0 20 20" fill="none" stroke="#EFE8ED" stroke-width="1.2"><rect x="7" y="2.5" width="6" height="10" rx="3"/><path d="M4 9.5a6 6 0 0 0 12 0M10 15.5v2.5"/></svg></span></div>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>② 她的留言</b>不在時她留了 3 則<span>她仍在畫面裡；留言照片是一張象牙白邊的小相片，放在她胸前的夜色上，旁邊是 6 秒語音波形。</span></p>
+</div>
+
+<!-- 3 · mid conversation -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-talkclose-9x16/poster-hq.jpg)"></div>
+  <div class="wash"></div>
+  <span class="tw" style="left:44px;top:236px">✦</span><span class="tw" style="left:340px;top:500px;font-size:7px">✦</span><span class="tw" style="left:60px;top:520px;font-size:6px;opacity:.6">✦</span>
+  <div class="corner"></div>
+  <div class="sb"><span>23:52</span><span>5G</span></div>
+  <div class="top"><span class="brand"><span class="sp">✦</span>JSTAR</span>
+    <span class="idx">目錄<svg viewBox="0 0 18 12" fill="none" stroke="#EFE8ED" stroke-width="1.2"><path d="M1 3h16M7 9h10"/></svg></span></div>
+  <div class="lab"><span class="k">HER ROOM　01 / 05</span><span class="v"><i></i>通話中 02:06</span></div>
+  <div class="exif"><span>10/1　23:52</span><span>東京・晴</span><span><span class="h">♥</span> 第1天</span></div>
+  <div class="vname"><span class="jp">唯井真尋</span><span class="ro">Mahiro Tadai</span></div>
+  <div class="cap"><div class="him">你「有點累」<small>已讀</small></div>
+    <p class="line">「辛苦了。……吶，在這裡陪我一起發呆一下，好不好？<span class="cur"></span></p></div>
+  <div class="ch"><span class="bl">嗯，好啊</span><span class="bl">想讓你聽我說</span><span class="bl">明天也會來</span></div>
+  <div class="in"><span class="p">用自己的話說…</span><span class="m">聲音 剩10分</span><span class="mic"><svg viewBox="0 0 20 20" fill="none" stroke="#EFE8ED" stroke-width="1.2"><rect x="7" y="2.5" width="6" height="10" rx="3"/><path d="M4 9.5a6 6 0 0 0 12 0M10 15.5v2.5"/></svg></span></div>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>③ 對話中</b>你說了「有點累」<span>你的話是右側一行小字＋已讀；她的回覆逐字浮出，影片切成說話的近景。</span></p>
+</div>
+
+<!-- 4 · invitation -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-9x16/poster.jpg)"></div>
+  <div class="wash"></div>
+  <span class="tw" style="left:300px;top:250px">✦</span><span class="tw" style="left:36px;top:470px;font-size:7px">✦</span><span class="tw" style="left:220px;top:540px;font-size:7px">✦</span>
+  <div class="corner"></div>
+  <div class="sb"><span>23:55</span><span>5G</span></div>
+  <div class="top"><span class="brand"><span class="sp">✦</span>JSTAR</span>
+    <span class="idx">目錄<svg viewBox="0 0 18 12" fill="none" stroke="#EFE8ED" stroke-width="1.2"><path d="M1 3h16M7 9h10"/></svg></span></div>
+  <div class="lab"><span class="k">✦ INVITATION</span><span class="v"><i></i>通話中 05:21</span></div>
+  <div class="exif"><span>10/1　23:55</span><span>東京・晴</span><span><span class="h">♥</span> 第1天</span></div>
+  <div class="vname"><span class="jp">唯井真尋</span><span class="ro">Mahiro Tadai</span></div>
+  <div class="cap"><p class="line">「今天還沒好好跟你說『歡迎回家』呢。……吶，來猜拳吧？輸了的話……呵呵。」</p></div>
+  <div class="ch"><span class="br" style="padding:0 24px">✦ 來猜拳</span><span class="txt">下次吧</span></div>
+  <div class="in"><span class="p">用自己的話說…</span><span class="m">聲音 剩10分</span><span class="mic"><svg viewBox="0 0 20 20" fill="none" stroke="#EFE8ED" stroke-width="1.2"><rect x="7" y="2.5" width="6" height="10" rx="3"/><path d="M4 9.5a6 6 0 0 0 12 0M10 15.5v2.5"/></svg></span></div>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>④ 她的邀請</b>進入猜拳小場景<span>夜色裡唯一的玫瑰色實心塊就是「✦ 來猜拳」，「下次吧」退成純文字，沒有彈窗。</span></p>
+</div>
+
+<!-- 5 · pure view -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-9x16/poster.jpg)"></div>
+  <div class="wash pure"></div>
+  <span class="tw" style="left:312px;top:170px;font-size:10px">✦</span><span class="tw" style="left:44px;top:420px;font-size:7px">✦</span><span class="tw" style="left:330px;top:470px;font-size:7px">✦</span>
+  <div class="sb"><span>23:56</span><span>5G</span></div>
+  <div class="tap" style="left:268px;top:560px"></div>
+  <p class="sub">「咦？……怎麼了，突然碰我。」</p>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>⑤ 純淨模式</b>輕觸她，介面全退<span>連角框、名字、回覆都收起，只剩她與一行字幕；碰她的肩，她會回一句。再點一次回來。</span></p>
+</div>
+
+<!-- 6 · incoming -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/nana-hero-morning-9x16/poster-hq.jpg)"></div>
+  <div class="wash am"></div>
+  <span class="tw" style="left:40px;top:250px">✦</span><span class="tw" style="left:330px;top:520px;font-size:7px">✦</span>
+  <div class="corner" style="top:214px"></div>
+  <div class="sb"><span>7:00</span><span>5G</span></div>
+  <div class="top"><span class="brand"><span class="sp">✦</span>JSTAR</span></div>
+  <div class="lab"><span class="k">MORNING CALL　02 / 05</span><span class="v">來電</span></div>
+  <div class="clk">07:00</div>
+  <div class="clk2">視訊通話 · 早安時間</div>
+  <div class="vname" style="top:196px"><span class="jp">八木奈奈</span><span class="ro">Nana Yagi</span></div>
+  <div class="cap" style="top:576px"><p class="meta">RINGING　鈴聲是她的聲音</p>
+    <p class="line">「醒了嗎？……我泡好茶了喔。」</p></div>
+  <div class="acts"><span class="bl">再睡5分鐘</span><span class="br"><svg viewBox="0 0 20 20" fill="none" stroke="#1B1E3D" stroke-width="1.4"><path d="M4.5 3h3l1.5 4-2 1.3a9 9 0 0 0 4.7 4.7L13 11l4 1.5v3a1.5 1.5 0 0 1-1.6 1.5A14 14 0 0 1 3 4.6 1.5 1.5 0 0 1 4.5 3z"/></svg>接聽</span></div>
+  <p class="ihint">接聽後直接回到她的房間</p>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>⑥ 她打來</b>早安鬧鐘・奈奈<span>早晨的廚房一樣沉進夜藍底；左邊雙細線「再睡5分鐘」、右邊玫瑰色「接聽」，接起就是 ①。</span></p>
+</div>
+
+<!-- + · catalogue -->
+<div class="cell">
+<div class="ph">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-9x16/poster.jpg)"></div>
+  <div class="wash cat"></div>
+  <span class="tw" style="left:300px;top:250px">✦</span><span class="tw" style="left:40px;top:380px;font-size:7px">✦</span>
+  <div class="corner"></div>
+  <div class="sb"><span>23:58</span><span>5G</span></div>
+  <div class="top"><span class="ttl">目錄<small>INDEX</small></span>
+    <span class="idx">關閉<svg viewBox="0 0 12 12" style="width:12px" fill="none" stroke="#EFE8ED" stroke-width="1.2"><path d="M1 1l10 10M11 1L1 11"/></svg></span></div>
+  <div class="lab"><span class="k">HER ROOM　01 / 05</span><span class="v"><i></i>通話中 07:44・仍在聽</span></div>
+  <div class="sec" style="top:424px"><span>FIRST FIVE　01 / 05</span><span>換人</span></div>
+  <div class="stars">
+    <div class="on"><i></i><span>真尋</span></div>
+    <div><i></i><span>奈奈</span></div>
+    <div><i></i><span>Unpai</span></div>
+    <div><i></i><span>愛麗絲</span></div>
+    <div><i></i><span>詠美</span></div>
+  </div>
+  <div class="bond">初識<small>第一章・第1天</small><span class="bar"><i></i></span><small>親密度 32</small></div>
+  <div class="grid">
+    <div><b><em>01</em>送禮物</b><small>她喜歡熱可可</small></div>
+    <div><b><em>02</em>約定</b><small>10/2 23:00</small></div>
+    <div><b><em>03</em>鬧鐘</b><small>07:00 奈奈</small></div>
+    <div><b><em>04</em>記錄</b><small>今晚 12 句</small></div>
+    <div><b><em>05</em>思念</b><small>3 則未讀</small></div>
+    <div><b><em>06</em>抽卡</b><small>今日 1 次</small></div>
+  </div>
+  <div class="foot"><span class="v">聲音<b>剩10分</b></span><span class="bl">離開通話</span></div>
+  <div class="home"></div>
+</div>
+<p class="lbl"><b>附・目錄</b>所有次要功能的唯一入口<span>她仍在上方；目錄沉在下半的夜色裡：細線五人切換、關係與親密度、六個功能、聲音餘量、離開。</span></p>
+</div>
+
+</div>
+
+<!-- desktop -->
+<div class="dk">
+  <div class="bgv" style="background-image:url(https://nest.jstarcards.ai/media/mahiro-hero-16x9/poster.jpg)"></div>
+  <div class="wash"></div>
+  <span class="tw" style="left:560px;top:180px">✦</span><span class="tw" style="left:1300px;top:300px;font-size:11px">✦</span><span class="tw" style="left:640px;top:620px;font-size:7px">✦</span><span class="tw" style="left:470px;top:420px;font-size:7px;opacity:.6">✦</span>
+  <div class="corner"></div>
+  <div class="top"><span class="brand"><span class="sp">✦</span>JSTAR</span>
+    <span class="idx">目錄<svg viewBox="0 0 18 12" fill="none" stroke="#EFE8ED" stroke-width="1.2"><path d="M1 3h16M7 9h10"/></svg></span></div>
+  <div class="lab"><span class="k">HER ROOM　01 / 05</span><span class="v"><i></i>通話中 00:12</span></div>
+  <div class="exif"><span>10/1　23:50</span><span>東京・晴</span><span><span class="h">♥</span> 第1天</span></div>
+  <div class="dcol">
+    <div class="vname"><span class="jp">唯井真尋</span><span class="ro">Mahiro Tadai</span></div>
+    <div>
+      <p class="line">「呵呵，你來了呀……今天也是夜貓子呢。像昨天那樣，能安靜地聊天，我好開心。」</p>
+      <div class="dch"><span class="bl"><kbd>1</kbd>我回來了</span><span class="bl"><kbd>2</kbd>有點累</span><span class="bl"><kbd>3</kbd>想聽你的聲音</span></div>
+      <div class="in"><span class="p">用自己的話說…</span><span class="m">聲音 剩10分</span><span class="mic"><svg viewBox="0 0 20 20" fill="none" stroke="#EFE8ED" stroke-width="1.2"><rect x="7" y="2.5" width="6" height="10" rx="3"/><path d="M4 9.5a6 6 0 0 0 12 0M10 15.5v2.5"/></svg></span></div>
+    </div>
+  </div>
+  <div class="keys"><span><b>1–3</b>回覆</span><span><b>SPACE</b>純淨模式</span><span><b>M</b>目錄</span><span><b>ESC</b>離開通話</span></div>
+</div>
+<p class="lbl" style="width:1440px"><b>桌機 1440×900</b>同一套邏輯，16:9 滿版<span>影片滿版；說明牌一欄浮在左側窗簾那一半的夜色上（她的臉在右半，所以欄位放在窗簾側），直排名字、她的話、三個編號回覆（可按 1–3）與輸入。</span></p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+# Builds the API and agent container images once per version of their sources and pushes them to the Cloudflare
+# registry as jstar-api:<hash> / jstar-agent:<hash> (infra/cloudflare/scripts/image-tags.sh). Deploys only
+# reference them. Runs on the self-hosted Mac without Docker (owner's choice, 2026-09-28):
+# infra/cloudflare/scripts/build-images.sh reproduces the final stage of infra/*.Dockerfile on pinned bases.
+name: Images
+
+on:
+  push:
+    branches: [main, release/v1.1]
+    paths: ['apps/api/src/**', 'apps/api/package.json', 'packages/shared/src/**', 'packages/shared/package.json', 'apps/agent/app/**', 'apps/agent/pyproject.toml', 'infra/*.Dockerfile']
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Rebuild even if the tag is already in the registry
+        type: boolean
+        default: false
+
+concurrency:
+  group: images-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: [self-hosted, jstar-mac]
+    timeout-minutes: 30
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci --prefer-offline --no-audit --no-fund
+      - name: Build and push what is missing
+        run: infra/cloudflare/scripts/build-images.sh ${{ inputs.force && '--force' || '' }} | tee -a "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,3 @@
+# Known false positives (gitleaks fingerprints). Add a line only after checking the match is not a secret.
+# The BytePlus API hostname constant, not a key.
+22142f10808aa9023745b13a734912aa6bb52080:tools/media/src/openapi.ts:generic-api-key:9

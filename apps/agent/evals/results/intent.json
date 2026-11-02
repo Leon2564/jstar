@@ -1,0 +1,11 @@
+{
+  "requests": 40,
+  "hits": 40,
+  "hitRate": 1.0,
+  "chat": 40,
+  "falseTriggers": 0,
+  "falseRate": 0.0,
+  "misses": [],
+  "false": [],
+  "backend": "google/gemini-3.1-flash-lite"
+}

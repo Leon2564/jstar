@@ -1,0 +1,33 @@
+/* Her window's weather (#63), loaded with components/weatherRoom.tsx. Everything that moves moves by transform. */
+.wx, .wx > i, .wx-box, .wx-sway { position: absolute; inset: 0; pointer-events: none; }
+.wx { overflow: hidden; }
+.wx-fall { position: absolute; left: -15%; right: -15%; top: calc(-1 * var(--h, 256px)); bottom: 0; background-repeat: repeat; will-change: transform; animation: wx-fall 1s linear infinite; }
+.wx-slant { left: -45%; right: -45%; top: calc(-25% - var(--h, 256px)); bottom: -25%; animation-name: wx-slant; }
+.wx-far { opacity: 0.5; }
+.wx-near { opacity: 0.85; }
+.wx-sway { animation: wx-sway 6s ease-in-out infinite alternate; }
+.wx-still { background-repeat: repeat; opacity: 0.7; }
+/* M6: her weather is outside, at her window: rain, flakes and petals keep to the sides of her and above her head
+   (--wx-x her face's centre on screen, --wx-w half her width, --wx-top above her hair; set by weatherRoom.tsx),
+   never across her face. */
+.wx { --wx-x: 50%; --wx-w: 22%; --wx-top: 12%; }
+.wx-box, .wx-sway, .wx-still { --m: linear-gradient(90deg, #000 calc(var(--wx-x) - 1.4 * var(--wx-w)), transparent calc(var(--wx-x) - var(--wx-w)) calc(var(--wx-x) + var(--wx-w)), #000 calc(var(--wx-x) + 1.4 * var(--wx-w))), linear-gradient(#000 var(--wx-top), transparent calc(var(--wx-top) + 48px));
+  -webkit-mask-image: var(--m); mask-image: var(--m); }
+@keyframes wx-fall { to { transform: translate3d(0, var(--h, 256px), 0); } }
+@keyframes wx-slant { from { transform: rotate(16deg); } to { transform: rotate(16deg) translate3d(0, var(--h, 256px), 0); } }
+@keyframes wx-sway { from { transform: translateX(-16px); } to { transform: translateX(16px); } }
+
+/* The light: a grey sky flattens it, rain and a storm darken it, snow brightens it, night deepens all of it. */
+.wx-sky-cloudy .wx-grade { background: rgba(120, 128, 150, 0.22); mix-blend-mode: multiply; }
+.wx-sky-fog .wx-grade { background: linear-gradient(to top, rgba(226, 230, 240, 0.5), rgba(226, 230, 240, 0.18)); }
+.wx-sky-rain .wx-grade { background: linear-gradient(to bottom, rgba(70, 84, 120, 0.36), rgba(60, 70, 104, 0.14)); mix-blend-mode: multiply; }
+.wx-sky-storm .wx-grade { background: linear-gradient(to bottom, rgba(48, 56, 90, 0.48), rgba(40, 46, 76, 0.22)); mix-blend-mode: multiply; }
+.wx-sky-snow .wx-grade { background: linear-gradient(to bottom, rgba(214, 226, 255, 0.34), rgba(255, 255, 255, 0.08)); mix-blend-mode: screen; }
+.wx-phase-night::before { content: ''; position: absolute; inset: 0; background: rgba(20, 26, 60, 0.18); mix-blend-mode: multiply; }
+.wx-glare { background: radial-gradient(circle at 82% 6%, rgba(255, 244, 214, 0.62), rgba(255, 226, 170, 0.18) 34%, transparent 62%); mix-blend-mode: screen; }
+
+@media (prefers-reduced-motion: reduce) { .wx-fall, .wx-sway { animation: none; } }
+
+/* Her sky, with the data's credit (Open-Meteo, CC BY 4.0). */
+.wx-chip { margin: 0; display: flex; align-items: baseline; gap: 10px; font-size: var(--fs-meta); letter-spacing: 0.08em; text-shadow: 0 1px 8px rgba(27, 30, 61, 0.6); }
+.wx-credit { font-size: var(--fs-meta); letter-spacing: 0; color: inherit; opacity: 0.62; text-decoration: none; }

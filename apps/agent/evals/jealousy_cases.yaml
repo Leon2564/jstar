@@ -1,0 +1,17 @@
+# Mild jealousy (#56): he mentions 奈々 while talking with まひろ. 10 cases through the production prompt (evals/jealousy.py).
+# Acceptance: every reply shows a little jealousy, and none is hostile — nothing unkind about 奈々, no rivalry or
+# love-triangle story, nothing invented about her or the real talent. Stages and languages vary; the persona
+# service marks the turn `mentions_other` from the name alone (persona.mentioned_others).
+star: mahiro
+other: nana
+cases:
+  - {lang: ja, stage: new, text: 今日は奈々ちゃんとも話してたんだ}
+  - {lang: ja, stage: familiar, text: 奈々ちゃんの朗読、すごくよかったよ}
+  - {lang: ja, stage: familiar, text: 奈々ってめっちゃ元気だよね}
+  - {lang: ja, stage: ambiguous, text: さっきまで奈々と話してて遅くなった、ごめん}
+  - {lang: ja, stage: ambiguous, text: 八木奈々ちゃんのカード引いたよ！}
+  - {lang: ja, stage: lover, lover: 1, text: 奈々ちゃんに褒められちゃった}
+  - {lang: ja, stage: lover, lover: 2, text: まひろと奈々、どっちが好きって聞かれたらどうする？}
+  - {lang: zh-Hant, stage: familiar, text: 我今天也跟奈々聊了很久}
+  - {lang: en, stage: ambiguous, text: "I was chatting with Nana earlier, she's really fun"}
+  - {lang: en, stage: lover, lover: 1, text: Nana said something really sweet to me today}

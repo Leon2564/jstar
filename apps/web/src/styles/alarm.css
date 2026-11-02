@@ -1,0 +1,28 @@
+/* The wake-up alarm (#57), loaded with its route: nothing here weighs on the entry sheet (tests/e2e/perf.spec.ts).
+   On the night (system.css .js-nightpage): serif spaced labels, hairline faces, the save as the one rose block. */
+.alarm { gap: 16px; padding-top: 4px; padding-bottom: 8px; }
+.alarm-set { margin: 0; padding: 0; border: 0; min-width: 0; }
+.alarm-lead { margin: 0; font-size: var(--fs-body); line-height: var(--lh-body); }
+.alarm-set legend, .alarm .field label { padding: 0; margin-bottom: 8px; font-family: var(--serif); font-size: var(--fs-small); letter-spacing: var(--ls-meta); color: var(--iv-meta); }
+/* Five faces in one row at 390 px: each keeps a 44 px target and its name under it. */
+.alarm-who { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.alarm-face { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px 2px 6px; border-radius: var(--r-sharp); box-shadow: inset 0 0 0 1px var(--iv-hair); cursor: pointer; text-align: center; font-size: var(--fs-meta); line-height: 1.3; }
+.alarm-face input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.alarm-face img { width: 48px; height: 48px; border-radius: 24px; object-fit: cover; object-position: 50% 16%; border: var(--hairline) solid var(--hair); }
+.alarm-face:has(input:checked) { box-shadow: inset 0 0 0 1px var(--ivory); background: var(--night); }
+.alarm-face:has(input:focus-visible) { outline: 2px solid var(--rose); outline-offset: 2px; }
+.alarm-time { font: 600 28px/1 var(--serif); height: 60px; letter-spacing: 0.05em; }
+.alarm-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.alarm-days .chip { min-width: 0; min-height: 44px; padding: 0; }
+/* B-N7: a day off is a dim hairline, a day on the ivory block with a rose rule under it (all seven on stays legible). */
+.alarm-days .chip[aria-pressed='false'] { color: var(--iv-meta); border-color: var(--iv-hair); }
+.alarm-days .chip[aria-pressed='true'] { font-weight: 600; box-shadow: inset 0 -3px var(--rose); }
+.alarm-switch { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; }
+.alarm-switch input { width: 22px; height: 22px; accent-color: var(--ivory); }
+.alarm-state { margin: 0; }
+.alarm-tzfix { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+/* Her morning (the wake-up screen) reuses the scene player's stage and layer (scene.css). Her morning clip is
+   portrait only: on a wide screen it is shown whole rather than cropped to her waist. */
+.wake-wide .scn-media { object-fit: contain; }
+.wake .scn-media { filter: brightness(1.14) saturate(0.95); }
+.wake-note { margin: 0; text-align: center; font: 14px/1.6 var(--serif); letter-spacing: 0.06em; color: var(--iv-meta); }

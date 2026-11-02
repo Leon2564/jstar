@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "id": "variant-eimi-3",
+    "star": "eimi",
+    "title": {"ja": "この服で大喜利", "zh-Hant": "穿這套衣服玩大喜利", "en": "Ōgiri in This Outfit", "ko": "이 옷 입고 오오기리"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 3},
+    "idle": "eimi-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "eimi-variant-home", "hold": 1.5},
+    {"id": "hi", "type": "line", "voice": "/voice/scene/eimi/4baff360550e.mp3", "text": {"ja": "ふふっ、来たね。……今夜はこの服のまま、大喜利しよっか。", "zh-Hant": "呵呵，你來了。……今晚就穿這樣，來玩大喜利吧。", "en": "Hehe, you came. …Let's play ōgiri tonight, with me in this outfit.", "ko": "후훗, 왔네. ……오늘 밤은 이 옷 그대로, 오오기리 할까."}},
+    {"id": "rule", "type": "line", "voice": "/voice/scene/eimi/87bb65f373dc.mp3", "text": {"ja": "お題はひとつ。7点以上なら、この服でくるって回ってあげる。", "zh-Hant": "只出一題。拿到7分以上，我就穿這套衣服轉一圈給你看。", "en": "One theme. Score 7 or more and I'll twirl for you in this.", "ko": "주제는 하나. 7점 이상이면, 이 옷 입고 빙글 돌아 줄게."}},
+    {"id": "round", "type": "minigame", "kind": "ogiri", "config": {"bank": "ogiri", "round": 1, "of": 1, "showSeconds": 5, "scale": 10, "passScore": 7}, "next": "passed", "outcomes": {"win": "passed", "lose": "missed"}},
+    {"id": "passed", "type": "clip", "shot": "close", "media": "eimi-variant-close", "hold": 0},
+    {"id": "twirl", "type": "line", "voice": "/voice/scene/eimi/6f56f54303b1.mp3", "next": "reward", "text": {"ja": "……合格。約束どおり、ほら。……ちゃんと見てる？", "zh-Hant": "……及格。照約定，你看。……有好好看著嗎？", "en": "…You pass. As promised, look. …Are you watching?", "ko": "……합격. 약속대로, 자. ……제대로 보고 있어?"}},
+    {"id": "missed", "type": "line", "voice": "/voice/scene/eimi/67b4496d1dd2.mp3", "text": {"ja": "んー、おしい。……でも、キミの顔見てたら、ちょっとだけおまけしたくなっちゃった。", "zh-Hant": "嗯～，可惜。……不過看到你的表情，就想稍微放水一下。", "en": "Mm, close. …But seeing your face, I feel like giving you a little bonus anyway.", "ko": "음—, 아쉽네. ……그치만 네 얼굴 보고 있으니까, 조금만 덤을 주고 싶어졌어."}},
+    {"id": "reward", "type": "effect", "affinity": 6, "variantXp": 30},
+    {"id": "bye", "type": "line", "voice": "/voice/scene/eimi/6ee797937917.mp3", "text": {"ja": "続きは、また今度ね？", "zh-Hant": "後續，下次再說囉？", "en": "The rest, next time?", "ko": "나머지는, 또 다음에, 응?"}},
+    {"id": "end", "type": "end", "outcome": "ogiri"}
+  ]
+}

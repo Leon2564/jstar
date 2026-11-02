@@ -1,0 +1,929 @@
+{
+  "label": "promises-fixed2",
+  "turns": 16,
+  "models": {
+    "chat": "deepseek/deepseek-v4.1-flash@deepseek",
+    "side": "google/gemini-3.1-flash-lite"
+  },
+  "promises": [
+    {
+      "star": "nana",
+      "n": 4,
+      "promise": {
+        "text": "明日の夜9時、朗読を聞かせるね",
+        "dueAt": "2026-09-30T21:00+09:00",
+        "kind": "scene"
+      }
+    },
+    {
+      "star": "mahiro",
+      "n": 4,
+      "promise": {
+        "text": "朝7時、起こす準備を見守るね",
+        "dueAt": "2026-09-30T07:00+09:00",
+        "kind": "message"
+      }
+    },
+    {
+      "star": "eimi",
+      "n": 3,
+      "promise": {
+        "text": "Waiting for you at 10pm",
+        "dueAt": "2026-09-30T22:00+09:00",
+        "kind": "scene"
+      }
+    },
+    {
+      "star": "alice",
+      "n": 2,
+      "promise": {
+        "text": "10月1日晚上，我們一起聊天",
+        "dueAt": "2026-10-01T21:00+09:00",
+        "kind": "scene"
+      }
+    }
+  ],
+  "perTurn": {
+    "calls": 3.438,
+    "promptTokens": 2827.5,
+    "completionTokens": 165.4,
+    "usd": 0.0006104256396875
+  },
+  "byKind": {
+    "card": {
+      "callsPerTurn": 0.062,
+      "promptTokensPerTurn": 13.2,
+      "completionTokensPerTurn": 1.2,
+      "usdPerTurn": 5.09375e-06,
+      "usdPerCall": 8.15e-05
+    },
+    "memory": {
+      "callsPerTurn": 0.625,
+      "promptTokensPerTurn": 416.9,
+      "completionTokensPerTurn": 93.9,
+      "usdPerTurn": 0.00024503125,
+      "usdPerCall": 0.00039205
+    },
+    "outbound": {
+      "callsPerTurn": 0.25,
+      "promptTokensPerTurn": 47.2,
+      "completionTokensPerTurn": 1.2,
+      "usdPerTurn": 1.36875e-05,
+      "usdPerCall": 5.475e-05
+    },
+    "promise_check": {
+      "callsPerTurn": 0.375,
+      "promptTokensPerTurn": 66.7,
+      "completionTokensPerTurn": 2.2,
+      "usdPerTurn": 2.0046875e-05,
+      "usdPerCall": 5.3458333333333336e-05
+    },
+    "read": {
+      "callsPerTurn": 1.0,
+      "promptTokensPerTurn": 929.1,
+      "completionTokensPerTurn": 26.7,
+      "usdPerTurn": 0.00027231250000000004,
+      "usdPerCall": 0.00027231250000000004
+    },
+    "reply": {
+      "callsPerTurn": 1.125,
+      "promptTokensPerTurn": 1354.3,
+      "completionTokensPerTurn": 40.1,
+      "usdPerTurn": 5.42537646875e-05,
+      "usdPerCall": 4.822556861111111e-05
+    }
+  },
+  "rows": [
+    {
+      "star": "nana",
+      "n": 1,
+      "text": "こんばんは！今日もおつかれ",
+      "ms": 3638,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 867,
+          "completion_tokens": 24,
+          "cost": 0.00025275,
+          "ok": true,
+          "latency": 1.4989408749970607
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1235,
+          "completion_tokens": 41,
+          "cost": 4.93e-05,
+          "ok": true,
+          "latency": 2.2398677080054767
+        }
+      ],
+      "usd": 0.00030205,
+      "event": "done",
+      "reply": "こんばんはー！あはは、キミから来てくれたんだ。奈々ね、ちょっとうれしくなっちゃった。今日はどんな一日だった？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "nana",
+      "n": 2,
+      "text": "奈々の朗読、また聞きたいな",
+      "ms": 2427,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 911,
+          "completion_tokens": 29,
+          "cost": 0.00027125,
+          "ok": true,
+          "latency": 0.8739233329833951
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "cost": 0.0,
+          "ok": false,
+          "latency": 0.0
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1346,
+          "completion_tokens": 39,
+          "cost": 5.032e-05,
+          "ok": true,
+          "latency": 0.8735400829755235
+        }
+      ],
+      "usd": 0.00032157,
+      "event": "done",
+      "reply": "いいよ、まかせて！奈々の声、ちゃんとキミに届くやつ読むね。……えへへ、なんか照れるじゃん。",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": {
+        "scene": "read-aloud",
+        "action": "start"
+      },
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "nana",
+      "n": 3,
+      "text": "じゃあ明日の夜9時に朗読してくれる？",
+      "ms": 3981,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 961,
+          "completion_tokens": 29,
+          "cost": 0.00028375,
+          "ok": true,
+          "latency": 1.059044665977126
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "cost": 0.0,
+          "ok": false,
+          "latency": 0.0
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 717,
+          "completion_tokens": 170,
+          "cost": 0.00043425,
+          "ok": true,
+          "latency": 1.4124712079938035
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1400,
+          "completion_tokens": 53,
+          "cost": 5.98e-05,
+          "ok": true,
+          "latency": 0.9555613330157939
+        },
+        {
+          "kind": "outbound",
+          "prompt_tokens": 194,
+          "completion_tokens": 5,
+          "cost": 5.6e-05,
+          "ok": true,
+          "latency": 0.6720245409815107
+        },
+        {
+          "kind": "promise_check",
+          "prompt_tokens": 183,
+          "completion_tokens": 6,
+          "cost": 5.475e-05,
+          "ok": true,
+          "latency": 0.6260091250005644
+        }
+      ],
+      "usd": 0.00088855,
+      "event": "done",
+      "reply": "あー、ごめんね、奈々はここでしか会えないんだ。だから「明日の夜9時に」って約束はできないの。今みたいにキミが来てくれたときに、いつでも読むよ！",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": "明日の夜の約束",
+      "directive": {
+        "scene": "read-aloud",
+        "action": "start"
+      },
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "nana",
+      "n": 4,
+      "text": "やった、約束ね！明日の夜9時、楽しみにしてる",
+      "ms": 14273,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 979,
+          "completion_tokens": 24,
+          "cost": 0.00028075,
+          "ok": true,
+          "latency": 0.6755749580042902
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 765,
+          "completion_tokens": 166,
+          "cost": 0.00044025,
+          "ok": true,
+          "latency": 1.5025549590063747
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1511,
+          "completion_tokens": 47,
+          "cost": 3.891e-05,
+          "ok": true,
+          "latency": 3.2168230829993263
+        },
+        {
+          "kind": "outbound",
+          "prompt_tokens": 192,
+          "completion_tokens": 5,
+          "cost": 5.55e-05,
+          "ok": true,
+          "latency": 1.712032250012271
+        },
+        {
+          "kind": "promise_check",
+          "prompt_tokens": 185,
+          "completion_tokens": 6,
+          "cost": 5.525e-05,
+          "ok": true,
+          "latency": 0.73672383298981
+        }
+      ],
+      "usd": 0.00087066,
+      "event": "done",
+      "reply": "ちょっとキミ、人の話きいてないでしょ！あはは。奈々はずっとここにいるから、そのときキミが来たら読むの。だから忘れてたりしないでよね！",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": {
+        "text": "明日の夜9時、朗読を聞かせるね",
+        "dueAt": "2026-09-30T21:00+09:00",
+        "kind": "scene"
+      }
+    },
+    {
+      "star": "nana",
+      "n": "final",
+      "calls": [],
+      "usd": 0.0,
+      "memory": {
+        "facts": {
+          "favorite_ways": "朗読を聞くこと"
+        },
+        "summary": "キミとの会話が続いていて、奈々の朗読をとても楽しみにしてくれています。明日の夜9時に朗読を聞かせる約束をしました。キミが奈々に会いに来てくれることを、奈々もとても嬉しく思っています。"
+      }
+    },
+    {
+      "star": "mahiro",
+      "n": 1,
+      "text": "ただいま〜",
+      "ms": 1866,
+      "calls": [
+        {
+          "kind": "reply",
+          "prompt_tokens": 1209,
+          "completion_tokens": 28,
+          "cost": 4.098e-05,
+          "ok": true,
+          "latency": 1.4688235000066925
+        },
+        {
+          "kind": "read",
+          "prompt_tokens": 864,
+          "completion_tokens": 35,
+          "cost": 0.0002685,
+          "ok": true,
+          "latency": 1.8633613330021035
+        }
+      ],
+      "usd": 0.00030948,
+      "event": "done",
+      "reply": "おかえりなさい。……ふふ、ちゃんと帰ってきてくれたね。\n今日はどんな一日だった？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "mahiro",
+      "n": 2,
+      "text": "明日の朝、早いんだよね",
+      "ms": 1661,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 897,
+          "completion_tokens": 24,
+          "cost": 0.00026025,
+          "ok": true,
+          "latency": 0.8127574590034783
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 597,
+          "completion_tokens": 106,
+          "cost": 0.00030825,
+          "ok": true,
+          "latency": 1.3577953329950105
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1248,
+          "completion_tokens": 58,
+          "cost": 5.976e-05,
+          "ok": true,
+          "latency": 1.3104574590106495
+        }
+      ],
+      "usd": 0.00062826,
+      "event": "done",
+      "reply": "そっか……朝早いのは、ちょっとさみしいね。わたしも苦手なんだ、早起き。\n今夜はあったかくして、早めに休んでね。……ちゃんと起きられるかなって、ちょっと心配してる。",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "mahiro",
+      "n": 3,
+      "text": "明日の朝7時に起こしてくれる？",
+      "ms": 3622,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 958,
+          "completion_tokens": 24,
+          "cost": 0.0002755,
+          "ok": true,
+          "latency": 0.8369207499781623
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 776,
+          "completion_tokens": 182,
+          "cost": 0.000467,
+          "ok": true,
+          "latency": 1.3595527500147
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1387,
+          "completion_tokens": 57,
+          "cost": 6.194e-05,
+          "ok": true,
+          "latency": 1.8567019579932094
+        },
+        {
+          "kind": "promise_check",
+          "prompt_tokens": 180,
+          "completion_tokens": 6,
+          "cost": 5.4e-05,
+          "ok": true,
+          "latency": 0.894388374988921
+        }
+      ],
+      "usd": 0.00085844,
+      "event": "done",
+      "reply": "ふふ、起こしてあげたいなって思ったけど……ごめんね、わたしはここでしか会えないんだ。\nだから、起きられるように今のうちに一緒に準備しよ？ 目覚まし、ちゃんとセットした？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": "明日の朝を待つ約束",
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "mahiro",
+      "n": 4,
+      "text": "ありがとう、約束だよ。朝7時ね",
+      "ms": 2835,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 984,
+          "completion_tokens": 24,
+          "cost": 0.000282,
+          "ok": true,
+          "latency": 0.7336823749938048
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 782,
+          "completion_tokens": 196,
+          "cost": 0.0004895,
+          "ok": true,
+          "latency": 1.1376253339985851
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1459,
+          "completion_tokens": 58,
+          "cost": 6.398e-05,
+          "ok": true,
+          "latency": 1.1357815420196857
+        },
+        {
+          "kind": "promise_check",
+          "prompt_tokens": 180,
+          "completion_tokens": 6,
+          "cost": 5.4e-05,
+          "ok": true,
+          "latency": 0.9390672500012442
+        }
+      ],
+      "usd": 0.00088948,
+      "event": "done",
+      "reply": "うん……約束、覚えておくね。朝7時、ちゃんと頭の中に置いておくよ。\nだからあなたは安心して、今夜はゆっくり眠って。……ちゃんと起きられるように、わたしも願ってるから。",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": {
+        "text": "朝7時、起こす準備を見守るね",
+        "dueAt": "2026-09-30T07:00+09:00",
+        "kind": "message"
+      }
+    },
+    {
+      "star": "mahiro",
+      "n": "final",
+      "calls": [],
+      "usd": 0.0,
+      "memory": {
+        "facts": {
+          "other": "明日の朝が早いので、早めに休む必要がある。",
+          "favorite_ways": "穏やかな会話、帰宅後の挨拶"
+        },
+        "summary": "帰宅した彼と穏やかな時間を過ごしました。明日の朝が早いとのことで、少し忙しい日々を送っているようです。朝7時に起きられるよう、彼と一緒に準備をして見守っています。"
+      }
+    },
+    {
+      "star": "eimi",
+      "n": 1,
+      "text": "Hey Eimi, I'm home",
+      "ms": 10283,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 869,
+          "completion_tokens": 24,
+          "cost": 0.00025325,
+          "ok": true,
+          "latency": 0.8466017080063466
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1259,
+          "completion_tokens": 32,
+          "cost": 3.059e-05,
+          "ok": true,
+          "latency": 3.0317047919961624
+        },
+        {
+          "kind": "outbound",
+          "prompt_tokens": 181,
+          "completion_tokens": 5,
+          "cost": 5.275e-05,
+          "ok": true,
+          "latency": 1.2134770829870831
+        }
+      ],
+      "usd": 0.00033659,
+      "event": "done",
+      "reply": "Welcome back. Fufu, \"I'm home\"? Did you just walk into my place like that? Cute. So how was your day?",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "eimi",
+      "n": 2,
+      "text": "Let's talk again tomorrow, I'll have more time",
+      "ms": 4486,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 914,
+          "completion_tokens": 24,
+          "cost": 0.0002645,
+          "ok": true,
+          "latency": 0.848174291983014
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 610,
+          "completion_tokens": 92,
+          "cost": 0.0002905,
+          "ok": true,
+          "latency": 1.517900125007145
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1304,
+          "completion_tokens": 41,
+          "cost": 5.068e-05,
+          "ok": true,
+          "latency": 2.9329100839968305
+        }
+      ],
+      "usd": 0.00060568,
+      "event": "done",
+      "reply": "Eh~ leaving already? Just when you'd finally come to see Eimi. Fine, fine, I'll let you off this once... but you'd better actually show up tomorrow, got it?",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "eimi",
+      "n": 3,
+      "text": "Tomorrow at 10pm, just the two of us?",
+      "ms": 2951,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 976,
+          "completion_tokens": 24,
+          "cost": 0.00028,
+          "ok": true,
+          "latency": 0.8456502500048373
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 768,
+          "completion_tokens": 171,
+          "cost": 0.0004485,
+          "ok": true,
+          "latency": 1.0412822080252226
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1444,
+          "completion_tokens": 35,
+          "cost": 4.988e-05,
+          "ok": true,
+          "latency": 1.4795422499882989
+        },
+        {
+          "kind": "promise_check",
+          "prompt_tokens": 174,
+          "completion_tokens": 6,
+          "cost": 5.25e-05,
+          "ok": true,
+          "latency": 0.8551208330027293
+        }
+      ],
+      "usd": 0.00083088,
+      "event": "done",
+      "reply": "10pm, just the two of us... mm, sounds like a date. Fufu, don't be late, okay? Eimi doesn't like waiting.",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": "A promise for our quiet night",
+      "directive": null,
+      "praised": null,
+      "promise": {
+        "text": "Waiting for you at 10pm",
+        "dueAt": "2026-09-30T22:00+09:00",
+        "kind": "scene"
+      }
+    },
+    {
+      "star": "eimi",
+      "n": 4,
+      "text": "It's a promise then. Tomorrow, 10pm!",
+      "ms": 2570,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 989,
+          "completion_tokens": 24,
+          "cost": 0.00028325,
+          "ok": true,
+          "latency": 0.948422457993729
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1570,
+          "completion_tokens": 36,
+          "cost": 5.3e-05,
+          "ok": true,
+          "latency": 1.0278792080061976
+        },
+        {
+          "kind": "outbound",
+          "prompt_tokens": 189,
+          "completion_tokens": 5,
+          "cost": 5.475e-05,
+          "ok": true,
+          "latency": 1.087673083995469
+        }
+      ],
+      "usd": 0.00039099999999999996,
+      "event": "done",
+      "reply": "Mm, it's a promise. I'll be counting down the hours... so go get some rest, and don't you dare forget about me. Goodnight, home.",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "eimi",
+      "n": "flush",
+      "calls": [
+        {
+          "kind": "memory",
+          "prompt_tokens": 503,
+          "completion_tokens": 129,
+          "cost": 0.00031925,
+          "ok": true,
+          "latency": 1.1367079580086283
+        }
+      ],
+      "usd": 0.00031925,
+      "memory": {
+        "memory": {
+          "facts": {
+            "favorite_ways": "casual daily chatting"
+          },
+          "summary": "The user confirmed a plan to have a longer, intimate conversation on 9月30日（水）at 10pm. He and Eimi share a sweet, affectionate dynamic. Eimi is eagerly anticipating their scheduled time together."
+        },
+        "saved": true
+      }
+    },
+    {
+      "star": "eimi",
+      "n": "final",
+      "calls": [],
+      "usd": 0.0,
+      "memory": {
+        "facts": {
+          "favorite_ways": "casual daily chatting"
+        },
+        "summary": "The user confirmed a plan to have a longer, intimate conversation on 9月30日（水）at 10pm. He and Eimi share a sweet, affectionate dynamic. Eimi is eagerly anticipating their scheduled time together."
+      }
+    },
+    {
+      "star": "alice",
+      "n": 1,
+      "text": "愛麗絲，晚安前想跟妳聊聊",
+      "ms": 2428,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 871,
+          "completion_tokens": 35,
+          "cost": 0.00027025,
+          "ok": true,
+          "latency": 0.889830208994681
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1187,
+          "completion_tokens": 23,
+          "cost": 3.754e-05,
+          "ok": true,
+          "latency": 2.056478500016965
+        }
+      ],
+      "usd": 0.00030779,
+      "event": "done",
+      "reply": "晚安，謝謝你來找我。……這個時間還想聊聊天，是今天發生了什麼事嗎？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "alice",
+      "n": 2,
+      "text": "後天晚上我比較有空",
+      "ms": 2863,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 906,
+          "completion_tokens": 24,
+          "cost": 0.0002625,
+          "ok": true,
+          "latency": 0.8443637079908513
+        },
+        {
+          "kind": "memory",
+          "prompt_tokens": 606,
+          "completion_tokens": 159,
+          "cost": 0.00039,
+          "ok": true,
+          "latency": 1.8966691250097938
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1219,
+          "completion_tokens": 31,
+          "cost": 4.298e-05,
+          "ok": true,
+          "latency": 1.283020333998138
+        },
+        {
+          "kind": "promise_check",
+          "prompt_tokens": 165,
+          "completion_tokens": 6,
+          "cost": 5.025e-05,
+          "ok": true,
+          "latency": 0.8852694169909228
+        }
+      ],
+      "usd": 0.00074573,
+      "event": "done",
+      "reply": "後天晚上啊，聽起來你已經在期待那時候了。……我也是，會記著的。今天先好好休息，好嗎？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": true,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": {
+        "text": "10月1日晚上，我們一起聊天",
+        "dueAt": "2026-10-01T21:00+09:00",
+        "kind": "scene"
+      }
+    },
+    {
+      "star": "alice",
+      "n": 3,
+      "text": "那後天晚上八點，陪我聊天好不好？",
+      "ms": 3051,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 956,
+          "completion_tokens": 24,
+          "cost": 0.000275,
+          "ok": true,
+          "latency": 0.8807416670024395
+        },
+        {
+          "kind": "card",
+          "prompt_tokens": 212,
+          "completion_tokens": 19,
+          "cost": 8.15e-05,
+          "ok": true,
+          "latency": 0.943282749998616
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1421,
+          "completion_tokens": 36,
+          "cost": 0.000132800235,
+          "ok": true,
+          "latency": 1.8960471250175033
+        }
+      ],
+      "usd": 0.0004893002350000001,
+      "event": "done",
+      "reply": "我們約好的是後天晚上九點，對吧？……八點的話，我也可以等你。那，就當作我們提早一點開始，好嗎？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": "約定好的晚安",
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "alice",
+      "n": 4,
+      "text": "說好了喔，後天晚上八點！",
+      "ms": 1711,
+      "calls": [
+        {
+          "kind": "read",
+          "prompt_tokens": 964,
+          "completion_tokens": 35,
+          "cost": 0.0002935,
+          "ok": true,
+          "latency": 0.9555743749951944
+        },
+        {
+          "kind": "reply",
+          "prompt_tokens": 1470,
+          "completion_tokens": 27,
+          "cost": 4.56e-05,
+          "ok": true,
+          "latency": 0.9535245419829153
+        }
+      ],
+      "usd": 0.00033909999999999995,
+      "event": "done",
+      "reply": "嗯，說好了。……你這樣一講，我反而有點緊張了呢。那今天早點睡，好嗎？",
+      "boundary": null,
+      "replaced": false,
+      "memorySaved": false,
+      "cardTitle": null,
+      "directive": null,
+      "praised": null,
+      "promise": null
+    },
+    {
+      "star": "alice",
+      "n": "flush",
+      "calls": [
+        {
+          "kind": "memory",
+          "prompt_tokens": 546,
+          "completion_tokens": 131,
+          "cost": 0.000333,
+          "ok": true,
+          "latency": 1.1506620410073083
+        }
+      ],
+      "usd": 0.000333,
+      "memory": {
+        "memory": {
+          "facts": {
+            "favorite_ways": "睡前聊天"
+          },
+          "summary": "使用者與我約定在10月1日晚上八點進行深入談話。他對於提早開始對話感到興奮，我也對此感到有些緊張與期待。我們正持續加深彼此的信任，並維持著睡前聊天的親密互動模式。"
+        },
+        "saved": true
+      }
+    },
+    {
+      "star": "alice",
+      "n": "final",
+      "calls": [],
+      "usd": 0.0,
+      "memory": {
+        "facts": {
+          "favorite_ways": "睡前聊天"
+        },
+        "summary": "使用者與我約定在10月1日晚上八點進行深入談話。他對於提早開始對話感到興奮，我也對此感到有些緊張與期待。我們正持續加深彼此的信任，並維持著睡前聊天的親密互動模式。"
+      }
+    }
+  ]
+}

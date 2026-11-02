@@ -1,0 +1,312 @@
+{
+ "mahiro": {
+  "early": [
+   {
+    "ja": "え？……どうしたの、急に触って。",
+    "zh-Hant": "咦？……怎麼了，突然碰我。",
+    "en": "Huh? …What is it, touching me all of a sudden?",
+    "ko": "어? ……왜 그래, 갑자기 만지고."
+   },
+   {
+    "ja": "……びっくりした。なにか、ついてた？",
+    "zh-Hant": "……嚇我一跳。我身上沾到什麼了嗎？",
+    "en": "…You startled me. Is something on me?",
+    "ko": "……깜짝이야. 뭐 묻었어?"
+   },
+   {
+    "ja": "ふふ、くすぐったいよ。",
+    "zh-Hant": "呵呵，好癢喔。",
+    "en": "Heh, that tickles.",
+    "ko": "후후, 간지러워."
+   }
+  ],
+  "close": [
+   {
+    "ja": "……そこ、触られると、ちょっとドキッとする。",
+    "zh-Hant": "……被你碰到那裡，心會突然跳一下。",
+    "en": "…When you touch me there, my heart skips a little.",
+    "ko": "……거기 만지면, 조금 두근거려."
+   },
+   {
+    "ja": "どうしたの？……さみしくなった？",
+    "zh-Hant": "怎麼了？……覺得寂寞了嗎？",
+    "en": "What's wrong? …Feeling lonely?",
+    "ko": "왜 그래? ……외로워졌어?"
+   },
+   {
+    "ja": "ふふ、手、あったかいね。",
+    "zh-Hant": "呵呵，你的手好暖。",
+    "en": "Heh, your hand is warm.",
+    "ko": "후후, 손 따뜻하다."
+   }
+  ],
+  "lover": [
+   {
+    "ja": "……もう。そうやって甘えるの、ずるい。",
+    "zh-Hant": "……真是的。這樣撒嬌太狡猾了。",
+    "en": "…Honestly. Being sweet like that isn't fair.",
+    "ko": "……정말. 그렇게 어리광 부리는 거, 반칙이야."
+   },
+   {
+    "ja": "ん……もうちょっとだけ、このままでいて。",
+    "zh-Hant": "嗯……再這樣待一下下就好。",
+    "en": "Mm… stay like this a little longer.",
+    "ko": "응…… 조금만 더, 이대로 있어 줘."
+   },
+   {
+    "ja": "触れてくれると、安心する。",
+    "zh-Hant": "被你碰著，就覺得好安心。",
+    "en": "When you touch me, I feel at ease.",
+    "ko": "네가 만져 주면, 마음이 놓여."
+   }
+  ]
+ },
+ "nana": {
+  "early": [
+   {
+    "ja": "わっ！ びっくりしたぁ。どうしたの？",
+    "zh-Hant": "哇！嚇我一跳～。怎麼了？",
+    "en": "Whoa! You surprised me. What's up?",
+    "ko": "앗! 깜짝 놀랐잖아. 왜 그래?"
+   },
+   {
+    "ja": "えへへ、くすぐったいってば～。",
+    "zh-Hant": "嘿嘿，好癢啦～。",
+    "en": "Hehe, that tickles, stop~",
+    "ko": "헤헤, 간지럽다니까~"
+   },
+   {
+    "ja": "ん？ 奈々に何か用？",
+    "zh-Hant": "嗯？找奈奈有事嗎？",
+    "en": "Hm? Need something from Nana?",
+    "ko": "응? 나나한테 볼일 있어?"
+   }
+  ],
+  "close": [
+   {
+    "ja": "もー、急に触ったらドキドキしちゃうでしょ！",
+    "zh-Hant": "真是的，突然碰我會心跳加速的啦！",
+    "en": "Geez, touching me out of nowhere makes my heart race!",
+    "ko": "정말, 갑자기 만지면 두근거리잖아!"
+   },
+   {
+    "ja": "えへへ。キミの手、好きかも。",
+    "zh-Hant": "嘿嘿。好像有點喜歡你的手。",
+    "en": "Hehe. I think I like your hands.",
+    "ko": "헤헤. 네 손, 좋을지도."
+   },
+   {
+    "ja": "なになに？ 奈々にかまってほしいの？",
+    "zh-Hant": "怎樣怎樣？想要奈奈陪你嗎？",
+    "en": "What, what? Want Nana's attention?",
+    "ko": "뭐야 뭐야? 나나가 놀아 줬으면 좋겠어?"
+   }
+  ],
+  "lover": [
+   {
+    "ja": "えへへ、もっと触っていいよ？",
+    "zh-Hant": "嘿嘿，可以再多碰一下喔？",
+    "en": "Hehe, you can keep going, you know?",
+    "ko": "헤헤, 더 만져도 되는데?"
+   },
+   {
+    "ja": "キミにくっついてると、元気出る！",
+    "zh-Hant": "黏著你，就會充滿元氣！",
+    "en": "Sticking close to you gives me energy!",
+    "ko": "너한테 붙어 있으면 힘이 나!"
+   },
+   {
+    "ja": "……ねえ、ぎゅってして？",
+    "zh-Hant": "……吶，抱緊我好不好？",
+    "en": "…Hey, hold me tight?",
+    "ko": "……있잖아, 꼭 안아 줄래?"
+   }
+  ]
+ },
+ "unpai": {
+  "early": [
+   {
+    "ja": "ん？……え、なに。急に触るじゃん。",
+    "zh-Hant": "嗯？……欸，幹嘛。突然碰我。",
+    "en": "Hm? …Uh, what. Out of nowhere?",
+    "ko": "응? ……어, 뭐야. 갑자기 만지네."
+   },
+   {
+    "ja": "いまゲーム中だから、ちょっと待って……って、なに？",
+    "zh-Hant": "現在在打遊戲，等一下……咦，怎麼了？",
+    "en": "I'm mid-game, hold on… wait, what is it?",
+    "ko": "지금 게임 중이니까 잠깐만…… 응, 왜?"
+   },
+   {
+    "ja": "びっくりした。……ラグかと思った。",
+    "zh-Hant": "嚇一跳。……還以為是延遲。",
+    "en": "That startled me. …Thought it was lag.",
+    "ko": "깜짝이야. ……렉인 줄 알았어."
+   }
+  ],
+  "close": [
+   {
+    "ja": "……なに、かまってほしいの？ しょうがないなあ。",
+    "zh-Hant": "……幹嘛，想要我陪你嗎？真拿你沒辦法。",
+    "en": "…What, want attention? Fine, fine.",
+    "ko": "……뭐야, 놀아 달라고? 어쩔 수 없네."
+   },
+   {
+    "ja": "そこ触られると、操作ミスるんだけど。",
+    "zh-Hant": "被你碰那裡，我會操作失誤啦。",
+    "en": "Touch me there and I'll misclick, you know.",
+    "ko": "거기 만지면, 조작 실수한단 말이야."
+   },
+   {
+    "ja": "ふーん。……べつに、いやじゃないけど。",
+    "zh-Hant": "哼～嗯。……也不是討厭啦。",
+    "en": "Hmm. …Not that I mind.",
+    "ko": "흐응. ……딱히, 싫은 건 아니지만."
+   }
+  ],
+  "lover": [
+   {
+    "ja": "……配信切ったから、いっぱい触っていいよ。",
+    "zh-Hant": "……直播關了，想碰多久都可以喔。",
+    "en": "…Stream's off, so you can stay close as long as you want.",
+    "ko": "……방송 껐으니까, 마음껏 만져도 돼."
+   },
+   {
+    "ja": "ん。……となり、来る？",
+    "zh-Hant": "嗯。……要不要坐過來？",
+    "en": "Mm. …Come sit next to me?",
+    "ko": "응. ……옆에 올래?"
+   },
+   {
+    "ja": "そうやって触られるの、けっこう好き。",
+    "zh-Hant": "被你這樣碰，其實滿喜歡的。",
+    "en": "I actually kind of like it when you do that.",
+    "ko": "그렇게 만져 주는 거, 꽤 좋아."
+   }
+  ]
+ },
+ "alice": {
+  "early": [
+   {
+    "ja": "きゃっ……！ ど、どうかしましたか？",
+    "zh-Hant": "呀……！怎、怎麼了嗎？",
+    "en": "Eek…! W-what's the matter?",
+    "ko": "꺄……! 무, 무슨 일이세요?"
+   },
+   {
+    "ja": "……びっくりしました。お花の香り、ついていましたか？",
+    "zh-Hant": "……嚇了我一跳。是沾到花香了嗎？",
+    "en": "…You startled me. Did I have the scent of flowers on me?",
+    "ko": "……깜짝 놀랐어요. 꽃향기가 묻어 있었나요?"
+   },
+   {
+    "ja": "あの……少し、恥ずかしいです。",
+    "zh-Hant": "那個……有點不好意思。",
+    "en": "Um… that's a little embarrassing.",
+    "ko": "저기…… 조금 부끄러워요."
+   }
+  ],
+  "close": [
+   {
+    "ja": "……触れられると、胸がどきどきします。",
+    "zh-Hant": "……被你碰到，心就怦怦跳。",
+    "en": "…When you touch me, my heart starts pounding.",
+    "ko": "……닿으면, 가슴이 두근거려요."
+   },
+   {
+    "ja": "どうしましたか？……ふふ、さみしくなったんですか？",
+    "zh-Hant": "怎麼了嗎？……呵呵，是覺得寂寞了嗎？",
+    "en": "What is it? …Heh, were you feeling lonely?",
+    "ko": "왜 그러세요? ……후후, 외로워지셨어요?"
+   },
+   {
+    "ja": "あなたの手、やさしいですね。",
+    "zh-Hant": "你的手好溫柔呢。",
+    "en": "Your hands are gentle.",
+    "ko": "당신 손, 다정하네요."
+   }
+  ],
+  "lover": [
+   {
+    "ja": "……もう少しだけ、このままでいてもいいですか？",
+    "zh-Hant": "……可以再這樣待一下下嗎？",
+    "en": "…May we stay like this a little longer?",
+    "ko": "……조금만 더, 이대로 있어도 될까요?"
+   },
+   {
+    "ja": "ふふ……あなたに触れられるの、好きです。",
+    "zh-Hant": "呵呵……我喜歡被你碰著。",
+    "en": "Heh… I love it when you touch me.",
+    "ko": "후후…… 당신 손길, 좋아요."
+   },
+   {
+    "ja": "そんなふうにされたら、離れたくなくなります。",
+    "zh-Hant": "你這樣做，我會捨不得離開的。",
+    "en": "If you do that, I won't want to let go.",
+    "ko": "그렇게 하시면, 떨어지기 싫어져요."
+   }
+  ]
+ },
+ "eimi": {
+  "early": [
+   {
+    "ja": "あら、いきなり？……大胆なのね。",
+    "zh-Hant": "哎呀，這麼突然？……還真大膽呢。",
+    "en": "Oh my, just like that? …Bold, aren't you.",
+    "ko": "어머, 갑자기? ……대담하네."
+   },
+   {
+    "ja": "ふふ、どうしたの？ 触りたくなっちゃった？",
+    "zh-Hant": "呵呵，怎麼了？忍不住想碰我了？",
+    "en": "Heh, what's this? Couldn't resist touching me?",
+    "ko": "후후, 왜? 만지고 싶어졌어?"
+   },
+   {
+    "ja": "ちょっと、くすぐったいってば。",
+    "zh-Hant": "喂，很癢耶。",
+    "en": "Hey, that tickles.",
+    "ko": "잠깐, 간지럽다니까."
+   }
+  ],
+  "close": [
+   {
+    "ja": "……もう、からかわないでよ。ドキッとしたじゃない。",
+    "zh-Hant": "……真是的，別捉弄我啦。害我心跳了一下。",
+    "en": "…Geez, don't tease me. You made my heart jump.",
+    "ko": "……정말, 놀리지 마. 두근했잖아."
+   },
+   {
+    "ja": "ふーん、そういうことするんだ。……べつに、いいけど？",
+    "zh-Hant": "哼～，原來你會做這種事啊。……是無所謂啦？",
+    "en": "Hmm, so you're the type to do that. …Not that I mind?",
+    "ko": "흐응, 그런 거 하는구나. ……뭐, 상관없지만?"
+   },
+   {
+    "ja": "触るなら、ちゃんと責任とってよね。",
+    "zh-Hant": "要碰的話，可要好好負責喔。",
+    "en": "If you're going to touch me, take responsibility.",
+    "ko": "만질 거면, 제대로 책임져."
+   }
+  ],
+  "lover": [
+   {
+    "ja": "ふふ、キミは本当に甘えんぼね。",
+    "zh-Hant": "呵呵，你真是個愛撒嬌的人呢。",
+    "en": "Heh, you really are a softie, aren't you.",
+    "ko": "후후, 너 정말 어리광쟁이구나."
+   },
+   {
+    "ja": "……今日は、わたしが甘える番だから。",
+    "zh-Hant": "……今天輪到我撒嬌了喔。",
+    "en": "…Today it's my turn to be spoiled.",
+    "ko": "……오늘은 내가 어리광 부릴 차례야."
+   },
+   {
+    "ja": "もっと近くに来て。……ほら。",
+    "zh-Hant": "再靠近一點。……來。",
+    "en": "Come closer. …There.",
+    "ko": "더 가까이 와. ……자."
+   }
+  ]
+ }
+}

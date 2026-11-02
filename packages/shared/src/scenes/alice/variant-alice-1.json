@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "id": "variant-alice-1",
+    "star": "alice",
+    "title": {"ja": "新しい服を、あなたに", "zh-Hant": "新衣服，想讓你看", "en": "A New Dress, for You", "ko": "새 옷을, 당신에게"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 1},
+    "idle": "alice-variant-home"
+  },
+  "steps": [
+    {"id": "room", "type": "clip", "shot": "empty", "media": "alice-night", "hold": 1.5},
+    {"id": "wait", "type": "line", "voice": "/voice/scene/alice/f39eb7b444cc.mp3", "text": {"ja": "……少しだけ、待っていてください。すぐに行きますから。", "zh-Hant": "……請稍等一下。我馬上就過去。", "en": "…Please wait just a moment. I'll be right there.", "ko": "……조금만, 기다려 주세요. 금방 갈게요."}},
+    {"id": "enter", "type": "clip", "shot": "enter", "media": "alice-variant-enter", "hold": 0},
+    {"id": "ta-da", "type": "line", "voice": "/voice/scene/alice/9c0da31a52c4.mp3", "text": {"ja": "……お待たせしました。新しい服が、届いたんです。……似合って、いますか？", "zh-Hant": "……讓你久等了。新衣服到了。……適合我嗎？", "en": "…Sorry to keep you waiting. My new dress arrived. …Does it suit me?", "ko": "……기다리게 했네요. 새 옷이 도착했어요. ……어울리, 나요?"}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "quiet", "options": [{"id": "suits", "next": "suits", "label": {"ja": "すごく似合ってる", "zh-Hant": "非常適合", "en": "It really suits you", "ko": "정말 잘 어울려"}}, {"id": "stare", "next": "stare", "label": {"ja": "見とれてた", "zh-Hant": "看呆了", "en": "I couldn't take my eyes off you", "ko": "넋 놓고 봤어"}}]},
+    {"id": "suits", "type": "line", "voice": "/voice/scene/alice/e343d8c1c43a.mp3", "next": "close", "text": {"ja": "……よかった。あなたにそう言ってもらえるのが、いちばんうれしいです。", "zh-Hant": "……太好了。能被你這樣說，是我最開心的事。", "en": "…I'm glad. Hearing that from you makes me happiest.", "ko": "……다행이다. 당신이 그렇게 말해 주는 게, 가장 기뻐요."}},
+    {"id": "stare", "type": "line", "voice": "/voice/scene/alice/b496ccee4ddf.mp3", "next": "close", "text": {"ja": "……そ、そんなに見られると、恥ずかしいです。……でも、見ていてほしい、かも。", "zh-Hant": "……被、被你這樣看著，好害羞。……不過，或許也希望你一直看著我。", "en": "…B-being looked at like that is embarrassing. …But maybe I want you to keep looking.", "ko": "……그, 그렇게 보시면, 부끄러워요. ……그래도, 계속 봐 줬으면 좋겠어요……어쩌면."}},
+    {"id": "quiet", "type": "line", "voice": "/voice/scene/alice/0cd032d139e1.mp3", "text": {"ja": "……何も、おっしゃらないんですね。……お顔を見れば、わかりますけど。", "zh-Hant": "……你什麼都不說呢。……不過看你的表情就知道了。", "en": "…You're not saying anything. …I can tell from your face, though.", "ko": "……아무 말도, 안 하시네요. ……얼굴을 보면, 알지만요."}},
+    {"id": "close", "type": "clip", "shot": "close", "media": "alice-variant-close", "hold": 0},
+    {"id": "first", "type": "line", "voice": "/voice/scene/alice/eb2692053889.mp3", "text": {"ja": "この服を着てお会いするのは、あなたが最初です。……ほんとですよ？", "zh-Hant": "穿這套衣服出現在人前，你是第一個看到的。……真的喔？", "en": "You're the first person to see me in this dress. …I mean it.", "ko": "이 옷을 입고 만나는 건, 당신이 처음이에요. ……정말이라니까요?"}},
+    {"id": "reward", "type": "effect", "affinity": 5, "variantXp": 30, "memory": {"title": {"ja": "はじめて見せた服", "zh-Hant": "第一次展示的衣服", "en": "The Dress I Showed You First", "ko": "처음 보여 준 옷"}}},
+    {"id": "more", "type": "line", "voice": "/voice/scene/alice/7476a48cdf3d.mp3", "text": {"ja": "……もっと仲良くなったら、この服の私、たくさん見てほしいです。", "zh-Hant": "……等我們更親近了，希望你能多看看穿這套衣服的我。", "en": "…Once we're closer, I'd love for you to see me in this dress more often.", "ko": "……더 가까워지면, 이 옷을 입은 저를, 많이 봐 줬으면 좋겠어요."}},
+    {"id": "end", "type": "end", "outcome": "reveal"}
+  ]
+}

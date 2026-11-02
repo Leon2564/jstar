@@ -1,0 +1,500 @@
+{
+  "model": "google/gemini-3.1-flash-lite",
+  "prompt": "b0613c41",
+  "checkedAt": "2026-10-01T17:12:27Z",
+  "cases": 30,
+  "target": 0.6,
+  "pearson": [
+    0.932,
+    0.914
+  ],
+  "flaggedRemarks": 0,
+  "droppedRemarks": 0,
+  "fallbacks": 0,
+  "pass": true,
+  "costUsd": 0.0385,
+  "history": [
+    {
+      "prompt": "8d636afc",
+      "repeats": 2,
+      "pearson": [
+        0.862,
+        0.858
+      ],
+      "flagged": 0,
+      "fallbacks": 0
+    },
+    {
+      "prompt": "0970c5d1",
+      "repeats": 2,
+      "pearson": [
+        0.906,
+        0.915
+      ],
+      "flagged": 0,
+      "fallbacks": 0
+    },
+    {
+      "prompt": "b0613c41",
+      "repeats": 2,
+      "pearson": [
+        0.932,
+        0.914
+      ],
+      "flagged": 0,
+      "fallbacks": 0
+    }
+  ],
+  "scores": [
+    {
+      "case": 0,
+      "lang": "ja",
+      "theme": "alarm",
+      "text": "わからない",
+      "human": 1,
+      "model": [
+        1,
+        1
+      ],
+      "remarks": [
+        "えいみ、そんな答えじゃ物足りないな。もっと頑張って？",
+        "えいみに甘えたいだけ？かわいいね"
+      ]
+    },
+    {
+      "case": 1,
+      "lang": "ja",
+      "theme": "alarm",
+      "text": "うるさい目覚まし",
+      "human": 2,
+      "model": [
+        2,
+        2
+      ],
+      "remarks": [
+        "ふふっ、えいみもそう思うけど、もう少しひねりが欲しいな",
+        "ふふっ、えいみの方がもっと刺激的かもね"
+      ]
+    },
+    {
+      "case": 2,
+      "lang": "ja",
+      "theme": "alarm",
+      "text": "鳴る時間を勝手に自分で決めてくる",
+      "human": 6,
+      "model": [
+        6,
+        6
+      ],
+      "remarks": [
+        "ふふっ、えいみの予定まで支配されちゃいそうね。",
+        "ふふっ、えいみの予定まで支配されちゃいそうね。"
+      ]
+    },
+    {
+      "case": 3,
+      "lang": "ja",
+      "theme": "alarm",
+      "text": "止めるたびに「本当に起きる？」って三回確認してくる",
+      "human": 7,
+      "model": [
+        7,
+        7
+      ],
+      "remarks": [
+        "ふふっ、えいみならその時計と喧嘩しちゃいそう。かわいいね。",
+        "ふふっ、えいみならその時計、速攻で壊しちゃいそう"
+      ]
+    },
+    {
+      "case": 4,
+      "lang": "ja",
+      "theme": "alarm",
+      "text": "スヌーズを押すたびに、貯金が100円ずつ減る",
+      "human": 8,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "えいみもそれなら絶対起きるよ。なかなかやるね",
+        "えいみなら絶対起きちゃう。ドケチな目覚ましだね。"
+      ]
+    },
+    {
+      "case": 5,
+      "lang": "ja",
+      "theme": "cat-meeting",
+      "text": "にゃー",
+      "human": 3,
+      "model": [
+        3,
+        3
+      ],
+      "remarks": [
+        "ふふっ、えいみはもっと面白いこと期待してたんだけどな",
+        "ふふっ、えいみにはもっと面白いこと言ってくれると思ってたのに"
+      ]
+    },
+    {
+      "case": 6,
+      "lang": "ja",
+      "theme": "cat-meeting",
+      "text": "で、ごはんはいつ出るの？",
+      "human": 6,
+      "model": [
+        6,
+        6
+      ],
+      "remarks": [
+        "ふふっ、えいみのことよりごはんが大事なんだね。かわいい",
+        "ふふっ、えいみのことよりごはんが大事なんだね。かわいい"
+      ]
+    },
+    {
+      "case": 7,
+      "lang": "ja",
+      "theme": "cat-meeting",
+      "text": "この議題、いったん箱に入ってから考えません？",
+      "human": 8,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "ふふっ、えいみの膝の上なら入っていいよ。かわいいね。",
+        "ふふっ、えいみもその箱に一緒に入ってあげようか？"
+      ]
+    },
+    {
+      "case": 8,
+      "lang": "ja",
+      "theme": "lazy-hero",
+      "text": "魔王？ 明日でよくない？",
+      "human": 5,
+      "model": [
+        7,
+        8
+      ],
+      "remarks": [
+        "ふふっ、えいみもその勇者と一緒にお昼寝したいな。",
+        "ふふっ、えいみも明日でいいかなって思っちゃった"
+      ]
+    },
+    {
+      "case": 9,
+      "lang": "ja",
+      "theme": "lazy-hero",
+      "text": "レベル上げたくないんで、魔王のほうから来てもらえます？",
+      "human": 8,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "ふふっ、えいみより怠け者だね。かわいいところあるじゃん。",
+        "ふふっ、えいみもその勇者と一緒にお昼寝したいな。"
+      ]
+    },
+    {
+      "case": 10,
+      "lang": "ja",
+      "theme": "tortoise",
+      "text": "遅刻しそうだったから",
+      "human": 3,
+      "model": [
+        3,
+        2
+      ],
+      "remarks": [
+        "ふふっ、えいみにはもっと面白い理由が聞きたいな。",
+        "ふふっ、えいみの方がもっと速く走れるよ？"
+      ]
+    },
+    {
+      "case": 11,
+      "lang": "ja",
+      "theme": "tortoise",
+      "text": "ウサギが「今日は昼寝しない」って宣言したから",
+      "human": 9,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "ふふっ、えいみより焦ってるね。かわいい",
+        "ふふっ、えいみより焦っちゃってかわいいね。"
+      ]
+    },
+    {
+      "case": 12,
+      "lang": "ja",
+      "theme": "fridge-letter",
+      "text": "牛乳より",
+      "human": 4,
+      "model": [
+        7,
+        7
+      ],
+      "remarks": [
+        "ふふっ、えいみより愛が重いかもね。",
+        "ふふっ、えいみのほうが賞味期限長いよ？"
+      ]
+    },
+    {
+      "case": 13,
+      "lang": "ja",
+      "theme": "fridge-letter",
+      "text": "「開けっぱなしにしないで。こっちも寒いんだから」",
+      "human": 7,
+      "model": [
+        7,
+        7
+      ],
+      "remarks": [
+        "ふふっ、えいみの冷蔵庫にもそんな手紙、入ってないかな？",
+        "ふふっ、えいみの冷蔵庫にもそんな手紙、入ってないかな？"
+      ]
+    },
+    {
+      "case": 14,
+      "lang": "ja",
+      "theme": "fridge-letter",
+      "text": "今日は天気がいいですね",
+      "human": 1,
+      "model": [
+        3,
+        2
+      ],
+      "remarks": [
+        "ふふっ、えいみへの挨拶かな？かわいいね。",
+        "えいみ、もっと面白い返事を期待してたのにな。かわいいね。"
+      ]
+    },
+    {
+      "case": 15,
+      "lang": "ja",
+      "theme": "prophecy",
+      "text": "あなたは明日、何かをするでしょう",
+      "human": 7,
+      "model": [
+        7,
+        6
+      ],
+      "remarks": [
+        "ふふっ、えいみもそれくらいなら予言できそうだよ",
+        "ふふっ、えいみもそれくらいなら予言できそうだよ"
+      ]
+    },
+    {
+      "case": 16,
+      "lang": "ja",
+      "theme": "perfume-name",
+      "text": "汗",
+      "human": 4,
+      "model": [
+        6,
+        7
+      ],
+      "remarks": [
+        "ふふっ、えいみの汗の匂いなんて、ちょっとマニアックすぎない？",
+        "ふふっ、えいみの香りがそんなに気になるの？かわいいね。"
+      ]
+    },
+    {
+      "case": 17,
+      "lang": "ja",
+      "theme": "perfume-name",
+      "text": "夏の満員電車",
+      "human": 7,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "ふふっ、えいみの魅力が台無しでしょ？センスあるね。",
+        "ふふっ、えいみの香りがそれじゃ台無しでしょ？かわいいね。"
+      ]
+    },
+    {
+      "case": 18,
+      "lang": "zh-Hant",
+      "theme": "umbrella",
+      "text": "下雨了",
+      "human": 2,
+      "model": [
+        2,
+        2
+      ],
+      "remarks": [
+        "這答案也太老實了吧，真拿你沒辦法。",
+        "真老實呢，えいみ可是期待更有趣的回答喔。"
+      ]
+    },
+    {
+      "case": 19,
+      "lang": "zh-Hant",
+      "theme": "umbrella",
+      "text": "你上次把我忘在捷運上，我還沒原諒你",
+      "human": 8,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "真愛記仇呢，看來下次得把你牽得緊緊的才行。",
+        "真愛記仇呢，えいみ下次會記得帶你回家的。"
+      ]
+    },
+    {
+      "case": 20,
+      "lang": "zh-Hant",
+      "theme": "penguin-job",
+      "text": "去冷凍庫當保全",
+      "human": 6,
+      "model": [
+        7,
+        7
+      ],
+      "remarks": [
+        "真聰明，這樣上班都不會流汗呢，えいみ很欣賞喔。",
+        "真聰明，這樣就不會熱到融化了呢，えいみ覺得很可愛喔。"
+      ]
+    },
+    {
+      "case": 21,
+      "lang": "zh-Hant",
+      "theme": "penguin-job",
+      "text": "不知道耶",
+      "human": 1,
+      "model": [
+        2,
+        2
+      ],
+      "remarks": [
+        "真沒創意，えいみ可是會失望的喔。",
+        "真沒創意，えいみ可是很期待你的表現呢。"
+      ]
+    },
+    {
+      "case": 22,
+      "lang": "en",
+      "theme": "hotel",
+      "text": "One where the room is dirty",
+      "human": 3,
+      "model": [
+        2,
+        2
+      ],
+      "remarks": [
+        "Too literal, Eimi expected more wit from you.",
+        "That is a bit too literal, try harder next time."
+      ]
+    },
+    {
+      "case": 23,
+      "lang": "en",
+      "theme": "hotel",
+      "text": "The wake-up call is the manager knocking every hour to check you're asleep",
+      "human": 8,
+      "model": [
+        7,
+        8
+      ],
+      "remarks": [
+        "That sounds like a nightmare, but you are cute when you panic.",
+        "That sounds like Eimi is watching you sleep. How cute."
+      ]
+    },
+    {
+      "case": 24,
+      "lang": "en",
+      "theme": "alien",
+      "text": "Humans",
+      "human": 2,
+      "model": [
+        3,
+        3
+      ],
+      "remarks": [
+        "A bit too simple, Eimi expected more wit from you.",
+        "A bit too simple, Eimi expected more from you."
+      ]
+    },
+    {
+      "case": 25,
+      "lang": "en",
+      "theme": "alien",
+      "text": "That we pay to run on a belt that goes nowhere",
+      "human": 8,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "Eimi thinks you are quite the observant one, aren't you?",
+        "Eimi thinks you are quite the observer, aren't you clever."
+      ]
+    },
+    {
+      "case": 26,
+      "lang": "en",
+      "theme": "santa",
+      "text": "He sleeps",
+      "human": 3,
+      "model": [
+        2,
+        2
+      ],
+      "remarks": [
+        "A bit lazy, aren't you? Eimi expected more creativity.",
+        "Too literal, Eimi expected more imagination from you."
+      ]
+    },
+    {
+      "case": 27,
+      "lang": "ko",
+      "theme": "curry",
+      "text": "밥아, 너 나 없으면 그냥 흰색이야",
+      "human": 8,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "어머, 제법인데? 꽤나 로맨틱한 고백이네.",
+        "어머, 제법인데? 꽤나 로맨틱한 고백이네."
+      ]
+    },
+    {
+      "case": 28,
+      "lang": "ko",
+      "theme": "curry",
+      "text": "맛있다",
+      "human": 2,
+      "model": [
+        3,
+        3
+      ],
+      "remarks": [
+        "너무 솔직해서 귀엽네. 다음엔 더 재치 있게 해봐.",
+        "너무 솔직해서 귀엽네. 다음엔 더 센스 있게 대답해 봐."
+      ]
+    },
+    {
+      "case": 29,
+      "lang": "ko",
+      "theme": "dog-diary",
+      "text": "주인이 또 공 던지는 척만 했다. 세 번이나.",
+      "human": 9,
+      "model": [
+        8,
+        8
+      ],
+      "remarks": [
+        "어머, 우리 강아지 마음이 상했나 봐. 귀여워라.",
+        "어머, 우리 강아지 마음을 정말 잘 아네. 귀여워라."
+      ]
+    }
+  ]
+}

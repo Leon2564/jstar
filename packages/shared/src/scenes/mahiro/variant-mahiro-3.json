@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "variant-mahiro-3",
+    "star": "mahiro",
+    "title": {"ja": "あったかい夜のおしゃべり", "zh-Hant": "溫暖夜晚的閒聊", "en": "A Warm Night's Chat", "ko": "따뜻한 밤의 수다"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 3},
+    "idle": "mahiro-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "mahiro-variant-home", "hold": 1.5},
+    {"id": "welcome", "type": "line", "voice": "/voice/scene/mahiro/0bf576d6260a.mp3", "text": {"ja": "おかえり。……今日も、この服で待ってたよ。", "zh-Hant": "歡迎回來。……今天我也穿著這套衣服等你喔。", "en": "Welcome back. …I waited for you in this again today.", "ko": "어서 와. ……오늘도 이 옷 입고 기다리고 있었어."}},
+    {"id": "sit", "type": "line", "voice": "/voice/scene/mahiro/f0463acea0a0.mp3", "text": {"ja": "あったかいの、いれたんだ。となり、座って？", "zh-Hant": "我泡了熱飲喔。坐我旁邊好嗎？", "en": "I made something warm. Sit next to me?", "ko": "따뜻한 거 타 놨어. 옆에, 앉을래?"}},
+    {"id": "seat", "type": "choice", "timeout": 30, "onTimeout": "next-to", "options": [{"id": "next-to", "next": "next-to", "label": {"ja": "となりに座る", "zh-Hant": "坐到你旁邊", "en": "Sit beside you", "ko": "옆에 앉기"}}, {"id": "look", "next": "look", "label": {"ja": "もう少し見てたい", "zh-Hant": "想再多看你一下", "en": "I want to look a little longer", "ko": "조금 더 보고 싶어"}}]},
+    {"id": "next-to", "type": "line", "voice": "/voice/scene/mahiro/c1edf69dbe6a.mp3", "next": "ask", "text": {"ja": "ふふ、近い。……この服だと、なんだか少しどきどきするね。", "zh-Hant": "呵呵，好近。……穿這套衣服，總覺得有點心跳加速呢。", "en": "Hehe, so close. …In this outfit my heart races a little.", "ko": "후후, 가깝다. ……이 옷을 입으니까 왠지 조금 두근거리네."}},
+    {"id": "look", "type": "line", "voice": "/voice/scene/mahiro/54e5a47da85e.mp3", "next": "ask", "text": {"ja": "……もう。じゃあ、見ててもいいよ。……ちょっとだけね。", "zh-Hant": "……真是的。那就讓你看吧。……只能一下下喔。", "en": "…Oh, you. Fine, you can look. …Just a little.", "ko": "……정말. 그럼, 봐도 돼. ……조금만이야."}},
+    {"id": "ask", "type": "line", "voice": "/voice/scene/mahiro/92ac75e2f389.mp3", "text": {"ja": "今日はどんな一日だった？ ……ゆっくりでいいよ。", "zh-Hant": "今天過得怎麼樣？……慢慢說就好。", "en": "How was your day? …Take your time.", "ko": "오늘은 어떤 하루였어? ……천천히 말해도 돼."}},
+    {"id": "talk", "type": "input", "mode": "free", "timeout": 30, "next": "heard", "onTimeout": "tired"},
+    {"id": "heard", "type": "line", "voice": "/voice/scene/mahiro/c349ac982358.mp3", "next": "reward", "text": {"ja": "……そっか。話してくれて、ありがとう。", "zh-Hant": "……這樣啊。謝謝你告訴我。", "en": "…I see. Thank you for telling me.", "ko": "……그렇구나. 말해 줘서 고마워."}},
+    {"id": "tired", "type": "line", "voice": "/voice/scene/mahiro/e9a6ae34b598.mp3", "text": {"ja": "……言葉が出ないくらい、疲れてる？ いいよ、ここにいて。", "zh-Hant": "……累到說不出話了嗎？沒關係，待在這裡就好。", "en": "…Too tired for words? It's okay. Just stay here.", "ko": "……말도 안 나올 만큼 피곤해? 괜찮아, 여기 있어."}},
+    {"id": "reward", "type": "effect", "affinity": 6, "variantXp": 30},
+    {"id": "close", "type": "clip", "shot": "close", "media": "mahiro-variant-close", "hold": 0},
+    {"id": "bye", "type": "line", "voice": "/voice/scene/mahiro/c2c6751cb4e7.mp3", "text": {"ja": "……また、この服で待ってるね。あったかいの、いれておくから。", "zh-Hant": "……我會再穿著這套衣服等你。熱飲也會幫你準備好。", "en": "…I'll wait for you in this again. I'll have something warm ready.", "ko": "……또 이 옷 입고 기다릴게. 따뜻한 거 타 놓을 테니까."}},
+    {"id": "end", "type": "end", "outcome": "cozy"}
+  ]
+}

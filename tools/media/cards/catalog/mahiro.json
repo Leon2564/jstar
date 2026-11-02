@@ -1,0 +1,545 @@
+{
+  "star": "mahiro",
+  "cards": [
+    {
+      "title": {
+        "ja": "おはようの一杯",
+        "zh-Hant": "早安的一杯",
+        "en": "Morning, One Cup Each",
+        "ko": "아침의 커피 한 잔"
+      },
+      "scene": "Mahiro at a sunny kitchen counter in the morning, oversized cream cable-knit cardigan, holding a navy and a blush-pink handmade mug with steam rising, smiling at you",
+      "line": {
+        "ja": "おはよ。コーヒー、あなたの分もいれといたよ。",
+        "zh-Hant": "早安。咖啡，你的那杯我也泡好了喔。",
+        "en": "Morning. I made your coffee too.",
+        "ko": "좋은 아침. 커피, 네 것도 내려놨어."
+      }
+    },
+    {
+      "title": {
+        "ja": "窓辺で読書",
+        "zh-Hant": "窗邊讀書",
+        "en": "Reading by the Window",
+        "ko": "창가에서의 독서"
+      },
+      "scene": "Mahiro curled up on a sofa by a bright window on a quiet afternoon, a paperback open on her knees, cream knit sweater and long beige skirt, looking up at you",
+      "line": {
+        "ja": "あ、読み終わるまで待っててくれたの？ ……ありがと。",
+        "zh-Hant": "啊，你一直等我讀完嗎？……謝謝你。",
+        "en": "Oh, you waited till I finished the chapter? …Thank you.",
+        "ko": "아, 다 읽을 때까지 기다려 준 거야? ……고마워."
+      }
+    },
+    {
+      "title": {
+        "ja": "雨宿りの窓際",
+        "zh-Hant": "躲雨的窗邊",
+        "en": "Sheltering from the Rain",
+        "ko": "비 피하는 창가"
+      },
+      "scene": "Mahiro at a café window seat on a rainy afternoon, raindrops on the glass, a latte held in both hands, beige knit over a white blouse",
+      "line": {
+        "ja": "雨、やむまでここにいよっか。急がなくていいよ。",
+        "zh-Hant": "雨停之前，就待在這裡吧。不用急喔。",
+        "en": "Let's stay here till the rain stops. No need to hurry.",
+        "ko": "비 그칠 때까지 여기 있을까? 서두르지 않아도 돼."
+      }
+    },
+    {
+      "title": {
+        "ja": "洗濯日和",
+        "zh-Hant": "適合洗衣的好天氣",
+        "en": "Perfect Laundry Weather",
+        "ko": "빨래하기 좋은 날"
+      },
+      "scene": "Mahiro hanging white sheets on a sunny apartment balcony in the morning, loose light-blue linen shirt and cream trousers, a breeze in her hair",
+      "line": {
+        "ja": "いいお天気。今夜のシーツ、ふかふかだね。",
+        "zh-Hant": "天氣真好。今晚的床單會很蓬鬆喔。",
+        "en": "Such nice weather. The sheets will be so fluffy tonight.",
+        "ko": "날씨 좋다. 오늘 밤 시트는 폭신폭신하겠네."
+      }
+    },
+    {
+      "title": {
+        "ja": "今夜はなに食べる？",
+        "zh-Hant": "今晚吃什麼？",
+        "en": "What's for Dinner?",
+        "ko": "오늘 저녁엔 뭐 먹을까"
+      },
+      "scene": "Mahiro in a neighbourhood supermarket aisle in the early evening, holding a basket of vegetables, soft grey cardigan and canvas tote, turning to ask you",
+      "line": {
+        "ja": "今日はあなたの食べたいものにしよ。なにがいい？",
+        "zh-Hant": "今天就煮你想吃的吧。想吃什麼？",
+        "en": "Tonight we'll have whatever you want. What'll it be?",
+        "ko": "오늘은 네가 먹고 싶은 걸로 하자. 뭐가 좋아?"
+      }
+    },
+    {
+      "title": {
+        "ja": "ソファでうとうと",
+        "zh-Hant": "沙發上打瞌睡",
+        "en": "Dozing on the Sofa",
+        "ko": "소파에서 꾸벅꾸벅"
+      },
+      "scene": "Mahiro half-asleep on a sofa under a knit blanket in a warm lamp-lit living room at night, soft grey lounge sweater, eyes just opening toward you",
+      "line": {
+        "ja": "ん……寝てないよ。ちょっと目を閉じてただけ。",
+        "zh-Hant": "嗯……我沒睡喔。只是閉一下眼睛而已。",
+        "en": "Mm… I wasn't asleep. Just resting my eyes.",
+        "ko": "음……안 잤어. 그냥 눈 좀 감고 있었을 뿐이야."
+      }
+    },
+    {
+      "title": {
+        "ja": "ベランダの夕暮れ",
+        "zh-Hant": "陽台的黃昏",
+        "en": "Balcony at Dusk",
+        "ko": "베란다의 노을"
+      },
+      "scene": "Mahiro leaning on a high-rise balcony railing at dusk, pink and orange sky over Tokyo, cream cardigan, holding a mug",
+      "line": {
+        "ja": "見て、空がピンク色。今日もおつかれさま。",
+        "zh-Hant": "你看，天空變成粉紅色了。今天也辛苦了。",
+        "en": "Look, the sky's gone pink. You did well today.",
+        "ko": "봐봐, 하늘이 분홍색이야. 오늘도 수고했어."
+      }
+    },
+    {
+      "title": {
+        "ja": "コンビニの帰り道",
+        "zh-Hant": "便利商店的回家路",
+        "en": "The Walk Back from the Konbini",
+        "ko": "편의점에서 돌아오는 길"
+      },
+      "scene": "Mahiro walking a quiet residential street at night under streetlights, oversized hoodie and long skirt, holding a convenience-store bag with two ice creams",
+      "line": {
+        "ja": "アイス、ふたつ買っちゃった。半分こ、しよ？",
+        "zh-Hant": "冰淇淋，我買了兩支。我們一人一半吧？",
+        "en": "I bought two ice creams. Want to share?",
+        "ko": "아이스크림 두 개 사버렸어. 반씩 나눠 먹을까?"
+      }
+    },
+    {
+      "title": {
+        "ja": "朝の水やり",
+        "zh-Hant": "早晨澆花",
+        "en": "Morning Watering",
+        "ko": "아침 물 주기"
+      },
+      "scene": "Mahiro watering potted herbs and flowers on a sunny windowsill in the morning, white cotton blouse, a small tin watering can, gentle smile",
+      "line": {
+        "ja": "この子たち、あなたが来ると元気になる気がする。",
+        "zh-Hant": "總覺得你一來，這些孩子們就變得有精神了。",
+        "en": "I swear these plants perk up whenever you're here.",
+        "ko": "이 애들, 네가 오면 힘이 나는 것 같아."
+      }
+    },
+    {
+      "title": {
+        "ja": "おかえりの玄関",
+        "zh-Hant": "玄關的歡迎回家",
+        "en": "Welcome Home at the Door",
+        "ko": "현관에서 어서 와"
+      },
+      "scene": "Mahiro at the entrance of a cosy apartment in the evening, warm hallway light, cream cardigan over a white dress, reaching out to take your bag",
+      "line": {
+        "ja": "おかえり。今日もがんばったね。荷物、持つよ。",
+        "zh-Hant": "歡迎回家。今天也很努力了呢。包包我來拿。",
+        "en": "Welcome home. You worked hard today. Here, let me take that.",
+        "ko": "어서 와. 오늘도 애썼어. 짐, 내가 들게."
+      }
+    },
+    {
+      "title": {
+        "ja": "桜並木をふたりで",
+        "zh-Hant": "兩人走過櫻花道",
+        "en": "Under the Cherry Trees",
+        "ko": "둘이 걷는 벚꽃길"
+      },
+      "scene": "Mahiro on a riverside path lined with cherry blossoms in spring, light beige trench coat over a white dress, petals falling, looking back at you",
+      "line": {
+        "ja": "花びら、髪についてるよ。……とってあげる。",
+        "zh-Hant": "你頭髮上沾到花瓣了喔。……我幫你拿掉。",
+        "en": "There's a petal in your hair. …Here, let me.",
+        "ko": "꽃잎이 머리에 붙었어. ……떼어 줄게."
+      }
+    },
+    {
+      "title": {
+        "ja": "水族館の青い道",
+        "zh-Hant": "水族館的藍色隧道",
+        "en": "The Blue Tunnel",
+        "ko": "수족관의 파란 길"
+      },
+      "scene": "Mahiro inside an aquarium tunnel bathed in blue light, fish gliding overhead, navy knit and pleated midi skirt, her face softly lit as she looks at you",
+      "line": {
+        "ja": "魚より、あなたの顔ばっかり見ちゃう。なんでだろ。",
+        "zh-Hant": "比起魚，我好像一直在看你的臉。為什麼呢。",
+        "en": "I keep looking at you instead of the fish. Wonder why.",
+        "ko": "물고기보다 네 얼굴만 보게 돼. 왜 그럴까."
+      }
+    },
+    {
+      "title": {
+        "ja": "古本屋めぐり",
+        "zh-Hant": "舊書店巡禮",
+        "en": "Old Bookshop Hunt",
+        "ko": "헌책방 나들이"
+      },
+      "scene": "Mahiro in a narrow Jimbocho second-hand bookshop with tall wooden shelves, afternoon light, holding up an old book, camel coat over a knit",
+      "line": {
+        "ja": "これ、あなたが好きそうだと思って。当たり？",
+        "zh-Hant": "我覺得你會喜歡這本。猜對了嗎？",
+        "en": "I thought you'd like this one. Did I guess right?",
+        "ko": "이거, 네가 좋아할 것 같아서. 맞았어?"
+      }
+    },
+    {
+      "title": {
+        "ja": "海辺の帰り道",
+        "zh-Hant": "海邊的回程",
+        "en": "Seaside, Heading Home",
+        "ko": "바닷가에서 돌아가는 길"
+      },
+      "scene": "Mahiro on a sandy beach path at sunset, long white cotton dress with a cream cardigan, holding her sandals, golden light and gentle waves behind her",
+      "line": {
+        "ja": "靴、脱いじゃった。もうちょっとだけ、歩こ？",
+        "zh-Hant": "鞋子脫掉了。再多走一下下好嗎？",
+        "en": "I took my shoes off. Walk with me a little longer?",
+        "ko": "신발 벗어버렸어. 조금만 더 걷자?"
+      }
+    },
+    {
+      "title": {
+        "ja": "観覧車のてっぺん",
+        "zh-Hant": "摩天輪的頂端",
+        "en": "Top of the Ferris Wheel",
+        "ko": "관람차 꼭대기에서"
+      },
+      "scene": "Mahiro seated inside a Ferris wheel gondola at dusk, city lights beginning to glow below, light knit and a soft scarf, smiling across at you",
+      "line": {
+        "ja": "いちばん上に着いたら、ちょっとだけ静かにしてて。",
+        "zh-Hant": "到最高點的時候，你安靜一下下喔。",
+        "en": "When we reach the top, be quiet for a moment, okay?",
+        "ko": "제일 위에 도착하면, 잠깐만 조용히 있어 줘."
+      }
+    },
+    {
+      "title": {
+        "ja": "陶芸教室",
+        "zh-Hant": "陶藝教室",
+        "en": "Pottery Class",
+        "ko": "도예 교실"
+      },
+      "scene": "Mahiro at a pottery wheel in a sunlit studio, canvas apron over a linen shirt, hands shaping a small clay mug, laughing toward you",
+      "line": {
+        "ja": "おそろいのマグ、作ろ。あなたのは紺色ね。",
+        "zh-Hant": "我們來做成對的馬克杯吧。你的是深藍色喔。",
+        "en": "Let's make matching mugs. Yours will be navy.",
+        "ko": "커플 머그컵 만들자. 네 건 남색이야."
+      }
+    },
+    {
+      "title": {
+        "ja": "紅葉の古都",
+        "zh-Hant": "紅葉的古都",
+        "en": "Autumn in Kyoto",
+        "ko": "교토의 단풍"
+      },
+      "scene": "Mahiro on a stone path in a Kyoto temple garden under red maple leaves, burgundy knit and long camel skirt, soft afternoon light",
+      "line": {
+        "ja": "真っ赤だね。この景色、あなたと見たかったんだ。",
+        "zh-Hant": "好紅啊。這片景色，我一直想跟你一起看。",
+        "en": "It's all red. I wanted to see this with you.",
+        "ko": "새빨갛다. 이 풍경, 너랑 같이 보고 싶었어."
+      }
+    },
+    {
+      "title": {
+        "ja": "雪の日の足あと",
+        "zh-Hant": "雪日的足跡",
+        "en": "Footprints in the Snow",
+        "ko": "눈 오는 날의 발자국"
+      },
+      "scene": "Mahiro on a quiet snowy street in the evening, cream wool coat, white knit hat and mittens, snowflakes falling, cheeks pink from the cold",
+      "line": {
+        "ja": "手、冷たいでしょ。ほら、ポケットに入れて。",
+        "zh-Hant": "你的手很冰吧。來，放進我的口袋。",
+        "en": "Your hands are freezing. Here, put them in my pocket.",
+        "ko": "손 차갑지. 자, 주머니에 넣어."
+      }
+    },
+    {
+      "title": {
+        "ja": "花火のあとで",
+        "zh-Hant": "煙火之後",
+        "en": "After the Fireworks",
+        "ko": "불꽃놀이가 끝난 뒤"
+      },
+      "scene": "Mahiro at a summer festival at night in a navy yukata with small pink flowers, holding a paper fan, fireworks blooming in the sky behind her",
+      "line": {
+        "ja": "花火より、あなたの横顔を覚えてる気がする。",
+        "zh-Hant": "比起煙火，我好像更記得你的側臉。",
+        "en": "I think I'll remember your face more than the fireworks.",
+        "ko": "불꽃놀이보다 네 옆얼굴이 더 기억에 남을 것 같아."
+      }
+    },
+    {
+      "title": {
+        "ja": "光の並木道",
+        "zh-Hant": "光之林蔭道",
+        "en": "Avenue of Lights",
+        "ko": "빛의 가로수길"
+      },
+      "scene": "Mahiro on a tree-lined avenue of winter illuminations at night, cream coat and pale pink scarf, golden fairy lights in soft bokeh",
+      "line": {
+        "ja": "きれい……でも、手はつないだままでいてね。",
+        "zh-Hant": "好漂亮……不過，手要一直牽著喔。",
+        "en": "So pretty… but keep holding my hand, okay?",
+        "ko": "예쁘다……근데, 손은 계속 잡고 있어."
+      }
+    },
+    {
+      "title": {
+        "ja": "あなたの誕生日",
+        "zh-Hant": "你的生日",
+        "en": "Your Birthday",
+        "ko": "너의 생일"
+      },
+      "scene": "Mahiro at home at night holding a small strawberry cake with lit candles, candlelight on her face, cream dress, fairy lights behind",
+      "line": {
+        "ja": "お誕生日おめでとう。生まれてきてくれて、ありがと。",
+        "zh-Hant": "生日快樂。謝謝你來到這個世界上。",
+        "en": "Happy birthday. Thank you for being born.",
+        "ko": "생일 축하해. 태어나 줘서, 고마워."
+      }
+    },
+    {
+      "title": {
+        "ja": "星をさがしに",
+        "zh-Hant": "去找星星",
+        "en": "Looking for Stars",
+        "ko": "별을 찾으러"
+      },
+      "scene": "Mahiro sitting on a grassy hill at night under a starry sky, wrapped in a plaid blanket over a knit sweater, a thermos beside her",
+      "line": {
+        "ja": "流れ星、見つけたら教えてね。願いごと、もう決めてるの。",
+        "zh-Hant": "找到流星的話要告訴我喔。我的願望已經決定好了。",
+        "en": "Tell me if you see a shooting star. I already know my wish.",
+        "ko": "별똥별 보이면 알려줘. 소원은 이미 정해 놨어."
+      }
+    },
+    {
+      "title": {
+        "ja": "窓際のディナー",
+        "zh-Hant": "窗邊的晚餐",
+        "en": "Dinner by the Window",
+        "ko": "창가에서의 디너"
+      },
+      "scene": "Mahiro at a fine-dining table by a tall window at night, elegant black long-sleeve dress and pearl earrings, city lights behind, raising a glass",
+      "line": {
+        "ja": "ちょっと背伸びしちゃった。……似合ってる？",
+        "zh-Hant": "我有點打扮過頭了。……適合我嗎？",
+        "en": "I dressed up a little. …Does it suit me?",
+        "ko": "좀 과하게 꾸며 봤어. ……어울려?"
+      }
+    },
+    {
+      "title": {
+        "ja": "旅先の朝ごはん",
+        "zh-Hant": "旅途中的早餐",
+        "en": "Breakfast on Our Trip",
+        "ko": "여행지에서의 아침밥"
+      },
+      "scene": "Mahiro at a traditional ryokan breakfast table by a window with a garden view in the morning, soft beige knit, small dishes of Japanese breakfast",
+      "line": {
+        "ja": "旅先の朝って、なんでこんなに特別なんだろうね。",
+        "zh-Hant": "旅行中的早晨，為什麼會這麼特別呢。",
+        "en": "Why do mornings on a trip feel so special?",
+        "ko": "여행지에서의 아침은 왜 이렇게 특별할까."
+      }
+    },
+    {
+      "title": {
+        "ja": "最終上映のあと",
+        "zh-Hant": "最後一場電影之後",
+        "en": "After the Last Show",
+        "ko": "마지막 상영이 끝난 뒤"
+      },
+      "scene": "Mahiro outside a small cinema late at night under a glowing marquee, camel coat and scarf, holding two ticket stubs, the street softly blurred",
+      "line": {
+        "ja": "ラスト、泣いちゃった。……こっち見ないで。",
+        "zh-Hant": "結局那裡，我哭了。……不要看我啦。",
+        "en": "I cried at the ending. …Don't look at me.",
+        "ko": "마지막에 울어버렸어. ……이쪽 보지 마."
+      }
+    },
+    {
+      "title": {
+        "ja": "おでこ、こつん",
+        "zh-Hant": "額頭，輕輕碰",
+        "en": "Forehead to Forehead",
+        "ko": "이마 콩"
+      },
+      "scene": "Intimate close-up of Mahiro in soft morning window light, sitting on white linen bedding in a cream cable-knit cardigan buttoned up to the collarbone over a high-neck long white cotton dress, leaning toward the lens with a sleepy smile",
+      "line": {
+        "ja": "熱、ないね。……よかった。今日はゆっくりしよ。",
+        "zh-Hant": "沒有發燒呢。……太好了。今天就好好休息吧。",
+        "en": "No fever. …Good. Let's take it easy today.",
+        "ko": "열은 없네. ……다행이다. 오늘은 푹 쉬자."
+      },
+      "story": {
+        "ja": [
+          "朝、目が覚めたら、となりのあなたがいつもより静かだった。声をかけても「大丈夫」しか言わないから、わたしはカーディガンのボタンをとめて、そっと顔をのぞきこんだの。目の下に、うっすら影。昨日の夜、遅くまでがんばってたの、知ってるよ。\n……熱、あるのかな。体温計はどこだっけ、と思ったけど、探すより先に体が動いちゃった。前髪をよけて、おでこをこつん。ひんやりしてて、ちょっと安心した。あなたは驚いた顔で固まってて、それがおかしくて、わたしは笑いをこらえるのに必死だった。\n「ほら、熱はないよ。でも、今日はお休みの日にしよう」\n窓の外は、洗いたてみたいな青空。予定なんて、ぜんぶあとまわしでいいの。今日のわたしの予定は、あなたをゆっくりさせること。それだけ。",
+          "結局、その日はふたりでなんにもしなかった。\nお昼すぎまでシーツにくるまって、あなたが好きな古い映画を半分だけ見て、残りの半分はあなたが眠っちゃったから、わたしはその寝顔を見てた。まつげ、意外と長いんだね。知らなかった。\n夕方になって、あなたはやっと「ありがとう」って言った。わたしはそれだけで十分だったけど、ちょっとだけいじわるしたくなって、「なにが？」って聞き返したの。困った顔のあなたに、もう一回おでこをこつん。\nねえ、覚えておいてね。つかれたときは、つかれたって言っていいんだよ。あなたが言えないときは、わたしが先に気づくから。そのために、いつもあなたのこと見てるんだから。\n……今の、ちょっと恥ずかしかったね。聞かなかったことにして。"
+        ],
+        "zh-Hant": [
+          "早上醒來，身旁的你比平常安靜。問你怎麼了，你只說「沒事」，所以我扣好開襟衫的釦子，悄悄湊過去看你的臉。眼睛下面有淡淡的陰影。昨晚你忙到很晚，我都知道喔。\n……是不是發燒了呢？我想著體溫計放在哪裡，身體卻比腦袋先動了。撥開你的瀏海，額頭輕輕碰上去。涼涼的，讓我鬆了一口氣。你嚇得整個人僵住，那副樣子好好笑，我拚命忍著不笑出來。\n「你看，沒有發燒。不過，今天就當作休假吧。」\n窗外是像剛洗過一樣的藍天。行程什麼的，全部往後延也沒關係。我今天唯一的行程，就是讓你好好休息。就這樣。",
+          "結果那一天，我們兩個什麼都沒做。\n裹著床單賴到過了中午，看了你喜歡的老電影的一半，另一半因為你睡著了，我就一直看著你的睡臉。原來你的睫毛這麼長啊，我都不知道。\n到了傍晚，你終於說了一聲「謝謝」。光是這樣我就很滿足了，可是又忍不住想捉弄你一下，就反問你「謝什麼？」。看你一臉困擾，我又把額頭輕輕碰了上去。\n欸，要記得喔。累了的時候，說出「好累」也沒關係。你說不出口的時候，我會先發現的。所以我才一直看著你啊。\n……剛剛那句有點害羞呢。就當作沒聽到吧。"
+        ],
+        "en": [
+          "When I woke up, you were quieter than usual beside me. You kept saying \"I'm fine,\" so I buttoned up my cardigan and leaned over to look at your face. Faint shadows under your eyes. I know you worked late last night.\n…Did you have a fever? I wondered where the thermometer was, but my body moved before I could look for it. I brushed your fringe aside and touched my forehead to yours. Cool. I let out a breath. You froze in surprise, and it was so funny I had to fight not to laugh.\n\"See? No fever. But let's make today a day off.\"\nOutside, the sky was a freshly washed blue. The plans could all wait. My only plan for today was letting you rest. That's all.",
+          "In the end, we did nothing at all that day.\nWe stayed wrapped in the sheets past noon and watched half of that old film you love. You fell asleep for the other half, so I watched your sleeping face instead. Your eyelashes are longer than I thought. I never knew.\nBy evening you finally said \"thank you.\" That was more than enough, but I felt like teasing you a little, so I asked, \"For what?\" You looked so flustered that I touched my forehead to yours one more time.\nHey, remember this. When you're tired, you're allowed to say so. And when you can't, I'll notice first. That's why I'm always watching you.\n…That was a little embarrassing. Pretend you didn't hear it."
+        ],
+        "ko": [
+          "아침에 눈을 떴더니, 옆에 있는 네가 평소보다 조용했어. 말을 걸어도 「괜찮아」라고만 하길래, 나는 카디건 단추를 채우고, 살짝 얼굴을 들여다봤어. 눈 밑에, 옅은 그림자. 어젯밤 늦게까지 애쓴 거, 알고 있어.\n……열, 있으려나. 체온계가 어디 있더라, 생각했는데, 찾기도 전에 몸이 먼저 움직였어. 앞머리를 걷어내고, 이마를 콩. 서늘해서, 조금 안심했어. 너는 놀란 얼굴로 굳어 있었고, 그게 웃겨서, 나는 웃음을 참느라 필사적이었어.\n「봐, 열은 없어. 근데, 오늘은 쉬는 날로 하자」\n창밖은, 방금 씻은 것 같은 파란 하늘. 일정 같은 건, 다 뒤로 미뤄도 돼. 오늘 내 일정은, 너를 푹 쉬게 하는 것. 그것뿐이야.",
+          "결국, 그날은 둘이서 아무것도 하지 않았어.\n낮이 지나도록 시트를 뒤집어쓰고 있다가, 네가 좋아하는 오래된 영화를 반만 보고, 나머지 반은 네가 잠들어버려서, 나는 그 자는 얼굴을 보고 있었어. 속눈썹, 의외로 길더라. 몰랐어.\n저녁이 되어서야, 너는 겨우 「고마워」라고 말했어. 나는 그것만으로 충분했는데, 살짝 짓궂게 굴고 싶어져서, 「뭐가?」 하고 되물었어. 곤란해하는 네 얼굴에, 한 번 더 이마를 콩.\n있잖아, 기억해 둬. 힘들 땐, 힘들다고 말해도 돼. 네가 말 못 할 땐, 내가 먼저 알아챌 테니까. 그러려고, 항상 너를 보고 있는 거니까.\n……방금 그거, 좀 부끄러웠다. 못 들은 걸로 해."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "終電の肩",
+        "zh-Hant": "末班車上的肩膀",
+        "en": "Your Shoulder on the Last Train",
+        "ko": "막차에서의 어깨"
+      },
+      "scene": "Close-up of Mahiro on a late-night train seat, city lights streaking past the window, beige coat and scarf, resting her head as she looks up at the lens",
+      "line": {
+        "ja": "着くまで、こうしてていい？ あなたの肩、落ち着くの。",
+        "zh-Hant": "到站之前，可以就這樣嗎？你的肩膀讓我好安心。",
+        "en": "Can I stay like this till our stop? Your shoulder calms me.",
+        "ko": "도착할 때까지, 이러고 있어도 돼? 네 어깨, 마음이 편안해져."
+      },
+      "story": {
+        "ja": [
+          "金曜日の終電は、いつもより少しだけにぎやかで、少しだけさみしい。\n飲み会帰りの人たちの笑い声が遠ざかって、わたしたちの車両には、いつのまにか数人しか残ってなかった。窓の外を、街の明かりが線になって流れていく。\nあなたは疲れてるはずなのに、今日あった話をずっとしてくれた。上司の口ぐせのこと、お昼に食べたカレーのこと。わたしは相づちを打ちながら、あなたの声がだんだんゆっくりになっていくのを聞いてた。\n「ねえ、肩、借りてもいい？」\n本当は、あなたを休ませたかったのに、口から出たのは反対の言葉。あなたが笑ってうなずいたから、わたしはコートの襟に顔をうずめるみたいに、そっと頭をあずけたの。あったかくて、心臓の音が少しだけ聞こえた。",
+          "目を閉じてたのは、ほんの数分のつもりだった。\n気がついたら、あなたの手がわたしの前髪をそっと直してて、わたしは寝たふりを続けるか、目を開けるか、すごく迷った。……迷ってるうちに、あなたが小さく「おつかれさま」ってつぶやいたの。それ、いつもわたしがあなたに言う言葉なのに。\n次の駅のアナウンスで、わたしはわざとゆっくり目を開けた。\n「……寝てた？」\n「ちょっとだけね」\nあなたの肩には、わたしのマフラーの跡がくっきりついてた。ごめんねって言ったら、「勲章だよ」なんて言うから、わたしは窓のほうを向いて、赤くなった顔をかくした。\n窓ガラスには、並んで座るふたりがうっすら映ってた。なんだか、ずっと前からこうしてたみたいに見えたの。\n降りる駅まで、あと二つ。もう少しだけ、このままでいさせてね。"
+        ],
+        "zh-Hant": [
+          "星期五的末班車，總是比平常熱鬧一點，也寂寞一點。\n聚餐回家的人們的笑聲漸漸遠去，不知不覺，我們這節車廂只剩下幾個人。窗外，街上的燈光拉成一條條線流過。\n你明明應該很累了，卻一直跟我說今天發生的事。上司的口頭禪、午餐吃的咖哩。我一邊附和，一邊聽著你的聲音慢慢變得緩慢。\n「欸，肩膀可以借我一下嗎？」\n其實我是想讓你休息的，說出口的卻是相反的話。你笑著點點頭，於是我像把臉埋進大衣領子裡那樣，輕輕把頭靠了過去。好溫暖，還隱約聽得到心跳聲。",
+          "我本來只打算閉上眼睛幾分鐘而已。\n回過神來，你的手正輕輕幫我整理瀏海。我好猶豫，是要繼續裝睡，還是睜開眼睛。……正在猶豫的時候，你小聲地說了一句「辛苦了」。那明明是我平常對你說的話。\n下一站的廣播響起，我故意慢慢地睜開眼睛。\n「……我睡著了嗎？」\n「一下下而已。」\n你的肩膀上，清楚留著我圍巾的痕跡。我說對不起，你卻說「這是勳章」，害我只好轉向窗戶，藏起發紅的臉。\n車窗玻璃上，淡淡映著並肩坐著的我們。看起來，就像很久以前就一直這樣了。\n離下車還有兩站。再讓我這樣靠一下下吧。"
+        ],
+        "en": [
+          "The last train on a Friday is always a little livelier than usual, and a little lonelier too.\nThe laughter of people heading home from parties faded, and before long only a few of us were left in the carriage. Outside, the city lights streamed past in lines.\nYou must have been exhausted, but you kept telling me about your day. Your boss's favourite phrase. The curry you had for lunch. I murmured along, listening to your voice slowly getting slower.\n\"Hey, can I borrow your shoulder?\"\nI'd wanted you to rest, but the opposite came out of my mouth. You smiled and nodded, so I leaned my head against you, as if tucking my face into the collar of my coat. It was warm, and I could just hear your heartbeat.",
+          "I only meant to close my eyes for a few minutes.\nThe next thing I knew, your hand was gently fixing my fringe, and I couldn't decide whether to keep pretending to sleep or open my eyes. …While I was deciding, you whispered \"good work today.\" That's what I always say to you.\nWhen the next station was announced, I opened my eyes slowly, on purpose.\n\"…Was I asleep?\"\n\"Just a little.\"\nMy scarf had left a clear mark on your shoulder. When I said sorry, you called it \"a medal,\" so I turned to the window to hide how red my face was.\nThe window glass held a faint reflection of the two of us side by side. It looked as if we'd been sitting like this for a very long time.\nTwo more stops. Let me stay like this just a little longer."
+        ],
+        "ko": [
+          "금요일 막차는, 평소보다 조금 시끌벅적하고, 조금 쓸쓸해.\n회식 끝나고 돌아가는 사람들의 웃음소리가 멀어지고, 우리가 탄 칸에는 어느새 몇 명밖에 남아 있지 않았어. 창밖으로, 거리의 불빛이 선이 되어 흘러갔어.\n너는 분명 피곤할 텐데, 오늘 있었던 이야기를 계속 해줬어. 상사의 말버릇, 점심에 먹은 카레 이야기. 나는 맞장구치면서, 네 목소리가 점점 느려지는 걸 듣고 있었어.\n「저기, 어깨 좀 빌려줄래?」\n사실은, 너를 쉬게 하고 싶었는데, 입에서 나온 건 반대되는 말이었어. 네가 웃으며 고개를 끄덕여서, 나는 코트 깃에 얼굴을 파묻듯이, 살며시 머리를 기댔어. 따뜻해서, 심장 소리가 살짝 들렸어.",
+          "눈을 감고 있던 건, 그냥 몇 분만 그럴 생각이었어.\n정신을 차려보니, 네 손이 내 앞머리를 살며시 매만지고 있었고, 나는 자는 척을 계속할지, 눈을 뜰지 몹시 망설였어. ……망설이는 사이에, 네가 작게 「수고했어」라고 중얼거렸어. 그거, 늘 내가 너한테 하는 말인데.\n다음 역 안내 방송에, 나는 일부러 천천히 눈을 떴어.\n「……잤어?」\n「조금만」\n네 어깨에는, 내 목도리 자국이 선명하게 남아 있었어. 미안하다고 했더니, 「훈장이야」라고 하길래, 나는 창문 쪽을 보며 빨개진 얼굴을 숨겼어.\n창유리에는, 나란히 앉은 우리 둘이 희미하게 비쳤어. 왠지, 오래전부터 이러고 있었던 것처럼 보였어.\n내릴 역까지, 이제 두 정거장. 조금만 더, 이대로 있게 해줘."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "おやすみの前に",
+        "zh-Hant": "晚安之前",
+        "en": "Before Goodnight",
+        "ko": "잘 자기 전에"
+      },
+      "scene": "Close-up of Mahiro lying on her side on a pillow under warm bedside lamp light, long-sleeve cotton pajamas buttoned to the collar, a blanket pulled up to her shoulder, gazing at the lens",
+      "line": {
+        "ja": "電気消す前に、もう少しだけ話そ。あなたの声、好き。",
+        "zh-Hant": "關燈之前，再多聊一下吧。我喜歡你的聲音。",
+        "en": "Before the lights go out, talk a little more. I like your voice.",
+        "ko": "불 끄기 전에, 조금만 더 얘기하자. 네 목소리, 좋아."
+      },
+      "story": {
+        "ja": [
+          "電気を消す前の、この時間がいちばん好き。\nベッドサイドのランプだけつけて、枕をふたつ並べて、今日のことをぽつぽつ話す。大きなできごとなんてなくていいの。コンビニの新しいプリンがおいしかったとか、駅前の桜がつぼみをつけてたとか、そういう話。\nあなたはときどき、話しながら眠そうに目をこする。そのたびにわたしは「もう寝る？」って聞くんだけど、あなたは「まだ」って言う。ほんとは、わたしもまだ寝たくない。\nランプのオレンジ色の光が、あなたの横顔をやわらかくしてる。毎日見てるはずなのに、この時間のあなたは少しだけ違って見えるの。昼間より、ずっと素直な顔。\n「あなたの声、好きだな」って言ったら、あなたは照れて、布団を鼻まで引っぱりあげた。",
+          "その夜、あなたはめずらしく、少しだけ弱音をはいた。\n仕事のこと、うまくいかなかったこと、誰にも言えなかったこと。わたしは布団の中で、あなたの話をさえぎらないように、ただ静かに聞いてた。答えなんて、たぶんあなたは求めてなかったから。\n話し終わったあなたは、「ごめん、こんな話して」って謝った。\n「どうして謝るの？ わたしは、聞けてうれしかったよ」\n本当のことだった。いいところだけじゃなくて、しんどいところも見せてくれるのが、なによりうれしいの。\nランプを消すと、部屋は窓からの街明かりだけになった。暗がりの中で、あなたの呼吸がゆっくりになっていくのを数えながら、わたしも目を閉じた。\nおやすみ。明日の朝も、いちばんに「おはよう」って言わせてね。"
+        ],
+        "zh-Hant": [
+          "我最喜歡關燈前的這段時間。\n只開著床頭燈，兩個枕頭並排，斷斷續續地聊今天的事。不需要什麼大事。像是便利商店新出的布丁很好吃、車站前的櫻花冒出花苞了，這種小事就好。\n你有時候會邊說邊揉著想睡的眼睛。每次我問「要睡了嗎？」，你都說「還沒」。其實，我也還不想睡。\n檯燈橘色的光，讓你的側臉變得好柔和。明明每天都看著你，這個時間的你卻看起來有點不一樣。比白天坦率許多的表情。\n我說「我喜歡你的聲音」，你害羞地把被子一路拉到鼻子。",
+          "那天晚上，你難得說了一點喪氣話。\n工作的事、不順利的事、沒辦法跟任何人說的事。我在被窩裡，靜靜地聽著，不打斷你。因為你要的，大概不是答案吧。\n說完之後，你向我道歉：「抱歉，跟你說這些。」\n「為什麼要道歉？能聽你說，我很開心喔。」\n那是真心話。不只是好的一面，連辛苦的一面也願意讓我看到，比什麼都讓我開心。\n關掉檯燈，房間裡只剩窗外的街燈。我在黑暗中數著你漸漸放慢的呼吸，也閉上了眼睛。\n晚安。明天早上，也讓我第一個對你說「早安」吧。"
+        ],
+        "en": [
+          "This is my favourite time: just before the lights go out.\nOnly the bedside lamp on, two pillows side by side, talking about the day in bits and pieces. Nothing big has to have happened. The new pudding at the konbini was good. The cherry trees by the station have buds. That kind of thing.\nNow and then you rub your sleepy eyes while you talk. Every time, I ask \"Going to sleep?\" and every time you say \"Not yet.\" Truthfully, I don't want to sleep yet either.\nThe lamp's orange light softens your profile. I see you every day, but at this hour you look a little different. A much more honest face than in the daytime.\nWhen I said \"I like your voice,\" you got shy and pulled the covers up to your nose.",
+          "That night, for once, you let a few worries slip.\nAbout work, about things that didn't go well, about things you couldn't tell anyone. Under the covers, I just listened quietly, careful not to interrupt. I don't think you wanted answers.\nWhen you finished, you apologised: \"Sorry for dumping all that on you.\"\n\"Why are you sorry? I'm glad I got to hear it.\"\nI meant it. Nothing makes me happier than you showing me the hard parts too, not just the good ones.\nWhen I switched off the lamp, only the city light from the window was left. In the dark, I counted your breaths as they slowed, and closed my eyes too.\nGoodnight. Let me be the first to say \"good morning\" tomorrow, too."
+        ],
+        "ko": [
+          "불 끄기 전, 이 시간이 제일 좋아.\n침대 옆 램프만 켜놓고, 베개 두 개를 나란히 놓고, 오늘 있었던 일을 두런두런 얘기해. 대단한 일이 아니어도 돼. 편의점 새 푸딩이 맛있었다든가, 역 앞 벚나무에 꽃봉오리가 맺혔다든가, 그런 이야기.\n너는 가끔, 얘기하면서 졸린 듯 눈을 비벼. 그럴 때마다 나는 「이제 잘래?」 하고 묻는데, 너는 「아직」이라고 말해. 사실은, 나도 아직 자고 싶지 않아.\n램프의 주황빛이, 네 옆얼굴을 부드럽게 감싸. 매일 보는데도, 이 시간의 너는 조금 다르게 보여. 낮보다 훨씬 솔직한 얼굴.\n「네 목소리, 좋아해」라고 말했더니, 너는 부끄러워하며 이불을 코까지 끌어올렸어.",
+          "그날 밤, 너는 드물게, 조금 약한 소리를 했어.\n일 얘기, 잘 안 풀렸던 일, 아무한테도 말 못 했던 일. 나는 이불 속에서, 네 이야기를 끊지 않으려고, 그저 조용히 듣고 있었어. 답 같은 건, 아마 네가 바라던 게 아니었을 테니까.\n이야기를 마친 너는, 「미안, 이런 얘기 해서」라며 사과했어.\n「왜 미안해해? 나는, 들을 수 있어서 기뻤어」\n진심이었어. 좋은 면만이 아니라, 힘든 면도 보여주는 게, 무엇보다 기뻐.\n램프를 끄니, 방은 창문으로 들어오는 거리의 불빛만 남았어. 어둠 속에서, 네 숨소리가 천천히 느려지는 걸 세면서, 나도 눈을 감았어.\n잘 자. 내일 아침도, 제일 먼저 「좋은 아침」이라고 말하게 해줘."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "マフラー、半分こ",
+        "zh-Hant": "圍巾，一人一半",
+        "en": "Half the Scarf",
+        "ko": "목도리, 반씩 나눠서"
+      },
+      "scene": "Close-up of Mahiro outdoors on a snowy night, a long cream knit scarf wrapped around her neck and extending toward the lens, cream wool coat, snowflakes and warm streetlight bokeh",
+      "line": {
+        "ja": "ほら、こうすれば二人ともあったかいでしょ。",
+        "zh-Hant": "你看，這樣兩個人都很暖和吧。",
+        "en": "See? This way we're both warm.",
+        "ko": "봐, 이렇게 하면 둘 다 따뜻하지?"
+      },
+      "story": {
+        "ja": [
+          "その日は、朝の天気予報がはずれて、夕方から雪になった。\n待ち合わせの駅前で、あなたはマフラーも手袋も忘れて、肩をすくめて立ってた。遠くから見ても寒そうで、わたし、思わず走っちゃったの。雪で足がすべりそうになって、あなたに笑われた。\n「なんでそんな薄着なの」\n怒ったふりをしながら、わたしは自分のマフラーをほどいた。長めのクリーム色のニット。去年の冬に、自分で編んだやつ。長すぎて失敗したと思ってたけど、今日やっと、その理由がわかった気がする。\nくるくるっと、まずはわたしの首に一周。残りをあなたの首に一周。ふたりの距離は、マフラー一本ぶん。\n「これで、二人ともあったかいでしょ」\nあなたの頬が赤いのは、寒さのせいってことにしておいてあげる。",
+          "マフラーでつながったまま歩くのって、思ったよりむずかしい。\n歩幅を合わせないと、どっちかの首がきゅっと引っぱられる。最初はぎこちなかったのに、商店街を抜けるころには、ふたりの足音がきれいにそろってた。\n雪は街灯の下で、ゆっくり落ちてくる。あなたが空を見上げて「きれいだね」って言ったから、わたしも見上げた。まつげに雪がのって、冷たくて、ちょっと笑った。\n家の前に着いて、マフラーをほどこうとしたら、あなたが「もう少し」って言ったの。めずらしいね、あなたからそんなこと言うの。\nだから、わたしたちはしばらく玄関の前で、雪が積もっていくのを見てた。指先は冷たかったけど、首元だけはずっとあったかかった。\n来年の冬は、ちゃんと二本編むね。……やっぱり、一本でいいかな。"
+        ],
+        "zh-Hant": [
+          "那天早上的氣象預報不準，傍晚開始下起了雪。\n在約好的車站前，你忘了圍巾也忘了手套，縮著肩膀站在那裡。遠遠看就覺得好冷，我忍不住跑了過去。腳差點在雪上滑倒，還被你笑了。\n「怎麼穿這麼少啊。」\n我假裝生氣，一邊解開自己的圍巾。偏長的奶油色針織圍巾，是去年冬天我自己織的。本來以為織太長是失敗了，今天好像終於明白原因了。\n一圈，先繞在我的脖子上。剩下的一圈，繞在你的脖子上。我們之間的距離，剛好一條圍巾。\n「這樣，兩個人都很暖和吧。」\n你的臉頰會紅，就當作是天氣太冷好了。",
+          "被一條圍巾連著走路，比想像中還難。\n步伐不一致的話，總有一個人的脖子會被拉緊。一開始走得好彆扭，但穿過商店街的時候，我們的腳步聲已經整整齊齊了。\n雪在路燈下慢慢飄落。你抬頭說「好美」，我也跟著抬頭。雪花落在睫毛上，冰冰的，讓我笑了出來。\n到了家門前，我正要解開圍巾，你卻說「再一下」。真難得，你會主動說這種話。\n所以，我們在門口站了好一會兒，看著雪慢慢堆積。指尖是冰的，只有脖子一直暖暖的。\n明年冬天，我會好好織兩條。……還是，一條就夠了吧。"
+        ],
+        "en": [
+          "The morning forecast got it wrong that day; it started snowing in the evening.\nAt the station where we'd arranged to meet, you'd forgotten both scarf and gloves and stood there hunching your shoulders. You looked cold even from far away, and I found myself running. I nearly slipped in the snow and you laughed at me.\n\"Why are you dressed so lightly?\"\nPretending to be cross, I unwound my scarf. A long cream knit I made myself last winter. I thought I'd failed by making it too long, but today I finally understood why.\nOne loop around my neck first. The rest, one loop around yours. The distance between us: exactly one scarf.\n\"There. Now we're both warm.\"\nI'll let you blame the cold for your red cheeks.",
+          "Walking while tied together by a scarf is harder than it sounds.\nIf our steps don't match, someone's neck gets a tug. We were clumsy at first, but by the end of the shopping street our footsteps had fallen perfectly into time.\nThe snow drifted down slowly under the streetlights. You looked up and said \"It's beautiful,\" so I looked up too. Snowflakes landed on my lashes, cold, and I laughed.\nAt my door, when I went to unwind the scarf, you said \"A bit longer.\" That's rare, you saying something like that.\nSo we stood by the door for a while, watching the snow pile up. My fingertips were cold, but my neck stayed warm the whole time.\nNext winter, I'll knit two properly. …Actually, maybe one is enough."
+        ],
+        "ko": [
+          "그날은, 아침 일기예보가 틀려서, 저녁부터 눈이 내렸어.\n만나기로 한 역 앞에서, 너는 목도리도 장갑도 깜빡하고, 어깨를 움츠린 채 서 있었어. 멀리서 봐도 추워 보여서, 나도 모르게 뛰어갔어. 눈길에 발이 미끄러질 뻔해서, 너한테 웃음을 샀어.\n「왜 그렇게 얇게 입고 왔어」\n화난 척하면서, 나는 내 목도리를 풀었어. 좀 긴 크림색 니트 목도리. 작년 겨울에, 내가 직접 뜬 거야. 너무 길게 떠서 실패했다고 생각했는데, 오늘에서야 그 이유를 알 것 같아.\n빙글, 먼저 내 목에 한 바퀴. 나머지를 네 목에 한 바퀴. 우리 둘 사이 거리는, 목도리 한 개만큼.\n「이러면, 둘 다 따뜻하지?」\n네 볼이 빨개진 건, 추위 탓으로 해줄게.",
+          "목도리로 이어진 채 걷는 건, 생각보다 어려웠어.\n보폭을 맞추지 않으면, 한쪽 목이 꽉 당겨져. 처음엔 어색했는데, 상점가를 지날 때쯤엔 우리 둘 발소리가 딱 맞아떨어졌어.\n눈은 가로등 아래서, 천천히 떨어졌어. 네가 하늘을 올려다보며 「예쁘다」라고 해서, 나도 올려다봤어. 속눈썹에 눈이 앉아서, 차갑고, 살짝 웃음이 났어.\n집 앞에 도착해서, 목도리를 풀려고 했더니, 네가 「조금만 더」라고 말했어. 신기하네, 네가 먼저 그런 말을 하다니.\n그래서 우리는 한동안 현관 앞에서, 눈이 쌓여가는 걸 보고 있었어. 손끝은 차가웠지만, 목덜미만은 계속 따뜻했어.\n내년 겨울엔, 제대로 두 개 뜰게. ……역시, 하나로 충분할까."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "ふたつのマグカップ",
+        "zh-Hant": "兩隻馬克杯",
+        "en": "Two Mugs",
+        "ko": "두 개의 머그컵"
+      },
+      "scene": "Mahiro's signature: a high-rise apartment balcony at blue hour, sheer white curtains breathing in the breeze, oversized cream cable-knit cardigan over a white dress, holding a navy and a blush-pink handmade mug, Tokyo lights below, looking into the lens",
+      "line": {
+        "ja": "紺色のほうは、あなたの。ずっと、ここに置いておくね。",
+        "zh-Hant": "深藍色的那隻是你的。我會一直把它放在這裡喔。",
+        "en": "The navy one's yours. I'll always keep it right here.",
+        "ko": "남색 쪽은, 네 거야. 계속, 여기 놔둘게."
+      },
+      "story": {
+        "ja": [
+          "このマグカップ、陶芸教室で作ったの、覚えてる？\nわたしが薄いピンク、あなたが紺色。ろくろの上で、あなたの粘土は何度もくずれて、先生が見かねて手伝ってくれたよね。できあがったのは、ちょっといびつで、持ち手が少しななめのマグ。あなたは「失敗作だ」って笑ってたけど、わたしはひと目で気に入ったの。\nそれからずっと、ふたつは並んで食器棚にいる。あなたが来ない日も、紺色のほうだけは誰にも使わせないで、ちゃんとそこに置いてある。\n夕方、ベランダのカーテンがふくらむ時間。空がゆっくり藍色になって、街の灯りがひとつずつ点いていく。わたしはお湯をわかして、ふたつのマグにココアを注ぐ。\nあなたが来るかどうか、わからない日でもね。",
+          "今日は来てくれた。\n玄関の音がしたとき、わたし、マグを持ったまま振り返って、ちょっとこぼしそうになった。あなたは少し疲れた顔をしてたけど、ベランダに出て、街を見下ろして、深呼吸をひとつした。\n「はい、あなたの」\n紺色のマグを渡すと、あなたは両手でつつむように受け取った。持ち手がななめだから、そうやって持つのがいちばん落ち着くんだって。作った本人しか知らない、小さなくせ。\nしばらく、ふたりとも黙ってた。風がカーテンをゆらして、遠くで電車の音がして、ココアの湯気が夜の空気にとけていく。\nねえ、あなたがどこで何をしていても、ここに帰ってくる場所があるって、覚えておいてね。紺色のマグは、ずっとここ。わたしも、ずっとここ。\n……それだけ、言いたかったの。おかえり。"
+        ],
+        "zh-Hant": [
+          "還記得這兩隻馬克杯，是在陶藝教室做的嗎？\n我的是淡粉紅，你的是深藍色。在轆轤上，你的黏土塌了好幾次，老師看不下去還來幫忙了呢。做出來的是有點歪、把手有點斜的馬克杯。你笑說「這是失敗作」，我卻一眼就喜歡上了。\n從那之後，兩隻杯子一直並排待在碗櫃裡。就算你沒來的日子，深藍色那隻也不給任何人用，好好地放在那裡。\n傍晚，陽台窗簾被風吹得鼓起的時候。天空慢慢變成靛藍色，街上的燈一盞一盞亮起。我燒好熱水，在兩隻杯子裡倒進可可。\n就算是不知道你會不會來的日子，也一樣喔。",
+          "今天，你來了。\n聽到玄關的聲音時，我拿著杯子轉過身，差點把可可灑出來。你看起來有點累，但走到陽台上，俯瞰著城市，深深吸了一口氣。\n「給你，你的。」\n我把深藍色的杯子遞給你，你用雙手捧著接過去。你說因為把手是斜的，這樣拿最安穩。只有做杯子的人才知道的小習慣。\n有好一陣子，我們兩個都沒說話。風吹動窗簾，遠處傳來電車聲，可可的熱氣融進夜晚的空氣裡。\n欸，不管你在哪裡、做著什麼，都要記得，這裡有一個你可以回來的地方。深藍色的杯子會一直在這裡。我也會一直在這裡。\n……我只是想說這些而已。歡迎回來。"
+        ],
+        "en": [
+          "Do you remember making these mugs at the pottery class?\nMine pale pink, yours navy. Your clay kept collapsing on the wheel until the teacher finally stepped in to help. What came out was a slightly lopsided mug with a handle that leans a little. You laughed and called it a failure, but I loved it at first sight.\nEver since, the two of them have sat side by side in my cupboard. Even on days you don't come, no one else gets to use the navy one. It stays right there.\nIn the evening, when the balcony curtains billow, the sky turns slowly indigo and the city lights come on one by one. I boil water and pour cocoa into both mugs.\nEven on days I don't know if you'll come.",
+          "Today, you came.\nWhen I heard the door, I turned around with a mug in my hand and nearly spilled it. You looked a little tired, but you stepped out onto the balcony, looked down at the city and took one deep breath.\n\"Here. Yours.\"\nI handed you the navy mug and you took it in both hands. Because the handle leans, you say that's the steadiest way to hold it. A small habit only the one who made it would know.\nFor a while, neither of us spoke. The wind stirred the curtains, a train sounded far away, and the steam from the cocoa melted into the night air.\nHey, wherever you are and whatever you're doing, remember there's a place here to come back to. The navy mug will always be here. So will I.\n…That's all I wanted to say. Welcome home."
+        ],
+        "ko": [
+          "이 머그컵, 도예 교실에서 만든 거, 기억해?\n나는 연분홍, 너는 남색. 물레 위에서, 네 점토는 몇 번이나 무너져서, 선생님이 보다 못해 도와주셨잖아. 완성된 건, 조금 삐뚤빼뚤하고 손잡이가 살짝 기울어진 머그컵. 너는 「실패작이네」라며 웃었지만, 나는 한눈에 마음에 들었어.\n그때부터 쭉, 둘은 나란히 찬장에 있어. 네가 오지 않는 날에도, 남색 쪽만은 아무도 못 쓰게 하고, 제대로 그 자리에 놔둬.\n저녁, 베란다 커튼이 부풀어 오르는 시간. 하늘이 천천히 남색으로 물들고, 거리의 불빛이 하나씩 켜져. 나는 물을 끓여서, 두 머그컵에 코코아를 따라.\n네가 올지 안 올지, 모르는 날에도 말이야.",
+          "오늘은 와줬어.\n현관 소리가 났을 때, 나는 머그컵을 든 채 돌아보다가, 살짝 쏟을 뻔했어. 너는 조금 지친 얼굴이었지만, 베란다로 나가서, 거리를 내려다보며 심호흡을 한 번 했어.\n「자, 네 거야」\n남색 머그컵을 건네자, 너는 두 손으로 감싸듯 받았어. 손잡이가 비스듬해서, 그렇게 쥐는 게 제일 안정된다면서. 만든 사람만 아는, 작은 버릇.\n한동안, 둘 다 말이 없었어. 바람이 커튼을 흔들고, 멀리서 전철 소리가 나고, 코코아 김이 밤공기 속에 녹아들었어.\n있잖아, 네가 어디서 뭘 하고 있든, 여기 돌아올 곳이 있다는 거, 기억해 둬. 남색 머그컵은, 계속 여기. 나도, 계속 여기.\n……그 말이 하고 싶었어. 어서 와."
+        ]
+      }
+    }
+  ]
+}

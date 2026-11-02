@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "id": "variant-nana-1",
+    "star": "nana",
+    "title": {"ja": "じゃーん！新しい服", "zh-Hant": "鏘鏘！新衣服", "en": "Ta-da! New Clothes", "ko": "짜잔! 새 옷"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 1},
+    "idle": "nana-variant-home"
+  },
+  "steps": [
+    {"id": "room", "type": "clip", "shot": "empty", "media": "nana-night", "hold": 1.5},
+    {"id": "wait", "type": "line", "voice": "/voice/scene/nana/489ab20bc144.mp3", "text": {"ja": "ちょっと待ってて！ いま準備してるから、のぞいちゃだめだよ！", "zh-Hant": "等我一下！我正在準備，不可以偷看喔！", "en": "Wait a sec! I'm getting ready, so no peeking!", "ko": "잠깐 기다려! 지금 준비 중이니까, 훔쳐보면 안 돼!"}},
+    {"id": "enter", "type": "clip", "shot": "enter", "media": "nana-variant-enter", "hold": 0},
+    {"id": "ta-da", "type": "line", "voice": "/voice/scene/nana/e8ecbe248891.mp3", "text": {"ja": "じゃーん！ 新しい服、届いたの！ ……ねえねえ、どう？", "zh-Hant": "鏘鏘！新衣服到了！……欸欸，怎麼樣？", "en": "Ta-da! My new outfit came! …Well? Well?", "ko": "짜잔! 새 옷 도착했어! ……저기저기, 어때?"}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "quiet", "options": [{"id": "suits", "next": "suits", "label": {"ja": "かわいい！", "zh-Hant": "好可愛！", "en": "So cute!", "ko": "귀여워!"}}, {"id": "stare", "next": "stare", "label": {"ja": "見とれてた", "zh-Hant": "看呆了", "en": "I was staring", "ko": "넋 놓고 봤어"}}]},
+    {"id": "suits", "type": "line", "voice": "/voice/scene/nana/4f420378f9b6.mp3", "next": "close", "text": {"ja": "えへへ、やったー！ キミにいちばんに見せたかったんだ！", "zh-Hant": "嘿嘿，太好了！我就是想第一個給你看！", "en": "Hehe, yay! I wanted you to see it first!", "ko": "에헤헤, 아싸! 너한테 제일 먼저 보여 주고 싶었어!"}},
+    {"id": "stare", "type": "line", "voice": "/voice/scene/nana/9905a4f9fa1c.mp3", "next": "close", "text": {"ja": "え、そんなにじっと見る？ ……うれしいけど、照れるじゃん！", "zh-Hant": "咦，看得那麼認真？……很開心，可是會害羞啦！", "en": "Wait, you're staring that hard? …I'm happy, but that's embarrassing!", "ko": "어, 그렇게 빤히 봐? ……기쁘지만, 부끄럽잖아!"}},
+    {"id": "quiet", "type": "line", "voice": "/voice/scene/nana/ff02affff4f9.mp3", "text": {"ja": "……あれ、なにも言ってくれない？ ……もしかして、見とれてた？ えへへ。", "zh-Hant": "……咦，什麼都不說？……難道是看呆了？嘿嘿。", "en": "…Huh, nothing? …Were you staring? Hehe.", "ko": "……어라, 아무 말도 안 해 줘? ……혹시 넋 놓고 봤어? 에헤헤."}},
+    {"id": "close", "type": "clip", "shot": "close", "media": "nana-variant-close", "hold": 0},
+    {"id": "first", "type": "line", "voice": "/voice/scene/nana/10a50ba01fe6.mp3", "text": {"ja": "この服で会うの、キミがいちばん最初なんだからね！", "zh-Hant": "穿這套衣服給人看，你可是第一個喔！", "en": "You're the very first to see me in this, you know!", "ko": "이 옷 입은 모습, 네가 제일 처음 보는 거니까!"}},
+    {"id": "reward", "type": "effect", "affinity": 5, "variantXp": 30, "memory": {"title": {"ja": "じゃーん！の夜", "zh-Hant": "「鏘鏘！」之夜", "en": "The Ta-da Night", "ko": "'짜잔!'의 밤"}}},
+    {"id": "more", "type": "line", "voice": "/voice/scene/nana/b112f5610115.mp3", "text": {"ja": "もっと仲良くなったら、この服でいっぱい遊ぼうね！", "zh-Hant": "等我們更親近，就穿這套衣服一起玩個夠吧！", "en": "Once we're closer, let's have tons of fun in this outfit!", "ko": "더 친해지면, 이 옷 입고 신나게 놀자!"}},
+    {"id": "end", "type": "end", "outcome": "reveal"}
+  ]
+}

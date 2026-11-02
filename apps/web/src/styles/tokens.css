@@ -1,0 +1,114 @@
+/*
+ * JSTAR visual system v1 — the tokens, defined here and nowhere else (#162). The home page, her room and every
+ * screen read them; docs/design-system.md explains them, /#/design shows them (test and demo sites only).
+ * The approved room design (A2「夜畫廊」) is docs/design/room-v2/.
+ */
+
+/* zh-Hant: Chinese punctuation (，。「」…) from a Traditional Chinese face, so it sits centred as Taiwan writes it,
+   never the Japanese corner shapes of Shippori Mincho / Zen Kaku Gothic. Faces already on the device only. local()
+   matches a face's full or PostScript name, never its family name (Chrome): 'PingFang TC Regular' and
+   'PingFangTC-Regular' match, 'PingFang TC' does not. tests/unit/design.test.tsx keeps it that way. */
+@font-face { font-family: 'JStar Punct TC Serif'; src: local('Songti TC Regular'), local('STSongti-TC-Regular'), local('Noto Serif CJK TC Regular'), local('NotoSerifCJKtc-Regular'), local('Noto Serif TC Regular'), local('NotoSerifTC-Regular'), local('PMingLiU'), local('PingFang TC Regular'), local('PingFangTC-Regular'), local('Microsoft JhengHei'), local('MicrosoftJhengHei'); unicode-range: U+00B7, U+2014-2026, U+3000-303F, U+FF01-FF0F, U+FF1A-FF20, U+FF5B-FF65; }
+@font-face { font-family: 'JStar Punct TC Sans'; src: local('PingFang TC Regular'), local('PingFangTC-Regular'), local('Noto Sans CJK TC Regular'), local('NotoSansCJKtc-Regular'), local('Noto Sans TC Regular'), local('NotoSansTC-Regular'), local('Microsoft JhengHei'), local('MicrosoftJhengHei'); unicode-range: U+00B7, U+2014-2026, U+3000-303F, U+FF01-FF0F, U+FF1A-FF20, U+FF5B-FF65; }
+
+:root {
+  /* ---- colour */
+  --navy: #24284D;
+  --navy-deep: #1B1E3D;
+  --night: #2E3260;
+  --rose: #D38A97;
+  --rose-glow: #EBAEB9;            /* a ✦ or ♥ that means something, on the night over her clip: AA (≥ 4.5:1) up to #3a3f6a */
+  --rose-text: #86465A;            /* rose text on light grounds (AA on --surface) */
+  --ivory: #EFE8ED;
+  --mist: #E6E0EA;
+  --mist-deep: #DCD4E2;
+  --surface: #F2EEF4;
+  --bubble: #F7F4F8;
+  --hair: rgba(36, 40, 77, 0.18);  /* hairline on light grounds */
+  --soft: rgba(36, 40, 77, 0.74);  /* secondary text on light grounds */
+  --ok: #2F6B4F;
+  --err: #9E3346;
+  /* on the night (her video's lower half, navy-deep): ivory text, meta, lines */
+  --iv-meta: rgba(239, 232, 237, 0.72);
+  --iv-line: rgba(239, 232, 237, 0.44);
+  --iv-hair: rgba(239, 232, 237, 0.18);
+  --nd: 27, 30, 61;                /* navy-deep as r, g, b for rgba() */
+  --nt: 46, 50, 96;                /* night as r, g, b */
+
+  /* ---- the night fade over her video: top wash, her face clear, the lower half sinking into navy-deep */
+  --night-fade-top: linear-gradient(180deg, rgba(var(--nd), 0.8) 0, rgba(var(--nd), 0.42) 140px, rgba(var(--nd), 0) 220px);
+  --night-fade-room: linear-gradient(180deg, rgba(var(--nd), 0.8) 0, rgba(var(--nd), 0.42) 140px, rgba(var(--nd), 0) 220px, rgba(var(--nd), 0) 51%, rgba(var(--nd), 0.66) 63%, rgba(var(--nd), 0.9) 72%, rgba(var(--nd), 0.95) 100%);
+  --night-fade-side: linear-gradient(270deg, rgba(var(--nd), 0.6) 0, rgba(var(--nd), 0) 96px);
+  --night-fade-vignette: radial-gradient(125% 80% at 50% 34%, rgba(var(--nt), 0) 52%, rgba(var(--nt), 0.5) 100%);
+  --night-fade-desk: linear-gradient(90deg, rgba(var(--nd), 0.92) 0, rgba(var(--nd), 0.84) 30%, rgba(var(--nd), 0.45) 44%, rgba(var(--nd), 0) 56%);
+
+  /* ---- type */
+  --serif: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', serif;
+  --sans: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Noto Sans JP', system-ui, sans-serif;
+  --fs-label: 11px;    /* spaced capitals: HER ROOM 01 / 05 */
+  --fs-meta: 12px;     /* meta lines on the night */
+  --fs-small: 13px;
+  --fs-body: 15px;     /* body ≥14px (AA readability rule) */
+  --fs-ui: 17px;       /* primary buttons, the brand */
+  --fs-line: 18.5px;   /* her line */
+  --fs-name: 27px;     /* her vertical name, phone */
+  --fs-name-desk: 46px;
+  --ls-label: 0.34em;
+  --ls-meta: 0.16em;
+  --ls-ui: 0.1em;
+  --ls-line: 0.04em;
+  --lh-line: 1.75;
+  --lh-body: 1.6;
+
+  /* ---- space, shape, line */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px;
+  --r-sharp: 2px;      /* near-square corners: buttons, panels, frames */
+  --r-chip: 18px;      /* chips only */
+  --hairline: 1px;
+  --tap: 44px;         /* minimum touch target */
+
+  /* ---- motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 600ms;
+
+  /* ---- layout */
+  --col: 560px;
+  --col-wide: 760px;
+  --site: 1200px;
+}
+html:lang(zh-Hant) {
+  --serif: 'JStar Punct TC Serif', 'Shippori Mincho', 'Noto Serif TC', 'Songti TC', 'PMingLiU', serif;
+  --sans: 'JStar Punct TC Sans', 'Zen Kaku Gothic New', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif;
+}
+html:lang(ko) { --serif: 'Noto Serif KR', 'AppleMyungjo', serif; --sans: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif; }
+/*
+ * Desktop UI is drawn from a 1920 × 1080 artboard. `--du` is one artboard pixel at the current viewport, bounded by
+ * whichever side is tighter, so type, controls, rules and spacing keep one proportion instead of changing at
+ * unrelated breakpoints. Phone and tablet layouts keep their dedicated dimensions above.
+ */
+@media (min-width: 1024px) {
+  :root {
+    --du: min(0.052083333vw, 0.092592593dvh);
+    --fs-label: calc(11 * var(--du));
+    --fs-meta: calc(12 * var(--du));
+    --fs-small: calc(13 * var(--du));
+    --fs-body: calc(15 * var(--du));
+    --fs-ui: calc(17 * var(--du));
+    --fs-line: calc(18.5 * var(--du));
+    --fs-name: calc(27 * var(--du));
+    --fs-name-desk: calc(46 * var(--du));
+    --sp-1: calc(4 * var(--du)); --sp-2: calc(8 * var(--du)); --sp-3: calc(12 * var(--du));
+    --sp-4: calc(16 * var(--du)); --sp-5: calc(20 * var(--du)); --sp-6: calc(24 * var(--du));
+    --sp-8: calc(32 * var(--du)); --sp-10: calc(40 * var(--du));
+    --r-sharp: calc(2 * var(--du));
+    --r-chip: calc(18 * var(--du));
+    --hairline: max(1px, var(--du));
+    --tap: calc(44 * var(--du));
+    --col: calc(560 * var(--du));
+    --col-wide: calc(760 * var(--du));
+    --site: calc(1200 * var(--du));
+  }
+}
+@media (prefers-reduced-motion: reduce) { :root { --dur-fast: 0ms; --dur: 0ms; --dur-slow: 0ms; } }

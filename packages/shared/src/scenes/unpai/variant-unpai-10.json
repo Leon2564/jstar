@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "variant-unpai-10",
+    "star": "unpai",
+    "title": {"ja": "この服で、もうちょいいて", "zh-Hant": "穿這套衣服，再多待一下", "en": "Stay a Bit, in This Outfit", "ko": "이 옷 입고, 조금만 더 있어 줘"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 10},
+    "idle": "unpai-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "unpai-variant-home", "hold": 1.5},
+    {"id": "came", "type": "line", "voice": "/voice/scene/unpai/0351c5762270.mp3", "text": {"ja": "……きた。……今日は、ちゃんと言おうと思ってたことがある。", "zh-Hant": "……你來了。……今天，有件事想好好說。", "en": "…You're here. …There's something I meant to say properly today.", "ko": "……왔네. ……오늘은, 제대로 말하려고 했던 게 있어."}},
+    {"id": "think", "type": "line", "voice": "/voice/scene/unpai/523c8cf578c0.mp3", "text": {"ja": "この服着てると、きみのこと考えちゃうんだよねぇ。", "zh-Hant": "穿著這套衣服，就會一直想到你耶。", "en": "Wearing this, I keep thinking about you.", "ko": "이 옷 입고 있으면, 자꾸 네 생각이 나더라."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "stay", "options": [{"id": "hug", "next": "hug", "label": {"ja": "ぎゅってしていい？", "zh-Hant": "可以抱你嗎？", "en": "Can I hug you?", "ko": "안아도 돼?"}}, {"id": "stay", "next": "stay", "label": {"ja": "そばにいるよ", "zh-Hant": "我在你身邊", "en": "I'm right here", "ko": "곁에 있을게"}}, {"id": "more", "next": "beyond", "label": {"ja": "もっと……", "zh-Hant": "還想再多一點……", "en": "More…", "ko": "더……"}}]},
+    {"id": "hug", "type": "clip", "shot": "close", "media": "unpai-variant-close", "hold": 0},
+    {"id": "hug-line", "type": "line", "voice": "/voice/scene/unpai/c3d33d007c53.mp3", "next": "held", "text": {"ja": "……ん。……いいよ。", "zh-Hant": "……嗯。……可以喔。", "en": "…Mm. …Okay.", "ko": "……응. ……좋아."}},
+    {"id": "stay", "type": "clip", "shot": "close", "media": "unpai-variant-close", "hold": 0},
+    {"id": "stay-line", "type": "line", "voice": "/voice/scene/unpai/1d5a19045da5.mp3", "next": "held", "text": {"ja": "……じゃあ、うちから。……ぎゅ。", "zh-Hant": "……那，我來。……抱。", "en": "…Then me first. …Squeeze.", "ko": "……그럼, 내가 먼저. ……꼬옥."}},
+    {"id": "beyond", "type": "line", "voice": "/voice/scene/unpai/eb7ece04d9c4.mp3", "next": "held", "text": {"ja": "……それはむり。……ぎゅーで、ゆるして。", "zh-Hant": "……那個不行。……抱抱就好，將就一下吧。", "en": "…Can't do that. …A hug will have to do.", "ko": "……그건 무리. ……꼬옥 안는 걸로 봐줘."}},
+    {"id": "held", "type": "line", "voice": "/voice/scene/unpai/891172cf1172.mp3", "text": {"ja": "……あったか。……もうちょいいて。", "zh-Hant": "……好暖。……再待一下嘛。", "en": "…Warm. …Stay a bit longer.", "ko": "……따뜻해. ……조금만 더 있어 줘."}},
+    {"id": "home", "type": "clip", "shot": "wide", "media": "unpai-variant-home", "hold": 2},
+    {"id": "wait-home", "type": "line", "voice": "/voice/scene/unpai/76c265966cc3.mp3", "text": {"ja": "これからは、この服で部屋にいるから。……帰ってきたら、見つけてよ。", "zh-Hant": "以後我會穿這套衣服待在房間。……回來的時候，要找到我喔。", "en": "From now on I'll be in my room in this. …Find me when you get home.", "ko": "이제부터는 이 옷 입고 방에 있을 테니까. ……돌아오면, 찾아 줘."}},
+    {"id": "reward", "type": "effect", "affinity": 12, "variantXp": 30, "memory": {"title": {"ja": "この服で、もうちょいいて", "zh-Hant": "穿這套衣服，再多待一下", "en": "Stay a Bit, in This Outfit", "ko": "이 옷 입고, 조금만 더 있어 줘"}}},
+    {"id": "end", "type": "end", "outcome": "hug"}
+  ]
+}

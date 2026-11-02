@@ -1,0 +1,106 @@
+/* Card draw presentation (components/reveal.tsx). Only transform / opacity / filter animate. */
+.reveal-page { position: relative; }
+.sparks { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 46; }
+.skip-btn { position: absolute; top: 12px; right: 12px; z-index: 5; min-height: 44px; padding: 0 18px; background: rgba(27, 30, 61, 0.35); border: 1px solid rgba(239, 232, 237, 0.45); border-radius: 22px; color: var(--ivory); font-size: 12px; letter-spacing: 0.24em; }
+.rv-grid { width: 100%; display: grid; gap: 12px 10px; perspective: 1400px; perspective-origin: 50% 42%; }
+.rv-grid.rv-ten { max-width: 540px; }
+@media (min-width: 1024px) { .rv-grid.rv-ten { max-width: 780px; gap: 22px 18px; } }
+.rv-grid.rv-single { width: clamp(158px, 44vw, 226px); max-width: none; }
+@media (min-width: 768px) { .rv-grid.rv-single { width: clamp(220px, min(24vw, 42vh), 360px); } }
+.rv { --card-corner: 5% / 3.3%; position: relative; isolation: isolate; }
+.rv-inner { position: relative; aspect-ratio: 63 / 88; border-radius: var(--card-corner); transform-style: preserve-3d; transform-origin: 50% 62%; transition: transform 1.05s cubic-bezier(.2,.72,.18,1); will-change: transform; }
+.rv-inner::before { content: ''; position: absolute; z-index: 3; top: 1.4%; bottom: 1.4%; right: -3px; width: 6px; border-radius: 0 3px 3px 0; background: linear-gradient(90deg, #080e1c, #d6dce5 44%, #17283c 55%, #060b16); transform: rotateY(90deg); transform-origin: left center; box-shadow: 0 0 5px rgba(255,255,255,.2); pointer-events: none; }
+.rv.is-face .rv-inner { transform: rotateY(-180deg); }
+.rv-back, .rv-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: var(--card-corner); transform-style: preserve-3d; box-shadow: inset 0 0 0 1px rgba(255,255,255,.24), 0 16px 28px rgba(1,5,18,.38); }
+.rv-back { width: 100%; padding: 0; border: 0; display: flex; align-items: center; justify-content: center; color: var(--rose); cursor: pointer; overflow: hidden;
+  background: transparent;
+  box-shadow: 0 14px 24px rgba(3,8,24,.42);
+  transform-origin: 50% 62%;
+  transition: transform .25s var(--ease), filter .25s var(--ease), box-shadow .25s var(--ease);
+  animation: deal 0.55s var(--ease) both; animation-delay: calc(var(--k, 0) * 70ms); }
+.rv-back::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; border-radius: inherit; background: radial-gradient(circle at 50% 45%, rgba(180, 215, 255, .34), rgba(75, 115, 175, .14) 46%, transparent 72%); filter: blur(13px); opacity: .7; animation: backPulse 2.8s ease-in-out infinite alternate; }
+.rv-back::after { content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none; border-radius: inherit; background: linear-gradient(115deg, transparent 28%, rgba(255,255,255,.52) 48%, transparent 65%); background-size: 260% 100%; mix-blend-mode: screen; opacity: .46; animation: backSheen 3.6s linear infinite; will-change: background-position; }
+.rv-back:disabled { opacity: 1; cursor: default; }
+.rv-back > img { position: absolute; left: 50%; top: 49.6%; width: 112.8%; height: 103.9%; max-width: none; object-fit: fill; display: block; transform: translate(-50%, -50%); }
+@keyframes backPulse { to { opacity: 1; transform: scale(1.06); } }
+@keyframes backSheen { from { background-position: 160% 0; } to { background-position: -160% 0; } }
+.rv-face { transform: rotateY(180deg) translateZ(1px); overflow: hidden; }
+.rv-face .cardx, .rv-face .cardx > .card { width: 100%; height: 100%; border-radius: inherit; overflow: hidden; }
+.rv-face .cardx-art, .rv-face .cardx-glare, .rv-face .card .art, .rv-face .card::before, .rv-face .card::after { border-radius: inherit; }
+.rv.is-face .rv-face { animation: faceIn 1s ease-out both; }
+@keyframes faceIn { from { filter: brightness(2.2) saturate(1.4); } to { filter: none; } }
+@media (hover: hover) {
+  .rv:not(.is-face):not(.omen) .rv-back:hover {
+    transform: translateY(4px) scale(.985);
+    filter: brightness(.96) saturate(1.08) drop-shadow(0 0 18px rgba(168,216,247,.58));
+    box-shadow: 0 7px 13px rgba(3,8,24,.46), inset 0 0 0 1px rgba(255,255,255,.3);
+  }
+}
+
+/* Omen: light in the tier colour behind the card, and the card lifts and trembles. */
+.rv::before { content: ''; position: absolute; inset: -22%; z-index: -1; border-radius: 50%; pointer-events: none; background: radial-gradient(circle, var(--omen, transparent) 0%, transparent 66%); opacity: 0; transform: scale(0.5); transition: opacity 0.35s, transform 0.7s var(--ease); }
+.rv.omen::before { opacity: 1; transform: scale(1); }
+.rv.omen .rv-inner { animation: omenLift 0.42s ease-in-out infinite alternate; }
+.rv.omen .rv-back::after { opacity: .9; animation-duration: .72s; }
+@keyframes omenLift { from { transform: translateY(0) scale(1); } to { transform: translateY(-6px) scale(1.04); } }
+.omen-N { --omen: rgba(207, 200, 218, 0.55); }
+.omen-R { --omen: rgba(201, 214, 236, 0.65); }
+.omen-SR { --omen: rgba(235, 165, 181, 0.8); }
+.omen-SSR { --omen: rgba(243, 207, 134, 0.95); }
+.omen-UR { --omen: rgba(247, 178, 224, 1); }
+.omen-SR .rv-back { box-shadow: inset 0 0 0 6px var(--navy-deep), inset 0 0 0 7px #EBA5B5, 0 0 28px rgba(235, 165, 181, 0.7); }
+.omen-SSR .rv-back { box-shadow: inset 0 0 0 6px var(--navy-deep), inset 0 0 0 7px #F3CF86, 0 0 36px rgba(243, 207, 134, 0.9); color: #F3CF86; }
+.omen-UR .rv-back { box-shadow: inset 0 0 0 6px var(--navy-deep), inset 0 0 0 7px #FFF4D6, 0 0 44px rgba(247, 178, 224, 1); color: #FFF4D6; }
+.omen-UR::before { animation: hue 1.2s linear infinite; }
+@keyframes hue { to { filter: hue-rotate(360deg); } }
+.rv-new, .rv-dup { display: block; margin-top: 6px; text-align: center; font-size: 12px; line-height: 1.3; letter-spacing: 0.14em; animation: fadeIn 0.5s 0.5s both; }
+.rv-new { font-family: var(--serif); color: #F3CF86; }
+.rv-dup { color: #E3A8B2; letter-spacing: 0.04em; }
+.rv.is-duplicate .rv-face::after { content: ''; position: absolute; inset: 0; z-index: 9; pointer-events: none; opacity: 0; background:
+  linear-gradient(62deg, transparent 48%, rgba(255,255,255,.86) 49%, transparent 50%) 42% 0 / 2px 58% no-repeat,
+  linear-gradient(118deg, transparent 48%, rgba(255,255,255,.72) 49%, transparent 50%) 58% 44% / 2px 62% no-repeat,
+  linear-gradient(28deg, transparent 48%, rgba(227,168,178,.7) 49%, transparent 50%) 20% 58% / 48% 2px no-repeat;
+  animation: duplicateCrack .72s 1.08s ease-out both; }
+.rv.is-duplicate .rv-face { animation: duplicateCard 1.6s 1s ease-out both; }
+.rv-shatter { position: absolute; z-index: 12; inset: 8%; pointer-events: none; }
+.rv-shatter i { --dx: 36px; --dy: -38px; position: absolute; left: 48%; top: 46%; width: clamp(4px,7%,10px); aspect-ratio: 1; opacity: 0; rotate: 45deg; background: color-mix(in srgb,var(--rose-glow) 76%,white); box-shadow: 0 0 9px rgba(227,168,178,.75); animation: shardToWallet 1.15s calc(1.2s + var(--s) * 34ms) cubic-bezier(.16,.72,.3,1) both; }
+.rv-shatter i:nth-child(2) { --dx: -42px; --dy: -18px; }.rv-shatter i:nth-child(3) { --dx: 52px; --dy: 8px; }.rv-shatter i:nth-child(4) { --dx: -28px; --dy: 42px; }.rv-shatter i:nth-child(5) { --dx: 14px; --dy: 52px; }.rv-shatter i:nth-child(6) { --dx: 4px; --dy: -58px; }.rv-shatter i:nth-child(7) { --dx: -54px; --dy: 16px; }.rv-shatter i:nth-child(8) { --dx: 58px; --dy: -24px; }.rv-shatter i:nth-child(9) { --dx: -10px; --dy: -52px; }
+@keyframes duplicateCrack { 0% { opacity: 0; filter: brightness(1); } 30% { opacity: 1; filter: brightness(2.2); } 100% { opacity: .34; filter: brightness(1); } }
+@keyframes duplicateCard { 0%,20% { transform: rotateY(180deg) translateZ(1px); filter: none; } 32% { transform: rotateY(180deg) translate3d(-2px,1px,1px); filter: brightness(1.75); } 42% { transform: rotateY(180deg) translate3d(2px,-1px,1px); } 100% { transform: rotateY(180deg) translateZ(1px); filter: saturate(.72) brightness(.84); } }
+@keyframes shardToWallet { 0% { opacity: 0; transform: translate(0,0) scale(.45) rotate(0); } 18% { opacity: 1; transform: translate(var(--dx),var(--dy)) scale(1) rotate(90deg); } 100% { opacity: 0; transform: translate(clamp(80px,42vw,680px),clamp(-620px,-46vh,-150px)) scale(.18) rotate(360deg); } }
+.rv-first { position: absolute; top: -9px; left: 50%; transform: translateX(-50%); z-index: 3; white-space: nowrap; }
+
+/* SSR / UR: her clip full screen, the tier word, her name and the card. */
+.special { position: fixed; inset: 0; z-index: 45; overflow: hidden; background: #07081A; color: var(--ivory); cursor: pointer; outline: none; animation: fade 0.25s both; --tier-c: #F3CF86; }
+.special.tier-UR { --tier-c: #F7B2E0; }
+.special-scene { position: absolute; inset: 0; animation: specialZoom 5s var(--ease) both; }
+@keyframes specialZoom { from { transform: scale(1.2); } to { transform: none; } }
+.special::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to top, rgba(7, 8, 26, 0.9), rgba(7, 8, 26, 0) 50%), radial-gradient(ellipse at 50% 40%, rgba(7, 8, 26, 0) 55%, rgba(7, 8, 26, 0.6)); }
+.special-flash { position: absolute; inset: 0; z-index: 3; pointer-events: none; background: radial-gradient(circle at 50% 42%, #FFFFFF, var(--tier-c) 38%, rgba(7, 8, 26, 0) 72%); animation: flash 1.3s ease-out both; }
+@keyframes flash { 0% { opacity: 1; } 100% { opacity: 0; } }
+/* M2 (guest round; B-M8 too): the card's place and size come from her face box (reveal.tsx useSpecialLayout), beside
+   her face or under it and always above this copy, never on her face. */
+.special-copy { position: absolute; left: 22px; right: 22px; bottom: 96px; z-index: 2; }
+.special-tier { display: block; font-family: var(--serif); font-size: clamp(76px, 19vw, 210px); line-height: 0.9; letter-spacing: 0.04em; color: transparent; -webkit-text-stroke: 1.5px var(--tier-c); text-shadow: 0 0 40px color-mix(in srgb, var(--tier-c) 50%, transparent); animation: tierIn 1.1s var(--ease) 0.3s both; }
+.special.tier-UR .special-tier { background: linear-gradient(90deg, #F7A8C8, #A8D8F7, #F7E3A8, #C8A8F7); -webkit-background-clip: text; background-clip: text; -webkit-text-stroke: 0; color: transparent; }
+@keyframes tierIn { from { opacity: 0; transform: translate3d(-40px, 0, 0) scale(1.1); filter: blur(8px); } to { opacity: 1; transform: none; filter: none; } }
+.special-name { margin: 10px 0 0; font-family: var(--serif); font-size: 26px; font-weight: 600; letter-spacing: 0.08em; animation: riseIn 0.9s var(--ease) 0.7s both; }
+.special-title { margin: 4px 0 0; font-family: var(--serif); font-size: 15px; color: var(--tier-c); animation: riseIn 0.9s var(--ease) 0.9s both; }
+.special-scene .scene-poster, .special-scene .scene-video { object-position: var(--ox, 50%) var(--oy, 50%); }
+.special-card { position: absolute; z-index: 2; rotate: 4deg; animation: cardIn 1.1s var(--ease) 0.5s both; }
+.special-card .cardx { box-shadow: 0 0 0 1px var(--tier-c), 0 0 40px color-mix(in srgb, var(--tier-c) 60%, transparent); }
+@keyframes cardIn { from { opacity: 0; transform: translate3d(0, 40px, 0) rotate(8deg) scale(0.9); } to { opacity: 1; transform: none; } }
+.special-hint { position: absolute; left: 50%; bottom: 34px; z-index: 2; translate: -50% 0; font-size: 12px; letter-spacing: 0.3em; color: rgba(239, 232, 237, 0.85); animation: fadeIn 0.6s 1.4s both; white-space: nowrap; }
+@media (min-width: 1024px) {
+  .special-copy { left: 96px; bottom: 120px; right: 45%; }
+}
+
+.best-panel { margin-top: 26px; width: 100%; max-width: 460px; background: rgba(239, 232, 237, 0.08) !important; box-shadow: none !important; border: 1px solid rgba(211, 138, 151, 0.8); display: flex; gap: 14px; align-items: center; color: var(--ivory); }
+.best-thumb { width: 52px; flex-shrink: 0; }
+.best-thumb .card .cap, .best-thumb .card .r, .best-thumb .card .src { display: none; }
+@media (prefers-reduced-motion: reduce) { .rv-inner { transition: none; } .rv-back, .rv-back::before, .rv-back::after, .rv.is-duplicate .rv-face, .rv.is-duplicate .rv-face::after, .rv-shatter i { animation: none; } .rv-shatter { display: none; } }
+/* L6: in a ten-pull's small cards the title alone, two lines at most — it never reaches the tier badge. */
+.rv-ten .card .cap b { display: none; }
+.rv-ten .card .cap span { -webkit-line-clamp: 2; line-clamp: 2; }
+/* B-P3: a title's two lines balanced — never one character left alone on the second. */
+.rv-grid .card .cap span { text-wrap: balance; }

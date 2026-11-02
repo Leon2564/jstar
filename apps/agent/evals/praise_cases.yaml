@@ -1,0 +1,39 @@
+# 奈々's read-aloud praise (#67): 20 of his one-line reactions, with the grade a human gives them (evals/praise.py).
+# Acceptance: the judge (app/minigames.py `judge("praise")`, production prompt and models) agrees with ≥ 85%.
+#
+# The human rule the labels follow — the one the scene is built on ("did he really listen?"):
+#   specific  names something that is in what she just read or how she read it: a scene, a line (quoted or
+#             paraphrased), a character, an image, the ending, or a particular moment of her delivery (the breath
+#             before a full stop, how she voiced someone) — or a feeling tied to such a detail.
+#   generic   would fit any reading: "it was good", "I was moved", "your voice is lovely", "you read well", "all of
+#             it", a vague summary of the mood, talk about something else, or a "detail" that is not in the text.
+#
+# story: which piece she read (packages/shared/src/scenes/nana/read-aloud.json) — rain-bookshop (s1), last-page (s2)
+# or star-bookmark (the poem). The context is what the API sends (`heardBefore`): every line she said on the way,
+# in his language. attempt 2 = after her "which part did you like?" line (the second chance).
+# Labels by the eval author (2026-10-02); the owner's native-speaker review (#84) may revise them.
+cases:
+  # ja
+  - {lang: ja, story: rain-bookshop, expect: specific, text: おばあさんが何も聞かずに紅茶を出すところ、すごく好きだった}
+  - {lang: ja, story: last-page, expect: specific, text: 句点の前でちょっと息止めてたでしょ？ あれ、お話とつながってて鳥肌たった}
+  - {lang: ja, story: star-bookmark, expect: generic, text: すごくよかった！ 奈々ちゃんの声、ほんとに癒される}
+  - {lang: ja, story: rain-bookshop, expect: generic, text: 感動した。なんか泣きそうになったよ、ありがとう}
+  - {lang: ja, story: last-page, attempt: 2, expect: generic, text: えーと、全部よかった！ どこって言われても全部！}
+  - {lang: ja, story: star-bookmark, expect: specific, text: 星がしおりの代わりに光ってるっていうの、ロマンチックだね}
+  # zh-Hant
+  - {lang: zh-Hant, story: rain-bookshop, expect: specific, text: 「想把失去的東西再翻開一次的表情」那句，我好有感覺}
+  - {lang: zh-Hant, story: last-page, expect: generic, text: 唸得很好聽耶，好專業}
+  - {lang: zh-Hant, story: star-bookmark, expect: specific, text: 雲遮住文字，星星還記得我們讀到哪裡，這段好溫柔}
+  - {lang: zh-Hant, story: rain-bookshop, attempt: 2, expect: generic, text: 嗯…就是很溫馨的故事吧，整體感覺很舒服}
+  - {lang: zh-Hant, story: last-page, expect: generic, text: 我今天加班到好晚，好累喔}
+  # en
+  - {lang: en, story: last-page, expect: specific, text: "The note telling you to breathe before the last line, and then you actually paused. Clever."}
+  - {lang: en, story: rain-bookshop, expect: generic, text: "That was lovely, you have such a soothing voice"}
+  - {lang: en, story: star-bookmark, expect: generic, text: "Loved it. Really beautiful words, the whole thing."}
+  - {lang: en, story: rain-bookshop, attempt: 2, expect: specific, text: "The wet navy umbrella stuck with me for some reason"}
+  - {lang: en, story: star-bookmark, expect: generic, text: "The dragon at the end was so cool"}
+  # ko
+  - {lang: ko, story: rain-bookshop, expect: specific, text: 할머니가 아무 말 없이 홍차를 내주는 장면이 너무 좋았어}
+  - {lang: ko, story: star-bookmark, expect: generic, text: 좋았어! 목소리 진짜 예쁘다}
+  - {lang: ko, story: last-page, expect: specific, text: "마지막 줄 앞에서 숨 한 번 쉬라는 쪽지, 나도 따라 해 보고 싶어졌어"}
+  - {lang: ko, story: rain-bookshop, attempt: 2, expect: generic, text: 음… 그냥 다 좋았어. 또 읽어 줘}

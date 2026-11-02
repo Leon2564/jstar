@@ -1,0 +1,105 @@
+{
+  "_generated": "From packages/shared/src/world.ts by `npm run world:agent -w @jstar/shared`. Do not edit; only agency-confirmed facts.",
+  "talents": {
+    "mahiro": {
+      "birthday": "03-04",
+      "hometown": {
+        "cityId": "tokyo",
+        "city": {
+          "ja": "東京",
+          "zh-Hant": "東京",
+          "en": "Tokyo",
+          "ko": "도쿄"
+        },
+        "prefecture": {
+          "ja": "東京都",
+          "zh-Hant": "東京都",
+          "en": "Tokyo",
+          "ko": "도쿄도"
+        },
+        "lat": 35.6895,
+        "lon": 139.6917
+      }
+    },
+    "nana": {
+      "birthday": "09-03",
+      "hometown": {
+        "cityId": "nagano",
+        "city": {
+          "ja": "長野",
+          "zh-Hant": "長野",
+          "en": "Nagano",
+          "ko": "나가노"
+        },
+        "prefecture": {
+          "ja": "長野県",
+          "zh-Hant": "長野縣",
+          "en": "Nagano",
+          "ko": "나가노현"
+        },
+        "lat": 36.6486,
+        "lon": 138.1948
+      }
+    },
+    "unpai": {
+      "birthday": "07-17",
+      "hometown": {
+        "cityId": "sendai",
+        "city": {
+          "ja": "仙台",
+          "zh-Hant": "仙台",
+          "en": "Sendai",
+          "ko": "센다이"
+        },
+        "prefecture": {
+          "ja": "宮城県",
+          "zh-Hant": "宮城縣",
+          "en": "Miyagi",
+          "ko": "미야기현"
+        },
+        "lat": 38.2682,
+        "lon": 140.8694
+      }
+    },
+    "alice": {
+      "birthday": "02-25",
+      "hometown": {
+        "cityId": "saitama",
+        "city": {
+          "ja": "埼玉",
+          "zh-Hant": "埼玉",
+          "en": "Saitama",
+          "ko": "사이타마"
+        },
+        "prefecture": {
+          "ja": "埼玉県",
+          "zh-Hant": "埼玉縣",
+          "en": "Saitama",
+          "ko": "사이타마현"
+        },
+        "lat": 35.8617,
+        "lon": 139.6455
+      }
+    },
+    "eimi": {
+      "birthday": "03-18",
+      "hometown": {
+        "cityId": "tochigi",
+        "city": {
+          "ja": "栃木",
+          "zh-Hant": "櫪木",
+          "en": "Tochigi",
+          "ko": "도치기"
+        },
+        "prefecture": {
+          "ja": "栃木県",
+          "zh-Hant": "櫪木縣",
+          "en": "Tochigi",
+          "ko": "도치기현"
+        },
+        "lat": 36.5551,
+        "lon": 139.8828
+      }
+    }
+  }
+}

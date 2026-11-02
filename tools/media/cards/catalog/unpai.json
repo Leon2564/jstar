@@ -1,0 +1,545 @@
+{
+  "star": "unpai",
+  "cards": [
+    {
+      "title": {
+        "ja": "やっと来た！",
+        "zh-Hant": "你終於來了！",
+        "en": "You Finally Came!",
+        "ko": "드디어 왔다!"
+      },
+      "scene": "Unpai in a sunny bedroom full of plush toys and polaroid photos on a string of fairy lights, oversized pastel cardigan over a white T-shirt, waving at you with a big smile",
+      "line": {
+        "ja": "やっと来た！ もー、待ちくたびれたんだからね。",
+        "zh-Hant": "你終於來了！真是的，我等到都累了啦。",
+        "en": "You finally came! Geez, I was tired of waiting.",
+        "ko": "드디어 왔네! 아 진짜, 기다리다 지쳤잖아."
+      }
+    },
+    {
+      "title": {
+        "ja": "ポラロイドの壁",
+        "zh-Hant": "拍立得牆",
+        "en": "The Polaroid Wall",
+        "ko": "폴라로이드 벽"
+      },
+      "scene": "Unpai pinning polaroid photos onto a string of fairy lights on her bedroom wall in the morning, oversized striped sweater, holding one photo up to you",
+      "line": {
+        "ja": "この写真、あなたと撮ったやつ。いちばんのお気に入り！",
+        "zh-Hant": "這張是跟你一起拍的。我最喜歡的一張！",
+        "en": "This one's us. It's my absolute favorite!",
+        "ko": "이 사진, 너랑 같이 찍은 거. 제일 마음에 드는 거야!"
+      }
+    },
+    {
+      "title": {
+        "ja": "屋上の洗濯物",
+        "zh-Hant": "屋頂的晾衣繩",
+        "en": "Rooftop Laundry",
+        "ko": "옥상의 빨래"
+      },
+      "scene": "Unpai on a sunny rooftop with laundry and a pink scarf fluttering on a line, blue sky with fast clouds, oversized denim shirt and jeans, reaching for the scarf",
+      "line": {
+        "ja": "風つよーい！ ねえ、スカーフ飛んでっちゃう、押さえて！",
+        "zh-Hant": "風好大！欸，圍巾要飛走了，幫我壓住！",
+        "en": "So windy! Hey, my scarf's flying off — grab it!",
+        "ko": "바람 진짜 세다! 야, 스카프 날아가겠어, 좀 잡아줘!"
+      }
+    },
+    {
+      "title": {
+        "ja": "今日の一枚",
+        "zh-Hant": "今天的這一張",
+        "en": "Today's Record",
+        "ko": "오늘 고른 한 장"
+      },
+      "scene": "Unpai sitting on her bedroom floor beside a turntable and a stack of vinyl records, pearl-white retro headphones around her neck, oversized hoodie, holding up a record sleeve",
+      "line": {
+        "ja": "今日はこれ聴こ！ あなたのぶんのヘッドホンもあるよ。",
+        "zh-Hant": "今天聽這張！你的耳機我也準備好了。",
+        "en": "Let's play this one today! I've got headphones for you too.",
+        "ko": "오늘은 이거 듣자! 네 헤드폰도 챙겨놨어."
+      }
+    },
+    {
+      "title": {
+        "ja": "自販機のまえで",
+        "zh-Hant": "自動販賣機前",
+        "en": "At the Vending Machine",
+        "ko": "자판기 앞에서"
+      },
+      "scene": "Unpai beside a glowing vending machine on a narrow Tokyo side street at night, rose-pink and blue neon reflected in wet asphalt, navy varsity jacket, pointing at the drinks",
+      "line": {
+        "ja": "どっちにする？ ……じゃんけんで負けたほうのおごりね！",
+        "zh-Hant": "你要哪個？……猜拳輸的人請客喔！",
+        "en": "Which one? …Loser of rock-paper-scissors pays!",
+        "ko": "뭘로 할래? ……가위바위보 진 사람이 사는 거다!"
+      }
+    },
+    {
+      "title": {
+        "ja": "ゲーム対決",
+        "zh-Hant": "遊戲對決",
+        "en": "Game Night Showdown",
+        "ko": "게임 대결"
+      },
+      "scene": "Unpai sitting cross-legged on floor cushions at night holding a game controller, oversized hoodie and lounge pants, TV glow on her face, laughing at you",
+      "line": {
+        "ja": "手加減しないからね！ ……あ、今のなし！もう一回！",
+        "zh-Hant": "我不會放水的喔！……啊，剛剛那局不算！再一次！",
+        "en": "I won't go easy on you! …Wait, that didn't count! Again!",
+        "ko": "봐주는 거 없다! ……아, 방금 건 무효! 한 번 더!"
+      }
+    },
+    {
+      "title": {
+        "ja": "ヘアアレンジ中",
+        "zh-Hant": "正在整理髮型",
+        "en": "Doing My Hair",
+        "ko": "머리 손질 중"
+      },
+      "scene": "Unpai at a vanity mirror in her bright bedroom in the morning, tying a black ribbon into her long wavy hair, cream knit top, glancing back at you",
+      "line": {
+        "ja": "ねえ、ポニーテールとおろすの、どっちが好き？",
+        "zh-Hant": "欸，綁馬尾跟放下來，你喜歡哪個？",
+        "en": "Hey, ponytail or hair down — which do you like?",
+        "ko": "있잖아, 포니테일이랑 풀어놓은 거, 뭐가 더 좋아?"
+      }
+    },
+    {
+      "title": {
+        "ja": "深夜のラーメン",
+        "zh-Hant": "深夜拉麵",
+        "en": "Late-Night Ramen",
+        "ko": "심야 라멘"
+      },
+      "scene": "Unpai at a small ramen shop counter late at night, steam rising from a bowl, navy varsity jacket, chopsticks in hand, grinning at you",
+      "line": {
+        "ja": "夜中のラーメンって、なんでこんなにおいしいの？",
+        "zh-Hant": "半夜的拉麵，為什麼會這麼好吃啊？",
+        "en": "Why is midnight ramen so good?",
+        "ko": "한밤중 라멘은 왜 이렇게 맛있는 거야?"
+      }
+    },
+    {
+      "title": {
+        "ja": "ぬいぐるみ会議",
+        "zh-Hant": "布偶會議",
+        "en": "Plushie Meeting",
+        "ko": "인형 회의"
+      },
+      "scene": "Unpai sitting on her bed surrounded by plush toys in the afternoon, pastel sweatshirt, holding a small bear plushie up toward you",
+      "line": {
+        "ja": "この子、あなたに似てるの。名前つけてあげて！",
+        "zh-Hant": "這隻長得很像你。幫牠取個名字吧！",
+        "en": "This one looks just like you. Give it a name!",
+        "ko": "얘, 너 닮았어. 이름 지어줘!"
+      }
+    },
+    {
+      "title": {
+        "ja": "お菓子作り失敗",
+        "zh-Hant": "做點心失敗了",
+        "en": "Baking Fail",
+        "ko": "간식 만들기 실패"
+      },
+      "scene": "Unpai in a small kitchen with a smudge of flour on her cheek, pink apron over a T-shirt, holding a tray of slightly burnt cupcakes, sheepish smile",
+      "line": {
+        "ja": "ちょっとこげた……けど、味は保証する！ たぶん！",
+        "zh-Hant": "有點烤焦了……不過味道我保證！大概吧！",
+        "en": "It's a bit burnt… but I promise it tastes good! Probably!",
+        "ko": "좀 탔는데…… 그래도 맛은 보장해! 아마도!"
+      }
+    },
+    {
+      "title": {
+        "ja": "UFOキャッチャー",
+        "zh-Hant": "夾娃娃機",
+        "en": "Claw Machine Challenge",
+        "ko": "인형뽑기"
+      },
+      "scene": "Unpai at a neon-lit arcade claw machine in the evening, navy varsity jacket, gripping the joystick with a determined grin",
+      "line": {
+        "ja": "あとちょっと……！ 取れたら、あなたにあげるね！",
+        "zh-Hant": "再一點點……！夾到的話就送給你！",
+        "en": "Almost…! If I get it, it's yours!",
+        "ko": "조금만 더……! 뽑히면 너 줄게!"
+      }
+    },
+    {
+      "title": {
+        "ja": "原宿食べ歩き",
+        "zh-Hant": "原宿邊走邊吃",
+        "en": "Harajuku Snack Crawl",
+        "ko": "하라주쿠 먹거리 산책"
+      },
+      "scene": "Unpai on a colourful Harajuku street on a sunny afternoon holding a strawberry crepe, oversized pastel hoodie and jeans, offering you a bite",
+      "line": {
+        "ja": "クレープ、ひとくち交換しよ！ はい、いちご味！",
+        "zh-Hant": "可麗餅，我們交換吃一口！來，草莓口味！",
+        "en": "Let's swap bites! Here, strawberry!",
+        "ko": "크레페, 한입씩 바꿔 먹자! 자, 딸기맛!"
+      }
+    },
+    {
+      "title": {
+        "ja": "ライブハウスの前で",
+        "zh-Hant": "Live House 門口",
+        "en": "Outside the Live House",
+        "ko": "라이브하우스 앞에서"
+      },
+      "scene": "Unpai outside a small Shimokitazawa live music venue in the early evening, band T-shirt under her navy varsity jacket, holding up two tickets",
+      "line": {
+        "ja": "チケット二枚！ 今日はいちばん前で跳ぼうね！",
+        "zh-Hant": "兩張票！今天我們要在最前面一起跳喔！",
+        "en": "Two tickets! Let's jump right up front tonight!",
+        "ko": "티켓 두 장! 오늘은 맨 앞에서 같이 뛰자!"
+      }
+    },
+    {
+      "title": {
+        "ja": "コーヒーカップ",
+        "zh-Hant": "咖啡杯遊樂設施",
+        "en": "Spinning Teacups",
+        "ko": "커피컵 놀이기구"
+      },
+      "scene": "Unpai laughing in a pastel teacup ride at an amusement park on a bright day, windswept long wavy hair, white sweatshirt and denim jacket",
+      "line": {
+        "ja": "もっと回して！ ……うそ、やっぱ目まわる〜！",
+        "zh-Hant": "再轉快一點！……騙你的，果然好暈～！",
+        "en": "Spin it faster! …Kidding, I'm so dizzy!",
+        "ko": "더 빨리 돌려줘! ……거짓말, 역시 어지러워~!"
+      }
+    },
+    {
+      "title": {
+        "ja": "金魚すくい",
+        "zh-Hant": "撈金魚",
+        "en": "Goldfish Scooping",
+        "ko": "금붕어 건지기"
+      },
+      "scene": "Unpai at a summer festival goldfish-scooping stall at night in a pink and navy yukata, paper lanterns glowing, holding up a small bag with two goldfish",
+      "line": {
+        "ja": "見て見て、二匹すくえた！ 名前、一緒に考えよ？",
+        "zh-Hant": "你看你看，撈到兩隻了！一起想名字吧？",
+        "en": "Look, look, I got two! Help me name them?",
+        "ko": "봐봐, 두 마리나 건졌어! 이름 같이 생각해줄래?"
+      }
+    },
+    {
+      "title": {
+        "ja": "レコードショップ",
+        "zh-Hant": "唱片行",
+        "en": "Record Store Dig",
+        "ko": "레코드 가게"
+      },
+      "scene": "Unpai flipping through crates in a cosy second-hand record shop in the afternoon, pearl-white headphones around her neck, holding up a colourful album cover",
+      "line": {
+        "ja": "このジャケ、かわいくない？ あなたの部屋に飾ろうよ！",
+        "zh-Hant": "這張封面很可愛吧？拿去裝飾你的房間吧！",
+        "en": "Isn't this cover cute? Let's hang it in your room!",
+        "ko": "이 커버 귀엽지 않아? 네 방에 걸어두자!"
+      }
+    },
+    {
+      "title": {
+        "ja": "海までサイクリング",
+        "zh-Hant": "騎單車去海邊",
+        "en": "Cycling to the Sea",
+        "ko": "바다까지 자전거"
+      },
+      "scene": "Unpai on a bicycle on a coastal road on a sunny day, the sea and Enoshima island behind her, light windbreaker and cap, hair flying, looking back at you",
+      "line": {
+        "ja": "海まで競争ね！ 負けたらソフトクリームおごりだよ！",
+        "zh-Hant": "比賽騎到海邊！輸的人要請霜淇淋喔！",
+        "en": "Race you to the sea! Loser buys the ice cream!",
+        "ko": "바다까지 시합이야! 지면 소프트아이스크림 쏘는 거다!"
+      }
+    },
+    {
+      "title": {
+        "ja": "スケートリンク",
+        "zh-Hant": "溜冰場",
+        "en": "Ice Rink",
+        "ko": "스케이트장"
+      },
+      "scene": "Unpai on an outdoor ice rink in winter holding the railing, pink knit hat, white puffer jacket and mittens, wobbling and laughing, reaching a hand out to you",
+      "line": {
+        "ja": "手、はなさないでよ！？ 絶対だからね！",
+        "zh-Hant": "你手不可以放開喔！？絕對喔！",
+        "en": "Don't let go of my hand!? I mean it!",
+        "ko": "손, 놓지 마!? 진짜 약속이야!"
+      }
+    },
+    {
+      "title": {
+        "ja": "屋上の花火特等席",
+        "zh-Hant": "屋頂的煙火特等席",
+        "en": "Rooftop Fireworks",
+        "ko": "옥상 불꽃놀이 특등석"
+      },
+      "scene": "Unpai on a city rooftop on a summer night, fireworks bursting in the sky behind her, navy varsity jacket over a white T-shirt, sitting on a blanket and patting the spot beside her",
+      "line": {
+        "ja": "ここ、わたしの特等席。今日は特別に貸してあげる！",
+        "zh-Hant": "這裡是我的特等席。今天特別借你坐！",
+        "en": "This is my VIP seat. Tonight I'll share it with you!",
+        "ko": "여기, 내 특등석이야. 오늘은 특별히 빌려줄게!"
+      }
+    },
+    {
+      "title": {
+        "ja": "カウントダウン",
+        "zh-Hant": "跨年倒數",
+        "en": "New Year's Countdown",
+        "ko": "카운트다운"
+      },
+      "scene": "Unpai in a festive crowd on New Year's Eve at night, confetti in the air and city lights behind, cream coat and pink scarf, cheering toward you",
+      "line": {
+        "ja": "三、二、一……あけおめ！ 今年最初に会えたね！",
+        "zh-Hant": "三、二、一……新年快樂！今年第一個見到的是你！",
+        "en": "Three, two, one… Happy New Year! You're the first I saw this year!",
+        "ko": "삼, 이, 일…… 새해 복 많이 받아! 올해 처음 만난 사람이 너네!"
+      }
+    },
+    {
+      "title": {
+        "ja": "ネオンの雨宿り",
+        "zh-Hant": "霓虹下躲雨",
+        "en": "Neon Shelter",
+        "ko": "네온 아래 비 피하기"
+      },
+      "scene": "Unpai under a shop awning on a rainy neon-lit Tokyo side street at night, holding a clear umbrella, navy varsity jacket, rain streaks glowing pink and blue",
+      "line": {
+        "ja": "傘、一本しかないや。……もっとこっち寄って？",
+        "zh-Hant": "傘只有一把耶。……再靠過來一點？",
+        "en": "Only one umbrella… Come closer?",
+        "ko": "우산이 하나밖에 없네. ……좀 더 이쪽으로 붙을래?"
+      }
+    },
+    {
+      "title": {
+        "ja": "手作りバレンタイン",
+        "zh-Hant": "手作情人節",
+        "en": "Homemade Valentine",
+        "ko": "수제 발렌타인"
+      },
+      "scene": "Unpai in her kitchen on a winter evening holding out a heart-shaped box of homemade chocolates with a pink ribbon, cream knit sweater, blushing",
+      "line": {
+        "ja": "はい、本命！ ……って言わせないでよ、恥ずかしい！",
+        "zh-Hant": "給你，是真心的！……不要讓我說出口啦，好害羞！",
+        "en": "Here — it's the real one! …Don't make me say it, that's embarrassing!",
+        "ko": "자, 진심 초콜릿! ……이라고 말하게 하지 마, 부끄럽잖아!"
+      }
+    },
+    {
+      "title": {
+        "ja": "夜のメリーゴーランド",
+        "zh-Hant": "夜晚的旋轉木馬",
+        "en": "Carousel at Night",
+        "ko": "밤의 회전목마"
+      },
+      "scene": "Unpai at an amusement park at night beside a glowing golden carousel, navy varsity jacket, one hand on a white carousel horse, inviting you on",
+      "line": {
+        "ja": "メリーゴーランド、一緒に乗ろ！ 白い馬、あなたのね。",
+        "zh-Hant": "一起坐旋轉木馬吧！白馬給你騎。",
+        "en": "Ride the merry-go-round with me! The white horse is yours.",
+        "ko": "회전목마, 같이 타자! 하얀 말은 네 거야."
+      }
+    },
+    {
+      "title": {
+        "ja": "DJブースのわたし",
+        "zh-Hant": "DJ台上的我",
+        "en": "Me at the Decks",
+        "ko": "DJ 부스의 나"
+      },
+      "scene": "Unpai behind a DJ booth in a small lounge in the early evening, pearl-white headphones on one ear, hand on a vinyl record, neon glow, winking at you",
+      "line": {
+        "ja": "次の曲、あなたのために選んだの。ちゃんと聴いててね！",
+        "zh-Hant": "下一首是為你選的。要好好聽喔！",
+        "en": "I picked the next song for you. Listen closely!",
+        "ko": "다음 곡, 너를 위해 골랐어. 제대로 듣고 있어야 해!"
+      }
+    },
+    {
+      "title": {
+        "ja": "お花見の夜桜",
+        "zh-Hant": "夜櫻賞花",
+        "en": "Cherry Blossoms at Night",
+        "ko": "밤벚꽃놀이"
+      },
+      "scene": "Unpai under lantern-lit cherry blossoms at night in spring, light pink trench coat over a white knit, petals drifting, smiling shyly at you",
+      "line": {
+        "ja": "夜の桜って、ちょっとドキドキするね。……わたしだけ？",
+        "zh-Hant": "夜晚的櫻花，讓人有點心跳加速呢。……只有我嗎？",
+        "en": "Cherry blossoms at night make my heart race a bit. …Just me?",
+        "ko": "밤에 보는 벚꽃은 좀 두근거리네. ……나만 그래?"
+      }
+    },
+    {
+      "title": {
+        "ja": "ヘッドホン、はんぶんこ",
+        "zh-Hant": "耳機，一人一邊",
+        "en": "Sharing Headphones",
+        "ko": "헤드폰, 반씩 나눠 쓰기"
+      },
+      "scene": "Intimate close-up of Unpai leaning in and holding one side of her pearl-white headphones toward the lens, bedroom fairy lights twinkling behind, oversized knit sweater, soft smile",
+      "line": {
+        "ja": "この曲、あなたにだけ聴かせたかったの。……どう？",
+        "zh-Hant": "這首歌，我只想讓你聽。……怎麼樣？",
+        "en": "I wanted you to be the only one to hear this. …Well?",
+        "ko": "이 노래, 너한테만 들려주고 싶었어. ……어때?"
+      },
+      "story": {
+        "ja": [
+          "ねえねえ、ちょっとこっち来て！\n部屋の床に座りこんで、わたしはレコードの山の中から一枚を引っぱり出した。ジャケットの角が少しすり切れた、古いアルバム。中古レコード屋さんで、店長さんに「それはいい耳してるね」って言われたやつ。\nターンテーブルに針を落とすと、ぷつぷつっていうノイズのあとに、やわらかいギターの音が流れはじめる。わたしはパールホワイトのヘッドホンを首からはずして、片っぽだけあなたの耳にあてた。\n「この曲、あなたにだけ聴かせたかったの」\nヘッドホンのコードは短いから、自然とふたりの顔が近くなる。壁のフェアリーライトがちかちか光って、あなたの横顔に小さな星がうつってた。\nあなたが目を閉じて聴いてるあいだ、わたしはずっとその顔を見てた。……どう？ 気に入ってくれた？",
+          "曲が終わっても、わたしたちはヘッドホンをはずさなかった。\n次の曲、その次の曲。アルバムのA面がぜんぶ終わるまで、ひとつのヘッドホンを半分こしたまま、床にならんで座ってた。いつもはおしゃべりなわたしが、こんなに静かにしてるの、めずらしいでしょ。\nでもね、音楽って、しゃべらなくても伝わることがあると思うの。この曲のここのベースがいいとか、このサビで泣きそうになるとか。あなたが小さくうなずくたびに、「わかる！」って心の中で叫んでた。\n針が内側まで来て、ぷつん、と音が止まった。\n「……B面も聴く？」\nあなたが先にそう言ったから、わたし、うれしくて思わず笑っちゃった。\nヘッドホンのコード一本ぶんの距離。これが、いまのわたしのいちばん好きな距離。レコードをひっくり返すあいだも、となりにいてね。"
+        ],
+        "zh-Hant": [
+          "欸欸，過來一下！\n我坐在房間地板上，從一疊唱片裡抽出一張。封套邊角有點磨損的老專輯。是在二手唱片行，被店長說「你的耳朵很好喔」的那一張。\n把唱針放上唱盤，在一陣劈啪的雜音之後，柔和的吉他聲流了出來。我從脖子上拿下珍珠白的耳機，把其中一邊貼到你的耳朵上。\n「這首歌，我只想讓你聽。」\n耳機線很短，我們的臉自然而然靠得好近。牆上的串燈一閃一閃，在你的側臉映出小小的星星。\n你閉著眼睛聽歌的時候，我一直看著你的臉。……怎麼樣？喜歡嗎？",
+          "歌結束了，我們還是沒有拿下耳機。\n下一首，再下一首。直到專輯A面全部放完，我們都分著同一副耳機，並肩坐在地板上。平常那麼愛講話的我，居然這麼安靜，很難得吧。\n可是啊，我覺得音樂這種東西，不用說話也能傳達。像是這首歌這段貝斯很棒、這段副歌讓人想哭。每次你輕輕點頭，我都在心裡大喊「我懂！」。\n唱針走到最內圈，啪地一聲，音樂停了。\n「……B面也要聽嗎？」\n是你先說出口的，我開心得忍不住笑了。\n一條耳機線的距離。這是我現在最喜歡的距離。把唱片翻面的時候，也要待在我旁邊喔。"
+        ],
+        "en": [
+          "Hey, hey, come here a sec!\nSitting on my bedroom floor, I pulled one record from the pile. An old album with a scuffed corner on the sleeve. The one the guy at the second-hand shop said showed I had \"a good ear.\"\nI dropped the needle, and after a crackle, a soft guitar started to play. I took the pearl-white headphones from around my neck and held one side to your ear.\n\"I wanted you to be the only one to hear this song.\"\nThe cord is short, so our faces ended up close. The fairy lights on the wall twinkled and scattered tiny stars across your profile.\nWhile you listened with your eyes closed, I watched your face the whole time. …Well? Do you like it?",
+          "Even after the song ended, we didn't take the headphones off.\nThe next song, and the one after. Until the whole A-side was done, we sat side by side on the floor sharing one pair of headphones. Me, the chatterbox, this quiet — pretty rare, huh?\nBut you know, I think music can say things without anyone talking. How the bass is great right here, how this chorus makes you want to cry. Every time you gave a little nod, I was shouting \"I know, right!\" inside.\nThe needle reached the centre and the sound stopped with a click.\n\"…Want to hear the B-side?\"\nYou said it first, and I was so happy I burst out laughing.\nThe length of one headphone cord. That's my favourite distance right now. Stay next to me while I flip the record, okay?"
+        ],
+        "ko": [
+          "있잖아, 잠깐 이리 와봐!\n방바닥에 주저앉아서, 나는 레코드 더미 속에서 한 장을 뽑아 들었어. 재킷 모서리가 살짝 해진, 오래된 앨범. 중고 레코드 가게에서 사장님한테 '귀가 좋네'라는 말을 들었던 그거야.\n턴테이블에 바늘을 내려놓으니까, 지지직 하는 잡음 뒤로 부드러운 기타 소리가 흘러나오기 시작했어. 나는 목에 걸고 있던 펄 화이트 헤드폰을 벗어서, 한쪽만 네 귀에 대줬어.\n'이 노래, 너한테만 들려주고 싶었어.'\n헤드폰 줄이 짧아서, 자연스럽게 얼굴이 가까워지네. 벽에 걸린 페어리 라이트가 반짝반짝 빛나서, 네 옆얼굴에 작은 별들이 비쳤어.\n네가 눈을 감고 듣는 동안, 나는 계속 그 얼굴만 보고 있었어. ……어때? 마음에 들었어?",
+          "노래가 끝나도, 우리는 헤드폰을 벗지 않았어.\n다음 곡, 또 그다음 곡. 앨범 A면이 다 끝날 때까지, 헤드폰 하나를 반씩 나눠 낀 채로 바닥에 나란히 앉아 있었어. 평소엔 수다쟁이인 내가 이렇게 조용한 거, 신기하지?\n근데 있잖아, 음악은 말 안 해도 통하는 게 있는 것 같아. 이 노래 여기 베이스가 좋다든가, 이 후렴구에서 눈물 날 것 같다든가. 네가 살짝 고개를 끄덕일 때마다, 속으로 '나도 그래!' 하고 외쳤어.\n바늘이 안쪽까지 들어와서, 톡, 하고 소리가 멈췄어.\n'……B면도 들을래?'\n네가 먼저 그렇게 말해줘서, 나 너무 좋아서 나도 모르게 웃어버렸어.\n헤드폰 줄 한 뼘만큼의 거리. 이게 지금 내가 제일 좋아하는 거리야. 레코드 뒤집는 동안에도, 옆에 있어줘."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "自撮り、もう一枚",
+        "zh-Hant": "自拍，再一張",
+        "en": "One More Selfie",
+        "ko": "셀카, 한 장 더"
+      },
+      "scene": "Close-up of Unpai leaning in close to the lens as if for a selfie on a rain-washed neon side street at night, pink and blue light on her face, navy varsity jacket with rose-pink sleeves, playful smile",
+      "line": {
+        "ja": "もう一枚！ 今度は、もっとくっついて撮ろ？",
+        "zh-Hant": "再一張！這次我們靠更近一點拍？",
+        "en": "One more! Let's get closer this time?",
+        "ko": "한 장 더! 이번엔 좀 더 붙어서 찍을까?"
+      },
+      "story": {
+        "ja": [
+          "ネオンの小道って、写真映えするんだよ。知ってた？\n雨上がりのアスファルトに、ピンクとブルーの看板がゆらゆら映ってる。わたしはスマホをかかげて、あなたの腕をぐいっと引っぱった。\n「はい、撮るよー！ 三、二、一！」\n一枚目。あなたは半分目をつぶってた。二枚目。わたしが変な顔してた。三枚目。自販機の光がまぶしすぎて、ふたりとも真っ白。\n「もー、全然うまくいかない！」\n文句を言いながら、わたしは笑いが止まらなかった。あなたも笑ってて、その笑い声が狭い路地に響いて、通りすがりの猫がびっくりして逃げていった。\n失敗した写真も、ぜんぶ消さないでとっておくね。だって、失敗してる写真のほうが、そのときの空気がちゃんと残ってる気がするから。\n「……もう一枚だけ。今度は、ちゃんと撮ろ？」",
+          "四枚目を撮る前に、わたしはちょっとだけ考えた。\nいつもみたいにピースして、にっこり笑って、それでいいのかなって。今日は、なんだか、もうちょっと特別な一枚がほしかったの。\n「今度は、もっとくっついて撮ろ？」\n言ってから、自分でもちょっと照れた。あなたは一瞬びっくりした顔をして、それから、そっと肩をよせてくれた。ジャケットの袖どうしがふれる。\n画面の中のふたりは、ネオンの光で頬がピンク色になってた。……ネオンのせいだよ、ほんとに。\nシャッターを押した瞬間、ぽつっと雨がまた降りはじめた。\nあわてて自販機の屋根の下に駆けこんで、撮れた写真を確認する。ちょっとブレてた。でも、ふたりとも、今日いちばんいい顔で笑ってた。\nこれ、待ち受けにしてもいい？ だめって言っても、もうしちゃったけどね！"
+        ],
+        "zh-Hant": [
+          "霓虹小巷超好拍的，你知道嗎？\n雨後的柏油路上，粉紅和藍色的招牌倒影搖搖晃晃。我舉起手機，一把拉住你的手臂。\n「要拍囉！三、二、一！」\n第一張，你眼睛閉了一半。第二張，我表情好怪。第三張，販賣機的光太亮，兩個人都白成一片。\n「真是的，完全拍不好！」\n我一邊抱怨，一邊笑個不停。你也在笑，笑聲在窄窄的巷子裡迴盪，路過的貓嚇了一跳逃走了。\n拍失敗的照片，我也全部留著不刪喔。因為總覺得，失敗的照片反而把當下的氣氛留得更好。\n「……再一張就好。這次好好拍吧？」",
+          "拍第四張之前，我稍微想了一下。\n像平常一樣比個YA、笑一笑，這樣就好了嗎？今天，總覺得想要更特別一點的一張。\n「這次，我們靠更近一點拍？」\n說出口之後，連我自己都有點害羞。你愣了一下，然後輕輕把肩膀靠了過來。外套的袖子碰在一起。\n畫面裡的我們，臉頰被霓虹燈照成了粉紅色。……是霓虹燈的關係啦，真的。\n按下快門的瞬間，雨又滴滴答答下了起來。\n我們趕緊跑到販賣機的屋簷下，確認拍到的照片。有點晃到了。可是，我們兩個都笑得是今天最好看的樣子。\n這張，可以設成桌布嗎？就算你說不行，我也已經設好了啦！"
+        ],
+        "en": [
+          "Neon alleys make the best photos. Did you know?\nPink and blue signs wobbled in the reflections on the rain-washed asphalt. I held up my phone and tugged your arm.\n\"Okay, here we go! Three, two, one!\"\nShot one: your eyes were half closed. Shot two: I was pulling a weird face. Shot three: the vending machine was so bright we both came out pure white.\n\"Ugh, this isn't working at all!\"\nI complained, but I couldn't stop laughing. You were laughing too, and it echoed down the narrow street and made a passing cat bolt.\nI'm keeping all the failed ones too, not deleting any. The failed photos keep the feeling of the moment better, somehow.\n\"…Just one more. Let's do it properly this time?\"",
+          "Before the fourth shot, I thought for a second.\nPeace sign, big smile, like always — was that enough? Today, I wanted something a little more special.\n\"Let's get closer this time?\"\nI got a bit shy after saying it. You looked surprised for a moment, then gently leaned your shoulder toward mine. Our jacket sleeves touched.\nOn the screen, the neon had turned both our cheeks pink. …It was the neon. Really.\nThe moment I pressed the shutter, the rain started again, drop by drop.\nWe ran under the vending machine's little roof and checked the photo. A bit blurry. But we were both smiling our best smiles of the day.\nCan I make it my lock screen? Even if you say no, I already did!"
+        ],
+        "ko": [
+          "네온 골목은 사진이 잘 받거든. 알고 있었어?\n비 그친 아스팔트 위로, 분홍이랑 파랑 간판이 일렁이면서 비쳐. 나는 스마트폰을 들고, 네 팔을 확 잡아당겼어.\n'자, 찍는다~! 삼, 이, 일!'\n한 장째. 너는 눈을 반쯤 감고 있었어. 두 장째. 내가 이상한 표정을 짓고 있었어. 세 장째. 자판기 불빛이 너무 눈부셔서 둘 다 새하얗게 나왔어.\n'아 진짜, 하나도 안 되네!'\n투덜거리면서도 나는 웃음이 멈추질 않았어. 너도 웃고 있어서, 그 웃음소리가 좁은 골목에 울려 퍼져서, 지나가던 고양이가 놀라서 도망갔어.\n실패한 사진도 다 지우지 않고 남겨둘 거야. 왜냐면, 실패한 사진일수록 그때의 분위기가 더 잘 남아 있는 것 같거든.\n'……딱 한 장만 더. 이번엔, 제대로 찍자?'",
+          "네 장째를 찍기 전에, 나는 잠깐 생각했어.\n늘 그렇듯 브이 하고 활짝 웃고, 그걸로 될까 하고. 오늘은 왠지, 조금 더 특별한 한 장을 갖고 싶었어.\n'이번엔, 좀 더 붙어서 찍을까?'\n말하고 나서, 나도 좀 부끄러웠어. 너는 순간 놀란 표정을 짓더니, 살며시 어깨를 붙여줬어. 재킷 소매끼리 스쳤어.\n화면 속 우리 둘은, 네온 불빛 때문에 뺨이 분홍색이 됐어. ……네온 탓이야, 진짜로.\n셔터를 누른 순간, 또 톡톡 비가 내리기 시작했어.\n서둘러 자판기 지붕 밑으로 뛰어들어가서, 찍힌 사진을 확인했어. 살짝 흔들렸어. 그래도 둘 다, 오늘 중에 제일 좋은 얼굴로 웃고 있었어.\n이거, 배경화면으로 해도 돼? 안 된다고 해도, 이미 해버렸지만!"
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "あなたのジャケット",
+        "zh-Hant": "你的外套",
+        "en": "Your Jacket",
+        "ko": "너의 재킷"
+      },
+      "scene": "Close-up of Unpai wrapped in an oversized dark jacket with sleeves covering her hands on a rainy neon-lit street at night, collar pulled up to her chin, glowing reflections behind, shy smile into the lens",
+      "line": {
+        "ja": "あなたのジャケット、ぶかぶか。……でも、返したくないかも。",
+        "zh-Hant": "你的外套好大件。……可是，我好像不想還你了。",
+        "en": "Your jacket's way too big on me. …But I might not give it back.",
+        "ko": "네 재킷, 완전 헐렁해. ……근데, 안 돌려주고 싶을지도."
+      },
+      "story": {
+        "ja": [
+          "天気予報、見てなかったわたしが悪いんだけどさ。\nライブハウスを出たら、外は本降りの雨だった。わたしが着てたのは、薄いTシャツ一枚。汗が冷えて、くしゃみがひとつ出た。\nそしたらあなたが、なにも言わずに自分のジャケットを脱いで、わたしの肩にかけてくれたの。\n「え、いいよ、あなたが寒いじゃん」\n「平気」\n平気なわけないのに。あなたのジャケットはぶかぶかで、袖から指先も出ない。えりもとから、あなたのにおいがふわっとした。洗剤と、さっきまでいたライブハウスの、ちょっとだけ熱っぽい空気のにおい。\n駅までの道、ネオンが雨ににじんで、水たまりがきらきら光ってた。わたしはジャケットの袖をぶらぶらさせながら、あなたの半歩うしろを歩いた。\n……あったかいな。ジャケットも、あなたも。",
+          "駅に着いても、わたしはジャケットを返さなかった。\n「もうちょっとだけ、借りててもいい？」\nあなたは笑って、「風邪ひかないならね」って言った。そういうとこ、ほんとずるいと思う。\n電車の窓に、ぶかぶかのジャケットを着たわたしが映ってる。袖を折り返しても、まだ長い。なんだか、あなたにつつまれてるみたいで、落ち着くのにそわそわする、へんな気持ち。\n最寄り駅で降りるとき、わたしはやっと袖から手を出して、ジャケットを脱ごうとした。でも、ボタンに指がかかったところで、止まっちゃった。\n「……返したくない、かも」\n小さい声で言ったのに、あなたにはちゃんと聞こえてたみたい。\n「じゃあ、次に会うときまで預けとく」\nそれって、次もあるってことだよね？ 約束だよ。それまで、このジャケット、大事にあずかっとくから！"
+        ],
+        "zh-Hant": [
+          "雖然是沒看氣象預報的我不好啦。\n走出Live House，外面下著大雨。我身上只有一件薄T恤。汗變冷了，打了一個噴嚏。\n結果你什麼都沒說，就脫下自己的外套，披在我肩上。\n「欸，不用啦，你會冷耶。」\n「沒事。」\n怎麼可能沒事。你的外套好大件，袖子長到連指尖都露不出來。領口飄來你的味道。洗衣精，還有剛才Live House裡那種有點熱烘烘的空氣味。\n走到車站的路上，霓虹在雨中暈開，水窪閃閃發亮。我晃著外套的袖子，走在你身後半步的地方。\n……好暖和喔。外套也是，你也是。",
+          "到了車站，我還是沒有把外套還你。\n「可以再借我一下下嗎？」\n你笑著說：「不感冒的話就好。」你這種地方，真的很狡猾。\n電車窗戶上映著穿著大外套的我。袖子摺起來還是太長。總覺得好像被你包住一樣，明明很安心，卻又坐立不安，好奇怪的心情。\n在我家那站下車時，我終於把手從袖子裡伸出來，想脫下外套。可是手指碰到釦子的時候，停住了。\n「……好像，不想還你了。」\n我說得很小聲，你卻好像聽得清清楚楚。\n「那就先寄放在你那裡，到下次見面為止。」\n這表示，還有下次對吧？說好了喔。在那之前，這件外套我會好好保管的！"
+        ],
+        "en": [
+          "Okay, it's my fault for not checking the forecast.\nWhen we came out of the live house, it was pouring. All I had on was a thin T-shirt. My sweat went cold and I sneezed.\nThen, without a word, you took off your jacket and put it over my shoulders.\n\"Hey, no, you'll be cold!\"\n\"I'm fine.\"\nNo way you were fine. Your jacket was huge on me; my fingertips didn't even reach past the sleeves. Your scent drifted up from the collar. Laundry soap, and the warm, crowded air of the gig we'd just left.\nOn the way to the station, the neon blurred in the rain and the puddles sparkled. I swung the empty sleeves and walked half a step behind you.\n…So warm. The jacket, and you.",
+          "Even at the station, I didn't give the jacket back.\n\"Can I borrow it a bit longer?\"\nYou laughed and said, \"As long as you don't catch a cold.\" That's so unfair of you.\nThe train window showed me in your giant jacket. Even with the sleeves rolled up, they were too long. It felt like being wrapped up in you — calm and fidgety at the same time. A strange feeling.\nGetting off at my stop, I finally pulled my hands out of the sleeves to take it off. But my fingers stopped on the button.\n\"…I might not want to give it back.\"\nI said it quietly, but you heard me just fine.\n\"Then hang on to it until next time.\"\nThat means there's a next time, right? Promise. Till then, I'll take really good care of this jacket!"
+        ],
+        "ko": [
+          "일기예보 안 본 내가 잘못이긴 한데.\n라이브하우스에서 나오니까 밖은 완전히 쏟아지는 비였어. 나는 얇은 티셔츠 한 장만 입고 있었거든. 땀이 식으면서 재채기가 한 번 났어.\n그랬더니 네가, 아무 말도 없이 자기 재킷을 벗어서 내 어깨에 걸쳐줬어.\n'아니, 됐어, 너 춥잖아.'\n'괜찮아.'\n괜찮을 리가 없는데. 네 재킷은 완전 헐렁해서, 소매 밖으로 손끝도 안 나와. 옷깃에서 네 냄새가 훅 났어. 세제 냄새랑, 방금까지 있던 라이브하우스의 살짝 후끈한 공기 냄새.\n역까지 가는 길, 네온이 빗물에 번져서 물웅덩이가 반짝반짝 빛났어. 나는 재킷 소매를 흔들거리면서, 네 반걸음 뒤를 걸었어.\n……따뜻하다. 재킷도, 너도.",
+          "역에 도착해도, 나는 재킷을 돌려주지 않았어.\n'조금만 더 빌려도 돼?'\n너는 웃으면서 '감기 안 걸리면'이라고 했어. 그런 거, 진짜 얄미운 것 같아.\n전철 창문에, 헐렁한 재킷을 입은 내가 비쳤어. 소매를 접어도 아직 길어. 왠지 너한테 폭 감싸인 것 같아서, 편안한데도 괜히 두근거리는, 이상한 기분이었어.\n가까운 역에서 내릴 때, 나는 겨우 소매 밖으로 손을 꺼내서 재킷을 벗으려고 했어. 근데, 단추에 손가락이 닿은 순간 멈춰버렸어.\n'……안 돌려주고 싶을지도.'\n작은 목소리로 말했는데, 너한테는 제대로 들렸나 봐.\n'그럼 다음에 만날 때까지 맡아둘게.'\n그 말은, 다음에도 만난다는 거지? 약속이야. 그때까지, 이 재킷 소중히 맡아둘 테니까!"
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "寝落ちする前に",
+        "zh-Hant": "睡著之前",
+        "en": "Before I Doze Off",
+        "ko": "잠들기 전에"
+      },
+      "scene": "Close-up of Unpai lying among plush toys on her bed at night hugging a teddy bear, oversized pastel hoodie and long lounge pants, the sleeves over her hands, fairy lights glowing, sleepy eyes looking into the lens",
+      "line": {
+        "ja": "ねむい……でも、まだ帰っちゃやだ。あと五分だけ。",
+        "zh-Hant": "好睏……可是你還不能走。再五分鐘就好。",
+        "en": "So sleepy… but don't go yet. Just five more minutes.",
+        "ko": "졸려…… 근데 아직 가지 마. 딱 오 분만 더."
+      },
+      "story": {
+        "ja": [
+          "ぬいぐるみたちに囲まれて、ベッドの上でごろごろするの、最高じゃない？\n今日は一日中遊びまわって、ゲームセンターでUFOキャッチャーして、クレープ食べて、最後はわたしの部屋で映画を観ることになったの。ポップコーンとジュースを用意して、フェアリーライトだけつけて、準備万端。\n……なのに、映画が始まって二十分で、わたし、もう眠くなってきちゃった。\n大きめのパーカーの袖に顔をうずめて、くまのぬいぐるみを抱っこして、必死にまぶたを開けてる。となりのあなたは映画に夢中で、ときどき「今の見た？」って聞いてくる。\n「うん、見てた見てた」\n見てなかった。あなたの横顔しか。\n画面の光がちかちかして、ぬいぐるみがふかふかで、あなたの声がやさしくて。こんなの、眠くならないほうがむりだよ。",
+          "気がついたら、エンドロールが流れてた。\nわたしはいつのまにか、ぬいぐるみの山にもたれて寝ちゃってたみたい。毛布がかけられてて、ポップコーンのお皿は片づいてた。あなたは、わたしが起きるのを待ってたんだって。\n「ごめん、ほとんど寝てた……」\n「知ってる。いびきかいてた」\n「かいてない！ ぜったい、かいてない！」\nクッションを投げたら、あなたは笑いながら受けとめた。時計を見たら、もう終電の時間が近い。\n「そろそろ帰るね」ってあなたが立ち上がったとき、わたし、思わずパーカーのすそをつかんでた。\n「……やだ。まだ帰っちゃやだ。あと五分だけ」\n自分でもびっくりするくらい、子どもみたいな声が出た。あなたは困った顔で、でも、もう一度座ってくれた。\n五分は、十分になって、十五分になった。明日、ちゃんと起きられなかったら、それはあなたのせいだからね！"
+        ],
+        "zh-Hant": [
+          "被一堆布偶包圍，在床上滾來滾去，是不是超棒的？\n今天玩了一整天，去遊樂場夾娃娃、吃可麗餅，最後決定在我房間看電影。爆米花和果汁都準備好了，只開著串燈，萬事俱備。\n……結果電影才開始二十分鐘，我就開始想睡了。\n把臉埋在大大的帽T袖子裡，抱著熊熊布偶，拚命撐開眼皮。旁邊的你看電影看得好入迷，偶爾會問我「剛剛那個你有看到嗎？」\n「嗯，有看到有看到。」\n才沒看到。我只看到你的側臉。\n螢幕的光一閃一閃，布偶軟綿綿的，你的聲音好溫柔。這樣要我不想睡，根本不可能嘛。",
+          "回過神來，片尾名單已經在跑了。\n我好像不知不覺靠著布偶山睡著了。身上蓋著毯子，爆米花的盤子也收好了。你說你一直在等我醒來。\n「對不起，我幾乎都在睡……」\n「我知道。你還打呼。」\n「才沒有！絕對沒有！」\n我丟了一個抱枕過去，你笑著接住。看了一下時鐘，末班車的時間快到了。\n你說「我差不多該回去了」站起來的時候，我忍不住抓住了你帽T的衣角。\n「……不要。你還不能走。再五分鐘就好。」\n連我自己都嚇一跳，聲音像小孩子一樣。你一臉為難，但還是又坐了下來。\n五分鐘變成十分鐘，又變成十五分鐘。明天要是起不來，都是你害的喔！"
+        ],
+        "en": [
+          "Rolling around on the bed surrounded by plushies — isn't that the best?\nWe'd played all day: claw machines at the arcade, crepes, and finally a movie in my room. Popcorn and juice ready, only the fairy lights on. Perfect setup.\n…And yet, twenty minutes in, I was already getting sleepy.\nFace buried in the sleeve of my big hoodie, hugging my teddy bear, I fought to keep my eyes open. You were totally into the movie, asking now and then, \"Did you see that?\"\n\"Yeah, yeah, I saw.\"\nI didn't. Just your profile.\nThe screen flickering, the plushies so soft, your voice so gentle. There's no way anyone could stay awake through that.",
+          "The next thing I knew, the credits were rolling.\nI must have fallen asleep against the plushie mountain. There was a blanket over me and the popcorn bowl was cleared away. You said you'd been waiting for me to wake up.\n\"Sorry, I slept through most of it…\"\n\"I know. You were snoring.\"\n\"I was not! Absolutely not!\"\nI threw a cushion and you caught it, laughing. The clock said the last train was coming up soon.\nWhen you stood up and said \"I should head home,\" I grabbed the hem of your hoodie without thinking.\n\"…No. Don't go yet. Just five more minutes.\"\nEven I was surprised how childish I sounded. You looked troubled, but you sat back down.\nFive minutes became ten, then fifteen. If I can't get up tomorrow, it's your fault!"
+        ],
+        "ko": [
+          "인형들에 둘러싸여서 침대 위에서 뒹굴거리는 거, 최고 아니야?\n오늘은 하루 종일 놀러 다녔어. 오락실에서 인형뽑기 하고, 크레페 먹고, 마지막엔 내 방에서 영화 보기로 했어. 팝콘이랑 주스도 준비하고, 페어리 라이트만 켜놓고, 준비 완벽.\n……근데 영화 시작하고 이십 분 만에, 나 벌써 졸리기 시작했어.\n큼직한 후드티 소매에 얼굴을 파묻고, 곰 인형을 껴안은 채로, 필사적으로 눈꺼풀을 붙잡고 있었어. 옆에 있는 너는 영화에 푹 빠져서, 가끔 '방금 봤어?' 하고 물어봐.\n'응, 봤어 봤어.'\n안 봤어. 네 옆얼굴밖에.\n화면 불빛은 반짝거리고, 인형은 폭신폭신하고, 네 목소리는 다정하고. 이러면 안 졸린 게 더 이상하지.",
+          "정신 차려보니, 엔딩 크레딧이 흐르고 있었어.\n나는 어느새 인형 더미에 기대서 잠들어버린 것 같았어. 담요가 덮여 있었고, 팝콘 접시도 치워져 있었어. 너는 내가 깨어나길 기다리고 있었대.\n'미안, 거의 잤네……'\n'알아. 코 골더라.'\n'안 골았어! 절대, 안 골았어!'\n쿠션을 던졌더니, 너는 웃으면서 받아냈어. 시계를 보니 막차 시간이 다 됐어.\n'슬슬 갈게' 하고 네가 일어났을 때, 나는 나도 모르게 후드티 자락을 붙잡고 있었어.\n'……싫어. 아직 가지 마. 딱 오 분만.'\n나도 놀랄 만큼 어린애 같은 목소리가 나왔어. 너는 곤란한 표정을 지었지만, 그래도 다시 앉아줬어.\n오 분은 십 분이 되고, 십오 분이 됐어. 내일 제대로 못 일어나면, 그건 다 네 탓이야!"
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "ネオン小道で待ってた",
+        "zh-Hant": "在霓虹小巷等你",
+        "en": "Waiting in Neon Alley",
+        "ko": "네온 골목에서 기다렸어"
+      },
+      "scene": "Unpai's signature: a narrow Tokyo side street at night, rose-pink and blue neon signs reflected in wet asphalt, a glowing vending machine, light rain, oversized navy varsity jacket with rose-pink sleeves over a white T-shirt, pearl-white retro headphones around her neck, looking into the lens",
+      "line": {
+        "ja": "おそーい！ ……でも来てくれたから、ぜんぶ許す！",
+        "zh-Hant": "好慢喔！……不過你來了，所以全部原諒你！",
+        "en": "You're so late! …But you came, so you're forgiven!",
+        "ko": "너무 늦었잖아! ……그래도 와줬으니까, 다 용서해줄게!"
+      },
+      "story": {
+        "ja": [
+          "東京の、とある細い路地。昼間は誰も気にしないような道だけど、夜になると、ここはわたしだけの特別な場所になるの。\nピンクとブルーのネオンが、濡れたアスファルトに映って、ゆらゆら光る。角っこの自販機は、いつも同じ青白い光で、わたしを照らしてくれる。\n紺色にローズピンクの袖のスタジャンを着て、首にはパールホワイトのヘッドホン。お気に入りのプレイリストを流しながら、わたしはここで、あなたを待つ。\n待ち合わせの時間は、とっくに過ぎてる。スマホを見て、ため息をついて、またヘッドホンから流れる曲に集中する。……ふりをする。\nほんとは、足音がするたびに振り向いちゃう。ちがう人だってわかって、ちょっとがっかりして、またネオンを見上げる。\n来ないかも、なんて思わないよ。あなたは、ちゃんと来る人だって知ってるから。",
+          "足音が近づいてきた。今度こそ、まちがいない。\n振り向くより先に、わたしは叫んでた。\n「おそーい！」\n息を切らして走ってきたあなたが、ごめんって手を合わせる。電車が止まってたんだって。スマホの充電も切れちゃったんだって。ほっぺをふくらませて怒ったふりをしたけど、三秒ももたなかった。\n「……でも、来てくれたから、ぜんぶ許す！」\nわたしはヘッドホンを首からはずして、あなたの首にかけた。流れてるのは、あなたを待ってるあいだずっと聴いてた曲。\n「この曲、待ってる間に百回くらい聴いたよ。責任とって、一緒に聴いて」\n自販機で、あったかいココアをふたつ買う。ネオンの下、肩をならべて、同じ曲を聴く。雨上がりの夜の空気が、ひんやりして気持ちいい。\nねえ、次に会うときも、ここで待ってるね。何分でも、何時間でも。だって、あなたが来るってわかってるから。"
+        ],
+        "zh-Hant": [
+          "東京某條窄窄的小巷。白天沒有人會注意的路，一到晚上，就變成只屬於我的特別地方。\n粉紅和藍色的霓虹燈，映在濕漉漉的柏油路上，搖搖晃晃地發著光。轉角的自動販賣機，總是用同樣青白色的光照著我。\n穿著深藍色配玫瑰粉袖子的棒球外套，脖子上掛著珍珠白的耳機。一邊放著最愛的歌單，我在這裡等你。\n約好的時間早就過了。看看手機，嘆口氣，又專心聽耳機裡的歌。……假裝的。\n其實，每次聽到腳步聲，我都會忍不住回頭。發現是別人，有點失望，又抬頭看著霓虹燈。\n我才不會覺得你不會來呢。因為我知道，你是一定會來的人。",
+          "腳步聲越來越近。這次，絕對沒錯。\n還沒轉身，我就先喊出來了。\n「好慢喔！」\n你氣喘吁吁地跑過來，雙手合十說對不起。你說電車停駛了，手機也沒電了。我鼓起臉頰假裝生氣，可是連三秒都撐不住。\n「……不過你來了，所以全部原諒你！」\n我從脖子上拿下耳機，掛到你的脖子上。正在播的，是等你的時候一直在聽的那首歌。\n「這首歌，我等你的時候聽了大概一百遍。你要負責，陪我一起聽。」\n在販賣機買了兩罐熱可可。在霓虹燈下，肩並著肩，聽著同一首歌。雨後夜晚的空氣，涼涼的好舒服。\n欸，下次見面，我也會在這裡等你喔。不管幾分鐘、幾個小時。因為我知道，你一定會來。"
+        ],
+        "en": [
+          "A narrow side street somewhere in Tokyo. In the daytime nobody notices it, but at night it becomes my own special place.\nPink and blue neon shimmer in the wet asphalt. The vending machine on the corner always lights me up with the same bluish glow.\nIn my navy varsity jacket with rose-pink sleeves, pearl-white headphones around my neck, playing my favourite playlist, this is where I wait for you.\nWe were supposed to meet ages ago. I check my phone, sigh, and focus on the song in my headphones again. …Or pretend to.\nTruthfully, I turn around every time I hear footsteps. It's someone else, I'm a little disappointed, and I look back up at the neon.\nI never think you won't come, though. I know you're someone who always shows up.",
+          "Footsteps coming closer. This time, no mistake.\nBefore I even turned around, I was shouting.\n\"You're so late!\"\nYou'd run all the way and were out of breath, hands pressed together in apology. The trains had stopped. Your phone had died. I puffed out my cheeks and pretended to be mad, but I didn't last three seconds.\n\"…But you came, so you're forgiven!\"\nI took the headphones from my neck and hung them around yours. Playing was the song I'd listened to the whole time I was waiting.\n\"I played this about a hundred times while I waited. Take responsibility and listen with me.\"\nI bought two hot cocoas from the vending machine. Under the neon, shoulder to shoulder, we listened to the same song. The after-rain night air was cool and felt so good.\nHey, next time too, I'll wait for you here. However many minutes, however many hours. Because I know you'll come."
+        ],
+        "ko": [
+          "도쿄의 어느 좁은 골목. 낮에는 아무도 신경 안 쓰는 길이지만, 밤이 되면 여긴 나만의 특별한 장소가 돼.\n분홍이랑 파랑 네온이 젖은 아스팔트에 비쳐서, 일렁일렁 빛나. 모퉁이의 자판기는 늘 같은 창백한 불빛으로 나를 비춰줘.\n남색에 로즈핑크 소매가 달린 스타디움 점퍼를 입고, 목엔 펄 화이트 헤드폰. 좋아하는 플레이리스트를 틀어놓고, 나는 여기서 너를 기다려.\n약속 시간은 벌써 지났어. 스마트폰을 보고 한숨을 쉬고, 다시 헤드폰에서 흘러나오는 노래에 집중해. ……하는 척.\n사실은, 발소리가 날 때마다 돌아보게 돼. 다른 사람인 걸 알고 조금 실망하고, 다시 네온을 올려다봐.\n안 올지도 모른다는 생각은 안 해. 너는 꼭 와주는 사람이란 걸 아니까.",
+          "발소리가 가까워졌어. 이번엔 확실해.\n돌아보기도 전에, 나는 소리쳤어.\n'너무 늦었잖아!'\n숨을 헐떡이며 뛰어온 네가 미안하다고 두 손을 모았어. 전철이 멈췄었대. 스마트폰 배터리도 다 됐었대. 볼을 부풀리며 화난 척했지만, 삼 초도 못 버텼어.\n'……그래도, 와줬으니까, 다 용서해줄게!'\n나는 헤드폰을 목에서 벗어서 네 목에 걸어줬어. 흘러나오는 건, 너를 기다리는 동안 계속 들었던 노래.\n'이 노래, 기다리는 동안 백 번쯤 들었어. 책임지고, 같이 들어.'\n자판기에서 따뜻한 코코아를 두 개 샀어. 네온 아래서 어깨를 나란히 하고, 같은 노래를 들었어. 비 갠 밤공기가 서늘해서 기분 좋았어.\n있잖아, 다음에 만날 때도 여기서 기다릴게. 몇 분이든, 몇 시간이든. 왜냐면, 네가 온다는 걸 아니까."
+        ]
+      }
+    }
+  ]
+}

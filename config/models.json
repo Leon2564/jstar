@@ -1,0 +1,125 @@
+{
+  "chat": {
+    "primary": {
+      "model": "deepseek/deepseek-v4.1-flash@deepseek",
+      "via": "openrouter",
+      "use": "陪伴聊天主力。@deepseek 固定走 DeepSeek 官方线路（满精度、首字延迟稳定）",
+      "chosen": "apps/agent/evals/RESULTS.md（PR #32）"
+    },
+    "fallback": {
+      "model": "qwen/qwen3.7-plus",
+      "via": "openrouter",
+      "use": "主力出错或 4 秒内没开始回答时接手",
+      "chosen": "apps/agent/evals/RESULTS.md（PR #32）"
+    },
+    "safety": {
+      "model": "google/gemini-3.1-flash-lite",
+      "via": "openrouter",
+      "use": "入站读取（安全分类 + 是否擦边 + 场景意图，一次调用）；出站检查只在需要时跑（2026-09-29 降本）",
+      "chosen": "apps/agent/evals/RESULTS.md（PR #32）"
+    },
+    "memory": {
+      "model": "google/gemini-3.1-flash-lite",
+      "via": "openrouter",
+      "use": "长期记忆摘要（记住你说过的话），分批更新：第 5 条 / 约定或夸奖线索 / 离开或安静时；其间的回忆卡只写标题（2026-09-29 降本）",
+      "chosen": "apps/agent/evals/RESULTS.md（PR #32）"
+    }
+  },
+  "image": {
+    "cardArt": {
+      "model": "openai/gpt-image-2",
+      "via": "openrouter",
+      "api": "images",
+      "quality": "medium",
+      "use": "AI 卡面（npm run media:cards，可用 --model 临时换成候选表里的其他模型）。负责人 2026-09-27：生图一律用 gpt-image-2，不用 Nano Banana（gemini-*-image）",
+      "chosen": "负责人指定（2026-09-27）；此前为 google/gemini-3.1-flash-image（卡面模型对比，PR #29）"
+    },
+    "keyframe": {
+      "model": "openai/gpt-image-2",
+      "via": "openrouter",
+      "use": "视频首尾关键帧（npm run media:keyframes；环境变量 OPENROUTER_IMAGE_MODEL 可临时覆盖）",
+      "chosen": "Seedance v2 流程（#24）"
+    }
+  },
+  "judge": {
+    "likeness": {
+      "model": "google/gemini-3.8-flash",
+      "via": "openrouter",
+      "use": "像不像本人：盲选比对打 1–5 分，≥4 才用（环境变量 JUDGE_MODEL 可临时覆盖）",
+      "chosen": "tools/media/src/judge.ts 校准"
+    },
+    "detail": {
+      "model": "google/gemini-3.8-flash",
+      "via": "openrouter",
+      "use": "评审的细节问题说明（环境变量 JUDGE_DETAIL_MODEL 可临时覆盖）",
+      "chosen": "tools/media/src/judge.ts 校准"
+    },
+    "continuity": {
+      "model": "google/gemini-3.8-flash",
+      "via": "openrouter",
+      "use": "新片子里是不是 v1 hero 里的同一个人（环境变量 JUDGE_MODEL 可临时覆盖）",
+      "chosen": "tools/media/src/continuity.ts"
+    }
+  },
+  "video": {
+    "use": "艺人与氛围视频。每条镜头在 tools/media/src/manifest.ts 里选档位；接入点 ID 是账号私有的，放在 .env.seedance",
+    "tiers": {
+      "sd25": { "model": "Seedance 2.5", "via": "byteplus-ark", "endpointEnv": "SEEDANCE_EP_SD25", "use": "成片（1080p）与预览（480p），首尾帧锁定循环" },
+      "sd2": { "model": "Seedance 2.0", "via": "byteplus-ark", "endpointEnv": "SEEDANCE_EP_SD2", "use": "服装与道具的多视角参考图" },
+      "fast": { "model": "Seedance（fast 档）", "via": "byteplus-ark", "endpointEnv": "SEEDANCE_EP_FAST", "use": "备用档位，当前没有镜头使用" },
+      "mini": { "model": "Seedance（mini 档）", "via": "byteplus-ark", "endpointEnv": "SEEDANCE_EP_MINI", "use": "备用档位，当前没有镜头使用" }
+    }
+  },
+  "music": {
+    "piece": {
+      "model": "google/lyria-3-pro-preview",
+      "via": "openrouter",
+      "use": "场景音乐（#82）：アリス钢琴曲、うんぱい耳机里的歌、3 段场景 BGM。原创提示词在 tools/audio/prompts.json，生成用 tools/audio/lyria.py pro（$0.08 / 首）",
+      "chosen": "OpenRouter 上仅有的音乐模型是 Lyria 3 Pro / Clip；每首 2 个 Pro 版本 + 1 个 Clip 版本按响度、循环接缝、频谱分析比较，5 首全部选 Pro（docs/asset-bible.md §十三）"
+    },
+    "clip": {
+      "model": "google/lyria-3-clip-preview",
+      "via": "openrouter",
+      "use": "30 秒短片段（$0.04 / 段），用于比稿；只有 30 秒，做循环太短，本轮没有采用（tools/audio/lyria.py clip）",
+      "chosen": "docs/asset-bible.md §十三"
+    }
+  },
+  "voice": {
+    "tts": {
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "via": "local",
+      "use": "艺人声音克隆：本人约 30 秒录音零样本克隆，在本机 MPS 上跑，不上传",
+      "chosen": "tools/voice/README.md（#21）"
+    },
+    "asr": {
+      "model": "mlx-community/whisper-large-v3-turbo",
+      "via": "local",
+      "use": "录音切分转写与合成质检（读音错字率）",
+      "chosen": "tools/voice/README.md（#21）"
+    },
+    "speaker": {
+      "model": "speechbrain/spkrec-ecapa-voxceleb",
+      "via": "local",
+      "use": "音色像不像本人（ECAPA-TDNN 余弦相似度）",
+      "chosen": "tools/voice/README.md（#21）"
+    },
+    "runtimeFish": {
+      "model": "s2.1-pro",
+      "via": "fish-audio",
+      "use": "她的实时语音（#73，运行时 TTS）：Fish Audio S2.1-Pro（83 种语言，跨语种），她的声音模型由 tools/voice/enroll.py 用本人参考音创建（reference_id）",
+      "chosen": "负责人 2026-10-02 选定 Fish Audio；质量见 npm run voice:pilot -- --provider fish（docs/tts.md）"
+    },
+    "runtimeQwen": {
+      "model": "qwen3-tts-vc-2026-01-22",
+      "via": "dashscope-intl",
+      "use": "她的实时语音（#73，运行时 TTS）：阿里云百炼国际站 Qwen3-TTS-VC，克隆音色由 tools/voice/enroll.py 用本人约 15–20 秒参考音创建（target_model 必须与此一致）",
+      "chosen": "负责人 2026-10-02 选定百炼（与预生成台词同为 Qwen3-TTS 系列）；与 BytePlus 的对比见 npm run voice:pilot（docs/tts.md）"
+    },
+    "runtimeByteplus": {
+      "model": "seed-icl-2.0",
+      "via": "byteplus-voice",
+      "use": "她的实时语音（#73）的备选：BytePlus Seed Speech 声音复刻 2.0（X-Api-Resource-Id），SpeakerID 由 tools/voice/enroll.py 训练",
+      "chosen": "负责人 2026-10-02 要求与百炼并行实现，按 npm run voice:pilot 的对比选（可按艺人分别选，docs/tts.md）"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# Promise conversations for the replay (#59; `python -m evals.replay --conversations evals/replay_promises.yaml`).
+# Each one ends in a clear agreement on a specific time, so each should make exactly one promise: the memory model
+# reads it from the turns, and her own reply must say yes to it (memory.py `promise_agreed`). Times are relative
+# (tomorrow, the day after), so the replay works on any day.
+looks: []
+
+conversations:
+  - star: nana
+    lang: ja
+    texts:
+      - こんばんは！今日もおつかれ
+      - 奈々の朗読、また聞きたいな
+      - じゃあ明日の夜9時に朗読してくれる？
+      - やった、約束ね！明日の夜9時、楽しみにしてる
+  - star: mahiro
+    lang: ja
+    texts:
+      - ただいま〜
+      - 明日の朝、早いんだよね
+      - 明日の朝7時に起こしてくれる？
+      - ありがとう、約束だよ。朝7時ね
+  - star: eimi
+    lang: en
+    texts:
+      - "Hey Eimi, I'm home"
+      - "Let's talk again tomorrow, I'll have more time"
+      - "Tomorrow at 10pm, just the two of us?"
+      - "It's a promise then. Tomorrow, 10pm!"
+  - star: alice
+    lang: zh-Hant
+    texts:
+      - 愛麗絲，晚安前想跟妳聊聊
+      - 後天晚上我比較有空
+      - 那後天晚上八點，陪我聊天好不好？
+      - 說好了喔，後天晚上八點！

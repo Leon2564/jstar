@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "id": "variant-unpai-1",
+    "star": "unpai",
+    "title": {"ja": "新しい服、きた", "zh-Hant": "新衣服，到了", "en": "New Clothes, Here", "ko": "새 옷, 왔다"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 1},
+    "idle": "unpai-variant-home"
+  },
+  "steps": [
+    {"id": "room", "type": "clip", "shot": "empty", "media": "unpai-night", "hold": 1.5},
+    {"id": "wait", "type": "line", "voice": "/voice/scene/unpai/b77638ee8f65.mp3", "text": {"ja": "……ちょい待ってて。いま着てるとこ。", "zh-Hant": "……等我一下。正在換。", "en": "…Hang on. Putting it on.", "ko": "……잠깐만 기다려. 새 옷 입어 보는 중이야."}},
+    {"id": "enter", "type": "clip", "shot": "enter", "media": "unpai-variant-enter", "hold": 0},
+    {"id": "ta-da", "type": "line", "voice": "/voice/scene/unpai/c408a34e1da0.mp3", "text": {"ja": "……おまたせ。新しい服、きた。……どうかな。", "zh-Hant": "……久等了。新衣服到了。……怎麼樣。", "en": "…Okay. New clothes came. …What do you think.", "ko": "……기다렸지. 새 옷, 왔어. ……어때."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "quiet", "options": [{"id": "suits", "next": "suits", "label": {"ja": "似合ってる", "zh-Hant": "很適合你", "en": "It suits you", "ko": "잘 어울려"}}, {"id": "stare", "next": "stare", "label": {"ja": "ずっと見てたい", "zh-Hant": "想一直看著", "en": "I could look all night", "ko": "계속 보고 싶어"}}]},
+    {"id": "suits", "type": "line", "voice": "/voice/scene/unpai/d099a69d197b.mp3", "next": "close", "text": {"ja": "……ふーん。……まあ、きみがそう言うなら、そうなのかも。……ありがと。", "zh-Hant": "……哦～。……嗯，你這麼說的話，大概是吧。……謝啦。", "en": "…Hm. …Well, if you say so, maybe. …Thanks.", "ko": "……흐응. ……뭐, 네가 그렇게 말하면 그런 걸지도. ……고마워."}},
+    {"id": "stare", "type": "line", "voice": "/voice/scene/unpai/1c076fbe511f.mp3", "next": "close", "text": {"ja": "……見すぎ。……べつに、いやじゃないけど。", "zh-Hant": "……看太久了。……也不是討厭啦。", "en": "…You're staring. …Not that I mind.", "ko": "……너무 봐. ……딱히, 싫은 건 아니지만."}},
+    {"id": "quiet", "type": "line", "voice": "/voice/scene/unpai/a9e9f39b11a5.mp3", "text": {"ja": "……なんか言ってよ。……まあ、その顔でだいたいわかるけど。", "zh-Hant": "……說點什麼嘛。……算了，看你的臉大概就知道了。", "en": "…Say something. …Eh, your face says most of it.", "ko": "……뭐라고 말 좀 해. ……뭐, 그 표정 보면 대충 알지만."}},
+    {"id": "close", "type": "clip", "shot": "close", "media": "unpai-variant-close", "hold": 0},
+    {"id": "first", "type": "line", "voice": "/voice/scene/unpai/184fec3f4a88.mp3", "text": {"ja": "この服見せるの、きみがはじめて。……ほかの人には、まだ見せてない。", "zh-Hant": "這套衣服，你是第一個看到的。……還沒給其他人看過。", "en": "You're the first to see this. …Nobody else has yet.", "ko": "이 옷 보여 주는 거, 네가 처음이야. ……다른 사람한테는 아직 안 보여 줬어."}},
+    {"id": "reward", "type": "effect", "affinity": 5, "variantXp": 30, "memory": {"title": {"ja": "新しい服と、夜ふかし", "zh-Hant": "新衣服與熬夜", "en": "New Clothes, Late Night", "ko": "새 옷과, 밤샘"}}},
+    {"id": "more", "type": "line", "voice": "/voice/scene/unpai/40ae97d0335b.mp3", "text": {"ja": "……もうちょい仲良くなったら、この服でいろいろ付き合ってもらうから。", "zh-Hant": "……等再熟一點，我就會穿著這套衣服，要你陪我做很多事。", "en": "…Get a bit closer and you'll be keeping me company in this a lot.", "ko": "……조금 더 친해지면, 내가 이 옷 입고 여러 가지 같이 해 달라고 할 거야."}},
+    {"id": "end", "type": "end", "outcome": "reveal"}
+  ]
+}

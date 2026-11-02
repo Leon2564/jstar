@@ -1,0 +1,35 @@
+// v1.jstarcards.ai: the v1.0 acceptance site — main, with its own Worker, D1 database and containers (deploy-v1.yml,
+// on each push to main). v1.1 work is previewed on test.jstarcards.ai; production changes only on a v* tag.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "jstar-v1",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "v1.jstarcards.ai", "custom_domain": true }],
+  // Demo mode: fixed sign-in code, demo lucky codes, nothing mailed (src/index.ts reads STAGE).
+  "vars": { "STAGE": "test", "WEB_HOST": "v1.jstarcards.ai" },
+  "assets": {
+    "directory": "../../apps/web/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "containers": [
+    { "class_name": "Api", "image": "../api.Dockerfile", "image_build_context": "../..", "max_instances": 1, "instance_type": "basic" },
+    { "class_name": "Agent", "image": "../agent.Dockerfile", "image_build_context": "../..", "max_instances": 1, "instance_type": "basic" }
+  ],
+  "durable_objects": {
+    "bindings": [
+      { "name": "API", "class_name": "Api" },
+      { "name": "AGENT", "class_name": "Agent" }
+    ]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "jstar-v1", "database_id": "40d96dd3-b467-41fe-a0e8-0b68be89e17e", "migrations_dir": "../../apps/api/migrations" }
+  ],
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Api", "Agent"] }],
+  "observability": { "enabled": true }
+}

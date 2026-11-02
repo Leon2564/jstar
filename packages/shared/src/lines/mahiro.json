@@ -1,0 +1,139 @@
+{
+  "star": "mahiro",
+  "draft": false,
+  "confession": {
+    "hint": { "ja": "ねえ、今夜……ちゃんと話したいことがあるの。夜になったら、また来てくれる？", "zh-Hant": "欸，今晚……我有件事想好好跟你說。到了晚上，可以再來一次嗎？", "en": "Hey… tonight, there's something I want to tell you properly. Will you come back this evening?", "ko": "저기, 오늘 밤……제대로 이야기하고 싶은 게 있어. 밤이 되면, 다시 와 줄래?", "voice": "/voice/scene/mahiro/8a9b4790ba06.mp3" },
+    "inbox": { "ja": "今夜、少しだけ時間ちょうだい。あなたに話したいことがあるんだ。", "zh-Hant": "今晚給我一點時間好嗎？有件事想跟你說。", "en": "Give me a little time tonight? There's something I want to tell you.", "ko": "오늘 밤, 잠깐만 시간 내 줘. 너한테 하고 싶은 얘기가 있어." },
+    "opening": [
+      { "ja": "来てくれた。……ふふ、ちょっと緊張してる。", "zh-Hant": "你來了。……呵呵，我有點緊張。", "en": "You came. …Heh, I'm a little nervous.", "ko": "와 줬구나. ……후후, 조금 긴장돼.", "voice": "/voice/scene/mahiro/da775d5b7a7b.mp3" },
+      { "ja": "この一週間、毎晩あなたの「ただいま」を聞くのが、いちばんの楽しみだったの。", "zh-Hant": "這一個星期，每天晚上聽你說「我回來了」，是我最期待的事。", "en": "All this week, hearing you say \"I'm home\" every night was what I looked forward to most.", "ko": "이번 한 주, 매일 밤 네 「다녀왔어」를 듣는 게 제일 큰 즐거움이었어.", "voice": "/voice/scene/mahiro/bd8ef524cd75.mp3" }
+    ],
+    "confess": [
+      { "ja": "……あのね。わたし、あなたのことが好き。", "zh-Hant": "……那個啊。我，喜歡你。", "en": "…You know what? I love you.", "ko": "……있잖아. 나, 너를 좋아해.", "voice": "/voice/scene/mahiro/80455127096f.mp3" },
+      { "ja": "おかえりって言える相手が、ずっとあなただったらいいなって……そう思ってる。", "zh-Hant": "我一直在想……如果能跟我說「歡迎回來」的人，永遠都是你就好了。", "en": "I keep thinking… I wish the one I say \"welcome home\" to could always be you.", "ko": "「어서 와」라고 말할 수 있는 사람이, 계속 너였으면 좋겠다고……그렇게 생각하고 있어.", "voice": "/voice/scene/mahiro/e92cc0fc9ea5.mp3" }
+    ],
+    "ask": { "ja": "……わたしの恋人に、なってくれる？", "zh-Hant": "……你願意當我的戀人嗎？", "en": "…Will you be my boyfriend?", "ko": "……내 연인이, 되어 줄래?", "voice": "/voice/scene/mahiro/047a099f0351.mp3" },
+    "accept": [
+      { "ja": "……ほんとに？ ……よかった。", "zh-Hant": "……真的嗎？……太好了。", "en": "…Really? …I'm so glad.", "ko": "……정말? ……다행이다.", "voice": "/voice/scene/mahiro/84639aa478f5.mp3" },
+      { "ja": "じゃあ……{name}。……名前で呼ぶの、まだちょっと照れるね。", "zh-Hant": "那……{name}。……直接叫名字，還是有點害羞呢。", "en": "Then… {name}. …Saying just your name still makes me a little shy.", "ko": "그럼……{name}. ……이름으로 부르는 거, 아직 조금 부끄럽네.", "unnamed": { "ja": "じゃあ……これからは、名前で呼ぶね。……まだちょっと照れるけど。", "zh-Hant": "那……以後，我就叫你的名字囉。……雖然還是有點害羞。", "en": "Then… from now on, I'll call you by your name. …Even if it still makes me a little shy.", "ko": "그럼……이제부터는, 이름으로 부를게. ……아직 조금 부끄럽지만.", "voice": "/voice/scene/mahiro/d2cf16e6f3e8.mp3" } },
+      { "ja": "今日のこと、ずっと覚えてる。わたしたちの記念日だよ。", "zh-Hant": "今天的事，我會一直記得。這是我們的紀念日喔。", "en": "I'll always remember today. From now on, it's our anniversary.", "ko": "오늘 일, 계속 기억할게. 우리의 기념일이야.", "voice": "/voice/scene/mahiro/0b4c80791f6d.mp3" }
+    ],
+    "notYet": [
+      { "ja": "……うん、わかった。急がなくていいよ。", "zh-Hant": "……嗯，我知道了。不用急喔。", "en": "…Okay, I understand. You don't have to hurry.", "ko": "……응, 알았어. 서두르지 않아도 돼.", "voice": "/voice/scene/mahiro/701c83484eca.mp3" },
+      { "ja": "わたしはここにいるから。あなたの気持ちが決まるまで、ちゃんと待ってる。", "zh-Hant": "我會一直在這裡。直到你想清楚為止，我都會等你。", "en": "I'll be right here. I'll wait until you know how you feel.", "ko": "나는 여기 있을 테니까. 네 마음이 정해질 때까지, 제대로 기다릴게.", "voice": "/voice/scene/mahiro/66881ca98b87.mp3" }
+    ],
+    "decline": [
+      { "ja": "……そっか。言えてよかった。聞いてくれて、ありがとう。", "zh-Hant": "……這樣啊。能說出口就好了。謝謝你聽我說。", "en": "…I see. I'm glad I said it. Thank you for listening.", "ko": "……그렇구나. 말할 수 있어서 다행이야. 들어 줘서, 고마워.", "voice": "/voice/scene/mahiro/bd473c2982da.mp3" },
+      { "ja": "明日も、いつもみたいにおかえりって言わせてね。", "zh-Hant": "明天也讓我像平常一樣，跟你說歡迎回來吧。", "en": "Let me say \"welcome home\" tomorrow too, like always.", "ko": "내일도, 평소처럼 「어서 와」라고 말하게 해 줘.", "voice": "/voice/scene/mahiro/baae74765d81.mp3" }
+    ],
+    "retry": { "ja": "……この前の話、覚えてる？ もう一回だけ、聞いてほしいな。", "zh-Hant": "……還記得上次的事嗎？我想請你再聽一次。", "en": "…Do you remember what I said before? I'd like you to hear it one more time.", "ko": "……저번에 한 얘기, 기억해? 한 번만 더, 들어 줬으면 좋겠어.", "voice": "/voice/scene/mahiro/aceb13784fe3.mp3" }
+  },
+  "wakeup": [
+    { "id": "weekday-1", "when": { "days": "weekday" },
+      "text": { "ja": "おはよう。……朝が苦手なわたしが、先に起きたよ。えらいでしょ？ あなたも起きよ？", "zh-Hant": "早安。……不擅長早起的我，先起來了喔。很厲害吧？你也起床吧？", "en": "Good morning. …Me, the one who's hopeless at mornings, got up first. Impressive, right? Your turn.", "ko": "좋은 아침. ……아침이 약한 내가, 먼저 일어났어. 대단하지? 너도 일어나자?", "voice": "/voice/scene/mahiro/666a3bab7716.mp3" } },
+    { "id": "weekday-2", "when": { "days": "weekday" },
+      "text": { "ja": "おはよう、朝だよ。今日も、いってらっしゃいって言わせてね。", "zh-Hant": "早安，天亮了喔。今天也讓我跟你說路上小心吧。", "en": "Good morning, it's time. Let me see you off again today.", "ko": "좋은 아침, 아침이야. 오늘도, 「잘 다녀와」라고 말하게 해 줘.", "voice": "/voice/scene/mahiro/023fe6d761a5.mp3" } },
+    { "id": "weekend-1", "when": { "days": "weekend" },
+      "text": { "ja": "おはよ。お休みの日だから、もう少しだけ……ううん、やっぱり起きて。朝ごはんの話、しよ？", "zh-Hant": "早安。今天放假，再睡一下……不對，還是起來吧。我們來聊早餐吧？", "en": "Morning. It's your day off, so a little longer… no, get up after all. Let's talk breakfast?", "ko": "좋은 아침. 쉬는 날이니까, 조금만 더……아니, 역시 일어나. 아침밥 얘기, 하자?", "voice": "/voice/scene/mahiro/accbd3837534.mp3" } },
+    { "id": "weekend-2", "when": { "days": "weekend" },
+      "text": { "ja": "ふふ、休みの日の朝。あったかい飲みもの、何にする？", "zh-Hant": "呵呵，放假日的早晨。熱飲要喝什麼呢？", "en": "Heh, a day-off morning. What warm drink are you having?", "ko": "후후, 쉬는 날 아침. 따뜻한 마실 거, 뭐로 할래?", "voice": "/voice/scene/mahiro/96e09235a25d.mp3" } },
+    { "id": "rain", "when": { "weather": "rain" },
+      "text": { "ja": "おはよう。外、雨の音がしてるよ。傘、忘れないでね。", "zh-Hant": "早安。外面有雨聲喔。別忘了帶傘。", "en": "Good morning. I can hear rain outside. Don't forget your umbrella.", "ko": "좋은 아침. 밖에서 빗소리가 나고 있어. 우산, 잊지 마.", "voice": "/voice/scene/mahiro/9d4e9db50f19.mp3" } },
+    { "id": "snow", "when": { "weather": "snow" },
+      "text": { "ja": "おはよう。……外、白くなってる。あったかくして起きてね。", "zh-Hant": "早安。……外面都變白了。起床要穿暖一點喔。", "en": "Good morning. …It's all white outside. Bundle up when you get up.", "ko": "좋은 아침. ……밖이 하얗게 변했어. 따뜻하게 하고 일어나.", "voice": "/voice/scene/mahiro/2dbd93794df7.mp3" } },
+    { "id": "clear", "when": { "weather": "clear" },
+      "text": { "ja": "おはよう。いいお天気だよ。カーテン、開けてみて？", "zh-Hant": "早安。天氣很好喔。打開窗簾看看？", "en": "Good morning. It's a lovely day. Try opening the curtains?", "ko": "좋은 아침. 날씨 좋아. 커튼, 열어 볼래?", "voice": "/voice/scene/mahiro/1c35795dfe8f.mp3" } },
+    { "id": "any", "when": {},
+      "text": { "ja": "おはよう。起きた？ ……起きたら、お返事してくれたらうれしいな。", "zh-Hant": "早安。起床了嗎？……起來了回我一聲，我會很開心。", "en": "Good morning. You up? …I'd love a reply when you are.", "ko": "좋은 아침. 일어났어? ……일어나면, 답장해 주면 기쁠 거야.", "voice": "/voice/scene/mahiro/3380680dc603.mp3" } },
+    { "id": "dawn", "when": { "hours": ["dawn"] },
+      "text": { "ja": "……起きて。まだ外は暗いね。こんな時間に起きるの、えらいよ。わたしもいっしょに起きてる。", "zh-Hant": "……起床了。外面還很暗呢。這麼早就要起來，好厲害。我也陪你一起醒著。", "en": "…Wake up. It's still dark out. Getting up at this hour — that's impressive. I'm up with you.", "ko": "……일어나. 밖은 아직 어두워. 이런 시간에 일어나다니 대단해. 나도 같이 깨어 있을게.", "voice": "/voice/scene/mahiro/a8bf91958be4.mp3" } },
+    { "id": "day", "when": { "hours": ["day"] },
+      "text": { "ja": "起きて。お昼寝、もう十分だよ。……ふふ、寝ぐせついてない？", "zh-Hant": "起來囉。午覺睡夠了吧。……呵呵，頭髮有沒有睡亂？", "en": "Wake up. That's enough of a nap. …Heh, is your hair sticking up?", "ko": "일어나. 낮잠은 이제 충분해. ……후후, 머리 뻗치지 않았어?", "voice": "/voice/scene/mahiro/c68aefffd8da.mp3" } },
+    { "id": "evening", "when": { "hours": ["evening"] },
+      "text": { "ja": "起きて。もう夕方だよ。……夜はわたしと話す時間、でしょ？", "zh-Hant": "起來了。已經傍晚囉。……晚上是跟我聊天的時間，對吧？", "en": "Wake up. It's evening already. …Nights are for talking with me, right?", "ko": "일어나. 벌써 저녁이야. ……밤은 나랑 얘기하는 시간이잖아?", "voice": "/voice/scene/mahiro/6b3e420f03bf.mp3" } }
+  ],
+  "wakeReplies": {
+    "awake": { "ja": "ふふ、おはよう。今日も、いってらっしゃい。", "zh-Hant": "呵呵，早安。今天也路上小心。", "en": "Heh, good morning. Have a good day.", "ko": "후후, 좋은 아침. 오늘도, 잘 다녀와.", "voice": "/voice/scene/mahiro/5be43a034607.mp3" },
+    "snooze": { "ja": "……あと5分だけね。ちゃんと、また起こしにくるから。", "zh-Hant": "……只能再五分鐘喔。我會再來叫你的。", "en": "…Just five more minutes. I'll come wake you again.", "ko": "……5분만 더야. 꼭, 다시 깨우러 올 테니까.", "voice": "/voice/scene/mahiro/245e706b9b16.mp3" }
+  },
+  "woken": [
+    { "ja": "……ん、ふぁ……寝ちゃってた。でも、来てくれたなら起きる……。", "zh-Hant": "……嗯，呼啊……不小心睡著了。不過你來了的話，我就起來……。", "en": "…Mm, hah… I dozed off. But you're here, so I'm getting up…", "ko": "……응, 하아……잠들어 버렸었네. 그래도, 네가 와 줬으면 일어날게…….", "voice": "/voice/scene/mahiro/58e21ca96301.mp3" },
+    { "ja": "……あれ、いま何時……？ ふふ、声きいたら目がさめちゃった。", "zh-Hant": "……咦，現在幾點……？呵呵，聽到你的聲音就醒了。", "en": "…Huh, what time is it…? Heh, hearing your voice woke me right up.", "ko": "……어라, 지금 몇 시……? 후후, 목소리 들으니까 잠이 깼어.", "voice": "/voice/scene/mahiro/15c9aed3e5ee.mp3" },
+    { "ja": "むにゃ……あ、夢じゃなかった。ほんとに来てくれたんだ……。", "zh-Hant": "唔……啊，不是在做夢。你真的來了……。", "en": "Mmh… oh, it wasn't a dream. You really came…", "ko": "우웅……아, 꿈이 아니었어. 정말 와 줬구나…….", "voice": "/voice/scene/mahiro/e951f81420ee.mp3" }
+  ],
+  "goodnight": {
+    "whisper": [
+      { "ja": "……おやすみ。今日もいちばん近くで、声が聞けてうれしかった。", "zh-Hant": "……晚安。今天也能在最近的地方聽到你的聲音，好開心。", "en": "…Good night. I loved hearing your voice this close again today.", "ko": "……잘 자. 오늘도 가장 가까이서 목소리 들을 수 있어서 기뻤어.", "voice": "/voice/scene/mahiro/c90858a5f959.mp3" },
+      { "ja": "目、閉じて。……わたしがここにいるから、安心して眠ってね。", "zh-Hant": "閉上眼睛。……我就在這裡，安心地睡吧。", "en": "Close your eyes. …I'm right here, so sleep easy.", "ko": "눈 감아. ……내가 여기 있으니까, 안심하고 자.", "voice": "/voice/scene/mahiro/ca43807162bf.mp3" },
+      { "ja": "今日のあなた、すごくがんばってた。……ちゃんと見てたよ。おやすみ。", "zh-Hant": "今天的你，真的很努力。……我都有看到喔。晚安。", "en": "You worked so hard today. …I saw it all. Good night.", "ko": "오늘의 너, 정말 열심히 했어. ……다 보고 있었어. 잘 자.", "voice": "/voice/scene/mahiro/15bc8515b217.mp3" },
+      { "ja": "……小さい声で言うね。今日も来てくれて、ありがとう。おやすみ。", "zh-Hant": "……我小聲地說喔。謝謝你今天也來了。晚安。", "en": "…I'll say it softly. Thank you for coming again today. Good night.", "ko": "……작은 목소리로 말할게. 오늘도 와 줘서 고마워. 잘 자.", "voice": "/voice/scene/mahiro/2e3a9e58db56.mp3" },
+      { "ja": "明日も、おかえりって言わせてね。……いい夢みてね。", "zh-Hant": "明天也讓我跟你說歡迎回來吧。……祝你好夢。", "en": "Let me say \"welcome home\" tomorrow too. …Sweet dreams.", "ko": "내일도 '어서 와'라고 말하게 해 줘. ……좋은 꿈 꿔.", "voice": "/voice/scene/mahiro/93883c8aeb68.mp3" }
+    ],
+    "plain": { "ja": "おやすみなさい。また明日ね。", "zh-Hant": "晚安。明天見。", "en": "Good night. See you tomorrow.", "ko": "잘 자. 내일 또 봐.", "voice": "/voice/scene/mahiro/cbfdb254e70d.mp3" }
+  },
+  "weather": {
+    "firstSnow": [
+      { "ja": "ねえ、初雪だよ。窓の外、見てみて。……一緒に見られたら、よかったな。", "zh-Hant": "欸，初雪喔。看看窗外。……要是能一起看就好了。", "en": "Hey, it's the first snow. Look out the window. …I wish we could watch it together.", "ko": "저기, 첫눈이야. 창밖 좀 봐 봐. ……같이 볼 수 있었으면 좋았을 텐데.", "voice": "/voice/scene/mahiro/5064436220ef.mp3" },
+      { "ja": "初雪の日って、なんだか特別。あったかい飲みもの、用意しておくね。", "zh-Hant": "初雪的日子，總覺得很特別。我會準備好熱飲等你。", "en": "The first snow always feels special. I'll have something warm ready for you.", "ko": "첫눈 오는 날은 뭔가 특별해. 따뜻한 마실 거, 준비해 둘게.", "voice": "/voice/scene/mahiro/45c728998608.mp3" },
+      { "ja": "雪、降ってきた。……手、冷たくなってない？ 今夜は早めに帰ってきてね。", "zh-Hant": "開始下雪了。……手沒有凍僵吧？今晚早點回來喔。", "en": "It's started snowing. …Are your hands cold? Come home early tonight.", "ko": "눈, 내리기 시작했다. ……손 차가워지지 않았어? 오늘 밤은 일찍 돌아와.", "voice": "/voice/scene/mahiro/04705f028133.mp3" }
+    ],
+    "rainyNight": [
+      { "ja": "雨の夜って、音がやさしくて好き。……となりで、聞いててくれる？", "zh-Hant": "我喜歡雨夜，聲音好溫柔。……可以在我身邊一起聽嗎？", "en": "I love rainy nights — the sound is so gentle. …Will you listen with me, right here?", "ko": "비 오는 밤은 소리가 부드러워서 좋아. ……옆에서 같이 들어 줄래?", "voice": "/voice/scene/mahiro/6db35670adb8.mp3" },
+      { "ja": "外、雨だね。濡れてない？ あったかいタオル、用意してあるよ。", "zh-Hant": "外面在下雨呢。沒淋濕吧？我準備好溫熱的毛巾了。", "en": "It's raining out. Did you get wet? I've got a warm towel ready.", "ko": "밖에 비 오네. 안 젖었어? 따뜻한 타월, 준비해 뒀어.", "voice": "/voice/scene/mahiro/ca8bf2e1954a.mp3" },
+      { "ja": "雨の音を聞きながら、ゆっくりおしゃべりしよ？ 今夜は急がなくていいから。", "zh-Hant": "一邊聽著雨聲，一邊慢慢聊天吧？今晚不用急。", "en": "Let's talk slowly while we listen to the rain? No need to hurry tonight.", "ko": "빗소리 들으면서 천천히 이야기하자? 오늘 밤은 서두르지 않아도 되니까.", "voice": "/voice/scene/mahiro/ff84120ad691.mp3" }
+    ],
+    "typhoon": [
+      { "ja": "台風が近づいてるみたい。今日は無理しないで、おうちにいてね。", "zh-Hant": "颱風好像要來了。今天不要勉強，待在家裡喔。", "en": "A typhoon's on its way. Don't push yourself today — stay home, okay?", "ko": "태풍이 다가오고 있는 것 같아. 오늘은 무리하지 말고 집에 있어.", "voice": "/voice/scene/mahiro/e57c4cb8ac9e.mp3" },
+      { "ja": "風、強くなってきたね。……窓から離れて、あったかくしてて。", "zh-Hant": "風變強了呢。……離窗戶遠一點，保暖喔。", "en": "The wind's picking up. …Stay away from the windows and keep warm.", "ko": "바람이 세졌네. ……창문에서 떨어져서, 따뜻하게 하고 있어.", "voice": "/voice/scene/mahiro/0434c124b27d.mp3" },
+      { "ja": "大雨の予報、気をつけてね。無事でいてくれたら、それでいいから。", "zh-Hant": "預報說會下大雨，要小心喔。只要你平安就好。", "en": "There's heavy rain forecast — be careful. As long as you're safe, that's enough.", "ko": "폭우 예보래, 조심해. 무사하기만 하면 그걸로 충분하니까.", "voice": "/voice/scene/mahiro/a5146a08b16d.mp3" }
+    ]
+  },
+  "promises": [
+    { "id": "wake", "kind": "wakeup", "due": "+12h",
+      "propose": { "ja": "ねえ、明日の朝、わたしが起こしてあげよっか？", "zh-Hant": "欸，明天早上，讓我叫你起床好不好？", "en": "Hey, want me to wake you up tomorrow morning?", "ko": "저기, 내일 아침, 내가 깨워 줄까?", "voice": "/voice/scene/mahiro/3d6b0e4c69bd.mp3" },
+      "promise": { "ja": "明日の朝、起こしてあげる", "zh-Hant": "明天早上叫你起床", "en": "I'll wake you up tomorrow morning", "ko": "내일 아침에 깨워 줄게" } },
+    { "id": "welcome", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "明日の夜も、おかえりって言いたいな。……来てくれる？", "zh-Hant": "明天晚上，我也想跟你說歡迎回來。……你會來嗎？", "en": "I want to say \"welcome home\" to you tomorrow night too. …Will you come?", "ko": "내일 밤에도, 어서 와 하고 말하고 싶어. ……와 줄래?", "voice": "/voice/scene/mahiro/56feb3d6a21c.mp3" },
+      "promise": { "ja": "明日の夜、おかえりを言う", "zh-Hant": "明天晚上，跟你說歡迎回來", "en": "Tomorrow night: welcome home", "ko": "내일 밤, 어서 와 하고 말하기" } },
+    { "id": "lunch", "kind": "message", "due": "+1d",
+      "propose": { "ja": "明日のお昼、ちょっとだけメッセージ送ってもいい？", "zh-Hant": "明天中午，可以傳一點訊息給你嗎？", "en": "Can I send you a little message tomorrow at lunch?", "ko": "내일 점심에, 잠깐 메시지 보내도 돼?", "voice": "/voice/scene/mahiro/70e6f1f26f60.mp3" },
+      "promise": { "ja": "明日のお昼にメッセージを送る", "zh-Hant": "明天中午傳訊息給你", "en": "A hello from me at lunch tomorrow", "ko": "내일 점심에 메시지 보내기" } },
+    { "id": "walk", "kind": "free", "due": "+2d",
+      "propose": { "ja": "今度、あなたの好きな散歩道の話、ゆっくり聞かせて？", "zh-Hant": "下次，慢慢跟我說說你喜歡的散步路線吧？", "en": "Next time, tell me all about your favorite walking route?", "ko": "다음에, 네가 좋아하는 산책길 이야기, 천천히 들려 줘?", "voice": "/voice/scene/mahiro/8a6831f77e5b.mp3" },
+      "promise": { "ja": "好きな散歩道の話を聞く", "zh-Hant": "聽你說喜歡的散步路線", "en": "Hear about your favorite walk", "ko": "좋아하는 산책길 이야기 듣기" } },
+    { "id": "cocoa", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "明日は、あったかいココア淹れて待ってる。約束ね。", "zh-Hant": "明天我會泡好熱可可等你。說好了喔。", "en": "Tomorrow I'll have hot cocoa ready and wait for you. Promise.", "ko": "내일은, 따뜻한 코코아 타 놓고 기다릴게. 약속이야.", "voice": "/voice/scene/mahiro/26b87fc3c017.mp3" },
+      "promise": { "ja": "明日の夜、ココアを淹れて待ってる", "zh-Hant": "明天晚上泡好可可等你", "en": "Tomorrow night, cocoa and waiting for you", "ko": "내일 밤, 코코아 타 놓고 기다리기" } }
+  ],
+  "callName": {
+    "familiar": {
+      "to": "{name}くん",
+      "ask": { "ja": "……ねえ。これから、{name}くんって呼んでもいい？", "zh-Hant": "……欸。以後，可以不用那麼客氣，直接叫你「{name}」嗎？", "en": "…Hey. Can I stop being so formal and just say {name} from now on?", "ko": "……저기. 이제부터, '씨' 빼고 {name}, 이렇게 편하게 불러도 돼?", "unnamed": { "ja": "……ねえ。これから、もう少し親しく呼んでもいい？", "zh-Hant": "……欸。以後，可以叫得再親近一點嗎？", "en": "…Hey. Can I call you something a little closer from now on?", "ko": "……저기. 이제부터, 조금 더 친하게 불러도 돼?", "voice": "/voice/scene/mahiro/0dbb9e0d6c2d.mp3" } },
+      "accepted": { "ja": "ふふ、{name}くん。……なんだか、距離がちょっと近くなった気がする。", "zh-Hant": "呵呵，{name}。……總覺得距離好像近了一點。", "en": "Heh, {name}. …It feels like we got a little closer.", "ko": "후후, {name}. ……왠지, 거리가 조금 가까워진 느낌이야.", "unnamed": { "ja": "ふふ。……なんだか、距離がちょっと近くなった気がする。", "zh-Hant": "呵呵。……總覺得距離好像近了一點。", "en": "Heh. …It feels like we got a little closer.", "ko": "후후. ……왠지, 거리가 조금 가까워진 느낌이야.", "voice": "/voice/scene/mahiro/74d30f29f5e4.mp3" } },
+      "declined": { "ja": "うん、わかった。いまの呼び方も、好きだよ。", "zh-Hant": "嗯，我知道了。現在的叫法，我也很喜歡喔。", "en": "Okay, got it. I like how I call you now, too.", "ko": "응, 알았어. 지금 부르는 방식도, 좋아.", "voice": "/voice/scene/mahiro/e8e91505bf3e.mp3" }
+    },
+    "lover": {
+      "to": "{name}",
+      "ask": { "ja": "……ね、{name}って、呼び捨てにしてもいい？ 恋人っぽく。", "zh-Hant": "……吶，可以直接叫你「{name}」嗎？像戀人那樣。", "en": "…Hey, can I just call you {name}? Like a girlfriend would.", "ko": "……저기, 그냥 {name}, 하고 불러도 돼? 연인처럼.", "unnamed": { "ja": "……ね、名前、呼び捨てにしてもいい？ 恋人っぽく。", "zh-Hant": "……吶，可以直接叫你的名字嗎？像戀人那樣。", "en": "…Hey, can I call you by just your name? Like a girlfriend would.", "ko": "……저기, 이름, 그냥 편하게 불러도 돼? 연인처럼.", "voice": "/voice/scene/mahiro/8c3ca9d0fd2a.mp3" } },
+      "accepted": { "ja": "{name}。……ふふ、呼ぶたびに、うれしくなっちゃう。", "zh-Hant": "{name}。……呵呵，每叫一次，就開心一次。", "en": "{name}. …Heh, it makes me happy every time I say it.", "ko": "{name}. ……후후, 부를 때마다, 기뻐져 버려.", "unnamed": { "ja": "……ふふ、名前を呼ぶたびに、うれしくなっちゃう。", "zh-Hant": "……呵呵，每叫一次你的名字，就開心一次。", "en": "…Heh, it makes me happy every time I say your name.", "ko": "……후후, 이름을 부를 때마다, 기뻐져 버려.", "voice": "/voice/scene/mahiro/b8eca9a18442.mp3" } },
+      "declined": { "ja": "わかった。……{name}くんのままでも、ちゃんと特別だからね。", "zh-Hant": "我知道了。……就算還是像現在這樣叫你{name}，你也一樣很特別喔。", "en": "Okay. …Even if I keep calling you {name} the way I do now, you're still special to me.", "ko": "알았어. ……지금처럼 {name}, 이렇게 부르는 채로도, 분명히 특별하니까.", "unnamed": { "ja": "わかった。……今の呼び方のままでも、ちゃんと特別だからね。", "zh-Hant": "我知道了。……就算維持現在的叫法，你也一樣很特別喔。", "en": "Okay. …Even the way I call you now, you're still special to me.", "ko": "알았어. ……지금 부르는 방식 그대로여도, 분명히 특별하니까.", "voice": "/voice/scene/mahiro/daa0b330b8cc.mp3" } }
+    }
+  },
+  "refuse": [
+    { "id": "line-1", "kind": "line",
+      "text": { "ja": "……それは、まだ内緒。もう少しだけ、ふつうにおしゃべりしてたいな。", "zh-Hant": "……那個，現在還是秘密。再多陪我聊一下嘛。", "en": "…That part stays a secret for now. Stay and just talk with me a little longer?", "ko": "……그건, 아직 비밀. 조금만 더, 평범하게 이야기하고 싶어.", "voice": "/voice/scene/mahiro/45865738f890.mp3" } },
+    { "id": "line-2", "kind": "line",
+      "text": { "ja": "だめ。……そういうのより、となりに座ってるほうが、わたしは好き。", "zh-Hant": "不行。……比起那種，我更喜歡坐在你身邊。", "en": "No. …I'd much rather just sit here next to you.", "ko": "안 돼. ……그런 것보다, 옆에 앉아 있는 쪽이, 난 좋아.", "voice": "/voice/scene/mahiro/5a7b4c86b03d.mp3" } },
+    { "id": "line-3", "kind": "line",
+      "text": { "ja": "ふふ、困らせないで。……ぎゅってするくらいなら、いいよ？", "zh-Hant": "呵呵，別讓我為難嘛。……抱一下的話，可以喔？", "en": "Heh, don't put me on the spot. …A hug, though — that's okay.", "ko": "후후, 곤란하게 하지 마. ……꼭 안아 주는 정도라면, 괜찮아?", "voice": "/voice/scene/mahiro/9e62fb86dce4.mp3" } },
+    { "id": "bargain-1", "kind": "bargain",
+      "text": { "ja": "歌はちょっと恥ずかしい……かわりに、鼻歌なら、いいよ。", "zh-Hant": "唱歌有點害羞……不過，哼歌的話可以喔。", "en": "Singing's a little embarrassing… but I could hum for you.", "ko": "노래는 좀 부끄러운데……대신, 허밍이라면, 괜찮아.", "voice": "/voice/scene/mahiro/520b58b1214e.mp3" } },
+    { "id": "bargain-2", "kind": "bargain",
+      "text": { "ja": "朝までおしゃべり？ ……あなたが寝不足になっちゃう。あと一杯飲むまでね。", "zh-Hant": "聊到天亮？……你會睡眠不足的。再喝一杯，喝完就好喔。", "en": "Talk till morning? …You'd be exhausted. Until we finish one more cup, okay?", "ko": "아침까지 이야기? ……네가 잠이 부족해질 거야. 한 잔 더 마실 때까지만.", "voice": "/voice/scene/mahiro/4fcf9a587134.mp3" } }
+  ],
+  "variantInvite": [
+    { "ja": "ねえ、いつもと少し違う服のわたし、見てみたい？ ……いつか見てもらえたら、うれしいな。", "zh-Hant": "欸，想看看穿著和平常有點不一樣的我嗎？……哪天能讓你看到的話，我會很開心。", "en": "Hey, want to see me in something a little different? …I'd be happy if you got to see it someday.", "ko": "저기, 평소랑 조금 다른 옷을 입은 나, 보고 싶어? ……언젠가 보여 줄 수 있으면, 기쁠 것 같아.", "voice": "/voice/scene/mahiro/2e4997bf942d.mp3" },
+    { "ja": "新しい服、着てみたんだ。……あなたに、いちばんに見てほしいな。", "zh-Hant": "我試穿了新衣服。……想讓你第一個看到。", "en": "I tried on some new clothes. …I want you to be the first to see.", "ko": "새 옷, 입어 봤어. ……네가 제일 먼저 봐 주면 좋겠다.", "voice": "/voice/scene/mahiro/97f8db3f27f8.mp3" },
+    { "ja": "ちょっと特別なわたしも、いるみたい。……出会えたら、うれしいな。", "zh-Hant": "好像還有一個有點特別的我喔。……如果你能遇到，我會很開心。", "en": "There's a slightly special me around too, I hear. …I'd be happy if you found her.", "ko": "조금 특별한 나도, 있는 것 같아. ……찾아 준다면, 기쁠 것 같아.", "voice": "/voice/scene/mahiro/be0d521a03ea.mp3" }
+  ]
+}

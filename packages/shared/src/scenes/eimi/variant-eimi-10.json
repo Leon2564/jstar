@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "id": "variant-eimi-10",
+    "star": "eimi",
+    "title": {"ja": "この服で、おいで", "zh-Hant": "這套衣服，給你看", "en": "Come Here, in This Outfit", "ko": "이 옷 입고, 이리 와"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 10},
+    "idle": "eimi-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "eimi-variant-home", "hold": 1.5},
+    {"id": "came", "type": "line", "voice": "/voice/scene/eimi/4efe5bf4566b.mp3", "text": {"ja": "ふふっ、来たね。……今夜は、からかうのはお休み。", "zh-Hant": "呵呵，你來了。……今晚，不捉弄你了。", "en": "Hehe, you came. …No teasing tonight.", "ko": "후훗, 왔네. ……오늘 밤은, 놀리는 건 쉬는 날."}},
+    {"id": "think", "type": "line", "voice": "/voice/scene/eimi/1166dccc96c2.mp3", "text": {"ja": "この服着るとね、キミのことばっかり考えちゃうの。……ずるいよね。", "zh-Hant": "穿上這套衣服，就滿腦子都是你。……很狡猾吧。", "en": "In this outfit all I think about is you. …Unfair, isn't it?", "ko": "이 옷 입으면 말이야, 너 생각만 하게 돼. ……치사하지?"}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "stay", "options": [{"id": "hug", "next": "hug", "label": {"ja": "ぎゅってしていい？", "zh-Hant": "可以抱你嗎？", "en": "Can I hold you?", "ko": "꼭 안아도 돼?"}}, {"id": "stay", "next": "stay", "label": {"ja": "そばにいるよ", "zh-Hant": "我在你身邊", "en": "I'm right here", "ko": "네 곁에 있을게"}}, {"id": "more", "next": "beyond", "label": {"ja": "もっと……", "zh-Hant": "還想再多一點……", "en": "More…", "ko": "더……"}}]},
+    {"id": "hug", "type": "clip", "shot": "close", "media": "eimi-variant-close", "hold": 0},
+    {"id": "hug-line", "type": "line", "voice": "/voice/scene/eimi/561df456f041.mp3", "next": "held", "text": {"ja": "……いいよ。……おいで。", "zh-Hant": "……好啊。……過來。", "en": "…Okay. …Come here.", "ko": "……좋아. ……이리 와."}},
+    {"id": "stay", "type": "clip", "shot": "close", "media": "eimi-variant-close", "hold": 0},
+    {"id": "stay-line", "type": "line", "voice": "/voice/scene/eimi/556093d34b21.mp3", "next": "held", "text": {"ja": "じゃあ、えいみから。……ぎゅー。", "zh-Hant": "那就由詠美來。……抱～。", "en": "Then I'll start. …Squeeze.", "ko": "그럼, 에이미부터. ……꼬옥."}},
+    {"id": "beyond", "type": "line", "voice": "/voice/scene/eimi/d67f76b2afcd.mp3", "next": "held", "text": {"ja": "ふふっ、欲張りさん。……今夜はぎゅーまで。続きは、ないしょ。", "zh-Hant": "呵呵，貪心鬼。……今晚只到抱抱。後續，是秘密。", "en": "Hehe, greedy. …Tonight it's just a hug. The rest is a secret.", "ko": "후훗, 욕심쟁이. ……오늘 밤은 안아 주는 것까지. 그 다음은, 비밀."}},
+    {"id": "held", "type": "line", "voice": "/voice/scene/eimi/91d8d3637d0f.mp3", "text": {"ja": "……キミ、あったかいね。……もう少し、このままでいさせて？", "zh-Hant": "……你好溫暖。……讓我再這樣待一下？", "en": "…You're warm. …Let me stay like this a little longer?", "ko": "……너, 따뜻하네. ……조금만 더, 이대로 있게 해 줘?"}},
+    {"id": "home", "type": "clip", "shot": "wide", "media": "eimi-variant-home", "hold": 2},
+    {"id": "wait-home", "type": "line", "voice": "/voice/scene/eimi/600dc7f2883c.mp3", "text": {"ja": "これからは、この服でお部屋で待ってる。……帰ってきたら、ちゃんとえいみを見つけてね？", "zh-Hant": "以後我會穿這套衣服在房間等你。……回來的時候，要好好找到詠美喔？", "en": "From now on I'll wait in my room in this. …When you come home, find me, okay?", "ko": "이제부터는 이 옷 입고 방에서 기다릴게. ……돌아오면, 에이미를 꼭 찾아 줘야 해?"}},
+    {"id": "reward", "type": "effect", "affinity": 12, "variantXp": 30, "memory": {"title": {"ja": "この服で、おいで", "zh-Hant": "這套衣服，給你看", "en": "Come Here, in This Outfit", "ko": "이 옷 입고, 이리 와"}}},
+    {"id": "end", "type": "end", "outcome": "hug"}
+  ]
+}

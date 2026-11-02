@@ -1,0 +1,62 @@
+{
+  "name": "jstarcardsai",
+  "private": true,
+  "version": "0.1.0",
+  "description": "JSTAR — authorized talent card collection + AI companion platform",
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "apps/admin",
+    "packages/*",
+    "tools/*",
+    "tools/media",
+    "infra/cloudflare"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npm-run-all -p dev:api dev:web",
+    "dev:web": "npm run dev -w @jstar/web",
+    "dev:api": "npm run dev -w @jstar/api",
+    "dev:admin": "npm run dev -w @jstar/admin",
+    "dev:agent": "cd apps/agent && python3 -m uvicorn app.main:app --reload --port 8100",
+    "demo": "npm-run-all -p demo:agent demo:api demo:web dev:admin",
+    "demo:agent": "npm run dev:agent",
+    "demo:api": "DEMO_MODE=true npm run dev:api",
+    "demo:web": "VITE_API_BASE=http://localhost:8080 npm run dev:web",
+    "build": "npm run build -w @jstar/shared && npm run build -w @jstar/api && npm run build -w @jstar/web && npm run build -w @jstar/admin",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "test": "npm run test -w @jstar/shared && npm run test:unit -w @jstar/web && npm run test -w @jstar/api && npm run test -w @jstar/media",
+    "test:e2e": "npm run test:e2e -w @jstar/web",
+    "test:agent": "cd apps/agent && python3 -m pytest -q",
+    "docker:up": "docker compose -f infra/docker-compose.yml up -d",
+    "docker:down": "docker compose -f infra/docker-compose.yml down",
+    "media:gen": "npm run gen -w @jstar/media --",
+    "media:process": "npm run process -w @jstar/media --",
+    "media:faces": "npm run faces -w @jstar/media --",
+    "media:talent": "npm run talent -w @jstar/media --",
+    "media:keyframes": "npm run keyframes -w @jstar/media --",
+    "media:refs": "npm run refs -w @jstar/media --",
+    "media:judge": "npm run judge -w @jstar/media --",
+    "media:check": "npm run check -w @jstar/media --",
+    "media:continuity": "npm run continuity -w @jstar/media --",
+    "media:catalog": "npm run catalog -w @jstar/media --",
+    "media:cards": "npm run cards -w @jstar/media --",
+    "media:cards2": "npm run cards2 -w @jstar/media --",
+    "media:pack": "npm run pack -w @jstar/media --",
+    "voice:enroll": "bash tools/voice/py.sh enroll.py",
+    "voice:pilot": "bash tools/voice/py.sh pilot.py",
+    "vidu:provision": "node tools/vidu/provision.mjs",
+    "ci:local": "bash scripts/ci-local.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.12.0",
+    "npm-run-all": "^4.1.5",
+    "typescript-eslint": "^8.70.1"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "_": "#82 music: the exact prompts, every take made, the one kept and how it was cut (docs/asset-bible.md §十三). Rebuild: lyria.py -> loops.py make -> encode.sh; ambience.py -> encode.sh.",
+  "piece/alice-greenhouse": {
+    "prompt": "Compose an original solo piano piece, instrumental only (no vocals, no lyrics, no other instruments). Setting: a glass greenhouse late at night after closing time, white roses, moonlight through the glass; a shy young woman plays for one listener. Quiet and intimate: soft touch with the sustain pedal, close-miked upright/grand piano with a little natural room reverb. Slow, about 66 BPM with gentle rubato. A simple, tender singing melody in the right hand over flowing broken-chord arpeggios in the left, in A-flat major with a touch of melancholy in the middle section, then returning to the opening theme. About 90 seconds long, ending naturally and softly on a held final chord that rings out. Entirely original composition; do not quote, reference or imitate any existing piece, composer or artist.",
+    "takes": [
+      "lyria-3-pro seed default",
+      "lyria-3-pro seed 7"
+    ],
+    "kept": "lyria-3-pro seed default",
+    "cut": "from the first note (-50 dBFS, less 20 ms) to the last above -60 dBFS, 1.5 s squared fade; not looped",
+    "loudness": -16,
+    "kbps": 128
+  },
+  "piece/unpai-earphones": {
+    "prompt": "Compose an original lo-fi chillhop instrumental, as if heard through one shared earbud on a late-night walk through quiet city streets. Warm, dusty, slightly swung boom-bap drums played softly, mellow Rhodes electric piano seventh chords, a round warm bass, soft vinyl crackle and tape hiss, gentle low-pass warmth. A faint, soft wordless female humming (\"mm\", \"ooh\") appears now and then in the background, with no words and no lyrics at all. Relaxed, around 78 BPM, gentle, cozy and a little wistful. A steady groove from the start to the end: no long intro, no build-up, no big ending. Entirely original; no lyrics, do not quote, reference or imitate any existing song or artist.",
+    "takes": [
+      "lyria-3-pro seed default",
+      "lyria-3-pro seed 7",
+      "lyria-3-clip seed 7"
+    ],
+    "kept": "lyria-3-pro seed default",
+    "cut": "loops.py make --start 20 --min 100 --max 110",
+    "loudness": -16,
+    "kbps": 128
+  },
+  "bgm/home-evening": {
+    "prompt": "Compose an original instrumental background track (no vocals, no lyrics) for a warm evening at home: coming home to someone who has made coffee, golden light by the window. Soft fingerpicked nylon-string acoustic guitar, warm felt piano, light brushed snare and soft upright bass, a little glockenspiel sparkle. Gentle, homely and cozy, around 84 BPM, F major. Keep the arrangement steady and even throughout so it can play as a seamless loop under dialogue: no intro build-up, no dramatic changes, no ending or fade-out. Entirely original composition; do not quote, reference or imitate any existing song, composer or artist.",
+    "takes": [
+      "lyria-3-pro seed default",
+      "lyria-3-pro seed 7",
+      "lyria-3-clip seed 7"
+    ],
+    "kept": "lyria-3-pro seed 7",
+    "cut": "loops.py make --start 10 --min 75 --max 85",
+    "loudness": -18,
+    "kbps": 128
+  },
+  "bgm/night": {
+    "prompt": "Compose an original instrumental piece (no vocals, no lyrics): quiet, intimate night ambience for a dim room late at night, meant to sit softly under whispered conversation. Soft warm analog synth pad, slow sparse felt electric piano notes with gentle tape echo, faint low cello drone. Calm, tender, a little wistful. About 60 BPM, D major with added ninths. No drums. Keep the texture steady and even from the first second to the last so it can be looped seamlessly: no intro build-up, no climax, no fade-out or ending. Entirely original composition; do not quote, reference or imitate any existing song, composer or artist.",
+    "takes": [
+      "lyria-3-clip seed default (API probe)",
+      "lyria-3-pro seed default",
+      "lyria-3-pro seed 7",
+      "lyria-3-clip seed 7"
+    ],
+    "kept": "lyria-3-pro seed default",
+    "cut": "loops.py make --start 10 --min 75 --max 85",
+    "loudness": -18,
+    "kbps": 128
+  },
+  "bgm/playful": {
+    "prompt": "Compose an original playful instrumental background track (no vocals, no lyrics) for a teasing, lighthearted game between two friends: bouncy pizzicato strings, glockenspiel, ukulele strums, light finger snaps and soft claps, a little bassoon for humour. Cheerful and a little mischievous, around 110 BPM, C major. Keep it steady and even throughout so it can play as a seamless loop under dialogue: no intro build-up, no big changes, no ending or fade-out. Entirely original composition; do not quote, reference or imitate any existing song, composer or artist.",
+    "takes": [
+      "lyria-3-pro seed default",
+      "lyria-3-pro seed 7",
+      "lyria-3-clip seed 7"
+    ],
+    "kept": "lyria-3-pro seed default",
+    "cut": "loops.py make --start 40 --min 50 --max 55",
+    "loudness": -18,
+    "kbps": 128
+  },
+  "ambience/rain": {
+    "prompt": "Create a purely environmental field-recording style soundscape, with no music at all (no instruments, no melody, no rhythm, no vocals): steady gentle rain at night heard from inside a cozy room, raindrops tapping on a window pane, soft rain wash on the roof, occasional drip from the eaves. Even and continuous from the first second to the last so it can loop seamlessly, no fade-in or fade-out. Entirely original.",
+    "takes": [
+      "lyria-3-clip seed 7",
+      "ambience.py rain 48 82"
+    ],
+    "kept": "ambience.py rain 48 82",
+    "loudness": -26,
+    "kbps": 96
+  },
+  "ambience/snow-night": {
+    "prompt": "Create a purely environmental soundscape, with no music at all (no instruments, no melody, no rhythm, no vocals): a quiet snowy night heard from inside a warm room, a soft muffled wind outside that gusts gently and settles, an occasional faint whistle at the window frame, the small ticks of a warm stove. Very calm and hushed, even and continuous from the first second to the last so it can loop seamlessly, no fade-in or fade-out. Entirely original.",
+    "takes": [
+      "lyria-3-clip seed 7",
+      "ambience.py snow 48 82"
+    ],
+    "kept": "ambience.py snow 48 82",
+    "loudness": -26,
+    "kbps": 96
+  }
+}

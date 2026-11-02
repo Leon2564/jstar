@@ -1,0 +1,545 @@
+{
+  "star": "alice",
+  "cards": [
+    {
+      "title": {
+        "ja": "夜明けの窓辺",
+        "zh-Hant": "黎明的窗邊",
+        "en": "Window Seat at Dawn",
+        "ko": "새벽녘 창가"
+      },
+      "scene": "Alice on a window seat with lace curtains at dawn, pale pink sky outside, a porcelain teacup and a small silver music box on the sill, opaque, fully lined white lace blouse, shy smile at you",
+      "line": {
+        "ja": "お、おはよう……。早起きしたら、あなたに一番に会いたくて。",
+        "zh-Hant": "早、早安……。早起之後，就想第一個見到你。",
+        "en": "G-good morning… I woke up early and wanted to see you first.",
+        "ko": "아, 안녕하세요……. 일찍 일어났더니, 당신을 제일 먼저 보고 싶어서요."
+      }
+    },
+    {
+      "title": {
+        "ja": "オルゴールのねじ",
+        "zh-Hant": "音樂盒的發條",
+        "en": "Winding the Music Box",
+        "ko": "오르골 태엽 감기"
+      },
+      "scene": "Alice at a small wooden table in soft morning light winding an antique silver music box with a tiny dancer, cream cardigan over a white blouse, looking up at you",
+      "line": {
+        "ja": "この曲、好きなの。……あなたにも、聴いてほしくて。",
+        "zh-Hant": "我喜歡這首曲子。……也想讓你聽聽。",
+        "en": "I love this melody. …I wanted you to hear it too.",
+        "ko": "이 곡, 좋아해요. ……당신에게도 들려주고 싶어서요."
+      }
+    },
+    {
+      "title": {
+        "ja": "ピアノの練習",
+        "zh-Hant": "練琴時間",
+        "en": "Piano Practice",
+        "ko": "피아노 연습"
+      },
+      "scene": "Alice at a grand piano in an old music room in the afternoon, sun through tall windows, sheet music on the stand, white blouse and long navy pleated skirt, glancing shyly at you",
+      "line": {
+        "ja": "まだ練習中だから……あんまり、じっと見ないでね。",
+        "zh-Hant": "我還在練習……不要一直盯著看啦。",
+        "en": "I'm still practicing… so don't stare too much, okay?",
+        "ko": "아직 연습 중이니까…… 너무 빤히 보지 말아주세요."
+      }
+    },
+    {
+      "title": {
+        "ja": "紅茶の時間",
+        "zh-Hant": "紅茶時間",
+        "en": "Tea Time",
+        "ko": "홍차 시간"
+      },
+      "scene": "Alice pouring tea from a porcelain teapot at a lace-covered table in the afternoon, cream knit cardigan, sugar bowl in hand, soft window light",
+      "line": {
+        "ja": "お砂糖、いくつ？ ……あなたの好み、覚えたいの。",
+        "zh-Hant": "要幾顆糖？……我想記住你的喜好。",
+        "en": "How many sugars? …I want to remember how you like it.",
+        "ko": "설탕은 몇 개요? ……당신 취향을 기억하고 싶어서요."
+      }
+    },
+    {
+      "title": {
+        "ja": "白いバラの手入れ",
+        "zh-Hant": "照顧白玫瑰",
+        "en": "Tending the White Roses",
+        "ko": "하얀 장미 손질"
+      },
+      "scene": "Alice in a glass conservatory in daylight tending white roses, linen apron over a white blouse, gardening gloves and small shears, smiling at you",
+      "line": {
+        "ja": "棘に気をつけてね。……あ、心配してくれたの？ ありがと。",
+        "zh-Hant": "小心刺喔。……啊，你在擔心我嗎？謝謝。",
+        "en": "Mind the thorns. …Oh, were you worried about me? Thank you.",
+        "ko": "가시 조심하세요. ……아, 걱정해 주신 거예요? 고마워요."
+      }
+    },
+    {
+      "title": {
+        "ja": "刺繍の途中",
+        "zh-Hant": "刺繡到一半",
+        "en": "Embroidery in Progress",
+        "ko": "수놓다 만 자수"
+      },
+      "scene": "Alice by an afternoon window holding an embroidery hoop with a half-stitched handkerchief, cream cardigan, hiding it shyly from you",
+      "line": {
+        "ja": "これ、あなたのイニシャル。……まだ、ないしょだったのに。",
+        "zh-Hant": "這是你名字的縮寫。……本來還想保密的。",
+        "en": "These are your initials. …It was supposed to be a secret.",
+        "ko": "이거, 당신 이니셜이에요. ……아직 비밀이었는데."
+      }
+    },
+    {
+      "title": {
+        "ja": "雨の日の楽譜",
+        "zh-Hant": "雨天的樂譜",
+        "en": "Sheet Music on a Rainy Day",
+        "ko": "비 오는 날의 악보"
+      },
+      "scene": "Alice sitting on the floor of a music room on a rainy afternoon sorting sheet music, rain on the tall windows, soft grey knit dress",
+      "line": {
+        "ja": "雨の日は、弾きたい曲が変わるの。……不思議だね。",
+        "zh-Hant": "下雨天，想彈的曲子就不一樣了。……很奇妙呢。",
+        "en": "On rainy days, I want to play different songs. …Funny, isn't it?",
+        "ko": "비 오는 날은, 치고 싶은 곡이 달라져요. ……신기하죠."
+      }
+    },
+    {
+      "title": {
+        "ja": "パン屋さんの朝",
+        "zh-Hant": "麵包店的早晨",
+        "en": "Bakery Morning",
+        "ko": "빵집의 아침"
+      },
+      "scene": "Alice outside a small bakery on a quiet morning street, holding a paper bag with croissants, beige trench coat over a white blouse, offering you one",
+      "line": {
+        "ja": "焼きたてのクロワッサン、ふたつ。……一緒に食べてくれる？",
+        "zh-Hant": "剛出爐的可頌，兩個。……願意跟我一起吃嗎？",
+        "en": "Two fresh croissants. …Will you eat with me?",
+        "ko": "갓 구운 크루아상, 두 개예요. ……같이 먹어줄래요?"
+      }
+    },
+    {
+      "title": {
+        "ja": "お気に入りのカーディガン",
+        "zh-Hant": "最喜歡的開襟衫",
+        "en": "My Favorite Cardigan",
+        "ko": "마음에 드는 카디건"
+      },
+      "scene": "Alice in front of a tall mirror in her bedroom trying on a pale pink cardigan over a white blouse, turning to ask your opinion, soft daylight",
+      "line": {
+        "ja": "これ、変じゃないかな……。あなたに見てほしかったの。",
+        "zh-Hant": "這件會不會很奇怪……。我想讓你看看。",
+        "en": "Does this look strange…? I wanted you to see it.",
+        "ko": "이거, 이상하지 않을까요……. 당신에게 보여주고 싶었어요."
+      }
+    },
+    {
+      "title": {
+        "ja": "おやすみのオルゴール",
+        "zh-Hant": "晚安音樂盒",
+        "en": "Goodnight Music Box",
+        "ko": "잘 자요, 오르골"
+      },
+      "scene": "Alice at night by a bedside lamp gently closing the lid of a silver music box, long-sleeve cream nightgown-style lounge dress buttoned to the collar, sleepy smile",
+      "line": {
+        "ja": "今日も、会いに来てくれてありがとう。……おやすみなさい。",
+        "zh-Hant": "今天也謝謝你來見我。……晚安。",
+        "en": "Thank you for coming to see me today. …Goodnight.",
+        "ko": "오늘도 만나러 와줘서 고마워요. ……잘 자요."
+      }
+    },
+    {
+      "title": {
+        "ja": "バラ園の散歩",
+        "zh-Hant": "玫瑰園散步",
+        "en": "Walk in the Rose Garden",
+        "ko": "장미 정원 산책"
+      },
+      "scene": "Alice strolling in a public rose garden on a sunny afternoon, white sun hat and a long white dress with sleeves, roses in full bloom, looking back at you",
+      "line": {
+        "ja": "白いバラの花言葉、知ってる？ ……ううん、やっぱりないしょ。",
+        "zh-Hant": "你知道白玫瑰的花語嗎？……不，還是保密好了。",
+        "en": "Do you know what white roses mean? …No, never mind. It's a secret.",
+        "ko": "하얀 장미의 꽃말, 알아요? ……아뇨, 역시 비밀이에요."
+      }
+    },
+    {
+      "title": {
+        "ja": "クラシックコンサート",
+        "zh-Hant": "古典音樂會",
+        "en": "Classical Concert",
+        "ko": "클래식 콘서트"
+      },
+      "scene": "Alice in the lobby of a concert hall in the evening, elegant navy long-sleeve dress, holding a programme, chandelier light, looking at you shyly",
+      "line": {
+        "ja": "演奏中、あなたの手、にぎってもいい……？",
+        "zh-Hant": "演奏的時候，可以握著你的手嗎……？",
+        "en": "During the performance… may I hold your hand?",
+        "ko": "연주하는 동안, 당신 손 잡아도 될까요……?"
+      }
+    },
+    {
+      "title": {
+        "ja": "アンティークショップ",
+        "zh-Hant": "古董店",
+        "en": "Antique Shop",
+        "ko": "앤티크 숍"
+      },
+      "scene": "Alice in a cluttered antique shop in the afternoon, holding a small vintage music box, cream coat and burgundy scarf, warm lamplight",
+      "line": {
+        "ja": "古いものって、誰かの大切な思い出が入ってる気がするの。",
+        "zh-Hant": "總覺得舊東西裡，裝著某個人珍貴的回憶。",
+        "en": "Old things feel like they hold someone's precious memories.",
+        "ko": "오래된 물건에는, 누군가의 소중한 추억이 담겨 있는 것 같아요."
+      }
+    },
+    {
+      "title": {
+        "ja": "湖畔のスケッチ",
+        "zh-Hant": "湖畔寫生",
+        "en": "Sketching by the Lake",
+        "ko": "호숫가 스케치"
+      },
+      "scene": "Alice sitting on a bench by a calm lake in autumn with a sketchbook on her knees, camel coat over a white blouse, pencil raised, looking at you",
+      "line": {
+        "ja": "あなたも描いていい？ ……動かないでね、すぐ終わるから。",
+        "zh-Hant": "可以也畫你嗎？……不要動喔，很快就好。",
+        "en": "Can I draw you too? …Don't move, it'll be quick.",
+        "ko": "당신도 그려도 될까요? ……움직이지 마세요, 금방 끝나니까."
+      }
+    },
+    {
+      "title": {
+        "ja": "紫陽花の洋館",
+        "zh-Hant": "繡球花洋館",
+        "en": "Mansion in the Rainy Season",
+        "ko": "수국 피는 저택"
+      },
+      "scene": "Alice on the steps of an old Western-style mansion in Yokohama in June, hydrangeas in bloom, holding a lace-trimmed umbrella, pale blue dress with long sleeves",
+      "line": {
+        "ja": "こういうお家に住むのが夢だったの。……笑わない？",
+        "zh-Hant": "我的夢想是住在這樣的房子裡。……你不會笑我吧？",
+        "en": "I've always dreamed of living in a house like this. …You won't laugh?",
+        "ko": "이런 집에 사는 게 꿈이었어요. ……웃지 않을 거죠?"
+      }
+    },
+    {
+      "title": {
+        "ja": "アフタヌーンティー",
+        "zh-Hant": "英式下午茶",
+        "en": "Afternoon Tea",
+        "ko": "애프터눈 티"
+      },
+      "scene": "Alice in an elegant hotel tea lounge with a three-tier stand of pastries, blush pink blouse with a bow, holding a teacup, hesitating over the sweets",
+      "line": {
+        "ja": "どれから食べるか、迷っちゃう。……あなたが先に選んで？",
+        "zh-Hant": "不知道先吃哪個好。……你先選好嗎？",
+        "en": "I can't decide what to eat first. …Would you choose?",
+        "ko": "뭐부터 먹을지 고민되네요. ……당신이 먼저 골라줄래요?"
+      }
+    },
+    {
+      "title": {
+        "ja": "いちょう並木",
+        "zh-Hant": "銀杏林蔭道",
+        "en": "Golden Ginkgo Avenue",
+        "ko": "은행나무 가로수길"
+      },
+      "scene": "Alice walking down an avenue of golden ginkgo trees in late autumn, cream coat and beret, leaves falling, smiling back at you",
+      "line": {
+        "ja": "落ち葉、ふかふかだね。……もう少しゆっくり歩こ？",
+        "zh-Hant": "落葉好鬆軟喔。……我們再走慢一點？",
+        "en": "The leaves are so soft underfoot. …Walk a little slower?",
+        "ko": "낙엽이 폭신폭신하네요. ……조금만 더 천천히 걸을까요?"
+      }
+    },
+    {
+      "title": {
+        "ja": "雪の日のチャペル",
+        "zh-Hant": "雪日的小教堂",
+        "en": "Chapel in the Snow",
+        "ko": "눈 내리는 예배당"
+      },
+      "scene": "Alice inside a small stone chapel on a snowy evening, candles glowing, snow visible through the arched window, white wool coat and knit scarf",
+      "line": {
+        "ja": "ここ、静かで好き。……あなたといると、もっと好き。",
+        "zh-Hant": "我喜歡這裡的安靜。……跟你在一起時，更喜歡了。",
+        "en": "I love how quiet it is here. …Even more with you.",
+        "ko": "여기, 조용해서 좋아해요. ……당신과 있으면, 더 좋아져요."
+      }
+    },
+    {
+      "title": {
+        "ja": "ふたりだけのリサイタル",
+        "zh-Hant": "兩人的獨奏會",
+        "en": "A Recital for Two",
+        "ko": "단둘만의 연주회"
+      },
+      "scene": "Alice seated at a grand piano in a candle-lit music room in the evening, elegant navy long-sleeve gown, turning toward you before she plays",
+      "line": {
+        "ja": "今夜の観客は、あなたひとり。……最後まで聴いてね。",
+        "zh-Hant": "今晚的觀眾只有你一個。……要聽到最後喔。",
+        "en": "Tonight's audience is just you. …Listen till the end.",
+        "ko": "오늘 밤 관객은, 당신 한 사람뿐이에요. ……끝까지 들어주세요."
+      }
+    },
+    {
+      "title": {
+        "ja": "温室の雨音",
+        "zh-Hant": "溫室的雨聲",
+        "en": "Rain on the Glass House",
+        "ko": "온실의 빗소리"
+      },
+      "scene": "Alice in a glass conservatory at night among white roses and fairy lights, rain running down the glass roof, cream cardigan over a opaque, fully lined white lace blouse",
+      "line": {
+        "ja": "雨の音と、あなたの声だけ。……すごく、しあわせ。",
+        "zh-Hant": "只有雨聲，和你的聲音。……好幸福。",
+        "en": "Only the rain and your voice. …I'm so happy.",
+        "ko": "빗소리랑, 당신 목소리뿐이에요. ……정말, 행복해요."
+      }
+    },
+    {
+      "title": {
+        "ja": "舞踏会の夜",
+        "zh-Hant": "舞會之夜",
+        "en": "The Ball",
+        "ko": "무도회의 밤"
+      },
+      "scene": "Alice in a grand ballroom under crystal chandeliers, elegant floor-length ivory gown with long lace sleeves, extending her hand toward you",
+      "line": {
+        "ja": "ダンス、下手でも……一曲だけ、踊ってくれますか？",
+        "zh-Hant": "就算我跳得不好……可以陪我跳一支舞嗎？",
+        "en": "Even if I'm clumsy… would you dance just one song with me?",
+        "ko": "춤, 서툴러도…… 한 곡만, 함께 춰줄래요?"
+      }
+    },
+    {
+      "title": {
+        "ja": "月夜のテラス",
+        "zh-Hant": "月夜的露台",
+        "en": "Moonlit Terrace",
+        "ko": "달밤의 테라스"
+      },
+      "scene": "Alice on a stone terrace at night under a full moon, a soft shawl over a long lavender dress, holding a teacup, garden lanterns behind her",
+      "line": {
+        "ja": "月が、あなたのほうばっかり照らしてる気がする。",
+        "zh-Hant": "總覺得月亮一直照著你呢。",
+        "en": "It feels like the moon only shines on you.",
+        "ko": "달이, 당신 쪽만 자꾸 비추는 것 같아요."
+      }
+    },
+    {
+      "title": {
+        "ja": "手作りのマカロン",
+        "zh-Hant": "手作馬卡龍",
+        "en": "Handmade Macarons",
+        "ko": "수제 마카롱"
+      },
+      "scene": "Alice in a bright kitchen in spring holding out a pastel box of homemade macarons tied with a navy ribbon, white blouse and apron, blushing",
+      "line": {
+        "ja": "何回も失敗したけど……いちばんきれいなの、選んだの。",
+        "zh-Hant": "失敗了好多次……不過我選了最漂亮的那些。",
+        "en": "I failed so many times… but I picked the prettiest ones.",
+        "ko": "몇 번이나 실패했지만…… 제일 예쁜 걸로 골랐어요."
+      }
+    },
+    {
+      "title": {
+        "ja": "オペラの夜",
+        "zh-Hant": "歌劇之夜",
+        "en": "Night at the Opera",
+        "ko": "오페라의 밤"
+      },
+      "scene": "Alice in a red velvet opera box at night, elegant burgundy gown with long sleeves, the stage lights glowing below, eyes glistening as she turns to you",
+      "line": {
+        "ja": "泣いちゃいそう……ハンカチ、貸してくれる？",
+        "zh-Hant": "快哭出來了……可以借我手帕嗎？",
+        "en": "I'm about to cry… could I borrow your handkerchief?",
+        "ko": "울어버릴 것 같아요…… 손수건, 빌려줄래요?"
+      }
+    },
+    {
+      "title": {
+        "ja": "流れ星とオルゴール",
+        "zh-Hant": "流星與音樂盒",
+        "en": "Music Box Under Shooting Stars",
+        "ko": "별똥별과 오르골"
+      },
+      "scene": "Alice on a grassy hill at night under a sky full of shooting stars, holding an open silver music box, cream coat over a white blouse, looking up then at you",
+      "line": {
+        "ja": "流れ星が落ちるまで、このオルゴール、止めないでいて。",
+        "zh-Hant": "流星落下之前，別讓這個音樂盒停下來。",
+        "en": "Don't let the music box stop until a star falls.",
+        "ko": "별똥별이 떨어질 때까지, 이 오르골 멈추지 말아줘요."
+      }
+    },
+    {
+      "title": {
+        "ja": "ほんとの気持ち",
+        "zh-Hant": "真正的心意",
+        "en": "What I Really Feel",
+        "ko": "진짜 마음"
+      },
+      "scene": "Intimate close-up of Alice by a lace-curtained window at dawn, soft pink light on her face, opaque, fully lined white lace high-neck blouse with a small navy ribbon, blushing as she looks into the lens",
+      "line": {
+        "ja": "……ほんとだよ。あなたのこと、すごく大切に思ってる。",
+        "zh-Hant": "……是真的喔。我真的很珍惜你。",
+        "en": "…I mean it. You matter to me so much.",
+        "ko": "……진짜예요. 당신을, 정말 소중하게 생각해요."
+      },
+      "story": {
+        "ja": [
+          "夜明け前に目が覚めて、窓辺の席に座ってた。\nレースのカーテンの向こうで、空がゆっくり薄いピンク色に変わっていく。ティーカップの紅茶は、もうぬるくなってた。わたしは白いレースのブラウスの袖をいじりながら、ずっと同じことを考えてたの。\n昨日、あなたに「いつもありがとう」って言われた。うれしかった。すごくうれしかったのに、わたし、「う、うん」としか返せなかった。\nほんとは言いたいことがたくさんあった。わたしのほうこそありがとうって。あなたと話してると、自分のことを少しだけ好きになれるって。でも、いざとなると言葉がのどにつかえて、顔ばっかり熱くなる。\nオルゴールのふたを開けると、小さなバレリーナがくるくる回りだした。\n……今日こそ、ちゃんと言おう。わたしは、そう決めた。",
+          "朝、あなたが来てくれたとき、わたしはまだ窓辺にいた。\n「早起きだね」ってあなたが笑う。わたしは立ち上がって、何度も練習した言葉を思い出そうとした。……ぜんぶ、どこかへ飛んでいっちゃってた。\n「あ、あの……」\n声がふるえる。あなたは急かさずに、わたしが話しだすのを待ってくれた。そういうところ。そういうところが、ほんとに。\n「昨日の、ありがとうの、お返事……まだ、してなかったから」\n朝日がちょうどカーテンのすきまから差しこんで、あなたの顔がまぶしく見えた。わたしは目を閉じて、一回だけ深呼吸した。\n「……ほんとだよ。あなたのこと、すごく大切に思ってる」\n言えた。ちゃんと、言えた。\n目を開けたら、あなたも少し赤くなってた。ふたりでなんだか笑っちゃって、ぬるくなった紅茶を、もう一度いれなおした。"
+        ],
+        "zh-Hant": [
+          "天還沒亮我就醒了，坐在窗邊的位子上。\n蕾絲窗簾的另一頭，天空慢慢變成淡淡的粉紅色。茶杯裡的紅茶已經溫了。我一邊玩著白色蕾絲襯衫的袖子，一邊一直想著同一件事。\n昨天，你對我說「一直以來謝謝你」。我好開心。明明那麼開心，我卻只回了一句「嗯、嗯」。\n其實我有好多話想說。該說謝謝的是我才對。跟你說話的時候，我會變得稍微喜歡自己一點。可是一到關鍵時刻，話就卡在喉嚨裡，只有臉越來越燙。\n打開音樂盒的蓋子，小小的芭蕾舞者開始轉圈圈。\n……今天一定要好好說出口。我這樣下定了決心。",
+          "早上你來的時候，我還坐在窗邊。\n你笑著說：「好早起喔。」我站起來，想回想起練習了好多次的話。……全部都不知道飛到哪裡去了。\n「那、那個……」\n聲音在發抖。你沒有催我，靜靜等我開口。就是這一點。你就是這一點，真的。\n「昨天那句謝謝……我還沒有，好好回答你。」\n朝陽正好從窗簾縫隙照進來，你的臉看起來好耀眼。我閉上眼睛，深深吸了一口氣。\n「……是真的喔。我真的很珍惜你。」\n說出來了。好好地，說出來了。\n睜開眼睛，你的臉也有點紅。我們不知怎麼地一起笑了出來，又把變溫的紅茶重新泡了一次。"
+        ],
+        "en": [
+          "I woke before dawn and sat on the window seat.\nBeyond the lace curtains, the sky slowly turned pale pink. The tea in my cup had gone lukewarm. Fiddling with the sleeve of my white lace blouse, I kept thinking about the same thing.\nYesterday you said, \"Thanks for always being there.\" I was happy. So happy — and all I managed was \"U-um, okay.\"\nThere was so much I wanted to say. That I'm the one who should be thankful. That talking with you makes me like myself a little more. But when the moment comes, the words stick in my throat and only my face gets hot.\nI opened the music box and the tiny ballerina began to turn.\n…Today, I'll say it properly. I decided.",
+          "When you arrived that morning, I was still at the window.\n\"You're up early,\" you smiled. I stood and tried to remember the words I'd practised so many times. …They had all flown away.\n\"U-um…\"\nMy voice shook. You didn't rush me; you waited for me to speak. That's it. That's exactly the thing about you.\n\"Your thank-you yesterday… I never answered it.\"\nThe morning sun slipped through the gap in the curtains and made your face dazzling. I closed my eyes and took one deep breath.\n\"…I mean it. You matter to me so much.\"\nI said it. I really said it.\nWhen I opened my eyes, you'd gone a little red too. We both started laughing, and I made a fresh pot of the tea that had gone cold."
+        ],
+        "ko": [
+          "동트기 전에 눈을 떠서, 창가 자리에 앉아 있었어요.\n레이스 커튼 너머로, 하늘이 천천히 옅은 분홍빛으로 물들어 가요. 찻잔의 홍차는 벌써 미지근해졌어요. 저는 하얀 레이스 블라우스 소매를 만지작거리며, 계속 같은 생각을 하고 있었어요.\n어제, 당신이 '늘 고마워'라고 말해줬어요. 기뻤어요. 정말 기뻤는데, 저는 '으, 응' 하고밖에 대답하지 못했어요.\n사실은 하고 싶은 말이 많았어요. 고마운 건 저 쪽이라고. 당신과 이야기하고 있으면, 저 자신을 조금은 좋아할 수 있게 된다고. 그런데 막상 그 순간이 되면 말이 목에 걸려서, 얼굴만 뜨거워져요.\n오르골 뚜껑을 열자, 작은 발레리나가 빙그르르 돌기 시작했어요.\n……오늘이야말로, 제대로 말해야지. 저는 그렇게 결심했어요.",
+          "아침에 당신이 와줬을 때, 저는 아직 창가에 있었어요.\n'일찍 일어났네'라며 당신이 웃어요. 저는 일어서서, 몇 번이나 연습했던 말을 떠올리려 했어요. ……전부, 어딘가로 날아가 버렸어요.\n'저, 저기……'\n목소리가 떨려요. 당신은 재촉하지 않고, 제가 말을 시작하길 기다려줬어요. 그런 점. 당신의 그런 점이, 정말로.\n'어제, 고맙다고 해준 거…… 아직, 대답 못 했으니까요.'\n마침 아침 햇살이 커튼 틈으로 들어와서, 당신 얼굴이 눈부시게 보였어요. 저는 눈을 감고, 한 번만 깊게 숨을 들이쉬었어요.\n'……진짜예요. 당신을, 정말 소중하게 생각해요.'\n말했어요. 제대로, 말했어요.\n눈을 뜨니, 당신도 조금 붉어져 있었어요. 둘이서 왠지 웃음이 나서, 식어버린 홍차를 다시 한 번 우렸어요."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "連弾しよ？",
+        "zh-Hant": "四手聯彈吧？",
+        "en": "Play a Duet with Me",
+        "ko": "피아노 듀엣"
+      },
+      "scene": "Close-up of Alice seated at a grand piano in an old music room, afternoon sun through tall windows, fingers resting on the keys, opaque, fully lined white lace blouse, turning her face toward the lens with a shy smile",
+      "line": {
+        "ja": "連弾、しよ？ ……となり、座って。",
+        "zh-Hant": "我們四手聯彈吧？……坐我旁邊。",
+        "en": "Play a duet with me? …Sit beside me.",
+        "ko": "같이 칠래요? ……옆에, 앉아요."
+      },
+      "story": {
+        "ja": [
+          "古い洋館の中に、小さな音楽室があるの。\n午後の光が高い窓から差しこんで、グランドピアノの黒いふたに、光の四角が映ってる。わたしはよくここで、ひとりでピアノを弾くの。上手じゃないけど、弾いてると心が静かになるから。\n今日は、あなたがとなりにいる。\n「なにか弾いて」って言われて、わたし、ほんとは断ろうと思ったの。人前で弾くの、すごく苦手だから。でも、あなたがあんまり楽しそうな顔をするから、つい、うなずいちゃった。\n弾きはじめて三小節目で、指がもつれた。やり直して、また五小節目でつまずいた。\n「ご、ごめんね、緊張しちゃって……」\nあなたは首をふって、ピアノの椅子のはしっこを指さした。\n「一緒に弾こうか」って。……え？ あなた、ピアノ弾けたの？",
+          "あなたが弾けたのは、「ねこふんじゃった」だけだった。\nでも、それで十分だった。わたしが低い音で伴奏をつけて、あなたが高い音でメロディーを弾く。何度も途中で止まって、そのたびにふたりで笑った。\n椅子はひとり用だから、肩と肩がぴったりくっついてる。鍵盤の上で、ときどき指がぶつかる。そのたびに、わたしの心臓がどきんと跳ねて、また音をまちがえた。\n「アリスのほうが緊張してない？」\n「し、してない……」\nうそ。ぜんぜん、してる。\n何回目かで、やっと最後までつっかえずに弾けた。最後の和音が音楽室に響いて、ゆっくり消えていく。わたしたちは、しばらく鍵盤から手を離さなかった。\n「……もう一曲、しよ？」\n今度は、わたしから言った。ひとりで弾くより、ふたりで弾くほうが、ずっと楽しいって知っちゃったから。"
+        ],
+        "zh-Hant": [
+          "老洋館裡，有一間小小的音樂室。\n午後的陽光從高高的窗戶照進來，在平台鋼琴黑色的琴蓋上，映出一塊方形的光。我常常一個人在這裡彈琴。雖然彈得不好，但彈著彈著，心就會安靜下來。\n今天，你在我旁邊。\n你說「彈點什麼吧」，其實我本來想拒絕的。因為我很不擅長在別人面前彈琴。可是你看起來好期待，我就忍不住點了頭。\n才彈到第三小節，手指就打結了。重來一次，又在第五小節卡住。\n「對、對不起，我太緊張了……」\n你搖搖頭，指了指琴椅的一角。\n你說：「一起彈吧。」……咦？你會彈鋼琴嗎？",
+          "你會彈的，只有〈貓咪踩到了〉而已。\n可是，那樣就夠了。我在低音幫你伴奏，你在高音彈旋律。中途停了好多次，每次我們都一起笑出來。\n琴椅是單人的，所以我們的肩膀緊緊貼在一起。在琴鍵上，手指偶爾會碰到。每碰一次，我的心就撲通跳一下，又彈錯了音。\n「愛麗絲是不是比較緊張啊？」\n「才、才沒有……」\n騙人的。緊張得要命。\n不知道第幾次，終於一次都沒卡住地彈完了。最後的和弦在音樂室裡迴盪，慢慢消失。我們好一會兒都沒把手從琴鍵上移開。\n「……再彈一首，好不好？」\n這次，是我先開口的。因為我知道了，比起一個人彈，兩個人彈要快樂得多。"
+        ],
+        "en": [
+          "Inside an old Western-style house, there's a small music room.\nAfternoon light pours in from the high windows and lays a square of brightness on the grand piano's black lid. I often play here alone. I'm not good, but playing makes my heart go quiet.\nToday, you're beside me.\nWhen you said \"Play something,\" I honestly meant to say no. I'm terrible at playing in front of people. But you looked so excited that I nodded before I knew it.\nThree bars in, my fingers tangled. I started again and stumbled at bar five.\n\"S-sorry, I'm just nervous…\"\nYou shook your head and pointed at the end of the piano bench.\n\"Let's play together,\" you said. …Huh? You can play the piano?",
+          "All you could play was \"Chopsticks.\"\nBut that was enough. I played an accompaniment down low while you played the melody up high. We stopped over and over, and every time we both laughed.\nThe bench is made for one, so our shoulders were pressed together. Now and then our fingers bumped on the keys. Each time my heart jumped and I hit another wrong note.\n\"Aren't you the nervous one, Alice?\"\n\"N-no, I'm not…\"\nA lie. I was so nervous.\nAfter who knows how many tries, we finally made it to the end without a stumble. The last chord rang through the music room and slowly faded. For a while, neither of us lifted our hands from the keys.\n\"…One more song?\"\nThis time, I was the one who asked. Because now I know playing together is so much more fun than playing alone."
+        ],
+        "ko": [
+          "오래된 서양식 저택 안에, 작은 음악실이 있어요.\n오후 햇살이 높은 창문으로 들어와서, 그랜드피아노의 검은 뚜껑에 네모난 빛이 비쳐요. 저는 자주 여기서 혼자 피아노를 쳐요. 잘 치는 건 아니지만, 치고 있으면 마음이 차분해지거든요.\n오늘은, 당신이 옆에 있어요.\n'뭔가 쳐줘'라는 말을 듣고, 사실은 거절하려고 했어요. 사람들 앞에서 치는 건 정말 서투르니까요. 그런데 당신이 너무 즐거워 보이는 얼굴을 해서, 저도 모르게 고개를 끄덕여버렸어요.\n치기 시작하고 세 마디째에서 손가락이 엉켰어요. 다시 시작해서, 또 다섯 마디째에서 걸렸어요.\n'죄, 죄송해요, 긴장돼서……'\n당신은 고개를 젓고, 피아노 의자 끝을 가리켰어요.\n'같이 칠까'라고. ……어? 당신, 피아노 칠 줄 알았어요?",
+          "당신이 칠 줄 아는 건 '고양이 밟았다'뿐이었어요.\n하지만 그걸로 충분했어요. 제가 낮은 음으로 반주를 넣고, 당신이 높은 음으로 멜로디를 쳤어요. 몇 번이나 도중에 멈추고, 그때마다 둘이서 웃었어요.\n의자는 일인용이라서, 어깨와 어깨가 딱 붙어 있어요. 건반 위에서 가끔 손가락이 부딪혀요. 그때마다 제 심장이 쿵 하고 뛰어서, 또 음을 틀렸어요.\n'앨리스 쪽이 더 긴장한 거 아니야?'\n'아, 안 했어요……'\n거짓말이에요. 완전히, 긴장했어요.\n몇 번째인가에서, 드디어 끝까지 막히지 않고 칠 수 있었어요. 마지막 화음이 음악실에 울려 퍼지고, 천천히 사라져 갔어요. 우리는 한동안 건반에서 손을 떼지 않았어요.\n'……한 곡 더, 칠까요?'\n이번엔, 제가 먼저 말했어요. 혼자 치는 것보다 둘이서 치는 게 훨씬 즐겁다는 걸 알아버렸으니까요."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "白いバラを一輪",
+        "zh-Hant": "一朵白玫瑰",
+        "en": "A Single White Rose",
+        "ko": "하얀 장미 한 송이"
+      },
+      "scene": "Close-up of Alice in a glass conservatory at night holding a single white rose tied with a navy ribbon near her chin, fairy lights and raindrops glowing behind, opaque, fully lined white lace high-neck blouse, bashful gaze into the lens",
+      "line": {
+        "ja": "一輪だけ、あなたに。……いちばんきれいに咲いた子なの。",
+        "zh-Hant": "只給你一朵。……這是開得最漂亮的一朵。",
+        "en": "Just one, for you. …It's the prettiest one that bloomed.",
+        "ko": "한 송이만, 당신에게. ……제일 예쁘게 핀 아이예요."
+      },
+      "story": {
+        "ja": [
+          "夜の温室は、昼間とはぜんぜんちがう顔をしてる。\nガラスの天井に雨がぱらぱら当たって、つるした豆電球がやわらかく光ってる。白いバラたちは、昼間よりもっと白く、もっと静かに見える。わたしはこの時間の温室がいちばん好き。\n毎日水をあげて、枯れた葉っぱをとって、話しかけて。そうやって育てたバラが、今夜、いちばんきれいに咲いた。\nはさみを持つ手が、ちょっとふるえた。切ってしまうのは、かわいそうな気もする。でも、この子がいちばんきれいなうちに、見てほしい人がいるの。\n棘をひとつずつ、ていねいにとる。あなたの指に、傷がつかないように。\nリボンを結んで、胸の前でそっと持つ。花びらに、雨のしずくがひとつ光ってた。\n……渡すとき、なんて言えばいいんだろう。",
+          "あなたは温室の入り口で、傘をたたんでた。\nわたしはバラを背中にかくして、あなたのほうへ歩いた。何歩か歩いたところで、「なにかくしてるの？」って聞かれて、心臓が止まるかと思った。\n「……一輪だけ、あなたに」\n差し出したバラを、あなたはびっくりした顔で受けとった。\n「いちばんきれいに咲いた子なの。だから、あなたに見てほしくて」\n言いながら、どんどん声が小さくなっていく。バラより、わたしの顔のほうが赤いと思う。\nあなたはバラの香りをかいで、「ありがとう」って笑った。それから、少し考えて、「花言葉、知ってる？」って聞いてきたの。\n知ってる。知ってるから、この色にしたの。でも、それは言えなかった。\n「……ないしょ」\n雨の音と、豆電球の光と、白いバラ。今夜のことは、きっとずっと忘れない。"
+        ],
+        "zh-Hant": [
+          "夜晚的溫室，和白天是完全不同的樣子。\n雨滴答滴答打在玻璃屋頂上，垂掛的小燈泡柔柔地亮著。白玫瑰們看起來比白天更白、更安靜。我最喜歡這個時間的溫室。\n每天澆水、摘掉枯葉、跟它們說話。這樣照顧長大的玫瑰，今晚開得最美。\n拿著剪刀的手有點發抖。剪下來好像有點可憐。可是，我想趁它最美的時候，讓一個人看看。\n一根一根，仔細地去掉刺。為了不讓你的手指受傷。\n綁上緞帶，輕輕捧在胸前。花瓣上，有一滴雨珠閃閃發亮。\n……交給你的時候，該說什麼才好呢。",
+          "你在溫室門口收著傘。\n我把玫瑰藏在背後，朝你走過去。走了幾步，你問：「你藏了什麼？」我的心臟差點停了。\n「……只給你一朵。」\n你一臉驚訝地接過我遞出的玫瑰。\n「這是開得最漂亮的一朵。所以，想讓你看看。」\n說著說著，聲音越來越小。我的臉，大概比玫瑰還紅吧。\n你聞了聞玫瑰的香味，笑著說「謝謝」。然後想了一下，問我：「你知道它的花語嗎？」\n我知道。就是因為知道，才選了這個顏色。可是，我說不出口。\n「……秘密。」\n雨聲、小燈泡的光、白玫瑰。今晚的一切，我一定永遠不會忘記。"
+        ],
+        "en": [
+          "At night the conservatory has a completely different face from the daytime.\nRain patters on the glass roof and the hanging bulbs glow softly. The white roses look whiter and quieter than in the day. This is my favourite hour in here.\nWatering every day, picking off the dry leaves, talking to them. The rose I raised like that bloomed its most beautiful tonight.\nMy hand holding the shears trembled a little. It felt a bit cruel to cut it. But there's someone I want to see it while it's at its loveliest.\nOne by one, I carefully removed the thorns, so your fingers wouldn't get hurt.\nI tied a ribbon and held it gently to my chest. A single raindrop glittered on a petal.\n…What should I say when I give it to you?",
+          "You were folding your umbrella at the conservatory door.\nI hid the rose behind my back and walked toward you. A few steps in, you asked, \"What are you hiding?\" and I thought my heart would stop.\n\"…Just one, for you.\"\nYou took the rose I held out, looking surprised.\n\"It's the prettiest one that bloomed. So I wanted you to see it.\"\nMy voice got smaller and smaller as I spoke. I think my face was redder than the rose.\nYou smelled it and smiled: \"Thank you.\" Then you thought for a moment and asked, \"Do you know what it means, in the language of flowers?\"\nI do. That's exactly why I chose this colour. But I couldn't say it.\n\"…It's a secret.\"\nThe sound of the rain, the glow of the little bulbs, a white rose. I'll never forget tonight."
+        ],
+        "ko": [
+          "밤의 온실은, 낮과는 전혀 다른 얼굴을 하고 있어요.\n유리 천장에 빗방울이 톡톡 떨어지고, 매달린 꼬마전구들이 부드럽게 빛나요. 하얀 장미들은 낮보다 더 하얗고, 더 고요해 보여요. 저는 이 시간의 온실이 제일 좋아요.\n매일 물을 주고, 시든 잎을 떼어주고, 말을 걸고. 그렇게 키운 장미가, 오늘 밤 제일 예쁘게 피었어요.\n가위를 든 손이 살짝 떨렸어요. 잘라버리는 게 좀 안쓰럽기도 해요. 그래도, 이 아이가 가장 예쁠 때 보여주고 싶은 사람이 있어요.\n가시를 하나씩, 정성스럽게 떼어내요. 당신 손가락에 상처가 나지 않도록.\n리본을 묶어서, 가슴 앞에 살며시 안았어요. 꽃잎에는, 빗방울 하나가 반짝이고 있었어요.\n……건넬 때, 뭐라고 말하면 좋을까요.",
+          "당신은 온실 입구에서 우산을 접고 있었어요.\n저는 장미를 등 뒤에 숨기고 당신 쪽으로 걸어갔어요. 몇 걸음 걷다가, '뭐 숨기고 있어?'라는 질문에, 심장이 멎는 줄 알았어요.\n'……한 송이만, 당신에게.'\n제가 내민 장미를, 당신은 놀란 얼굴로 받았어요.\n'제일 예쁘게 핀 아이예요. 그래서, 당신에게 보여주고 싶어서.'\n말하는 동안 점점 목소리가 작아졌어요. 장미보다 제 얼굴이 더 빨갛다고 생각해요.\n당신은 장미 향을 맡고 '고마워'라며 웃었어요. 그러고는 잠시 생각하다가, '꽃말, 알아?'라고 물어봤어요.\n알아요. 알고 있으니까, 이 색을 골랐어요. 하지만 그 말은 할 수 없었어요.\n'……비밀이에요.'\n빗소리와 꼬마전구의 불빛, 그리고 하얀 장미. 오늘 밤의 일은, 분명 오래도록 잊지 못할 거예요."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "眠る前のティーカップ",
+        "zh-Hant": "睡前的茶杯",
+        "en": "Last Cup Before Sleep",
+        "ko": "잠들기 전 찻잔"
+      },
+      "scene": "Close-up of Alice at night in a chair by a warm lamp, a knit blanket around her shoulders over a long-sleeve cream blouse, holding a teacup of chamomile near her face, soft sleepy eyes on the lens",
+      "line": {
+        "ja": "カモミール、よく眠れるんだって。……夢でも、会えたらいいな。",
+        "zh-Hant": "聽說洋甘菊能讓人好眠。……如果夢裡也能見到你就好了。",
+        "en": "Chamomile helps you sleep, they say. …I hope I see you in my dreams.",
+        "ko": "카모마일, 잘 잔대요. ……꿈에서도 만날 수 있으면 좋겠어요."
+      },
+      "story": {
+        "ja": [
+          "眠れない夜には、カモミールティーをいれるの。\n小さなポットにお湯をそそぐと、りんごみたいな甘い香りが部屋に広がる。わたしはブランケットを肩にかけて、ランプのそばの椅子に座った。窓の外は、しんとした夜。\n今日は、あなたとちょっとだけけんかした。\nけんか、っていうほどのことじゃないの。わたしがうまく気持ちを言えなくて、あなたを困らせて、あなたが少しだけ悲しそうな顔をした。それだけ。\nでも、その顔が、ずっと頭からはなれない。\nティーカップを両手でつつむ。あったかい。こういうあたたかさを、わたしもあなたにあげられたらいいのに。\nスマホを手にとって、メッセージを書いては消して、書いては消して。気がついたら、紅茶はもう半分になってた。\n……ちゃんと、伝えなきゃ。",
+          "結局、わたしは電話をかけた。\n文字だと、また言葉を選びすぎて、ほんとの気持ちが消えちゃいそうだったから。\n呼び出し音が鳴るあいだ、ずっと胸がどきどきしてた。あなたが出た瞬間、用意してた言葉は、やっぱりぜんぶ消えた。\n「……今日は、ごめんなさい」\nそれだけ、やっと言えた。あなたは少しだまって、それから、やさしい声で「こっちこそ」って言ってくれた。\nそれから、なんでもない話をたくさんした。今日のお昼ごはんのこと、明日の天気のこと。気がつくと、わたしは笑ってた。\n「カモミールって、よく眠れるんだって」\n「じゃあ、今夜はよく眠れるね」\n「うん。……夢でも、会えたらいいな」\n言ってから、恥ずかしくなってブランケットに顔をうずめた。\n電話を切ったあと、残りの紅茶を飲みほした。ちょっと冷めてたけど、今夜いちばんあたたかい一杯だった。"
+        ],
+        "zh-Hant": [
+          "睡不著的夜晚，我會泡一杯洋甘菊茶。\n把熱水倒進小茶壺，像蘋果一樣的甜香就在房間裡散開。我把毛毯披在肩上，坐到檯燈旁的椅子上。窗外是靜悄悄的夜。\n今天，我和你吵了一點點架。\n其實也稱不上吵架。是我沒辦法好好說出自己的心情，讓你為難了，你露出了有點難過的表情。就只是這樣。\n可是，那個表情一直留在我腦海裡。\n我用雙手捧著茶杯。好溫暖。要是我也能把這樣的溫暖給你就好了。\n拿起手機，訊息寫了又刪，寫了又刪。回過神來，茶已經只剩一半了。\n……一定要，好好告訴你。",
+          "最後，我打了電話。\n因為如果用文字，我又會想太多措辭，真正的心意好像就會消失。\n鈴聲響著的時候，我的心一直怦怦跳。你接起電話的瞬間，準備好的話果然又全部不見了。\n「……今天，對不起。」\n我終於只說出了這一句。你沉默了一下，然後用溫柔的聲音說：「我才要說對不起。」\n之後，我們聊了很多無關緊要的事。今天的午餐、明天的天氣。回過神來，我已經在笑了。\n「聽說洋甘菊能讓人睡得很好。」\n「那今晚一定能睡得很好。」\n「嗯。……如果夢裡也能見到你就好了。」\n說完之後，我害羞地把臉埋進毛毯裡。\n掛掉電話後，我把剩下的茶喝光了。雖然有點涼了，卻是今晚最溫暖的一杯。"
+        ],
+        "en": [
+          "On nights I can't sleep, I make chamomile tea.\nWhen I pour hot water into the little pot, a sweet, apple-like scent fills the room. I put a blanket over my shoulders and sat in the chair by the lamp. Outside, the night was hushed.\nToday, we had a tiny fight.\nNot really a fight, even. I couldn't put my feelings into words, I made things hard for you, and you looked a little sad. That's all.\nBut I couldn't get that face out of my head.\nI wrapped both hands around the cup. Warm. I wish I could give you warmth like this.\nI picked up my phone and wrote a message, deleted it, wrote it again, deleted it. Before I knew it, the tea was half gone.\n…I have to tell you properly.",
+          "In the end, I called.\nIn writing I'd choose my words too carefully again, and my real feelings might disappear.\nMy heart pounded the whole time it rang. The moment you picked up, every word I'd prepared vanished, of course.\n\"…I'm sorry about today.\"\nThat was all I could manage. You were quiet for a moment, then said gently, \"I'm sorry too.\"\nAfter that we talked about lots of nothing. What we had for lunch, tomorrow's weather. Before I knew it, I was laughing.\n\"They say chamomile helps you sleep.\"\n\"Then you'll sleep well tonight.\"\n\"Mm. …I hope I see you in my dreams.\"\nThen I got embarrassed and buried my face in the blanket.\nAfter we hung up, I finished the rest of the tea. It had gone a little cold, but it was the warmest cup of the night."
+        ],
+        "ko": [
+          "잠이 안 오는 밤에는, 카모마일 티를 우려요.\n작은 포트에 뜨거운 물을 부으면, 사과 같은 달콤한 향이 방 안에 퍼져요. 저는 어깨에 담요를 두르고 램프 옆 의자에 앉았어요. 창밖은 고요한 밤이에요.\n오늘은, 당신이랑 조금 다퉜어요.\n다퉜다고 할 만큼 대단한 일은 아니에요. 제가 마음을 잘 표현하지 못해서 당신을 곤란하게 만들었고, 당신이 조금 슬퍼 보이는 표정을 지었어요. 그게 다예요.\n그런데 그 표정이 계속 머릿속에서 떠나질 않아요.\n찻잔을 두 손으로 감싸요. 따뜻해요. 이런 따뜻함을, 저도 당신에게 줄 수 있으면 좋을 텐데.\n스마트폰을 손에 들고, 메시지를 썼다 지웠다, 썼다 지웠다. 정신 차려보니, 홍차는 벌써 반이나 줄어 있었어요.\n……제대로, 전해야 해요.",
+          "결국, 저는 전화를 걸었어요.\n글자로 쓰면 또 말을 너무 고르다가, 진짜 마음이 사라져 버릴 것 같았거든요.\n신호음이 울리는 동안, 계속 가슴이 두근거렸어요. 당신이 받은 순간, 준비했던 말은 역시 전부 사라져버렸어요.\n'……오늘은, 미안해요.'\n그 말만, 겨우 할 수 있었어요. 당신은 잠시 말이 없다가, 부드러운 목소리로 '나야말로'라고 말해줬어요.\n그러고 나서, 별거 아닌 이야기를 많이 했어요. 오늘 점심에 뭘 먹었는지, 내일 날씨는 어떤지. 정신 차려보니, 저는 웃고 있었어요.\n'카모마일은 잘 자게 해준대요.'\n'그럼 오늘 밤은 푹 자겠네.'\n'네. ……꿈에서도 만날 수 있으면 좋겠어요.'\n말하고 나서 부끄러워져서 담요에 얼굴을 파묻었어요.\n전화를 끊은 뒤, 남은 홍차를 다 마셨어요. 조금 식어 있었지만, 오늘 밤 가장 따뜻한 한 잔이었어요."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "白いバラの温室で",
+        "zh-Hant": "在白玫瑰溫室",
+        "en": "In the White Rose Conservatory",
+        "ko": "하얀 장미 온실에서"
+      },
+      "scene": "Alice's signature: a glass conservatory at night filled with white roses and strings of fairy lights, rain tapping on the glass roof, opaque, fully lined white lace high-neck blouse with a small navy ribbon at the collar and a long pleated skirt, holding an open antique silver music box with a tiny dancer, looking into the lens",
+      "line": {
+        "ja": "会えてうれしい。……ほんとだよ。ずっと、ここで待ってたの。",
+        "zh-Hant": "見到你好開心。……是真的喔。我一直在這裡等你。",
+        "en": "I'm so glad to see you. …I mean it. I've been waiting here all along.",
+        "ko": "만나서 기뻐요. ……진짜예요. 계속, 여기서 기다리고 있었어요."
+      },
+      "story": {
+        "ja": [
+          "ガラスの温室に、夜の雨が降ってる。\n天井から、ぱらぱら、ぱらぱら。白いバラのあいだに、小さな豆電球がいくつもつるしてあって、雨のしずくをきらきら照らしてる。ここは、わたしがいちばん落ち着ける場所。\n白いレースのハイネックのブラウスに、紺色の小さなリボン。お気に入りの服を着て、古い銀のオルゴールを持って、わたしはここであなたを待ってる。\nこのオルゴールはね、おばあちゃんにもらったものなの。ふたを開けると、小さなバレリーナが回って、少しだけ音のはずれたワルツが流れる。\nわたしは口べたで、照れ屋で、言いたいことの半分も言えない。でも、このオルゴールの曲を聴いてると、不思議と勇気が出るの。\n雨の音にまぎれて、足音が聞こえた。\nわたしは、オルゴールのねじを、ゆっくり巻いた。",
+          "「会えてうれしい」\nあなたの顔を見たとたん、その言葉だけは、すっと出てきた。いつもは、なかなか言えないのに。\nあなたはぬれた髪をかきあげながら、白いバラを見まわして、「すごいね」って言った。わたしが一年かけて育てたバラたち。ほめられると、自分のことみたいにうれしい。\nオルゴールのふたを開ける。バレリーナが回りはじめて、ワルツが雨の音にとけていく。\n「この曲、聴いてほしかったの。……わたしのいちばん大切な曲だから」\nあなたは黙って、最後まで聴いてくれた。ねじが止まって、バレリーナが止まって、雨の音だけが残る。\n「……ほんとだよ」\nわたしは、もう一度言った。\n「会えてうれしいって、ほんとだよ。ずっと、ここで待ってたの」\nあなたがうなずいて、「知ってる」って笑った。\nその笑顔を見て、わたし、やっと少しだけ、自分の気持ちに素直になれた気がしたの。"
+        ],
+        "zh-Hant": [
+          "玻璃溫室裡，下著夜雨。\n從屋頂傳來滴滴答答、滴滴答答的聲音。白玫瑰之間垂掛著好多小燈泡，把雨珠照得閃閃發亮。這裡是讓我最安心的地方。\n白色蕾絲高領襯衫，配上深藍色的小緞帶。穿著最喜歡的衣服，拿著古老的銀色音樂盒，我在這裡等你。\n這個音樂盒，是奶奶送我的。打開蓋子，小小的芭蕾舞者就會旋轉，流出一首有點走音的華爾滋。\n我不擅長說話，又容易害羞，想說的話連一半都說不出口。可是聽著這個音樂盒的曲子，就會不可思議地湧出勇氣。\n在雨聲之中，我聽到了腳步聲。\n我慢慢地，轉緊了音樂盒的發條。",
+          "「見到你好開心。」\n一看到你的臉，只有這句話，順順地說出口了。明明平常總是說不出來的。\n你一邊撥起濕掉的頭髮，一邊環顧著白玫瑰說：「好厲害。」那是我花了一年照顧的玫瑰們。被稱讚了，就像稱讚我自己一樣開心。\n打開音樂盒的蓋子。芭蕾舞者開始旋轉，華爾滋融進雨聲裡。\n「我想讓你聽這首曲子。……因為這是我最珍惜的一首。」\n你靜靜地，一直聽到最後。發條停了，芭蕾舞者停了，只剩下雨聲。\n「……是真的喔。」\n我又說了一次。\n「見到你好開心，是真的喔。我一直在這裡等你。」\n你點點頭，笑著說：「我知道。」\n看到那個笑容，我覺得自己終於，稍微能夠坦率面對自己的心意了。"
+        ],
+        "en": [
+          "Night rain is falling on the glass conservatory.\nPitter-patter from the roof. Tiny bulbs hang among the white roses and make the raindrops sparkle. This is the place I feel most at peace.\nA white lace high-neck blouse with a little navy ribbon. Wearing my favourite clothes and holding an old silver music box, I wait for you here.\nThis music box was my grandmother's gift. When you open the lid, a tiny ballerina turns and a slightly out-of-tune waltz plays.\nI'm bad with words and shy, and I can't say even half of what I want to. But when I listen to this music box, I somehow find courage.\nThrough the sound of the rain, I heard footsteps.\nSlowly, I wound the music box.",
+          "\"I'm so glad to see you.\"\nThe moment I saw your face, those words came out easily. Usually I can hardly say them.\nPushing back your wet hair, you looked around at the white roses and said, \"Amazing.\" The roses I spent a year raising. Hearing you praise them made me as happy as if you'd praised me.\nI opened the music box. The ballerina began to turn and the waltz melted into the rain.\n\"I wanted you to hear this. …It's the song most precious to me.\"\nYou listened quietly all the way to the end. The spring wound down, the ballerina stopped, and only the rain remained.\n\"…I mean it,\" I said again.\n\"I'm really glad to see you. I've been waiting here all along.\"\nYou nodded and smiled: \"I know.\"\nSeeing that smile, I felt I could finally be a little more honest with my own heart."
+        ],
+        "ko": [
+          "유리 온실에, 밤비가 내려요.\n천장에서 톡톡, 톡톡. 하얀 장미들 사이로 작은 꼬마전구들이 여럿 매달려서, 빗방울을 반짝반짝 비춰줘요. 여기는 제가 가장 편안해지는 곳이에요.\n하얀 레이스 하이넥 블라우스에, 남색 작은 리본. 좋아하는 옷을 입고, 오래된 은색 오르골을 들고서, 저는 여기서 당신을 기다려요.\n이 오르골은요, 할머니가 주신 거예요. 뚜껑을 열면 작은 발레리나가 돌면서, 살짝 음이 어긋난 왈츠가 흘러나와요.\n저는 말주변이 없고, 부끄러움도 많아서, 하고 싶은 말의 절반도 못 해요. 그런데 이 오르골의 곡을 듣고 있으면, 신기하게도 용기가 나요.\n빗소리 사이로, 발소리가 들렸어요.\n저는 오르골의 태엽을, 천천히 감았어요.",
+          "'만나서 기뻐요.'\n당신 얼굴을 본 순간, 그 말만은 술술 나왔어요. 평소엔 좀처럼 못 하는데.\n당신은 젖은 머리를 쓸어 올리며 하얀 장미들을 둘러보고 '대단하다'라고 말했어요. 제가 일 년을 들여 키운 장미들. 칭찬을 받으니, 마치 저를 칭찬받은 것처럼 기뻤어요.\n오르골 뚜껑을 열어요. 발레리나가 돌기 시작하고, 왈츠가 빗소리에 녹아들어요.\n'이 곡, 들려주고 싶었어요. ……제게 가장 소중한 곡이거든요.'\n당신은 조용히, 끝까지 들어줬어요. 태엽이 멈추고, 발레리나가 멈추고, 빗소리만 남았어요.\n'……진짜예요.'\n저는 다시 한 번 말했어요.\n'만나서 기쁘다는 거, 진짜예요. 계속, 여기서 기다리고 있었어요.'\n당신이 고개를 끄덕이며 '알아요'라고 웃었어요.\n그 미소를 보면서, 저는 드디어 조금은, 제 마음에 솔직해질 수 있었던 것 같아요."
+        ]
+      }
+    }
+  ]
+}

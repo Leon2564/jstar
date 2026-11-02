@@ -1,0 +1,26 @@
+# Local full stack: postgres + redis + api + agent. Web and admin run with `npm run dev`.
+services:
+  db:
+    image: postgres:16-alpine
+    environment: { POSTGRES_USER: jstar, POSTGRES_PASSWORD: jstar, POSTGRES_DB: jstar }
+    ports: ["5432:5432"]
+    volumes: ["db:/var/lib/postgresql/data"]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U jstar"], interval: 5s, retries: 10 }
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+  api:
+    build: { context: .., dockerfile: infra/api.Dockerfile }
+    env_file: [../.env]
+    environment:
+      DATABASE_URL: postgresql://jstar:jstar@db:5432/jstar
+      REDIS_URL: redis://redis:6379
+      AGENT_BASE_URL: http://agent:8100
+    ports: ["8080:8080"]
+    depends_on: { db: { condition: service_healthy }, agent: { condition: service_started } }
+  agent:
+    build: { context: .., dockerfile: infra/agent.Dockerfile }
+    env_file: [../.env]
+    ports: ["8100:8100"]
+volumes:
+  db:

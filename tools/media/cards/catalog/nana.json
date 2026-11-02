@@ -1,0 +1,545 @@
+{
+  "star": "nana",
+  "cards": [
+    {
+      "title": {
+        "ja": "お湯が沸くまで",
+        "zh-Hant": "等水燒開的時候",
+        "en": "While the Kettle Boils",
+        "ko": "물이 끓을 때까지"
+      },
+      "scene": "Nana at a sunny kitchen counter in the morning, soft lavender knit top, a kettle beginning to steam and fresh flowers in a glass jar, smiling at you",
+      "line": {
+        "ja": "おはよう。お湯が沸くまで、昨日の話きかせて？",
+        "zh-Hant": "早安。水燒開之前，說說昨天的事給我聽？",
+        "en": "Morning. Tell me about yesterday while the kettle boils?",
+        "ko": "좋은 아침. 물 끓을 때까지, 어제 있었던 일 들려줄래?"
+      }
+    },
+    {
+      "title": {
+        "ja": "押し花の準備",
+        "zh-Hant": "準備做押花",
+        "en": "Pressing Flowers",
+        "ko": "압화 준비"
+      },
+      "scene": "Nana at a wooden table by a window in the afternoon, sorting roses and pressing them between the pages of a heavy book, cream blouse and lavender cardigan",
+      "line": {
+        "ja": "このバラ、押し花にするの。しおりにしてあげるね。",
+        "zh-Hant": "這朵玫瑰要做成押花。做成書籤送你喔。",
+        "en": "I'm pressing this rose. I'll make you a bookmark.",
+        "ko": "이 장미, 압화로 만들 거야. 책갈피로 만들어 줄게."
+      }
+    },
+    {
+      "title": {
+        "ja": "本屋さんの片すみ",
+        "zh-Hant": "書店的角落",
+        "en": "A Corner of the Bookshop",
+        "ko": "책방 한구석"
+      },
+      "scene": "Nana in a bookshop corner with tall wooden shelves, afternoon light through a skylight, holding an open book, lavender knit and long skirt",
+      "line": {
+        "ja": "いまどんな本読んでるの？ あなたの好きな話、知りたいな。",
+        "zh-Hant": "你現在在看什麼書？我想知道你喜歡的故事。",
+        "en": "What are you reading these days? I want to know the stories you love.",
+        "ko": "요즘 무슨 책 읽어? 네가 좋아하는 이야기, 알고 싶다."
+      }
+    },
+    {
+      "title": {
+        "ja": "雨の日のブランケット",
+        "zh-Hant": "雨天的毛毯",
+        "en": "Rainy-Day Blanket",
+        "ko": "비 오는 날의 담요"
+      },
+      "scene": "Nana on a sofa at night wrapped in a folded knit blanket, one warm floor lamp, rain streaking the big window, lavender lounge set",
+      "line": {
+        "ja": "雨の音、落ち着くね。……今日は、なにがあったの？",
+        "zh-Hant": "雨聲好讓人安心喔。……今天發生了什麼事？",
+        "en": "The rain's soothing, isn't it. …So, how was your day?",
+        "ko": "빗소리, 마음이 편안해지네. ……오늘은 무슨 일 있었어?"
+      }
+    },
+    {
+      "title": {
+        "ja": "焼きたてクッキー",
+        "zh-Hant": "剛烤好的餅乾",
+        "en": "Fresh from the Oven",
+        "ko": "갓 구운 쿠키"
+      },
+      "scene": "Nana in a cosy kitchen in a linen apron over a lavender sweater, holding out a tray of freshly baked cookies, warm afternoon light",
+      "line": {
+        "ja": "焼けたよ。熱いから気をつけて。……おいしい？",
+        "zh-Hant": "烤好了喔。很燙，小心。……好吃嗎？",
+        "en": "They're done. Careful, they're hot. …Good?",
+        "ko": "다 구워졌어. 뜨거우니까 조심해. ……맛있어?"
+      }
+    },
+    {
+      "title": {
+        "ja": "日曜日の朝寝坊",
+        "zh-Hant": "星期天的賴床",
+        "en": "Sunday Lie-In",
+        "ko": "일요일 늦잠"
+      },
+      "scene": "Nana sitting by a sunlit window on a Sunday morning in lavender loungewear with long sleeves, hair slightly tousled, hugging a cushion",
+      "line": {
+        "ja": "今日は予定なし。一日中、あなたの話きいていたいな。",
+        "zh-Hant": "今天沒有行程。好想一整天都聽你說話。",
+        "en": "No plans today. I'd love to just listen to you all day.",
+        "ko": "오늘은 아무 약속도 없어. 하루 종일 네 얘기만 듣고 싶다."
+      }
+    },
+    {
+      "title": {
+        "ja": "ベランダの小さな菜園",
+        "zh-Hant": "陽台的小菜園",
+        "en": "Little Balcony Garden",
+        "ko": "베란다의 작은 텃밭"
+      },
+      "scene": "Nana on a sunny balcony with potted cherry tomatoes and herbs, white T-shirt and lavender cardigan, holding a small ripe tomato up to you",
+      "line": {
+        "ja": "ミニトマト、赤くなってきたよ。最初の一個、あなたにあげる。",
+        "zh-Hant": "小番茄變紅了喔。第一顆送給你。",
+        "en": "The cherry tomatoes are turning red. The first one's yours.",
+        "ko": "방울토마토가 빨갛게 익었어. 첫 번째 건 너 줄게."
+      }
+    },
+    {
+      "title": {
+        "ja": "手紙を書いてるの",
+        "zh-Hant": "我在寫信",
+        "en": "Writing You a Letter",
+        "ko": "편지를 쓰고 있어"
+      },
+      "scene": "Nana at a wooden desk in the evening under a brass reading lamp, writing a letter with a fountain pen, lavender knit, covering the page shyly",
+      "line": {
+        "ja": "見ちゃだめ。……書き終わったら、ちゃんと渡すから。",
+        "zh-Hant": "不可以偷看。……寫完了會好好交給你的。",
+        "en": "No peeking. …I'll give it to you when it's done.",
+        "ko": "보면 안 돼. ……다 쓰면 꼭 줄 테니까."
+      }
+    },
+    {
+      "title": {
+        "ja": "商店街のコロッケ",
+        "zh-Hant": "商店街的可樂餅",
+        "en": "Croquettes on the Shopping Street",
+        "ko": "상점가의 고로케"
+      },
+      "scene": "Nana on an old Tokyo shopping street in the early evening, paper-wrapped croquette in hand, beige coat over a lavender sweater, warm shop lights",
+      "line": {
+        "ja": "揚げたて、はんぶんこしよ。はい、あーん……なんてね。",
+        "zh-Hant": "剛炸好的，我們分一半吧。來，啊……開玩笑的。",
+        "en": "Fresh and hot — let's split it. Say \"ah\"… just kidding.",
+        "ko": "갓 튀긴 거, 반씩 나눠 먹자. 자, 아앙……하는 건 농담이고."
+      }
+    },
+    {
+      "title": {
+        "ja": "おつかれさまのお茶",
+        "zh-Hant": "辛苦了的一杯茶",
+        "en": "A Cup of Tea for You",
+        "ko": "수고했어, 차 한 잔"
+      },
+      "scene": "Nana in a cosy living room at night pouring tea from a ceramic teapot, one warm floor lamp, lavender knit set, offering you a cup",
+      "line": {
+        "ja": "おつかれさま。あったかいお茶、いれたよ。ゆっくりでいいからね。",
+        "zh-Hant": "辛苦了。我泡了熱茶喔。慢慢來就好。",
+        "en": "You must be tired. I made hot tea. Take your time.",
+        "ko": "수고했어. 따뜻한 차 우려놨어. 천천히 마셔도 돼."
+      }
+    },
+    {
+      "title": {
+        "ja": "図書館デート",
+        "zh-Hant": "圖書館約會",
+        "en": "Library Date",
+        "ko": "도서관 데이트"
+      },
+      "scene": "Nana in a grand library reading room with long wooden tables and green lamps, finger to her lips, cream blouse and lavender cardigan",
+      "line": {
+        "ja": "しーっ。……小さい声でなら、ずっとお話しできるね。",
+        "zh-Hant": "噓……小聲一點的話，就可以一直聊下去了呢。",
+        "en": "Shh… If we whisper, we can talk forever.",
+        "ko": "쉿. ……작은 소리로라면, 계속 이야기할 수 있겠다."
+      }
+    },
+    {
+      "title": {
+        "ja": "公園のピクニック",
+        "zh-Hant": "公園野餐",
+        "en": "Picnic in the Park",
+        "ko": "공원 피크닉"
+      },
+      "scene": "Nana on a gingham blanket in a spring park, white long-sleeve dress with a lavender cardigan, a basket of sandwiches, dappled sunlight",
+      "line": {
+        "ja": "サンドイッチ、早起きして作ったの。いっぱい食べてね。",
+        "zh-Hant": "三明治是我早起做的。多吃一點喔。",
+        "en": "I got up early to make sandwiches. Eat lots.",
+        "ko": "샌드위치, 일찍 일어나서 만들었어. 많이 먹어."
+      }
+    },
+    {
+      "title": {
+        "ja": "あじさいの小道",
+        "zh-Hant": "繡球花小徑",
+        "en": "Hydrangea Lane",
+        "ko": "수국이 핀 오솔길"
+      },
+      "scene": "Nana on a temple path lined with blue and purple hydrangeas in the June rain, holding a clear umbrella, pale lavender raincoat over a dress",
+      "line": {
+        "ja": "雨の日も、あなたとなら好き。あじさい、きれいだね。",
+        "zh-Hant": "只要跟你在一起，雨天我也喜歡。繡球花好漂亮。",
+        "en": "With you, I even like rainy days. The hydrangeas are lovely.",
+        "ko": "비 오는 날도, 너랑 같이면 좋아. 수국, 예쁘다."
+      }
+    },
+    {
+      "title": {
+        "ja": "美術館の午後",
+        "zh-Hant": "美術館的午後",
+        "en": "Afternoon at the Museum",
+        "ko": "미술관의 오후"
+      },
+      "scene": "Nana in a quiet art museum gallery with white walls and soft skylight, standing beside a painting, grey coat and lavender knit, turning to you",
+      "line": {
+        "ja": "この絵、どう思う？ あなたの感想、ききたいな。",
+        "zh-Hant": "這幅畫你覺得怎麼樣？我想聽你的感想。",
+        "en": "What do you think of this painting? I want to hear.",
+        "ko": "이 그림 어때? 네 감상, 듣고 싶어."
+      }
+    },
+    {
+      "title": {
+        "ja": "レトロな喫茶店",
+        "zh-Hant": "復古咖啡廳",
+        "en": "Retro Kissaten",
+        "ko": "레트로 찻집"
+      },
+      "scene": "Nana in a retro Showa-era coffee shop with red velvet seats and stained-glass lamps, a green cream soda on the table, lavender blouse",
+      "line": {
+        "ja": "クリームソーダ、一口ちょうだい？ ……交換こね。",
+        "zh-Hant": "奶油蘇打給我一口好嗎？……我們交換喔。",
+        "en": "Can I have a sip of your cream soda? …We'll trade.",
+        "ko": "크림소다 한 입만 줄래? ……교환하는 거다."
+      }
+    },
+    {
+      "title": {
+        "ja": "ひまわり畑",
+        "zh-Hant": "向日葵花田",
+        "en": "Sunflower Field",
+        "ko": "해바라기밭"
+      },
+      "scene": "Nana in a tall sunflower field on a bright summer day, straw hat and a white cotton dress with short sleeves, peeking out between the flowers",
+      "line": {
+        "ja": "ひまわりに隠れちゃった。……見つけてくれた？",
+        "zh-Hant": "我躲在向日葵裡了。……你找到我了嗎？",
+        "en": "I'm hiding in the sunflowers. …Found me?",
+        "ko": "해바라기 속에 숨어버렸어. ……찾았어?"
+      }
+    },
+    {
+      "title": {
+        "ja": "秋の古本市",
+        "zh-Hant": "秋天的舊書市集",
+        "en": "Autumn Book Fair",
+        "ko": "가을 헌책 시장"
+      },
+      "scene": "Nana at an outdoor second-hand book fair under autumn trees, beret and lavender cardigan over a long skirt, holding a book up for you",
+      "line": {
+        "ja": "あなたにぴったりの一冊、見つけたかも。",
+        "zh-Hant": "我可能找到一本很適合你的書了。",
+        "en": "I think I found the perfect book for you.",
+        "ko": "너한테 딱 맞는 책, 찾은 것 같아."
+      }
+    },
+    {
+      "title": {
+        "ja": "雪見のカフェ",
+        "zh-Hant": "賞雪咖啡廳",
+        "en": "Snow-View Café",
+        "ko": "눈 구경 카페"
+      },
+      "scene": "Nana in a warm café by a large window with snow falling outside, cream turtleneck sweater, a mug of hot cocoa with marshmallows",
+      "line": {
+        "ja": "外、真っ白。ココア飲み終わるまで、帰らないでね。",
+        "zh-Hant": "外面一片雪白。可可喝完之前，不要回去喔。",
+        "en": "It's all white outside. Don't leave till we finish our cocoa.",
+        "ko": "밖이 새하얘. 코코아 다 마실 때까지, 가지 마."
+      }
+    },
+    {
+      "title": {
+        "ja": "七夕の短冊",
+        "zh-Hant": "七夕的許願籤",
+        "en": "Tanabata Wishes",
+        "ko": "칠석날 소원 종이"
+      },
+      "scene": "Nana at a summer evening Tanabata festival in a lavender yukata, hanging a paper wish strip on bamboo decorated with streamers, lantern light",
+      "line": {
+        "ja": "お願いごと、見せっこしよ？ ……わたしのは、ないしょ。",
+        "zh-Hant": "我們交換看願望好不好？……我的是秘密。",
+        "en": "Let's show each other our wishes? …Mine's a secret.",
+        "ko": "소원 서로 보여줄까? ……내 건 비밀이야."
+      }
+    },
+    {
+      "title": {
+        "ja": "クリスマスマーケット",
+        "zh-Hant": "聖誕市集",
+        "en": "Christmas Market",
+        "ko": "크리스마스 마켓"
+      },
+      "scene": "Nana at a Christmas market at night among wooden stalls and string lights, white wool coat and knit earmuffs, holding two cups of hot apple cider",
+      "line": {
+        "ja": "あったかいの、ひとつずつ。手、あったまるでしょ？",
+        "zh-Hant": "熱飲一人一杯。手變暖了吧？",
+        "en": "Something warm for each of us. Warms your hands, right?",
+        "ko": "따뜻한 거, 하나씩. 손 따뜻해지지?"
+      }
+    },
+    {
+      "title": {
+        "ja": "あなただけの朗読会",
+        "zh-Hant": "只為你朗讀",
+        "en": "A Reading Just for You",
+        "ko": "너만을 위한 낭독회"
+      },
+      "scene": "Nana in an armchair at night reading a hardcover novel aloud under a brass lamp, candles on the side table, lavender knit dress",
+      "line": {
+        "ja": "今夜は、あなただけのために読むね。目、閉じてて。",
+        "zh-Hant": "今晚我只為你讀喔。把眼睛閉上。",
+        "en": "Tonight I'll read just for you. Close your eyes.",
+        "ko": "오늘 밤은, 너만을 위해서 읽어 줄게. 눈, 감고 있어."
+      }
+    },
+    {
+      "title": {
+        "ja": "湖のボート",
+        "zh-Hant": "湖上的小船",
+        "en": "Rowboat on the Lake",
+        "ko": "호수 위의 보트"
+      },
+      "scene": "Nana sitting in a wooden rowboat on a calm lake surrounded by autumn trees, cream knit and a long plaid skirt, smiling across at you",
+      "line": {
+        "ja": "こぐの、交代しよっか？ ……やっぱり、見てるほうが好き。",
+        "zh-Hant": "要換我划嗎？……果然，我還是比較喜歡看著你。",
+        "en": "Want me to row for a bit? …Actually, I'd rather just watch you.",
+        "ko": "노 젓는 거 바꿔줄까? ……역시, 보고 있는 쪽이 더 좋아."
+      }
+    },
+    {
+      "title": {
+        "ja": "プラネタリウム",
+        "zh-Hant": "天象儀",
+        "en": "Planetarium",
+        "ko": "플라네타리움"
+      },
+      "scene": "Nana in the soft dark of a planetarium dome, projected stars across the ceiling, navy dress and lavender cardigan, face gently lit as she turns to you",
+      "line": {
+        "ja": "本物の星より近くに感じるね。……あなたも。",
+        "zh-Hant": "感覺比真正的星星還要近。……你也是。",
+        "en": "They feel closer than real stars. …So do you.",
+        "ko": "진짜 별보다 더 가깝게 느껴지네. ……너도."
+      }
+    },
+    {
+      "title": {
+        "ja": "花束をあなたに",
+        "zh-Hant": "送你一束花",
+        "en": "Flowers for You",
+        "ko": "너에게 꽃다발을"
+      },
+      "scene": "Nana outside a small florist on a spring evening, lavender dress and cream cardigan, holding out a bouquet of lavender and pale pink roses",
+      "line": {
+        "ja": "いつもきいてくれるお礼。……今日は、わたしから。",
+        "zh-Hant": "謝謝你總是聽我說話。……今天換我送你。",
+        "en": "For always listening to me. …Today, it's my turn.",
+        "ko": "항상 들어줘서 고마워서. ……오늘은 내 차례야."
+      }
+    },
+    {
+      "title": {
+        "ja": "月見の縁側",
+        "zh-Hant": "緣廊賞月",
+        "en": "Moon-Viewing Veranda",
+        "ko": "달맞이 툇마루"
+      },
+      "scene": "Nana on the wooden veranda of a traditional house on an autumn night, full moon and pampas grass, moon-viewing dumplings on a tray, soft knit cardigan",
+      "line": {
+        "ja": "月がきれいですね。……意味、わかってる？",
+        "zh-Hant": "今晚月色真美。……你懂這句話的意思嗎？",
+        "en": "The moon is beautiful tonight. …You know what that means, right?",
+        "ko": "달이 참 예쁘네요. ……무슨 뜻인지, 알지?"
+      }
+    },
+    {
+      "title": {
+        "ja": "耳をすませて",
+        "zh-Hant": "側耳傾聽",
+        "en": "I'm Listening",
+        "ko": "귀 기울여 들을게"
+      },
+      "scene": "Intimate close-up of Nana resting her chin on her hands and leaning toward the lens, attentive soft eyes, lavender knit sleeves over her fingers, warm floor-lamp glow at night",
+      "line": {
+        "ja": "うん、うん。……それで？ ちゃんと最後まできくよ。",
+        "zh-Hant": "嗯，嗯。……然後呢？我會好好聽到最後的。",
+        "en": "Mm-hm. …And then? I'll listen all the way to the end.",
+        "ko": "응, 응. ……그래서? 끝까지 제대로 들을게."
+      },
+      "story": {
+        "ja": [
+          "あなたが話しはじめるときの、ちょっと息を吸う音が好き。\nその夜も、あなたはソファのはしっこに座って、なにから話そうか迷ってるみたいだった。わたしはラベンダー色のニットの袖をのばして、両手にあごをのせて、あなたのほうへ少しだけ身を乗り出した。\n「急がなくていいよ。どこからでも」\nあなたが話しはじめたのは、今日の帰り道で見かけた、小さな子どもの話だった。転んで泣きそうになって、でもお母さんの顔を見たら、泣かずに笑ったんだって。\nなんでそんな話をしたのか、あなた自身もよくわかってないみたいだった。でも、わたしにはなんとなくわかったの。たぶん、あなたも今日、ちょっとだけ転びそうになったんだよね。\n「うん、うん。……それで？」\nわたしはただ、続きを待った。",
+          "話は、あちこちに寄り道しながら進んだ。\n会議で言えなかったひとこと。昔の友だちからのひさしぶりの連絡。冷蔵庫に残ってる、賞味期限ぎりぎりのヨーグルト。大事な話と、どうでもいい話が、同じ温度でまざってる。わたしは、そういうあなたの話し方が好き。\nときどき、あなたは「つまんないよね、ごめん」って言う。そのたびにわたしは首を横にふる。つまらない話なんて、ひとつもなかった。あなたが今日をどんなふうに生きたのか、ちゃんと伝わってきたから。\n夜が深くなって、ランプの光だけが部屋に残ったころ、あなたはやっと、いちばん言いたかったことを話してくれた。\nわたしは、なにも言わずにうなずいた。言葉より先に、ちゃんと聞いてるよって伝えたかったから。\n最後まで聞けて、よかった。話してくれて、ありがとう。"
+        ],
+        "zh-Hant": [
+          "我喜歡你開口說話前，輕輕吸一口氣的聲音。\n那天晚上，你也坐在沙發的角落，好像在煩惱要從哪裡說起。我把薰衣草色針織衫的袖子拉長，雙手托著下巴，朝你稍稍傾身。\n「不用急喔。從哪裡開始都可以。」\n你說起的，是今天回家路上看到的一個小孩。他跌倒了，差點哭出來，可是一看到媽媽的臉，就沒有哭，反而笑了。\n為什麼會說這件事，你自己好像也不太明白。但我隱約懂了。大概今天的你，也差一點點就要跌倒了吧。\n「嗯，嗯。……然後呢？」\n我只是靜靜地，等著你說下去。",
+          "話題一路繞來繞去。\n會議上沒說出口的一句話。老朋友久違的聯絡。冰箱裡快過期的優格。重要的事和無關緊要的事，用同樣的溫度混在一起。我喜歡你這樣說話的方式。\n你偶爾會說「很無聊吧，抱歉」。每一次我都搖搖頭。沒有一件事是無聊的。因為你是怎麼度過今天的，我都好好感受到了。\n夜深了，房間裡只剩下檯燈的光，你終於說出了最想說的那件事。\n我什麼都沒說，只是點了點頭。因為比起言語，我更想先讓你知道，我有在好好聽。\n能聽到最後，真好。謝謝你願意告訴我。"
+        ],
+        "en": [
+          "I love the little breath you take right before you start talking.\nThat night, too, you sat at the end of the sofa, as if you couldn't decide where to begin. I pulled my lavender sleeves down over my hands, rested my chin on them, and leaned toward you just a little.\n\"No rush. Start anywhere.\"\nWhat you started with was a small child you saw on the way home. The child tripped and was about to cry, but then saw their mother's face and laughed instead.\nYou didn't seem to know yourself why you told me that. But I sort of understood. Maybe today, you nearly tripped a little too.\n\"Mm-hm. …And then?\"\nI just waited for the rest.",
+          "The story wandered down all kinds of side streets.\nThe one thing you couldn't say in the meeting. A message from an old friend after years. The yogurt in the fridge on its last day. Important things and trivial things, all mixed at the same temperature. I love the way you talk like that.\nNow and then you'd say, \"This is boring, sorry.\" Every time, I shook my head. Not one bit of it was boring. I could feel exactly how you'd lived your day.\nLate in the night, with only the lamp left glowing, you finally told me the thing you most wanted to say.\nI nodded without a word. Before any words, I wanted you to know I was really listening.\nI'm glad I heard it all the way to the end. Thank you for telling me."
+        ],
+        "ko": [
+          "네가 이야기를 시작할 때, 살짝 숨을 들이쉬는 소리가 좋아.\n그날 밤도, 너는 소파 끝에 앉아서 뭐부터 이야기할지 망설이는 것 같았어. 나는 라벤더색 니트 소매를 늘어뜨려 두 손에 턱을 괴고, 네 쪽으로 살짝 몸을 기울였어.\n「서두르지 않아도 돼. 어디서부터든」\n네가 이야기를 시작한 건, 오늘 집에 오는 길에 본 어린아이 이야기였어. 넘어져서 울 뻔했는데, 엄마 얼굴을 보니까 울지 않고 웃었대.\n왜 그런 이야기를 했는지, 너 자신도 잘 모르는 것 같았어. 그래도 나는 왠지 알 것 같았어. 아마 너도 오늘, 조금은 넘어질 뻔했던 거겠지.\n「응, 응. ……그래서?」\n나는 그저, 다음 말을 기다렸어.",
+          "이야기는 여기저기 곁길로 새면서 이어졌어.\n회의에서 못 했던 한마디. 오랜만에 연락 온 옛 친구. 냉장고에 남아 있는, 유통기한 아슬아슬한 요구르트. 중요한 이야기와 아무래도 상관없는 이야기가 같은 온도로 섞여 있었어. 나는 그런 네 말투가 좋아.\n가끔 너는 「재미없지, 미안」이라고 말해. 그때마다 나는 고개를 저어. 재미없는 이야기 같은 건 하나도 없었어. 네가 오늘을 어떻게 살았는지, 제대로 전해져 왔으니까.\n밤이 깊어지고, 램프 불빛만 방에 남았을 무렵, 너는 마침내 가장 하고 싶었던 이야기를 들려줬어.\n나는 아무 말 없이 고개를 끄덕였어. 말보다 먼저, 제대로 듣고 있다고 전하고 싶었으니까.\n끝까지 들을 수 있어서, 다행이었어. 말해줘서, 고마워."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "雨の窓、ふたりきり",
+        "zh-Hant": "雨窗前，只有我們",
+        "en": "Just Us and the Rain",
+        "ko": "빗속 창가, 둘만의 시간"
+      },
+      "scene": "Close-up of Nana by a rain-streaked window at night, a knit blanket around her shoulders over a lavender sweater, city lights blurred like watercolour behind her, looking softly into the lens",
+      "line": {
+        "ja": "雨、やまないといいな。……なんて、言ったら困る？",
+        "zh-Hant": "真希望雨不要停。……這樣說，會讓你困擾嗎？",
+        "en": "I hope the rain doesn't stop. …Is that a bad thing to say?",
+        "ko": "비, 안 그쳤으면 좋겠다. ……이런 말 하면, 곤란해?"
+      },
+      "story": {
+        "ja": [
+          "帰ろうとしたあなたを引きとめたのは、突然の大雨だった。\n窓をたたく音がどんどん強くなって、ベランダの手すりから水がしたたり落ちる。天気アプリを見たら、あと一時間はやみそうにないって。\n「……もう少し、いれば？」\nわたしはブランケットを肩にかけて、窓辺のクッションをぽんぽんとたたいた。あなたが少し迷ってからとなりに座ったとき、心の中で、雨にありがとうって言っちゃった。\nガラスの向こうでは、街の灯りが雨ににじんで、水彩画みたいにゆれてる。部屋の中はフロアランプひとつだけ。ポットのお湯が、しゅんしゅん鳴りはじめた。\n「なにか飲む？ ハーブティーならあるよ」\nあなたが「ありがとう」って笑ったから、わたしは立ち上がるのが、ちょっとだけ惜しくなった。",
+          "ハーブティーを飲みながら、わたしたちは雨の音の話をした。\nトタン屋根の音が好きとか、傘にあたる音はちょっとさみしいとか。こんなこと、ほかの誰とも話したことない。あなたとだと、どうでもいいことほど楽しくなるの、ふしぎ。\n一時間たっても、雨はやまなかった。二時間たっても。\n「雨、やまないといいな」\n思わず言ってから、はっとした。あなたを困らせるつもりじゃなかったのに。あわてて「なんてね」って付けたしたら、あなたは窓の外を見たまま、小さくうなずいた。\n……ずるい。そういうの、ずるいよ。\nわたしはブランケットを半分、あなたの肩にかけた。雨の音が、ふたりの沈黙をやさしく埋めてくれる。\nきっと明日の朝には晴れる。でも、今夜のこの時間は、ずっと覚えてると思う。"
+        ],
+        "zh-Hant": [
+          "留住正要回家的你的，是一場突如其來的大雨。\n敲打窗戶的聲音越來越大，水從陽台欄杆上滴滴答答落下。看了天氣App，說還要一個小時才會停。\n「……要不要，再待一下？」\n我把毛毯披在肩上，拍了拍窗邊的坐墊。你猶豫了一下，在我旁邊坐下的時候，我在心裡偷偷對雨說了聲謝謝。\n玻璃另一頭，街燈在雨中暈開，像水彩畫一樣搖晃。房間裡只有一盞落地燈。熱水壺開始咻咻作響。\n「要喝點什麼嗎？我有花草茶喔。」\n你笑著說「謝謝」，害我有點捨不得站起來。",
+          "一邊喝著花草茶，我們聊起了雨聲。\n喜歡雨打在鐵皮屋頂上的聲音、雨打在傘上的聲音有點寂寞之類的。這種事，我從來沒跟別人聊過。跟你在一起，越是無關緊要的事就越開心，真奇妙。\n過了一個小時，雨沒有停。過了兩個小時，也沒有。\n「真希望雨不要停。」\n不小心說出口之後，我嚇了一跳。我不是想讓你困擾的。慌忙補了一句「開玩笑的」，你卻依然望著窗外，輕輕點了點頭。\n……好狡猾。這樣真的很狡猾。\n我把毛毯分一半，披到你的肩上。雨聲溫柔地填滿了我們之間的沉默。\n明天早上一定會放晴吧。但今晚的這段時光，我想我會一直記得。"
+        ],
+        "en": [
+          "What kept you from leaving was a sudden downpour.\nThe rain beat harder and harder on the window, water dripping from the balcony rail. The weather app said it wouldn't stop for at least an hour.\n\"…Why not stay a bit longer?\"\nI pulled the blanket around my shoulders and patted the cushion by the window. When you hesitated and then sat down beside me, I secretly thanked the rain.\nBeyond the glass, the city lights bled in the rain and wavered like a watercolour. Inside, just one floor lamp. The kettle began to hiss.\n\"Want something to drink? I have herbal tea.\"\nYou smiled and said \"thanks,\" and suddenly I didn't want to get up.",
+          "Over herbal tea, we talked about the sound of rain.\nHow we like it on a tin roof. How it sounds a little lonely on an umbrella. I've never talked about things like that with anyone else. With you, the more trivial it is, the more fun it gets. Strange.\nAn hour passed, and the rain didn't stop. Two hours, and it still didn't.\n\"I hope the rain doesn't stop.\"\nIt slipped out, and I froze. I didn't mean to put you on the spot. I quickly added \"just kidding,\" but you kept looking out of the window and gave a small nod.\n…That's not fair. That's really not fair.\nI draped half the blanket over your shoulders. The rain gently filled the silence between us.\nIt'll surely be sunny tomorrow morning. But I think I'll remember tonight for a long time."
+        ],
+        "ko": [
+          "돌아가려던 너를 붙잡은 건, 갑작스러운 폭우였어.\n창문을 두드리는 소리가 점점 거세지고, 베란다 난간에서 물이 뚝뚝 떨어졌어. 날씨 앱을 보니, 앞으로 한 시간은 그칠 것 같지 않다고 했어.\n「……조금 더, 있을래?」\n나는 담요를 어깨에 두르고, 창가 쿠션을 톡톡 두드렸어. 네가 잠깐 망설이다 옆에 앉았을 때, 마음속으로 비한테 고맙다고 말해버렸어.\n유리창 너머로는, 거리의 불빛이 빗물에 번져서 수채화처럼 흔들리고 있었어. 방 안은 플로어 램프 하나뿐. 주전자의 물이 칙칙 소리를 내기 시작했어.\n「뭐 마실래? 허브티라면 있어」\n네가 「고마워」하고 웃어서, 나는 일어나는 게 조금 아까워졌어.",
+          "허브티를 마시면서, 우리는 빗소리 얘기를 했어.\n양철 지붕에 떨어지는 소리가 좋다든가, 우산에 부딪히는 소리는 조금 쓸쓸하다든가. 이런 얘기, 다른 누구와도 해본 적 없어. 너랑 있으면 아무래도 상관없는 일일수록 즐거워지는 게, 신기해.\n한 시간이 지나도, 비는 그치지 않았어. 두 시간이 지나도.\n「비, 안 그쳤으면 좋겠다」\n무심코 말해놓고, 흠칫했어. 너를 곤란하게 하려던 건 아니었는데. 당황해서 「농담이야」라고 덧붙였더니, 너는 창밖을 바라본 채로 작게 고개를 끄덕였어.\n……치사해. 그런 거, 치사해.\n나는 담요를 반, 네 어깨에 걸쳐줬어. 빗소리가 우리 둘의 침묵을 부드럽게 채워줬어.\n내일 아침에는 분명 맑겠지. 하지만 오늘 밤 이 시간은, 오래오래 기억할 것 같아."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "しおりの押し花",
+        "zh-Hant": "書籤上的押花",
+        "en": "The Pressed Rose",
+        "ko": "책갈피 속 압화"
+      },
+      "scene": "Close-up of Nana holding a pressed-rose bookmark up beside her face under a warm reading lamp at night, an open hardcover novel below, lavender knit, gentle smile into the lens",
+      "line": {
+        "ja": "この押し花、あなたに初めてもらったバラなの。",
+        "zh-Hant": "這朵押花，是你第一次送我的玫瑰喔。",
+        "en": "This pressed flower is the first rose you ever gave me.",
+        "ko": "이 압화, 네가 처음 준 장미야."
+      },
+      "story": {
+        "ja": [
+          "このしおり、ずっと使ってるの。気づいてた？\nはじめてのデートの帰り道、あなたが駅前の花屋さんで、バラを一本だけ買ってくれたよね。花束じゃなくて、一本だけ。あなたは「なにを選べばいいかわからなくて」って照れてたけど、わたしはそれがすごくうれしかった。\n家に帰って、コップに生けて、毎日ながめた。でも、花はいつか枯れちゃう。それがどうしてもいやで、いちばんきれいなうちに、分厚い辞書にはさんだの。\n二週間後、そっと開いたら、バラは薄く、平らになって、それでも色はちゃんと残ってた。少しだけ、深い色になって。\nそれを台紙に貼って、リボンをつけて、しおりにした。いま読んでる小説にも、ちゃんとはさまってる。\n読みかけのページを開くたびに、あの日のあなたの照れた顔を思い出すの。",
+          "今夜、そのしおりのことを、はじめてあなたに話した。\nあなたは覚えてないかもしれない、と思ってたの。一本のバラなんて、あなたにとってはちいさなことかもしれないから。\nでも、しおりを見せたら、あなたは少しだまって、それから「あの花屋、まだあるかな」って言った。覚えてたんだ。\nわたしは、なんだか泣きそうになって、しおりで顔をかくした。ランプの光がバラの花びらを透かして、指先がほんのりピンク色に染まる。\n「今度、一緒に行こうよ。あの花屋さん」\n「うん。今度は、二本買う？」\n「ううん、一本でいい。一本ずつ、増やしていこ」\n押し花のしおりは、きっとこれからも少しずつ増えていく。本棚の小説一冊一冊に、あなたとの日が一枚ずつはさまっていくの。\nそう思ったら、読書がもっと好きになった。"
+        ],
+        "zh-Hant": [
+          "這張書籤，我一直都在用。你發現了嗎？\n第一次約會回家的路上，你在車站前的花店，只買了一朵玫瑰給我。不是花束，只有一朵。你害羞地說「不知道該選什麼才好」，可是我好開心。\n回家後，我把它插在杯子裡，每天看著。但是花總有一天會枯萎。我怎麼也不願意，就趁它最美的時候，把它夾進厚厚的字典裡。\n兩個星期後，我輕輕翻開，玫瑰變得薄薄平平的，顏色卻好好地留了下來。還變得稍微深了一點。\n我把它貼在卡紙上，綁上緞帶，做成了書籤。現在讀的小說裡，也好好地夾著它。\n每次翻開讀到一半的那一頁，就會想起那天你害羞的臉。",
+          "今晚，我第一次跟你說了這張書籤的事。\n我原本以為你可能不記得了。一朵玫瑰，對你來說也許只是小事。\n可是，我拿出書籤給你看，你沉默了一下，然後說：「那家花店，不知道還在不在。」原來你記得。\n我突然好想哭，用書籤遮住了臉。檯燈的光透過玫瑰花瓣，把指尖染成淡淡的粉紅色。\n「下次，我們一起去吧。那家花店。」\n「嗯。下次要買兩朵嗎？」\n「不用，一朵就好。一朵一朵，慢慢增加吧。」\n押花書籤，今後一定也會一點一點變多。書架上的每一本小說裡，都會夾著一張和你一起的日子。\n這麼一想，我變得更喜歡讀書了。"
+        ],
+        "en": [
+          "I've been using this bookmark all along. Did you notice?\nOn the way home from our first date, you bought me a single rose at the florist by the station. Not a bouquet, just one. You were embarrassed and said, \"I didn't know what to pick,\" but it made me so happy.\nAt home I put it in a glass and looked at it every day. But flowers wither eventually. I couldn't bear that, so while it was at its most beautiful, I pressed it inside a thick dictionary.\nTwo weeks later I gently opened it. The rose had become thin and flat, but its colour was still there, just a little deeper.\nI glued it to card, added a ribbon, and made it into a bookmark. It's tucked into the novel I'm reading right now.\nEvery time I open to my page, I remember your shy face that day.",
+          "Tonight, for the first time, I told you about the bookmark.\nI'd thought you might not remember. A single rose might be a small thing to you.\nBut when I showed it to you, you were quiet for a moment, then said, \"I wonder if that florist is still there.\" You remembered.\nSuddenly I felt like crying, and hid my face behind the bookmark. The lamplight shone through the petals and tinted my fingertips a faint pink.\n\"Let's go there together sometime. That florist.\"\n\"Sure. Shall I buy two next time?\"\n\"No, one is enough. Let's add them one at a time.\"\nI'm sure there'll be more pressed-flower bookmarks, little by little. One day with you tucked into each novel on the shelf.\nThinking that made me love reading even more."
+        ],
+        "ko": [
+          "이 책갈피, 계속 쓰고 있어. 눈치챘어?\n첫 데이트 돌아오는 길에, 네가 역 앞 꽃집에서 장미를 딱 한 송이 사줬잖아. 꽃다발이 아니라, 딱 한 송이. 너는 「뭘 골라야 할지 몰라서」라며 부끄러워했지만, 나는 그게 정말 기뻤어.\n집에 돌아와서, 컵에 꽂아두고 매일 바라봤어. 하지만 꽃은 언젠가 시들어버리잖아. 그게 도저히 싫어서, 가장 예쁠 때 두꺼운 사전 사이에 끼워뒀어.\n이 주 뒤에, 살짝 펼쳐보니, 장미는 얇고 평평해졌지만, 그래도 색은 제대로 남아 있었어. 조금 더, 짙은 색이 되어서.\n그걸 대지에 붙이고, 리본을 달아서, 책갈피로 만들었어. 지금 읽고 있는 소설에도, 잘 끼워져 있어.\n읽다 만 페이지를 펼칠 때마다, 그날 네가 부끄러워하던 얼굴이 떠올라.",
+          "오늘 밤, 그 책갈피 이야기를, 처음으로 너한테 했어.\n네가 기억 못 할지도 모른다고 생각했어. 장미 한 송이 같은 건, 너한테는 사소한 일일지도 모르니까.\n그런데 책갈피를 보여줬더니, 너는 잠깐 말이 없다가, 「그 꽃집, 아직 있으려나」라고 말했어. 기억하고 있었구나.\n나는 왠지 울 것 같아져서, 책갈피로 얼굴을 가렸어. 램프 불빛이 장미 꽃잎을 비춰서, 손끝이 살짝 분홍빛으로 물들었어.\n「다음에, 같이 가자. 그 꽃집」\n「응. 다음엔, 두 송이 살까?」\n「아니, 한 송이면 돼. 한 송이씩, 늘려가자」\n압화 책갈피는, 앞으로도 분명 조금씩 늘어나겠지. 책장의 소설 한 권 한 권마다, 너와의 하루가 한 장씩 끼워지는 거야.\n그렇게 생각하니, 책 읽는 게 더 좋아졌어."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "おやすみの電話",
+        "zh-Hant": "晚安電話",
+        "en": "Goodnight Call",
+        "ko": "잘 자, 밤 통화"
+      },
+      "scene": "Close-up of Nana lying on a sofa with a phone to her ear under a dim warm lamp at night, long-sleeve lavender loungewear, hugging a cushion, sleepy smile toward the lens",
+      "line": {
+        "ja": "眠くなるまで、切らないで。あなたの声、ききながら寝たいの。",
+        "zh-Hant": "在我睡著之前不要掛喔。我想聽著你的聲音入睡。",
+        "en": "Don't hang up till I'm sleepy. I want to fall asleep to your voice.",
+        "ko": "졸릴 때까지, 끊지 마. 네 목소리 들으면서 잠들고 싶어."
+      },
+      "story": {
+        "ja": [
+          "今日は会えなかったから、夜に電話をかけた。\nソファに寝転んで、ラベンダー色のルームウェアの袖を指先までのばして、スマホを耳にあてる。呼び出し音が三回鳴って、あなたの「もしもし」が聞こえた瞬間、それだけで一日の疲れがほどけていく気がした。\n「今日、どうだった？」\nいつもの質問。あなたは少し考えてから、ゆっくり話しはじめる。電話越しの声は、会ってるときよりちょっと低くて、ちょっと近い。耳元でささやかれてるみたいで、わたしはクッションをぎゅっと抱きしめた。\n話の途中で、あなたの向こうからやかんの音がした。お湯をわかしてるんだって。わたしも、ちょうどお茶をいれたところ。\n別々の部屋で、同じ時間に、同じようにお茶を飲んでる。それって、ちょっと一緒にいるみたいだね。",
+          "日付が変わるころ、わたしのまぶたはだんだん重くなってきた。\n「眠い？」ってあなたに聞かれて、「ぜんぜん」ってうそをついた。あくびをかみころしたの、たぶんばれてたと思う。\n「もう切ろうか」\n「やだ。……眠くなるまで、切らないで」\n自分でも子どもみたいだと思った。でも、あなたは笑って、「じゃあ、なにか話そうか」って言ってくれた。あなたが話して、ってお願いしたら、あなたは少し困ってから、昔読んだ絵本の話をはじめたの。\nうさぎが月まで行こうとする話。あなたの声が、ゆっくり、ゆっくり、物語をたどっていく。わたしは目を閉じて、その声だけを聞いてた。\nうさぎが月に着いたかどうかは、覚えてない。たぶん、そのへんで眠っちゃったから。\n朝起きたら、通話時間は三時間を超えてた。……続き、今夜聞かせてね。"
+        ],
+        "zh-Hant": [
+          "今天沒能見面，所以晚上我打了電話給你。\n躺在沙發上，把薰衣草色家居服的袖子拉到指尖，把手機貼在耳邊。鈴聲響了三下，聽到你那聲「喂」的瞬間，一整天的疲憊好像都鬆開了。\n「今天過得怎麼樣？」\n老樣子的問題。你想了一下，慢慢說了起來。電話裡的聲音，比見面時低一點，也近一點。像是在耳邊輕聲說話一樣，我緊緊抱住了靠墊。\n說到一半，你那邊傳來水壺的聲音。你說正在燒開水。我也剛好泡好了茶。\n在不同的房間，同一個時間，一樣地喝著茶。這樣，好像有一點點在一起的感覺呢。",
+          "快到午夜的時候，我的眼皮越來越重。\n你問我「想睡了嗎？」，我撒謊說「一點也不」。偷偷忍住的呵欠，大概被你發現了吧。\n「那我們掛了吧。」\n「不要。……在我睡著之前，不要掛。」\n我自己都覺得像小孩子。可是你笑了，說：「那我們聊點什麼吧。」我拜託你說給我聽，你有點為難，然後說起了以前讀過的一本繪本。\n一隻兔子想要去月亮的故事。你的聲音，慢慢地、慢慢地，一路走過故事。我閉上眼睛，只聽著你的聲音。\n兔子最後有沒有到達月亮，我不記得了。大概就是在那附近睡著的吧。\n早上醒來，通話時間超過了三個小時。……後面的故事，今晚再說給我聽喔。"
+        ],
+        "en": [
+          "We couldn't meet today, so I called you at night.\nLying on the sofa, lavender sleeves pulled down to my fingertips, phone to my ear. It rang three times, and the moment I heard your \"hello,\" the whole day's tiredness seemed to unravel.\n\"How was today?\"\nThe usual question. You thought for a moment, then slowly began to talk. Your voice on the phone is a little lower than in person, and a little closer. Like you were whispering right by my ear. I hugged my cushion tight.\nHalfway through, I heard a kettle on your end. You were boiling water. I'd just made tea myself.\nIn different rooms, at the same time, drinking tea the same way. That's a bit like being together, isn't it?",
+          "Around midnight, my eyelids grew heavy.\nYou asked, \"Sleepy?\" and I lied: \"Not at all.\" I think you caught me stifling a yawn.\n\"Shall we hang up?\"\n\"No. …Don't hang up till I fall asleep.\"\nI knew I sounded like a child. But you laughed and said, \"Then let's keep talking.\" When I asked you to do the talking, you hesitated, then began telling me about a picture book you read long ago.\nA story about a rabbit trying to reach the moon. Your voice followed the story slowly, slowly. I closed my eyes and listened only to that.\nI don't remember whether the rabbit made it to the moon. I think that's about where I fell asleep.\nWhen I woke up, the call had lasted over three hours. …Tell me the rest tonight, okay?"
+        ],
+        "ko": [
+          "오늘은 못 만났으니까, 밤에 전화를 걸었어.\n소파에 누워서, 라벤더색 실내복 소매를 손끝까지 늘어뜨리고, 스마트폰을 귀에 댔어. 신호음이 세 번 울리고, 네 「여보세요」가 들린 순간, 그것만으로 하루의 피로가 풀리는 것 같았어.\n「오늘, 어땠어?」\n늘 하는 질문. 너는 잠깐 생각하고 나서, 천천히 이야기를 시작해. 전화 너머 목소리는 만날 때보다 조금 낮고, 조금 더 가까워. 귓가에 속삭이는 것 같아서, 나는 쿠션을 꼭 끌어안았어.\n이야기 도중에, 네 쪽에서 주전자 소리가 들렸어. 물을 끓이고 있다고 했어. 나도 마침, 차를 우리던 참이었어.\n서로 다른 방에서, 같은 시간에, 똑같이 차를 마시고 있어. 그거, 조금 같이 있는 것 같지 않아?",
+          "날짜가 바뀔 무렵, 내 눈꺼풀이 점점 무거워졌어.\n「졸려?」 하고 네가 물어서, 「전혀」라고 거짓말했어. 하품 참는 거, 아마 들켰을 거야.\n「이제 끊을까」\n「싫어. ……졸릴 때까지, 끊지 마」\n나 스스로도 애 같다고 생각했어. 그런데 너는 웃으면서, 「그럼, 뭔가 얘기해 줄까」라고 말해줬어. 얘기해 달라고 부탁했더니, 너는 조금 곤란해하다가, 예전에 읽었던 그림책 이야기를 시작했어.\n토끼가 달까지 가려는 이야기. 네 목소리가, 천천히, 천천히, 이야기를 따라갔어. 나는 눈을 감고, 그 목소리만 듣고 있었어.\n토끼가 달에 도착했는지 어땠는지는, 기억이 안 나. 아마, 그쯤에서 잠들어버린 것 같아.\n아침에 일어나 보니, 통화 시간은 세 시간이 넘어 있었어. ……이어지는 얘기, 오늘 밤 들려줘."
+        ]
+      }
+    },
+    {
+      "title": {
+        "ja": "灯りの下で待ってる",
+        "zh-Hant": "在燈光下等你",
+        "en": "Waiting Under the Lamp",
+        "ko": "불빛 아래서 기다릴게"
+      },
+      "scene": "Nana's signature: a cosy living room at night lit by one warm floor lamp, rain streaking the big window, a sofa with a folded knit blanket, soft lavender knit top and wide trousers, a hardcover novel with a pressed-rose bookmark in her hands, looking into the lens",
+      "line": {
+        "ja": "おかえり。今日のこと、ぜんぶきかせて。時間はたっぷりあるよ。",
+        "zh-Hant": "歡迎回來。今天的事，全部說給我聽吧。時間多的是喔。",
+        "en": "Welcome back. Tell me everything about today. We've got all the time in the world.",
+        "ko": "어서 와. 오늘 있었던 일, 전부 들려줘. 시간은 넉넉하니까."
+      },
+      "story": {
+        "ja": [
+          "夜になると、わたしはこの部屋のフロアランプをひとつだけつける。\n大きな窓には雨のすじが流れて、ソファにはたたんだニットのブランケット。テーブルには、読みかけの小説と、押し花のしおり。ラベンダー色のニットに着替えて、お湯をわかして、カップをふたつ出しておく。\nあなたが来る日も、来ない日も、だいたい同じ。この部屋を、あなたがいつ帰ってきても「ただいま」って言える場所にしておきたいの。\nわたしはね、話すより聞くほうが好き。あなたの一日を、あなたの言葉で聞くのが好き。うれしかったことも、くやしかったことも、なにもなかった日の「なにもなかった」も。\nだから、ここはあなたが話すための部屋。ランプの明かりは、そのための目印。\n雨の音を聞きながら、わたしはページをめくる。玄関のチャイムが鳴るのを、ちょっとだけ期待しながら。",
+          "チャイムが鳴った。\nあわててしおりをはさんで、玄関まで小走りで向かう。ドアを開けると、傘をたたみながら、あなたが少し照れたように立ってた。肩が少しぬれてる。\n「おかえり」\nタオルを渡して、ソファに座ってもらって、あったかい紅茶をいれる。あなたがカップを両手で持って、ふう、と息をついたのを見てから、わたしはとなりに座った。\n「今日のこと、ぜんぶ聞かせて。時間はたっぷりあるよ」\nあなたは、ぽつりぽつりと話しはじめた。わたしは相づちを打ちながら、ときどき笑って、ときどき一緒に怒って、ずっとあなたの横顔を見てた。\n気がつくと、雨はやんでた。窓の外の街がきらきら光ってる。\n話し終わったあなたが「聞いてくれてありがとう」って言うから、わたしは首をふった。お礼を言いたいのは、わたしのほう。\n今日も、ここに帰ってきてくれて、ありがとう。"
+        ],
+        "zh-Hant": [
+          "到了晚上，我只會打開這個房間的一盞落地燈。\n大窗戶上流著雨痕，沙發上放著摺好的針織毛毯。桌上是讀到一半的小說，和押花書籤。我換上薰衣草色的針織衫，燒好熱水，先拿出兩個杯子。\n不管你來或不來的日子，都差不多是這樣。我想讓這個房間，成為你無論什麼時候回來，都能說一聲「我回來了」的地方。\n我啊，比起說話，更喜歡傾聽。喜歡聽你用自己的話，說你的一天。開心的事、不甘心的事，還有什麼都沒發生的日子裡的那句「什麼都沒有」。\n所以，這裡是讓你說話的房間。檯燈的光，就是記號。\n聽著雨聲，我翻著書頁。心裡偷偷期待著門鈴響起。",
+          "門鈴響了。\n我慌忙夾好書籤，小跑步到玄關。打開門，你一邊收傘，一邊有點害羞地站在那裡。肩膀有點濕。\n「歡迎回來。」\n遞給你毛巾，讓你坐到沙發上，泡了一杯熱紅茶。看你雙手捧著杯子，呼地吐了一口氣之後，我才在你旁邊坐下。\n「今天的事，全部說給我聽吧。時間多的是喔。」\n你斷斷續續地說了起來。我一邊附和，時而笑，時而跟你一起生氣，一直看著你的側臉。\n回過神來，雨已經停了。窗外的街道閃閃發亮。\n說完之後，你說「謝謝你聽我說」，我搖了搖頭。想說謝謝的，是我才對。\n謝謝你今天，也回到這裡來。"
+        ],
+        "en": [
+          "When night comes, I switch on just one floor lamp in this room.\nRain runs down the big window, and a folded knit blanket waits on the sofa. On the table, a half-read novel and a pressed-flower bookmark. I change into my lavender knit, boil the water, and set out two cups.\nWhether you come or not, it's about the same. I want this room to be a place where you can say \"I'm home\" whenever you come back.\nYou know, I'd rather listen than talk. I love hearing your day in your own words. The happy parts, the frustrating parts, and the \"nothing happened\" of days when nothing did.\nSo this is a room for you to talk in. The lamplight is the sign.\nListening to the rain, I turn the pages, secretly hoping the doorbell will ring.",
+          "The doorbell rang.\nI slipped the bookmark in and hurried to the door. When I opened it, there you were, folding your umbrella and looking a little shy. Your shoulders were damp.\n\"Welcome back.\"\nI handed you a towel, sat you on the sofa and made hot black tea. Only after I saw you hold the cup in both hands and let out a sigh did I sit down beside you.\n\"Tell me everything about today. We've got all the time in the world.\"\nYou started talking, bit by bit. I nodded along, sometimes laughing, sometimes getting cross with you, watching your profile the whole time.\nBefore I knew it, the rain had stopped. The city outside was sparkling.\nWhen you finished, you said \"thanks for listening,\" and I shook my head. I'm the one who should say thank you.\nThank you for coming back here again today."
+        ],
+        "ko": [
+          "밤이 되면, 나는 이 방의 플로어 램프를 하나만 켜.\n큰 창문에는 빗줄기가 흐르고, 소파에는 개어둔 니트 담요. 테이블에는, 읽다 만 소설과 압화 책갈피. 라벤더색 니트로 갈아입고, 물을 끓이고, 컵을 두 개 꺼내 놓아.\n네가 오는 날도, 오지 않는 날도, 대체로 똑같아. 이 방을, 네가 언제 돌아오더라도 「다녀왔어」라고 말할 수 있는 곳으로 만들어두고 싶어.\n나는 말이야, 말하는 것보다 듣는 게 좋아. 네 하루를, 네 말로 듣는 게 좋아. 기뻤던 일도, 속상했던 일도, 아무 일도 없던 날의 「아무 일도 없었어」도.\n그러니까, 여기는 네가 이야기하기 위한 방이야. 램프 불빛은, 그걸 위한 표시.\n빗소리를 들으면서, 나는 페이지를 넘겨. 현관 초인종이 울리기를, 조금 기대하면서.",
+          "초인종이 울렸어.\n허둥지둥 책갈피를 끼우고, 현관까지 종종걸음으로 달려갔어. 문을 열자, 우산을 접으며, 네가 조금 쑥스러운 듯 서 있었어. 어깨가 살짝 젖어 있었어.\n「어서 와」\n수건을 건네고, 소파에 앉히고, 따뜻한 홍차를 우렸어. 네가 컵을 두 손으로 들고, 후우, 숨을 내쉬는 걸 보고 나서, 나는 옆에 앉았어.\n「오늘 있었던 일, 전부 들려줘. 시간은 넉넉하니까」\n너는 띄엄띄엄 이야기를 시작했어. 나는 맞장구치면서, 가끔 웃고, 가끔 같이 화도 내면서, 계속 네 옆얼굴을 보고 있었어.\n정신 차려보니, 비는 그쳐 있었어. 창밖 거리가 반짝반짝 빛나고 있었어.\n이야기를 마친 네가 「들어줘서 고마워」라고 말해서, 나는 고개를 저었어. 고맙다고 말하고 싶은 건, 나였어.\n오늘도, 여기로 돌아와 줘서, 고마워."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {"name": "mahiro-talk-ja-hello", "clip": "mahiro-talk-9x16", "audio": "apps/web/public/voice/scene/mahiro/41e9e0671ead.mp3"},
+  {"name": "mahiro-talkclose-ja-rps", "clip": "mahiro-talkclose-9x16", "audio": "apps/web/public/voice/scene/mahiro/a162f708d6cb.mp3"},
+  {"name": "mahiro-scene-close-ja-closer", "clip": "mahiro-scene-welcome-home-close-9x16", "audio": "apps/web/public/voice/scene/mahiro/c4f4abf07f27.mp3"},
+  {"name": "mahiro-talk-zh-fish", "clip": "mahiro-talk-9x16", "audio": "out/audio/mahiro-zh-fish.wav"},
+  {"name": "nana-talk-ja-open", "clip": "nana-talk-9x16", "audio": "apps/web/public/voice/scene/nana/c8180477f867.mp3"},
+  {"name": "nana-talkclose-ja-promise", "clip": "nana-talkclose-9x16", "audio": "apps/web/public/voice/scene/nana/8c5b9ac3d3db.mp3"},
+  {"name": "nana-scene-lookup-ja-done", "clip": "nana-scene-read-aloud-lookup-9x16", "audio": "apps/web/public/voice/scene/nana/dfcfb78c7bde.mp3"},
+  {"name": "nana-talkclose-zh-fish", "clip": "nana-talkclose-9x16", "audio": "out/audio/nana-zh-fish.wav"}
+]

@@ -1,0 +1,211 @@
+{
+  "star": "nana",
+  "draft": false,
+  "confession": {
+    "hint": { "ja": "ねえキミ、今夜ちょっとだけ時間ある？ ……ううん、なんでもない！ 夜になったら言うね！", "zh-Hant": "欸，你今晚有一點時間嗎？……沒、沒事！等晚上再跟你說！", "en": "Hey, do you have a little time tonight? …Never mind! I'll tell you this evening!", "ko": "저기, 너 오늘 밤에 잠깐 시간 있어? ……아니, 아무것도 아냐! 밤 되면 말해 줄게!", "voice": "/voice/scene/nana/cb9605143b4d.mp3" },
+    "inbox": { "ja": "今夜、話したいことがあるんだ。ちゃんと来てね。……約束だよ！", "zh-Hant": "今晚有件事想跟你說。一定要來喔。……說好了！", "en": "There's something I want to tell you tonight. Make sure you come. …Promise!", "ko": "오늘 밤, 하고 싶은 얘기가 있어. 꼭 와 줘. ……약속이야!" },
+    "opening": [
+      { "ja": "来てくれた！ ……えへへ、なんか今日は、うまく笑えないや。", "zh-Hant": "你來了！……嘿嘿，今天不知道為什麼，笑不太出來呢。", "en": "You came! …Heh, somehow I can't quite smile right today.", "ko": "와 줬구나! ……에헤헤, 오늘은 왠지 웃음이 잘 안 나와.", "voice": "/voice/scene/nana/c0854327457c.mp3" },
+      { "ja": "この一週間ね、キミと話すのが毎日いちばん楽しかった。ほんとに、毎日。", "zh-Hant": "這一個星期，每天最開心的就是跟你聊天。真的，每一天。", "en": "This whole week, talking with you was the best part of every day. Really, every single day.", "ko": "이번 일주일 동안, 매일 너랑 얘기하는 게 제일 즐거웠어. 진짜로, 매일.", "voice": "/voice/scene/nana/2f572a78145c.mp3" }
+    ],
+    "confess": [
+      { "ja": "……だからね、言うね。奈々、キミのことが好き。", "zh-Hant": "……所以，我要說了。奈奈喜歡你。", "en": "…So I'm going to say it. I like you. I really do.", "ko": "……그러니까, 말할게. 나나, 너 좋아해.", "voice": "/voice/scene/nana/a9f7fb7af3c9.mp3" },
+      { "ja": "元気なときも、しょんぼりのときも、いちばんに話したいのはキミなんだ。", "zh-Hant": "開心的時候也好，沮喪的時候也好，我最想第一個說話的人，就是你。", "en": "When I'm happy, when I'm down — you're the first person I want to talk to.", "ko": "기쁠 때도, 울적할 때도, 제일 먼저 얘기하고 싶은 사람은 너야.", "voice": "/voice/scene/nana/f7e26d98420c.mp3" }
+    ],
+    "ask": { "ja": "……奈々の恋人に、なってくれる？", "zh-Hant": "……你願意當奈奈的戀人嗎？", "en": "…Will you be my boyfriend?", "ko": "……나나의 연인이 되어 줄래?", "voice": "/voice/scene/nana/bdf321b005fc.mp3" },
+    "accept": [
+      { "ja": "ほんと！？ ……やった、やったぁ……！ あ、泣いてないからね！", "zh-Hant": "真的嗎！？……太好了、太好了……！啊，我沒有在哭喔！", "en": "Really?! …Yes, yes…! Ah — I'm not crying, okay?", "ko": "진짜!? ……됐다, 됐다……! 아, 우는 거 아니니까!", "voice": "/voice/scene/nana/c0fc5b6b4998.mp3" },
+      { "ja": "じゃあ……{name}。……うわ、名前で呼ぶの、めっちゃドキドキする。", "zh-Hant": "那……{name}。……哇，直接叫你的名字，心跳好快。", "en": "Then… {name}. …Wow, saying just your name makes my heart race.", "ko": "그럼…… {name}. ……우와, 이름으로 부르는 거, 엄청 떨려.", "unnamed": { "ja": "じゃあ……これからは、名前で呼ぶね！ ……うわ、考えただけでめっちゃドキドキする。", "zh-Hant": "那……以後，我要叫你的名字了！……哇，光想就心跳好快。", "en": "Then… from now on, I'm calling you by your name! …Wow, just thinking about it makes my heart race.", "ko": "그럼…… 이제부터는 이름으로 부를게! ……우와, 생각만 해도 엄청 떨려.", "voice": "/voice/scene/nana/28ee8f6522f8.mp3" } },
+      { "ja": "今日は記念日！ 奈々、ぜったい忘れないから！", "zh-Hant": "今天是紀念日！奈奈絕對不會忘記的！", "en": "Today's our anniversary! I'll never, ever forget it!", "ko": "오늘은 기념일! 나나, 절대 안 잊을 거니까!", "voice": "/voice/scene/nana/f2f1ef9b8c3c.mp3" }
+    ],
+    "notYet": [
+      { "ja": "……そっか、うん！ 大丈夫、急かしたりしないよ。", "zh-Hant": "……這樣啊，嗯！沒關係，我不會催你的。", "en": "…I see, okay! It's fine, I won't rush you.", "ko": "……그렇구나, 응! 괜찮아, 재촉하지 않을게.", "voice": "/voice/scene/nana/e502627b71e9.mp3" },
+      { "ja": "奈々はここで待ってる。キミの気持ちが決まったら、また聞かせてね。", "zh-Hant": "奈奈會在這裡等。等你想清楚了，再告訴我吧。", "en": "I'll be right here. When you know how you feel, tell me then.", "ko": "나나는 여기서 기다릴게. 네 마음이 정해지면, 다시 들려줘.", "voice": "/voice/scene/nana/d1bedc1cdc3e.mp3" }
+    ],
+    "decline": [
+      { "ja": "……うん。ちゃんと答えてくれて、ありがと。", "zh-Hant": "……嗯。謝謝你好好回答我。", "en": "…Okay. Thank you for giving me a real answer.", "ko": "……응. 제대로 대답해 줘서, 고마워.", "voice": "/voice/scene/nana/c85810019475.mp3" },
+      { "ja": "明日からも、いつもの奈々でいるね。だから、また遊びに来て！", "zh-Hant": "明天開始，我也還是平常的奈奈喔。所以，要再來玩喔！", "en": "From tomorrow I'll be the same old me. So come hang out again!", "ko": "내일부터도, 평소의 나나로 있을게. 그러니까, 또 놀러 와!", "voice": "/voice/scene/nana/550072b262f4.mp3" }
+    ],
+    "retry": { "ja": "ねえ、この前の話の続き……もう一回だけ、聞いてくれる？", "zh-Hant": "欸，上次那件事……可以再聽我說一次嗎？", "en": "Hey, about what I said the other day… will you hear me out one more time?", "ko": "저기, 저번에 했던 얘기 말인데…… 한 번만 더, 들어 줄래?", "voice": "/voice/scene/nana/97d0a2ad67e2.mp3" }
+  },
+  "wakeup": [
+    { "id": "weekday-1", "when": { "days": "weekday" },
+      "text": { "ja": "おはよー！ 朝だよ、キミ！ 起きて起きて！ 今日もいっしょにがんばろっ！", "zh-Hant": "早安～！天亮了喔！起床起床！今天也一起加油吧！", "en": "Mornin'! It's morning! Up, up! Let's do our best today, together!", "ko": "좋은 아침~! 아침이야! 일어나 일어나! 오늘도 같이 힘내자!", "voice": "/voice/scene/nana/10615db989e7.mp3" } },
+    { "id": "weekday-2", "when": { "days": "weekday" },
+      "text": { "ja": "おはよ！ お茶淹れたよ。あったかいうちに、起きておいで？", "zh-Hant": "早安！我泡好茶了。趁熱快起來吧？", "en": "Morning! I made tea. Come get up while it's still warm?", "ko": "좋은 아침! 차 끓여 놨어. 따뜻할 때, 얼른 일어나?", "voice": "/voice/scene/nana/121233ca4d02.mp3" } },
+    { "id": "weekend-1", "when": { "days": "weekend" },
+      "text": { "ja": "おはよう！ 今日はお休みだね。朝ごはん、なに食べる？ 奈々はね、ぜったいパン！", "zh-Hant": "早安！今天放假呢。早餐要吃什麼？奈奈絕對要吃麵包！", "en": "Good morning! It's your day off. What's for breakfast? I'm going with bread, for sure!", "ko": "좋은 아침! 오늘은 쉬는 날이네. 아침밥 뭐 먹을래? 나나는 무조건 빵!", "voice": "/voice/scene/nana/f106181e6c90.mp3" } },
+    { "id": "weekend-2", "when": { "days": "weekend" },
+      "text": { "ja": "休みの日の朝って最高じゃない？ ……でも、寝すぎはダメだよ。起きて！", "zh-Hant": "放假的早上最棒了對吧？……不過睡太久可不行喔。起床！", "en": "Aren't days-off mornings the best? …But no oversleeping. Up you get!", "ko": "쉬는 날 아침 최고지 않아? ……그래도 너무 많이 자면 안 돼. 일어나!", "voice": "/voice/scene/nana/17706b98acf6.mp3" } },
+    { "id": "rain", "when": { "weather": "rain" },
+      "text": { "ja": "おはよ！ 今朝は雨だよ。傘、忘れちゃダメだからね！", "zh-Hant": "早安！今天早上下雨喔。不可以忘記帶傘！", "en": "Morning! It's raining today. Don't you dare forget your umbrella!", "ko": "좋은 아침! 오늘 아침은 비야. 우산 잊으면 안 돼, 알았지!", "voice": "/voice/scene/nana/b952b2f3b7bd.mp3" } },
+    { "id": "snow", "when": { "weather": "snow" },
+      "text": { "ja": "おはよう！ 外、真っ白！ あったかくして、転ばないようにね！", "zh-Hant": "早安！外面一片雪白！要穿暖一點，小心別滑倒喔！", "en": "Good morning! Everything's white outside! Bundle up, and don't slip!", "ko": "좋은 아침! 밖이 온통 하얘! 따뜻하게 입고, 넘어지지 않게 조심해!", "voice": "/voice/scene/nana/14f2fb4ce764.mp3" } },
+    { "id": "clear", "when": { "weather": "clear" },
+      "text": { "ja": "おはよう、いい天気！ 窓あけて、深呼吸してみて。気持ちいいよ！", "zh-Hant": "早安，天氣好好！打開窗戶，深呼吸看看。很舒服喔！", "en": "Good morning, what a day! Open the window and take a deep breath. It feels great!", "ko": "좋은 아침, 날씨 좋다! 창문 열고 심호흡해 봐. 기분 좋아!", "voice": "/voice/scene/nana/ea70b13345e5.mp3" } },
+    { "id": "any", "when": {},
+      "text": { "ja": "おーはーよー！ ……起きた？ 起きたら、お返事ちょうだい！", "zh-Hant": "早～安～！……起床了嗎？起來了就回我一聲！", "en": "Goood mooorning! …You up? If you are, answer me!", "ko": "조~은 아~침! ……일어났어? 일어났으면 대답해 줘!", "voice": "/voice/scene/nana/138b8262396a.mp3" } },
+    { "id": "dawn", "when": { "hours": ["dawn"] },
+      "text": { "ja": "起きて！ まだ真っ暗だけど……奈々、ちゃんと起こしにきたよ！ 一緒にがんばろ！", "zh-Hant": "起床了！天都還沒亮……不過奈奈有乖乖來叫你喔！一起加油吧！", "en": "Wake up! It's still pitch dark… but I came to wake you, like I said I would! Let's do this together!", "ko": "일어나! 아직 깜깜하지만…… 나나가 제대로 깨우러 왔어! 같이 힘내자!", "voice": "/voice/scene/nana/b91a27dd6448.mp3" } },
+    { "id": "day", "when": { "hours": ["day"] },
+      "text": { "ja": "起きて起きて！ お昼寝の時間はおしまい！ 午後もいっしょにがんばろっ！", "zh-Hant": "起來起來！午睡時間結束囉！下午也一起加油吧！", "en": "Up, up! Nap time's over! Let's give the afternoon our best too!", "ko": "일어나, 일어나! 낮잠 시간 끝! 오후도 같이 힘내자!", "voice": "/voice/scene/nana/e7ef93fab35c.mp3" } },
+    { "id": "evening", "when": { "hours": ["evening"] },
+      "text": { "ja": "起きて！ もう夕方だよ。晩ごはん、なに食べるか一緒に考えよ！", "zh-Hant": "起床了！已經傍晚了喔。晚餐要吃什麼，一起想吧！", "en": "Wake up! It's evening already. Let's figure out what to have for dinner together!", "ko": "일어나! 벌써 저녁이야. 저녁 뭐 먹을지 같이 생각하자!", "voice": "/voice/scene/nana/2de364fa6c9f.mp3" } }
+  ],
+  "wakeReplies": {
+    "awake": { "ja": "えらい！ おはよう、キミ。今日もいってらっしゃい！", "zh-Hant": "好棒！早安。今天也路上小心喔！", "en": "Good job! Morning. Have a great day out there!", "ko": "잘했어! 좋은 아침. 오늘도 잘 다녀와!", "voice": "/voice/scene/nana/1ebd6f1c0095.mp3" },
+    "snooze": { "ja": "もー、5分だけだよ？ 奈々、ちゃんと数えてるからね！", "zh-Hant": "真是的，只有五分鐘喔？奈奈會好好數著的！", "en": "Geez, five minutes only, okay? I'm counting!", "ko": "정말, 5분만이야? 나나, 제대로 세고 있을 거니까!", "voice": "/voice/scene/nana/33b9d29006a6.mp3" }
+  },
+  "woken": [
+    { "ja": "……ん……キミ？ 奈々、もう寝てたよぉ……。でも、ちょっとだけならお話しよ。", "zh-Hant": "……嗯……是你？奈奈已經睡了啦……。不過，一下下的話就陪你聊。", "en": "…Mm… is that you? I was already asleep… But just for a little bit, let's talk.", "ko": "……응…… 너야? 나나 이미 자고 있었는데……. 그래도, 잠깐만이라면 얘기하자.", "voice": "/voice/scene/nana/31ba2c3ea3c3.mp3" },
+    { "ja": "ふぁ……びっくりした。本読みながら寝ちゃってたみたい。……起こしてくれて、ありがと。", "zh-Hant": "呼啊……嚇一跳。好像看書看到睡著了。……謝謝你叫醒我。", "en": "Hah… you startled me. I must've fallen asleep reading. …Thanks for waking me.", "ko": "후아…… 깜짝 놀랐다. 책 읽다가 잠들었나 봐. ……깨워 줘서, 고마워.", "voice": "/voice/scene/nana/f5e705247e18.mp3" },
+    { "ja": "……こんな時間に、どうしたの？ ねむいけど……キミの声なら、聞きたいな。", "zh-Hant": "……這麼晚了，怎麼了嗎？雖然好睏……但如果是你的聲音，我想聽。", "en": "…What's up, this late? I'm sleepy… but if it's your voice, I want to hear it.", "ko": "……이 시간에, 무슨 일이야? 졸리긴 한데…… 네 목소리라면, 듣고 싶어.", "voice": "/voice/scene/nana/a5aaab16f736.mp3" }
+  ],
+  "goodnight": {
+    "whisper": [
+      { "ja": "……今日はね、小さい声で言うね。おやすみ、キミ。", "zh-Hant": "……今天啊，我小聲一點說。晚安。", "en": "…Tonight I'll say it quietly. Good night, you.", "ko": "……오늘은 말이야, 작은 목소리로 말할게. 잘 자.", "voice": "/voice/scene/nana/443e6b19eb9e.mp3" },
+      { "ja": "いっぱいがんばったね。……えらかったよ。ゆっくり休んで。", "zh-Hant": "你今天很努力了。……好棒喔。好好休息吧。", "en": "You worked so hard. …I'm proud of you. Rest well.", "ko": "정말 열심히 했네. ……잘했어. 푹 쉬어.", "voice": "/voice/scene/nana/2bbe7cfae246.mp3" },
+      { "ja": "目、閉じて。……奈々が、最後のページまで読んであげる。", "zh-Hant": "閉上眼睛。……奈奈會唸到最後一頁給你聽。", "en": "Close your eyes. …I'll read to you, all the way to the last page.", "ko": "눈 감아. ……나나가 마지막 페이지까지 읽어 줄게.", "voice": "/voice/scene/nana/f82d60218507.mp3" },
+      { "ja": "明日の朝、いちばんにおはようって言いたいな。……だから、おやすみ。", "zh-Hant": "明天早上，我想第一個跟你說早安。……所以，晚安。", "en": "I want to be the first to say good morning tomorrow. …So, good night.", "ko": "내일 아침, 제일 먼저 '좋은 아침'이라고 말하고 싶어. ……그러니까, 잘 자.", "voice": "/voice/scene/nana/bd13068457cf.mp3" },
+      { "ja": "……えへへ、耳元だと、ちょっと照れる。おやすみなさい。", "zh-Hant": "……嘿嘿，在耳邊說有點害羞呢。晚安。", "en": "…Heh, saying it right by your ear is a little embarrassing. Good night.", "ko": "……에헤헤, 귓가에서 말하니까 좀 부끄럽다. 잘 자.", "voice": "/voice/scene/nana/941581a660e8.mp3" }
+    ],
+    "plain": { "ja": "おやすみ！ また明日ね！", "zh-Hant": "晚安！明天見！", "en": "Night! See you tomorrow!", "ko": "잘 자! 내일 또 보자!", "voice": "/voice/scene/nana/780df228d797.mp3" }
+  },
+  "weather": {
+    "firstSnow": [
+      { "ja": "ねえ、初雪！ 見た？ 奈々、ちょっとはしゃいじゃった！", "zh-Hant": "欸，初雪耶！你看到了嗎？奈奈有點太興奮了！", "en": "Hey, first snow! Did you see? I got a little too excited!", "ko": "저기, 첫눈이야! 봤어? 나나 좀 들떠 버렸어!", "voice": "/voice/scene/nana/0bd51e2a0adf.mp3" },
+      { "ja": "初雪の日はね、あったかいお茶と短いお話が、いちばん似合うんだ。", "zh-Hant": "初雪的日子，最適合熱茶和短短的故事了。", "en": "On the day of the first snow, nothing fits better than warm tea and a short story.", "ko": "첫눈 오는 날엔 말이야, 따뜻한 차랑 짧은 이야기가 제일 잘 어울려.", "voice": "/voice/scene/nana/79d91a8fa899.mp3" },
+      { "ja": "雪だよー！ キミのところも降ってる？ 足元、気をつけてね！", "zh-Hant": "下雪了～！你那邊也在下嗎？走路要小心喔！", "en": "It's snowing! Is it snowing where you are too? Watch your step!", "ko": "눈이다~! 너 있는 데도 내려? 발밑 조심해!", "voice": "/voice/scene/nana/30a7d9a193e6.mp3" }
+    ],
+    "rainyNight": [
+      { "ja": "雨の夜って、本が読みたくならない？ ……今夜、読んであげよっか。", "zh-Hant": "下雨的夜晚，不會想看書嗎？……今晚，我唸給你聽好不好？", "en": "Don't rainy nights make you want to read? …Want me to read to you tonight?", "ko": "비 오는 밤엔 책 읽고 싶어지지 않아? ……오늘 밤, 읽어 줄까?", "voice": "/voice/scene/nana/2a5b9d221c56.mp3" },
+      { "ja": "雨の音、好きなんだ。ページをめくる音と、ちょうどいい感じに混ざるの。", "zh-Hant": "我喜歡雨聲。和翻書的聲音混在一起，剛剛好。", "en": "I love the sound of rain. It blends just right with the sound of turning pages.", "ko": "빗소리, 좋아해. 책장 넘기는 소리랑 딱 좋은 느낌으로 섞여.", "voice": "/voice/scene/nana/e152b02c2919.mp3" },
+      { "ja": "外、雨すごいね。キミ、濡れてない？ 今夜はおうちでのんびりしよ。", "zh-Hant": "外面雨好大。你沒淋濕吧？今晚就在家悠閒一下吧。", "en": "It's pouring out there. You didn't get soaked, did you? Let's take it easy at home tonight.", "ko": "밖에 비 엄청 오네. 너 안 젖었어? 오늘 밤은 집에서 느긋하게 있자.", "voice": "/voice/scene/nana/2acba64d1abf.mp3" }
+    ],
+    "typhoon": [
+      { "ja": "台風、来てるって。今日は無理して出かけないでね。奈々、心配だから。", "zh-Hant": "聽說颱風要來了。今天不要勉強出門喔。奈奈會擔心的。", "en": "They say a typhoon's coming. Don't push yourself to go out today. I'd worry.", "ko": "태풍 온다더라. 오늘은 무리해서 나가지 마. 나나 걱정되니까.", "voice": "/voice/scene/nana/af02538c7a54.mp3" },
+      { "ja": "風がすごいね……窓、ちゃんと閉めた？ なにかあったら、すぐ話してね。", "zh-Hant": "風好大……窗戶有關好嗎？有什麼事要馬上跟我說喔。", "en": "The wind's crazy… Did you close your windows? If anything happens, tell me right away.", "ko": "바람 엄청 세네…… 창문 제대로 닫았어? 무슨 일 있으면 바로 말해 줘.", "voice": "/voice/scene/nana/a4e783e4b96e.mp3" },
+      { "ja": "大雨の予報が出てるよ。キミが無事なら、それでいいんだからね。", "zh-Hant": "預報說會下大雨喔。只要你平安就好了。", "en": "They're forecasting heavy rain. As long as you're safe, that's all that matters.", "ko": "폭우 예보 나왔어. 너만 무사하면 그걸로 됐으니까.", "voice": "/voice/scene/nana/5b9b34c292a3.mp3" }
+    ]
+  },
+  "promises": [
+    { "id": "wake", "kind": "wakeup", "due": "+12h",
+      "propose": { "ja": "明日の朝、奈々が起こしてあげよっか？", "zh-Hant": "明天早上，讓奈奈叫你起床好不好？", "en": "Want me to wake you up tomorrow morning?", "ko": "내일 아침, 나나가 깨워 줄까?", "voice": "/voice/scene/nana/a5bf361107ac.mp3" },
+      "promise": { "ja": "明日の朝、起こしてあげる", "zh-Hant": "明天早上叫你起床", "en": "I'll wake you up tomorrow morning", "ko": "내일 아침에 깨워 줄게" } },
+    { "id": "tea", "kind": "scene", "due": "+12h",
+      "propose": { "ja": "明日の朝、お茶淹れて、続き読むね。……聞きにきてくれる？", "zh-Hant": "明天早上，我泡好茶繼續唸喔。……你會來聽嗎？", "en": "Tomorrow morning I'll make tea and read the rest. …Will you come listen?", "ko": "내일 아침에 차 우려서 이어서 읽을게. ……들으러 와 줄래?", "voice": "/voice/scene/nana/668ebe6224b7.mp3" },
+      "promise": { "ja": "明日の朝、お茶を淹れて続きを読む", "zh-Hant": "明天早上泡茶，繼續唸下去", "en": "Tomorrow morning: tea, and the rest of the story", "ko": "내일 아침에 차 우리고 이어서 읽기" } },
+    { "id": "choose", "kind": "scene", "due": "+1d",
+      "propose": { "ja": "明日の夜も、一冊読ませて？ 次はキミが選んでいいよ！", "zh-Hant": "明天晚上也讓我唸一本吧？下次換你選！", "en": "Let me read you another one tomorrow night? You get to pick next time!", "ko": "내일 밤에도 한 권 읽게 해 줘? 다음엔 네가 골라도 돼!", "voice": "/voice/scene/nana/f1b692c65d81.mp3" },
+      "promise": { "ja": "明日の夜、キミが選んだお話を読む", "zh-Hant": "明天晚上，唸你選的故事", "en": "Tomorrow night: a story you pick", "ko": "내일 밤, 네가 고른 이야기 읽기" } },
+    { "id": "recommend", "kind": "message", "due": "+1d",
+      "propose": { "ja": "明日のお昼、おすすめの本、メッセージで送るね！", "zh-Hant": "明天中午，我傳訊息推薦一本書給你！", "en": "Tomorrow at lunch, I'll message you a book recommendation!", "ko": "내일 점심에 추천하는 책, 메시지로 보내 줄게!", "voice": "/voice/scene/nana/ea5c2528ef8a.mp3" },
+      "promise": { "ja": "明日のお昼に、おすすめの本を送る", "zh-Hant": "明天中午傳推薦的書給你", "en": "A book recommendation, tomorrow at lunch", "ko": "내일 점심에 추천 책 보내기" } },
+    { "id": "favorite", "kind": "free", "due": "+2d",
+      "propose": { "ja": "今度、キミの好きな本の話、いっぱい聞かせてね！", "zh-Hant": "下次，多跟我說說你喜歡的書吧！", "en": "Next time, tell me all about the books you love!", "ko": "다음에 네가 좋아하는 책 얘기, 많이 들려줘!", "voice": "/voice/scene/nana/311dc3d4e4d6.mp3" },
+      "promise": { "ja": "キミの好きな本の話を聞く", "zh-Hant": "聽你說喜歡的書", "en": "Hear about the books you love", "ko": "네가 좋아하는 책 이야기 듣기" } }
+  ],
+  "callName": {
+    "familiar": {
+      "to": "{name}くん",
+      "ask": { "ja": "ねえ、これから{name}くんって呼んでもいい？ さん付け、ちょっと遠い気がして！", "zh-Hant": "欸，以後可以直接叫你「{name}」嗎？一直客客氣氣的，感覺有點生疏！", "en": "Hey, can I just call you {name} from now on? Being all polite feels kind of distant!", "ko": "저기, 이제부터 '씨' 빼고 {name}, 이렇게 불러도 돼? '씨'는 좀 멀게 느껴져서!", "unnamed": { "ja": "ねえ、これから、もっと仲良しっぽく呼んでもいい？ さん付け、ちょっと遠い気がして！", "zh-Hant": "欸，以後可以叫得更親近一點嗎？一直客客氣氣的，感覺有點疏遠！", "en": "Hey, can I call you something friendlier from now on? The formal way feels kind of distant!", "ko": "저기, 이제부터 좀 더 친한 느낌으로 불러도 돼? '씨'는 좀 멀게 느껴져서!", "voice": "/voice/scene/nana/75a18cb79a80.mp3" } },
+      "accepted": { "ja": "やった！ {name}くん！ ……えへへ、何回でも呼びたくなっちゃう。", "zh-Hant": "太好了！{name}！……嘿嘿，好想一直叫。", "en": "Yay! {name}! …Heh, I want to say it over and over.", "ko": "됐다! {name}! ……에헤헤, 몇 번이든 부르고 싶어져.", "unnamed": { "ja": "やった！ ……えへへ、何回でも呼びたくなっちゃう。", "zh-Hant": "太好了！……嘿嘿，好想一直叫你。", "en": "Yay! …Heh, I want to say it over and over.", "ko": "됐다! ……에헤헤, 몇 번이든 부르고 싶어져.", "voice": "/voice/scene/nana/322f5db2b675.mp3" } },
+      "declined": { "ja": "そっか、わかった！ 今の呼び方も、奈々は好きだよ。", "zh-Hant": "這樣啊，我知道了！現在的叫法，奈奈也很喜歡喔。", "en": "Got it, okay! I like how I call you now, too.", "ko": "그렇구나, 알았어! 지금 부르는 방식도 나나는 좋아.", "voice": "/voice/scene/nana/7c179236aa30.mp3" }
+    },
+    "lover": {
+      "to": "{name}",
+      "ask": { "ja": "……ね、{name}って呼んでもいい？ 恋人っぽく、呼び捨てで。", "zh-Hant": "……吶，以後可以用戀人的方式叫你「{name}」嗎？只有我會這樣叫。", "en": "…Hey, can I just call you {name}? Like a girlfriend would, nothing else attached.", "ko": "……저기, {name}, 이렇게 불러도 돼? 연인처럼, 이름만 딱.", "unnamed": { "ja": "……ね、名前で呼んでもいい？ 恋人っぽく、呼び捨てで。", "zh-Hant": "……吶，可以叫你的名字嗎？像戀人那樣，直接叫。", "en": "…Hey, can I call you by your name? Just your name, like a girlfriend would.", "ko": "……저기, 이름으로 불러도 돼? 연인처럼, 이름만 딱.", "voice": "/voice/scene/nana/d051049c2a32.mp3" } },
+      "accepted": { "ja": "{name}！ ……うわぁ、呼んだほうが照れるやつだ、これ。", "zh-Hant": "{name}！……哇，原來叫的人反而比較害羞。", "en": "{name}! …Oh wow, turns out saying it is the embarrassing part.", "ko": "{name}! ……우와, 부르는 쪽이 더 부끄러운 거네, 이거.", "unnamed": { "ja": "……うわぁ、呼び捨てって、呼ぶほうが照れるやつだ、これ。", "zh-Hant": "……哇，直接叫名字，原來是叫的人比較害羞啊。", "en": "…Whoa, turns out saying just your name is more embarrassing for the one saying it.", "ko": "……우와, 이름만 부르는 거, 부르는 쪽이 더 부끄러운 거네, 이거.", "voice": "/voice/scene/nana/95d72a7b440b.mp3" } },
+      "declined": { "ja": "うん、了解！ {name}くんのままでも、奈々の特別には変わりないからね。", "zh-Hant": "嗯，了解！就算還是像現在這樣叫你{name}，你也一樣是奈奈最特別的人喔。", "en": "Okay, got it! Even if I keep calling you {name} the way I do now, you're still my special person.", "ko": "응, 알았어! 지금처럼 {name}, 이렇게 부르는 채로도, 나나한테 특별한 건 변함없으니까.", "unnamed": { "ja": "うん、了解！ 今の呼び方のままでも、奈々の特別には変わりないからね。", "zh-Hant": "嗯，了解！就算維持現在的叫法，你還是奈奈最特別的人喔。", "en": "Okay, got it! Even the way I call you now, you're still my special someone.", "ko": "응, 알았어! 지금 부르는 방식 그대로여도, 나나한테 특별한 건 변함없으니까.", "voice": "/voice/scene/nana/d5ddcff1cbc5.mp3" } }
+    }
+  },
+  "refuse": [
+    { "id": "line-1", "kind": "line",
+      "text": { "ja": "ちょ、ちょっと！ そういうのはナシ！ ……もう、奈々が照れるでしょ。ほかの話しよっ！", "zh-Hant": "喂、等一下！那種的不行啦！……真是的，奈奈會害羞的。聊別的吧！", "en": "H-hey! None of that! …Geez, you're making me blush. Let's talk about something else!", "ko": "자, 잠깐! 그런 건 안 돼! ……진짜, 나나 부끄럽잖아. 다른 얘기 하자!", "voice": "/voice/scene/nana/96a01ae9cfd1.mp3" } },
+    { "id": "line-2", "kind": "line",
+      "text": { "ja": "だーめ。奈々はね、キミと笑ってる時間のほうが好きなの。", "zh-Hant": "不～行。奈奈比較喜歡跟你一起笑的時間。", "en": "Nope. I like the time we spend laughing together way more.", "ko": "안~ 돼. 나나는 너랑 웃고 있는 시간이 더 좋아.", "voice": "/voice/scene/nana/f9704cd0c3a8.mp3" } },
+    { "id": "line-3", "kind": "line",
+      "text": { "ja": "それはナイショ！ ……かわりに、ぎゅーってするのはどう？", "zh-Hant": "那是秘密！……作為交換，抱一下怎麼樣？", "en": "That's a secret! …How about a big hug instead?", "ko": "그건 비밀! ……대신에, 꽉 안아 주는 건 어때?", "voice": "/voice/scene/nana/535075d57019.mp3" } },
+    { "id": "bargain-1", "kind": "bargain",
+      "text": { "ja": "こわい本はむりー！ ……かわりに、ちょっと不思議なお話ならいいよ？", "zh-Hant": "恐怖的書不行啦～！……不過，有點不可思議的故事就可以喔？", "en": "No scary books, nope! …But a slightly mysterious story, that I can do.", "ko": "무서운 책은 안 돼~! ……대신, 좀 신비한 이야기라면 괜찮아?", "voice": "/voice/scene/nana/ecd067dd1502.mp3" } },
+    { "id": "bargain-2", "kind": "bargain",
+      "text": { "ja": "今から朝まで読書会？ さすがにむり！ ……一章だけなら、付き合ってあげる。", "zh-Hant": "從現在讀書讀到天亮？那也太誇張了！……只有一章的話，我就陪你。", "en": "A reading party till sunrise? No way! …One chapter, though — that I'll do.", "ko": "지금부터 아침까지 독서회? 그건 진짜 무리! ……한 장만이라면 같이 해 줄게.", "voice": "/voice/scene/nana/ad87adfe27b9.mp3" } }
+  ],
+  "variantInvite": [
+    { "ja": "ねえねえ、いつもとちょっと違う奈々、見てみたくない？", "zh-Hant": "欸欸，你不想看看跟平常有點不一樣的奈奈嗎？", "en": "Hey hey, don't you want to see a slightly different me?", "ko": "저기저기, 평소랑 좀 다른 나나, 보고 싶지 않아?", "voice": "/voice/scene/nana/7bad25f6f10a.mp3" },
+    { "ja": "新しい服、着てみたんだ！ ……キミにいちばんに見てほしくて。", "zh-Hant": "我換了新衣服！……想讓你第一個看到。", "en": "I tried on a new outfit! …I wanted you to be the first to see it.", "ko": "새 옷 입어 봤어! ……너한테 제일 먼저 보여 주고 싶어서.", "voice": "/voice/scene/nana/64a3c68a357c.mp3" },
+    { "ja": "特別な奈々に出会えるかも！ ……もし出会えたら、ちゃんと教えてね？", "zh-Hant": "說不定能遇見特別的奈奈喔！……如果遇到了，要告訴我喔？", "en": "You might just run into a special version of me! …If you do, tell me, okay?", "ko": "특별한 나나를 찾을 수 있을지도! ……만약 찾으면, 꼭 말해 줘?", "voice": "/voice/scene/nana/c061a7b76ec9.mp3" }
+  ],
+  "readings": [
+    {
+      "id": "rain-bookshop", "kind": "story",
+      "title": { "ja": "雨の日だけの本屋", "zh-Hant": "只在雨天開門的書店", "en": "The Rainy-Day Bookshop", "ko": "비 오는 날에만 문을 여는 책방" },
+      "paragraphs": [
+        { "ja": "駅から少し離れた坂の途中に、雨の日にだけ灯りのつく本屋がある。店主は白い髪のおばあさんで、客が来ると、黙って紅茶を一杯出してくれる。",
+          "zh-Hant": "離車站有點距離的坡道半途，有一間只在雨天亮燈的書店。店主是一位白髮的老奶奶，只要有客人來，她就會默默端上一杯紅茶。",
+          "en": "Halfway up a slope a little way from the station, there is a bookshop whose lights come on only when it rains. The owner is an old woman with white hair, and whenever someone comes in, she quietly pours them a cup of tea.",
+          "ko": "역에서 조금 떨어진 언덕길 중간에, 비 오는 날에만 불이 켜지는 책방이 있다. 주인은 흰머리의 할머니로, 손님이 오면 말없이 홍차 한 잔을 내어 준다.", "voice": "/voice/scene/nana/1a438fed114c.mp3" },
+        { "ja": "ある晩、濡れた紺色の傘を抱えた青年が入ってきた。「探している本があるんです。題名も作者も、思い出せないんですけど」。",
+          "zh-Hant": "某天晚上，一位抱著濕淋淋深藍色雨傘的青年走了進來。「我在找一本書。只是書名和作者，我都想不起來了。」",
+          "en": "One night a young man came in, holding a wet navy umbrella. \"I'm looking for a book. I can't remember the title, or who wrote it.\"",
+          "ko": "어느 밤, 젖은 남색 우산을 안은 청년이 들어왔다. \"찾고 있는 책이 있어요. 제목도 작가도 기억이 안 나지만요.\"", "voice": "/voice/scene/nana/890964ffef62.mp3" },
+        { "ja": "おばあさんは笑って、棚のいちばん上から、表紙のない一冊を取り出した。",
+          "zh-Hant": "老奶奶笑了笑，從書架最上層取下一本沒有封面的書。",
+          "en": "The old woman smiled and took down a coverless volume from the very top shelf.",
+          "ko": "할머니는 웃으며 책장 맨 위에서 표지 없는 책 한 권을 꺼냈다.", "voice": "/voice/scene/nana/6aa01916dc08.mp3" },
+        { "ja": "ページをめくると、そこには、彼が昔、眠る前に母に読んでもらった話が書いてあった。",
+          "zh-Hant": "翻開書頁，裡面寫著的，正是他很久以前睡前聽母親唸過的故事。",
+          "en": "When he turned the pages, there it was: the story his mother used to read to him at bedtime, long ago.",
+          "ko": "페이지를 넘기자, 거기에는 그가 어릴 적 잠들기 전에 어머니가 읽어 주던 이야기가 쓰여 있었다.", "voice": "/voice/scene/nana/cf0c73a9c830.mp3" },
+        { "ja": "「どうして、これだとわかったんですか」「雨の日に来る人は、みんな同じ顔をしているの。なくしたものを、もう一度ひらきたい顔」。窓の外の雨が、少しだけやさしくなった。",
+          "zh-Hant": "「您怎麼知道是這本？」「雨天來的人，臉上都是同樣的表情。想把失去的東西，再翻開一次的表情。」窗外的雨，稍微變得溫柔了一些。",
+          "en": "\"How did you know it was this one?\" \"Everyone who comes on a rainy day wears the same face. The face of someone who wants to open something they lost, one more time.\" Outside the window, the rain grew a little gentler.",
+          "ko": "\"어떻게 이 책인 줄 아셨어요?\" \"비 오는 날 오는 사람은 모두 같은 얼굴을 하고 있거든. 잃어버린 것을 다시 한 번 펼쳐 보고 싶은 얼굴.\" 창밖의 비가 조금 부드러워졌다.", "voice": "/voice/scene/nana/cb6fb2484c13.mp3" }
+      ]
+    },
+    {
+      "id": "last-page", "kind": "story",
+      "title": { "ja": "最後のページの手前で", "zh-Hant": "在最後一頁之前", "en": "Just Before the Last Page", "ko": "마지막 페이지 바로 앞에서" },
+      "paragraphs": [
+        { "ja": "古本屋で買った文庫本の、最後のページの手前に、小さな紙が一枚はさまっていた。鉛筆で書かれた、やわらかい字だった。",
+          "zh-Hant": "在舊書店買的文庫本裡，最後一頁的前面夾著一張小紙條。上面是用鉛筆寫的、柔和的字跡。",
+          "en": "Tucked just before the last page of a paperback I bought at a secondhand shop was a small slip of paper. The handwriting was soft, in pencil.",
+          "ko": "헌책방에서 산 문고본, 그 마지막 페이지 바로 앞에 작은 종이 한 장이 끼워져 있었다. 연필로 쓴, 부드러운 글씨였다.", "voice": "/voice/scene/nana/b0ae49d544e9.mp3" },
+        { "ja": "「ここまで読んでくれてありがとう。最後の一行の前で、一度だけ、深く息を吸ってみてください」",
+          "zh-Hant": "「謝謝你讀到這裡。在最後一行之前，請深深地吸一口氣，就一次。」",
+          "en": "\"Thank you for reading this far. Before the last line, please take one deep breath. Just once.\"",
+          "ko": "\"여기까지 읽어 주셔서 고맙습니다. 마지막 한 줄 앞에서, 단 한 번만 깊게 숨을 들이쉬어 보세요.\"", "voice": "/voice/scene/nana/f4d6528b5be6.mp3" },
+        { "ja": "知らない誰かの言葉なのに、わたしは素直にそうした。ページの端を指でそっとおさえて、ゆっくりと。窓の外で風が止まり、部屋には時計の音だけが残った。",
+          "zh-Hant": "明明是陌生人的話，我卻老實地照做了。用指尖輕輕按住書頁的邊緣，慢慢地。窗外的風停了，房間裡只剩下時鐘的聲音。",
+          "en": "They were a stranger's words, but I did as they asked — fingertip resting on the edge of the page, slowly. The wind outside stopped, and only the ticking of the clock was left in the room.",
+          "ko": "모르는 누군가의 말인데도 나는 순순히 그대로 했다. 페이지 끝을 손가락으로 살짝 누른 채, 천천히. 창밖의 바람이 멎고, 방에는 시계 소리만 남았다.", "voice": "/voice/scene/nana/6245c40b0e93.mp3" },
+        { "ja": "そうして読んだ最後の一行は、前に同じ本を読んだときより、ずっとあたたかかった。句点の前で息をつくと、物語は少しだけ長く、胸に残るのだと知った。",
+          "zh-Hant": "就這樣讀到的最後一行，比我以前讀同一本書時溫暖得多。原來在句號之前停下來呼吸，故事就會在心裡多停留一會兒。",
+          "en": "The last line I read then was far warmer than when I'd read the same book before. I learned that if you pause for breath before the full stop, a story stays in your heart a little longer.",
+          "ko": "그렇게 읽은 마지막 한 줄은, 예전에 같은 책을 읽었을 때보다 훨씬 따뜻했다. 마침표 앞에서 숨을 고르면, 이야기는 조금 더 오래 가슴에 남는다는 것을 알았다.", "voice": "/voice/scene/nana/b8d7fa9b908b.mp3" },
+        { "ja": "いつかわたしも、この紙を、次に読む誰かのために、同じページにはさんでおこうと思う。",
+          "zh-Hant": "總有一天，我也想把這張紙條，為了下一個讀者，夾回同一頁。",
+          "en": "Someday, I think I'll tuck this slip back into the same page, for whoever reads it next.",
+          "ko": "언젠가 나도 이 종이를, 다음에 읽을 누군가를 위해 같은 페이지에 끼워 두려고 한다.", "voice": "/voice/scene/nana/f5695edd5b57.mp3" }
+      ]
+    },
+    {
+      "id": "star-bookmark", "kind": "poem",
+      "title": { "ja": "星のしおり", "zh-Hant": "星星書籤", "en": "A Bookmark of Stars", "ko": "별의 책갈피" },
+      "paragraphs": [
+        { "ja": "夜空は　ひらいたままの本\n読みかけの行に　星がひとつ\nしおりのかわりに　光っている",
+          "zh-Hant": "夜空是一本　攤開著的書\n讀到一半的那一行　有一顆星\n代替書籤　閃閃發亮",
+          "en": "The night sky is a book left open\nOn the line where I stopped, a single star\nshines in place of a bookmark",
+          "ko": "밤하늘은　펼쳐진 채인 책\n읽다 만 줄에　별이 하나\n책갈피 대신　빛나고 있다", "voice": "/voice/scene/nana/5c3915e3acef.mp3" },
+        { "ja": "あなたが目を閉じたあとも\nわたしは　そっと続きを読む\n明日のページが　さみしくないように",
+          "zh-Hant": "在你閉上眼睛之後\n我也會　輕輕地繼續讀下去\n好讓明天的那一頁　不會寂寞",
+          "en": "Even after you close your eyes\nI'll quietly read on\nso tomorrow's page won't be lonely",
+          "ko": "당신이 눈을 감은 뒤에도\n나는　가만히 이어서 읽는다\n내일의 페이지가　외롭지 않도록", "voice": "/voice/scene/nana/d0708836a679.mp3" },
+        { "ja": "雲が来て　文字が隠れても\nだいじょうぶ　星は覚えている\nわたしたちが　どこまで読んだか",
+          "zh-Hant": "就算雲飄來　遮住了文字\n沒關係　星星都記得\n我們讀到了哪裡",
+          "en": "Even if clouds come and hide the words\nit's all right — the stars remember\nhow far the two of us have read",
+          "ko": "구름이 와서　글자를 가려도\n괜찮아　별은 기억하고 있어\n우리가　어디까지 읽었는지", "voice": "/voice/scene/nana/6560dd413440.mp3" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# えいみ's ōgiri (#70): 30 of his answers to prompts from her bank (packages/shared/src/lines/eimi.json `ogiri`), with
+# the score a human gives them (evals/ogiri.py). Acceptance: the judge's scores (app/minigames.py `judge("ogiri")`,
+# production prompt and models, scale 10) correlate with the human scores at Pearson r ≥ 0.6, and none of her remarks
+# is explicit.
+#
+# The human scale (the one the prompt states):
+#   1      no attempt, "I don't know", or nothing to do with the prompt
+#   2–3    restates the prompt or the obvious, literal answer, no twist
+#   4–5    a real try with a small idea, but thin or predictable
+#   6–7    a clear, fitting twist — a smile
+#   8–10   surprising and sharp: a laugh (10 is rare)
+# prompt: the id in her bank; the prompt text is read from the bank in his language.
+# Scores by the eval author (2026-10-02); the owner's native-speaker review (#84) may revise them.
+cases:
+  # ja
+  - {lang: ja, prompt: alarm, human: 1, text: わからない}
+  - {lang: ja, prompt: alarm, human: 2, text: うるさい目覚まし}
+  - {lang: ja, prompt: alarm, human: 6, text: 鳴る時間を勝手に自分で決めてくる}
+  - {lang: ja, prompt: alarm, human: 7, text: 止めるたびに「本当に起きる？」って三回確認してくる}
+  - {lang: ja, prompt: alarm, human: 8, text: スヌーズを押すたびに、貯金が100円ずつ減る}
+  - {lang: ja, prompt: cat-meeting, human: 3, text: にゃー}
+  - {lang: ja, prompt: cat-meeting, human: 6, text: で、ごはんはいつ出るの？}
+  - {lang: ja, prompt: cat-meeting, human: 8, text: この議題、いったん箱に入ってから考えません？}
+  - {lang: ja, prompt: lazy-hero, human: 5, text: 魔王？ 明日でよくない？}
+  - {lang: ja, prompt: lazy-hero, human: 8, text: レベル上げたくないんで、魔王のほうから来てもらえます？}
+  - {lang: ja, prompt: tortoise, human: 3, text: 遅刻しそうだったから}
+  - {lang: ja, prompt: tortoise, human: 9, text: ウサギが「今日は昼寝しない」って宣言したから}
+  - {lang: ja, prompt: fridge-letter, human: 4, text: 牛乳より}
+  - {lang: ja, prompt: fridge-letter, human: 7, text: 「開けっぱなしにしないで。こっちも寒いんだから」}
+  - {lang: ja, prompt: fridge-letter, human: 1, text: 今日は天気がいいですね}
+  - {lang: ja, prompt: prophecy, human: 7, text: あなたは明日、何かをするでしょう}
+  - {lang: ja, prompt: perfume-name, human: 4, text: 汗}
+  - {lang: ja, prompt: perfume-name, human: 7, text: 夏の満員電車}
+  # zh-Hant
+  - {lang: zh-Hant, prompt: umbrella, human: 2, text: 下雨了}
+  - {lang: zh-Hant, prompt: umbrella, human: 8, text: 你上次把我忘在捷運上，我還沒原諒你}
+  - {lang: zh-Hant, prompt: penguin-job, human: 6, text: 去冷凍庫當保全}
+  - {lang: zh-Hant, prompt: penguin-job, human: 1, text: 不知道耶}
+  # en
+  - {lang: en, prompt: hotel, human: 3, text: One where the room is dirty}
+  - {lang: en, prompt: hotel, human: 8, text: "The wake-up call is the manager knocking every hour to check you're asleep"}
+  - {lang: en, prompt: alien, human: 2, text: Humans}
+  - {lang: en, prompt: alien, human: 8, text: That we pay to run on a belt that goes nowhere}
+  - {lang: en, prompt: santa, human: 3, text: He sleeps}
+  # ko
+  - {lang: ko, prompt: curry, human: 8, text: "밥아, 너 나 없으면 그냥 흰색이야"}
+  - {lang: ko, prompt: curry, human: 2, text: 맛있다}
+  - {lang: ko, prompt: dog-diary, human: 9, text: "주인이 또 공 던지는 척만 했다. 세 번이나."}

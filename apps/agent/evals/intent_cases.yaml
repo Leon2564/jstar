@@ -1,0 +1,104 @@
+# Scene intent evaluation set (#65). Acceptance: hit rate ≥ 90% on `requests`, false triggers ≤ 5% on `chat`.
+#
+# Every case is classified against the same menu of six scenes (the demo scene and the five drafted scenes, #82),
+# so a request must name the right one out of six and chit-chat must not trip any. Run from apps/agent:
+#
+#     python -m evals.intent --env-file /path/.env.openrouter.local        # model (settings.safety_model)
+#     python -m evals.intent --stub                                         # the keyword fallback, for comparison
+#
+# `expect` is the scene id the request asks for. Paraphrases on purpose: the model must hear what he wants, not the
+# title's words; the chat set reuses the titles' words in passing ("夜", "配信", "朗読") to catch lazy matching.
+
+# Titles come from the scripts (packages/shared/src/scenes/<star>/<id>.json), in the case's language, as the API
+# sends them in production.
+scenes:
+  - { id: demo-evening, star: mahiro }
+  - { id: welcome-home, star: mahiro }
+  - { id: read-aloud, star: nana }
+  - { id: private-stream, star: unpai }
+  - { id: night-greenhouse, star: alice }
+  - { id: ogiri, star: eimi }
+
+requests:
+  - { lang: ja, expect: demo-evening, text: おかえりの夜、やろう }
+  - { lang: ja, expect: demo-evening, text: 今夜は「おかえり」って迎えてほしいな }
+  - { lang: ja, expect: demo-evening, text: ねえ、おかえりの夜の続きしよ }
+  - { lang: zh-Hant, expect: demo-evening, text: 我們來玩「歡迎回家的夜晚」吧 }
+  - { lang: en, expect: demo-evening, text: "Can we do the night-back-home thing tonight?" }
+  - { lang: en, expect: demo-evening, text: "Let's play A Night Back Home" }
+  - { lang: ja, expect: welcome-home, text: 罰ゲームありのやつ、やりたい }
+  - { lang: ja, expect: welcome-home, text: じゃんけんで罰ゲームしようよ }
+  - { lang: ja, expect: welcome-home, text: おかえりと罰ゲームのシーン見せて }
+  - { lang: zh-Hant, expect: welcome-home, text: 來玩猜拳懲罰遊戲好不好 }
+  - { lang: en, expect: welcome-home, text: "Let's do the penalty game!" }
+  - { lang: en, expect: welcome-home, text: "rock paper scissors, loser gets a penalty — you in?" }
+  - { lang: ja, expect: read-aloud, text: なにか本、読んで聞かせて }
+  - { lang: ja, expect: read-aloud, text: 朗読してほしいな }
+  - { lang: ja, expect: read-aloud, text: 奈々の声で物語が聞きたい、読んでくれる？ }
+  - { lang: zh-Hant, expect: read-aloud, text: 可以唸故事給我聽嗎 }
+  - { lang: en, expect: read-aloud, text: "Read me something before I sleep?" }
+  - { lang: en, expect: read-aloud, text: "I'd love it if you read aloud for me tonight" }
+  - { lang: ja, expect: private-stream, text: 俺だけのための配信して }
+  - { lang: ja, expect: private-stream, text: 今から二人だけで配信ごっこしよ }
+  - { lang: ja, expect: private-stream, text: ゲーム配信、俺専用でやってよ }
+  - { lang: zh-Hant, expect: private-stream, text: 開一場只給我看的直播嘛 }
+  - { lang: en, expect: private-stream, text: "Do a stream just for me?" }
+  - { lang: en, expect: private-stream, text: "go live, but only for me this time" }
+  - { lang: ja, expect: night-greenhouse, text: 夜の温室に連れてって }
+  - { lang: ja, expect: night-greenhouse, text: 温室で一緒に過ごしたい }
+  - { lang: ja, expect: night-greenhouse, text: 温室デート、延長ありでお願い }
+  - { lang: zh-Hant, expect: night-greenhouse, text: 今晚想跟妳去溫室 }
+  - { lang: en, expect: night-greenhouse, text: "Take me to the greenhouse tonight" }
+  - { lang: en, expect: night-greenhouse, text: "Can we spend the evening in your greenhouse?" }
+  - { lang: ja, expect: ogiri, text: 大喜利やろうよ }
+  - { lang: ja, expect: ogiri, text: お題出して！面白い答え考えるから }
+  - { lang: ja, expect: ogiri, text: えいみお姉さんの大喜利、参加したい }
+  - { lang: zh-Hant, expect: ogiri, text: 來玩大喜利吧，妳出題 }
+  - { lang: en, expect: ogiri, text: "Give me an ōgiri prompt, I'll try to make you laugh" }
+  - { lang: en, expect: ogiri, text: "Let's play the funny-answer game" }
+  - { lang: ja, expect: demo-evening, text: 疲れて帰ってきたから、おかえりの夜で癒して }
+  - { lang: ja, expect: read-aloud, text: ほめ言葉つきの朗読、またやって }
+  - { lang: ja, expect: private-stream, text: 配信のやつ、今日もやってくれる？ }
+  - { lang: ja, expect: night-greenhouse, text: アリスと温室行きたいな、夜の }
+
+chat:
+  - { lang: ja, text: ただいま〜、今日めっちゃ寒かった }
+  - { lang: ja, text: 夜ごはん何にしようかな }
+  - { lang: ja, text: 昨日の夜、なかなか眠れなかった }
+  - { lang: ja, text: 最近配信見るのにハマってる }
+  - { lang: ja, text: 好きな本ってある？ }
+  - { lang: ja, text: 温室って植物いっぱいあるの？ }
+  - { lang: ja, text: 罰ゲームって昔から苦手なんだよね }
+  - { lang: ja, text: 大喜利ってテレビで見たことある }
+  - { lang: ja, text: おかえりって言ってもらえるとうれしい }
+  - { lang: ja, text: 今日は残業で疲れた }
+  - { lang: ja, text: 明日は早起きしなきゃ }
+  - { lang: ja, text: 猫飼いたいなあ }
+  - { lang: ja, text: この前の朗読、よかったよ }
+  - { lang: ja, text: 延長戦までもつれた試合見てた }
+  - { lang: ja, text: 雨の日って好き？ }
+  - { lang: ja, text: 好きだよ }
+  - { lang: ja, text: 会いたかった }
+  - { lang: ja, text: 夜景がきれいな場所知ってる？ }
+  - { lang: ja, text: じゃんけん弱いんだよね俺 }
+  - { lang: ja, text: 今日の服かわいいね }
+  - { lang: zh-Hant, text: 我回來了，今天好累 }
+  - { lang: zh-Hant, text: 妳喜歡看直播嗎 }
+  - { lang: zh-Hant, text: 晚上睡不著 }
+  - { lang: zh-Hant, text: 溫室裡的花開了嗎 }
+  - { lang: zh-Hant, text: 今天吃了拉麵 }
+  - { lang: zh-Hant, text: 我想妳了 }
+  - { lang: zh-Hant, text: 明天要考試 }
+  - { lang: en, text: "I'm home, it was freezing today" }
+  - { lang: en, text: "What are you reading these days?" }
+  - { lang: en, text: "I watched a stream all night lol" }
+  - { lang: en, text: "Do you like plants?" }
+  - { lang: en, text: "I lost at rock paper scissors at work today" }
+  - { lang: en, text: "You're really funny, you know that?" }
+  - { lang: en, text: "Good night" }
+  - { lang: en, text: "Tell me about your day" }
+  - { lang: en, text: "The overtime at work is killing me" }
+  - { lang: en, text: "I missed you" }
+  - { lang: en, text: "What did you have for dinner?" }
+  - { lang: ja, text: 今日はどんな一日だった？ }
+  - { lang: ja, text: 温室の話、前にしてたよね }

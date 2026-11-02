@@ -1,0 +1,44 @@
+{
+  "model": "google/gemini-3.1-flash-lite",
+  "prompt": "912f8284",
+  "checkedAt": "2026-10-01T17:13:17Z",
+  "cases": 20,
+  "target": 0.85,
+  "agreement": [
+    1.0,
+    1.0
+  ],
+  "pass": true,
+  "fallbacks": 0,
+  "costUsd": 0.0221,
+  "history": [
+    {
+      "prompt": "dbbf9071",
+      "repeats": 2,
+      "agreement": [
+        0.75,
+        0.75
+      ],
+      "fallbacks": 0
+    },
+    {
+      "prompt": "12bcb00e",
+      "repeats": 2,
+      "agreement": [
+        1.0,
+        1.0
+      ],
+      "fallbacks": 0
+    },
+    {
+      "prompt": "912f8284",
+      "repeats": 2,
+      "agreement": [
+        1.0,
+        1.0
+      ],
+      "fallbacks": 0
+    }
+  ],
+  "misses": []
+}

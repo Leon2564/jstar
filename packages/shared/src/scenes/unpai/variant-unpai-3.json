@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "id": "variant-unpai-3",
+    "star": "unpai",
+    "title": {"ja": "この服で、ゲームの夜", "zh-Hant": "穿這套衣服的遊戲之夜", "en": "Game Night in This Outfit", "ko": "이 옷으로, 게임하는 밤"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 3},
+    "idle": "unpai-variant-home"
+  },
+  "steps": [
+    {"id": "wide", "type": "clip", "shot": "wide", "media": "unpai-variant-home", "hold": 1.5},
+    {"id": "hi", "type": "line", "voice": "/voice/scene/unpai/e05b36b87eb8.mp3", "text": {"ja": "んー、きた。……この服のまま、ゲームしよ。", "zh-Hant": "嗯——你來了。……就穿這樣，來打遊戲吧。", "en": "Mm, you're here. …Let's game, just like this.", "ko": "음, 왔구나. ……이 옷 그대로, 게임하자."}},
+    {"id": "rule", "type": "line", "voice": "/voice/scene/unpai/634bb5d3fdbe.mp3", "text": {"ja": "じゃんけんで勝ったほうが、コントローラー先ね。……いくよ。", "zh-Hant": "猜拳贏的人先拿手把。……要來囉。", "en": "Winner of rock-paper-scissors gets the controller first. …Here goes.", "ko": "가위바위보에서 이긴 쪽이 컨트롤러 먼저야. ……간다."}},
+    {"id": "rps", "type": "minigame", "kind": "rps", "config": {}, "next": "draw", "outcomes": {"win": "won", "lose": "lost", "draw": "draw"}},
+    {"id": "draw", "type": "line", "voice": "/voice/scene/unpai/3f5affa94ba0.mp3", "next": "rps", "text": {"ja": "あいこ。……もっかい。", "zh-Hant": "平手。……再一局。", "en": "Tie. …Again.", "ko": "비겼다. ……한 번 더."}},
+    {"id": "won", "type": "line", "voice": "/voice/scene/unpai/d3b59ce77aa9.mp3", "next": "play", "text": {"ja": "……負けた。きみ、強いじゃん。……しかたない、先どうぞ。", "zh-Hant": "……輸了。你很強嘛。……沒辦法，你先吧。", "en": "…Lost. You're good. …Fine, you go first.", "ko": "……졌다. 너 꽤 세네. ……어쩔 수 없지, 먼저 해."}},
+    {"id": "lost", "type": "line", "voice": "/voice/scene/unpai/882f2ef02033.mp3", "next": "play", "text": {"ja": "うちの勝ち。……この服だと、運がいいのかも。", "zh-Hant": "我贏了。……穿這套衣服，運氣好像比較好。", "en": "I win. …Maybe this outfit's lucky.", "ko": "내가 이겼다. ……이 옷 입으면 운이 좋은 건가."}},
+    {"id": "play", "type": "line", "voice": "/voice/scene/unpai/e069bd82436d.mp3", "text": {"ja": "……並んでゲームするの、けっこう好きかも。", "zh-Hant": "……並排一起打遊戲，好像還滿喜歡的。", "en": "…Gaming side by side. I kind of like it.", "ko": "……나란히 앉아서 게임하는 거, 꽤 좋을지도."}},
+    {"id": "reward", "type": "effect", "affinity": 6, "variantXp": 30},
+    {"id": "close", "type": "clip", "shot": "close", "media": "unpai-variant-close", "hold": 0},
+    {"id": "bye", "type": "line", "voice": "/voice/scene/unpai/0339522b10aa.mp3", "text": {"ja": "……また夜ふかし付き合ってよ。この服で待ってるし。", "zh-Hant": "……下次再陪我熬夜吧。我會穿這套衣服等你。", "en": "…Stay up with me again sometime. I'll be waiting in this.", "ko": "……다음에도 밤샘 같이 해 줘. 이 옷 입고 기다릴 테니까."}},
+    {"id": "end", "type": "end", "outcome": "game"}
+  ]
+}

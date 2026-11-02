@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "id": "variant-unpai-6",
+    "star": "unpai",
+    "title": {"ja": "片っぽのヘッドホン", "zh-Hant": "分你一邊的耳機", "en": "One Side of the Headphones", "ko": "헤드폰 한쪽"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 6},
+    "idle": "unpai-variant-home"
+  },
+  "steps": [
+    {"id": "close", "type": "clip", "shot": "close", "media": "unpai-variant-close", "hold": 0},
+    {"id": "come", "type": "line", "voice": "/voice/scene/unpai/44899cb60b9a.mp3", "text": {"ja": "……こっち。片っぽ、貸してあげる。", "zh-Hant": "……過來。借你一邊。", "en": "…Over here. You can have one side.", "ko": "……이쪽. 한쪽 빌려줄게."}},
+    {"id": "why", "type": "line", "voice": "/voice/scene/unpai/2b9e2f369af0.mp3", "text": {"ja": "うちの好きな曲。……この服のときに、きみと聴きたかった。", "zh-Hant": "我喜歡的歌。……想在穿這套衣服的時候跟你一起聽。", "en": "A song I love. …I wanted to hear it with you, wearing this.", "ko": "내가 좋아하는 곡. ……이 옷 입었을 때, 너랑 같이 듣고 싶었어."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "near", "options": [{"id": "near", "next": "near", "label": {"ja": "いっしょに聴く", "zh-Hant": "一起聽", "en": "Listen together", "ko": "같이 듣기"}}, {"id": "more", "next": "too-near", "label": {"ja": "もっとくっつく", "zh-Hant": "再貼近一點", "en": "Scoot closer", "ko": "더 가까이 붙기"}}]},
+    {"id": "near", "type": "line", "voice": "/voice/scene/unpai/f48d6df04d04.mp3", "next": "reward", "text": {"ja": "……ね、いい曲でしょ。……きみの声のほうが、落ちつくけど。", "zh-Hant": "……吶，很好聽吧。……不過你的聲音更讓人安心。", "en": "…See, good song. …Your voice is more calming, though.", "ko": "……봐, 좋은 곡이지. ……네 목소리 쪽이 더 마음 편해지긴 하지만."}},
+    {"id": "too-near", "type": "line", "voice": "/voice/scene/unpai/5de62a97c658.mp3", "text": {"ja": "……それ以上はむり。……うちの心臓がもたないし。", "zh-Hant": "……再近就不行了。……我的心臟會受不了。", "en": "…That's the limit. …My heart can't handle more.", "ko": "……그 이상은 무리. ……내 심장이 못 버티니까."}},
+    {"id": "reward", "type": "effect", "affinity": 8, "variantXp": 30},
+    {"id": "secret", "type": "line", "voice": "/voice/scene/unpai/d2e6f467bd79.mp3", "text": {"ja": "……この曲、きみとうちだけのやつね。", "zh-Hant": "……這首歌，是只屬於你跟我的喔。", "en": "…This song's just ours now.", "ko": "……이 곡, 너랑 나만의 거야."}},
+    {"id": "end", "type": "end", "outcome": "close"}
+  ]
+}

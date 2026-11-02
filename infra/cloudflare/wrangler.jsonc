@@ -1,0 +1,60 @@
+// jstarcards.ai: web static build + API and agent containers. Deploy: see README.md.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "jstar-web",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  // Custom domains only: a workers.dev or preview URL would sit outside the jstarcards.ai origin the API trusts.
+  "workers_dev": false,
+  "preview_urls": false,
+  // Launch day (正式开服): set to "on" and tag a release; the region notice page then covers KR / EU / US / CN (#11).
+  // Her lip-sync (#73, docs/lipsync.md): on for every talent, as accepted on Nest. LIPSYNC="off" is the kill switch.
+  "vars": { "GEO_BLOCK": "off", "LIPSYNC": "on", "LIPSYNC_URL": "https://lionellong099--jstar-lipsync.modal.run", "LIPSYNC_STARS": "*" },
+  "routes": [
+    { "pattern": "jstarcards.ai", "custom_domain": true },
+    { "pattern": "www.jstarcards.ai", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "../../apps/web/dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "containers": [
+    { "class_name": "Api", "image": "../api.Dockerfile", "image_build_context": "../..", "max_instances": 1, "instance_type": "basic" },
+    { "class_name": "Agent", "image": "../agent.Dockerfile", "image_build_context": "../..", "max_instances": 1, "instance_type": "basic" }
+  ],
+  "durable_objects": {
+    "bindings": [
+      { "name": "API", "class_name": "Api" },
+      { "name": "AGENT", "class_name": "Agent" }
+    ]
+  },
+  // Users, cards, lucky-card codes. Schema: apps/api/migrations (applied by the deploy workflow).
+  "d1_databases": [
+    { "binding": "DB", "database_name": "jstar", "database_id": "4b4b6453-fcf6-4436-af8c-ab383689d5ab", "migrations_dir": "../../apps/api/migrations" }
+  ],
+  // Sign-in codes (Cloudflare Email Service; jstarcards.ai is onboarded for sending, from noreply@).
+  "send_email": [{ "name": "EMAIL" }],
+  // His memory files (#51): the recording of his yes, scene stills later. Private; the API reaches it only through the
+  // Worker's memory.internal relay. THE BUCKET MUST EXIST BEFORE A PRODUCTION DEPLOY (a v* tag) THAT CARRIES THIS
+  // BINDING, or the deploy fails: npx wrangler r2 bucket create jstar-memory
+  // Her lip-sync (#73, src/lipsync.ts): rendered recorded lines, shared by every site (read-only use). LIPSYNC_URL is
+  // the Modal service (infra/lipsync); secret LIPSYNC_SECRET; LIPSYNC=off is the kill switch; LIPSYNC_STARS who has it.
+  "r2_buckets": [{ "binding": "MEMORY", "bucket_name": "jstar-memory" }, { "binding": "LIPSYNC_MEDIA", "bucket_name": "jstar-lipsync" }],
+  // Lip-sync's GPU routes (#73, src/lipsync.ts LIPSYNC_LIMITS; keep the numbers equal there and in every config):
+  // members only, per account and per IP. Namespace ids are this site's own, so no two sites share a counter.
+  "ratelimits": [
+    { "name": "LIPSYNC_WARM_USER", "namespace_id": "1001", "simple": { "limit": 1, "period": 60 } },
+    { "name": "LIPSYNC_WARM_IP", "namespace_id": "1002", "simple": { "limit": 10, "period": 60 } },
+    { "name": "LIPSYNC_RENDER_USER", "namespace_id": "1003", "simple": { "limit": 8, "period": 10 } },
+    { "name": "LIPSYNC_RENDER_IP", "namespace_id": "1004", "simple": { "limit": 120, "period": 60 } }
+  ],
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Api", "Agent"] }],
+  // The API's tick (#49): delivers her inbox and runs every job she does on her own (src/index.ts `scheduled`).
+  "triggers": { "crons": ["*/5 * * * *"] },
+  // Workers AI: speech to text for voice input from browsers without their own recogniser (#72).
+  "ai": { "binding": "AI" },
+  "observability": { "enabled": true }
+}

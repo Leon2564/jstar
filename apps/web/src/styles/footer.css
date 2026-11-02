@@ -1,0 +1,13 @@
+/* Site-wide footer (components/footer.tsx). */
+.site-foot { background: var(--navy-deep); color: rgba(239, 232, 237, 0.84); padding: 36px 24px calc(28px + env(safe-area-inset-bottom)); scroll-snap-align: end; border-top: 1px solid rgba(239, 232, 237, 0.08); }
+.foot-in { width: 100%; max-width: var(--site); margin: 0 auto; display: grid; gap: 16px; }
+.foot-brand .brand { color: var(--ivory); }
+.foot-brand p { margin: 8px 0 0; max-width: 420px; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 0 18px; font-size: 12px; }
+.foot-links a { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; transition: color 0.2s; }
+@media (hover: hover) { .foot-links a:hover { color: #E3A8B2; } }
+.foot-copy { margin: 0; color: rgba(239, 232, 237, 0.66); letter-spacing: 0.1em; }
+@media (min-width: 1024px) {
+  .site-foot { padding: 44px 88px 36px; }
+  .foot-in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) auto; align-items: end; gap: 32px; }
+}

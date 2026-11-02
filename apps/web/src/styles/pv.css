@@ -1,0 +1,34 @@
+/* PV lightbox (components/pv.tsx): a dark in-page theatre. */
+.pv { position: fixed; inset: 0; z-index: 60; background: #07081A; color: var(--ivory); animation: fade 0.45s both; }
+.pv-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #07081A; animation: fade 0.8s both; }
+.pv-vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 50% 45%, rgba(7, 8, 26, 0) 52%, rgba(7, 8, 26, 0.7)), linear-gradient(to top, rgba(7, 8, 26, 0.88), rgba(7, 8, 26, 0) 42%); }
+.pv-copy { position: absolute; left: 24px; right: 24px; bottom: 64px; z-index: 2; pointer-events: none; }
+.pv-copy .eyebrow { color: var(--accent, #E3A8B2); animation: pvIn 0.9s var(--ease) 0.1s both; }
+.pv-name { margin: 0; font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 5vw, 64px); letter-spacing: 0.08em; line-height: 1.2; animation: pvIn 1s var(--ease) 0.3s both; }
+.pv-line { margin: 10px 0 0; font-family: var(--serif); font-size: clamp(15px, 1.8vw, 22px); line-height: 1.75; white-space: pre-line; animation: pvIn 1s var(--ease) 0.75s both; }
+@keyframes pvIn { from { opacity: 0; transform: translate3d(0, 14px, 0); } to { opacity: 1; transform: none; } }
+.pv-zone { position: absolute; top: 72px; bottom: 90px; width: 30%; z-index: 1; padding: 0; background: none; border: 0; cursor: pointer; }
+.pv-zone.prev { left: 0; cursor: w-resize; }
+.pv-zone.next { right: 0; cursor: e-resize; }
+/* L9: the arrows show on a desktop (a phone taps or swipes the sides); focus marks the arrow, never the whole zone. */
+.pv-arrow { position: absolute; top: 50%; width: 42px; height: 42px; margin-top: -21px; display: grid; place-items: center; border: var(--hairline) solid rgba(239, 232, 237, 0.48); border-radius: 50%; color: var(--ivory); background: rgba(7, 8, 26, 0.38); opacity: 0.78; transition: background-color 0.2s, border-color 0.2s, opacity 0.2s; }
+.pv-zone.prev .pv-arrow { left: 12px; }
+.pv-zone.next .pv-arrow { right: 12px; }
+.pv-zone:focus-visible { outline: none; }
+.pv-zone:focus-visible .pv-arrow { display: grid; border-color: var(--rose); }
+@media (hover: hover) { .pv-zone:hover .pv-arrow { background: rgba(7, 8, 26, 0.6); border-color: var(--ivory); } }
+.pv-bars { position: absolute; left: 24px; right: 24px; bottom: 28px; z-index: 2; display: flex; gap: 6px; }
+.pv-bars i { position: relative; flex: 1; height: 2px; overflow: hidden; background: rgba(239, 232, 237, 0.25); }
+.pv-bars i::after { content: ''; position: absolute; inset: 0; background: var(--ivory); transform-origin: left; transform: scaleX(0); }
+.pv-bars i.done::after { transform: scaleX(1); }
+.pv-bars i.cur::after { transform: scaleX(var(--p, 0)); }
+.pv-ctrl { position: absolute; top: 12px; right: 12px; z-index: 3; display: flex; gap: 4px; }
+.pv-ctrl .icon-btn { color: var(--ivory); background: rgba(7, 8, 26, 0.35); }
+@media (min-width: 1024px) {
+  .pv-copy { left: 88px; bottom: 96px; max-width: 680px; }
+  .pv-bars { left: 88px; right: 88px; bottom: 44px; }
+  .pv-ctrl { top: 20px; right: 28px; }
+  .pv-arrow { width: 48px; height: 48px; margin-top: -24px; opacity: 1; }
+  .pv-zone.prev .pv-arrow { left: 24px; }
+  .pv-zone.next .pv-arrow { right: 24px; }
+}

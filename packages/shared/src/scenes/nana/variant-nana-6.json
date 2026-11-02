@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "id": "variant-nana-6",
+    "star": "nana",
+    "title": {"ja": "耳もとで、応援", "zh-Hant": "在耳邊為你加油", "en": "Cheering in Your Ear", "ko": "귓가에서, 응원"},
+    "trigger": {"slots": ["evening", "night"], "variantLayer": 6},
+    "idle": "nana-variant-home"
+  },
+  "steps": [
+    {"id": "close", "type": "clip", "shot": "close", "media": "nana-variant-close", "hold": 0},
+    {"id": "come", "type": "line", "voice": "/voice/scene/nana/6b8bd2250083.mp3", "text": {"ja": "ねえキミ、ちょっと耳かして？", "zh-Hant": "欸，耳朵借我一下好嗎？", "en": "Hey, lend me your ear for a sec?", "ko": "저기, 잠깐 귀 좀 빌려줄래?"}},
+    {"id": "why", "type": "line", "voice": "/voice/scene/nana/4279bc7e7e93.mp3", "text": {"ja": "大きい声じゃ言えないこと、この服のときだけ言えそうな気がするの。", "zh-Hant": "有些話大聲說不出口，只有穿這套衣服時好像說得出來。", "en": "There's something I can't say out loud. In this outfit, I think I can.", "ko": "큰 소리로는 못 하는 말, 이 옷을 입었을 때만은 할 수 있을 것 같은 기분이 들어."}},
+    {"id": "ask", "type": "choice", "timeout": 30, "onTimeout": "near", "options": [{"id": "near", "next": "near", "label": {"ja": "耳をかす", "zh-Hant": "把耳朵借你", "en": "Lend her my ear", "ko": "귀를 빌려준다"}}, {"id": "more", "next": "too-near", "label": {"ja": "もっと近くに", "zh-Hant": "再近一點", "en": "Even closer", "ko": "더 가까이"}}]},
+    {"id": "near", "type": "line", "voice": "/voice/scene/nana/b2da962d9f47.mp3", "next": "reward", "text": {"ja": "……キミのこと、いちばん応援してるのは奈々だからね。……えへへ、言っちゃった。", "zh-Hant": "……最支持你的人，是奈奈喔。……嘿嘿，說出來了。", "en": "…The one cheering for you most is me. …Hehe, I said it.", "ko": "……널 제일 응원하는 건 나나니까. ……에헤헤, 말해 버렸다."}},
+    {"id": "too-near", "type": "line", "voice": "/voice/scene/nana/8ba9328f0d0a.mp3", "text": {"ja": "ちょ、ちょっと近すぎ！ ……奈々、顔あつくなっちゃうじゃん！ 今日はここまで！", "zh-Hant": "等、等一下太近了啦！……奈奈的臉都要燙起來了！今天就到這裡！", "en": "Wh-whoa, too close! …My face is burning! That's all for today!", "ko": "자, 잠깐 너무 가까워! ……나나 얼굴 뜨거워지잖아! 오늘은 여기까지!"}},
+    {"id": "reward", "type": "effect", "affinity": 8, "variantXp": 30},
+    {"id": "secret", "type": "line", "voice": "/voice/scene/nana/ce268142f558.mp3", "text": {"ja": "……今の、ほかの子にはないしょだよ？", "zh-Hant": "……剛剛的話，要對其他人保密喔？", "en": "…Keep that just between us, okay?", "ko": "……방금 거, 다른 애들한텐 비밀이야?"}},
+    {"id": "end", "type": "end", "outcome": "close"}
+  ]
+}

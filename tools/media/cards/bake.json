@@ -1,0 +1,114 @@
+{
+  "at": "2026-09-24T21:17:20.742Z",
+  "rows": [
+    {
+      "model": "gemini31",
+      "id": "s1-mahiro-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.11623805,
+      "genCost": 0.1038115,
+      "file": "gemini31-1.png"
+    },
+    {
+      "model": "gemini31",
+      "id": "s1-alice-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.1159594,
+      "genCost": 0.1038,
+      "file": "gemini31-1.png"
+    },
+    {
+      "model": "gemini25",
+      "id": "s1-mahiro-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.051605450000000004,
+      "genCost": 0.0392139,
+      "file": "gemini25-1.png"
+    },
+    {
+      "model": "gemini25",
+      "id": "s1-alice-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.0517414,
+      "genCost": 0.039207,
+      "file": "gemini25-1.png"
+    },
+    {
+      "model": "gpt2",
+      "id": "s1-mahiro-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.10628905000000001,
+      "genCost": 0.091785,
+      "file": "gpt2-1.png"
+    },
+    {
+      "model": "gpt2",
+      "id": "s1-alice-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.1038244,
+      "genCost": 0.091665,
+      "file": "gpt2-1.png"
+    },
+    {
+      "model": "gemini3pro",
+      "id": "s1-mahiro-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.1599318,
+      "genCost": 0.146882,
+      "file": "gemini3pro-1.png"
+    },
+    {
+      "model": "gemini3pro",
+      "id": "s1-alice-26",
+      "score": 5,
+      "hair": 5,
+      "cost": 0.1576739,
+      "genCost": 0.145012,
+      "file": "gemini3pro-1.png"
+    }
+  ],
+  "summary": [
+    {
+      "model": "google/gemini-3.1-flash-image",
+      "n": 2,
+      "likeness": 5,
+      "hair": 5,
+      "genCostPerImage": 0.1
+    },
+    {
+      "model": "google/gemini-2.5-flash-image",
+      "n": 2,
+      "likeness": 5,
+      "hair": 5,
+      "genCostPerImage": 0.04
+    },
+    {
+      "model": "openai/gpt-image-2",
+      "n": 2,
+      "likeness": 5,
+      "hair": 5,
+      "genCostPerImage": 0.09
+    },
+    {
+      "model": "bytedance-seed/seedream-4.5",
+      "n": 0,
+      "likeness": null,
+      "hair": null,
+      "genCostPerImage": null
+    },
+    {
+      "model": "google/gemini-3-pro-image",
+      "n": 2,
+      "likeness": 5,
+      "hair": 5,
+      "genCostPerImage": 0.15
+    }
+  ]
+}
