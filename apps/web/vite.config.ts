@@ -102,6 +102,11 @@ export default defineConfig(({ mode }) => ({
     port: 5173,
     strictPort: true,
     allowedHosts: ['.trycloudflare.com'],
+    // Large static video assets are served as-is. Watching them on Windows can
+    // fail with EBUSY while Git LFS, the browser, or an encoder has the file open.
+    watch: {
+      ignored: ['**/public/media/**', '**/public/cards/**']
+    },
     proxy: {
       // Local and tunnel previews keep the API on the page's HTTPS origin. The private API port is never exposed.
       '/api': {
