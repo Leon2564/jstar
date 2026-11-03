@@ -80,6 +80,9 @@ html:has(.home.room-v2), body:has(.home.room-v2) { overflow: hidden; overscroll-
 .private-live.is-ready .private-live-cover, .private-live.is-ready .private-live-glass { opacity: 0; visibility: hidden; }
 .private-live-bonus { position: absolute !important; inset: 0; z-index: 4; }
 .private-live-bonus > .scene-poster, .private-live-bonus > .scene-video { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.private-live-gift-effect { position: absolute !important; inset: 0; z-index: 4; opacity: 1; transition: opacity .55s ease; }
+.private-live-gift-effect.is-dissolving { opacity: 0; }
+.private-live-gift-effect > .scene-poster, .private-live-gift-effect > .scene-video { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .private-live-vignette { position: absolute; inset: 0; z-index: 5; pointer-events: none; background: linear-gradient(90deg, rgba(7,9,24,.72), transparent 38%, transparent 72%, rgba(7,9,24,.3)), linear-gradient(0deg, rgba(7,9,24,.82), transparent 38%); }
 .private-live > :not(.private-live-avatar) { z-index: 4; }
 .private-live.is-entering .private-live-head, .private-live.is-entering .private-live-actions, .private-live.is-entering .private-live-chat, .private-live.is-entering .private-live-composer { opacity: 0; transform: translateY(10px); }

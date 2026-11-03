@@ -73,6 +73,7 @@ import { VariantPanel } from '../components/variantPanel';
 import type { CalendarEventViewT, CalendarResT, SceneInviteT } from '@jstar/shared/contracts';
 import { routineNow } from '@jstar/shared/world';
 import { EIMI_BONUS_CARD_ID, EIMI_BONUS_REACTIONS, eimiBonusIdle, eimiBonusReaction, hasEimiBonusCard } from '../data/eimiBonusMedia';
+import { FEATURED_GIFT_IDS } from '@jstar/shared/gifts';
 
 const ROOM_CLIP_DISSOLVE_MS = 420;
 
@@ -433,6 +434,16 @@ export function CompanionHome() {
   // what led keeps its ✦ under her reaction.
   const [giftSaid, setGiftSaid] = useState<{ star: string; text: string; at: number } | null>(null);
   const onGift = (r: GiftSendResT) => {
+    const keys = reactionKeysFor(r.star);
+    const featuredIndex = FEATURED_GIFT_IDS.indexOf(r.giftId as typeof FEATURED_GIFT_IDS[number]);
+    const key = keys[(featuredIndex < 0 ? 0 : featuredIndex) % keys.length];
+    const clip = mediaFor(`${r.star}-react-${key}`, portrait);
+    if (clip) {
+      if (reactionTimer.current) clearTimeout(reactionTimer.current);
+      reactionTimer.current = null;
+      setReactionLeaving(false);
+      setReaction({ key: Date.now(), clip });
+    }
     setGiftSaid({ star: r.star, text: r.reaction, at: Date.now() });
     setServed((s) => ({ ...s, [r.star]: r.reaction }));
     actions.chatAppend(r.star, [{ id: uid(), from: 'system', text: t('gift.sent', { gift: giftName(r.giftId, t.lang) }) }, { id: uid(), from: 'her', text: r.reaction }]);
@@ -886,7 +897,9 @@ export function CompanionHome() {
           if (serverMode()) void readHerLines(c.id, false, ids).then((r) => { if (r) actions.setInbox(r); });
           else for (const id of ids) void readInbox(id).then((r) => { if (r) actions.inboxRead(r); });
         }}
-        incoming={incoming} calling={calling} index={index} onTalking={onTalk} onListening={onListen} talkClip={talkClip?.id} onLipsync={setLipsync} onToast={setToast} onGift={onGift} onTapHer={tapHer} onPure={setPure} />
+        incoming={incoming} calling={calling} index={index} onTalking={onTalk} onListening={onListen} talkClip={talkClip?.id} onLipsync={setLipsync} onToast={setToast} onGift={onGift}
+        giftEffect={reaction ? { key: reaction.key, clip: reaction.clip, leaving: reactionLeaving, onDone: finishReaction } : null}
+        onTapHer={tapHer} onPure={setPure} />
       <Toast msg={toast} />
       <TabBar />
     </div>

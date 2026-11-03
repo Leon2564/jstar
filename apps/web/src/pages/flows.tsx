@@ -66,6 +66,8 @@ const QUICK = ['trial.q1', 'trial.q2', 'trial.q3'] as const;
 export function TrialChat() {
   const { state, actions } = useStore();
   const t = useT();
+  const loc = useLocation();
+  const textOnly = new URLSearchParams(loc.search).get('mode') === 'text';
   const star = getStar(state.trialStar);
   const her = useHerVoice(star.id, t.lang);
   const sound = useSound();
@@ -88,6 +90,7 @@ export function TrialChat() {
   const opening: Msg = { id: 'open', from: 'her', text: `${oneLine(t(`star.${star.id}.line` as Key))}\n${t('trial.open')}` };
   const log = [opening, ...state.trialLog];
   useEffect(() => {
+    if (textOnly) { setAvatarReady(false); return; }
     let alive = true;
     let retryTimer = 0;
     let startTimer = 0;
@@ -118,11 +121,10 @@ export function TrialChat() {
       window.clearTimeout(retryTimer);
       void connection?.close();
     };
-  }, [star.id]);
+  }, [star.id, textOnly]);
 
   useEffect(() => { endRef.current?.scrollIntoView?.({ block: 'end', behavior: 'smooth' }); }, [log.length, busy, live, done]);
   // A reply picked on the home page (?say=) is sent once on arrival, then dropped from the address.
-  const loc = useLocation();
   const navTo = useNavigate();
   const said = useRef(false);
   useEffect(() => {
@@ -133,7 +135,7 @@ export function TrialChat() {
     void send(say);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   // H3: a member is in her room; a reply picked on the home page (?say=) still goes out from her chat.
-  if (state.user) return <Navigate to={new URLSearchParams(loc.search).get('say') ? `/me/chat${loc.search}` : '/me/home'} replace />;
+  if (state.user) return <Navigate to={textOnly || new URLSearchParams(loc.search).get('say') ? `/me/chat?star=${star.id}` : `/me/home?star=${star.id}`} replace />;
 
   /** Sends his words; `again` resends one that failed (it is already in the log). */
   async function send(text: string, again?: string) {
@@ -176,12 +178,12 @@ export function TrialChat() {
   const onHistoryTouchEnd = () => { pullStart.current = null; };
 
   return (
-    <div className={`page chat chat-night trial${historyOpen ? ' history-open' : ''}${avatarReady ? ' is-avatar-ready' : ''}`} data-star={star.id}>
-      <div className="trial-avatar" aria-label={`${starName(star, t.lang)} 1v1 live`}>
+    <div className={`page chat chat-night trial${textOnly ? ' is-text-only' : ''}${historyOpen ? ' history-open' : ''}${avatarReady ? ' is-avatar-ready' : ''}`} data-star={star.id}>
+      {!textOnly && <div className="trial-avatar" aria-label={`${starName(star, t.lang)} 1v1 live`}>
         <ResponsiveLiveCover cover={LIVE_COVERS[star.id]} className="trial-avatar-cover" eager />
         <div ref={avatarStream} className="trial-avatar-stream" />
         <i className="trial-avatar-glass" aria-hidden="true" />
-      </div>
+      </div>}
       <div className="trial-col">
         <header className="chat-hdr">
           <Link to="/pick" className="icon-btn" aria-label={t('common.back')}><Icon name="back" /></Link>

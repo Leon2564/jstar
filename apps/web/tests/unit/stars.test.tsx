@@ -1,4 +1,4 @@
-import { act, cleanup, render } from '@testing-library/react';
+import { act, cleanup, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeAll, describe, expect, it } from 'vitest';
 import { AppRoutes } from '../../src/App';
@@ -21,5 +21,19 @@ describe('JSTARS page (N-14)', () => {
     const mahiro = CAST.find((c) => c.id === 'mahiro')!;
     const slot = await findByText((_, el) => !!el?.classList.contains('stars-romaji'));
     expect(slot.textContent).toBe(`01 — ${mahiro.romaji}`);
+  });
+
+  it('centres the product on video calls, text chat, unlockable scenes and three public moments', async () => {
+    await act(async () => { await ensureLang('zh-Hant'); });
+    render(
+      <StoreProvider initial={{ ...initialState(), ageOk: true, lang: 'zh-Hant' }}>
+        <MemoryRouter initialEntries={['/stars?star=unpai']}><AppRoutes /></MemoryRouter>
+      </StoreProvider>
+    );
+    expect((await screen.findByRole('link', { name: /視訊通話/ })).getAttribute('href')).toBe('/trial');
+    expect(screen.getByRole('link', { name: /文字聊天/ }).getAttribute('href')).toBe('/trial?mode=text');
+    expect(screen.getByRole('heading', { name: '視訊對話場景' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: '公開動態' })).toBeTruthy();
+    expect(document.querySelectorAll('.stars-moment-list article')).toHaveLength(3);
   });
 });

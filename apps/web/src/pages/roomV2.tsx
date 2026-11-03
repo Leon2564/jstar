@@ -521,6 +521,8 @@ export interface RoomV2Props {
   onLipsync?: (shot: LipsyncShot | null) => void;
   onToast: (msg: string) => void;
   onGift: (r: GiftSendResT) => void;
+  /** A gift unlocks a short PV reaction over the private video-call stage. */
+  giftEffect?: { key: number; clip: MediaEntry; leaving: boolean; onDone: () => void } | null;
   /** A tap on her in pure view: her reaction line (and her reaction clip, which the room plays). */
   onTapHer: () => Promise<string | null>;
   onPure: (on: boolean) => void;
@@ -916,6 +918,11 @@ export function RoomV2(p: RoomV2Props) {
   const chosenPrivateCard = privateCard ? CARDS.find((card) => card.id === privateCard) ?? null : null;
   const privateBonus = p.star === 'eimi' && privateCard === EIMI_BONUS_CARD_ID;
   const privateCover = LIVE_COVERS[p.star];
+  const giftSent = (r: GiftSendResT) => {
+    setGiftOpen(false);
+    if (privateMode) setPrivateLines((lines) => [...lines.slice(-5), { id: `gift-${Date.now()}`, from: 'her', text: r.reaction }]);
+    p.onGift(r);
+  };
 
   // The member conversation is a private 1-to-1 digital-human room. Text remains usable while RTC starts; once the
   // avatar is online the same composer sends directly through its live session.
@@ -928,6 +935,8 @@ export function RoomV2(p: RoomV2Props) {
         <ResponsiveLiveCover cover={privateCover} className="private-live-cover" eager />
         <div ref={privateStream} className="private-live-stream" />
         <i className="private-live-glass" aria-hidden="true" />
+        {p.giftEffect && <SceneVideo key={p.giftEffect.key} entry={p.giftEffect.clip} active loop={false}
+          className={`private-live-gift-effect${p.giftEffect.leaving ? ' is-dissolving' : ''}`} onDone={p.giftEffect.onDone} />}
         {privateBonus && <SceneVideo key={privateBonusReaction?.id ?? 'eimi-bonus-idle'} entry={privateBonusReaction ?? eimiBonusIdle()} active loop={!privateBonusReaction}
           className="private-live-bonus" onDone={privateBonusReaction ? () => setPrivateBonusReaction(null) : undefined} />}
         <i className="private-live-vignette" />
@@ -982,7 +991,7 @@ export function RoomV2(p: RoomV2Props) {
           placeholder={left === 0 ? t('chat.limitTitle') : roomText('say', lang)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onChange={(event) => setDraft(event.target.value)} />
         <button type="submit" aria-label={t('common.send')} disabled={busy || left === 0 || !draft.trim()}><Icon name="send" size={19} /></button>
       </form>
-      {giftOpen && <GiftSheet call localSession={import.meta.env.DEV || !getToken()} onClose={() => setGiftOpen(false)} onSent={(r) => { setGiftOpen(false); p.onGift(r); }} />}
+      {giftOpen && <GiftSheet call localSession={import.meta.env.DEV || !getToken()} onClose={() => setGiftOpen(false)} onSent={giftSent} />}
     </div>
   );
 
@@ -1134,7 +1143,7 @@ export function RoomV2(p: RoomV2Props) {
           <span><kbd>M</kbd>{roomText('index', lang)}</span><span><kbd>ESC</kbd>{roomText('close', lang)}</span>
         </p>
       )}
-      {giftOpen && <GiftSheet call localSession={import.meta.env.DEV || !getToken()} onClose={() => setGiftOpen(false)} onSent={(r) => { setGiftOpen(false); p.onGift(r); }} />}
+      {giftOpen && <GiftSheet call localSession={import.meta.env.DEV || !getToken()} onClose={() => setGiftOpen(false)} onSent={giftSent} />}
       {sheet && (
         <RoomSheet title={roomText(sheet === 'promise' ? 'promiseTitle' : 'logTitle', lang, { first: p.first })} testId={`room-${sheet}-sheet`} onClose={() => setSheet(null)}>
           {sheet === 'promise' ? <PromiseList x={p.index} lang={lang} /> : <LogList log={p.index.log ?? null} first={p.first} lang={lang} />}

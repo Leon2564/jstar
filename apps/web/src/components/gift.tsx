@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 import type { GiftSendResT, GiftsResT } from '@jstar/shared/contracts';
-import { GIFTS, giftById, type GiftId } from '@jstar/shared/gifts';
+import { FEATURED_GIFT_IDS, FEATURED_GIFTS, giftById, type GiftId } from '@jstar/shared/gifts';
 import { localText } from '@jstar/shared/domain';
 import { getStar, type StarId } from '../data/cast';
 import { dotSep, starFirst, type Lang } from '../i18n';
@@ -78,11 +78,11 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
   }, [onClose]);
 
   const chosen = pick ? giftById(pick) ?? null : null;
-  const known = (list?.gifts ?? []).filter((g) => g.known).map((g) => g.id);
+  const known = (list?.gifts ?? []).filter((g) => g.known && FEATURED_GIFT_IDS.includes(g.id as typeof FEATURED_GIFT_IDS[number])).map((g) => g.id);
   const block = giftBlock(list ?? null, state.points, chosen?.price ?? null);
   const left = list ? Math.max(0, list.perDay - list.sentToday) : null;
   // M9: nothing he can afford (or he picked what he cannot): where points come from, with the ways there.
-  const earn = block === 'gift.noPoints' || (!!list && GIFTS.every((g) => g.price > state.points));
+  const earn = block === 'gift.noPoints' || (!!list && FEATURED_GIFTS.every((g) => g.price > state.points));
 
   async function give() {
     if (!chosen || busy || block) return;
@@ -127,7 +127,7 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
           </p>
         )}
         <div className="gift-grid" role="group" aria-label={t('gift.pick')}>
-          {GIFTS.map((g) => {
+          {FEATURED_GIFTS.map((g) => {
             const liked = known.includes(g.id);
             const lack = g.price > state.points ? t('gift.short', { n: g.price - state.points }) : '';
             return (

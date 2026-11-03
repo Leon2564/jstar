@@ -63,6 +63,10 @@ const NAMES: Record<GiftId, [string, LocalText]> = {
 export const GIFTS: readonly GiftDef[] = GIFT_IDS.map((id) => ({ id, icon: NAMES[id][0], image: `/gifts/${id}.webp`, name: NAMES[id][1], price: GIFT_RULES.prices[id] }));
 export const giftById = (id: string): GiftDef | undefined => GIFTS.find((g) => g.id === id);
 
+/** The six choices shown by the compact storefront. The full catalogue remains valid for existing account history. */
+export const FEATURED_GIFT_IDS = ['bouquet', 'cocoa', 'blanket', 'teddy', 'karaoke-mic', 'night-view'] as const satisfies readonly GiftId[];
+export const FEATURED_GIFTS: readonly GiftDef[] = FEATURED_GIFT_IDS.map((id) => giftById(id)!);
+
 /**
  * What he has learned she likes, as chat memory keeps it (facts `her_wishes`, #77): gift ids, comma-separated. The
  * API writes it (never the persona service's memory model) when she mentions one or reacts to one he gave her.

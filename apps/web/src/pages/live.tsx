@@ -181,13 +181,13 @@ const LIVE_DESKTOP_COPY: Record<Lang, { audience: string; all: string; comments:
   ko: { audience: '온라인 시청자', all: '전체', comments: '댓글', gifts: '선물' }
 };
 const LIVE_DESKTOP_GIFTS: Record<Lang, string[]> = {
-  ja: ['きらめき', 'リボン', '花束', '香水', '星の冠', '月の鍵', 'バラ'],
-  'zh-Hant': ['心動星光', '粉色緞帶', '玫瑰花束', '限定香水', '星辰王冠', '月光鑰匙', '永恆玫瑰'],
-  en: ['Starlight', 'Pink ribbon', 'Rose bouquet', 'Perfume', 'Star crown', 'Moon key', 'Forever rose'],
-  ko: ['설렘 별빛', '핑크 리본', '장미 꽃다발', '향수', '별의 왕관', '달빛 열쇠', '영원의 장미']
+  ja: ['花束', 'ココア', '毛布', 'くま', 'マイク', '夜景'],
+  'zh-Hant': ['花束', '熱可可', '暖心毛毯', '小熊玩偶', '麥克風', '夜景晚餐'],
+  en: ['Bouquet', 'Hot cocoa', 'Blanket', 'Teddy bear', 'Microphone', 'Night view'],
+  ko: ['꽃다발', '핫초코', '담요', '곰 인형', '마이크', '야경']
 };
-const LIVE_GIFT_MARKS = ['✦', '୨୧', '❀', '♢', '♕', '☾', '❦'];
-const LIVE_GIFT_PRICES = ['10', '30', '90', '180', '360', '520', '999'];
+const LIVE_GIFT_MARKS = ['❀', '◉', '♢', '♧', '♪', '☾'];
+const LIVE_GIFT_PRICES = ['100', '80', '150', '150', '150', '300'];
 
 function sendToAvatar(message: string): Promise<void> {
   if (!activeAvatar) {

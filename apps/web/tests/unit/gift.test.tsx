@@ -2,7 +2,7 @@ import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import type { GiftSendResT, GiftsResT } from '@jstar/shared/contracts';
-import { GIFTS } from '@jstar/shared/gifts';
+import { FEATURED_GIFTS, GIFTS } from '@jstar/shared/gifts';
 import { GIFT_RULES } from '@jstar/shared/rules';
 import { giftReaction } from '@jstar/shared/tastes';
 import { StoreProvider, useStore, type Actions } from '../../src/lib/store';
@@ -30,7 +30,7 @@ const list = (known: string[] = [], sentToday = 0): GiftsResT => ({
   star: 'nana', gifts: GIFTS.map((g) => ({ id: g.id, price: g.price, known: known.includes(g.id) })), sentToday, perDay: GIFT_RULES.perDay, points: 1030
 });
 const sent = (patch: Partial<GiftSendResT> = {}): GiftSendResT => ({
-  star: 'nana', giftId: 'yakiniku', taste: 'liked', wished: true, reaction: '焼肉！？ 覚えててくれたの！？', affinityXp: 80, level: 3,
+  star: 'nana', giftId: 'karaoke-mic', taste: 'liked', wished: true, reaction: 'マイク！？ 覚えててくれたの！？', affinityXp: 60, level: 3,
   relationship: { star: 'nana', stage: 'new', daysTogether: 1, anniversary: null, loverLevel: null, hint: 'time', progress: 1 },
   points: 830, freePulls: 0, sentToday: 1, perDay: GIFT_RULES.perDay, known: ['yakiniku'], variant: null, ...patch
 });
@@ -50,13 +50,14 @@ describe('gift sheet (#77)', () => {
     expect(gift.getAttribute('aria-pressed')).toBe('true');
   });
 
-  it('opens from her chat with all twenty gifts, their prices, and what a gift is', async () => {
+  it('opens from her chat with the six featured gifts, their prices, and what a gift is', async () => {
     vi.spyOn(api, 'history').mockResolvedValue(null);
     vi.spyOn(giftApi, 'gifts').mockResolvedValue(list());
     renderAt('/me/chat', { star: 'nana' });
     const sheet = await openSheet();
     expect(sheet.getAttribute('aria-label')).toBe('奈々にプレゼント');
-    for (const g of GIFTS) expect(screen.getByTestId(`gift-${g.id}`).textContent).toContain(`星石 ${g.price}`);
+    for (const g of FEATURED_GIFTS) expect(screen.getByTestId(`gift-${g.id}`).textContent).toContain(`星石 ${g.price}`);
+    expect(screen.queryByTestId('gift-yakiniku')).toBeNull();
     expect(screen.getByTestId('gift-points').textContent).toBe('所持星石 1,030');
     await waitFor(() => expect(screen.getByTestId('gift-left').textContent).toBe(`今日あと${GIFT_RULES.perDay}回`));
     // Digital, non-refundable, and her taste matters — but the sheet never says which she likes.
@@ -69,37 +70,37 @@ describe('gift sheet (#77)', () => {
 
   it('marks what he has learned she likes', async () => {
     vi.spyOn(api, 'history').mockResolvedValue(null);
-    vi.spyOn(giftApi, 'gifts').mockResolvedValue(list(['yakiniku', 'karaoke-mic']));
+    vi.spyOn(giftApi, 'gifts').mockResolvedValue(list(['bouquet', 'karaoke-mic']));
     renderAt('/me/chat', { star: 'nana' });
     await openSheet();
-    expect((await screen.findByTestId('gift-known')).textContent).toBe('♥ 奈々の好きなもの：焼肉ディナー、カラオケマイク');
-    expect(screen.getByTestId('gift-yakiniku').getAttribute('aria-label')).toBe('焼肉ディナー 星石 200（好きって言ってた）');
-    expect(screen.getByTestId('gift-bouquet').getAttribute('aria-label')).toBe('花束 星石 100');
+    expect((await screen.findByTestId('gift-known')).textContent).toBe('♥ 奈々の好きなもの：花束、カラオケマイク');
+    expect(screen.getByTestId('gift-karaoke-mic').getAttribute('aria-label')).toBe('カラオケマイク 星石 150（好きって言ってた）');
+    expect(screen.getByTestId('gift-bouquet').getAttribute('aria-label')).toBe('花束 星石 100（好きって言ってた）');
   });
 
   it('gives the gift: her reaction joins the chat, and the wallet and her XP follow', async () => {
     vi.spyOn(api, 'history').mockResolvedValue(null);
-    vi.spyOn(giftApi, 'gifts').mockResolvedValue(list(['yakiniku']));
+    vi.spyOn(giftApi, 'gifts').mockResolvedValue(list(['karaoke-mic']));
     const send = vi.spyOn(giftApi, 'sendGift').mockResolvedValue(sent());
     renderAt('/me/chat', { star: 'nana' });
     await openSheet();
-    await waitFor(() => expect((screen.getByTestId('gift-yakiniku') as HTMLButtonElement).disabled).toBe(false));
-    fireEvent.click(screen.getByTestId('gift-yakiniku'));
+    await waitFor(() => expect((screen.getByTestId('gift-karaoke-mic') as HTMLButtonElement).disabled).toBe(false));
+    fireEvent.click(screen.getByTestId('gift-karaoke-mic'));
     const button = screen.getByTestId('gift-send');
-    expect(button.textContent).toBe('星石200で贈る');
+    expect(button.textContent).toBe('星石150で贈る');
     fireEvent.click(button);
-    expect(await screen.findByText('焼肉！？ 覚えててくれたの！？', { selector: '.msg.her' })).toBeTruthy();
-    expect(screen.getByText('焼肉ディナーを贈りました', { selector: '.msg.system' })).toBeTruthy();
-    expect(send).toHaveBeenCalledWith(expect.anything(), 'nana', 'yakiniku', 'ja');
+    expect(await screen.findByText('マイク！？ 覚えててくれたの！？', { selector: '.msg.her' })).toBeTruthy();
+    expect(screen.getByText('カラオケマイクを贈りました', { selector: '.msg.system' })).toBeTruthy();
+    expect(send).toHaveBeenCalledWith(expect.anything(), 'nana', 'karaoke-mic', 'ja');
     expect(screen.queryByTestId('gift-sheet')).toBeNull();
     expect(latest.state.points).toBe(830);
-    expect(latest.state.affinity.nana).toBe(80);
+    expect(latest.state.affinity.nana).toBe(60);
   });
 
   it('says so when he is short of points, or today\'s gifts are done', async () => {
     vi.spyOn(api, 'history').mockResolvedValue(null);
     vi.spyOn(giftApi, 'gifts').mockResolvedValue(list());
-    renderAt('/me/chat', { star: 'nana', points: 60 });
+    renderAt('/me/chat', { star: 'nana', points: 80 });
     await openSheet();
     await waitFor(() => expect((screen.getByTestId('gift-night-view') as HTMLButtonElement).disabled).toBe(false));
     fireEvent.click(screen.getByTestId('gift-night-view'));
@@ -107,14 +108,14 @@ describe('gift sheet (#77)', () => {
     expect(button.textContent).toBe('星石が足りません');
     expect(button.disabled).toBe(true);
     // M9: never a dead end — by how much (on the tile) and where points come from (log-in, check-in, bond, a code).
-    expect(screen.getByTestId('gift-night-view').textContent).toContain(`あと星石${GIFTS.find((g) => g.id === 'night-view')!.price - 60}`);
+    expect(screen.getByTestId('gift-night-view').textContent).toContain(`あと星石${GIFTS.find((g) => g.id === 'night-view')!.price - 80}`);
     expect(screen.getByTestId('gift-earn').textContent).toContain('星石が足りません');
     expect(await screen.findByTestId('charge-modal')).toBeTruthy();
     expect(screen.getByRole('button', { name: '星石の貯め方' })).toBeTruthy();
     expect(screen.getByRole('link', { name: 'シリアルコードを入力' }).getAttribute('href')).toBe('/serial');
     fireEvent.click(screen.getByTestId('charge-modal').querySelector('.charge-close')!);
     // A race the sheet could not see: the API's answer is shown as it is.
-    fireEvent.click(screen.getByTestId('gift-alarm'));
+    fireEvent.click(screen.getByTestId('gift-cocoa'));
     vi.spyOn(giftApi, 'sendGift').mockRejectedValue(new api.ApiError('gift_limit', 409));
     fireEvent.click(screen.getByTestId('gift-send'));
     expect((await screen.findByRole('alert')).textContent).toBe('今日のプレゼントはここまで。また明日ね');
@@ -131,16 +132,17 @@ describe('gift sheet (#77)', () => {
     vi.spyOn(giftApi, 'gifts').mockResolvedValue(list());
     vi.spyOn(giftApi, 'sendGift').mockResolvedValue(sent({ star: 'mahiro', giftId: 'cocoa', reaction: 'ココア、うれしい。' }));
     renderAt('/me/home', { star: 'mahiro' });
-    fireEvent.click(await screen.findByTestId('room-index-open', {}, { timeout: 8000 }));
-    await openSheet();
+    fireEvent.click(await screen.findByRole('button', { name: 'プレゼント' }, { timeout: 8000 }));
+    await screen.findByTestId('gift-sheet');
     await waitFor(() => expect((screen.getByTestId('gift-cocoa') as HTMLButtonElement).disabled).toBe(false));
     fireEvent.click(screen.getByTestId('gift-cocoa'));
     fireEvent.click(screen.getByTestId('gift-send'));
-    await waitFor(() => expect(screen.getByTestId('greeting').textContent).toBe('ココア、うれしい。'));
+    expect(await screen.findByText('ココア、うれしい。', { selector: '.private-live-chat .her' })).toBeTruthy();
+    expect(document.querySelector('[data-scene="mahiro-react-b-16x9"]')).toBeTruthy();
     expect(latest.state.chats.mahiro.map((m) => m.text)).toEqual(['ホットココアを贈りました', 'ココア、うれしい。']);
   });
 
-  it('her reaction takes the floor even while her ✦ invitation leads her room, and the ✦ stays under it (F-26)', async () => {
+  it('plays her gift reaction without consuming an existing invitation (F-26)', async () => {
     vi.spyOn(api, 'serverMode').mockReturnValue(true);
     vi.spyOn(api, 'greeting').mockRejectedValue(new Error('offline'));
     const now = new Date().toISOString();
@@ -149,45 +151,45 @@ describe('gift sheet (#77)', () => {
     vi.spyOn(giftApi, 'gifts').mockResolvedValue(list());
     vi.spyOn(giftApi, 'sendGift').mockResolvedValue(sent({ star: 'alice', giftId: 'cocoa', reaction: 'ココア……うれしいです。' }));
     renderAt('/me/home', { star: 'alice', inbox: [invite] });
-    await screen.findByTestId('inbox-line', {}, { timeout: 8000 });
-    fireEvent.click(await screen.findByTestId('room-index-open', {}, { timeout: 8000 }));
-    await openSheet();
+    fireEvent.click(await screen.findByRole('button', { name: 'プレゼント' }, { timeout: 8000 }));
+    await screen.findByTestId('gift-sheet');
     await waitFor(() => expect((screen.getByTestId('gift-cocoa') as HTMLButtonElement).disabled).toBe(false));
     fireEvent.click(screen.getByTestId('gift-cocoa'));
     fireEvent.click(screen.getByTestId('gift-send'));
-    await waitFor(() => expect(screen.getByTestId('greeting').textContent).toBe('ココア……うれしいです。'));
-    expect(await screen.findByTestId('confession-entry', {}, { timeout: 4000 })).toBeTruthy();
+    expect(await screen.findByText('ココア……うれしいです。', { selector: '.private-live-chat .her' })).toBeTruthy();
+    expect(document.querySelector('[data-scene="alice-react-b-16x9"]')).toBeTruthy();
+    expect(latest.state.inbox.some((item) => item.id === invite.id)).toBe(true);
   });
 
   it('works offline (prototype mode) by the same shared rules: points, her taste and her written line', async () => {
     vi.spyOn(api, 'history').mockResolvedValue(null);
     renderAt('/me/chat', { star: 'mahiro', points: 1000 });
     await openSheet();
-    await waitFor(() => expect((screen.getByTestId('gift-melonpan') as HTMLButtonElement).disabled).toBe(false));
-    fireEvent.click(screen.getByTestId('gift-melonpan'));
+    await waitFor(() => expect((screen.getByTestId('gift-cocoa') as HTMLButtonElement).disabled).toBe(false));
+    fireEvent.click(screen.getByTestId('gift-cocoa'));
     fireEvent.click(screen.getByTestId('gift-send'));
-    const line = giftReaction('mahiro', 'melonpan', 'liked', false, 'ja');
+    const line = giftReaction('mahiro', 'cocoa', 'liked', false, 'ja');
     expect(await screen.findByText(line, { selector: '.msg.her' })).toBeTruthy();
-    expect(latest.state.points).toBe(1000 - GIFT_RULES.prices.melonpan);
-    expect(latest.state.affinity.mahiro).toBe(2 * Math.round(GIFT_RULES.prices.melonpan * GIFT_RULES.xpPerPoint));
+    expect(latest.state.points).toBe(1000 - GIFT_RULES.prices.cocoa);
+    expect(latest.state.affinity.mahiro).toBe(2 * Math.round(GIFT_RULES.prices.cocoa * GIFT_RULES.xpPerPoint));
     // Now he knows: the sheet marks it.
     await openSheet();
-    expect((await screen.findByTestId('gift-known')).textContent).toContain('メロンパン');
+    expect((await screen.findByTestId('gift-known')).textContent).toContain('ココア');
   });
 
   it('reads in English and Traditional Chinese', async () => {
     await act(async () => { await ensureLang('en'); await ensureLang('zh-Hant'); });
     vi.spyOn(api, 'history').mockResolvedValue(null);
-    vi.spyOn(giftApi, 'gifts').mockResolvedValue(list(['yakiniku']));
+    vi.spyOn(giftApi, 'gifts').mockResolvedValue(list(['bouquet']));
     const { unmount } = renderAt('/me/chat', { star: 'nana', lang: 'en' });
     const sheet = await openSheet();
     expect(sheet.getAttribute('aria-label')).toBe('A gift for Nana');
-    expect((await screen.findByTestId('gift-known')).textContent).toBe('♥ Nana likes: Yakiniku dinner');
+    expect((await screen.findByTestId('gift-known')).textContent).toBe('♥ Nana likes: Bouquet');
     expect(sheet.textContent).toContain('cannot be refunded or cashed out');
     unmount();
     renderAt('/me/chat', { star: 'nana', lang: 'zh-Hant' });
     const zh = await openSheet();
     expect(zh.getAttribute('aria-label')).toBe('送禮物給奈奈');
-    expect(zh.textContent).toContain('燒肉晚餐');
+    expect(zh.textContent).toContain('花束');
   });
 });

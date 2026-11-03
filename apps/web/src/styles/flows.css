@@ -74,6 +74,8 @@
 .trial .chip { min-height: var(--tap); }
 .trial-send { background: var(--rose); color: var(--navy-deep); }
 .trial-send:disabled { background: var(--iv-hair); color: var(--iv-meta); opacity: 1; }
+.trial.is-text-only { background: radial-gradient(circle at 50% -10%, rgba(227,168,178,.14), transparent 38%), var(--navy-deep); }
+.trial.is-text-only .trial-col { width: min(100%, 720px); margin: 0 auto; border-inline: 1px solid rgba(255,255,255,.07); background: rgba(12,14,37,.34); }
 .trial-end { display: flex; flex-direction: column; gap: 10px; padding: 18px 16px 16px; border-top: var(--hairline) solid var(--iv-line); }
 .trial-end p { margin: 0; color: var(--iv-meta); }
 .trial-end .trial-end-h { font-size: var(--fs-line); color: var(--ivory); }
@@ -93,6 +95,9 @@
   .trial .composer { padding-inline: clamp(18px, 2vw, 34px); }
   .trial .composer input { width: 100%; min-width: 0; flex: 1 1 auto; }
   .trial .toast { bottom: 140px; left: 18%; }
+  .chat.trial.is-text-only { display: flex; }
+  .trial.is-text-only .trial-col { grid-column: auto; }
+  .trial.is-text-only .toast { left: 50%; }
 }
 .serial-charge { margin: 16px 24px 0; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid rgba(239,232,237,.16); background: rgba(255,255,255,.025); }
 .serial-charge .js-label { color: var(--rose-glow); font-size: 9px; letter-spacing: .22em; }
