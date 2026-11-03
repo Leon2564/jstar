@@ -11,6 +11,7 @@ import { StoreProvider } from '../../src/lib/store';
 import App, { AppRoutes } from '../../src/App';
 import { initialState, type AppState } from '../../src/lib/state';
 import { coverSizes } from '../../src/data/mediaCompact';
+import { HOME_PRELOAD_BUDGET_MS, HOME_PRELOAD_CONCURRENCY } from '../../src/pages/site';
 import * as api from '../../src/services/api';
 
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
@@ -101,6 +102,13 @@ describe('A-M11: the stage poster is chosen for the width it is drawn at', () =>
   it('cover sizes follow the clip: a 9:16 clip is at least 56.25vh wide, a 16:9 one 177.78vh', () => {
     expect(coverSizes('9:16')).toBe('max(100vw, 56.25vh)');
     expect(coverSizes('16:9')).toBe('max(100vw, 177.78vh)');
+  });
+});
+
+describe('A-loading: the full-quality home preparation stays bounded', () => {
+  it('uses parallel transfers and leaves time to paint the route before five minutes', () => {
+    expect(HOME_PRELOAD_CONCURRENCY).toBe(8);
+    expect(HOME_PRELOAD_BUDGET_MS).toBeLessThan(5 * 60 * 1000);
   });
 });
 

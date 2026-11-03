@@ -285,6 +285,8 @@ const LOAD_GAME_COPY = {
 
 const formatLoadBytes = (bytes: number) => bytes >= 1024 ** 2 ? `${(bytes / 1024 ** 2).toFixed(1)} MB` : `${Math.round(bytes / 1024)} KB`;
 const formatLoadTime = (seconds: number) => seconds >= 60 ? `${Math.ceil(seconds / 60)} min` : `${Math.max(1, Math.ceil(seconds))} s`;
+export const HOME_PRELOAD_CONCURRENCY = 8;
+export const HOME_PRELOAD_BUDGET_MS = 4.5 * 60 * 1000;
 
 export function Loading() {
   const t = useT();
@@ -304,14 +306,18 @@ export function Loading() {
     return () => window.clearInterval(timer);
   }, []);
   // Game-style critical preload: cache all five heroines' twelve clips (entrance, idle, ten reactions) and posters.
-  // Playback then reads the exact same URLs from the browser cache instead of downloading while already moving.
+  // Entrance, idle and their posters are first; the remaining reactions use the rest of a bounded preparation window.
+  // This keeps the approved masters intact while preventing a slow connection from holding the visitor indefinitely.
   useEffect(() => {
     const controller = new AbortController();
+    let alive = true;
     const run = async () => {
       const portrait = window.matchMedia?.('(orientation: portrait)').matches ?? true;
-      const clipNames = ['enter', 'idle', ...Array.from({ length: 10 }, (_, index) => `react-${String.fromCharCode(97 + index)}`)];
-      const entries = next === '/' ? CAST.flatMap((member) => clipNames.map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
-      const openingEntries = next === '/' ? CAST.flatMap((member) => ['enter', 'idle'].map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
+      const openingNames = ['enter', 'idle'];
+      const reactionNames = Array.from({ length: 10 }, (_, index) => `react-${String.fromCharCode(97 + index)}`);
+      const openingEntries = next === '/' ? CAST.flatMap((member) => openingNames.map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
+      const reactionEntries = next === '/' ? CAST.flatMap((member) => reactionNames.map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
+      const entries = [...openingEntries, ...reactionEntries];
       const clipUrls = entries.flatMap((entry) => {
         if (!entry) return [];
         const source = sourcesFor(entry)[0] ?? entry.sources[0];
@@ -324,51 +330,86 @@ export function Loading() {
       const posterUrls = Array.from(new Set(entries.flatMap((entry) => entry
         ? [entry.poster, ...(entry.posters?.map((poster) => poster.src) ?? [])].filter(Boolean) as string[]
         : [])));
-      const urls = [...videoUrls, ...posterUrls.filter((url) => !videoUrls.includes(url))];
+      const openingVideoUrls = Array.from(new Set(openingEntries.flatMap((entry) => {
+        if (!entry) return [];
+        const source = sourcesFor(entry)[0] ?? entry.sources[0];
+        return source ? [source.src] : [];
+      })));
+      const openingPosterUrls = Array.from(new Set(openingEntries.flatMap((entry) => entry
+        ? [entry.poster, ...(entry.posters?.map((poster) => poster.src) ?? [])].filter(Boolean) as string[]
+        : [])));
+      const openingUrls = Array.from(new Set([...openingPosterUrls, ...openingVideoUrls]));
+      const allUrls = Array.from(new Set([...openingUrls, ...videoUrls, ...posterUrls]));
+      const openingUrlSet = new Set(openingUrls);
+      const remainingUrls = allUrls.filter((url) => !openingUrlSet.has(url));
       const videoUrlSet = new Set(videoUrls);
-      if (!urls.length) { await document.fonts?.ready; setPct(100); return; }
+      if (!allUrls.length) { await document.fonts?.ready; setPct(100); return; }
+      const started = performance.now();
+      const deadline = started + HOME_PRELOAD_BUDGET_MS;
+      let budgetReached = false;
+      const budgetTimer = window.setTimeout(() => {
+        budgetReached = true;
+        controller.abort();
+      }, HOME_PRELOAD_BUDGET_MS);
       const sizes = new Map<string, number>();
-      await Promise.all(urls.map(async (url) => sizes.set(url, await mediaFileSize(url, controller.signal).catch(() => 0))));
+      await Promise.all(allUrls.map(async (url) => sizes.set(url, await mediaFileSize(url, controller.signal).catch(() => 0))));
       const knownTotal = [...sizes.values()].reduce((sum, size) => sum + size, 0);
       const byUrl = new Map<string, number>();
       let resourcesDone = 0;
       let clipsDone = 0;
       let lastPaint = 0;
-      const started = performance.now();
       const report = (force = false) => {
         const now = performance.now();
         if (!force && now - lastPaint < 100) return;
         lastPaint = now;
         const loaded = [...byUrl.values()].reduce((sum, size) => sum + size, 0);
-        const ratio = knownTotal ? loaded / knownTotal : resourcesDone / urls.length;
+        const ratio = knownTotal ? loaded / knownTotal : resourcesDone / allUrls.length;
         const elapsed = Math.max(0.25, (now - started) / 1000);
         const speed = loaded / elapsed;
-        const eta = knownTotal && speed ? Math.max(0, (knownTotal - loaded) / speed) : 0;
+        const rawEta = knownTotal && speed ? Math.max(0, (knownTotal - loaded) / speed) : 0;
+        const eta = Math.min(rawEta || HOME_PRELOAD_BUDGET_MS / 1000, Math.max(0, (deadline - now) / 1000));
         setLoadState({ loaded, total: knownTotal, done: clipsDone, files: clipTotal, eta });
         setPct(Math.min(99, Math.max(1, Math.floor(ratio * 99))));
       };
-      let cursor = 0;
-      const worker = async () => {
-        while (!controller.signal.aborted) {
-          const index = cursor++;
-          if (index >= urls.length) return;
-          const url = urls[index];
-          await cacheMediaFileWithRetry(url, controller.signal, (loaded) => { byUrl.set(url, loaded); report(); });
-          resourcesDone += 1;
-          if (videoUrlSet.has(url)) clipsDone += clipCountByUrl.get(url) ?? 1;
-          report(true);
-        }
+      const cacheQueue = async (queue: string[]) => {
+        let cursor = 0;
+        const worker = async () => {
+          while (!controller.signal.aborted) {
+            const index = cursor++;
+            if (index >= queue.length) return;
+            const url = queue[index];
+            try {
+              await cacheMediaFileWithRetry(url, controller.signal, (loaded) => { byUrl.set(url, loaded); report(); });
+            } catch (error) {
+              if (controller.signal.aborted) throw error;
+              resourcesDone += 1;
+              report(true);
+              continue;
+            }
+            resourcesDone += 1;
+            if (videoUrlSet.has(url)) clipsDone += clipCountByUrl.get(url) ?? 1;
+            report(true);
+          }
+        };
+        await Promise.all(Array.from({ length: Math.min(HOME_PRELOAD_CONCURRENCY, queue.length) }, worker));
       };
-      await Promise.all([worker(), worker()]);
-      const openingPosters = Array.from(new Set(openingEntries.flatMap((entry) => entry
-        ? [entry.poster, ...(entry.posters?.map((poster) => poster.src) ?? [])].filter(Boolean) as string[]
-        : [])));
-      await Promise.all(openingPosters.map((url) => decodeCachedImage(url, controller.signal)));
-      await document.fonts?.ready;
-      if (!controller.signal.aborted) { setPct(100); setLoadState((old) => ({ ...old, done: clipTotal, files: clipTotal, eta: 0 })); }
+      try {
+        await cacheQueue(openingUrls);
+        await Promise.all(openingPosterUrls.map((url) => decodeCachedImage(url, controller.signal)));
+        await cacheQueue(remainingUrls);
+        await document.fonts?.ready;
+      } catch (error) {
+        if (!budgetReached && alive && !controller.signal.aborted) throw error;
+      } finally {
+        window.clearTimeout(budgetTimer);
+      }
+      if (alive) {
+        setPct(100);
+        setLoadState((old) => ({ ...old, done: Math.max(old.done, clipsDone), files: clipTotal, eta: 0 }));
+      }
     };
     void run();
-    return () => controller.abort();
+    return () => { alive = false; controller.abort(); };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (pct >= 100) nav(next, { replace: true }); }, [pct, nav, next]);
   return (
