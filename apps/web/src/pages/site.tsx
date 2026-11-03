@@ -265,6 +265,17 @@ async function cacheMediaFileWithRetry(src: string, signal: AbortSignal, onProgr
   throw new DOMException('Aborted', 'AbortError');
 }
 
+async function decodeCachedImage(src: string, signal: AbortSignal): Promise<void> {
+  if (signal.aborted) throw new DOMException('Aborted', 'AbortError');
+  const image = new Image();
+  image.decoding = 'sync';
+  image.src = src;
+  await Promise.race([
+    image.decode().catch(() => undefined),
+    new Promise<never>((_, reject) => signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')), { once: true }))
+  ]);
+}
+
 const LOAD_GAME_COPY = {
   'zh-Hant': { title: '星光收集', hint: '等待時點擊星光', score: '已收集', preparing: '正在準備主視覺', ready: '準備完成', eta: '預計剩餘' },
   ja: { title: 'スターキャッチ', hint: '待っている間に星をタップ', score: '集めた星', preparing: 'メインビジュアルを準備中', ready: '準備完了', eta: '残り約' },
@@ -300,6 +311,7 @@ export function Loading() {
       const portrait = window.matchMedia?.('(orientation: portrait)').matches ?? true;
       const clipNames = ['enter', 'idle', ...Array.from({ length: 10 }, (_, index) => `react-${String.fromCharCode(97 + index)}`)];
       const entries = next === '/' ? CAST.flatMap((member) => clipNames.map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
+      const openingEntries = next === '/' ? CAST.flatMap((member) => ['enter', 'idle'].map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
       const clipUrls = entries.flatMap((entry) => {
         if (!entry) return [];
         const source = sourcesFor(entry)[0] ?? entry.sources[0];
@@ -309,7 +321,9 @@ export function Loading() {
       const clipCountByUrl = new Map<string, number>();
       for (const url of clipUrls) clipCountByUrl.set(url, (clipCountByUrl.get(url) ?? 0) + 1);
       const clipTotal = clipUrls.length;
-      const posterUrls = Array.from(new Set(entries.flatMap((entry) => entry?.poster ? [entry.poster] : [])));
+      const posterUrls = Array.from(new Set(entries.flatMap((entry) => entry
+        ? [entry.poster, ...(entry.posters?.map((poster) => poster.src) ?? [])].filter(Boolean) as string[]
+        : [])));
       const urls = [...videoUrls, ...posterUrls.filter((url) => !videoUrls.includes(url))];
       const videoUrlSet = new Set(videoUrls);
       if (!urls.length) { await document.fonts?.ready; setPct(100); return; }
@@ -346,6 +360,10 @@ export function Loading() {
         }
       };
       await Promise.all([worker(), worker()]);
+      const openingPosters = Array.from(new Set(openingEntries.flatMap((entry) => entry
+        ? [entry.poster, ...(entry.posters?.map((poster) => poster.src) ?? [])].filter(Boolean) as string[]
+        : [])));
+      await Promise.all(openingPosters.map((url) => decodeCachedImage(url, controller.signal)));
       await document.fonts?.ready;
       if (!controller.signal.aborted) { setPct(100); setLoadState((old) => ({ ...old, done: clipTotal, files: clipTotal, eta: 0 })); }
     };

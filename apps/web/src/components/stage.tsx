@@ -226,9 +226,9 @@ export function SceneVideo({ entry, active, className, style, loop = true, onDon
     <div className={`scene${playing ? ' is-playing' : ''} ${className ?? ''}`} style={style} data-scene={entry.id}>
       {/* N-52: on a cold open her small poster paints at once (softly), the full one takes over once it has loaded —
           never a large poster drawing itself top-down. */}
-      {small && !hq && <img className="scene-poster" src={small} alt="" aria-hidden="true" decoding="async" {...fetchPriority('high')} draggable={false} data-lqip="" style={soft ? LQIP : undefined} onLoad={() => setPainted(true)} onError={() => setPainted(true)} />}
+      {small && !hq && <img className="scene-poster" src={small} alt="" aria-hidden="true" decoding={active ? 'sync' : 'async'} {...fetchPriority('high')} draggable={false} data-lqip="" style={soft ? LQIP : undefined} onLoad={() => setPainted(true)} onError={() => setPainted(true)} />}
       {!hidePoster && entry.poster && <img ref={full} className="scene-poster" src={entry.poster} srcSet={entry.posters?.map((p) => `${p.src} ${p.width}w`).join(', ')} sizes={entry.posters ? (cover ? coverSizes(entry.ratio) : '100vw') : undefined}
-        alt="" decoding="async" {...fetchPriority(active ? 'high' : 'low')} draggable={false} onLoad={() => setHq(true)} onError={() => setPainted(true)} style={small && !hq ? HIDDEN : undefined} />}
+        alt="" decoding={active ? 'sync' : 'async'} {...fetchPriority(active ? 'high' : 'low')} draggable={false} onLoad={() => setHq(true)} onError={() => setPainted(true)} style={small && !hq ? HIDDEN : undefined} />}
       {showVideo && (
         <video ref={ref} className="scene-video" muted loop={loop} playsInline autoPlay={!hold} preload="auto" poster={hidePoster ? undefined : (small ?? entry.poster) || undefined} aria-hidden="true" tabIndex={-1}
           onLoadedData={reportReady} onCanPlay={reportReady} onPlaying={(event) => { reportReady(); setPlaying(true); reportPlaybackFrame(event.currentTarget); }}

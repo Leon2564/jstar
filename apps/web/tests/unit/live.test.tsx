@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { StoreProvider } from '../../src/lib/store';
 import { initialState } from '../../src/lib/state';
 import { LiveLobby, LiveRoom } from '../../src/pages/live';
@@ -19,7 +19,13 @@ function view(path = '/live') {
 }
 
 describe('public 1-to-many live preview', () => {
-  afterEach(cleanup);
+  beforeEach(() => {
+    vi.spyOn(HTMLMediaElement.prototype, 'canPlayType').mockReturnValue('probably');
+  });
+  afterEach(() => {
+    cleanup();
+    vi.restoreAllMocks();
+  });
 
   it('offers all five talents and enters the selected room', () => {
     view();
@@ -27,7 +33,8 @@ describe('public 1-to-many live preview', () => {
     expect(rooms).toHaveLength(5);
     const ids = ['mahiro', 'nana', 'unpai', 'alice', 'eimi'];
     rooms.forEach((room, index) => {
-      expect(room.querySelector('source')?.getAttribute('srcset')).toBe(`/media/live/${ids[index]}-public-live-16x9.jpg`);
+      const desktopExt = ids[index] === 'nana' ? 'webp' : 'jpg';
+      expect(room.querySelector('source')?.getAttribute('srcset')).toBe(`/media/live/${ids[index]}-public-live-16x9.${desktopExt}`);
       expect(room.querySelector('img')?.getAttribute('src')).toBe(`/media/live/${ids[index]}-public-live-9x16.jpg`);
     });
     const eimi = screen.getByRole('link', { name: '深田えいみの公開ライブを見る' });
@@ -39,12 +46,17 @@ describe('public 1-to-many live preview', () => {
     expect(screen.getByPlaceholderText('コメントを入力…')).toBeTruthy();
   });
 
-  it('uses Nana responsive digital-human covers while marking the Vidu stage', () => {
-    const { container } = view('/live/nana');
+  it('uses Nana responsive covers and a moving idle stage while the RTC stream connects', () => {
+    view('/live/nana');
     const stage = screen.getByLabelText('八木奈々のデジタルライブ');
-    expect(stage.querySelector('source')?.getAttribute('srcset')).toBe('/media/live/nana-public-live-16x9.jpg');
+    expect(stage.querySelector('picture source')?.getAttribute('srcset')).toBe('/media/live/nana-public-live-16x9.webp');
     expect(stage.querySelector('img')?.getAttribute('src')).toBe('/media/live/nana-public-live-9x16.jpg');
-    expect(container.querySelector('video, audio, iframe')).toBeNull();
+    const fallback = stage.querySelector<HTMLVideoElement>('video.live-avatar-fallback');
+    expect(fallback).not.toBeNull();
+    expect(fallback?.hasAttribute('autoplay')).toBe(true);
+    expect(fallback?.hasAttribute('loop')).toBe(true);
+    expect(fallback?.muted).toBe(true);
+    expect(fallback?.querySelector('source')?.getAttribute('src')).toBe('/media/nana-feedback/original-4k/nana-idle-16x9.mp4');
   });
 
   it('accepts a typed comment while the avatar connection is still starting', () => {

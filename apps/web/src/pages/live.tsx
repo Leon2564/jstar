@@ -11,6 +11,8 @@ import { speechEngine, type Engine } from '../lib/voice';
 import type { GiftSendResT } from '@jstar/shared/contracts';
 import type { LiveEventT } from '../services/http';
 import { getToken } from '../services/http';
+import { sourcesFor } from '../components/stage';
+import { heroEntry } from '../data/heroMedia';
 import '../styles/live.css';
 
 type LiveCover = { desktop: string; mobile: string };
@@ -233,6 +235,10 @@ function AvatarLiveStage({ starId, cover, label, language, onReady, onReply }: {
   const [status, setStatus] = useState<'connecting' | 'preview' | 'live'>('connecting');
   const [viewers, setViewers] = useState(() => 1180 + Math.floor(Math.random() * 180));
   const [caption, setCaption] = useState('');
+  const [portrait] = useState(() => !(window.matchMedia?.('(min-width: 1024px)').matches ?? window.innerWidth >= 1024));
+  const [fallbackPlaying, setFallbackPlaying] = useState(false);
+  const fallback = heroEntry(starId, portrait);
+  const fallbackSources = fallback ? sourcesFor(fallback) : [];
   useEffect(() => { languageRef.current = language; }, [language]);
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -296,8 +302,14 @@ function AvatarLiveStage({ starId, cover, label, language, onReady, onReply }: {
     };
   }, [onReady, onReply, starId]);
   return (
-    <div className={`live-avatar-stage is-${status}`} aria-label={label}>
+    <div className={`live-avatar-stage is-${status}${fallbackPlaying ? ' is-fallback-playing' : ''}`} aria-label={label}>
       <ResponsiveLiveCover cover={cover} className="live-avatar-cover" eager />
+      {fallback && fallbackSources.length > 0 && (
+        <video className="live-avatar-fallback" autoPlay loop muted playsInline preload="auto" poster={fallback.poster}
+          onPlaying={() => setFallbackPlaying(true)} onError={() => setFallbackPlaying(false)} aria-hidden="true">
+          {fallbackSources.map((source) => <source key={source.src} src={source.src} type={source.type} />)}
+        </video>
+      )}
       <div ref={stream} className="live-avatar-stream" />
       <span className="live-avatar-state"><i />{t('live.avatarLive', { n: viewers.toLocaleString(language === 'zh-Hant' ? 'zh-TW' : language) })}</span>
       <span className="sr-only" aria-live="polite">{caption}</span>
