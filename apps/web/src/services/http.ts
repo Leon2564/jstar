@@ -105,6 +105,9 @@ export interface LiveSessionT {
   ready: true;
   liveId: string;
   rtc: { app_id: string; channel_id: string; user_id: string; token: string; token_expire_at?: string };
+  /** Same-origin, short-lived WebSocket bridge. The provider API key never reaches the browser. */
+  controlUrl?: string;
+  controlId?: string;
 }
 
 export type LiveStarT = 'mahiro' | 'nana' | 'unpai' | 'alice' | 'eimi';

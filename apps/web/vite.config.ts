@@ -18,7 +18,7 @@ const CSP = [
   "font-src 'self' https://fonts.gstatic.com",
   "img-src 'self' data: blob:",
   "media-src 'self' blob:",
-  "connect-src 'self' https://cloudflareinsights.com https://*.aliyuncs.com wss://*.aliyuncs.com https://*.aliyun.com wss://*.aliyun.com",
+  "connect-src 'self' wss://*.workers.dev https://cloudflareinsights.com https://*.aliyuncs.com wss://*.aliyuncs.com https://*.aliyun.com wss://*.aliyun.com https://*.alicdn.com wss://*.alicdn.com https://*.alivecdn.com wss://*.alivecdn.com",
   "worker-src 'self' blob:",
   "object-src 'none'",
   "base-uri 'self'",

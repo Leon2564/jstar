@@ -14,5 +14,9 @@
   "r2_buckets": [
     { "binding": "MEDIA", "bucket_name": "jstar-media" }
   ],
+  "ratelimits": [
+    { "name": "VIDU_SESSION_LIMITER", "namespace_id": "1001", "simple": { "limit": 2, "period": 60 } },
+    { "name": "VIDU_GLOBAL_LIMITER", "namespace_id": "1002", "simple": { "limit": 20, "period": 60 } }
+  ],
   "observability": { "enabled": true }
 }

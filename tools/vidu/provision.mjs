@@ -10,7 +10,10 @@ const imagePath = resolve(process.env[`${prefix}_IMAGE_PATH`] || `assets/agency/
 const voicePath = resolve(process.env[`${prefix}_VOICE_PATH`] || `assets/agency/${star}/voice.mp3`);
 const manifestPath = resolve(process.env[`${prefix}_MANIFEST`] || `assets/agency/${star}/vidu.json`);
 const voiceOnly = /^(?:1|true)$/i.test(process.env.VIDU_VOICE_ONLY || '');
+const avatarOnly = /^(?:1|true)$/i.test(process.env.VIDU_AVATAR_ONLY || '');
+const layoutVariants = /^(?:1|true)$/i.test(process.env.VIDU_LAYOUT_VARIANTS || '');
 if (!token) throw new Error('VIDU_API_TOKEN is required');
+if (voiceOnly && avatarOnly) throw new Error('VIDU_VOICE_ONLY and VIDU_AVATAR_ONLY cannot both be enabled');
 
 let previous = {};
 try { previous = JSON.parse(await readFile(manifestPath, 'utf8')); } catch { /* first provision */ }
@@ -35,30 +38,50 @@ const query = async (path) => {
   return data;
 };
 
-const audio = `data:audio/mpeg;base64,${(await readFile(voicePath)).toString('base64')}`;
 let avatarId = previous.avatarId;
+let desktopAvatarId = previous.desktopAvatarId;
+let mobileAvatarId = previous.mobileAvatarId;
 if (!voiceOnly) {
-  const image = `data:image/jpeg;base64,${(await readFile(imagePath)).toString('base64')}`;
   const listed = await query('/live/v1/avatars?pager.page=0&pager.pagesz=100');
-  const avatarName = `${star}_jstar_live`;
-  const existingAvatar = (listed.items || []).find((item) => item.name === avatarName && item.status !== 'failed' && item.status !== 12);
-  const avatar = existingAvatar || await request('/live/v1/avatars', { image_uri: image, name: avatarName });
-  avatarId = avatar.id || avatar.avatar?.id;
+  const ensureAvatar = async (name, path) => {
+    const existing = (listed.items || []).find((item) => item.name === name && item.status !== 'failed' && item.status !== 12);
+    if (existing?.id) return existing.id;
+    const image = `data:image/jpeg;base64,${(await readFile(path)).toString('base64')}`;
+    const avatar = await request('/live/v1/avatars', { image_uri: image, name });
+    return avatar.id || avatar.avatar?.id;
+  };
+  if (layoutVariants) {
+    const desktopPath = resolve(process.env[`${prefix}_DESKTOP_IMAGE_PATH`] || `apps/web/public/media/live/${star}-public-live-16x9.jpg`);
+    const mobilePath = resolve(process.env[`${prefix}_MOBILE_IMAGE_PATH`] || `apps/web/public/media/live/${star}-public-live-9x16.jpg`);
+    desktopAvatarId = await ensureAvatar(`${star}_jstar_live_desktop`, desktopPath);
+    mobileAvatarId = await ensureAvatar(`${star}_jstar_live_mobile`, mobilePath);
+  } else {
+    avatarId = await ensureAvatar(`${star}_jstar_live`, imagePath);
+  }
 }
-// Vidu's realtime voice backend accepts a maximum 16-character preferred name.
-const voiceName = `${star.slice(0, 5)}${Date.now().toString(36).slice(-10)}`;
-const voice = await request('/live/v1/voices/clone', { audio_url: audio, voice: voiceName, language: 'ja' });
+let voiceId = previous.voice;
+if (!avatarOnly) {
+  const audio = `data:audio/mpeg;base64,${(await readFile(voicePath)).toString('base64')}`;
+  // Vidu's realtime voice backend accepts a maximum 16-character preferred name.
+  const voiceName = `${star.slice(0, 5)}${Date.now().toString(36).slice(-10)}`;
+  const voice = await request('/live/v1/voices/clone', { audio_url: audio, voice: voiceName, language: 'ja' });
+  voiceId = voice.voice || voiceName;
+}
 const persona = process.env[`${prefix}_PERSONA`] || previous.persona;
 const greetingInstruction = process.env[`${prefix}_GREETING_INSTRUCTION`] || previous.greetingInstruction;
 const manifest = {
   ...previous,
   ...(avatarId ? { avatarId } : {}),
-  voice: voice.voice || voiceName,
+  ...(desktopAvatarId ? { desktopAvatarId } : {}),
+  ...(mobileAvatarId ? { mobileAvatarId } : {}),
+  ...(voiceId ? { voice: voiceId } : {}),
   ...(persona ? { persona } : {}),
   ...(greetingInstruction ? { greetingInstruction } : {}),
   provisionedAt: new Date().toISOString()
 };
-if ((!voiceOnly && !manifest.avatarId) || !manifest.voice) throw new Error('Vidu returned an incomplete avatar or voice response');
+if ((!voiceOnly && layoutVariants && (!manifest.desktopAvatarId || !manifest.mobileAvatarId))
+  || (!voiceOnly && !layoutVariants && !manifest.avatarId)
+  || !manifest.voice) throw new Error('Vidu returned an incomplete avatar or voice response');
 await mkdir(dirname(manifestPath), { recursive: true });
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
 console.log(`Vidu assets are ready: ${manifestPath}`);
