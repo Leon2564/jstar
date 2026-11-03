@@ -46,17 +46,13 @@ describe('public 1-to-many live preview', () => {
     expect(screen.getByPlaceholderText('コメントを入力…')).toBeTruthy();
   });
 
-  it('uses Nana responsive covers and a moving idle stage while the RTC stream connects', () => {
+  it('uses Nana responsive covers and a still loading stage while the RTC stream connects', () => {
     view('/live/nana');
     const stage = screen.getByLabelText('八木奈々のデジタルライブ');
     expect(stage.querySelector('picture source')?.getAttribute('srcset')).toBe('/media/live/nana-public-live-16x9.webp');
     expect(stage.querySelector('img')?.getAttribute('src')).toBe('/media/live/nana-public-live-9x16.jpg');
-    const fallback = stage.querySelector<HTMLVideoElement>('video.live-avatar-fallback');
-    expect(fallback).not.toBeNull();
-    expect(fallback?.hasAttribute('autoplay')).toBe(true);
-    expect(fallback?.hasAttribute('loop')).toBe(true);
-    expect(fallback?.muted).toBe(true);
-    expect(fallback?.querySelector('source')?.getAttribute('src')).toBe('/media/nana-feedback/original-4k/nana-idle-16x9.mp4');
+    expect(stage.className).toContain('is-connecting');
+    expect(stage.querySelector('video')).toBeNull();
   });
 
   it('accepts a typed comment while the avatar connection is still starting', () => {

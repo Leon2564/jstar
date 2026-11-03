@@ -70,14 +70,12 @@
 .live-room.is-clean .live-room-head > :not(.live-clean-toggle) { opacity: 0; pointer-events: none; }
 
 .live-avatar-stage { position: absolute; inset: 0; overflow: hidden; background: #100d13; }
-.live-avatar-cover, .live-avatar-fallback, .live-avatar-stream, .live-avatar-video { position: absolute; inset: 0; width: 100%; height: 100%; }
-.live-avatar-cover { z-index: 0; object-fit: cover; object-position: 50% 31%; transform: scale(1.035); filter: saturate(.94) contrast(1.025); transition: opacity .5s ease; }
-.live-avatar-fallback { z-index: 1; display: block; object-fit: cover; object-position: 50% 31%; opacity: 0; transition: opacity .35s ease; }
+.live-avatar-stage::after { content: ''; position: absolute; z-index: 1; inset: -30px; pointer-events: none; background: linear-gradient(145deg, rgba(235,222,230,.2), rgba(20,22,47,.38)); backdrop-filter: blur(28px) saturate(.72); opacity: 1; transition: opacity .75s ease, visibility 0s linear .75s; }
+.live-avatar-cover, .live-avatar-stream, .live-avatar-video { position: absolute; inset: 0; width: 100%; height: 100%; }
+.live-avatar-cover { z-index: 0; object-fit: cover; object-position: 50% 31%; transform: scale(1.12); filter: blur(18px) saturate(.75) brightness(.78); opacity: 1; transition: opacity .75s ease; }
 .live-avatar-stream { z-index: 2; }
 .live-avatar-video { display: block; object-fit: cover; object-position: 50% 31%; }
-.live-avatar-stage.is-fallback-playing .live-avatar-cover, .live-avatar-stage.is-live .live-avatar-cover { opacity: 0; }
-.live-avatar-stage.is-fallback-playing .live-avatar-fallback { opacity: 1; }
-.live-avatar-stage.is-live .live-avatar-fallback { opacity: 0; }
+.live-avatar-stage.is-live::after, .live-avatar-stage.is-live .live-avatar-cover { opacity: 0; visibility: hidden; }
 .live-avatar-state { position: absolute; z-index: 3; left: 18px; top: 78px; display: flex; align-items: center; gap: 7px; padding: 6px 9px; border: 1px solid rgba(255,255,255,.13); border-radius: 14px; background: rgba(9,8,16,.36); color: rgba(255,255,255,.72); backdrop-filter: blur(10px); font-size: 9px; letter-spacing: .08em; }
 .live-avatar-state i { width: 6px; height: 6px; border-radius: 50%; background: var(--live-accent); box-shadow: 0 0 10px var(--live-accent); }
 .live-avatar-stage.is-connecting .live-avatar-state i { animation: livePulse 1.2s infinite; }
@@ -114,7 +112,8 @@
   .live-room::before { content: ''; position: absolute; z-index: 0; inset: 0 var(--live-panel) 0 0; pointer-events: none; background: radial-gradient(circle at 52% 38%, color-mix(in srgb, var(--live-accent) 11%, transparent), transparent 42%), linear-gradient(120deg, rgba(5,7,17,.96), rgba(14,16,31,.74) 42%, rgba(5,7,17,.96)); }
   .live-room::after { right: var(--live-panel); background: linear-gradient(to bottom, rgba(6,8,19,.72), transparent 15%, transparent 68%, rgba(6,8,19,.78)); }
   .live-avatar-stage { right: var(--live-panel); background: transparent; }
-  .live-avatar-cover, .live-avatar-fallback, .live-avatar-video { object-fit: contain; object-position: 50% center; transform: none; }
+  .live-avatar-cover, .live-avatar-video { object-fit: contain; object-position: 50% center; }
+  .live-avatar-cover { transform: scale(1.08); }
   .live-avatar-stream { display: grid; place-items: center; }
   .live-avatar-stream > video { width: 100%; height: 100%; object-fit: cover !important; object-position: 50% center !important; }
   .live-room-head { left: 18px; right: calc(var(--live-panel) + 18px); top: 14px; }
