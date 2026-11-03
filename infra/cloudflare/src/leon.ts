@@ -128,7 +128,11 @@ async function createLiveSession(request: Request, env: Env): Promise<Response> 
     })
   });
   const result = await response.json().catch(() => ({})) as { live?: { id?: string }; rtc?: Record<string, unknown>; error?: string; message?: string };
-  if (!response.ok) return json({ error: 'vidu_create_failed', status: response.status, detail: result.error || result.message || undefined }, { status: 502 });
+  if (!response.ok) {
+    const detail = result.error || result.message || 'unknown_provider_error';
+    console.warn(`[vidu-live] create failed star=${star} layout=${layout} status=${response.status} detail=${detail}`);
+    return json({ error: 'vidu_create_failed', status: response.status, detail }, { status: 502 });
+  }
   const liveId = result.live?.id;
   if (!liveId || !result.rtc) return json({ error: 'vidu_create_invalid' }, { status: 502 });
   const connId = `jstar-${crypto.randomUUID()}`;

@@ -553,6 +553,7 @@ export function RoomV2(p: RoomV2Props) {
   const [privateEntering, setPrivateEntering] = useState(true);
   const [privateReady, setPrivateReady] = useState(false);
   const [privateConnected, setPrivateConnected] = useState(false);
+  const [privateUnavailable, setPrivateUnavailable] = useState(false);
   const [privateSceneOpen, setPrivateSceneOpen] = useState(false);
   const [privateTier, setPrivateTier] = useState<'SSR' | 'UR'>('SSR');
   const [privateCard, setPrivateCard] = useState<string | null>(() => {
@@ -565,21 +566,28 @@ export function RoomV2(p: RoomV2Props) {
   const [privateLines, setPrivateLines] = useState<Array<{ id: string; from: 'me' | 'her'; text: string }>>([]);
   const privateStream = useRef<HTMLDivElement>(null);
   const privateConnection = useRef<LiveAvatarConnection | null>(null);
+  const privateFallbackReplies = useRef(0);
   useEffect(() => {
     document.documentElement.classList.remove('private-live-route-leave');
     const enter = window.setTimeout(() => setPrivateEntering(false), 520);
     let alive = true;
     let poll = 0;
+    let startTimer = 0;
     let retryTimer = 0;
     let retryCount = 0;
     let after = 0;
     const target = privateStream.current;
     setPrivateReady(false);
     setPrivateConnected(false);
+    setPrivateUnavailable(false);
     privateConnection.current = null;
 
     const retry = () => {
       if (!alive) return;
+      if (retryCount >= 3) {
+        setPrivateUnavailable(true);
+        return;
+      }
       const delay = Math.min(15000, 1800 * (2 ** Math.min(retryCount, 3)));
       retryCount += 1;
       retryTimer = window.setTimeout(connect, delay);
@@ -607,10 +615,13 @@ export function RoomV2(p: RoomV2Props) {
         }, 700);
       }).catch(retry);
     };
-    connect();
+    // React StrictMode mounts effects twice in development. Waiting one tick prevents the discarded mount from
+    // opening a second paid provider session and tripping the per-IP session limit before the real room can join.
+    startTimer = window.setTimeout(connect, 120);
     return () => {
       alive = false;
       window.clearTimeout(enter);
+      window.clearTimeout(startTimer);
       window.clearTimeout(retryTimer);
       window.clearInterval(poll);
       const connection = privateConnection.current;
@@ -637,9 +648,19 @@ export function RoomV2(p: RoomV2Props) {
   useEffect(() => () => onLipsync?.(null), [onLipsync]);
   const talk = useChatSend(p.star, {
     sentHere, onToast: p.onToast,
+    language: privateMode ? 'ja' : undefined,
     // He speaks again: she stops (N-32).
     onStart: () => { her.stop(); setSceneAsk(null); setMade(null); },
-    onResult: (r, added) => { if (r.promise) setMade(r.promise); if (r.scene) setSceneAsk(r.scene); setSuggested(r.replies?.length && added[0] ? { id: added[0].id, list: r.replies } : null); offerDue.current = true; },
+    onResult: (r, added) => {
+      if (r.promise) setMade(r.promise);
+      if (r.scene) setSceneAsk(r.scene);
+      setSuggested(r.replies?.length && added[0] ? { id: added[0].id, list: r.replies } : null);
+      if (privateMode && privateFallbackReplies.current > 0) {
+        privateFallbackReplies.current -= 1;
+        setPrivateLines((lines) => [...lines.slice(-5), { id: `her-api-${Date.now()}`, from: 'her', text: r.reply }]);
+      }
+      offerDue.current = true;
+    },
     speak: her.speak,
     suggest: true,
     holdOffer: true
@@ -653,7 +674,7 @@ export function RoomV2(p: RoomV2Props) {
   const field = useRef<HTMLInputElement>(null);
   const sendRef = useRef<(text: string) => boolean>(() => false);
   sendRef.current = talk.send;
-  const voice = useVoice({ onStart: stopVoice, onFinal: (said) => { if (!sendRef.current(said)) setDraft(said); }, onNotice: p.onToast, field });
+  const voice = useVoice({ onStart: stopVoice, onFinal: (said) => { if (privateMode || !sendRef.current(said)) setDraft(said); }, onNotice: p.onToast, field });
   // Her idle loop while he types or speaks — and, with her voice on, whenever her audio is not sounding (before her
   // first sentence, between sentences, after she ends or is stopped).
   const voiceLed = her.willSpeak || her.phase !== 'off';
@@ -672,7 +693,15 @@ export function RoomV2(p: RoomV2Props) {
     if (!text) return;
     const connection = privateConnection.current;
     if (!connection) {
-      p.onToast(lang === 'zh-Hant' ? '數字人正在連線，請稍候' : lang === 'ja' ? 'デジタルヒューマンに接続中です' : 'Connecting to the digital human');
+      // The conversation stays playable while the visual RTC avatar is establishing. Its regular chat path supplies
+      // the Japanese reply, which is mirrored into this room; once RTC is ready subsequent lines use Vidu directly.
+      privateFallbackReplies.current += 1;
+      if (!talk.send(text)) {
+        privateFallbackReplies.current -= 1;
+        return;
+      }
+      setPrivateLines((lines) => [...lines.slice(-5), { id: `me-api-${Date.now()}`, from: 'me', text }]);
+      setDraft('');
       return;
     }
     setPrivateLines((lines) => [...lines.slice(-5), { id: `me-${Date.now()}`, from: 'me', text }]);
@@ -886,13 +915,17 @@ export function RoomV2(p: RoomV2Props) {
   const privateCards = CARDS.filter((card) => card.star === p.star && card.rarity === privateTier && !!state.owned[card.id]);
   const chosenPrivateCard = privateCard ? CARDS.find((card) => card.id === privateCard) ?? null : null;
   const privateBonus = p.star === 'eimi' && privateCard === EIMI_BONUS_CARD_ID;
+  const privateCover = LIVE_COVERS[p.star];
 
-  // The member conversation is a private 1-to-1 digital-human room. The composer waits for the live session
-  // and sends every line through that session.
+  // The member conversation is a private 1-to-1 digital-human room. Text remains usable while RTC starts; once the
+  // avatar is online the same composer sends directly through its live session.
   if (!p.incoming) return (
-    <div className={`room2 private-live${privateEntering ? ' is-entering' : ''}${privateReady ? ' is-ready' : ''}`} data-testid="room" data-star={p.star}>
-      <div className="private-live-avatar" aria-label={`${p.name} 1v1 live`}>
-        <ResponsiveLiveCover cover={LIVE_COVERS[p.star]} className="private-live-cover" eager />
+    <div className={`room2 private-live${privateEntering ? ' is-entering' : ''}${privateReady ? ' is-ready' : ''}${privateUnavailable ? ' is-unavailable' : ''}`} data-testid="room" data-star={p.star}>
+      <div className="private-live-avatar" aria-label={`${p.name} 1v1 live`} style={{
+        '--private-cover-mobile': `url("${privateCover.mobile}")`,
+        '--private-cover-desktop': `url("${privateCover.desktop}")`
+      } as CSSProperties}>
+        <ResponsiveLiveCover cover={privateCover} className="private-live-cover" eager />
         <div ref={privateStream} className="private-live-stream" />
         <i className="private-live-glass" aria-hidden="true" />
         {privateBonus && <SceneVideo key={privateBonusReaction?.id ?? 'eimi-bonus-idle'} entry={privateBonusReaction ?? eimiBonusIdle()} active loop={!privateBonusReaction}
@@ -905,7 +938,7 @@ export function RoomV2(p: RoomV2Props) {
           <Icon name="back" size={20} /><span>{roomText('leave', lang)}</span>
         </button>
         <div className="private-live-identity">
-          <span><i />1V1 DIGITAL HUMAN · {privateReady ? 'ONLINE' : privateConnected ? 'STARTING' : 'CONNECTING'}</span>
+          <span><i />1V1 · {privateReady ? 'DIGITAL HUMAN ONLINE' : privateUnavailable ? 'CHAT ONLINE' : privateConnected ? 'DIGITAL HUMAN STARTING' : 'DIGITAL HUMAN CONNECTING'}</span>
           <strong>{p.name}</strong><small>{timer}</small>
         </div>
       </header>
@@ -945,9 +978,9 @@ export function RoomV2(p: RoomV2Props) {
 
       <form className="private-live-composer" onSubmit={onSubmit} data-testid="room-composer">
         <label htmlFor="room-input" className="sr-only">{t('common.message')}</label>
-        <input id="room-input" ref={field} value={draft} maxLength={300} autoComplete="off" enterKeyHint="send" disabled={left === 0 || !privateConnected}
-          placeholder={left === 0 ? t('chat.limitTitle') : !privateConnected ? (lang === 'zh-Hant' ? '數字人連線中…' : lang === 'ja' ? 'デジタルヒューマンに接続中…' : 'Connecting to the digital human…') : roomText('say', lang)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onChange={(event) => setDraft(event.target.value)} />
-        <button type="submit" aria-label={t('common.send')} disabled={!privateConnected || left === 0 || !draft.trim()}><Icon name="send" size={19} /></button>
+        <input id="room-input" ref={field} value={draft} maxLength={300} autoComplete="off" enterKeyHint="send" disabled={left === 0}
+          placeholder={left === 0 ? t('chat.limitTitle') : roomText('say', lang)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onChange={(event) => setDraft(event.target.value)} />
+        <button type="submit" aria-label={t('common.send')} disabled={busy || left === 0 || !draft.trim()}><Icon name="send" size={19} /></button>
       </form>
       {giftOpen && <GiftSheet call localSession={import.meta.env.DEV || !getToken()} onClose={() => setGiftOpen(false)} onSent={(r) => { setGiftOpen(false); p.onGift(r); }} />}
     </div>

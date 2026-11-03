@@ -7,7 +7,7 @@
  */
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ChatSendResT } from '@jstar/shared/contracts';
-import type { StarId } from '@jstar/shared/domain';
+import type { Lang, StarId } from '@jstar/shared/domain';
 import { chatLeftOf, type Msg } from '../lib/state';
 import { uid, useStore, useT } from '../lib/store';
 import { chat, errorCode, isBlocked, serverMode } from '../services/api';
@@ -44,6 +44,8 @@ export interface ChatSendOptions {
   /** Messages sent on this screen (his and her replies): the history merge keeps them (N-50). */
   sentHere: Set<string>;
   onToast: (msg: string) => void;
+  /** Override the UI language for a room whose character must always answer in one language. */
+  language?: Lang;
   /** Before his message goes (the chat page clears its scene and pickup asks). */
   onStart?: () => void;
   /** Her reply arrived: what was added after his message, and how long the log was before he sent it. */
@@ -108,12 +110,13 @@ export function useChatSend(star: StarId, o: ChatSendOptions): ChatSend {
     try {
       // N-58: her service busy (503), a timeout, a dropped connection or a rate limit (after its Retry-After, at most
       // 3 s) is tried once more by itself before he hears of it.
-      const r = await chat(stateRef.current, star, text, t.lang, setLive, o.suggest).catch(async (e: unknown) => {
+      const replyLanguage = o.language ?? t.lang;
+      const r = await chat(stateRef.current, star, text, replyLanguage, setLive, o.suggest).catch(async (e: unknown) => {
         const wait = retryWaitMs(e);
         if (wait == null) throw e;
         setLive(null);
         await new Promise((ok) => setTimeout(ok, wait));
-        return chat(stateRef.current, star, text, t.lang, setLive, o.suggest);
+        return chat(stateRef.current, star, text, replyLanguage, setLive, o.suggest);
       });
       actions.applyChat(star, r);
       const add: Msg[] = [{ id: uid(), from: 'her', text: r.reply }];

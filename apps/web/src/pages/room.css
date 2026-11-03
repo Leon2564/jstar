@@ -52,14 +52,30 @@ html:has(.home.room-v2), body:has(.home.room-v2) { overflow: hidden; overscroll-
 /* 1v1 live: a desktop-live layout over the same digital-human stage. The cover and RTC video share the exact box,
    so the provider can take over without a crop or position jump. */
 .private-live { overflow: hidden; background: #090b18; }
-.private-live-avatar { position: absolute; inset: 0; z-index: 0; background: #090b18; overflow: hidden; }
+.private-live-avatar {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #090b18;
+  background-image: linear-gradient(rgba(9,11,24,.08), rgba(9,11,24,.08)), var(--private-cover-mobile);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.private-live-avatar > picture { position: absolute; z-index: 1; inset: 0; display: block; overflow: hidden; }
 .private-live-cover-image, .private-live-cover, .private-live-stream, .private-live-stream > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .private-live-stream > video { opacity: 1 !important; }
 .private-live[data-star='eimi'] .private-live-cover-image, .private-live[data-star='eimi'] .private-live-cover, .private-live[data-star='eimi'] .private-live-stream > video { object-position: 62% center; }
 .private-live-cover-image { z-index: 0; }
-.private-live-cover { z-index: 1; transform: scale(1.08); filter: blur(18px) saturate(.75) brightness(.78); transition: opacity 1s cubic-bezier(.22,.61,.36,1), visibility 0s linear 1s; }
+.private-live-cover { z-index: 1; display: block; opacity: 1; visibility: visible; transform: scale(1.08); filter: blur(18px) saturate(.75) brightness(.78); transition: opacity 1s cubic-bezier(.22,.61,.36,1), visibility 0s linear 1s; }
 .private-live-stream { z-index: 2; opacity: 0; transition: opacity 1s cubic-bezier(.22,.61,.36,1); }
-.private-live-glass { position: absolute; z-index: 3; inset: -30px; pointer-events: none; background: linear-gradient(145deg, rgba(235,222,230,.2), rgba(20,22,47,.38)); backdrop-filter: blur(28px) saturate(.72); opacity: 1; visibility: visible; transition: opacity 1s cubic-bezier(.22,.61,.36,1), visibility 0s linear 1s; }
+.private-live-glass { position: absolute; z-index: 3; inset: -30px; display: grid; place-items: center; pointer-events: none; background: linear-gradient(145deg, rgba(235,222,230,.18), rgba(20,22,47,.44)); -webkit-backdrop-filter: blur(30px) saturate(.72); backdrop-filter: blur(30px) saturate(.72); opacity: 1; visibility: visible; transition: opacity 1s cubic-bezier(.22,.61,.36,1), visibility 0s linear 1s; }
+.private-live-glass::before { content: ''; width: 38px; height: 38px; border: 1px solid rgba(239,232,237,.28); border-top-color: var(--rose-glow); border-radius: 50%; box-shadow: 0 0 24px rgba(210,135,154,.12); animation: privateLiveSpin 1.25s linear infinite; }
+.private-live-glass::after { content: 'DIGITAL HUMAN · CONNECTING'; position: absolute; top: calc(50% + 38px); color: rgba(239,232,237,.72); font: 10px var(--sans); letter-spacing: .18em; }
+.private-live.is-unavailable .private-live-glass::before { animation: none; border-color: rgba(239,232,237,.28); box-shadow: inset 0 0 0 10px rgba(210,135,154,.08); }
+.private-live.is-unavailable .private-live-glass::after { content: 'CHAT ONLINE · AVATAR RETRY LATER'; }
+@keyframes privateLiveSpin { to { transform: rotate(360deg); } }
 .private-live.is-ready .private-live-stream { opacity: 1; }
 .private-live.is-ready .private-live-cover, .private-live.is-ready .private-live-glass { opacity: 0; visibility: hidden; }
 .private-live-bonus { position: absolute !important; inset: 0; z-index: 4; }
@@ -115,7 +131,11 @@ html:has(.home.room-v2), body:has(.home.room-v2) { overflow: hidden; overscroll-
   }
   .private-live-avatar {
     right: var(--private-live-rail);
-    background: #050611;
+    background-color: #050611;
+    background-image: linear-gradient(rgba(5,6,17,.06), rgba(5,6,17,.06)), var(--private-cover-desktop);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   .private-live-cover-image,
   .private-live-cover,
