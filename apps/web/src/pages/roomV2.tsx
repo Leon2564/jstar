@@ -36,6 +36,7 @@ import { offerClips, sceneLink, type Offer } from '../scene/offer';
 import { BrandMark, BtnLine, BtnRose, CornerFrame, HairlineInput, NightFade, PrintPhoto, ReplyChoice, RuleCounter, Sparkles, SpacedLabel, StarRuleSwitcher, VerticalName, Waveform } from '../system';
 import { REPLIED, SEND_FAILED, useChatSend } from './chatSend';
 import { connectLiveAvatar, type LiveAvatarConnection } from '../lib/viduLive';
+import { LIVE_COVERS, ResponsiveLiveCover, liveLayoutForViewport } from '../components/liveCover';
 import { CARDS, cardArt, cardTitle } from '../data/cards';
 import { EIMI_BONUS_CARD_ID, EIMI_BONUS_REACTIONS, eimiBonusIdle, eimiBonusReaction } from '../data/eimiBonusMedia';
 import { getToken } from '../services/http';
@@ -586,9 +587,10 @@ export function RoomV2(p: RoomV2Props) {
     const connect = () => {
       if (!target || !alive) return;
       target.replaceChildren();
+      const layout = liveLayoutForViewport();
       void connectLiveAvatar(p.star, target, () => {
         if (alive) setPrivateReady(true);
-      }, lang).then((connection) => {
+      }, 'ja', layout).then((connection) => {
         if (!alive) { void connection?.close(); return; }
         if (!connection) { retry(); return; }
         retryCount = 0;
@@ -890,8 +892,9 @@ export function RoomV2(p: RoomV2Props) {
   if (!p.incoming) return (
     <div className={`room2 private-live${privateEntering ? ' is-entering' : ''}${privateReady ? ' is-ready' : ''}`} data-testid="room" data-star={p.star}>
       <div className="private-live-avatar" aria-label={`${p.name} 1v1 live`}>
-        {p.star === 'eimi' && <img className="private-live-cover" src="/media/live/eimi-private-base.png" alt="" />}
+        <ResponsiveLiveCover cover={LIVE_COVERS[p.star]} className="private-live-cover" eager />
         <div ref={privateStream} className="private-live-stream" />
+        <i className="private-live-glass" aria-hidden="true" />
         {privateBonus && <SceneVideo key={privateBonusReaction?.id ?? 'eimi-bonus-idle'} entry={privateBonusReaction ?? eimiBonusIdle()} active loop={!privateBonusReaction}
           className="private-live-bonus" onDone={privateBonusReaction ? () => setPrivateBonusReaction(null) : undefined} />}
         <i className="private-live-vignette" />

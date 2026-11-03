@@ -11,14 +11,16 @@ import { uid, useStore, useT } from '../lib/store';
 import type { Msg } from '../lib/state';
 import { ApiError, DEMO_OTP, EMAIL_RE, bootstrap, errorCode, isBlocked, redeemSerial, trialChat, type Login } from '../services/api';
 import { Header, Icon, OfflineLine, Toast, Typing, useToast } from '../components/ui';
-import { SceneVideo, media, mediaFor, sceneFor, stillOf, usePortrait } from '../components/stage';
+import { SceneVideo, media, sceneFor, stillOf } from '../components/stage';
 import { StarAvatar } from '../components/starAvatar';
+import { LIVE_COVERS, ResponsiveLiveCover, liveLayoutForViewport } from '../components/liveCover';
 import '../system/system.css';
 import '../styles/member.css';
 import '../styles/flows.css';
 import { useHerVoice } from '../lib/herVoice';
 import { setSound, useSound } from '../lib/sound';
 import { ChargeModal } from '../components/chargeModal';
+import { connectLiveAvatar, type LiveAvatarConnection } from '../lib/viduLive';
 
 const PICK_FACE_X: Record<string, string> = {
   mahiro: '63%',
@@ -61,8 +63,6 @@ export function PickStar() {
 }
 
 const QUICK = ['trial.q1', 'trial.q2', 'trial.q3'] as const;
-const TRIAL_REACTIONS = ['react-a', 'react-b', 'react-c'] as const;
-
 export function TrialChat() {
   const { state, actions } = useStore();
   const t = useT();
@@ -77,8 +77,8 @@ export function TrialChat() {
   const chatBodyRef = useRef<HTMLDivElement>(null);
   /** Her reply while it streams in; null before the first token and once it is stored in the log. */
   const [live, setLive] = useState<string | null>(null);
-  const [reaction, setReaction] = useState<typeof TRIAL_REACTIONS[number] | null>(null);
-  const reactionSeq = useRef(0);
+  const [avatarReady, setAvatarReady] = useState(false);
+  const avatarStream = useRef<HTMLDivElement>(null);
   /** M7: his messages that did not go through: `retry` can be sent again, `blocked` cannot. */
   const [failed, setFailed] = useState<Record<string, 'retry' | 'blocked'>>({});
   const [toast, setToast] = useToast();
@@ -87,10 +87,38 @@ export function TrialChat() {
   // B-P2: her two-line line as one — after a full-width 。 nothing, a space only between Latin sentences.
   const opening: Msg = { id: 'open', from: 'her', text: `${oneLine(t(`star.${star.id}.line` as Key))}\n${t('trial.open')}` };
   const log = [opening, ...state.trialLog];
-  // L14: her still beside the chat on a desktop (A2 night), and faintly behind it on a phone.
-  const portrait = usePortrait();
-  const idle = mediaFor(`${star.id}-idle`, portrait) ?? sceneFor(star.id, portrait) ?? media(`${star.id}-hero-9x16`);
-  const visual = (reaction ? mediaFor(`${star.id}-${reaction}`, portrait) : undefined) ?? idle;
+  useEffect(() => {
+    let alive = true;
+    let retryTimer = 0;
+    let startTimer = 0;
+    let retryAttempt = 0;
+    let connection: LiveAvatarConnection | null = null;
+    const target = avatarStream.current;
+    if (!target) return;
+    setAvatarReady(false);
+    const retry = () => {
+      if (!alive) return;
+      retryTimer = window.setTimeout(start, Math.min(15_000, 2_400 * (2 ** retryAttempt)));
+      retryAttempt += 1;
+    };
+    const start = () => {
+      if (!alive) return;
+      target.replaceChildren();
+      void connectLiveAvatar(star.id, target, () => alive && setAvatarReady(true), 'ja', liveLayoutForViewport()).then((next) => {
+        if (!alive) { void next?.close(); return; }
+        if (!next) { retry(); return; }
+        retryAttempt = 0;
+        connection = next;
+      }).catch(retry);
+    };
+    startTimer = window.setTimeout(start, 100);
+    return () => {
+      alive = false;
+      window.clearTimeout(startTimer);
+      window.clearTimeout(retryTimer);
+      void connection?.close();
+    };
+  }, [star.id]);
 
   useEffect(() => { endRef.current?.scrollIntoView?.({ block: 'end', behavior: 'smooth' }); }, [log.length, busy, live, done]);
   // A reply picked on the home page (?say=) is sent once on arrival, then dropped from the address.
@@ -117,16 +145,7 @@ export function TrialChat() {
     if (!again) { setDraft(''); actions.trialAppend([{ id, from: 'me', text: msg }]); }
     setFailed((f) => { const n = { ...f }; delete n[id]; return n; });
     try {
-      let reacted = false;
-      const showReaction = () => {
-        if (reacted) return;
-        reacted = true;
-        const next = TRIAL_REACTIONS[reactionSeq.current % TRIAL_REACTIONS.length];
-        reactionSeq.current += 1;
-        setReaction(next);
-      };
-      const r = await trialChat(state, star.id, msg, t.lang, (text) => { showReaction(); setLive(text); });
-      showReaction();
+      const r = await trialChat(state, star.id, msg, t.lang, (text) => setLive(text));
       actions.trialAppend([{ id: uid(), from: 'her', text: r.reply }]);
       actions.setTrialLeft(r.trialMessagesLeft ?? 0);
       her.speak(r.reply, r.voiceSig);
@@ -157,9 +176,12 @@ export function TrialChat() {
   const onHistoryTouchEnd = () => { pullStart.current = null; };
 
   return (
-    <div className={`page chat chat-night trial${historyOpen ? ' history-open' : ''}`} data-star={star.id}>
-      {visual && <img className="trial-backdrop" src={stillOf(visual)} alt="" decoding="async" draggable={false} aria-hidden="true" />}
-      {visual && <SceneVideo key={visual.id} entry={visual} active className="trial-still" loop={!reaction} onDone={reaction ? () => setReaction(null) : undefined} />}
+    <div className={`page chat chat-night trial${historyOpen ? ' history-open' : ''}${avatarReady ? ' is-avatar-ready' : ''}`} data-star={star.id}>
+      <div className="trial-avatar" aria-label={`${starName(star, t.lang)} 1v1 live`}>
+        <ResponsiveLiveCover cover={LIVE_COVERS[star.id]} className="trial-avatar-cover" eager />
+        <div ref={avatarStream} className="trial-avatar-stream" />
+        <i className="trial-avatar-glass" aria-hidden="true" />
+      </div>
       <div className="trial-col">
         <header className="chat-hdr">
           <Link to="/pick" className="icon-btn" aria-label={t('common.back')}><Icon name="back" /></Link>

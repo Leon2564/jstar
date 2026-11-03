@@ -11,32 +11,14 @@ import { speechEngine, type Engine } from '../lib/voice';
 import type { GiftSendResT } from '@jstar/shared/contracts';
 import type { LiveEventT } from '../services/http';
 import { getToken } from '../services/http';
+import { LIVE_COVERS, ResponsiveLiveCover, liveLayoutForViewport, type LiveCover } from '../components/liveCover';
 import '../styles/live.css';
-
-type LiveCover = { desktop: string; mobile: string };
-
-const LIVE_COVERS: Record<StarId, LiveCover> = {
-  mahiro: { desktop: '/media/live/mahiro-public-live-16x9.jpg', mobile: '/media/live/mahiro-public-live-9x16.jpg' },
-  nana: { desktop: '/media/live/nana-public-live-16x9.webp', mobile: '/media/live/nana-public-live-9x16.jpg' },
-  unpai: { desktop: '/media/live/unpai-public-live-16x9.jpg', mobile: '/media/live/unpai-public-live-9x16.jpg' },
-  alice: { desktop: '/media/live/alice-public-live-16x9.jpg', mobile: '/media/live/alice-public-live-9x16.jpg' },
-  eimi: { desktop: '/media/live/eimi-public-live-16x9.jpg', mobile: '/media/live/eimi-public-live-9x16.jpg' }
-};
-
-function ResponsiveLiveCover({ cover, className, eager = false }: { cover: LiveCover; className: string; eager?: boolean }) {
-  return (
-    <picture>
-      <source media="(min-width: 1024px)" srcSet={cover.desktop} />
-      <img className={className} src={cover.mobile} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" />
-    </picture>
-  );
-}
 
 /** Public 1-to-many live lobby. Every configured avatar session is warmed here, without joining or playing it. */
 export function LiveLobby() {
   const t = useT();
   useEffect(() => {
-    const desktop = window.matchMedia?.('(min-width: 1024px)').matches ?? window.innerWidth >= 1024;
+    const desktop = liveLayoutForViewport() === 'desktop';
     prewarmLiveAvatars(CAST.map((star) => star.id), 'ja', desktop ? 'desktop' : 'mobile');
     for (const cover of Object.values(LIVE_COVERS)) {
       const image = new Image();
@@ -266,7 +248,7 @@ function AvatarLiveStage({ starId, cover, label, language, onReady, onReply }: {
     const start = (): void => {
       if (!alive) return;
       setStatus('connecting');
-      const layout = window.matchMedia?.('(min-width: 1024px)').matches ?? window.innerWidth >= 1024 ? 'desktop' : 'mobile';
+      const layout = liveLayoutForViewport();
       connectLiveAvatar(starId, container, () => alive && setStatus('live'), 'ja', layout).then((next) => {
         if (!alive) { void next?.close(); return; }
         if (!next) { retry(); return; }

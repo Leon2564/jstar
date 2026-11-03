@@ -54,15 +54,17 @@ html:has(.home.room-v2), body:has(.home.room-v2) { overflow: hidden; overscroll-
 .private-live { overflow: hidden; background: #090b18; }
 .private-live-avatar { position: absolute; inset: 0; z-index: 0; background: #090b18; overflow: hidden; }
 .private-live-cover-image, .private-live-cover, .private-live-stream, .private-live-stream > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.private-live-stream > video { opacity: 1 !important; }
 .private-live[data-star='eimi'] .private-live-cover-image, .private-live[data-star='eimi'] .private-live-cover, .private-live[data-star='eimi'] .private-live-stream > video { object-position: 62% center; }
 .private-live-cover-image { z-index: 0; }
-.private-live-cover { z-index: 1; transition: opacity 700ms var(--ease); }
-.private-live-stream { z-index: 2; opacity: 0; transition: opacity 700ms var(--ease); }
+.private-live-cover { z-index: 1; transform: scale(1.08); filter: blur(18px) saturate(.75) brightness(.78); transition: opacity 1s cubic-bezier(.22,.61,.36,1), visibility 0s linear 1s; }
+.private-live-stream { z-index: 2; opacity: 0; transition: opacity 1s cubic-bezier(.22,.61,.36,1); }
+.private-live-glass { position: absolute; z-index: 3; inset: -30px; pointer-events: none; background: linear-gradient(145deg, rgba(235,222,230,.2), rgba(20,22,47,.38)); backdrop-filter: blur(28px) saturate(.72); opacity: 1; visibility: visible; transition: opacity 1s cubic-bezier(.22,.61,.36,1), visibility 0s linear 1s; }
 .private-live.is-ready .private-live-stream { opacity: 1; }
-.private-live.is-ready .private-live-cover { opacity: 0; }
-.private-live-bonus { position: absolute !important; inset: 0; z-index: 3; }
+.private-live.is-ready .private-live-cover, .private-live.is-ready .private-live-glass { opacity: 0; visibility: hidden; }
+.private-live-bonus { position: absolute !important; inset: 0; z-index: 4; }
 .private-live-bonus > .scene-poster, .private-live-bonus > .scene-video { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.private-live-vignette { position: absolute; inset: 0; z-index: 4; pointer-events: none; background: linear-gradient(90deg, rgba(7,9,24,.72), transparent 38%, transparent 72%, rgba(7,9,24,.3)), linear-gradient(0deg, rgba(7,9,24,.82), transparent 38%); }
+.private-live-vignette { position: absolute; inset: 0; z-index: 5; pointer-events: none; background: linear-gradient(90deg, rgba(7,9,24,.72), transparent 38%, transparent 72%, rgba(7,9,24,.3)), linear-gradient(0deg, rgba(7,9,24,.82), transparent 38%); }
 .private-live > :not(.private-live-avatar) { z-index: 4; }
 .private-live.is-entering .private-live-head, .private-live.is-entering .private-live-actions, .private-live.is-entering .private-live-chat, .private-live.is-entering .private-live-composer { opacity: 0; transform: translateY(10px); }
 .private-live-head, .private-live-actions, .private-live-chat, .private-live-composer { transition: opacity 420ms var(--ease), transform 420ms var(--ease); }
