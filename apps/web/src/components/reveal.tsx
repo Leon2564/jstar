@@ -165,7 +165,7 @@ export function RevealCard({ k, item, face, omen, onTap, label, dup, children, i
     <div className={`rv${face ? ' is-face' : ''}${face && !item.isNew ? ' is-duplicate' : ''}${omen ? ` omen omen-${omen}` : ''}`} data-reveal={k} style={{ '--k': k } as React.CSSProperties}>
       <div className="rv-inner">
         <button type="button" className="rv-back" aria-label={label} onClick={onTap} disabled={!interactive || face || !!omen} tabIndex={!interactive || face ? -1 : 0} aria-hidden={face || undefined}>
-          <img src="/cards/jstar-genesis-back.png" alt="" draggable={false} />
+          <img src="/cards/jstar-genesis-back.webp" alt="" draggable={false} />
         </button>
         <div className="rv-face" aria-hidden={!face}>{<CardArt card={item.card} small />}</div>
       </div>

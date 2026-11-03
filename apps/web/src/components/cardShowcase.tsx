@@ -114,7 +114,7 @@ export function CardShowcase({ card, onClose }: { card: CardDef; onClose: () => 
               {motionSrc && <video ref={motionRef} className={`card-showcase-motion${motionPlaying ? ' is-playing' : ''}`} src={motionSrc} muted playsInline preload="metadata" onEnded={() => setMotionPlaying(false)} onError={() => setMotionPlaying(false)} />}
               {motionSrc && <i className={`card-showcase-motion-fx${motionPlaying ? ' is-playing' : ''}`} aria-hidden="true" />}
             </div>
-            <div className="card-showcase-back"><img src="/cards/jstar-genesis-back.png" alt="" draggable={false} /></div>
+            <div className="card-showcase-back"><img src="/cards/jstar-genesis-back.webp" alt="" draggable={false} /></div>
           </div>
         </div>
         <div className="card-showcase-copy" aria-live="polite">

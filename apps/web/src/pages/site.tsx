@@ -2,7 +2,6 @@ import { localText } from '@jstar/shared/domain';
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { CAST, getStar } from '../data/cast';
-import { loaderEntry } from '../data/heroMedia';
 import { eventStatus, useEvents } from '../data/events';
 import { starFirst, starName, verticalName, type Key, fmtDate } from '../i18n';
 import { safeNext } from '../lib/safeNext';
@@ -221,10 +220,61 @@ function HeroClip({ id, portrait, crop, enterCrop, phase, active, reaction, bonu
   );
 }
 
-/**
- * Brand loading screen: the starry night, one of the five saying hello, a hairline progress.
- * It fades out into a stage that is already playing (the first hero poster is preloaded in index.html).
- */
+/** Download one media object into the browser cache while reporting real transferred bytes. */
+async function mediaFileSize(src: string, signal: AbortSignal): Promise<number> {
+  const response = await fetch(src, { method: 'HEAD', cache: 'force-cache', signal });
+  if (!response.ok) return 0;
+  return Number(response.headers.get('content-length')) || 0;
+}
+
+async function cacheMediaFile(src: string, signal: AbortSignal, onProgress?: (loaded: number, total: number) => void): Promise<void> {
+  const response = await fetch(src, { cache: 'force-cache', signal });
+  if (!response.ok) throw new Error(`media_preload_${response.status}`);
+  const total = Number(response.headers.get('content-length')) || 0;
+  if (!response.body) {
+    const body = await response.arrayBuffer();
+    onProgress?.(body.byteLength, total || body.byteLength);
+    return;
+  }
+  const reader = response.body.getReader();
+  let loaded = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    loaded += value.byteLength;
+    onProgress?.(loaded, total);
+  }
+  onProgress?.(loaded, total || loaded);
+}
+
+async function cacheMediaFileWithRetry(src: string, signal: AbortSignal, onProgress: (loaded: number, total: number) => void): Promise<void> {
+  let retry = 0;
+  while (!signal.aborted) {
+    try {
+      await cacheMediaFile(src, signal, onProgress);
+      return;
+    } catch (error) {
+      if (signal.aborted) throw error;
+      retry += 1;
+      await new Promise<void>((resolve, reject) => {
+        const timer = window.setTimeout(resolve, Math.min(8_000, 750 * 2 ** Math.min(retry, 4)));
+        signal.addEventListener('abort', () => { window.clearTimeout(timer); reject(new DOMException('Aborted', 'AbortError')); }, { once: true });
+      });
+    }
+  }
+  throw new DOMException('Aborted', 'AbortError');
+}
+
+const LOAD_GAME_COPY = {
+  'zh-Hant': { title: '星光收集', hint: '等待時點擊星光', score: '已收集', preparing: '正在準備主視覺', ready: '準備完成', eta: '預計剩餘' },
+  ja: { title: 'スターキャッチ', hint: '待っている間に星をタップ', score: '集めた星', preparing: 'メインビジュアルを準備中', ready: '準備完了', eta: '残り約' },
+  en: { title: 'Star Catch', hint: 'Catch starlight while you wait', score: 'Collected', preparing: 'Preparing main visuals', ready: 'Ready', eta: 'About' },
+  ko: { title: '별빛 모으기', hint: '기다리는 동안 별을 눌러 보세요', score: '모은 별', preparing: '메인 비주얼 준비 중', ready: '준비 완료', eta: '약' }
+} as const;
+
+const formatLoadBytes = (bytes: number) => bytes >= 1024 ** 2 ? `${(bytes / 1024 ** 2).toFixed(1)} MB` : `${Math.round(bytes / 1024)} KB`;
+const formatLoadTime = (seconds: number) => seconds >= 60 ? `${Math.ceil(seconds / 60)} min` : `${Math.max(1, Math.ceil(seconds))} s`;
+
 export function Loading() {
   const t = useT();
   const nav = useNavigate();
@@ -233,36 +283,74 @@ export function Loading() {
   const star = useMemo(() => CAST[Math.floor(Math.random() * CAST.length)], []);
   const night = media('loading-stars');
   const [pct, setPct] = useState(0);
-  // The percentage is real: the home's first poster (45), her first clip able to play (40) and the fonts (15),
-  // fetched here with the URLs the stage will use, so the stage opens already playing. Never longer than 4.5 s.
+  const [loadState, setLoadState] = useState({ loaded: 0, total: 0, done: 0, files: 0, eta: 0 });
+  const [score, setScore] = useState(0);
+  const [spark, setSpark] = useState({ x: 50, y: 48, key: 0 });
+  const gameCopy = LOAD_GAME_COPY[t.lang];
   useEffect(() => {
-    const t0 = performance.now();
-    let fonts = !document.fonts;
-    void document.fonts?.ready.then(() => { fonts = true; });
-    const e = next === '/' ? loaderEntry(window.matchMedia?.('(orientation: portrait)').matches ?? true) : undefined;
-    let poster = !e;
-    let video = !e || !motionAllowed();
-    if (e) {
-      const img = new Image();
-      if (e.posters) { img.sizes = '100vw'; img.srcset = e.posters.map((q) => q.src + ' ' + q.width + 'w').join(', '); }
-      img.onload = img.onerror = () => { poster = true; };
-      img.src = e.poster;
-      const src = video ? undefined : sourcesFor(e)[0]?.src;
-      if (src) {
-        const v = document.createElement('video');
-        v.muted = true; v.preload = 'auto';
-        v.oncanplay = v.onerror = () => { video = true; };
-        v.src = src; v.load();
-      } else video = true;
-    }
-    let shown = 0;
-    const id = setInterval(() => {
-      const el = performance.now() - t0;
-      const target = el > 4500 ? 100 : (poster ? 45 : 0) + (video || el > 2600 ? 40 : 0) + (fonts ? 15 : 0);
-      const to = Math.min(target, Math.round(el / 9), shown + Math.max(1, Math.round((target - shown) / 3)));
-      if (to !== shown) { shown = to; setPct(to); }
-    }, 60);
-    return () => clearInterval(id);
+    const move = () => setSpark((old) => ({ x: 10 + Math.random() * 80, y: 14 + Math.random() * 70, key: old.key + 1 }));
+    const timer = window.setInterval(move, 1_400);
+    return () => window.clearInterval(timer);
+  }, []);
+  // Game-style critical preload: cache all five heroines' twelve clips (entrance, idle, ten reactions) and posters.
+  // Playback then reads the exact same URLs from the browser cache instead of downloading while already moving.
+  useEffect(() => {
+    const controller = new AbortController();
+    const run = async () => {
+      const portrait = window.matchMedia?.('(orientation: portrait)').matches ?? true;
+      const clipNames = ['enter', 'idle', ...Array.from({ length: 10 }, (_, index) => `react-${String.fromCharCode(97 + index)}`)];
+      const entries = next === '/' ? CAST.flatMap((member) => clipNames.map((clip) => mediaFor(`${member.id}-${clip}`, portrait))) : [];
+      const clipUrls = entries.flatMap((entry) => {
+        if (!entry) return [];
+        const source = sourcesFor(entry)[0] ?? entry.sources[0];
+        return source ? [source.src] : [];
+      });
+      const videoUrls = Array.from(new Set(clipUrls));
+      const clipCountByUrl = new Map<string, number>();
+      for (const url of clipUrls) clipCountByUrl.set(url, (clipCountByUrl.get(url) ?? 0) + 1);
+      const clipTotal = clipUrls.length;
+      const posterUrls = Array.from(new Set(entries.flatMap((entry) => entry?.poster ? [entry.poster] : [])));
+      const urls = [...videoUrls, ...posterUrls.filter((url) => !videoUrls.includes(url))];
+      const videoUrlSet = new Set(videoUrls);
+      if (!urls.length) { await document.fonts?.ready; setPct(100); return; }
+      const sizes = new Map<string, number>();
+      await Promise.all(urls.map(async (url) => sizes.set(url, await mediaFileSize(url, controller.signal).catch(() => 0))));
+      const knownTotal = [...sizes.values()].reduce((sum, size) => sum + size, 0);
+      const byUrl = new Map<string, number>();
+      let resourcesDone = 0;
+      let clipsDone = 0;
+      let lastPaint = 0;
+      const started = performance.now();
+      const report = (force = false) => {
+        const now = performance.now();
+        if (!force && now - lastPaint < 100) return;
+        lastPaint = now;
+        const loaded = [...byUrl.values()].reduce((sum, size) => sum + size, 0);
+        const ratio = knownTotal ? loaded / knownTotal : resourcesDone / urls.length;
+        const elapsed = Math.max(0.25, (now - started) / 1000);
+        const speed = loaded / elapsed;
+        const eta = knownTotal && speed ? Math.max(0, (knownTotal - loaded) / speed) : 0;
+        setLoadState({ loaded, total: knownTotal, done: clipsDone, files: clipTotal, eta });
+        setPct(Math.min(99, Math.max(1, Math.floor(ratio * 99))));
+      };
+      let cursor = 0;
+      const worker = async () => {
+        while (!controller.signal.aborted) {
+          const index = cursor++;
+          if (index >= urls.length) return;
+          const url = urls[index];
+          await cacheMediaFileWithRetry(url, controller.signal, (loaded) => { byUrl.set(url, loaded); report(); });
+          resourcesDone += 1;
+          if (videoUrlSet.has(url)) clipsDone += clipCountByUrl.get(url) ?? 1;
+          report(true);
+        }
+      };
+      await Promise.all([worker(), worker()]);
+      await document.fonts?.ready;
+      if (!controller.signal.aborted) { setPct(100); setLoadState((old) => ({ ...old, done: clipTotal, files: clipTotal, eta: 0 })); }
+    };
+    void run();
+    return () => controller.abort();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (pct >= 100) nav(next, { replace: true }); }, [pct, nav, next]);
   return (
@@ -274,7 +362,18 @@ export function Loading() {
       <div role="progressbar" aria-label={t('loading.label')} aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct}>
         <LoaderRing pct={pct} />
       </div>
-      <Link to={next} replace className="btn-text" style={{ position: 'absolute', right: 16, bottom: 20, display: 'flex', alignItems: 'center', padding: '0 12px', textDecoration: 'none' }}>{t('loading.skip')}</Link>
+      <div className="load-detail" aria-live="polite">
+        <span>{pct >= 100 ? gameCopy.ready : gameCopy.preparing} · {loadState.done}/{loadState.files}</span>
+        {loadState.total > 0 && <span>{formatLoadBytes(loadState.loaded)} / {formatLoadBytes(loadState.total)}{loadState.eta > 0 ? ` · ${gameCopy.eta} ${formatLoadTime(loadState.eta)}` : ''}</span>}
+      </div>
+      <section className="load-game" aria-label={gameCopy.title}>
+        <div className="load-game-head"><strong>{gameCopy.title}</strong><span>{gameCopy.score}: {score}</span></div>
+        <p>{gameCopy.hint}</p>
+        <button key={spark.key} type="button" className="load-game-spark" style={{ left: `${spark.x}%`, top: `${spark.y}%` }} aria-label={gameCopy.hint}
+          onClick={() => { setScore((value) => value + 1); setSpark((old) => ({ x: 10 + Math.random() * 80, y: 14 + Math.random() * 70, key: old.key + 1 })); }}>
+          <Icon name="spark" size={26} />
+        </button>
+      </section>
     </main>
   );
 }

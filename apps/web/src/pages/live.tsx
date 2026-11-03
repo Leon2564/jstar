@@ -17,7 +17,7 @@ type LiveCover = { desktop: string; mobile: string };
 
 const LIVE_COVERS: Record<StarId, LiveCover> = {
   mahiro: { desktop: '/media/live/mahiro-public-live-16x9.jpg', mobile: '/media/live/mahiro-public-live-9x16.jpg' },
-  nana: { desktop: '/media/live/nana-public-live-16x9.jpg', mobile: '/media/live/nana-public-live-9x16.jpg' },
+  nana: { desktop: '/media/live/nana-public-live-16x9.webp', mobile: '/media/live/nana-public-live-9x16.jpg' },
   unpai: { desktop: '/media/live/unpai-public-live-16x9.jpg', mobile: '/media/live/unpai-public-live-9x16.jpg' },
   alice: { desktop: '/media/live/alice-public-live-16x9.jpg', mobile: '/media/live/alice-public-live-9x16.jpg' },
   eimi: { desktop: '/media/live/eimi-public-live-16x9.jpg', mobile: '/media/live/eimi-public-live-9x16.jpg' }

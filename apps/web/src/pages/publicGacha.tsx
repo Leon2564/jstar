@@ -219,7 +219,7 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
                   {Array.from({ length: 6 }, (_, i) => (
                     <img
                       key={i}
-                      src="/cards/jstar-genesis-back.png"
+                      src="/cards/jstar-genesis-back.webp"
                       alt=""
                       style={{
                         '--i': i,

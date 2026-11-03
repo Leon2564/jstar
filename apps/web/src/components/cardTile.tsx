@@ -6,7 +6,7 @@ import { starName } from '../i18n';
 import { useT } from '../lib/store';
 import './cards.css';
 
-const CARD_BACK = '/cards/jstar-genesis-back.png';
+const CARD_BACK = '/cards/jstar-genesis-back.webp';
 const CARD_OFFSET: Record<CardDef['star'], number> = { mahiro: 0, nana: 30, unpai: 60, alice: 90, eimi: 120 };
 
 function cardNumber(card: CardDef): string {
