@@ -48,7 +48,7 @@ export function LangSelect() {
 
 export const SITE_NAV = [
   ['/', 'nav.home', 'Home'], ['/stars', 'nav.stars', 'Stars'], ['/features', 'nav.features', 'Features'],
-  ['/live', 'nav.live', 'Live'], ['/gacha', 'nav.gacha', 'Gacha'], ['/gallery', 'nav.cards', 'Cards'], ['/events', 'nav.events', 'Events']
+  ['/gacha', 'nav.gacha', 'Gacha'], ['/gallery', 'nav.cards', 'Cards'], ['/events', 'nav.events', 'Events']
 ] as const;
 /** Recharge is contextual: it opens from a credit balance or when chat credit is short. */
 export const siteNav = (_member: boolean) => SITE_NAV;

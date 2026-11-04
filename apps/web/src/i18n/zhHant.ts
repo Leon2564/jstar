@@ -12,7 +12,7 @@ export const zhHant: Dict = {
 
   'nav.home': '首頁', 'nav.stars': 'JSTARS', 'nav.features': '玩法介紹', 'nav.live': '直播', 'nav.gacha': '抽卡', 'nav.cards': '卡牌圖鑑', 'nav.events': '活動', 'nav.charge': "積分", 'nav.site': '網站',
 
-  'top.talk': '和她聊天', 'top.flag': '免註冊即可聊', 'top.serial': '輸入序號', 'top.serialTab': '序號', 'top.aiNote': '與您對話的是經本人授權的AI。',
+  'top.talk': '和她聊天', 'top.phone': '和她電話', 'top.flag': '免註冊即可聊', 'top.serial': '輸入序號', 'top.serialTab': '序號', 'top.aiNote': '與您對話的是經本人授權的AI。',
   'top.soundOn': '開啟聲音', 'top.soundOff': '關閉聲音', 'top.pick': '選擇本人', 'top.slot': '影片：{name}', 'top.slotSpec': '直式 1080×1920／6〜8秒循環',
 
   'menu.login': "登入／免費註冊", 'menu.mypage': '我的頁面', 'menu.serial': '序號', 'menu.lang': '語言',

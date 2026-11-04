@@ -836,16 +836,18 @@ export function Top() {
             ))}
           </div>
           <div style={{ position: 'relative', marginBottom: 12 }}>
-            {member
-              ? <Link to="/me/home" className="btn btn-rose magnetic" onClick={(event) => {
-                  event.preventDefault();
-                  actions.setStar(c.id);
-                  document.documentElement.classList.add('private-live-route-leave');
-                  window.setTimeout(() => nav('/me/home'), reduced ? 0 : 320);
-                }}>{t('top.talk')}</Link>
-              : <><Link to="/pick" className="btn btn-rose magnetic">{t('top.talk')}</Link><span className="flag">{t('top.flag')}</span></>}
+            <Link to={member ? `/me/chat?star=${c.id}` : '/trial?mode=text'} className="btn btn-rose magnetic"
+              onClick={() => { actions.setStar(c.id); actions.setTrialStar(c.id); }}>{t('top.talk')}</Link>
+            {!member && <span className="flag">{t('top.flag')}</span>}
           </div>
-          <Link to="/serial" className="btn btn-line">{t('top.serial')}</Link>
+          <Link to={member ? `/me/home?star=${c.id}` : `/signup?next=${encodeURIComponent(`/me/home?star=${c.id}`)}`}
+            className="btn btn-line" onClick={(event) => {
+              actions.setStar(c.id);
+              if (!member) return;
+              event.preventDefault();
+              document.documentElement.classList.add('private-live-route-leave');
+              window.setTimeout(() => nav(`/me/home?star=${c.id}`), reduced ? 0 : 320);
+            }}>{t('top.phone')}</Link>
           <p className="tiny top-note" style={{ margin: '14px 0 0' }}>{t('top.aiNote')}</p>
         </div>
         <aside className="top-news" aria-label={t('nav.events')}>

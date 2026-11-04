@@ -31,7 +31,8 @@ export const ja = {
   'nav.home': 'トップ', 'nav.stars': 'JSTARS', 'nav.features': '遊び方', 'nav.live': 'ライブ', 'nav.gacha': 'ガチャ', 'nav.cards': 'カード図鑑', 'nav.events': 'イベント', 'nav.charge': "クレジット",
   'nav.site': 'サイト',
 
-  'top.talk': '彼女と話す',
+  'top.talk': '彼女とチャット',
+  'top.phone': '彼女に電話',
   'top.flag': '登録なしで話せる',
   'top.serial': 'シリアルコードを入力',
   'top.serialTab': 'シリアル',

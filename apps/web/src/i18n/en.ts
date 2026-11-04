@@ -12,7 +12,7 @@ export const en: Dict = {
 
   'nav.home': 'Home', 'nav.stars': 'JSTARS', 'nav.features': 'How it works', 'nav.live': 'Live', 'nav.gacha': 'Gacha', 'nav.cards': 'Card gallery', 'nav.events': 'Events', 'nav.charge': "Credits", 'nav.site': 'Site',
 
-  'top.talk': 'Talk to her', 'top.flag': 'No sign-up needed', 'top.serial': 'Enter serial code', 'top.serialTab': 'Serial', 'top.aiNote': 'You are talking with an AI approved by her.',
+  'top.talk': 'Chat with her', 'top.phone': 'Call her', 'top.flag': 'No sign-up needed', 'top.serial': 'Enter serial code', 'top.serialTab': 'Serial', 'top.aiNote': 'You are talking with an AI approved by her.',
   'top.soundOn': 'Turn sound on', 'top.soundOff': 'Turn sound off', 'top.pick': 'Choose who', 'top.slot': 'Video: {name}', 'top.slotSpec': 'Portrait 1080×1920 / 6–8 s loop',
 
   'menu.login': "Log in / Sign up free", 'menu.mypage': 'My page', 'menu.serial': 'Serial code', 'menu.lang': 'Language',

@@ -20,7 +20,6 @@ import { SceneVideo, media, sceneFor, stillOf } from '../components/stage';
 import { CardArt, rankOf } from '../components/cardArt';
 import { CardShowcase } from '../components/cardShowcase';
 import { Footer, LEGAL, SNS } from '../components/footer';
-import { LiveFeaturePreview } from './live';
 import { LIVE_COVERS, ResponsiveLiveCover } from '../components/liveCover';
 import '../components/gift.css';
 import '../styles/site.css';
@@ -232,7 +231,7 @@ const PROFILE_HUB_COPY = {
 
 // f5 / f6: v1.1 (Nest), life together and the scenes. Their lines are reviewed (#84), but the scenes play in
 // production only once their clips exist (the publish rule), so production shows these two once the clips land.
-const FEATURES_V10 = ['f7', 'f1', 'f2', 'f3', 'f4'] as const;
+const FEATURES_V10 = ['f1', 'f2', 'f3', 'f4'] as const;
 const FEATURES_V11 = [...FEATURES_V10, 'f5', 'f6'] as const;
 
 export function Features() {
@@ -242,7 +241,7 @@ export function Features() {
   const f = FEATURES[i];
   const featureStar = CAST[i % CAST.length];
   // Until screen recordings of the app exist, each feature is shown with one of the five in her scene.
-  const clip = f === 'f7' ? undefined : media(`${featureStar.id}-breath-9x16`) ?? media(`${featureStar.id}-hero-9x16`);
+  const clip = media(`${featureStar.id}-breath-9x16`) ?? media(`${featureStar.id}-hero-9x16`);
   return (
     <main className="page features-page">
       <SiteHeader />
@@ -252,9 +251,7 @@ export function Features() {
             <button key={x} type="button" role="tab" id={`ft-${k}`} aria-controls="ft-panel" aria-selected={k === i} onClick={() => setI(k)}>{t(`${x}.short` as Key)}</button>
           ))}
         </div>
-        {f === 'f7'
-          ? <LiveFeaturePreview />
-          : clip
+        {clip
           ? <div key={`m${f}`} className="features-media media on-dark fade-in" style={{ '--feature-face-x': featureStar.id === 'eimi' ? '82%' : '50%' } as React.CSSProperties}><SceneVideo entry={clip} active /></div>
           : <MediaSlot key={`m${f}`} className="features-media fade-in" tint="var(--mist-deep)" label={t('features.video', { v: t(`${f}.video` as Key) })} spec={t('features.slotSpec')} />}
         <section key={`s${f}`} id="ft-panel" role="tabpanel" aria-labelledby={`ft-${i}`} className="features-text stack fade-in">
@@ -267,7 +264,7 @@ export function Features() {
           <p className="muted features-body">{t(`${f}.body` as Key)}</p>
         </section>
       </div>
-      <div className="bottom features-cta"><Link to={f === 'f7' ? '/live' : '/pick'} className="btn btn-navy magnetic">{t(f === 'f7' ? 'features.liveCta' : 'features.cta')}</Link></div>
+      <div className="bottom features-cta"><Link to="/pick" className="btn btn-navy magnetic">{t('features.cta')}</Link></div>
       <Footer />
     </main>
   );

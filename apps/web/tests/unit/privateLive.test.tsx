@@ -34,7 +34,7 @@ function openRoom(desktop: boolean, pending = false) {
       close: vi.fn()
     });
   return render(
-    <StoreProvider initial={{ ...initialState(), ageOk: true, lang: 'zh-Hant', user: { via: 'email', nickname: 'kenta' }, star: 'unpai' }}>
+    <StoreProvider initial={{ ...initialState(), ageOk: true, lang: 'zh-Hant', user: { via: 'email', nickname: 'kenta' }, star: 'unpai', points: 20 }}>
       <MemoryRouter initialEntries={['/me/home?star=unpai']}><AppRoutes /></MemoryRouter>
     </StoreProvider>
   );

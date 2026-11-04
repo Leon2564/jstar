@@ -1,7 +1,7 @@
 import { CONFIG } from './lib/config';
 import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from 'react';
 import { bootstrap, syncLang } from './services/api';
-import { HashRouter, Navigate, Outlet, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { HashRouter, Navigate, Outlet, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { isStarId } from './data/cast';
 import { onNotificationOpen } from './lib/push';
 import { StoreProvider, useStore, useT } from './lib/store';
@@ -13,15 +13,12 @@ import type { AppState } from './lib/state';
 const more = () => import('./pages/siteMore');
 const flows = () => import('./pages/flows');
 const me = () => import('./pages/me');
-const live = () => import('./pages/live');
 const publicGacha = () => import('./pages/publicGacha');
 const Menu = lazy(() => more().then((m) => ({ default: m.Menu })));
 const Stars = lazy(() => more().then((m) => ({ default: m.Stars })));
 const Features = lazy(() => more().then((m) => ({ default: m.Features })));
 const Gallery = lazy(() => more().then((m) => ({ default: m.Gallery })));
 const Events = lazy(() => more().then((m) => ({ default: m.Events })));
-const LiveLobby = lazy(() => live().then((m) => ({ default: m.LiveLobby })));
-const LiveRoom = lazy(() => live().then((m) => ({ default: m.LiveRoom })));
 const PublicGacha = lazy(() => publicGacha().then((m) => ({ default: m.PublicGacha })));
 const NotFound = lazy(() => more().then((m) => ({ default: m.NotFound })));
 const PickStar = lazy(() => flows().then((m) => ({ default: m.PickStar })));
@@ -50,7 +47,12 @@ const AlarmPage = lazy(() => import('./pages/alarm'));
 const WakeMoment = lazy(() => import('./scene/wake'));
 /** The visual system's reference page (#162): test and demo sites and the prototype only (the page checks). */
 const DesignPage = lazy(() => import('./pages/design'));
-export const prefetchRoutes = () => { void more(); void flows(); void me(); void live(); void publicGacha(); };
+export const prefetchRoutes = () => { void more(); void flows(); void me(); void publicGacha(); };
+
+function LegacyLiveRoom() {
+  const { star } = useParams();
+  return <Navigate to={isStarId(star) ? `/me/home?star=${star}` : '/'} replace />;
+}
 
 /** The screens on the night (public/boot.js marks the same ones before the first paint): every member page (B-N2). */
 const NIGHT = /^\/(|me(\/.*)?|age|loading|stars|menu|trial|signup|login|serial|serial\/result|pick|events|gallery|gacha(\/.*)?|live(\/.*)?|legal\/[a-z-]+)$/;
@@ -165,8 +167,8 @@ export function AppRoutes() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/stars" element={<Stars />} />
           <Route path="/features" element={<Features />} />
-          <Route path="/live" element={<LiveLobby />} />
-          <Route path="/live/:star" element={<LiveRoom />} />
+          <Route path="/live" element={<Navigate to="/" replace />} />
+          <Route path="/live/:star" element={<LegacyLiveRoom />} />
           <Route path="/gacha/redeem" element={<SerialResult />} />
           <Route element={<RequireAuth />}>
             <Route element={<BirthdayGate />}>

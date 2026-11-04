@@ -12,7 +12,7 @@ export const ko: Dict = {
 
   'nav.home': '홈', 'nav.stars': 'JSTARS', 'nav.features': '이용 방법', 'nav.live': '라이브', 'nav.gacha': '뽑기', 'nav.cards': '카드 도감', 'nav.events': '이벤트', 'nav.charge': "크레딧", 'nav.site': '사이트',
 
-  'top.talk': '그녀와 대화하기', 'top.flag': '가입 없이 대화', 'top.serial': '시리얼 코드 입력', 'top.serialTab': '시리얼', 'top.aiNote': '대화 상대는 본인이 공인한 AI입니다.',
+  'top.talk': '그녀와 채팅', 'top.phone': '그녀에게 전화', 'top.flag': '가입 없이 대화', 'top.serial': '시리얼 코드 입력', 'top.serialTab': '시리얼', 'top.aiNote': '대화 상대는 본인이 공인한 AI입니다.',
   'top.soundOn': '소리 켜기', 'top.soundOff': '소리 끄기', 'top.pick': '대상 선택', 'top.slot': '영상: {name}', 'top.slotSpec': '세로 1080×1920 / 6~8초 반복',
 
   'menu.login': "로그인 / 무료 가입", 'menu.mypage': '마이페이지', 'menu.serial': '시리얼 코드', 'menu.lang': '언어',
