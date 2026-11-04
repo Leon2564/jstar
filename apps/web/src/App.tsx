@@ -19,7 +19,6 @@ const Stars = lazy(() => more().then((m) => ({ default: m.Stars })));
 const Features = lazy(() => more().then((m) => ({ default: m.Features })));
 const Gallery = lazy(() => more().then((m) => ({ default: m.Gallery })));
 const Events = lazy(() => more().then((m) => ({ default: m.Events })));
-const PublicGacha = lazy(() => publicGacha().then((m) => ({ default: m.PublicGacha })));
 const NotFound = lazy(() => more().then((m) => ({ default: m.NotFound })));
 const PickStar = lazy(() => flows().then((m) => ({ default: m.PickStar })));
 const TrialChat = lazy(() => flows().then((m) => ({ default: m.TrialChat })));
@@ -52,6 +51,11 @@ export const prefetchRoutes = () => { void more(); void flows(); void me(); void
 function LegacyLiveRoom() {
   const { star } = useParams();
   return <Navigate to={isStarId(star) ? `/me/home?star=${star}` : '/'} replace />;
+}
+
+function LegacySerialRedirect() {
+  const { search } = useLocation();
+  return <Navigate to={`/gacha${search}`} replace />;
 }
 
 /** The screens on the night (public/boot.js marks the same ones before the first paint): every member page (B-N2). */
@@ -170,11 +174,7 @@ export function AppRoutes() {
           <Route path="/live" element={<Navigate to="/" replace />} />
           <Route path="/live/:star" element={<LegacyLiveRoom />} />
           <Route path="/gacha/redeem" element={<SerialResult />} />
-          <Route element={<RequireAuth />}>
-            <Route element={<BirthdayGate />}>
-              <Route path="/gacha" element={<PublicGacha />} />
-            </Route>
-          </Route>
+          <Route path="/gacha" element={<SerialInput />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
           <Route path="/design" element={<DesignPage />} />
@@ -182,7 +182,7 @@ export function AppRoutes() {
           <Route path="/trial" element={<TrialChat />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Navigate to="/signup?mode=login" replace />} />
-          <Route path="/serial" element={<SerialInput />} />
+          <Route path="/serial" element={<LegacySerialRedirect />} />
           <Route path="/serial/result" element={<Navigate to="/gacha/redeem" replace />} />
           <Route path="/me" element={<RequireAuth />}>
             <Route element={<BirthdayGate />}>

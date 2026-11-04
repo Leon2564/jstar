@@ -32,8 +32,8 @@ function chatCounter(left: number | null, s: AppState): Pick<AppState, 'chatDay'
 function localTogether(s: AppState, star: StarId, xp: number): { rel: AppState['rel']; pulls: number } {
   if (serverMode()) return { rel: s.rel, pulls: 0 };
   const now = new Date().toISOString();
-  const { state, pulls } = settle(countDay(s.rel[star] ?? freshRelationship(now), jstDay()), xp, now);
-  return { rel: { ...s.rel, [star]: state }, pulls };
+  const { state } = settle(countDay(s.rel[star] ?? freshRelationship(now), jstDay()), xp, now);
+  return { rel: { ...s.rel, [star]: state }, pulls: 0 };
 }
 
 /**
@@ -43,8 +43,8 @@ function localTogether(s: AppState, star: StarId, xp: number): { rel: AppState['
 function localAdvance(s: AppState, star: StarId, xp: number): { rel: AppState['rel']; pulls: number } {
   const cur = s.rel[star];
   if (serverMode() || !cur) return { rel: s.rel, pulls: 0 };
-  const { state, pulls } = settle(cur, xp, new Date().toISOString());
-  return { rel: { ...s.rel, [star]: state }, pulls };
+  const { state } = settle(cur, xp, new Date().toISOString());
+  return { rel: { ...s.rel, [star]: state }, pulls: 0 };
 }
 
 /** Member fields that belong to an account, cleared on sign-out so the next account never sees them. */
@@ -226,17 +226,15 @@ function makeActions(set: (fn: (s: AppState) => AppState) => void) {
         const owned = { ...s.owned };
         const affinity = { ...s.affinity };
         const cards = r.cards.filter((c) => isCardId(c.id));
-        let shards = s.shards;
         for (const c of cards) {
           owned[c.id] = Math.min(999, (owned[c.id] ?? 0) + 1);
           if (!c.isNew) {
-            shards += RULES.duplicateShards[c.rarity];
             if (s.user && !serverMode()) affinity[starOfCard(c.id)] += RULES.lucky.duplicateBondXp;
           }
         }
         return {
           ...s, serialFails: 0, redeemed: [...s.redeemed, code].slice(-200), redeemedCount: s.redeemedCount + 1,
-          owned, affinity, shards, points: s.points + r.pointsGranted, passUntil: r.passUntil ?? s.passUntil,
+          owned, affinity, points: s.points + r.pointsGranted, passUntil: r.passUntil ?? s.passUntil,
           lastRedeem: { cards: cards.slice(0, 10).map((c) => ({ id: c.id, isNew: c.isNew })), days: r.trialDays }
         };
       }),

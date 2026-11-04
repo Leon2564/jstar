@@ -19,9 +19,10 @@ import './gift.css';
 export const giftName = (id: string, lang: Lang): string => localText(giftById(id)?.name, lang);
 
 /** Why the sheet cannot send now, as a dictionary key; null when it can. */
-export function giftBlock(list: Pick<GiftsResT, 'sentToday' | 'perDay'> | null, _points: number, price: number | null): 'gift.limit' | 'gift.pick' | null {
+export function giftBlock(list: Pick<GiftsResT, 'sentToday' | 'perDay'> | null, points: number, price: number | null): 'gift.limit' | 'gift.pick' | 'gift.noPoints' | null {
   if (list && list.sentToday >= list.perDay) return 'gift.limit';
   if (price === null) return 'gift.pick';
+  if (points < price) return 'gift.noPoints';
   return null;
 }
 
@@ -119,11 +120,11 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
             const liked = known.includes(g.id);
             return (
               <button key={g.id} type="button" className="gift-tile" aria-pressed={pick === g.id} data-testid={`gift-${g.id}`} disabled={!list}
-                aria-label={`${localText(g.name, t.lang)}${liked ? `（${t('gift.known')}）` : ''}`}
+                aria-label={`${localText(g.name, t.lang)} ${t('common.pt', { n: g.price })}${liked ? `（${t('gift.known')}）` : ''}`}
                 onClick={() => { setPick(g.id); setError(null); }}>
                 <GiftIcon gift={g} />
                 <span className="gift-name">{localText(g.name, t.lang)}</span>
-                <span className="gift-price">PV EFFECT</span>
+                <span className="gift-price">{t('common.pt', { n: g.price })}</span>
                 {liked && <span className="gift-heart" aria-hidden="true">♥ {t('gift.known')}</span>}
               </button>
             );
@@ -133,11 +134,11 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
         {error && <p className="small gift-error" role="alert">{error}</p>}
         <div className="gift-foot">
           <div className="gift-balance">
-            <span>PV EFFECT</span>
+            <span>{t('common.pt', { n: state.points.toLocaleString() })}</span>
             {left !== null && <span data-testid="gift-left">{t('gift.today', { n: left })}</span>}
           </div>
           <button type="button" className="gift-give" data-testid="gift-send" disabled={!list || !!block || busy} onClick={() => void give()}>
-            {block ? t(block) : t('gift.send', { price: 0 })}
+            {block ? t(block) : t('gift.send', { price: chosen?.price ?? 0 })}
           </button>
         </div>
       </div>

@@ -9,7 +9,7 @@ const KANA = /[ぁ-ゖァ-ヺ]/;
 
 describe('Korean has no English fallback (N-06)', () => {
   it('every card title, line and story is written in Korean', () => {
-    expect(CATALOG).toHaveLength(150);
+    expect(CATALOG).toHaveLength(125);
     for (const c of CATALOG) {
       for (const t of [c.title, c.line].filter((x) => !!x)) {
         expect(t!.ko, c.id).toBeTruthy();

@@ -4,7 +4,7 @@
  * Each section's children enter in layers (.rise with a stagger index --d) when the section scrolls in (.in).
  */
 import { localText } from '@jstar/shared/domain';
-import { lazy, Suspense, useEffect, useState, type CSSProperties } from 'react';
+import { useEffect, useState, type CSSProperties } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { CAST } from '../data/cast';
 import { CARD_BY_ID } from '../data/cards';
@@ -19,9 +19,6 @@ import { Footer } from './footer';
 import { SceneVideo, media, mediaFor, stillOf, usePortrait } from './stage';
 import { Icon } from './ui';
 import '../styles/home.css';
-
-// The playable draw loads the catalog and the reveal only when someone taps it.
-const DemoDraw = lazy(() => import('./demoDraw'));
 
 /**
  * Her world behind every section, deep and out of focus, moving with the tilt: the page reads as one space.
@@ -148,7 +145,6 @@ const FAN_CARD_IDS = ['s1-mahiro-19', 's1-nana-26', 's1-unpai-30', 's1-alice-26'
 
 function CardsSection({ star }: { star: string }) {
   const t = useT();
-  const [demo, setDemo] = useState(false);
   return (
     <section id="fp-cards" data-fp="3" className="fp-sec sec-cards" aria-labelledby="h-cards">
       <World star={star} />
@@ -165,11 +161,7 @@ function CardsSection({ star }: { star: string }) {
           <Link to="/serial" className="btn btn-line">{t('top.serial')}</Link>
         </div>
       </div>
-      {demo ? <Suspense fallback={<div className="fan" />}><DemoDraw /></Suspense> : (
       <div className="fan-wrap">
-      <button type="button" className="demo-go magnetic" onClick={() => setDemo(true)}>
-        <span className="demo-tag">{t('home.demoTag')}</span>{t('home.demo')}
-      </button>
       <ul className="fan" aria-hidden="true">
         {CAST.map((c, k) => {
           const card = CARD_BY_ID[FAN_CARD_IDS[k]];
@@ -185,7 +177,6 @@ function CardsSection({ star }: { star: string }) {
         })}
       </ul>
       </div>
-      )}
     </section>
   );
 }

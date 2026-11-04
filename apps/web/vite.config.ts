@@ -108,6 +108,10 @@ export default defineConfig(({ mode }) => ({
       ignored: ['**/public/media/**', '**/public/cards/**']
     },
     proxy: {
+      '/v1/agent/chat': {
+        target: process.env.VITE_AGENT_PROXY_TARGET || 'https://jstar-leon.lionellong.workers.dev',
+        changeOrigin: true
+      },
       // Local and tunnel previews keep the API on the page's HTTPS origin. The private API port is never exposed.
       '/api': {
         target: process.env.VITE_API_PROXY_TARGET || 'http://127.0.0.1:8080',

@@ -33,6 +33,7 @@ export async function claimDevice(repos: Repos, user: UserRow, device: string | 
   const claimed = await repos.lucky.claim(user, device, RULES.lucky.duplicateBondXp, (days) => (days > 0 ? extendPass(user.passUntil, days) : user.passUntil),
     (cardId) => (isVariantCard(cardId) ? duplicateGain() : null));
   if (!claimed) return user;
+  if (claimed.serials.length) await repos.users.adjustWallet(user.id, { points: claimed.serials.length * RULES.serialPoints });
   await repos.audit.add({ id: newId('aud'), actorId: user.id, action: 'serial.claim', target: device, meta: { serials: claimed.serials, cards: claimed.cardIds }, createdAt: new Date().toISOString() });
   return (await repos.users.byId(user.id)) ?? user;
 }

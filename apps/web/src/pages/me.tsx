@@ -620,7 +620,6 @@ export function CompanionHome() {
       setToast(t('confession.demoDone'));
     } catch { setToast(t('common.error')); }
   };
-  const rewardToday = CONFIG.checkIn.some((r) => r.day === state.checkIn.days);
   const key = GREET_KEY[slot];
   const greeting = (hinting ? hint[c.id] : undefined) ?? served[c.id]
     ?? (asleep ? t('home.greet.asleep') : key ? t(key, { first: starFirst(c, t.lang) }) : t(`star.${c.id}.greet` as Key));
@@ -812,8 +811,7 @@ export function CompanionHome() {
         {nextPromise?.kind === 'wakeup' && serverMode() && <AlarmProposal key={nextPromise.id} star={c.id} first={first} promise={nextPromise} />}
         {day && <p className="reward fresh serif" data-testid="calendar-day" aria-label={t('cal.title')} style={{ alignSelf: 'flex-start', margin: 0, fontSize: 12 }}>{calendarLabel(day, first, t)}</p>}
         <div className="rewards" data-testid="rewards">
-          <Link to="/me/shop" className="reward"><Icon name="check" size={12} />{t('pts.daily', { n: CONFIG.dailyLoginPoints })}</Link>
-          <Link to="/me/shop" className={`reward${rewardToday ? ' fresh' : ''}`} data-testid="checkin-chip">{t('pts.checkinTitle')}　{t('pts.checkinDays', { n: state.checkIn.days })}</Link>
+          <Link to="/gacha" className="reward"><Icon name="check" size={12} />{t('pts.daily', { n: 100 })}</Link>
           {room?.condition && <Suspense fallback={null}><WeatherChip room={room} /></Suspense>}
         </div>
         {isDemo() && (
@@ -844,13 +842,6 @@ export function CompanionHome() {
     later: ringing.kind !== 'wakeup' ? 'notNow' : ringing.payload.snooze === true ? null : 'snooze',
     ring: ringtone
   } : null;
-  // Login and check-in: a toast once a day, not a card on her video.
-  useEffect(() => {
-    if (!rewardToday) return;
-    const k = `jstar.checkinToast.${jstDay()}`;
-    try { if (localStorage.getItem(k)) return; localStorage.setItem(k, '1'); } catch { /* storage blocked: this visit only */ }
-    setToast(`${t('pts.checkinTitle')}　${t('pts.checkinDays', { n: state.checkIn.days })}`);
-  }, [rewardToday]); // eslint-disable-line react-hooks/exhaustive-deps
   const onListen = useCallback((on: boolean) => setListening(on), []);
   const onTalk = useCallback((on: boolean) => {
     setTalking(on);
@@ -1433,12 +1424,11 @@ export function Shop() {
   );
 }
 
-/** v1.0 free launch: where points come from, check-in progress and the pass (from printed codes). */
+/** Credits come from codes or the free test top-up; the pass from printed codes stays visible. */
 export function Points() {
   const { state } = useStore();
   const t = useT();
   const passOn = passActive(state.passUntil);
-  const days = state.checkIn.days;
   return (
     <main className="page js-nightpage">
       <Header back={true} title={t('pts.title')} />
@@ -1450,27 +1440,11 @@ export function Points() {
         <section className="panel stack" style={{ margin: '18px 24px 0', gap: 10 }}>
           <h2 className="serif" style={{ margin: 0, fontSize: 17 }}>{t('pts.earn')}</h2>
           <ul className="small" style={{ margin: 0, paddingLeft: 18, lineHeight: 1.9 }}>
-            <li>{t('pts.daily', { n: CONFIG.dailyLoginPoints })}</li>
-            <li>{t('pts.level')}</li>
-            <li>{t('pts.checkin')}</li>
-            <li>{t('pts.code')}</li>
+            <li>{t('pts.daily', { n: 100 })}</li>
+            <li>{t('shop.demo')}</li>
           </ul>
         </section>
-        <section className="panel stack" style={{ margin: '14px 24px 0', gap: 10 }} data-testid="checkin">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}><h2 className="serif" style={{ margin: 0, fontSize: 17 }}>{t('pts.checkinTitle')}</h2><span className="small">{t('pts.checkinDays', { n: days })}</span></div>
-          <ol style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
-            {CONFIG.checkIn.map((r) => {
-              const got = state.checkIn.claimed.includes(r.day);
-              return (
-                <li key={r.day} style={{ border: '1px solid var(--hair)', borderRadius: 6, padding: '10px 6px', textAlign: 'center', background: got ? 'var(--ivory)' : 'transparent', color: got ? 'var(--navy-deep)' : 'inherit' }}>
-                  <div className="tiny">{t('pts.day', { n: r.day })}</div>
-                  <div className="small" style={{ marginTop: 4 }}>{r.points ? t('common.pt', { n: fmtYen(r.points) }) : t('pts.freePull', { n: r.freePulls })}</div>
-                  {got && <div className="tiny" style={{ marginTop: 2 }}>{t('pts.got')}</div>}
-                </li>
-              );
-            })}
-          </ol>
-        </section>
+        <Link to="/me/shop" className="btn btn-rose" style={{ margin: '14px 24px 0' }}>{t('shop.testFree', { n: 1000 })}</Link>
         <section className="panel stack" style={{ margin: '14px 24px 0', background: 'var(--navy)', color: 'var(--ivory)', boxShadow: 'none', gap: 8 }}>
           <span className="serif" style={{ fontSize: 17, fontWeight: 600 }}>{t('shop.monthly')}</span>
           <span className="small" data-testid="pass-status" style={{ color: passOn ? '#E3A8B2' : 'rgba(239,232,237,0.75)' }}>{passOn ? t('shop.passUntil', { date: fmtDate(state.passUntil!, t.lang) }) : t('pts.passHow')}</span>

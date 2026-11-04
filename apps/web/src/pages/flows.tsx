@@ -9,8 +9,8 @@ import { safeNext } from '../lib/safeNext';
 import { DEMO_SERIALS, SERIAL_RE, formatSerial, isValidSerialFormat, normalizeSerial, serialFromQuery } from '../lib/serial';
 import { uid, useStore, useT } from '../lib/store';
 import type { Msg } from '../lib/state';
-import { ApiError, DEMO_OTP, EMAIL_RE, bootstrap, errorCode, isBlocked, redeemSerial, trialChat, type Login } from '../services/api';
-import { Header, Icon, OfflineLine, Toast, Typing, useToast } from '../components/ui';
+import { ApiError, DEMO_OTP, EMAIL_RE, bootstrap, errorCode, isBlocked, redeemSerial, trialChat, verifySerial, type Login } from '../services/api';
+import { Header, Icon, OfflineLine, SiteHeader, Toast, Typing, useToast } from '../components/ui';
 import { SceneVideo, media, sceneFor, stillOf } from '../components/stage';
 import { StarAvatar } from '../components/starAvatar';
 import { LIVE_COVERS, ResponsiveLiveCover, liveLayoutForViewport } from '../components/liveCover';
@@ -387,15 +387,15 @@ const SERIAL_ERRORS: Record<string, Key> = {
 const pct = (x: number) => Math.round(x * 1000) / 10;
 
 /** Published rates of one printed code (docs/compliance-jp.md): the guaranteed first card, then the rest. */
-function LuckyRates() {
+function LuckyRates({ count }: { count: 1 | 6 }) {
   const t = useT();
   const first = floorRates('SR');
   const rest = DEFAULT_RATES;
   return (
     <details className="small" data-testid="lucky-rates">
       <summary className="rates-sum">{t('gacha.rates')}</summary>
-      <p style={{ margin: '6px 0 0' }}>{t('serial.ratesFirst', { ur: pct(first.UR), ssr: pct(first.SSR), sr: pct(first.SR) })}</p>
-      <p style={{ margin: '4px 0 0' }}>{t('serial.ratesRest', { n: CONFIG.lucky.drawsPerCode, ur: pct(rest.UR), ssr: pct(rest.SSR), sr: pct(rest.SR), r: pct(rest.R), nn: pct(rest.N) })}</p>
+      {count === 6 && <p style={{ margin: '6px 0 0' }}>{t('serial.ratesFirst', { ur: pct(first.UR), ssr: pct(first.SSR), sr: pct(first.SR) })}</p>}
+      <p style={{ margin: '4px 0 0' }}>{t(count === 1 ? 'serial.ratesSingle' : 'serial.ratesRest', { n: CONFIG.lucky.drawsPerCode, ur: pct(rest.UR), ssr: pct(rest.SSR), sr: pct(rest.SR), r: pct(rest.R), nn: pct(rest.N) })}</p>
     </details>
   );
 }
@@ -408,13 +408,16 @@ export function SerialInput() {
   const fromQr = serialFromQuery(loc.search);
   const [code, setCode] = useState(fromQr ? formatSerial(fromQr) : '');
   const [err, setErr] = useState<string | null>(null);
+  const [verified, setVerified] = useState(false);
+  const [drawCount, setDrawCount] = useState<1 | 6>(6);
+  const [pool, setPool] = useState('all');
   const [chargeOpen, setChargeOpen] = useState(false);
   // M6: another QR scanned (or a ?code link followed) while this page is open fills the field again.
   const seen = useRef(fromQr);
   useEffect(() => {
     if (fromQr === seen.current) return;
     seen.current = fromQr;
-    if (fromQr) { setCode(formatSerial(fromQr)); setErr(null); }
+    if (fromQr) { setCode(formatSerial(fromQr)); setErr(null); setVerified(false); }
   }, [fromQr]);
   const [busy, setBusy] = useState(false);
   const [now, setNow] = useState(() => Date.now());
@@ -432,6 +435,7 @@ export function SerialInput() {
     const atEnd = el.selectionStart === el.value.length && !(e.nativeEvent as InputEvent).isComposing;
     setCode(atEnd ? formatSerial(el.value) : el.value);
     setErr(null);
+    setVerified(false);
   }
 
   async function onSubmit(e: FormEvent) {
@@ -442,7 +446,8 @@ export function SerialInput() {
     if (!isValidSerialFormat(n)) { setErr(t(SERIAL_RE.test(n) ? 'serial.errTypo' : 'serial.errFormat')); return; }
     setBusy(true); setErr(null);
     try {
-      const r = await redeemSerial(state, n);
+      if (!verified) { await verifySerial(state, n); setVerified(true); return; }
+      const r = await redeemSerial(state, n, drawCount, pool);
       actions.applyRedeem(r.code, r);
       // A member's duplicates raise their bond on the server; reload the account so it shows (no-op offline).
       if (r.claimed) void bootstrap().then((b) => { if (b.kind === 'member') actions.hydrateMe(b.me); });
@@ -459,14 +464,20 @@ export function SerialInput() {
   }
   const mins = Math.ceil((state.serialLockUntil - now) / 60000);
   return (
-    <main className="page night-page serial-page">
-      <Header back="/" title={t('serial.title')} />
+    <main className="page night-page serial-page pg-redemption">
+      <SiteHeader />
+      <div className="pg-redemption-art" aria-hidden="true">
+        <div className="pg-redemption-halo" />
+        {Array.from({ length: 5 }, (_, index) => <img key={index} src="/cards/jstar-genesis-back.webp" alt="" style={{ '--i': index } as React.CSSProperties} />)}
+        <span>N · R · SR · SSR · UR</span>
+      </div>
       <div className="col">
         <section className="stack pad" style={{ gap: 14, marginTop: 12 }}>
-          <h1 className="h1 pre">{t('serial.h1')}</h1>
+          <p className="pg-kicker">STAR GENESIS · FIRST FIVE</p>
+          <h1 className="h1 pre">{t('pg.title')}</h1>
           <p className="small muted" style={{ margin: 0, fontSize: 13 }}>{t('serial.body')}</p>
           <p className="small" data-testid="serial-gets" style={{ margin: 0, display: 'flex', gap: 8, alignItems: 'flex-start' }}>
-            <span style={{ flexShrink: 0, marginTop: 2 }}><Icon name="spark" size={14} /></span>{t('serial.gets', { n: CONFIG.lucky.drawsPerCode, days: CONFIG.serialDefaultTrialDays })}
+            <span style={{ flexShrink: 0, marginTop: 2 }}><Icon name="spark" size={14} /></span>{t('serial.gets', { n: drawCount })}
           </p>
         </section>
         <form onSubmit={onSubmit} noValidate className="panel stack" style={{ margin: '24px 24px 0' }}>
@@ -489,13 +500,23 @@ export function SerialInput() {
                 const used = state.redeemed.includes(item);
                 return <button key={item} type="button" disabled={used || busy || locked}
                   aria-label={`${t('serial.demoUse')} ${formatSerial(item)}`}
-                  onClick={() => { setCode(formatSerial(item)); setErr(null); }}>
+                  onClick={() => { setCode(formatSerial(item)); setErr(null); setVerified(false); }}>
                   {formatSerial(item)}
                 </button>;
               })}
             </div>
           </div>
-          <button type="submit" className="btn btn-rose" disabled={busy || locked || !code.trim()}>{busy ? t('serial.checking') : t('serial.submit')}</button>
+          {verified && <div className="serial-draw-options">
+            <div className="serial-draw-modes" role="group" aria-label={t('pg.mode')}>
+              <button type="button" aria-pressed={drawCount === 1} onClick={() => setDrawCount(1)}>{t('pg.single')}</button>
+              <button type="button" aria-pressed={drawCount === 6} onClick={() => setDrawCount(6)}>{t('pg.six')}</button>
+            </div>
+            <div className="serial-pools" role="group" aria-label={t('gacha.pools')}>
+              <button type="button" aria-pressed={pool === 'all'} onClick={() => setPool('all')}>{t('gacha.poolAll')}</button>
+              {CAST.map((star) => <button key={star.id} type="button" aria-pressed={pool === `star:${star.id}`} onClick={() => setPool(`star:${star.id}`)}>{starName(star, t.lang)}</button>)}
+            </div>
+          </div>}
+          <button type="submit" className="btn btn-rose" disabled={busy || locked || !code.trim()}>{busy ? t('serial.checking') : verified ? t('serial.submit') : t('serial.verify')}</button>
         </form>
         <div className="serial-charge">
           <div><span className="js-label">JSTAR CREDITS</span><p>{t('serial.chargeBody')}</p></div>
@@ -503,7 +524,7 @@ export function SerialInput() {
         </div>
         <div className="tiny muted pad" style={{ textAlign: 'center', margin: '14px 0 24px' }}>
           <p style={{ margin: '0 0 6px' }}>{t('serial.once')}</p>
-          <LuckyRates />
+          <LuckyRates count={drawCount} />
         </div>
       </div>
       <ChargeModal open={chargeOpen} onClose={() => setChargeOpen(false)} />

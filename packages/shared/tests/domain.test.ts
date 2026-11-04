@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CATALOG, catalogProblems } from '../src/catalog';
+import { CATALOG, SCENE_GROUPS, catalogProblems } from '../src/catalog';
 import { DEFAULT_RATES, DEMO_SERIALS, RARITIES, RARITY_ORDER, RULES, disclosure, drawLucky, drawPulls, expectedPullsToTop, floorRates, formatSerial, isValidSerialFormat, levelFromXp, luhnCheckDigit, normalizeSerial, poolCards, ratesSumOk, rollTier, seeded, serialFromPath, serialFromQuery } from '../src';
 import type { CardDef } from '../src';
 
@@ -11,8 +11,10 @@ describe('shared domain', () => {
     const rng = seeded(11);
     for (let i = 0; i < 2000; i++) expect(drawPulls(10, pool, rng).drawn.some((d) => RARITY_ORDER[d.card.rarity] >= RARITY_ORDER.SR)).toBe(true);
   });
-  it('the catalog has 150 cards, 30 per talent, N10 R8 SR7 SSR4 UR1', () => {
-    expect(CATALOG).toHaveLength(150);
+  it('the catalog has five scenes per talent with N, R, SR, SSR and UR in each', () => {
+    expect(CATALOG).toHaveLength(125);
+    expect(SCENE_GROUPS).toHaveLength(25);
+    expect(new Set(SCENE_GROUPS.flatMap((group) => Object.values(group.cards))).size).toBe(125);
     expect(catalogProblems()).toEqual([]);
   });
   it('hard pity: the 80th pull without SSR+ is SSR+, and the effective rate beats the base rate', () => {
@@ -24,7 +26,7 @@ describe('shared domain', () => {
     }
     expect(1 / expectedPullsToTop()).toBeGreaterThan(DEFAULT_RATES.SSR + DEFAULT_RATES.UR);
     const d = disclosure(poolCards('star:nana', pool));
-    expect(d.rows.find((r) => r.tier === 'UR')).toMatchObject({ cards: 1, perCard: 0.005 });
+    expect(d.rows.find((r) => r.tier === 'UR')).toMatchObject({ cards: 5, perCard: 0.001 });
   });
   it('normalizes printed codes: spaces, hyphens, full-width digits', () => {
     expect(normalizeSerial('9990-0000-0011')).toBe('999000000011');

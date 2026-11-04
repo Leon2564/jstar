@@ -1,6 +1,9 @@
 interface Env {
   ASSETS: Fetcher;
   MEDIA: R2Bucket;
+  AI: Ai;
+  TEXT_AGENT_LIMITER: RateLimit;
+  TEXT_AGENT_GLOBAL_LIMITER: RateLimit;
   VIDU_API_TOKEN: string;
   VIDU_MAHIRO_DESKTOP_AVATAR_ID: string;
   VIDU_MAHIRO_MOBILE_AVATAR_ID: string;
@@ -87,6 +90,38 @@ function viduConfig(env: Env, star: LiveStar, layout: LiveLayout) {
     persona: `${pick('PERSONA_A')}${pick('PERSONA_B')}` || DEFAULT_PERSONA[star],
     greeting: pick('GREETING') || 'カメラの相手を見て、来てくれたことを喜び、短く自然な日本語だけで迎える。'
   };
+}
+
+async function textAgent(request: Request, env: Env): Promise<Response> {
+  const ip = request.headers.get('cf-connecting-ip') || 'unknown';
+  const [visitorLimit, globalLimit] = await Promise.all([
+    env.TEXT_AGENT_LIMITER.limit({ key: ip }),
+    env.TEXT_AGENT_GLOBAL_LIMITER.limit({ key: 'all' })
+  ]);
+  if (!visitorLimit.success || !globalLimit.success) return json({ error: 'rate_limited' }, { status: 429 });
+  const body = await request.json().catch(() => null) as { star?: string; text?: string; history?: { role?: string; content?: string }[] } | null;
+  if (!body || !LIVE_STARS.includes(body.star as LiveStar) || typeof body.text !== 'string' || !body.text.trim() || body.text.length > 500) {
+    return json({ error: 'invalid_agent_request' }, { status: 400 });
+  }
+  const star = body.star as LiveStar;
+  const history = (Array.isArray(body.history) ? body.history : []).slice(-8)
+    .filter((item) => ['user', 'assistant'].includes(item.role || '') && typeof item.content === 'string')
+    .map((item) => ({ role: item.role as 'user' | 'assistant', content: item.content!.slice(0, 500) }));
+  try {
+    const result = await env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
+      messages: [
+        { role: 'system', content: `${viduConfig(env, star, 'desktop').persona}\n${JAPANESE_POLICY}\n相手への返答は短い自然な日本語の一、二文にしてください。実在の本人ではなくAIキャラクターとして話してください。` },
+        ...history,
+        { role: 'user', content: body.text.trim() }
+      ],
+      max_tokens: 160
+    });
+    const reply = typeof result === 'object' && result && 'response' in result ? String(result.response || '').trim() : '';
+    if (!reply) return json({ error: 'agent_empty_reply' }, { status: 502 });
+    return json({ reply });
+  } catch {
+    return json({ error: 'agent_unavailable' }, { status: 503 });
+  }
 }
 
 async function createLiveSession(request: Request, env: Env): Promise<Response> {
@@ -273,6 +308,7 @@ export default {
     const url = new URL(request.url);
     if (url.pathname === '/v1/live/session' && request.method === 'POST') return createLiveSession(request, env);
     if (url.pathname === '/v1/live/control' && request.method === 'GET') return connectViduControl(request, env);
+    if (url.pathname === '/v1/agent/chat' && request.method === 'POST') return textAgent(request, env);
     if (isR2Asset(url.pathname)) {
       if (request.method !== 'GET' && request.method !== 'HEAD') {
         return new Response('Method not allowed', { status: 405, headers: { allow: 'GET, HEAD' } });

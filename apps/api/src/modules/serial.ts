@@ -1,9 +1,9 @@
 import type { FastifyInstance } from 'fastify';
-import { RULES, SerialRedeemReq, type RedemptionHistoryResT, drawLucky, extendPass, isVariantCard, normalizeSerial, seeded, type DrawnCardT, type SerialRedeemResT } from '@jstar/shared';
+import { RULES, SerialRedeemReq, type RedemptionHistoryResT, drawLucky, extendPass, isVariantCard, normalizeSerial, poolCards, seeded, type DrawnCardT, type PoolId, type SerialRedeemResT } from '@jstar/shared';
+import { ACTIVE_CARD_IDS } from '@jstar/shared/catalog';
 import { env } from '../env';
 import { hashSerial, newId } from '../lib/crypto';
 import { deviceOf, httpError, requireHuman, requireUser } from '../app';
-import { LUCKY_POOL_ID } from '../db/seed';
 import { planned } from './gacha';
 
 /**
@@ -34,6 +34,19 @@ function createLockout() {
 
 export async function registerSerial(app: FastifyInstance) {
   const lockout = createLockout();
+  app.post('/verify', { config: { rateLimit: { max: 10, timeWindow: '10 minutes' } } }, async (req, reply) => {
+    const device = deviceOf(req);
+    const now = Date.now();
+    const keys = [`ip:${req.ip}`, ...(device ? [`dev:${device}`] : []), ...(req.user ? [`usr:${req.user.id}`] : [])];
+    const until = lockout.lockedUntil(keys, now);
+    if (until) { reply.header('retry-after', String(Math.ceil((until - now) / 1000))); throw httpError('serial_locked', 429); }
+    if (lockout.failures(keys) >= TURNSTILE_AFTER_FAILURES) await requireHuman(app, req);
+    const { code } = SerialRedeemReq.parse({ code: normalizeSerial((req.body as { code?: string })?.code ?? '') });
+    const row = await app.repos.serials.byHash(hashSerial(code, env.SERIAL_HMAC_KEY));
+    if (!row) { lockout.fail(keys, now); throw httpError('serial_not_found', 404); }
+    if (row.redeemedAt) throw httpError('serial_already_used', 409);
+    return { valid: true as const };
+  });
   /**
    * Redeem the code on a physical lucky card: RULES.lucky.drawsPerCode cards (the first SR or better) and the
    * pass days of its batch. Visitors may redeem too: cards and days wait on their device and move to the account
@@ -60,10 +73,14 @@ export async function registerSerial(app: FastifyInstance) {
     if (!row) { lockout.fail(keys, now); throw httpError('serial_not_found', 404); }
     if (row.redeemedAt) throw httpError('serial_already_used', 409);
 
-    const pool = await app.repos.cards.all();
+    const choice = req.body as { count?: number; pool?: string };
+    const count = choice.count === 1 || choice.count === 6 ? choice.count : 6;
+    const poolId = choice.pool === 'all' || ['mahiro', 'nana', 'unpai', 'alice', 'eimi'].some((star) => choice.pool === `star:${star}`)
+      ? choice.pool as PoolId : 'all';
+    const pool = poolCards(poolId, await app.repos.cards.all()).filter((card) => ACTIVE_CARD_IDS.has(card.id));
     if (!pool.length) throw httpError('pool_empty', 409);
     const seed = (now ^ Math.floor(Math.random() * 0xffffffff)) >>> 0;
-    const drawn = drawLucky(pool, seeded(seed), row.draws);
+    const drawn = drawLucky(pool, seeded(seed), count);
     const at = new Date(now).toISOString();
     const user = req.user;
     const ownerId = user ? user.id : `device:${device}`;
@@ -76,7 +93,7 @@ export async function registerSerial(app: FastifyInstance) {
       passUntil,
       trialDays: row.trialDays,
       bondXp: RULES.lucky.duplicateBondXp,
-      draw: { id: drawId, ownerId, poolId: LUCKY_POOL_ID, serialId: row.id, cardIds: drawn.map((d) => d.card.id), tiers: drawn.map((d) => d.tier), cost: 0, seed: String(seed), createdAt: at },
+      draw: { id: drawId, ownerId, poolId, serialId: row.id, cardIds: drawn.map((d) => d.card.id), tiers: drawn.map((d) => d.tier), cost: 0, seed: String(seed), createdAt: at },
       at
     });
     // Lost the race to a parallel request with the same code: nothing of ours was written.

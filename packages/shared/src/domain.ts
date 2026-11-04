@@ -4,7 +4,7 @@ import { RULES } from './rules';
 export const STAR_IDS = ['mahiro', 'nana', 'unpai', 'alice', 'eimi'] as const;
 export type StarId = (typeof STAR_IDS)[number];
 
-/** "all" = the whole series; "star:<id>" = a single-talent pool of her 30 cards (same rates). */
+/** "all" = all 125 active cards; "star:<id>" = one talent's 25-card pool. */
 export type PoolId = 'all' | `star:${StarId}`;
 export const POOL_IDS: PoolId[] = ['all', ...STAR_IDS.map((s) => `star:${s}` as const)];
 export const isPoolId = (v: unknown): v is PoolId => typeof v === 'string' && (POOL_IDS as string[]).includes(v);
@@ -42,7 +42,7 @@ export interface CardDef {
   /** "/cards/<id>/card.webp" once produced; null while the art is pending. */
   art: string | null;
   voice: string | null;
-  /** Five of the 150 are also "another her" (#75, VARIANT_CARDS in rules.ts): her own affinity, scenes and home video. */
+  /** Legacy variant metadata is retained for previously owned cards. */
   variant?: VariantDef;
 }
 

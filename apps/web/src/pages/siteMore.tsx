@@ -3,10 +3,11 @@
  * the loading screen and the home stage (bundle budget: tests/e2e/perf.spec.ts).
  */
 import { localText } from '@jstar/shared/domain';
+import { SCENE_GROUPS } from '@jstar/shared/catalog';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { CAST, getStar } from '../data/cast';
-import { CARDS, type CardDef } from '../data/cards';
+import { CARDS, CARD_BY_ID, type CardDef } from '../data/cards';
 import { EVENT_BADGE, eventStatus } from '../data/events';
 import { upcomingEvents } from '../data/eventsCalendar';
 import { SIGNATURE, THEME } from '../data/theme';
@@ -155,12 +156,12 @@ export function Stars() {
         )}
         {top.length > 0 && (
           <section className="stars-scenes rise-seq" style={{ '--d': 5 } as React.CSSProperties} aria-labelledby="stars-scenes-title">
-            <div className="stars-section-head"><div><span className="eyebrow">VIDEO SCENES</span><h2 id="stars-scenes-title">{copy.scenes}</h2></div><Link to={state.user ? '/gacha' : '/signup?next=/gacha'}>{copy.gacha} <Icon name="chev" size={14} /></Link></div>
+            <div className="stars-section-head"><div><span className="eyebrow">VIDEO SCENES</span><h2 id="stars-scenes-title">{copy.scenes}</h2></div><Link to="/gacha">{copy.gacha} <Icon name="chev" size={14} /></Link></div>
             <p>{copy.scenesBody}</p>
             <div className="stars-scene-grid">{top.map((card) => {
               const owned = !!state.owned[card.id];
               return <Link key={card.id} className={`stars-scene-card${owned ? ' is-owned' : ' is-locked'}`}
-                to={owned && state.user ? `/me/cards/${card.id}` : state.user ? '/gacha' : '/signup?next=/gacha'}
+                to={owned && state.user ? `/me/cards/${card.id}` : '/gacha'}
                 onClick={() => { if (!owned) actions.setGachaPool(`star:${c.id}`); }}>
                 <CardArt card={card} small />
                 <span><b>{localText(card.title, t.lang)}</b><small>{owned ? copy.unlocked : copy.locked}</small></span>
@@ -271,7 +272,7 @@ export function Features() {
 }
 
 /**
- * M9: the 150 cards, each a blurred glimpse of her art with its tier. A locked card opens a preview with the way to
+ * Five scene groups for each talent, each with a card at every tier. A locked card opens a preview with the way to
  * collect it (a guest: sign up, free; a member: the draw). The heading is the page's name in his language.
  */
 export function Gallery() {
@@ -281,8 +282,8 @@ export function Gallery() {
   const [peek, setPeek] = useState<CardDef | null>(null);
   const [showcase, setShowcase] = useState<CardDef | null>(null);
   const opener = useRef<HTMLElement | null>(null);
-  const list = f === 'all' ? CARDS : CARDS.filter((c) => c.star === f);
-  const ownedCount = Object.keys(state.owned).length;
+  const groups = SCENE_GROUPS.filter((group) => f === 'all' || group.star === f);
+  const ownedCount = CARDS.filter((card) => !!state.owned[card.id]).length;
   const close = () => { setPeek(null); opener.current?.focus(); };
   return (
     <main className="page night-page js-nightpage">
@@ -297,8 +298,12 @@ export function Gallery() {
             <button key={o.id} type="button" className="chip" aria-pressed={f === o.id} onClick={() => setF(o.id)}>{o.label}</button>
           ))}
         </div>
-        <div className="cards-grid wide pad gallery-grid" style={{ marginTop: 16 }}>
-          {list.map((c, k) => {
+        <div className="pad" style={{ marginTop: 16, display: 'grid', gap: 30 }}>
+          {groups.map((group) => <section key={group.id} aria-label={`${starName(getStar(group.star), t.lang)} · ${t('gallery.scene', { n: group.index })}`}>
+            <h2 className="serif" style={{ fontSize: 17, margin: '0 0 12px' }}>{starName(getStar(group.star), t.lang)} · {t('gallery.scene', { n: group.index })}</h2>
+            <div className="cards-grid wide gallery-grid">
+          {Object.values(group.cards).map((id, k) => {
+            const c = CARD_BY_ID[id];
             const own = !!state.owned[c.id];
             const art = <CardArt key={`${f}-${c.id}`} card={c} locked={!own} tilt={own} className="deal" style={{ animationDelay: `${Math.min(k, 12) * 25}ms` }} />;
             return own ? (
@@ -311,6 +316,8 @@ export function Gallery() {
                 onClick={(e) => { opener.current = e.currentTarget; setPeek(c); }}>{art}</button>
             );
           })}
+            </div>
+          </section>)}
         </div>
         <div className="bottom stack" style={{ gap: 8, maxWidth: 420, width: '100%', alignSelf: 'center' }}>
           <Link to="/gacha" className="btn btn-rose">{t('gallery.cta')}</Link>
@@ -360,7 +367,7 @@ function CardPeek({ card, member, onClose }: { card: CardDef; member: boolean; o
           <div className="peek-card"><CardArt card={card} locked /></div>
           <div className="stack">
             <p className="small" style={{ margin: 0, color: 'var(--iv-meta)' }}>{t(member ? 'gallery.note' : 'gallery.preview')}</p>
-            <Link to={member ? '/gacha' : '/signup?next=/gacha'} className="btn btn-rose">{t(member ? 'gallery.cta' : 'gallery.join')}</Link>
+            <Link to="/gacha" className="btn btn-rose">{t(member ? 'gallery.cta' : 'gallery.join')}</Link>
           </div>
         </div>
       </div>

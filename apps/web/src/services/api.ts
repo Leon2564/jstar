@@ -10,9 +10,8 @@
 import type { BondResT, CallAnswerResT, CardAffectionResT } from '@jstar/shared/contracts';
 import { RULES, extendPass } from '@jstar/shared/rules';
 import { levelFromXp } from '@jstar/shared/domain';
-import { isExchangeable } from '@jstar/shared/variants';
 import { freshRelationship, viewOf } from '@jstar/shared/relationship';
-import type { ChatSendResT, DeviceResT, DrawHistoryResT, DrawResT, ExchangeResT, InboxReadResT, InboxResT, MeResT, PromiseItemT, PromisesResT, RedemptionHistoryResT, RelationshipResT, RelationshipViewT, SerialRedeemResT } from '@jstar/shared/contracts';
+import type { ChatSendResT, DeviceResT, DrawHistoryResT, InboxReadResT, InboxResT, MeResT, PromiseItemT, PromisesResT, RedemptionHistoryResT, RelationshipResT, RelationshipViewT, SerialRedeemResT } from '@jstar/shared/contracts';
 import { confessionStatus } from '@jstar/shared/confession';
 import type { ConfessionMemoryT, MemoryExportT } from '@jstar/shared/contracts';
 import type { CalendarResT } from '@jstar/shared/contracts';
@@ -133,6 +132,22 @@ async function playOut(reply: string, onText?: OnText): Promise<void> {
   }
 }
 
+async function agentReply(state: AppState, star: StarId, text: string): Promise<string> {
+  if (import.meta.env.MODE === 'test' || (window as unknown as { __E2E__?: boolean }).__E2E__) {
+    return stubReply(state.chats[star].filter((m) => m.from === 'me').length + 1, text, 'ja');
+  }
+  const history = state.chats[star].slice(-8).map((message) => ({ role: message.from === 'me' ? 'user' : 'assistant', content: message.text }));
+  const response = await fetch('/v1/agent/chat', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ star, text, history })
+  });
+  const data = await response.json().catch(() => null) as { reply?: string; error?: string } | null;
+  const reply = data?.reply;
+  if (!response.ok || !reply) fail(data?.error || 'agent_unavailable', response.status || 503);
+  return reply!;
+}
+
 /**
  * Trial replies use the regular JSON endpoint even when the page asks for progressive text. Public preview tunnels
  * may close an NDJSON response after the model has already finished the turn; that made a valid visitor message look
@@ -148,7 +163,8 @@ export async function trialChat(state: AppState, star: StarId, text: string, lan
   await latency();
   if (state.trialLeft <= 0) fail('trial_exhausted', 402);
   const turn = state.trialLog.filter((m) => m.from === 'me').length;
-  const reply = stubReply(turn, text, lang);
+  const reply = import.meta.env.MODE === 'test' || (window as unknown as { __E2E__?: boolean }).__E2E__
+    ? stubReply(turn, text, lang) : await agentReply(state, star, text);
   await playOut(reply, onText);
   return { reply, affinityXp: 0, level: 1, memoryCard: null, trialMessagesLeft: state.trialLeft - 1, chatLeft: null, points: state.points, freePulls: state.freePulls };
 }
@@ -174,7 +190,7 @@ export async function chat(state: AppState, star: StarId, text: string, lang: La
   const memoryCard = mine % RULES.memoryCardEvery === 0
     ? { id: localId('mem'), title: translate(lang, 'chat.memoryTitle'), createdAt: new Date().toISOString() }
     : null;
-  const reply = stubReply(mine, text, lang);
+  const reply = await agentReply(state, star, text);
   await playOut(reply, onText);
   // The relationship's free pulls (a stage entered, #54) are added by the store, which runs the stage machine.
   return { reply, affinityXp: xp, level: levelFromXp(xp), memoryCard, trialMessagesLeft: null, chatLeft: Math.floor(points / RULES.textMessageCostPoints), points, freePulls: state.freePulls };
@@ -345,20 +361,31 @@ export async function answerCallName(star: StarId, to: 'familiar' | 'lover', acc
 
 // ---------------------------------------------------------------- serial codes
 
-export async function redeemSerial(state: AppState, raw: string): Promise<SerialRedeemResT & { code: string }> {
+export async function verifySerial(state: AppState, raw: string): Promise<void> {
+  const code = normalizeSerial(raw);
+  if (!isValidSerialFormat(code)) fail('invalid_serial_format', 400);
+  if (serverMode() && !(DEMO_SERIALS as readonly string[]).includes(code)) { await http.verifySerial(code); return; }
+  await latency();
+  if (!(DEMO_SERIALS as readonly string[]).includes(code)) fail('serial_not_found', 404);
+  if (state.redeemed.includes(code)) fail('serial_already_used', 409);
+}
+
+export async function redeemSerial(state: AppState, raw: string, count: 1 | 6 = 6, pool: string = 'all'): Promise<SerialRedeemResT & { code: string }> {
   const code = normalizeSerial(raw);
   if (!isValidSerialFormat(code)) fail('invalid_serial_format', 400);
   const demoCode = (DEMO_SERIALS as readonly string[]).includes(code);
   // The public demo codes belong to each browser's walkthrough. Keeping them local prevents one visitor from
   // consuming the shared sample before everybody else has had a chance to try the redemption flow.
-  if (serverMode() && !demoCode) return { ...(await http.redeem(code)), code };
+  if (serverMode() && !demoCode) return { ...(await http.redeem(code, count, pool)), code };
   await latency();
   if (!demoCode) fail('serial_not_found', 404);
   if (state.redeemed.includes(code)) fail('serial_already_used', 409);
   // Prototype mode only: the catalog and draw code load on demand so they stay out of the main bundle.
   const [{ CARDS }, { drawLucky }] = await Promise.all([import('../data/cards'), import('../lib/gacha')]);
   const seen = new Set(Object.keys(state.owned));
-  const cards = drawLucky(CARDS, Math.random).map(({ card: c }) => {
+  const eligible = pool === 'all' ? CARDS : CARDS.filter((card) => `star:${card.star}` === pool);
+  if (!eligible.length) fail('pool_empty', 400);
+  const cards = drawLucky(eligible, Math.random, count).map(({ card: c }) => {
     const isNew = !seen.has(c.id);
     seen.add(c.id);
     return { id: c.id, star: c.star, rarity: c.rarity, isNew };
@@ -368,39 +395,7 @@ export async function redeemSerial(state: AppState, raw: string): Promise<Serial
   return { code, cards, trialDays: days, claimed: false, passUntil: extendPass(state.passUntil, days), drawId: localId('drw'), pointsGranted: RULES.serialPoints };
 }
 
-// ---------------------------------------------------------------- gacha and shop
-
-export async function drawCards(state: AppState, n: 1 | 6 | 10, free: boolean, pool: string = state.gachaPool): Promise<DrawResT> {
-  // Local review builds keep the wallet and collection in this browser. A top-up made here must therefore
-  // draw from the same local state instead of depending on a separately running API session.
-  if (serverMode() && !import.meta.env.DEV) return http.draw(n, free, pool);
-  await latency();
-  if (state.freePulls < n) fail('no_free_pull', 409);
-  const { pull, poolOpen } = await import('../lib/gacha');
-  if (!poolOpen(pool)) fail('pool_closed', 409);
-  const seen = new Set(Object.keys(state.owned));
-  const { drawn, pity } = pull(n, state.pity, pool);
-  const cards = drawn.map(({ card: c }) => {
-    const isNew = !seen.has(c.id);
-    seen.add(c.id);
-    return { id: c.id, star: c.star, rarity: c.rarity, isNew };
-  });
-  const duplicateShards = cards.reduce((sum, card) => sum + (card.isNew ? 0 : RULES.duplicateShards[card.rarity]), 0);
-  return { cards, wallet: { points: state.points, freePulls: state.freePulls - n, pity, shards: state.shards + duplicateShards }, drawId: localId('drw') };
-}
-
-/** Star Shards → a chosen card; cost and duplicate rebate both follow its rarity. */
-export async function exchangeCard(state: AppState, cardId: string): Promise<ExchangeResT> {
-  if (serverMode()) return http.exchange(cardId);
-  await latency();
-  const { CARD_BY_ID } = await import('../data/cards');
-  const card = CARD_BY_ID[cardId];
-  if (!card || !isExchangeable(card)) fail('not_exchangeable', 400);
-  const shardCost = RULES.exchangeShards[card.rarity];
-  if (state.shards < shardCost) fail('insufficient_shards', 402);
-  const isNew = !state.owned[card.id];
-  return { card: { id: card.id, star: card.star, rarity: card.rarity, isNew }, wallet: { points: state.points, freePulls: state.freePulls, pity: state.pity, shards: state.shards - shardCost + (isNew ? 0 : RULES.duplicateShards[card.rarity]) } };
-}
+// ---------------------------------------------------------------- gacha history and shop
 
 /** The last 180 days of draws (server mode only; offline there is no history). */
 export async function drawHistory(): Promise<DrawHistoryResT | null> {

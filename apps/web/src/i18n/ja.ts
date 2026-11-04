@@ -56,10 +56,10 @@ export const ja = {
   'live.stepChoose': '出演者を選ぶ', 'live.stepPublic': '公開ライブで交流', 'live.stepGift': '指定ギフトを贈る', 'live.stepPrivate': '1対1ライブを解放',
   'f1.short': '覚えている', 'f1.title': '彼女は覚えている', 'f1.subtitle': 'あなたの言葉を、そっと心にしまっている', 'f1.body': '昨日こぼした小さな話、好きなもの、忙しい一日の終わりに隠せなかった疲れ。言葉を重ねるたび、彼女は今のあなたに寄り添う返事を覚えていきます。', 'f1.video': '会話の中で前日の話題に触れる場面',
   'f2.short': 'カード', 'f2.title': 'ときめきを残す', 'f2.subtitle': 'ときめいた瞬間を、ふたりだけの物語に', 'f2.body': 'ガチャで出会う公式カードには、彼女のさまざまな表情を。会話から生まれる「思い出カード」には、ふたりで過ごした時間を。迎えた一枚ごとに、新しい声と物語がひらきます。', 'f2.video': 'ガチャの演出と思い出カードの誕生',
-  'f3.short': 'シリアル', 'f3.title': 'カードが声になる', 'f3.subtitle': '手のひらのカードが、彼女の声になる', 'f3.body': 'JSTARラッキーカードのコードを入力すると、6枚のデジタルカードがあなたのもとへ届きます。そして次の瞬間、その一枚をたどるように、彼女から最初の言葉が届きます。', 'f3.video': '実物カードのQRを読み取る流れ',
+  'f3.short': 'シリアル', 'f3.title': 'カードが声になる', 'f3.subtitle': '手のひらのカードが、彼女の声になる', 'f3.body': 'コードを入力し、単発か6連、そして彼女のカードプールを選びます。コード1つにつき100ポイントも受け取れます。', 'f3.video': '実物カードのQRを読み取る流れ',
   'f4.short': 'ボイス', 'f4.title': '声をそばに', 'f4.subtitle': '会いたいときは、声をもう少しそばに', 'f4.body': '朝の「おはよう」も、夜の「おやすみ」も。ご本人公認のAIボイスが、ふたりだけの時間に、あなたの名前をそっと呼びます。', 'f4.video': 'ボイスメッセージの再生',
 
-  'gallery.preview': '登録すると、ガチャや実物カードのシリアルコードでこのカードを集められます。', 'gallery.join': '無料で登録して集める',
+  'gallery.preview': 'コードを入力してプールを選ぶと、このカードを引けます。', 'gallery.join': 'コードを入力', 'gallery.scene': 'シーン {n}',
   'gallery.count': '所持 {owned} ／ 全{total}種', 'gallery.all': 'すべて', 'gallery.filter': '絞り込み', 'gallery.cta': 'ガチャで集める', 'gallery.note': '実物カードのシリアルコードでも入手できます', 'gallery.showcase': 'カード展示', 'gallery.holdFlip': '長押しで裏面を見る', 'gallery.releaseFlip': '離すと表面に戻ります', 'gallery.tapInspect': 'タップで動画またはボイス・長押しして動かす', 'gallery.reset': 'カードを正面に戻す', 'gallery.back': '一覧に戻る',
 
   'events.live': '開催中', 'events.soon': '予告', 'events.ended': '終了', 'events.banner': 'バナー',
@@ -79,8 +79,8 @@ export const ja = {
 
   'serial.title': 'シリアルコード', 'serial.h1': '手元のカードを、\n彼女のもとへ', 'serial.body': 'JSTARラッキーカードの裏面にある12桁のコードを入力すると、デジタルカードが届き、彼女とのトークが始まります。',
   'serial.label': 'シリアルコード', 'serial.qr': 'カードのQRから自動で入力されました', 'serial.help': 'カード裏面に印字された12桁の数字です。', 'serial.demoLabel': 'デモコード（クリックで入力）', 'serial.demoUse': 'デモコードを使う', 'serial.submit': 'カードを受け取る', 'serial.checking': '確認中…', 'serial.once': '1つのコードは1つのアカウントでのみ使えます',
-  'serial.charge': 'クレジットをチャージ', 'serial.chargeBody': 'クレジットはテキストとビデオ通話だけに使えます。',
-  'serial.errFormat': '12桁の数字を入力してください。', 'serial.errTypo': '入力ミスがあるようです。カードの数字をもう一度確認してください。', 'serial.gets': 'コード1つで、カード{n}枚＋マンスリーパス{days}日間。1枚目はSR以上確定。', 'serial.ratesFirst': '1枚目（SR以上確定）：UR {ur}%　SSR {ssr}%　SR {sr}%', 'serial.ratesRest': '2〜{n}枚目：UR {ur}%　SSR {ssr}%　SR {sr}%　R {r}%　N {nn}%', 'serial.errNotfound': 'このコードは見つかりませんでした。入力ミスがないか確認してください。', 'serial.errUsed': 'このコードはすでに使用されています。', 'serial.locked': '入力の失敗が続いたため、約{m}分後に再度お試しください。',
+  'serial.verify': 'コードを確認', 'serial.charge': 'ポイントをチャージ', 'serial.chargeBody': 'ポイントはテキストチャット、ビデオ通話、ギフトに使えます。', 'serial.ratesSingle': '単発：UR {ur}%　SSR {ssr}%　SR {sr}%　R {r}%　N {nn}%',
+  'serial.errFormat': '12桁の数字を入力してください。', 'serial.errTypo': '入力ミスがあるようです。カードの数字をもう一度確認してください。', 'serial.gets': 'コード1つで100ポイントとカード{n}枚を受け取れます。', 'serial.ratesFirst': '1枚目（SR以上確定）：UR {ur}%　SSR {ssr}%　SR {sr}%', 'serial.ratesRest': '2〜{n}枚目：UR {ur}%　SSR {ssr}%　SR {sr}%　R {r}%　N {nn}%', 'serial.errNotfound': 'このコードは見つかりませんでした。入力ミスがないか確認してください。', 'serial.errUsed': 'このコードはすでに使用されています。', 'serial.locked': '入力の失敗が続いたため、約{m}分後に再度お試しください。',
 
   'res.tap': 'カードをタップしてめくる', 'res.added': 'カード図鑑に追加されました', 'res.flip': '{n}枚目をめくる', 'res.her': 'わたしを見つけてくれて、ありがとう。これから、たくさん話そうね。', 'res.bonus': '特典：マンスリーパス{days}日間 無料体験（{first}と話し放題）', 'res.save': '無料登録してカードを保存する', 'res.count': '{n}枚のカード', 'res.first': 'SR以上確定', 'res.dup': '重複 親密度+{xp}', 'res.keep': '登録すると、カードとパスがアカウントに保存されます。',
 
@@ -90,7 +90,7 @@ export const ja = {
   'tab.label': 'メイン', 'tab.her': '彼女', 'tab.talk': 'トーク', 'tab.gacha': 'ガチャ', 'tab.cards': 'カード', 'tab.me': 'マイ',
 
   'gacha.title': 'ガチャ', 'gacha.period': '{from} 〜 {to}',
-  'gacha.pool': '全員ガチャ', 'gacha.poolBody': '5人のカード全150種から。SSRとURには2話のストーリー、全カードにボイス付き。', 'gacha.rates': '提供割合', 'gacha.freePull': 'ガチャ券', 'gacha.noFree': 'ガチャ券が足りません。クレジットはガチャに使えません。', 'gacha.free': 'ガチャ券 {n}枚', 'gacha.freeSub': 'ふたりの関係が進むともらえます', 'gacha.draw': '引く', 'gacha.one': '1回引く', 'gacha.six': '6回引く', 'gacha.ten': '10回引く', 'gacha.noPoints': 'ガチャ券が足りません。',
+  'gacha.pool': '全員ガチャ', 'gacha.poolBody': '5人のカード全125種。ひとり5つのシーングループがあります。', 'gacha.rates': '提供割合', 'gacha.freePull': 'コード', 'gacha.noFree': 'コードを入力してください。ポイントはガチャに使えません。', 'gacha.free': 'コードを入力', 'gacha.freeSub': '単発か6連を選べます', 'gacha.draw': '引く', 'gacha.one': '1回引く', 'gacha.six': '6回引く', 'gacha.ten': '10回引く', 'gacha.noPoints': 'コードを入力してください。',
   'pg.title': '星をめくる\n運命の一枚', 'pg.body': '光に触れて、彼女たちの一瞬を迎える。公開されている提供割合と共通の保天井ルールで抽選します。', 'pg.mode': 'ガチャモード', 'pg.single': 'シングル', 'pg.six': '6連ガチャ', 'pg.singleNote': '一枚に、ゆっくり向き合う', 'pg.sixNote': '六枚を連続で開く', 'pg.rates': '提供割合', 'pg.pity': 'SSR以上確定まで、あと{n}回', 'pg.draw': 'TAP TO DRAW', 'pg.reveal': 'カードをめくる', 'pg.again': 'もう一度引く',
 
   'gr.count': '{n}回', 'gr.received': 'カードを受け取りました', 'gr.title': '結果', 'gr.summary': "{n}枚：{tiers}", 'gr.best': 'いちばんのカード', 'gr.reveal': 'すべてめくる', 'gr.again': 'もう一度引く', 'gr.view': 'カードを見る',
@@ -102,8 +102,8 @@ export const ja = {
   'cd.voice': 'ボイスを聴く', 'cd.playing': '再生中…', 'cd.story1': 'ストーリー 第1話', 'cd.unlocked': '解放済み', 'cd.story2': 'ストーリー 第2話', 'cd.unlockAt': '「仲良し」になると解放', 'cd.awaken': '覚醒', 'cd.awakenBody': '同じカードが重なると覚醒が進み、動くカードと限定ボイスが解放されます。', 'cd.talk': 'このカードの話をする',
   'cd.variant.title': 'もうひとりの{first}', 'cd.variant.level': 'Lv {n} / {max}', 'cd.variant.bar': '仲の良さ', 'cd.variant.layer1': 'お披露目', 'cd.variant.layer3': 'ふたりの時間', 'cd.variant.layer6': '近くで', 'cd.variant.layer10': '腕のなかで', 'cd.variant.locked': 'まだ', 'cd.variant.next': 'もう少し仲良くなったら、{first}が次の場面を見せてくれるみたい。', 'cd.variant.all': '{first}の場面は、ぜんぶ見せてもらいました。', 'cd.variant.pin': 'ホームをこの服にする', 'cd.variant.unpin': 'ホームの固定をやめる', 'cd.variant.pinned': 'ホームの{first}は、この服で待っています。',
 
-  'shop.title': 'クレジットチャージ', 'shop.balance': 'クレジット残高', 'shop.heading': 'クレジットをチャージ', 'shop.body': 'テキストは1通1クレジット、ビデオ通話は1分60クレジットです。', 'shop.choose': 'チャージプランを選ぶ', 'shop.popular': '標準プラン', 'shop.use': 'クレジットはチャット専用で、ガチャには使えません',
-  'shop.processing': '処理中…', 'shop.buyPack': '${price}で{stones}クレジットをチャージ', 'shop.signup': '無料登録してチャージ', 'shop.demo': '現在はデザイン確認用のデモです。実際の決済は行われません。', 'shop.done': '{n}クレジットを追加しました', 'shop.expiry': 'クレジットの有効期限：購入日から{days}日', 'shop.monthly': 'マンスリーパス', 'shop.monthlyPrice': '¥{n}／30日', 'shop.monthlyBody': 'チャットプラン',
+  'shop.title': 'クレジットチャージ', 'shop.balance': 'クレジット残高', 'shop.heading': 'クレジットをチャージ', 'shop.body': 'テキストは1通1クレジット、ビデオ通話は1分60クレジットです。', 'shop.choose': 'チャージプランを選ぶ', 'shop.popular': '標準プラン', 'shop.use': 'クレジットはチャット・通話・ギフトに使えます。ガチャには使えません',
+  'shop.processing': '処理中…', 'shop.buyPack': '${price}で{stones}クレジットをチャージ', 'shop.testFree': 'テスト版：{n}クレジットを無料で受け取る', 'shop.referencePrice': '正式プラン参考価格：1000クレジット／${price}', 'shop.signup': '無料登録してチャージ', 'shop.demo': 'テスト期間中は何度でも無料で受け取れます。決済はありません。', 'shop.done': '{n}クレジットを追加しました', 'shop.expiry': 'クレジットの有効期限：購入日から{days}日', 'shop.monthly': 'マンスリーパス', 'shop.monthlyPrice': '¥{n}／30日', 'shop.monthlyBody': 'チャットプラン',
 
   'me.title': 'マイ', 'me.oshi': '推し：{name}', 'me.viaLine': 'LINEで登録', 'me.viaEmail': 'メールで登録', 'me.serial': 'シリアルコードを入力', 'me.history': 'シリアルコード履歴', 'me.historyN': '{n}件', 'me.points': 'クレジット', 'me.guide': 'サイトの案内と規約', 'me.lang': '言語',
   'me.logout': 'ログアウト', 'me.reset': 'この端末のデータを消去', 'me.resetBody': '会話・カード・クレジットの表示用データを、この端末から消去します。', 'me.erase': '消去する',
@@ -141,7 +141,7 @@ export const ja = {
   "gift.known": "好きって言ってた",
   "gift.knownList": "{first}の好きなもの：{list}",
   "gift.pick": "贈るものを選んでね",
-  "gift.send": "プレゼントを贈る",
+  "gift.send": "{price}ポイントで贈る",
   "gift.note": "プレゼントはアプリ内のデジタル演出です（実物は届きません）。",
   "gift.taste": "何を贈るかで、{first}の喜び方が変わります。",
   "gift.sent": "{gift}を贈りました",
@@ -156,7 +156,7 @@ export const ja = {
   'gacha.fromCode': "シリアルコード",
   'gacha.pickupChip': "✦ {title}",
   'gacha.pickupHead': "「{title}」ピックアップ",
-  'gacha.pickupBody': "{first}のカード30種から。SSR以上が出たとき、その{share}が「{title}」になります。",
+  'gacha.pickupBody': "{first}のカード25種から。SSR以上が出たとき、その{share}が「{title}」になります。",
   'gacha.pickupRate': "「{title}」{rate}（通常 {base}）\nSSR以上の合計 {top}",
   'gacha.pickupPeriod': "開催期間 {from} 〜 {to}（日本時間）",
   'gacha.pickupClosed': "このピックアップは終了しました。",
@@ -180,7 +180,7 @@ export const ja = {
   'pts.got': "受取済み",
   'pts.passHow': "マンスリーパスはラッキーカードのシリアルコードで受け取れます",
   'pts.soon': "クレジットはチャット専用で、ガチャには使えません。",
-  'rates.intro': "ガチャは5段階（UR・SSR・SR・R・N）。{pity}回目までにSSR以上が必ず出ます（全ガチャ共通でカウント）。重複カードはレアリティに応じて星のかけらに変わり、交換所で各レアリティのカードと交換できます。",
+  'rates.intro': "カードはUR・SSR・SR・R・Nの5段階で、引き換えコードからのみ入手できます。ポイントはチャット、通話、ギフトに使用します。", 'rates.firstCard': '6枚引きの1枚目',
   'rates.tier': "レアリティ",
   'rates.rate': "確率",
   'rates.perCard': "1枚あたり",
@@ -189,7 +189,7 @@ export const ja = {
   'rates.list': "カードごとの確率を見る",
   'rates.codeTitle': "シリアルコード",
   'rates.code': "コード1つでカード{n}枚。1枚目はSR以上確定（UR {ur}／SSR {ssr}／SR {sr}）、2枚目以降は通常の確率です。",
-  'rates.note': "確率を変更する場合は事前にお知らせします。{n}人のカードは各30枚ずつ、全員同じ構成です。",
+  'rates.note': "確率を変更する場合は事前にお知らせします。{n}人のカードは各25枚ずつ、全員同じ構成です。",
   'rates.variantsTitle': "バリアントカード",
   'rates.variants': "次の{n}枚は「もうひとりの彼女」です。カードごとの親密度（Lv.1〜10）で、そのカードだけのシーンが開きます。確率は同じレアリティの他のカードと同じで、上の表に含まれています。2枚目以降も所持枚数は増え、あわせて「ココロ」になってそのカードの親密度が上がります。",
   'rates.pickupTitle': "「{title}」ピックアップ（{name}）",

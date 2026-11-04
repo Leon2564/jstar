@@ -131,9 +131,21 @@
 .serial-page .input::placeholder { color: var(--iv-meta); }
 .serial-page .err { color: var(--rose-glow); }
 .serial-page .ok { color: var(--ivory); }
+.pg-redemption { position: relative; overflow: hidden; min-height: 100dvh; background: radial-gradient(circle at 74% 46%, #353052, transparent 40%), #151830; }
+.pg-redemption > .col { position: relative; z-index: 2; width: min(100%, 560px); margin: clamp(34px, 7vh, 90px) 0 0 max(24px, calc((100vw - 1320px) / 2)); }
+.pg-redemption .pg-kicker { margin: 0; }
+.pg-redemption-art { position: absolute; inset: 74px 0 0 45%; display: grid; place-items: center; pointer-events: none; }
+.pg-redemption-halo { position: absolute; width: min(62vw, 760px); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(219,159,190,.26), transparent 62%); filter: blur(22px); }
+.pg-redemption-art img { position: absolute; width: clamp(210px, 22vw, 340px); max-height: 62vh; object-fit: contain; transform: translateX(calc((var(--i) - 2) * 24%)) rotate(calc((var(--i) - 2) * 7deg)); filter: drop-shadow(0 18px 26px rgba(4,6,21,.55)); }
+.pg-redemption-art span { align-self: end; margin-bottom: 9vh; color: rgba(243,219,231,.7); font: 13px/1 var(--serif); letter-spacing: .35em; }
+@media (max-width: 900px) { .pg-redemption > .col { margin: 28px auto 0; } .pg-redemption-art { inset: 74px 0 0; opacity: .2; } }
 .serial-demo { display: grid; gap: 7px; }
 .serial-demo > div { display: flex; flex-wrap: wrap; gap: 6px; }
 .serial-demo button { min-height: 32px; padding: 5px 9px; border: var(--hairline) solid var(--iv-line); border-radius: var(--r-pill); background: rgba(255,255,255,.06); color: var(--ivory); font: 500 var(--fs-meta)/1 var(--sans); letter-spacing: .05em; }
 .serial-demo button:hover:not(:disabled), .serial-demo button:focus-visible { border-color: var(--rose); background: rgba(230,164,180,.14); }
 .serial-demo button:disabled { opacity: .35; text-decoration: line-through; }
+.serial-draw-options { display: grid; gap: 12px; }
+.serial-draw-modes, .serial-pools { display: flex; flex-wrap: wrap; gap: 7px; }
+.serial-draw-options button { min-height: 36px; padding: 6px 12px; border: 1px solid rgba(239,232,237,.25); border-radius: 999px; color: var(--ivory); background: rgba(255,255,255,.05); cursor: pointer; }
+.serial-draw-options button[aria-pressed='true'] { border-color: var(--rose); background: rgba(211,138,151,.23); }
 

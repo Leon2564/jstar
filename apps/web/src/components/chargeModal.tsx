@@ -78,7 +78,7 @@ export function ChargeModal({ open, onClose }: ChargeModalProps) {
                 <span className="charge-popular">{t('shop.popular')}</span>
                 <span className="charge-gem" aria-hidden="true"><Icon name="spark" size={16} /></span>
                 <strong className="serif">{t('common.pt', { n: item.points.toLocaleString() })}</strong>
-                <span>${item.usd.toFixed(2)}</span>
+                <span>{t('shop.testFree', { n: item.points.toLocaleString() })}</span>
               </button>
             );
           })}
@@ -88,13 +88,13 @@ export function ChargeModal({ open, onClose }: ChargeModalProps) {
 
         {state.user
           ? <button type="button" className="btn btn-rose charge-submit" onClick={() => void confirm()} disabled={busy}>
-              {busy ? t('shop.processing') : t('shop.buyPack', { stones: pack.points.toLocaleString(), price: pack.usd.toFixed(2) })}
+              {busy ? t('shop.processing') : t('shop.testFree', { n: pack.points.toLocaleString() })}
             </button>
           : <Link className="btn btn-rose charge-submit" to="/signup?next=/me/shop" onClick={onClose}>{t('shop.signup')}</Link>}
 
         <div className="charge-foot" aria-live="polite">
           {notice ? <span className={notice === t('common.error') ? 'err' : 'ok'}>{notice}</span> : <span>{t('shop.demo')}</span>}
-          <span>{t('shop.expiry', { days: CONFIG.pointExpiryDays })}</span>
+          <span>{t('shop.referencePrice', { price: pack.usd.toFixed(2) })}</span>
         </div>
       </section>
     </div>,

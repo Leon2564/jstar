@@ -116,7 +116,7 @@ export const ROOM = {
   allRead: L('都看過了', 'すべて既読', 'All read', '모두 읽음'),
   /** 思念 before she has written him anything (a new member): not 「都看過了」. */
   noneYet: L('還沒有', 'まだありません', 'None yet', '아직 없어요'),
-  freeToday: L('今日 {n} 次', '今日 {n} 回', '{n} today', '오늘 {n}회'),
+  codeDraw: L('輸入兌換碼', 'コードを入力', 'Enter a code', '코드 입력'),
   leave: L('離開通話', '通話を終える', 'Leave the call', '통화 나가기'),
   ended: L('通話 {n} 分鐘 · 下次再聊喔', '通話 {n}分 · また話そうね', 'Call {n} min · Talk again soon', '통화 {n}분 · 또 이야기하자'),
   voice: L('聲音', '声', 'Voice', '음성'),
@@ -1318,7 +1318,7 @@ function RoomIndex(p: RoomV2Props & { lang: string; timer: string; mins: number 
           {cell(3, roomText('alarm', lang), x.alarm === undefined ? '…' : x.alarm ?? roomText('noAlarm', lang), { to: '/me/alarm', testId: 'alarm-chip' })}
           {cell(4, roomText('log', lang), x.linesTonight === null ? '…' : roomText('lines', lang, { n: x.linesTonight }), { onClick: () => p.onSheet('log'), testId: 'room-history' })}
           {cell(5, roomText('memories', lang), x.unread ? roomText('unread', lang, { n: x.unread }) : roomText(x.inboxTotal === 0 ? 'noneYet' : 'allRead', lang), { to: '/me/cards?tab=memory', testId: 'room-memories' })}
-          {cell(6, roomText('gacha', lang), roomText('freeToday', lang, { n: x.freePulls }), { to: '/gacha', testId: 'room-gacha' })}
+          {cell(6, roomText('gacha', lang), roomText('codeDraw', lang), { to: '/gacha', testId: 'room-gacha' })}
         </nav>
         <div className="room2-extra">{x.extra}</div>
         </div>

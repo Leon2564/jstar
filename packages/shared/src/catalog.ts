@@ -25,22 +25,40 @@ export function variantDef(star: StarId): VariantDef {
   };
 }
 
-/** Star Genesis · First Five: 5 talents × 30 cards, all AI-generated (labelled in the UI). */
-export const CATALOG: CardDef[] = (raw as CatalogEntry[]).map((e) => ({
+const LEGACY_CATALOG: CardDef[] = (raw as CatalogEntry[]).map((e) => ({
   id: e.id, star: e.star, rarity: e.tier, title: e.title, line: nonEmpty(e.line), story: storyOf(e.story),
   source: 'ai', art: e.art ?? null, voice: e.voice ?? null,
   ...(VARIANT_CARDS.includes(e.id) ? { variant: variantDef(e.star) } : {})
 }));
 
-export const CATALOG_BY_ID: Record<string, CardDef> = Object.fromEntries(CATALOG.map((c) => [c.id, c]));
+/** Five replaceable scene groups per talent; each has one card of every tier. */
+export interface SceneCardGroup { id: string; star: StarId; index: number; cards: Record<Rarity, string> }
+const GROUP_CARD_NUMBERS: readonly Record<Rarity, number>[] = [
+  { N: 1, R: 11, SR: 19, SSR: 26, UR: 30 },
+  { N: 2, R: 12, SR: 20, SSR: 27, UR: 16 },
+  { N: 3, R: 13, SR: 21, SSR: 28, UR: 17 },
+  { N: 4, R: 14, SR: 22, SSR: 29, UR: 18 },
+  { N: 5, R: 15, SR: 23, SSR: 24, UR: 25 }
+];
+export const SCENE_GROUPS: SceneCardGroup[] = STAR_IDS.flatMap((star) => GROUP_CARD_NUMBERS.map((numbers, index) => ({
+  id: `${star}-scene-${index + 1}`, star, index: index + 1,
+  cards: Object.fromEntries(RARITIES.map((tier) => [tier, `s1-${star}-${String(numbers[tier]).padStart(2, '0')}`])) as Record<Rarity, string>
+})));
+const originalById = Object.fromEntries(LEGACY_CATALOG.map((card) => [card.id, card])) as Record<string, CardDef>;
+export const CATALOG: CardDef[] = SCENE_GROUPS.flatMap((group) => RARITIES.map((tier) => ({
+  ...originalById[group.cards[tier]], rarity: tier
+})));
+/** Past collection entries stay readable even when they are not in the current draw pool. */
+export const CATALOG_BY_ID: Record<string, CardDef> = { ...originalById, ...Object.fromEntries(CATALOG.map((card) => [card.id, card])) };
+export const ACTIVE_CARD_IDS: ReadonlySet<string> = new Set(CATALOG.map((card) => card.id));
 export const SERIES = { id: 'S1', name: 'Star Genesis', set: 'First Five' } as const;
 
 /**
- * Structural check used by tests and the API at boot: 150 cards, 30 per talent, N10 R8 SR7 SSR4 UR1 each; and the
+ * Structural check used by tests and the API at boot: 125 cards, 25 per talent, five per tier; and the
  * variants (#47): every selected card exists and carries its variant, at most one per talent, layers as in VARIANT_RULES.
  */
 export function catalogProblems(cards: CardDef[] = CATALOG, variants: readonly string[] = VARIANT_CARDS): string[] {
-  const want: Record<Rarity, number> = { N: 10, R: 8, SR: 7, SSR: 4, UR: 1 };
+  const want: Record<Rarity, number> = { N: 5, R: 5, SR: 5, SSR: 5, UR: 5 };
   const out: string[] = [];
   if (new Set(cards.map((c) => c.id)).size !== cards.length) out.push('duplicate ids');
   for (const star of STAR_IDS) {

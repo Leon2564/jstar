@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { pickCard, rollTier } from '@jstar/shared/gacha';
+import { drawLucky, pickCard, poolCards, rollTier } from '@jstar/shared/gacha';
 import { pull, seeded } from '../../src/lib/gacha';
 import { CARDS, RARITIES, RARITY_ORDER } from '../../src/data/cards';
 import { CONFIG } from '../../src/lib/config';
@@ -31,6 +31,16 @@ describe('gacha (Star Genesis, five tiers)', () => {
   it('a single-talent pool only returns her cards', () => {
     const rng = seeded(5);
     for (let i = 0; i < 300; i++) expect(pull(10, 0, 'star:alice', rng).drawn.every((d) => d.card.star === 'alice')).toBe(true);
+  });
+  it('redeeming a code can draw one or six cards from a chosen talent or the combined pool', () => {
+    const alice = poolCards('star:alice', CARDS);
+    const single = drawLucky(alice, seeded(13), 1);
+    const six = drawLucky(alice, seeded(13), 6);
+    expect(single).toHaveLength(1);
+    expect(six).toHaveLength(6);
+    expect(six.every((item) => item.card.star === 'alice')).toBe(true);
+    expect(RARITY_ORDER[six[0].tier]).toBeGreaterThanOrEqual(RARITY_ORDER.SR);
+    expect(poolCards('all', CARDS)).toHaveLength(CARDS.length);
   });
   it('picked card always has the requested tier, and survives an RNG at the boundary', () => {
     const rng = seeded(3);

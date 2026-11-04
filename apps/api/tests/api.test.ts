@@ -84,7 +84,7 @@ beforeEach(async () => {
   it('serves health, config and the public catalogue', async () => {
     expect(json(await app.inject('/health')).ok).toBe(true);
     expect(json(await app.inject('/v1/config'))).toEqual({ demo: true, turnstile: null, vapidPublicKey: null, asr: false, voice: false, voiceStars: [] });
-    expect(json(await app.inject('/v1/cards')).cards).toHaveLength(150);
+    expect(json(await app.inject('/v1/cards')).cards).toHaveLength(125);
     // N-58: the web app reads a 429's Retry-After across origins, to wait it out once before a send fails.
     const res = await app.inject({ url: '/health', headers: { origin: env.PUBLIC_WEB_ORIGIN } });
     expect(res.headers['access-control-expose-headers']).toBe('retry-after');
@@ -236,9 +236,21 @@ beforeEach(async () => {
 
     // The draw is logged with its seed and tiers and replays to the same cards.
     const [log] = await repos.draws.forOwner(user.id, 5);
-    expect(log).toMatchObject({ poolId: 'lucky-s1', serialId: 'demo-0001', cost: 0 });
+    expect(log).toMatchObject({ poolId: 'all', serialId: 'demo-0001', cost: 0 });
     expect(log.tiers).toHaveLength(RULES.lucky.drawsPerCode);
     expect(drawLucky(await repos.cards.all(), seeded(Number(log.seed))).map((d) => d.card.id)).toEqual(cards.map((c) => c.id));
+    expect(m.wallet.points).toBe(RULES.welcomePoints + RULES.serialPoints);
+  });
+
+  it('a code can draw one card from a chosen star pool and grant 100 points', async () => {
+    const { h } = await userWith();
+    const res = await post('/v1/serial/redeem', { code: DEMO_SERIALS[0], count: 1, pool: 'star:nana' }, h);
+    expect(res.statusCode).toBe(200);
+    const body = json(res);
+    expect(body.cards).toHaveLength(1);
+    expect(body.cards[0].star).toBe('nana');
+    expect(body.pointsGranted).toBe(100);
+    expect((await me(h)).wallet.points).toBe(RULES.welcomePoints + 100);
   });
 
   it('rejects typos before looking anything up, without counting them as guesses', async () => {
@@ -294,6 +306,7 @@ beforeEach(async () => {
     expect(new Set(m.owned.map((o: { cardId: string }) => o.cardId))).toEqual(new Set([...first.cards, ...second.cards].map((c: Card) => c.id)));
     expect(Date.parse(m.chat.passUntil)).toBeGreaterThan(Date.now() + 13 * 86_400_000);
     expect(m.serialsRedeemed).toBe(2);
+    expect(m.wallet.points).toBe(RULES.welcomePoints + 2 * RULES.serialPoints);
     const dupes = 12 - m.owned.length;
     expect(Object.values(m.affinity as Record<string, number>).reduce((n, x) => n + x, 0)).toBe(dupes * RULES.lucky.duplicateBondXp);
     const history = json(await app.inject({ url: '/v1/chat/history?star=alice', headers: h }));
@@ -307,6 +320,7 @@ beforeEach(async () => {
     await post('/v1/auth/otp/start', { email: 'new@example.com' }, dev);
     await post('/v1/auth/otp/verify', { email: 'new@example.com', code: '123456' }, dev);
     expect(sumCopies((await me(h)).owned)).toBe(12);
+    expect((await me(h)).wallet.points).toBe(RULES.welcomePoints + 2 * RULES.serialPoints);
   });
 
   it('lists redeemed codes with their cards, including codes claimed from the device', async () => {
@@ -375,7 +389,7 @@ beforeEach(async () => {
     expect((await post('/v1/serial/redeem', { code: DEMO_SERIALS[0] }, h)).statusCode).toBe(200);
     app = await buildApp({ repos, logger: false, demo: true });
     expect((await post('/v1/serial/redeem', { code: DEMO_SERIALS[0] }, h)).statusCode).toBe(409);
-    expect((await repos.cards.all())).toHaveLength(150);
+    expect((await repos.cards.all())).toHaveLength(125);
   });
 
   it('draws only with points, uses free pulls, and never double-spends', async () => {

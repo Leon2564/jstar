@@ -65,7 +65,7 @@ function drawWith(n: number, rng: Rng, pity: number, rates: TierRates, pick: (ti
 /** One printed code: `n` draws, the first SR or better. */
 export function drawLucky(pool: CardDef[], rng: Rng, n: number = RULES.lucky.drawsPerCode, rates: TierRates = DEFAULT_RATES): Drawn[] {
   return Array.from({ length: n }, (_, i) => {
-    const tier = rollTier(rng, rates, i === 0 ? 'SR' : 'N');
+    const tier = rollTier(rng, rates, n > 1 && i === 0 ? 'SR' : 'N');
     return { tier, card: pickCard(tier, rng, pool) };
   });
 }

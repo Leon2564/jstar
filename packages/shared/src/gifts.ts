@@ -60,11 +60,11 @@ const NAMES: Record<GiftId, [string, LocalText]> = {
   'night-view': ['🌃', { ja: '夜景ディナー', 'zh-Hant': '夜景晚餐', en: 'Night-view dinner', ko: '야경 디너' }]
 };
 
-export const GIFTS: readonly GiftDef[] = GIFT_IDS.map((id) => ({ id, icon: NAMES[id][0], image: `/gifts/${id}.webp`, name: NAMES[id][1], price: GIFT_RULES.prices[id] }));
-export const giftById = (id: string): GiftDef | undefined => GIFTS.find((g) => g.id === id);
-
 /** The six choices shown by the compact storefront. The full catalogue remains valid for existing account history. */
 export const FEATURED_GIFT_IDS = ['bouquet', 'cocoa', 'blanket', 'teddy', 'karaoke-mic', 'night-view'] as const satisfies readonly GiftId[];
+const featuredGiftIds = new Set<string>(FEATURED_GIFT_IDS);
+export const GIFTS: readonly GiftDef[] = GIFT_IDS.map((id) => ({ id, icon: NAMES[id][0], image: `/gifts/${id}.${featuredGiftIds.has(id) ? 'png' : 'webp'}`, name: NAMES[id][1], price: GIFT_RULES.prices[id] }));
+export const giftById = (id: string): GiftDef | undefined => GIFTS.find((g) => g.id === id);
 export const FEATURED_GIFTS: readonly GiftDef[] = FEATURED_GIFT_IDS.map((id) => giftById(id)!);
 
 /**

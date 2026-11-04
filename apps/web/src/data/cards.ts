@@ -1,5 +1,5 @@
 /**
- * Star Genesis · First Five — the 150 cards come from @jstar/shared/catalog (catalog.s1.json), the same file
+ * Star Genesis · First Five — the active 125 cards come from @jstar/shared/catalog, the same module
  * the API seeds from, so web and server never disagree about a card.
  */
 import { CATALOG, CATALOG_BY_ID, SERIES } from '@jstar/shared/catalog';

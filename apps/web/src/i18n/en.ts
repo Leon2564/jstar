@@ -27,10 +27,10 @@ export const en: Dict = {
   'live.stepChoose': 'Choose a talent', 'live.stepPublic': 'Join public live', 'live.stepGift': 'Send the chosen gift', 'live.stepPrivate': 'Unlock one-to-one',
   'f1.short': 'Remembers', 'f1.title': 'She remembers you', 'f1.subtitle': 'She keeps every word of yours close', 'f1.body': 'The little thing you mentioned yesterday, a favorite taste, the tiredness you could not hide after a long day. With every conversation, she learns how to answer the person you are right now.', 'f1.video': 'She brings up yesterday’s topic',
   'f2.short': 'Cards', 'f2.title': 'Keep the spark', 'f2.subtitle': 'Keep every spark as a story that belongs to you both', 'f2.body': 'Official cards hold her many different moments. Memory cards are born from the time the two of you share. Every card you welcome opens another voice, another story.', 'f2.video': 'The draw and a Memory card being born',
-  'f3.short': 'Serial', 'f3.title': 'A card finds its voice', 'f3.subtitle': 'The card in your hand becomes her voice', 'f3.body': 'Enter the code from a JSTAR lucky card and six digital cards arrive in your collection. A moment later, as if following that card home, her first words find their way to you.', 'f3.video': 'Scanning the QR on a physical card',
+  'f3.short': 'Serial', 'f3.title': 'A card finds its voice', 'f3.subtitle': 'The card in your hand becomes her voice', 'f3.body': 'Enter a code, choose a single or six-card draw, and pick her pool. Each code also grants 100 points.', 'f3.video': 'Scanning the QR on a physical card',
   'f4.short': 'Voice', 'f4.title': 'Let her voice draw near', 'f4.subtitle': 'When you miss her, let her voice draw nearer', 'f4.body': 'A good morning at daybreak, a soft good night after dark. With an AI voice approved by her, she gently calls your name in a moment that belongs to you both.', 'f4.video': 'Playing a voice message',
 
-  'gallery.preview': 'Sign up to collect this card from draws or with the code on a physical lucky card.', 'gallery.join': 'Sign up free to collect',
+  'gallery.preview': 'Enter a redemption code and choose a pool for a chance to draw this card.', 'gallery.join': 'Enter a code', 'gallery.scene': 'Scene {n}',
   'gallery.count': 'Owned {owned} / {total}', 'gallery.all': 'All', 'gallery.filter': 'Filter', 'gallery.cta': 'Collect by drawing', 'gallery.note': 'Serial codes on physical cards work too', 'gallery.showcase': 'Card showcase', 'gallery.holdFlip': 'Press and hold to see the back', 'gallery.releaseFlip': 'Release to return to the face', 'gallery.tapInspect': 'Tap for motion or voice · hold and drag to inspect', 'gallery.reset': 'Reset the card', 'gallery.back': 'Back to the card collection',
 
   'events.live': 'Live', 'events.soon': 'Coming soon', 'events.ended': 'Ended', 'events.banner': 'Banner',
@@ -50,8 +50,8 @@ export const en: Dict = {
 
   'serial.title': 'Serial code', 'serial.h1': 'Bring the card in your hand\nto her', 'serial.body': 'Enter the 12-digit code on the back of your JSTAR lucky card to receive digital cards and start talking with her.',
   'serial.label': 'Serial code', 'serial.qr': 'Filled in from the card’s QR code', 'serial.help': 'The 12 digits printed on the back of the card.', 'serial.demoLabel': 'Demo codes (click to fill)', 'serial.demoUse': 'Use demo code', 'serial.submit': 'Receive the cards', 'serial.checking': 'Checking…', 'serial.once': 'Each code works for one account only',
-  'serial.charge': 'Top up credits', 'serial.chargeBody': 'Credits are only used for text and video chat.',
-  'serial.errFormat': 'Enter the 12-digit code.', 'serial.errTypo': 'There seems to be a typo. Check the digits on the card again.', 'serial.gets': 'One code: {n} cards + a {days}-day monthly pass. The first card is SR or better.', 'serial.ratesFirst': 'Card 1 (SR or better): UR {ur}% / SSR {ssr}% / SR {sr}%', 'serial.ratesRest': 'Cards 2–{n}: UR {ur}% / SSR {ssr}% / SR {sr}% / R {r}% / N {nn}%', 'serial.errNotfound': 'We could not find this code. Check it for typos.', 'serial.errUsed': 'This code has already been used.', 'serial.locked': 'Too many failed attempts. Try again in about {m} min.',
+  'serial.verify': 'Verify code', 'serial.charge': 'Top up points', 'serial.chargeBody': 'Points are used for text chat, video calls and gifts.', 'serial.ratesSingle': 'Single draw: UR {ur}% / SSR {ssr}% / SR {sr}% / R {r}% / N {nn}%',
+  'serial.errFormat': 'Enter the 12-digit code.', 'serial.errTypo': 'There seems to be a typo. Check the digits on the card again.', 'serial.gets': 'One code grants 100 points and {n} cards.', 'serial.ratesFirst': 'Card 1 (SR or better): UR {ur}% / SSR {ssr}% / SR {sr}%', 'serial.ratesRest': 'Cards 2–{n}: UR {ur}% / SSR {ssr}% / SR {sr}% / R {r}% / N {nn}%', 'serial.errNotfound': 'We could not find this code. Check it for typos.', 'serial.errUsed': 'This code has already been used.', 'serial.locked': 'Too many failed attempts. Try again in about {m} min.',
 
   'res.tap': 'Tap a card to turn it over', 'res.added': 'Added to your card gallery', 'res.flip': 'Turn over card {n}', 'res.her': 'Thank you for finding me. Let’s talk a lot from now on.', 'res.bonus': 'Bonus: {days}-day monthly pass trial — talk with {first} without limits', 'res.save': 'Save the cards (free sign-up)', 'res.count': '{n} cards', 'res.first': 'SR+ guaranteed', 'res.dup': 'Duplicate · closeness +{xp}', 'res.keep': 'Sign up to keep the cards and the pass in your account.',
 
@@ -61,7 +61,7 @@ export const en: Dict = {
   'tab.label': 'Main', 'tab.her': 'Her', 'tab.talk': 'Chat', 'tab.gacha': 'Draw', 'tab.cards': 'Cards', 'tab.me': 'Me',
 
   'gacha.title': 'Draw', 'gacha.period': '{from} – {to}',
-  'gacha.pool': 'Everyone pool', 'gacha.poolBody': 'All 150 cards of the five. SSR and UR cards come with a two-part story, every card with a voice line.', 'gacha.rates': 'Draw rates', 'gacha.freePull': 'Draw tickets', 'gacha.noFree': 'Not enough draw tickets. Credits cannot be used for card draws.', 'gacha.free': '{n} draw tickets', 'gacha.freeSub': 'Earned as your relationship moves forward', 'gacha.draw': 'Draw', 'gacha.one': 'Draw 1', 'gacha.six': 'Draw 6', 'gacha.ten': 'Draw 10', 'gacha.noPoints': 'Not enough draw tickets.',
+  'gacha.pool': 'Everyone pool', 'gacha.poolBody': '125 cards across five stars, with five scene groups for each star.', 'gacha.rates': 'Draw rates', 'gacha.freePull': 'Code', 'gacha.noFree': 'Enter a redemption code. Credits cannot be used for card draws.', 'gacha.free': 'Enter a code', 'gacha.freeSub': 'Choose one or six draws per code', 'gacha.draw': 'Draw', 'gacha.one': 'Draw 1', 'gacha.six': 'Draw 6', 'gacha.ten': 'Draw 10', 'gacha.noPoints': 'Enter a redemption code.',
   'pg.title': 'Turn the stars\nMeet your card', 'pg.body': 'Touch the light and keep a fleeting moment with her. Draws use the published rates and the shared pity counter.', 'pg.mode': 'Draw mode', 'pg.single': 'Single draw', 'pg.six': 'Six draw', 'pg.singleNote': 'Take your time with one card', 'pg.sixNote': 'Reveal six cards in sequence', 'pg.rates': 'Draw rates', 'pg.pity': '{n} draws until guaranteed SSR or higher', 'pg.draw': 'TAP TO DRAW', 'pg.reveal': 'Reveal card', 'pg.again': 'Draw again',
 
   'gr.count': '{n} draws', 'gr.received': 'Cards received', 'gr.title': 'Results', 'gr.summary': "{n} drawn: {tiers}", 'gr.best': 'Best card', 'gr.reveal': 'Reveal all', 'gr.again': 'Draw again', 'gr.view': 'View cards',
@@ -73,8 +73,8 @@ export const en: Dict = {
   'cd.voice': 'Play voice', 'cd.playing': 'Playing…', 'cd.story1': 'Story, part 1', 'cd.unlocked': 'Unlocked', 'cd.story2': 'Story, part 2', 'cd.unlockAt': 'Unlocks once you are close friends', 'cd.awaken': 'Awakening', 'cd.awakenBody': 'Duplicates advance awakening and unlock a moving card and an exclusive voice line.', 'cd.talk': 'Talk about this card',
   'cd.variant.title': 'Another {first}', 'cd.variant.level': 'Lv {n} / {max}', 'cd.variant.bar': 'Closeness', 'cd.variant.layer1': 'The reveal', 'cd.variant.layer3': 'Time together', 'cd.variant.layer6': 'Up close', 'cd.variant.layer10': 'In her arms', 'cd.variant.locked': 'Locked', 'cd.variant.next': 'Get a little closer, and {first} will show you what comes next.', 'cd.variant.all': "You've seen every scene {first} has in this.", 'cd.variant.pin': 'Keep this look on her home', 'cd.variant.unpin': 'Stop keeping it on her home', 'cd.variant.pinned': '{first} waits on her home in this look.',
 
-  'shop.title': 'Top up credits', 'shop.balance': 'Credit balance', 'shop.heading': 'Top up credits', 'shop.body': 'Text chat costs 1 credit per message; video calls cost 60 credits per minute.', 'shop.choose': 'Choose a top-up pack', 'shop.popular': 'Standard pack', 'shop.use': 'Credits are for text and video chat only and cannot be used for card draws',
-  'shop.processing': 'Processing…', 'shop.buyPack': 'Top up {stones} for ${price}', 'shop.signup': 'Sign up free to top up', 'shop.demo': 'Design demo only — no real payment is made.', 'shop.done': 'Added {n} credits', 'shop.expiry': 'Credits expire {days} days after purchase', 'shop.monthly': 'Monthly pass', 'shop.monthlyPrice': '¥{n} / 30 days', 'shop.monthlyBody': 'Chat plan',
+  'shop.title': 'Top up credits', 'shop.balance': 'Credit balance', 'shop.heading': 'Top up credits', 'shop.body': 'Text chat costs 1 credit per message; video calls cost 60 credits per minute.', 'shop.choose': 'Choose a top-up pack', 'shop.popular': 'Standard pack', 'shop.use': 'Credits pay for chat, calls, and gifts—not card draws',
+  'shop.processing': 'Processing…', 'shop.buyPack': 'Top up {stones} for ${price}', 'shop.testFree': 'Claim {n} free test credits', 'shop.referencePrice': 'Future pack reference: 1,000 credits / ${price}', 'shop.signup': 'Sign up free to top up', 'shop.demo': 'Claim repeatedly during testing. No payment is taken.', 'shop.done': 'Added {n} credits', 'shop.expiry': 'Credits expire {days} days after purchase', 'shop.monthly': 'Monthly pass', 'shop.monthlyPrice': '¥{n} / 30 days', 'shop.monthlyBody': 'Chat plan',
 
   'me.title': 'Me', 'me.oshi': 'Favourite: {name}', 'me.viaLine': 'Signed up with LINE', 'me.viaEmail': 'Signed up with email', 'me.serial': 'Enter serial code', 'me.history': 'Serial code history', 'me.historyN': '{n}', 'me.points': 'Credits', 'me.guide': 'Site guide and terms', 'me.lang': 'Language',
   'me.logout': 'Log out', 'me.reset': 'Erase data on this device', 'me.resetBody': 'Erases the cached chats, cards and credits shown on this device.', 'me.erase': 'Erase',
@@ -112,7 +112,7 @@ export const en: Dict = {
   "gift.known": "She said she likes it",
   "gift.knownList": "{first} likes: {list}",
   "gift.pick": "Pick a gift",
-  "gift.send": "Send gift",
+  "gift.send": "Send for {price} points",
   "gift.note": "Gifts are digital effects in the app (nothing is shipped).",
   "gift.taste": "How happy {first} is depends on what you choose.",
   "gift.sent": "You gave her: {gift}",
@@ -127,7 +127,7 @@ export const en: Dict = {
   'gacha.fromCode': "Serial code",
   'gacha.pickupChip': "✦ {title}",
   'gacha.pickupHead': "“{title}” Pickup",
-  'gacha.pickupBody': "From {first}’s 30 cards. When a draw is SSR or better, {share} of those are “{title}”.",
+  'gacha.pickupBody': "From {first}’s 25 cards. When a draw is SSR or better, {share} of those are “{title}”.",
   'gacha.pickupRate': "“{title}” {rate} (usually {base})\nSSR or better in total {top}",
   'gacha.pickupPeriod': "Runs {from} – {to} (Japan time)",
   'gacha.pickupClosed': "This Pickup has ended.",
@@ -151,7 +151,7 @@ export const en: Dict = {
   'pts.got': "Received",
   'pts.passHow': "Get the monthly pass with a lucky-card serial code",
   'pts.soon': "Credits can be used for text and video chat, not card draws.",
-  'rates.intro': "Five tiers: UR, SSR, SR, R and N. SSR or better is guaranteed by pull {pity} (the count is shared across pools). Duplicate cards become Star Shards based on rarity; the exchange offers cards from every tier.",
+  'rates.intro': "Cards have five tiers: UR, SSR, SR, R and N. Cards are obtained only with redemption codes. Points are for chat, calls and gifts.", 'rates.firstCard': 'First of six',
   'rates.tier': "Tier",
   'rates.rate': "Rate",
   'rates.perCard': "Per card",
@@ -160,7 +160,7 @@ export const en: Dict = {
   'rates.list': "Rates per card",
   'rates.codeTitle': "Serial codes",
   'rates.code': "One code gives {n} cards. The first is SR or better (UR {ur} / SSR {ssr} / SR {sr}); the rest use the normal rates.",
-  'rates.note': "Rate changes are announced in advance. Each of the {n} talents has 30 cards with the same tier mix.",
+  'rates.note': "Rate changes are announced in advance. Each of the {n} talents has 25 cards with the same tier mix.",
   'rates.variantsTitle': "Variant cards",
   'rates.variants': "These {n} cards are “another her”: each has its own affinity (Lv.1–10) that opens scenes of that card only. Their rates are the same as any other card of the same tier and are included in the table above. A duplicate still adds a copy, and also becomes Heart, raising that card's affinity.",
   'rates.pickupTitle': "“{title}” Pickup ({name})",

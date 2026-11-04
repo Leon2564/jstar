@@ -27,10 +27,10 @@ export const ko: Dict = {
   'live.stepChoose': '출연자 선택', 'live.stepPublic': '공개 라이브 참여', 'live.stepGift': '지정 선물 보내기', 'live.stepPrivate': '1 대 1 열기',
   'f1.short': '기억해요', 'f1.title': '그녀는 당신을 기억해요', 'f1.subtitle': '당신이 건넨 말들을, 마음에 담아 둬요', 'f1.body': '어제 스치듯 꺼낸 이야기, 좋아하는 맛, 긴 하루 끝에 감추지 못한 피곤함. 대화를 거듭할수록 그녀는 지금의 당신에게 꼭 맞는 대답을 알아 갑니다.', 'f1.video': '대화 중 어제의 이야기를 꺼내는 장면',
   'f2.short': '카드', 'f2.title': '설렘을 간직해요', 'f2.subtitle': '설레었던 순간을, 둘만의 이야기로 간직해요', 'f2.body': '공식 카드에는 그녀의 서로 다른 순간을, 대화에서 태어난 ‘추억 카드’에는 함께 보낸 시간을 담아요. 한 장을 맞이할 때마다 새로운 목소리와 이야기가 열립니다.', 'f2.video': '뽑기 연출과 추억 카드의 탄생',
-  'f3.short': '시리얼', 'f3.title': '카드가 목소리가 돼요', 'f3.subtitle': '손안의 카드가, 그녀의 목소리가 되는 순간', 'f3.body': 'JSTAR 럭키 카드의 코드를 입력하면 디지털 카드 6장이 컬렉션에 도착해요. 그리고 그 카드를 따라온 듯, 그녀의 첫마디가 당신에게 닿습니다.', 'f3.video': '실물 카드의 QR을 읽는 과정',
+  'f3.short': '시리얼', 'f3.title': '카드가 목소리가 돼요', 'f3.subtitle': '손안의 카드가, 그녀의 목소리가 되는 순간', 'f3.body': '코드를 입력하고 한 장 또는 여섯 장 뽑기와 캐릭터 카드 풀을 선택하세요. 코드마다 100포인트도 받을 수 있어요.', 'f3.video': '실물 카드의 QR을 읽는 과정',
   'f4.short': '보이스', 'f4.title': '목소리를 가까이', 'f4.subtitle': '그리운 순간, 그녀의 목소리를 조금 더 가까이', 'f4.body': '아침의 인사도, 늦은 밤의 잘 자라는 한마디도. 본인이 공인한 AI 보이스로, 둘만의 시간에 그녀가 당신의 이름을 다정히 불러요.', 'f4.video': '보이스 메시지 재생',
 
-  'gallery.preview': '가입하면 뽑기나 실물 카드의 시리얼 코드로 이 카드를 모을 수 있어요.', 'gallery.join': '무료로 가입하고 모으기',
+  'gallery.preview': '교환 코드를 입력하고 카드 풀을 선택하면 이 카드를 뽑을 수 있어요.', 'gallery.join': '코드 입력', 'gallery.scene': '장면 {n}',
   'gallery.count': '보유 {owned} / 전체 {total}종', 'gallery.all': '전체', 'gallery.filter': '필터', 'gallery.cta': '뽑기로 모으기', 'gallery.note': '실물 카드의 시리얼 코드로도 얻을 수 있어요', 'gallery.showcase': '카드 전시', 'gallery.holdFlip': '길게 눌러 뒷면 보기', 'gallery.releaseFlip': '손을 떼면 앞면으로 돌아갑니다', 'gallery.tapInspect': '탭하여 영상 또는 음성 재생 · 길게 눌러 움직이기', 'gallery.reset': '카드를 정면으로 되돌리기', 'gallery.back': '카드 도감으로 돌아가기',
 
   'events.live': '진행 중', 'events.soon': '예고', 'events.ended': '종료', 'events.banner': '배너',
@@ -50,8 +50,8 @@ export const ko: Dict = {
 
   'serial.title': '시리얼 코드', 'serial.h1': '손에 쥔 카드를\n그녀에게', 'serial.body': 'JSTAR 럭키 카드 뒷면의 12자리 코드를 입력하면 디지털 카드가 도착하고, 그녀와의 대화가 시작돼요.',
   'serial.label': '시리얼 코드', 'serial.qr': '카드의 QR에서 자동 입력되었어요', 'serial.help': '카드 뒷면에 인쇄된 12자리 숫자예요.', 'serial.demoLabel': '데모 코드 (클릭하여 입력)', 'serial.demoUse': '데모 코드 사용', 'serial.submit': '카드 받기', 'serial.checking': '확인 중…', 'serial.once': '코드 하나는 한 계정에서만 사용할 수 있어요',
-  'serial.charge': '크레딧 충전', 'serial.chargeBody': '크레딧은 텍스트 및 영상 통화에만 사용할 수 있어요.',
-  'serial.errFormat': '12자리 숫자를 입력해 주세요.', 'serial.errTypo': '입력 오류가 있는 것 같아요. 카드의 숫자를 다시 확인해 주세요.', 'serial.gets': '코드 하나로 카드 {n}장 + 월간 패스 {days}일. 첫 장은 SR 이상 확정.', 'serial.ratesFirst': "첫 장(SR 이상 확정): UR {ur}% / SSR {ssr}% / SR {sr}%", 'serial.ratesRest': "2~{n}번째 장: UR {ur}% / SSR {ssr}% / SR {sr}% / R {r}% / N {nn}%", 'serial.errNotfound': '이 코드를 찾을 수 없어요. 오타가 없는지 확인해 주세요.', 'serial.errUsed': '이미 사용된 코드예요.', 'serial.locked': '입력 실패가 반복되어 약 {m}분 후에 다시 시도해 주세요.',
+  'serial.verify': '코드 확인', 'serial.charge': '포인트 충전', 'serial.chargeBody': '포인트는 문자 채팅, 영상 통화, 선물에 사용해요.', 'serial.ratesSingle': '단일 뽑기: UR {ur}% / SSR {ssr}% / SR {sr}% / R {r}% / N {nn}%',
+  'serial.errFormat': '12자리 숫자를 입력해 주세요.', 'serial.errTypo': '입력 오류가 있는 것 같아요. 카드의 숫자를 다시 확인해 주세요.', 'serial.gets': '코드 하나로 100포인트와 카드 {n}장을 받을 수 있어요.', 'serial.ratesFirst': "첫 장(SR 이상 확정): UR {ur}% / SSR {ssr}% / SR {sr}%", 'serial.ratesRest': "2~{n}번째 장: UR {ur}% / SSR {ssr}% / SR {sr}% / R {r}% / N {nn}%", 'serial.errNotfound': '이 코드를 찾을 수 없어요. 오타가 없는지 확인해 주세요.', 'serial.errUsed': '이미 사용된 코드예요.', 'serial.locked': '입력 실패가 반복되어 약 {m}분 후에 다시 시도해 주세요.',
 
   'res.tap': '카드를 탭해서 뒤집기', 'res.added': '카드 도감에 추가되었어요', 'res.flip': '{n}번째 카드 뒤집기', 'res.her': '나를 찾아 줘서 고마워. 앞으로 많이 이야기하자.', 'res.bonus': '특전: 월간 패스 {days}일 무료 체험 ({first}와 무제한 대화)', 'res.save': '무료 가입하고 카드 저장하기', 'res.count': '카드 {n}장', 'res.first': 'SR 이상 확정', 'res.dup': '중복 · 친밀도 +{xp}', 'res.keep': '가입하면 카드와 패스가 계정에 저장돼요.',
 
@@ -61,7 +61,7 @@ export const ko: Dict = {
   'tab.label': '메인', 'tab.her': '그녀', 'tab.talk': '대화', 'tab.gacha': '뽑기', 'tab.cards': '카드', 'tab.me': '마이',
 
   'gacha.title': '뽑기', 'gacha.period': '{from} ~ {to}',
-  'gacha.pool': "전원 뽑기", 'gacha.poolBody': "5명의 카드 전 150종에서 나와요. SSR과 UR에는 2화 분량의 스토리, 모든 카드에 보이스가 있어요.", 'gacha.rates': '확률 안내', 'gacha.freePull': '뽑기권', 'gacha.noFree': '뽑기권이 부족합니다. 크레딧은 카드 뽑기에 사용할 수 없습니다.', 'gacha.free': '뽑기권 {n}장', 'gacha.freeSub': '두 사람의 관계가 나아가면 받을 수 있어요', 'gacha.draw': '뽑기', 'gacha.one': '1회 뽑기', 'gacha.six': '6회 뽑기', 'gacha.ten': '10회 뽑기', 'gacha.noPoints': '뽑기권이 부족합니다.',
+  'gacha.pool': "전원 뽑기", 'gacha.poolBody': "다섯 명의 카드 총 125종, 각 인물마다 다섯 개의 장면 그룹이 있어요.", 'gacha.rates': '확률 안내', 'gacha.freePull': '코드', 'gacha.noFree': '교환 코드를 입력하세요. 포인트는 카드 뽑기에 사용할 수 없습니다.', 'gacha.free': '코드 입력', 'gacha.freeSub': '코드당 1회 또는 6회 뽑기 선택', 'gacha.draw': '뽑기', 'gacha.one': '1회 뽑기', 'gacha.six': '6회 뽑기', 'gacha.ten': '10회 뽑기', 'gacha.noPoints': '교환 코드를 입력하세요.',
   'pg.title': '별빛을 넘겨\n운명의 한 장', 'pg.body': '빛을 터치해 그녀들의 순간을 간직하세요. 공개 확률과 같은 천장 규칙으로 추첨합니다.', 'pg.mode': '뽑기 모드', 'pg.single': '단일 뽑기', 'pg.six': '6연속 뽑기', 'pg.singleNote': '한 장을 천천히 확인해요', 'pg.sixNote': '여섯 장을 연속으로 공개해요', 'pg.rates': '제공 확률', 'pg.pity': 'SSR 이상 확정까지 {n}회', 'pg.draw': 'TAP TO DRAW', 'pg.reveal': '카드 공개', 'pg.again': '다시 뽑기',
 
   'gr.count': '{n}회', 'gr.received': '카드를 받았어요', 'gr.title': '결과', 'gr.summary': "{n}장: {tiers}", 'gr.best': '최고의 카드', 'gr.reveal': '모두 뒤집기', 'gr.again': '한 번 더 뽑기', 'gr.view': '카드 보기',
@@ -73,8 +73,8 @@ export const ko: Dict = {
   'cd.voice': '보이스 듣기', 'cd.playing': '재생 중…', 'cd.story1': '스토리 1화', 'cd.unlocked': '해금됨', 'cd.story2': '스토리 2화', 'cd.unlockAt': '「친한 사이」가 되면 해금', 'cd.awaken': '각성', 'cd.awakenBody': '같은 카드가 겹치면 각성이 진행되고, 움직이는 카드와 한정 보이스가 해금돼요.', 'cd.talk': '이 카드 이야기하기',
   'cd.variant.title': '또 다른 {first}', 'cd.variant.level': 'Lv {n} / {max}', 'cd.variant.bar': '친밀도', 'cd.variant.layer1': '첫 공개', 'cd.variant.layer3': '둘만의 시간', 'cd.variant.layer6': '가까이서', 'cd.variant.layer10': '품 안에서', 'cd.variant.locked': '잠김', 'cd.variant.next': '조금 더 가까워지면 {first} 님이 다음 장면을 보여 줄 거예요.', 'cd.variant.all': '{first} 님의 모든 장면을 봤어요.', 'cd.variant.pin': '홈을 이 옷으로 고정', 'cd.variant.unpin': '홈 고정 해제', 'cd.variant.pinned': '홈의 {first} 님이 이 옷을 입고 기다려요.',
 
-  'shop.title': '크레딧 충전', 'shop.balance': '크레딧 잔액', 'shop.heading': '크레딧 충전', 'shop.body': '텍스트 채팅은 1회 1크레딧, 영상 통화는 분당 60크레딧입니다.', 'shop.choose': '충전 상품 선택', 'shop.popular': '기본 상품', 'shop.use': '크레딧은 채팅 전용이며 카드 뽑기에는 사용할 수 없습니다',
-  'shop.processing': '처리 중…', 'shop.buyPack': '${price}로 {stones}크레딧 충전', 'shop.signup': '무료 가입 후 충전', 'shop.demo': '현재는 디자인 확인용 데모이며 실제 결제되지 않아요.', 'shop.done': '{n}크레딧을 충전했어요', 'shop.expiry': '크레딧 유효기간: 구매일로부터 {days}일', 'shop.monthly': '월간 패스', 'shop.monthlyPrice': '¥{n} / 30일', 'shop.monthlyBody': '채팅 플랜',
+  'shop.title': '크레딧 충전', 'shop.balance': '크레딧 잔액', 'shop.heading': '크레딧 충전', 'shop.body': '텍스트 채팅은 1회 1크레딧, 영상 통화는 분당 60크레딧입니다.', 'shop.choose': '충전 상품 선택', 'shop.popular': '기본 상품', 'shop.use': '크레딧은 채팅, 통화, 선물에 사용하며 카드 뽑기에는 사용할 수 없습니다',
+  'shop.processing': '처리 중…', 'shop.buyPack': '${price}로 {stones}크레딧 충전', 'shop.testFree': '테스트용 {n}크레딧 무료 받기', 'shop.referencePrice': '정식 상품 참고 가격: 1,000크레딧 / ${price}', 'shop.signup': '무료 가입 후 충전', 'shop.demo': '테스트 기간에는 반복해서 무료로 받을 수 있으며 결제되지 않습니다.', 'shop.done': '{n}크레딧을 충전했어요', 'shop.expiry': '크레딧 유효기간: 구매일로부터 {days}일', 'shop.monthly': '월간 패스', 'shop.monthlyPrice': '¥{n} / 30일', 'shop.monthlyBody': '채팅 플랜',
 
   'me.title': '마이', 'me.oshi': '최애: {name}', 'me.viaLine': 'LINE으로 가입', 'me.viaEmail': '이메일로 가입', 'me.serial': '시리얼 코드 입력', 'me.history': '시리얼 코드 내역', 'me.historyN': '{n}건', 'me.points': '크레딧', 'me.guide': '사이트 안내 및 약관', 'me.lang': '언어',
   'me.logout': '로그아웃', 'me.reset': '이 기기의 데이터 삭제', 'me.resetBody': '이 기기에 표시용으로 저장된 대화·카드·크레딧 데이터를 삭제합니다.', 'me.erase': '삭제하기',
@@ -112,7 +112,7 @@ export const ko: Dict = {
   "gift.known": "좋아한다고 했어",
   "gift.knownList": "{first}가 좋아하는 것: {list}",
   "gift.pick": "선물을 골라 줘",
-  "gift.send": "선물하기",
+  "gift.send": "{price}포인트로 선물",
   "gift.note": "선물은 앱 안의 디지털 효과입니다(실물은 배송되지 않습니다).",
   "gift.taste": "무엇을 주느냐에 따라 {first}의 기뻐하는 모습이 달라져요.",
   "gift.sent": "{gift}을(를) 선물했습니다",
@@ -127,7 +127,7 @@ export const ko: Dict = {
   'gacha.fromCode': "시리얼 코드",
   'gacha.pickupChip': "✦ {title}",
   'gacha.pickupHead': "“{title}” 픽업",
-  'gacha.pickupBody': "{first}의 카드 30종에서 나와요. SSR 이상이 나오면 그중 {share}의 확률로 “{title}” 카드가 나와요.",
+  'gacha.pickupBody': "{first}의 카드 25종에서 나와요. SSR 이상이 나오면 그중 {share}의 확률로 “{title}” 카드가 나와요.",
   'gacha.pickupRate': "“{title}” {rate} (평소 {base})\nSSR 이상 합계 {top}",
   'gacha.pickupPeriod': "진행 기간 {from} ~ {to} (일본 시간)",
   'gacha.pickupClosed': "이 픽업은 종료되었어요.",
@@ -151,7 +151,7 @@ export const ko: Dict = {
   'pts.got': "수령 완료",
   'pts.passHow': "월간 패스는 럭키 카드의 시리얼 코드로 받을 수 있어요",
   'pts.soon': "크레딧은 채팅 전용이며 카드 뽑기에는 사용할 수 없습니다.",
-  'rates.intro': "뽑기는 5단계(UR·SSR·SR·R·N)입니다. {pity}회째까지 SSR 이상이 반드시 나옵니다(모든 뽑기 공통으로 카운트). 중복 카드는 등급에 따라 별의 조각으로 바뀌며, 교환소에서 각 등급의 카드와 교환할 수 있습니다.",
+  'rates.intro': "카드는 UR·SSR·SR·R·N 다섯 등급이며 교환 코드로만 획득할 수 있습니다. 포인트는 채팅, 통화, 선물에 사용합니다.", 'rates.firstCard': '6장 중 첫 카드',
   'rates.tier': "레어도",
   'rates.rate': "확률",
   'rates.perCard': "1장당",
@@ -160,7 +160,7 @@ export const ko: Dict = {
   'rates.list': "카드별 확률 보기",
   'rates.codeTitle': "시리얼 코드",
   'rates.code': "코드 하나로 카드 {n}장. 첫 장은 SR 이상 확정(UR {ur} / SSR {ssr} / SR {sr})이며, 두 번째 장부터는 일반 확률이 적용됩니다.",
-  'rates.note': "확률을 변경하는 경우 사전에 공지합니다. {n}명의 카드는 각 30장씩이며, 모두 같은 구성입니다.",
+  'rates.note': "확률을 변경하는 경우 사전에 공지합니다. {n}명의 카드는 각 25장씩이며, 모두 같은 구성입니다.",
   'rates.variantsTitle': "배리언트 카드",
   'rates.variants': "다음 {n}장은 ‘또 다른 그녀’입니다. 카드별 친밀도(Lv.1~10)에 따라 그 카드만의 장면이 열립니다. 확률은 같은 레어도의 다른 카드와 같으며, 위 표에 포함되어 있습니다. 중복으로 획득해도 보유 매수는 늘어나며, 동시에 ‘마음’이 되어 그 카드의 친밀도가 오릅니다.",
   'rates.pickupTitle': "“{title}” 픽업 ({name})",

@@ -3,7 +3,7 @@ import { CATALOG } from '@jstar/shared/catalog';
 import { hashSerial } from '../lib/crypto';
 import type { Repos } from './types';
 
-/** Star Genesis · First Five (packages/shared/src/catalog.s1.json): 5 talents × 30 cards. */
+/** Star Genesis · First Five: five talents × five scenes × five tiers. */
 export const SEED_CARDS = CATALOG;
 
 /** Printed lucky-card codes draw from every card until the S1 designs replace them (docs/requirements.md §5). */

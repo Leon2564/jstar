@@ -27,10 +27,10 @@ export const zhHant: Dict = {
   'live.stepChoose': '選擇人物', 'live.stepPublic': '進入公開直播', 'live.stepGift': '送出指定禮物', 'live.stepPrivate': '解鎖 1 對 1',
   'f1.short': '記得你', 'f1.title': '她記得你', 'f1.subtitle': '你說過的每一句，她都輕輕放在心上', 'f1.body': '昨天提過的小事、你偏愛的味道、忙碌一天後藏不住的疲憊。一次次交談，讓她漸漸懂得怎樣回應此刻的你。', 'f1.video': '對話中提到前一天話題的畫面',
   'f2.short': '卡牌', 'f2.title': '收藏心動', 'f2.subtitle': '把每一次相遇，留成只屬於你們的故事', 'f2.body': '抽卡遇見的官方卡，珍藏她不同時刻的模樣；而從對話中誕生的「回憶卡」，則記下你們共同走過的片刻。每張卡，都會為你開啟新的聲音與故事。', 'f2.video': '抽卡演出與回憶卡誕生',
-  'f3.short': '序號', 'f3.title': '卡片有了聲音', 'f3.subtitle': '當手中的卡片，被她輕聲念起', 'f3.body': '輸入 JSTAR 幸運卡的序號，六張數位卡便會來到你的收藏裡。下一刻，她也會循著這張卡，主動向你說第一句話。', 'f3.video': '掃描實體卡QR碼的流程',
+  'f3.short': '序號', 'f3.title': '卡片有了聲音', 'f3.subtitle': '當手中的卡片，被她輕聲念起', 'f3.body': '輸入兌換碼，選擇單抽或六連抽與角色卡池。每組兌換碼同時獲得100積分。', 'f3.video': '掃描實體卡QR碼的流程',
   'f4.short': '語音', 'f4.title': '讓聲音靠近', 'f4.subtitle': '想念她的時候，她會輕輕喚出你的名字', 'f4.body': '清晨的一聲早安，深夜的一句晚安。經本人授權的 AI 語音，會在屬於你們的時刻，輕輕喚出你的名字。', 'f4.video': '播放語音訊息',
 
-  'gallery.preview': '註冊後，就能透過抽卡或實體卡的序號收集這張卡。', 'gallery.join': '免費註冊，開始收集',
+  'gallery.preview': '輸入兌換碼後，可以選擇卡池抽取這張卡。', 'gallery.join': '輸入兌換碼', 'gallery.scene': '場景 {n}',
   'gallery.count': '已擁有 {owned}／共{total}種', 'gallery.all': '全部', 'gallery.filter': '篩選', 'gallery.cta': '去抽卡收集', 'gallery.note': '也可以用實體卡的序號取得', 'gallery.showcase': '卡牌展覽', 'gallery.holdFlip': '按住卡片查看背面', 'gallery.releaseFlip': '鬆開即可返回卡面', 'gallery.tapInspect': '輕點播放動態或語音・長按移動查看', 'gallery.reset': '將卡牌恢復正面', 'gallery.back': '返回卡牌圖鑑',
 
   'events.live': '進行中', 'events.soon': '預告', 'events.ended': '已結束', 'events.banner': '橫幅',
@@ -50,7 +50,7 @@ export const zhHant: Dict = {
 
   'serial.title': '序號', 'serial.h1': '把手中的卡，\n送到她身邊', 'serial.body': '輸入JSTAR幸運卡背面的12位數序號，就能收到數位卡牌，並開始和她聊天。',
   'serial.label': '序號', 'serial.qr': '已從卡片QR碼自動輸入', 'serial.help': '即卡片背面印刷的12位數字。', 'serial.demoLabel': '演示序號（點擊即可填入）', 'serial.demoUse': '使用演示序號', 'serial.submit': '領取卡牌', 'serial.checking': '確認中…', 'serial.once': '每組序號僅限一個帳號使用',
-  'serial.charge': '儲值積分', 'serial.chargeBody': '積分僅用於圖文聊天與視訊通話。',
+  'serial.verify': '驗證兌換碼', 'serial.charge': '儲值積分', 'serial.chargeBody': '積分用於圖文聊天、視訊通話與禮物。', 'serial.ratesSingle': '單抽：UR {ur}%　SSR {ssr}%　SR {sr}%　R {r}%　N {nn}%',
   'serial.errFormat': '請輸入12位數字。', 'serial.errTypo': '序號似乎輸入有誤，請再次確認卡片上的數字。', 'serial.gets': '一組兌換碼可獲得100積分，並取得{n}張卡牌。', 'serial.ratesFirst': '第1張（SR以上保證）：UR {ur}%　SSR {ssr}%　SR {sr}%', 'serial.ratesRest': '第2〜{n}張：UR {ur}%　SSR {ssr}%　SR {sr}%　R {r}%　N {nn}%', 'serial.errNotfound': '找不到此序號，請確認是否輸入錯誤。', 'serial.errUsed': '此序號已被使用。', 'serial.locked': '因連續輸入錯誤，請約{m}分鐘後再試。',
 
   'res.tap': '點擊卡片翻面', 'res.added': '已加入卡牌圖鑑', 'res.flip': '翻開第{n}張', 'res.her': '謝謝你找到我。以後要多多聊天喔。', 'res.bonus': '特典：月卡免費體驗{days}天（與{first}無限暢聊）', 'res.save': '免費註冊並保存卡牌', 'res.count': '{n}張卡牌', 'res.first': '保證SR以上', 'res.dup': '重複 親密度+{xp}', 'res.keep': '註冊後，卡牌與月卡會保存到你的帳號。',
@@ -61,7 +61,7 @@ export const zhHant: Dict = {
   'tab.label': '主選單', 'tab.her': '她', 'tab.talk': '聊天', 'tab.gacha': '抽卡', 'tab.cards': '卡牌', 'tab.me': '我的',
 
   'gacha.title': '抽卡', 'gacha.period': '{from} ～ {to}',
-  'gacha.pool': '全員卡池', 'gacha.poolBody': '從五人共 150 張卡中抽取。SSR 與 UR 附 2 話故事，每張卡都有語音。', 'gacha.rates': '機率說明', 'gacha.freePull': '抽卡券', 'gacha.noFree': '抽卡券不足，積分不能用於抽卡。', 'gacha.free': '持有抽卡券：{n}張', 'gacha.freeSub': '兩人的關係有進展時即可獲得', 'gacha.draw': '抽', 'gacha.one': '抽1次', 'gacha.six': '六連抽', 'gacha.ten': '抽10次', 'gacha.noPoints': '抽卡券不足。',
+  'gacha.pool': '全員卡池', 'gacha.poolBody': '從五人共 125 張卡中抽取，每人五個場景卡組。', 'gacha.rates': '機率說明', 'gacha.freePull': '兌換碼', 'gacha.noFree': '請輸入兌換碼，積分不能用於抽卡。', 'gacha.free': '輸入兌換碼', 'gacha.freeSub': '一碼可選單抽或六連抽', 'gacha.draw': '抽', 'gacha.one': '抽1次', 'gacha.six': '六連抽', 'gacha.ten': '抽10次', 'gacha.noPoints': '請輸入兌換碼。',
   'pg.title': '翻開星光\n遇見命定一張', 'pg.body': '觸碰光芒，收藏她們一瞬的心動。抽取沿用公開機率與同一套保底規則。', 'pg.mode': '抽卡模式', 'pg.single': '單抽', 'pg.six': '六連抽', 'pg.singleNote': '慢慢揭開一張命運卡', 'pg.sixNote': '連續揭開六張卡牌', 'pg.rates': '提供機率', 'pg.pity': '距離 SSR 以上保底還有 {n} 抽', 'pg.draw': '點擊抽卡', 'pg.reveal': '翻開卡片', 'pg.again': '再抽一次',
 
   'gr.count': '{n}抽', 'gr.received': '已收到卡牌', 'gr.title': '結果', 'gr.summary': "{n}張：{tiers}", 'gr.best': '最好的一張', 'gr.reveal': '全部翻開', 'gr.again': '再抽一次', 'gr.view': '查看卡牌',
@@ -73,8 +73,8 @@ export const zhHant: Dict = {
   'cd.voice': '聆聽語音', 'cd.playing': '播放中…', 'cd.story1': '故事 第1話', 'cd.unlocked': '已解鎖', 'cd.story2': '故事 第2話', 'cd.unlockAt': '成為「熟悉」後解鎖', 'cd.awaken': '覺醒', 'cd.awakenBody': '重複取得同一張卡會推進覺醒，解鎖動態卡面與限定語音。', 'cd.talk': '和她聊這張卡',
   'cd.variant.title': '另一個{first}', 'cd.variant.level': 'Lv {n} / {max}', 'cd.variant.bar': '親密度', 'cd.variant.layer1': '換裝登場', 'cd.variant.layer3': '兩人的時光', 'cd.variant.layer6': '靠近一點', 'cd.variant.layer10': '在懷裡', 'cd.variant.locked': '未解鎖', 'cd.variant.next': '再親近一點，{first}就會讓你看下一幕。', 'cd.variant.all': '{first}的每一幕，你都看過了。', 'cd.variant.pin': '首頁固定這套衣服', 'cd.variant.unpin': '取消首頁固定', 'cd.variant.pinned': '首頁的{first}會穿著這套衣服等你。',
 
-  'shop.title': '儲值積分', 'shop.balance': '積分餘額', 'shop.heading': '積分儲值', 'shop.body': '圖文聊天每則1積分，視訊通話每分鐘60積分。', 'shop.choose': '選擇儲值方案', 'shop.popular': '標準方案', 'shop.use': '積分僅用於圖文聊天與視訊通話，不可用於抽卡',
-  'shop.processing': '處理中…', 'shop.buyPack': '以 ${price} 儲值 {stones} 積分', 'shop.signup': '免費註冊後儲值', 'shop.demo': '目前為樣式演示，不會產生實際扣款。', 'shop.done': '已增加 {n} 積分', 'shop.expiry': '積分有效期限：購買日起{days}天', 'shop.monthly': '月卡', 'shop.monthlyPrice': '¥{n}／30天', 'shop.monthlyBody': '聊天方案',
+  'shop.title': '儲值積分', 'shop.balance': '積分餘額', 'shop.heading': '積分儲值', 'shop.body': '圖文聊天每則1積分，視訊通話每分鐘60積分。', 'shop.choose': '選擇儲值方案', 'shop.popular': '標準方案', 'shop.use': '積分可用於聊天、通話及禮物，不可用於抽卡',
+  'shop.processing': '處理中…', 'shop.buyPack': '以 ${price} 儲值 {stones} 積分', 'shop.testFree': '測試版免費領取 {n} 積分', 'shop.referencePrice': '正式方案參考價：${price}／1000積分', 'shop.signup': '免費註冊後儲值', 'shop.demo': '測試期間可重複免費領取，不會扣款。', 'shop.done': '已增加 {n} 積分', 'shop.expiry': '積分有效期限：購買日起{days}天', 'shop.monthly': '月卡', 'shop.monthlyPrice': '¥{n}／30天', 'shop.monthlyBody': '聊天方案',
 
   'me.title': '我的', 'me.oshi': '推：{name}', 'me.viaLine': '以LINE註冊', 'me.viaEmail': '以電子郵件註冊', 'me.serial': '輸入序號', 'me.history': '序號紀錄', 'me.historyN': '{n}筆', 'me.points': '積分', 'me.guide': '網站說明與條款', 'me.lang': '語言',
   'me.logout': '登出', 'me.reset': '清除此裝置的資料', 'me.resetBody': '將從此裝置清除對話、卡牌與積分的顯示用資料。', 'me.erase': '清除',
@@ -112,7 +112,7 @@ export const zhHant: Dict = {
   "gift.known": "她說過喜歡",
   "gift.knownList": "{first}喜歡的東西：{list}",
   "gift.pick": "選一份禮物吧",
-  "gift.send": "送出禮物",
+  "gift.send": "花 {price} 積分送出",
   "gift.note": "禮物是 App 內的數位互動效果（不會寄送實物）。",
   "gift.taste": "送什麼禮物，{first}開心的樣子也會不一樣。",
   "gift.sent": "送出了{gift}",
@@ -127,7 +127,7 @@ export const zhHant: Dict = {
   'gacha.fromCode': "序號",
   'gacha.pickupChip': "✦ {title}",
   'gacha.pickupHead': "「{title}」機率提升",
-  'gacha.pickupBody': "從{first}的30種卡片中抽出。抽到SSR以上時，其中{share}會是「{title}」。",
+  'gacha.pickupBody': "從{first}的25種卡片中抽出。抽到SSR以上時，其中{share}會是「{title}」。",
   'gacha.pickupRate': "「{title}」{rate}（平常 {base}）\nSSR以上合計 {top}",
   'gacha.pickupPeriod': "活動期間 {from} 〜 {to}（日本時間）",
   'gacha.pickupClosed': "這個機率提升活動已結束。",
@@ -151,7 +151,7 @@ export const zhHant: Dict = {
   'pts.got': "已領取",
   'pts.passHow': "月卡可透過幸運卡序號獲得",
   'pts.soon': "積分可用於圖文與視訊聊天，不可用於抽卡。",
-  'rates.intro': "抽卡分為 UR、SSR、SR、R、N 五個等級。第 {pity} 抽前必定抽到 SSR 以上（所有卡池共用計數）。重複卡會依等級轉為星碎；星碎可在兌換所兌換各等級卡牌。",
+  'rates.intro': "卡牌分為 UR、SSR、SR、R、N 五個等級，只能透過兌換碼取得。積分僅用於聊天、通話與禮物。", 'rates.firstCard': '六連抽首張',
   'rates.tier': "稀有度",
   'rates.rate': "機率",
   'rates.perCard': "每張",
@@ -160,7 +160,7 @@ export const zhHant: Dict = {
   'rates.list': "查看每張卡的機率",
   'rates.codeTitle': "序號",
   'rates.code': "每個序號 {n} 張卡。第 1 張保證 SR 以上（UR {ur}／SSR {ssr}／SR {sr}），其餘為一般機率。",
-  'rates.note': "變更機率時將事先公告。{n} 位藝人各 30 張卡，構成相同。",
+  'rates.note': "變更機率時將事先公告。{n} 位藝人各 25 張卡，構成相同。",
   'rates.variantsTitle': "變體卡",
   'rates.variants': "以下 {n} 張是「另一個她」。每張卡有自己的好感度（Lv.1〜10），會開啟這張卡專屬的場景。機率與同稀有度的其他卡相同，已包含在上表中。重複獲得時張數照常增加，同時轉為「心意」，提升這張卡的好感度。",
   'rates.pickupTitle': "「{title}」機率提升（{name}）",

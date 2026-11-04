@@ -23,7 +23,7 @@ export const RULES = {
   xpPerLevel: 40,
   memoryCardEvery: 3,
   awakenCopies: 3,
-  signupFreePulls: 1,
+  signupFreePulls: 0,
   pullCost: 100,
   tenPullCost: 1000,
   /** Star Genesis tier rates, shared by paid draws and printed codes (docs/catalog-spec.md). */
@@ -47,10 +47,10 @@ export const RULES = {
   welcomePoints: 0,
   /** Monthly check-in rewards by number of login days in the JST month. */
   checkIn: [
-    { day: 7, freePulls: 1, points: 0 },
-    { day: 14, freePulls: 1, points: 0 },
-    { day: 21, freePulls: 1, points: 0 },
-    { day: 28, freePulls: 1, points: 0 }
+    { day: 7, freePulls: 0, points: 0 },
+    { day: 14, freePulls: 0, points: 0 },
+    { day: 21, freePulls: 0, points: 0 },
+    { day: 28, freePulls: 0, points: 0 }
   ],
   pointPacks: [
     { points: 1000, usd: 9.99 }

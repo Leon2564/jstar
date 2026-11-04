@@ -78,9 +78,9 @@ describe('H1: her face in frame at every size', () => {
 describe('M6: the serial form follows ?code', () => {
   it('a second code in the address fills the field again', async () => {
     renderAt('/serial?code=999000000011');
-    const input = await screen.findByLabelText(/コード/) as HTMLInputElement;
+    const input = await screen.findByLabelText('シリアルコード') as HTMLInputElement;
     expect(input.value).toBe('9990-0000-0011');
-    act(() => go('/serial?code=999000000029'));
+    act(() => go('/gacha?code=999000000029'));
     await waitFor(() => expect(input.value).toBe('9990-0000-0029'));
   });
 });
@@ -116,10 +116,10 @@ describe('M9: the gallery as a guest', () => {
     renderAt('/gallery');
     expect(await screen.findByRole('heading', { level: 1, name: /カード図鑑/ })).toBeTruthy();
     const tiles = screen.getAllByRole('button', { name: /「未入手」/ });
-    expect(tiles.length).toBe(150);
+    expect(tiles.length).toBe(125);
     fireEvent.click(tiles[0]);
     const dialog = await screen.findByRole('dialog');
-    expect(within(dialog).getByRole('link', { name: '無料で登録して集める' }).getAttribute('href')).toBe('/signup?next=/gallery');
+    expect(within(dialog).getByRole('link', { name: 'コードを入力' }).getAttribute('href')).toBe('/gacha');
     fireEvent.keyDown(window, { key: 'Escape' });
     await waitFor(() => expect(screen.queryByRole('dialog')).toBeNull());
   });

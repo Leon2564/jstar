@@ -101,7 +101,7 @@ export function initialState(): AppState {
     v: 1, ageOk: false, user: null, star: 'mahiro', trialStar: 'mahiro',
     trialLeft: CONFIG.trialMessages, trialLog: [],
     chats: emptyByStar<Msg[]>(() => []), affinity: emptyByStar(() => 0),
-    owned: {}, selectedCards: {}, memories: [], points: 0, freePulls: 1, pity: 0, shards: 0, gachaPool: 'all', checkIn: { month: '', days: 0, claimed: [] }, redeemed: [],
+    owned: {}, selectedCards: {}, memories: [], points: 0, freePulls: 0, pity: 0, shards: 0, gachaPool: 'all', checkIn: { month: '', days: 0, claimed: [] }, redeemed: [],
     serialFails: 0, serialLockUntil: 0, lastPull: [], lastRedeem: null, sound: false, lang: 'ja',
     passUntil: null, chatDay: '', chatUsed: 0, bonusDay: null, redeemedCount: 0, bonusNotice: 0, birthdayOk: true,
     inbox: [], rel: {}, relView: {}, confession: {}, voice: null, variants: {}, notice: null
