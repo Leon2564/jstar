@@ -1,7 +1,7 @@
 import { PassThrough } from 'node:stream';
 import type { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
 import {
-  ChatGreetingQuery, ChatSendReq, RULES, localClock, validTimeZone, chatLeft, countDay, freshRelationship, inLanguage, jstDay, levelFromXp, localText, loverLevel, passActive, routineNow, viewOfEvent, WORLD, zStarId,
+  ChatGreetingQuery, ChatSendReq, RULES, localClock, validTimeZone, countDay, freshRelationship, inLanguage, jstDay, levelFromXp, localText, loverLevel, routineNow, viewOfEvent, WORLD, zStarId,
   type ChatGreetingResT, type ChatSendResT, type ChatStreamEventT, type Lang, type RelationshipState
 } from '@jstar/shared';
 import { httpError, requireDevice, requireHuman, requireUser } from '../app';
@@ -149,14 +149,18 @@ export function chatTurns(app: FastifyInstance) {
    * for one of her scenes (#65).
    */
   const userTurn = async (user: UserRow, body: unknown, opts: { scene?: AgentSceneTalk } = {}): Promise<Turn> => {
-    const { star, text, lang, tz: told, suggest } = ChatSendReq.parse(body);
+    const { star, text, lang, tz: told, suggest, channel } = ChatSendReq.parse(body);
     // Round 12: a time he names is his own — his browser's zone, else the one his account knows, else Japan's.
     const tz = validTimeZone(told) ?? validTimeZone(user.tz);
-    const day = jstDay();
-    const limit = passActive(user.passUntil) ? RULES.passFairUseMessages : RULES.dailyFreeMessages;
-    const reserved = await app.repos.users.reserveChat(user.id, day, limit);
-    if (!reserved) throw httpError('daily_limit', 402);
-    const release = () => app.repos.users.releaseChat(user.id, day);
+    const cost = channel === 'text' ? RULES.textMessageCostPoints : 0;
+    const reserved = cost ? await app.repos.users.adjustWallet(user.id, { points: -cost }) : await app.repos.users.byId(user.id);
+    if (!reserved) throw httpError('insufficient_points', 402);
+    let charged = cost > 0;
+    const release = async () => {
+      if (!charged) return;
+      charged = false;
+      await app.repos.users.adjustWallet(user.id, { points: cost });
+    };
 
     try {
       const [history, memory, xpBefore, sent, bondRow, promise, scenes, world] = await Promise.all([
@@ -221,9 +225,10 @@ export function chatTurns(app: FastifyInstance) {
         // #78: she mentioned her variant he does not have and its Pickup is live — a link under her line, counted as shown.
         const pickup = scene ? null : await pickupForTurn(app.repos, star, reply.directive, outfits).catch(() => null);
         if (pickup) await app.recordEvent(user.id, 'variant.prompted', { star, cardId: pickup.cardId, via: pickup.via });
+        charged = false;
         return {
           reply: reply.reply, affinityXp: xp, level: levelFromXp(xp), memoryCard, trialMessagesLeft: null,
-          chatLeft: chatLeft(reserved.chatUsedToday, reserved.passUntil), freePulls: (wallet ?? reserved).freePulls,
+          chatLeft: Math.floor((wallet ?? reserved).points / RULES.textMessageCostPoints), points: (wallet ?? reserved).points, freePulls: (wallet ?? reserved).freePulls,
           relationship: await rel.view(user.id, star, row, xp),
           promise: saved ? toPromiseItem(saved, lang) : null,
           ...(scene ? { scene: { sceneId: scene.scene, action: scene.action, title: SCRIPTS.get(scene.scene)!.meta.title } } : {}),
@@ -257,7 +262,7 @@ export function chatTurns(app: FastifyInstance) {
       const finish = async (reply: AgentReply): Promise<ChatSendResT> => {
         await store(owner, star, text, reply.reply);
         return {
-          reply: reply.reply, affinityXp: 0, level: 1, memoryCard: null, trialMessagesLeft: left, chatLeft: null, freePulls: 0,
+          reply: reply.reply, affinityXp: 0, level: 1, memoryCard: null, trialMessagesLeft: left, chatLeft: null, points: 0, freePulls: 0,
           // The visitor may hear only the reply the server just produced for this device. The TTS route verifies this
           // device-bound signature before asking Fish, exactly as it does for a member account.
           ...(app.synthesize && app.ttsStars.includes(star) ? { voiceSig: signLine(owner, star, reply.reply.trim()) } : {})

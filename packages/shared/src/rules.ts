@@ -6,13 +6,19 @@ import { TTS_MAX_CHARS } from './voice';
 export const RULES = {
   /** Visitor trial: messages per device, never reset. */
   trialMessages: 3,
-  /** Registered users: free messages per JST day, all talents combined. */
-  dailyFreeMessages: 20,
+  /** One text/picture chat turn costs one credit. */
+  textMessageCostPoints: 1,
+  /** Video calls are billed per started minute. */
+  videoMinuteCostPoints: 60,
+  /** Every successfully redeemed code grants this many chat credits. */
+  serialPoints: 100,
+  /** Legacy allowance fields remain readable for old accounts, but no longer price chat. */
+  dailyFreeMessages: 0,
   /** Monthly pass: unlimited in the UI, capped server-side against scripted abuse. */
   passFairUseMessages: 300,
   passDays: 30,
   passPriceYen: 980,
-  passDailyPoints: 30,
+  passDailyPoints: 0,
   xpPerMessage: 8,
   xpPerLevel: 40,
   memoryCardEvery: 3,
@@ -30,27 +36,24 @@ export const RULES = {
   exchangeShards: { N: 15, R: 45, SR: 120, SSR: 360, UR: 1000 },
   /** Compatibility value exposed by the rates endpoint: the SSR exchange cost. */
   shardsForExchange: 360,
-  /** Shows the configurable Star Stone top-up demo; no real payment is processed yet. */
+  /** Shows the configurable credit top-up demo; no real payment is processed yet. */
   shopOpen: true,
   /** Minimum age, checked against the birthday asked once after sign-up. */
   minAge: 18,
   /** M7: days an address closed under minAge may not sign up again (only a keyed hash of it is kept). */
   underageCooldownDays: 30,
-  dailyLoginPoints: 30,
-  /** New players get a ten-pull's worth of points once. */
-  welcomePoints: 1000,
+  dailyLoginPoints: 0,
+  /** Chat credits are obtained from redemption codes or top-up, not account creation. */
+  welcomePoints: 0,
   /** Monthly check-in rewards by number of login days in the JST month. */
   checkIn: [
     { day: 7, freePulls: 1, points: 0 },
-    { day: 14, freePulls: 0, points: 300 },
+    { day: 14, freePulls: 1, points: 0 },
     { day: 21, freePulls: 1, points: 0 },
-    { day: 28, freePulls: 0, points: 1000 }
+    { day: 28, freePulls: 1, points: 0 }
   ],
   pointPacks: [
-    { points: 100, yen: 120 },
-    { points: 500, yen: 600 },
-    { points: 1200, yen: 1400 },
-    { points: 3000, yen: 3400 }
+    { points: 1000, usd: 9.99 }
   ],
   pointExpiryDays: 180,
   serialDefaultTrialDays: 7,

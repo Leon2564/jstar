@@ -52,7 +52,8 @@ export const SerialRedeemReq = z.object({ code: zSerial });
  * `claimed` is false for a visitor: cards and days wait on the device until sign-up (docs/requirements.md §5).
  */
 export const SerialRedeemRes = z.object({
-  cards: z.array(DrawnCard), trialDays: z.number().int().min(0), claimed: z.boolean(), passUntil: z.string().nullable(), drawId: z.string()
+  cards: z.array(DrawnCard), trialDays: z.number().int().min(0), claimed: z.boolean(), passUntil: z.string().nullable(), drawId: z.string(),
+  pointsGranted: z.number().int().min(0)
 });
 
 export const ChatSendReq = z.object({
@@ -63,7 +64,9 @@ export const ChatSendReq = z.object({
   /** Round 12: his browser's time zone (IANA), so a time he names in chat is his — not Tokyo's. */
   tz: z.string().max(64).optional(),
   /** QA #4: her room asks for his next words as choices (`replies` in the result); her chat does not. */
-  suggest: z.boolean().optional()
+  suggest: z.boolean().optional(),
+  /** Text chat costs one credit; video-room messages are included in the minute rate. */
+  channel: z.enum(['text', 'video']).default('text')
 });
 /**
  * A promise between him and one talent (#59, docs/requirements.md §11.4). `text` is as it was made, in the language of
@@ -89,8 +92,10 @@ export const ChatSendRes = z.object({
   level: z.number().int(),
   memoryCard: z.object({ id: z.string(), title: z.string(), createdAt: z.string() }).nullable(),
   trialMessagesLeft: z.number().int().nullable(),
-  /** Registered users: messages left today, null while a monthly pass is active. */
+  /** Number of text turns affordable with the remaining chat-credit balance. */
   chatLeft: z.number().int().nullable(),
+  /** Remaining chat credits after this turn. */
+  points: z.number().int().min(0),
   freePulls: z.number().int(),
   /** Registered users: the relationship with her after this turn (#54), so the home panel follows without a refetch. */
   relationship: z.lazy(() => RelationshipView).optional(),
@@ -1112,7 +1117,7 @@ export const GiftsQuery = z.object({ star: zStarId });
  */
 export const GiftsRes = z.object({
   star: zStarId,
-  gifts: z.array(z.object({ id: zGiftId, price: z.number().int().positive(), known: z.boolean() })),
+  gifts: z.array(z.object({ id: zGiftId, price: z.number().int().nonnegative(), known: z.boolean() })),
   sentToday: z.number().int().min(0),
   perDay: z.number().int().min(0),
   points: z.number().int()

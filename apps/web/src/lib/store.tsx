@@ -131,7 +131,7 @@ function makeActions(set: (fn: (s: AppState) => AppState) => void) {
         const { rel, pulls } = localTogether(s, star, r.affinityXp);
         return {
           ...s,
-          affinity: { ...s.affinity, [star]: r.affinityXp },
+          affinity: { ...s.affinity, [star]: r.affinityXp }, points: r.points,
           freePulls: r.freePulls + pulls,
           memories: r.memoryCard ? [...s.memories, { id: r.memoryCard.id, star, title: r.memoryCard.title, date: memoryDate(r.memoryCard.createdAt) }].slice(-100) : s.memories,
           // A chat turn's view carries no confession status (#55): the one from GET /v1/relationship stays until the next.
@@ -204,7 +204,7 @@ function makeActions(set: (fn: (s: AppState) => AppState) => void) {
     /** The API said the allowance is gone; the counter follows it. */
     /** B-R2: today's count as the server has it now (his chat or her room opened, or he came back to the tab). */
     chatCount: (c: { left: number | null; passUntil: string | null }) => set((s) => ({ ...s, passUntil: c.passUntil, ...chatCounter(c.left, s) })),
-    chatExhausted: () => set((s) => ({ ...s, chatDay: jstDay(), chatUsed: CONFIG.dailyFreeMessages, passUntil: passActive(s.passUntil) ? null : s.passUntil })),
+    chatExhausted: () => set((s) => ({ ...s, points: 0 })),
     applyDraw: (r: DrawResT) =>
       set((s) => {
         const owned = { ...s.owned };
@@ -236,7 +236,7 @@ function makeActions(set: (fn: (s: AppState) => AppState) => void) {
         }
         return {
           ...s, serialFails: 0, redeemed: [...s.redeemed, code].slice(-200), redeemedCount: s.redeemedCount + 1,
-          owned, affinity, shards, passUntil: r.passUntil ?? s.passUntil,
+          owned, affinity, shards, points: s.points + r.pointsGranted, passUntil: r.passUntil ?? s.passUntil,
           lastRedeem: { cards: cards.slice(0, 10).map((c) => ({ id: c.id, isNew: c.isNew })), days: r.trialDays }
         };
       }),

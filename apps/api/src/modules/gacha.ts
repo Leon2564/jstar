@@ -23,15 +23,14 @@ export async function registerGacha(app: FastifyInstance) {
    */
   app.post('/draw', { config: { rateLimit: { max: 30, timeWindow: '1 minute' } } }, async (req): Promise<DrawResT> => {
     const user = requireUser(req);
-    const { pool, count, useFreePull } = DrawReq.parse(req.body);
+    const { pool, count } = DrawReq.parse(req.body);
     // A Pickup (#78) is drawn only while it is live, with the odds stored in it when it was announced.
     const pickup = isPickupPoolId(pool) ? await app.repos.pickups.byId(pool) : null;
     if (isPickupPoolId(pool) && (!pickup || !pickupLive(pickup))) throw httpError('pool_closed', 409);
     const all = await app.repos.cards.all();
     const cards = pickup ? herPool(all, pickup.star) : poolCards(pool as PoolId, all);
     if (!cards.length || (pickup && pickupProblems(cards, pickup, pickup.rates).length)) throw httpError('pool_empty', 409);
-    if (useFreePull && count !== 1) throw httpError('no_free_pull', 409);
-    const cost = useFreePull ? { points: 0, freePulls: 1 } : { points: count === 10 ? RULES.tenPullCost : count * RULES.pullCost, freePulls: 0 };
+    const cost = { points: 0, freePulls: count };
 
     const seed = randomInt(0, 0xffffffff);
     const { drawn, pity } = pickup
@@ -47,7 +46,7 @@ export async function registerGacha(app: FastifyInstance) {
     });
     if (!outcome.ok) {
       if (outcome.reason === 'conflict') throw httpError('draw_in_progress', 409);
-      throw httpError(useFreePull ? 'no_free_pull' : 'insufficient_points', useFreePull ? 409 : 402);
+      throw httpError('no_free_pull', 409);
     }
     // Variant conversion (#52, #78): one event per variant card drawn, duplicates included; `pickup` marks a Pickup's.
     for (const d of drawn) if (isVariantCard(d.card.id)) await app.recordEvent(user.id, 'variant.drawn', { star: d.card.star, cardId: d.card.id, ...(pickup ? { pickup: true as const } : {}) });

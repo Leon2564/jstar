@@ -90,9 +90,10 @@ export async function registerSerial(app: FastifyInstance) {
     }
     // A visitor has no account to count the event for; the funnel starts at a prompt, which needs one anyway.
     if (user) for (const d of drawn) if (isVariantCard(d.card.id)) await app.recordEvent(user.id, 'variant.drawn', { star: d.card.star, cardId: d.card.id });
+    if (user && !(await app.repos.users.adjustWallet(user.id, { points: RULES.serialPoints }))) throw httpError('wallet_update_failed', 409);
     await app.repos.audit.add({ id: newId('aud'), actorId: user?.id ?? `device:${device}`, action: 'serial.redeem', target: row.id, meta: { drawId, cards: drawn.map((d) => d.card.id) }, createdAt: at });
     const cards: DrawnCardT[] = drawn.map((d, i) => ({ id: d.card.id, star: d.card.star, rarity: d.card.rarity, isNew: isNew[i] }));
-    return { cards, trialDays: row.trialDays, claimed: !!user, passUntil, drawId };
+    return { cards, trialDays: row.trialDays, claimed: !!user, passUntil, drawId, pointsGranted: RULES.serialPoints };
   });
 
   /** 兑换记录: every printed code this account redeemed or claimed from its device, with the cards it drew. */

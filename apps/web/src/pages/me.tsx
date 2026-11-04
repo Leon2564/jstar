@@ -1206,7 +1206,7 @@ export function Chat() {
         {busy && (live ? <p className="msg her" data-testid="chat-live" aria-hidden="true">{live}</p> : <Typing label={t('common.typing', { first })} />)}
         {left === 0 && !busy && (
           // H2: nothing is sold in v1.1 — the limit says when it comes back and what a lucky-card code gives.
-          <Link to="/serial" className="panel fade-in" style={{ display: 'flex', flexDirection: 'column', gap: 6 }} data-testid="chat-limit">
+          <Link to="/me/shop" className="panel fade-in" style={{ display: 'flex', flexDirection: 'column', gap: 6 }} data-testid="chat-limit">
             <span className="serif" style={{ fontSize: 15, fontWeight: 600 }}>{t('chat.limitTitle')}</span>
             <span className="small muted">{t('chat.limitBody', { first })}</span>
             <span className="small" style={{ textDecoration: 'underline' }}>{t('chat.limitCta')}</span>

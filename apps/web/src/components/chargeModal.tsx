@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link } from 'react-router-dom';
 import { CONFIG } from '../lib/config';
-import { fmtYen } from '../i18n';
 import { useStore, useT } from '../lib/store';
 import { buyPoints } from '../services/api';
 import { Icon } from './ui';
@@ -14,14 +13,13 @@ type ChargeModalProps = {
 };
 
 /**
- * The shared Star Stone top-up sheet. Packs are business configuration rather than layout,
- * so changing the four tiers later only requires editing shared/rules.ts.
+ * Shared chat-credit top-up sheet. The commercial pack lives in shared/rules.ts.
  */
 export function ChargeModal({ open, onClose }: ChargeModalProps) {
   const { state, actions } = useStore();
   const t = useT();
   const packs = CONFIG.pointPacks;
-  const initial = packs[Math.min(1, Math.max(0, packs.length - 1))]?.points ?? 0;
+  const initial = packs[0]?.points ?? 0;
   const [selected, setSelected] = useState(initial);
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -43,7 +41,7 @@ export function ChargeModal({ open, onClose }: ChargeModalProps) {
     setNotice(null);
     try {
       actions.setPoints(await buyPoints(state, pack.points));
-      setNotice(t('shop.done', { n: fmtYen(pack.points) }));
+      setNotice(t('shop.done', { n: pack.points.toLocaleString() }));
     } catch {
       setNotice(t('common.error'));
     } finally {
@@ -60,27 +58,27 @@ export function ChargeModal({ open, onClose }: ChargeModalProps) {
         </button>
 
         <header className="charge-head">
-          <span className="charge-kicker">STAR STONE</span>
+          <span className="charge-kicker">JSTAR CREDITS</span>
           <h2 id="charge-title" className="serif">{t('shop.heading')}</h2>
           <p>{t('shop.body')}</p>
         </header>
 
         <div className="charge-balance">
           <span>{t('shop.balance')}</span>
-          <strong className="serif" data-testid="shop-points">{t('common.pt', { n: fmtYen(state.points) })}</strong>
+          <strong className="serif" data-testid="shop-points">{t('common.pt', { n: state.points.toLocaleString() })}</strong>
         </div>
 
         <div className="charge-packs" role="radiogroup" aria-label={t('shop.choose')}>
-          {packs.map((item, index) => {
+          {packs.map((item) => {
             const active = item.points === pack.points;
             return (
               <button key={item.points} type="button" role="radio" aria-checked={active}
                 className={`charge-pack${active ? ' is-selected' : ''}`}
                 onClick={() => { setSelected(item.points); setNotice(null); }}>
-                {index === 2 && <span className="charge-popular">{t('shop.popular')}</span>}
+                <span className="charge-popular">{t('shop.popular')}</span>
                 <span className="charge-gem" aria-hidden="true"><Icon name="spark" size={16} /></span>
-                <strong className="serif">{t('common.pt', { n: fmtYen(item.points) })}</strong>
-                <span>{t('common.price', { n: fmtYen(item.yen) })}</span>
+                <strong className="serif">{t('common.pt', { n: item.points.toLocaleString() })}</strong>
+                <span>${item.usd.toFixed(2)}</span>
               </button>
             );
           })}
@@ -90,7 +88,7 @@ export function ChargeModal({ open, onClose }: ChargeModalProps) {
 
         {state.user
           ? <button type="button" className="btn btn-rose charge-submit" onClick={() => void confirm()} disabled={busy}>
-              {busy ? t('shop.processing') : t('shop.buyPack', { stones: fmtYen(pack.points), price: fmtYen(pack.yen) })}
+              {busy ? t('shop.processing') : t('shop.buyPack', { stones: pack.points.toLocaleString(), price: pack.usd.toFixed(2) })}
             </button>
           : <Link className="btn btn-rose charge-submit" to="/signup?next=/me/shop" onClick={onClose}>{t('shop.signup')}</Link>}
 

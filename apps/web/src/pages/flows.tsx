@@ -498,7 +498,7 @@ export function SerialInput() {
           <button type="submit" className="btn btn-rose" disabled={busy || locked || !code.trim()}>{busy ? t('serial.checking') : t('serial.submit')}</button>
         </form>
         <div className="serial-charge">
-          <div><span className="js-label">STAR STONE</span><p>{t('serial.chargeBody')}</p></div>
+          <div><span className="js-label">JSTAR CREDITS</span><p>{t('serial.chargeBody')}</p></div>
           <button type="button" className="btn btn-line" onClick={() => setChargeOpen(true)} aria-haspopup="dialog">{t('serial.charge')}</button>
         </div>
         <div className="tiny muted pad" style={{ textAlign: 'center', margin: '14px 0 24px' }}>

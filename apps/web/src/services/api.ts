@@ -17,7 +17,7 @@ import { confessionStatus } from '@jstar/shared/confession';
 import type { ConfessionMemoryT, MemoryExportT } from '@jstar/shared/contracts';
 import type { CalendarResT } from '@jstar/shared/contracts';
 import type { StarId } from '../data/cast';
-import { chatLeftOf, type AppState, type Msg, type User } from '../lib/state';
+import { type AppState, type Msg, type User } from '../lib/state';
 import { translate, type Key, type Lang } from '../i18n';
 import { DEMO_SERIALS, isValidSerialFormat, normalizeSerial } from '../lib/serial';
 import { ApiError, getToken, http, serverMode, setToken, type OnText } from './http';
@@ -150,7 +150,7 @@ export async function trialChat(state: AppState, star: StarId, text: string, lan
   const turn = state.trialLog.filter((m) => m.from === 'me').length;
   const reply = stubReply(turn, text, lang);
   await playOut(reply, onText);
-  return { reply, affinityXp: 0, level: 1, memoryCard: null, trialMessagesLeft: state.trialLeft - 1, chatLeft: null, freePulls: state.freePulls };
+  return { reply, affinityXp: 0, level: 1, memoryCard: null, trialMessagesLeft: state.trialLeft - 1, chatLeft: null, points: state.points, freePulls: state.freePulls };
 }
 
 /**
@@ -158,15 +158,16 @@ export async function trialChat(state: AppState, star: StarId, text: string, lan
  * Server turns use the complete JSON response, then play the finished line out locally. This keeps one authoritative
  * request per message while preserving progressive subtitles across proxies and browsers with fragile stream reads.
  */
-export async function chat(state: AppState, star: StarId, text: string, lang: Lang, onText?: OnText, suggest?: boolean): Promise<ChatSendResT> {
+export async function chat(state: AppState, star: StarId, text: string, lang: Lang, onText?: OnText, suggest?: boolean, channel: 'text' | 'video' = 'text'): Promise<ChatSendResT> {
   if (serverMode()) {
-    const result = await http.chat(star, text, lang, suggest);
+    const result = await http.chat(star, text, lang, suggest, channel);
     await playOut(result.reply, onText);
     return result;
   }
   await latency();
-  const left = chatLeftOf(state);
-  if (left === 0) fail('daily_limit', 402);
+  const cost = channel === 'text' ? RULES.textMessageCostPoints : 0;
+  if (state.points < cost) fail('insufficient_points', 402);
+  const points = state.points - cost;
   const xp = state.affinity[star] + RULES.xpPerMessage;
   const mine = state.chats[star].filter((m) => m.from === 'me').length + 1;
   // Like the server, the card is titled for the moment, never with his raw words.
@@ -176,7 +177,7 @@ export async function chat(state: AppState, star: StarId, text: string, lang: La
   const reply = stubReply(mine, text, lang);
   await playOut(reply, onText);
   // The relationship's free pulls (a stage entered, #54) are added by the store, which runs the stage machine.
-  return { reply, affinityXp: xp, level: levelFromXp(xp), memoryCard, trialMessagesLeft: null, chatLeft: left === null ? null : left - 1, freePulls: state.freePulls };
+  return { reply, affinityXp: xp, level: levelFromXp(xp), memoryCard, trialMessagesLeft: null, chatLeft: Math.floor(points / RULES.textMessageCostPoints), points, freePulls: state.freePulls };
 }
 
 /** Her greeting for the companion home (GET /v1/chat/greeting); null offline or on any failure, so the page keeps its own line. */
@@ -364,7 +365,7 @@ export async function redeemSerial(state: AppState, raw: string): Promise<Serial
   });
   // Offline there is one browser, so the pass days apply right away instead of waiting for the sign-up claim.
   const days = RULES.serialDefaultTrialDays;
-  return { code, cards, trialDays: days, claimed: false, passUntil: extendPass(state.passUntil, days), drawId: localId('drw') };
+  return { code, cards, trialDays: days, claimed: false, passUntil: extendPass(state.passUntil, days), drawId: localId('drw'), pointsGranted: RULES.serialPoints };
 }
 
 // ---------------------------------------------------------------- gacha and shop
@@ -374,9 +375,7 @@ export async function drawCards(state: AppState, n: 1 | 6 | 10, free: boolean, p
   // draw from the same local state instead of depending on a separately running API session.
   if (serverMode() && !import.meta.env.DEV) return http.draw(n, free, pool);
   await latency();
-  const cost = free ? 0 : n === 10 ? RULES.tenPullCost : n * RULES.pullCost;
-  if (free && (n !== 1 || state.freePulls < 1)) fail('no_free_pull', 409);
-  if (!free && state.points < cost) fail('insufficient_points', 402);
+  if (state.freePulls < n) fail('no_free_pull', 409);
   const { pull, poolOpen } = await import('../lib/gacha');
   if (!poolOpen(pool)) fail('pool_closed', 409);
   const seen = new Set(Object.keys(state.owned));
@@ -387,7 +386,7 @@ export async function drawCards(state: AppState, n: 1 | 6 | 10, free: boolean, p
     return { id: c.id, star: c.star, rarity: c.rarity, isNew };
   });
   const duplicateShards = cards.reduce((sum, card) => sum + (card.isNew ? 0 : RULES.duplicateShards[card.rarity]), 0);
-  return { cards, wallet: { points: state.points - cost, freePulls: state.freePulls - (free ? 1 : 0), pity, shards: state.shards + duplicateShards }, drawId: localId('drw') };
+  return { cards, wallet: { points: state.points, freePulls: state.freePulls - n, pity, shards: state.shards + duplicateShards }, drawId: localId('drw') };
 }
 
 /** Star Shards → a chosen card; cost and duplicate rebate both follow its rarity. */

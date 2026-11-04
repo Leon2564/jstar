@@ -7,7 +7,6 @@ import { useStore, useT } from '../lib/store';
 import { SiteHeader } from '../components/ui';
 import { CardShowcase } from '../components/cardShowcase';
 import { ShardExchange } from '../components/shardExchange';
-import { ChargeModal } from '../components/chargeModal';
 import { RevealCard, Sparks, SpecialReveal, useReveal, type RevealItem } from '../components/reveal';
 import { bestCard, tierOf, titleOf } from '../components/cardArt';
 import { CAST, getStar } from '../data/cast';
@@ -91,7 +90,6 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
   const [notice, setNotice] = useState('');
   const [showcase, setShowcase] = useState<CardDef | null>(null);
   const [exchange, setExchange] = useState(false);
-  const [charge, setCharge] = useState(false);
   const [poolFx, setPoolFx] = useState(0);
   const redeemedBest = redeemedItems.length ? bestCard(redeemedItems.map((item) => item.card)) : null;
   const published = usePickups(CARDS);
@@ -105,20 +103,17 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
     if (published && pool.startsWith('pickup:') && !pickups.some((pickup) => pickup.id === pool)) actions.setGachaPool('all');
   }, [actions, pickups, pool, published]);
   const rates = useMemo(() => Object.entries(RULES.rates) as [keyof typeof RULES.rates, number][], []);
-  const free = mode === 1 && state.freePulls > 0;
-  const cost = free ? 0 : mode * RULES.pullCost;
-  const eligible = free || state.points >= cost;
+  const eligible = state.freePulls >= mode;
 
   async function draw() {
     if (busy) return;
     if (!eligible) {
-      setNotice(t('gacha.noPoints', { daily: RULES.dailyLoginPoints }));
-      setCharge(true);
+      setNotice(t('gacha.noFree'));
       return;
     }
     setBusy(true); setNotice('');
     try {
-      const result = await drawCards(state, mode, free, pool);
+      const result = await drawCards(state, mode, true, pool);
       actions.applyDraw(result);
       setItems(result.cards.flatMap((drawn) => {
         const card = CARD_BY_ID[drawn.id];
@@ -127,8 +122,7 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
     } catch (error) {
       const code = errorCode(error);
       if (code === 'pool_closed') actions.setGachaPool('all');
-      if (code === 'insufficient_points') setCharge(true);
-      setNotice(t(code === 'insufficient_points' ? 'gacha.noPoints' : code === 'draw_in_progress' ? 'gacha.busy' : code === 'pool_closed' ? 'gacha.pickupClosed' : 'common.error', { daily: RULES.dailyLoginPoints }));
+      setNotice(t(code === 'no_free_pull' ? 'gacha.noFree' : code === 'draw_in_progress' ? 'gacha.busy' : code === 'pool_closed' ? 'gacha.pickupClosed' : 'common.error'));
     } finally { setBusy(false); }
   }
 
@@ -157,7 +151,7 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
     <main className={`pg-page js-nightpage${redeemResult ? ' pg-redeem-result' : ''}${poolPoster ? ' has-pool-art' : ''}`}>
       <SiteHeader extra={(
         <aside className="pg-assets" aria-label={t('gacha.assets')}>
-          <button type="button" onClick={() => setCharge(true)}><i aria-hidden="true">✦</i><small>{t('gacha.starStones')}</small><b>{state.points.toLocaleString()}</b></button>
+          <span><i aria-hidden="true">✦</i><small>{t('gacha.freePull')}</small><b>{state.freePulls.toLocaleString()}</b></span>
           <button type="button" onClick={() => setExchange(true)}><i aria-hidden="true">◆</i><small>{t('gacha.starShards')}</small><b>{state.shards.toLocaleString()}</b></button>
         </aside>
       )} />
@@ -196,7 +190,7 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
           </div>
           {!redeemResult && <p className="pg-pity">{t('pg.pity', { n: RULES.pityPulls - state.pity })}</p>}
           <div className="pg-links"><Link to="/legal/rates">{t('gacha.rates')}</Link>{!redeemResult && <Link to="/me/gacha/history">{t('gacha.history')}</Link>}</div>
-          {!redeemResult && <p className="pg-wallet">{free ? t('gacha.free', { n: state.freePulls }) : t('common.pt', { n: cost })}</p>}
+          {!redeemResult && <p className="pg-wallet">{t('gacha.free', { n: state.freePulls })}</p>}
           {notice && <p className="pg-notice" role="alert">{notice}</p>}
         </section>
 
@@ -239,7 +233,6 @@ export function PublicGacha({ redeemResult = false }: { redeemResult?: boolean }
       <Sparks />
       {showcase && <CardShowcase card={showcase} onClose={() => setShowcase(null)} />}
       {exchange && <ShardExchange onClose={() => setExchange(false)} onDone={(message) => { setExchange(false); setNotice(message); }} />}
-      <ChargeModal open={charge} onClose={() => setCharge(false)} />
     </main>
   );
 }

@@ -1,4 +1,4 @@
-import { GIFT_RULES, giftById, giftReaction, giftXp, jstDay, tasteOf, type GiftId, type GiftTaste, type StarId } from '@jstar/shared';
+import { GIFT_RULES, giftReaction, giftXp, jstDay, tasteOf, type GiftId, type GiftTaste, type StarId } from '@jstar/shared';
 import type { SceneText } from '@jstar/shared/scenes';
 import type { ChatMemoryRow, GiftPlan, Repos } from '../db/types';
 import { httpError } from '../app';
@@ -19,14 +19,13 @@ export interface PlannedGift {
 }
 
 export async function planGift(repos: Repos, userId: string, star: StarId, giftId: GiftId, now: Date, variant?: GiftPlan['variant']): Promise<PlannedGift> {
-  const gift = giftById(giftId)!;
   const memory = await repos.chatMemory.get(userId, star);
   const taste = tasteOf(star, giftId);
   const wished = taste === 'liked' && wishesOf(memory).includes(giftId);
   const xp = giftXp(giftId, taste);
   return {
     plan: {
-      row: { id: newId('gft'), userId, star, giftId, cardId: variant?.cardId ?? null, price: gift.price, xp, taste, day: jstDay(now), createdAt: now.toISOString() },
+      row: { id: newId('gft'), userId, star, giftId, cardId: variant?.cardId ?? null, price: 0, xp, taste, day: jstDay(now), createdAt: now.toISOString() },
       perDay: GIFT_RULES.perDay,
       ...(variant ? { variant } : {})
     },
@@ -34,11 +33,11 @@ export async function planGift(repos: Repos, userId: string, star: StarId, giftI
   };
 }
 
-/** Why the store would refuse this gift now — 402 `insufficient_points`, 409 `gift_limit` — or null. */
+/** Why the store would refuse this interaction now — gifts no longer spend chat credits. */
 export async function giftRefusal(repos: Repos, plan: GiftPlan): Promise<Error | null> {
   const [user, sent] = await Promise.all([repos.users.byId(plan.row.userId), repos.gifts.countOn(plan.row.userId, plan.row.day)]);
   if (sent >= plan.perDay) return httpError('gift_limit', 409);
-  if (!user || user.points < plan.row.price) return httpError('insufficient_points', 402);
+  if (!user) return httpError('unauthorized', 401);
   return null;
 }
 

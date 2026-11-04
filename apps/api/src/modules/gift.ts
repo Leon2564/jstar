@@ -15,9 +15,8 @@ import { planGift } from '../lib/gifts';
 const WISH_LINE_LOOKBACK = 200;
 
 /**
- * Gifts (#77, docs/requirements.md §14.3). A gift is a fixed digital item bought with points: nothing random, nothing
- * physical, nothing that can be cashed out (docs/compliance-jp.md §1, §4). What it does — points, the daily cap, her
- * XP — is one all-or-nothing step in storage; her reaction comes afterwards and can never undo or double it.
+ * Six gift interactions (#77) trigger her reaction/PV effect without spending chat credits. The daily cap and her
+ * XP are still one all-or-nothing step in storage; her reaction comes afterwards and cannot double it.
  */
 export async function registerGift(app: FastifyInstance) {
   const rel = relationships(app);
@@ -29,7 +28,7 @@ export async function registerGift(app: FastifyInstance) {
     const [memory, sentToday] = await Promise.all([app.repos.chatMemory.get(user.id, star), app.repos.gifts.countOn(user.id, jstDay())]);
     const known = wishesOf(memory);
     return {
-      star, gifts: GIFTS.map((g) => ({ id: g.id, price: g.price, known: known.includes(g.id) })),
+      star, gifts: GIFTS.map((g) => ({ id: g.id, price: 0, known: known.includes(g.id) })),
       sentToday, perDay: GIFT_RULES.perDay, points: user.points
     };
   });

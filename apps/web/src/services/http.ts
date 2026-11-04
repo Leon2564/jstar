@@ -184,7 +184,7 @@ export const http = {
   setNickname: (nickname: string) => request<MeResT>('/v1/auth/me/nickname', { method: 'PUT', body: JSON.stringify({ nickname }) }),
   device: () => get<DeviceResT>('/v1/device'),
   redeem: (code: string) => post<SerialRedeemResT>('/v1/serial/redeem', { code }),
-  chat: (star: string, text: string, lang: string, suggest?: boolean) => post<ChatSendResT>('/v1/chat/send', { star, text, lang, tz: myZone(), ...(suggest ? { suggest } : {}) }),
+  chat: (star: string, text: string, lang: string, suggest?: boolean, channel: 'text' | 'video' = 'text') => post<ChatSendResT>('/v1/chat/send', { star, text, lang, channel, tz: myZone(), ...(suggest ? { suggest } : {}) }),
   trialChat: (star: string, text: string, lang: string) => post<ChatSendResT>('/v1/chat/trial', { star, text, lang }),
   chatStream: (star: string, text: string, lang: string, onText: OnText, suggest?: boolean) => chatStream('/v1/chat/send', { star, text, lang, tz: myZone(), ...(suggest ? { suggest } : {}) }, onText),
   trialChatStream: (star: string, text: string, lang: string, onText: OnText) => chatStream('/v1/chat/trial', { star, text, lang }, onText),

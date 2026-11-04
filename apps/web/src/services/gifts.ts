@@ -27,7 +27,7 @@ export async function gifts(state: Pick<AppState, 'points'>, star: StarId, local
   const { GIFTS } = await import('@jstar/shared/gifts');
   const known = localGifts.known[star] ?? [];
   return {
-    star, gifts: GIFTS.map((g) => ({ id: g.id, price: g.price, known: known.includes(g.id) })),
+    star, gifts: GIFTS.map((g) => ({ id: g.id, price: 0, known: known.includes(g.id) })),
     sentToday: localGifts.day === jstDay() ? localGifts.sent : 0, perDay: GIFT_RULES.perDay, points: state.points
   };
 }
@@ -42,7 +42,6 @@ export async function sendGift(state: AppState, star: StarId, giftId: GiftId, la
   if (!gift) return fail('invalid_request', 400);
   if (localGifts.day !== jstDay()) Object.assign(localGifts, { day: jstDay(), sent: 0 });
   if (localGifts.sent >= GIFT_RULES.perDay) fail('gift_limit', 409);
-  if (state.points < gift.price) fail('insufficient_points', 402);
   const taste = tasteOf(star, giftId);
   const known = localGifts.known[star] ?? [];
   const wished = taste === 'liked' && known.includes(giftId);
@@ -53,7 +52,7 @@ export async function sendGift(state: AppState, star: StarId, giftId: GiftId, la
     star, giftId, taste, wished, reaction: giftReaction(star, giftId, taste, wished, lang), affinityXp: xp, level: levelFromXp(xp),
     // The store runs the stage machine for prototype mode (a gift is XP, not a day together).
     relationship: viewOf(star, state.rel[star] ?? freshRelationship(new Date().toISOString()), xp),
-    points: state.points - gift.price, freePulls: state.freePulls, sentToday: localGifts.sent, perDay: GIFT_RULES.perDay,
+    points: state.points, freePulls: state.freePulls, sentToday: localGifts.sent, perDay: GIFT_RULES.perDay,
     known: localGifts.known[star] ?? [], variant: null
   };
 }

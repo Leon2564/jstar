@@ -1,31 +1,28 @@
 /**
  * Gifts (#77): the button in her chat and on the companion home, and the sheet he picks a gift in. The API decides
- * everything (points, the daily cap, how it lands with her); the sheet only shows the catalogue, what he has learned
- * she likes, and what a gift is: a digital item bought with points, never refunded or cashed out.
+ * everything (the daily cap and how it lands with her); the six choices trigger PV interactions and never spend
+ * chat credits.
  */
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { Link } from 'react-router-dom';
 import type { GiftSendResT, GiftsResT } from '@jstar/shared/contracts';
 import { FEATURED_GIFT_IDS, FEATURED_GIFTS, giftById, type GiftId } from '@jstar/shared/gifts';
 import { localText } from '@jstar/shared/domain';
 import { getStar, type StarId } from '../data/cast';
-import { dotSep, starFirst, type Lang } from '../i18n';
-import { CONFIG } from '../lib/config';
+import { starFirst, type Lang } from '../i18n';
 import { useStore, useT } from '../lib/store';
 import { errorCode } from '../services/api';
 import { gifts, sendGift } from '../services/gifts';
 import { Icon } from './ui';
-import { ChargeModal } from './chargeModal';
 import './gift.css';
 
 export const giftName = (id: string, lang: Lang): string => localText(giftById(id)?.name, lang);
 
 /** Why the sheet cannot send now, as a dictionary key; null when it can. */
-export function giftBlock(list: Pick<GiftsResT, 'sentToday' | 'perDay'> | null, points: number, price: number | null): 'gift.limit' | 'gift.noPoints' | 'gift.pick' | null {
+export function giftBlock(list: Pick<GiftsResT, 'sentToday' | 'perDay'> | null, _points: number, price: number | null): 'gift.limit' | 'gift.pick' | null {
   if (list && list.sentToday >= list.perDay) return 'gift.limit';
   if (price === null) return 'gift.pick';
-  return points < price ? 'gift.noPoints' : null;
+  return null;
 }
 
 /** A gift's picture (#77), or its emoji when the picture cannot load. */
@@ -63,7 +60,6 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
   const [pick, setPick] = useState<GiftId | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [charge, setCharge] = useState(false);
   const panel = useRef<HTMLDivElement>(null);
   useEffect(() => {
     let live = true;
@@ -82,7 +78,6 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
   const block = giftBlock(list ?? null, state.points, chosen?.price ?? null);
   const left = list ? Math.max(0, list.perDay - list.sentToday) : null;
   // M9: nothing he can afford (or he picked what he cannot): where points come from, with the ways there.
-  const earn = block === 'gift.noPoints' || (!!list && FEATURED_GIFTS.every((g) => g.price > state.points));
 
   async function give() {
     if (!chosen || busy || block) return;
@@ -97,8 +92,7 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
       onSent?.(r);
     } catch (e) {
       const code = errorCode(e);
-      if (code === 'insufficient_points') setCharge(true);
-      setError(t(code === 'insufficient_points' ? 'gift.noPoints' : code === 'gift_limit' ? 'gift.limit' : 'common.error'));
+      setError(t(code === 'gift_limit' ? 'gift.limit' : 'common.error'));
     } finally {
       setBusy(false);
     }
@@ -120,24 +114,16 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
           </p>
         )}
         {list === null && <p className="small" role="alert">{t('gift.loadFailed')}</p>}
-        {earn && (
-          <p className="gift-earn" role="note" data-testid="gift-earn">
-            {t('gacha.noPoints', { daily: CONFIG.dailyLoginPoints })}{' '}
-            <button type="button" onClick={() => setCharge(true)}>{t('gacha.earnHow')}</button>{dotSep(t.lang)}<Link to="/serial">{t('me.serial')}</Link>
-          </p>
-        )}
         <div className="gift-grid" role="group" aria-label={t('gift.pick')}>
           {FEATURED_GIFTS.map((g) => {
             const liked = known.includes(g.id);
-            const lack = g.price > state.points ? t('gift.short', { n: g.price - state.points }) : '';
             return (
-              <button key={g.id} type="button" className={`gift-tile${lack ? ' short' : ''}`} aria-pressed={pick === g.id} data-testid={`gift-${g.id}`} disabled={!list}
-                aria-label={`${localText(g.name, t.lang)} ${t('common.pt', { n: g.price })}${lack && ` ${lack}`}${liked ? `（${t('gift.known')}）` : ''}`}
-                onClick={() => { setPick(g.id); setError(null); if (g.price > state.points) setCharge(true); }}>
+              <button key={g.id} type="button" className="gift-tile" aria-pressed={pick === g.id} data-testid={`gift-${g.id}`} disabled={!list}
+                aria-label={`${localText(g.name, t.lang)}${liked ? `（${t('gift.known')}）` : ''}`}
+                onClick={() => { setPick(g.id); setError(null); }}>
                 <GiftIcon gift={g} />
                 <span className="gift-name">{localText(g.name, t.lang)}</span>
-                <span className="gift-price">{t('common.pt', { n: g.price })}</span>
-                {lack && <span>{lack}</span>}
+                <span className="gift-price">PV EFFECT</span>
                 {liked && <span className="gift-heart" aria-hidden="true">♥ {t('gift.known')}</span>}
               </button>
             );
@@ -146,17 +132,15 @@ export function GiftSheet({ onClose, onSent, onPick, star, call, localSession = 
         <p className="tiny muted gift-note">{t('gift.taste', { first })}<br />{t('gift.note')}</p>
         {error && <p className="small gift-error" role="alert">{error}</p>}
         <div className="gift-foot">
-          <button type="button" className="gift-balance" onClick={() => setCharge(true)}>
-            <span data-testid="gift-points">{t('gift.points', { n: state.points.toLocaleString('ja-JP') })}</span>
+          <div className="gift-balance">
+            <span>PV EFFECT</span>
             {left !== null && <span data-testid="gift-left">{t('gift.today', { n: left })}</span>}
-            <span aria-hidden="true">›</span>
-          </button>
+          </div>
           <button type="button" className="gift-give" data-testid="gift-send" disabled={!list || !!block || busy} onClick={() => void give()}>
-            {block ? t(block) : t('gift.send', { price: chosen!.price })}
+            {block ? t(block) : t('gift.send', { price: 0 })}
           </button>
         </div>
       </div>
     </div>, document.body)}
-    <ChargeModal open={charge} onClose={() => setCharge(false)} />
   </>;
 }

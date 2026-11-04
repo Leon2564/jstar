@@ -1,6 +1,6 @@
 import { STAR_IDS, isStarId, type StarId } from '../data/cast';
 import { isCardId } from '../data/cardIds';
-import { chatLeft, jstDay } from '@jstar/shared/rules';
+import { RULES } from '@jstar/shared/rules';
 import { levelFromXp } from '@jstar/shared/domain';
 import { CONFIG } from './config';
 import { detectLang, isLang, type Lang } from '../i18n';
@@ -258,7 +258,7 @@ export function level(aff: number): number {
   return levelFromXp(aff);
 }
 
-/** Messages left today for a registered user; null while the monthly pass is active. */
-export function chatLeftOf(s: Pick<AppState, 'chatDay' | 'chatUsed' | 'passUntil'>): number | null {
-  return chatLeft(s.chatDay === jstDay() ? s.chatUsed : 0, s.passUntil);
+/** Text turns affordable with the current chat-credit balance. */
+export function chatLeftOf(s: Pick<AppState, 'points'>): number {
+  return Math.floor(Math.max(0, s.points) / RULES.textMessageCostPoints);
 }

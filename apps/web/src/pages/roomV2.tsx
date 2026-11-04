@@ -21,6 +21,8 @@ import { dotSep } from '../i18n';
 import { ExtendSheet, minutesLeft } from '../components/voiceMinutes';
 import { useVoice } from '../components/voice';
 import { GiftSheet } from '../components/gift';
+import { ChargeModal } from '../components/chargeModal';
+import { RULES } from '@jstar/shared/rules';
 import { PromiseMade } from '../components/promise';
 import { SceneVideo, mediaFor, media, preloadClips } from '../components/stage';
 import { playVoice, stopVoice, useSound } from '../lib/sound';
@@ -556,6 +558,9 @@ export function RoomV2(p: RoomV2Props) {
   const [privateReady, setPrivateReady] = useState(false);
   const [privateConnected, setPrivateConnected] = useState(false);
   const [privateUnavailable, setPrivateUnavailable] = useState(false);
+  const [billingOpen, setBillingOpen] = useState(false);
+  const [billingStopped, setBillingStopped] = useState(false);
+  const billedMinutes = useRef(0);
   const [privateSceneOpen, setPrivateSceneOpen] = useState(false);
   const [privateTier, setPrivateTier] = useState<'SSR' | 'UR'>('SSR');
   const [privateCard, setPrivateCard] = useState<string | null>(() => {
@@ -569,6 +574,24 @@ export function RoomV2(p: RoomV2Props) {
   const privateStream = useRef<HTMLDivElement>(null);
   const privateConnection = useRef<LiveAvatarConnection | null>(null);
   const privateFallbackReplies = useRef(0);
+  // Private video calls spend 60 chat credits per started minute. Text sent inside the call is included.
+  useEffect(() => {
+    if (!privateMode || !privateReady || billingStopped) return;
+    const minute = Math.floor(secs / 60) + 1;
+    if (minute <= billedMinutes.current) return;
+    if (state.points < RULES.videoMinuteCostPoints) {
+      setBillingStopped(true);
+      setBillingOpen(true);
+      setPrivateReady(false);
+      setPrivateUnavailable(true);
+      const connection = privateConnection.current;
+      privateConnection.current = null;
+      void connection?.close();
+      return;
+    }
+    billedMinutes.current = minute;
+    actions.setPoints(state.points - RULES.videoMinuteCostPoints);
+  }, [actions, billingStopped, privateMode, privateReady, secs, state.points]);
   useEffect(() => {
     document.documentElement.classList.remove('private-live-route-leave');
     const enter = window.setTimeout(() => setPrivateEntering(false), 520);
@@ -665,6 +688,7 @@ export function RoomV2(p: RoomV2Props) {
     },
     speak: her.speak,
     suggest: true,
+    channel: 'video',
     holdOffer: true
   });
   // N3: her notifications are offered once she has said it all and his choices are up (below), or as he leaves.
@@ -948,7 +972,7 @@ export function RoomV2(p: RoomV2Props) {
         </button>
         <div className="private-live-identity">
           <span><i />1V1 · {privateReady ? 'DIGITAL HUMAN ONLINE' : privateUnavailable ? 'CHAT ONLINE' : privateConnected ? 'DIGITAL HUMAN STARTING' : 'DIGITAL HUMAN CONNECTING'}</span>
-          <strong>{p.name}</strong><small>{timer}</small>
+          <strong>{p.name}</strong><small>{timer} · 60積分/分鐘 · {state.points}積分</small>
         </div>
       </header>
 
@@ -987,11 +1011,12 @@ export function RoomV2(p: RoomV2Props) {
 
       <form className="private-live-composer" onSubmit={onSubmit} data-testid="room-composer">
         <label htmlFor="room-input" className="sr-only">{t('common.message')}</label>
-        <input id="room-input" ref={field} value={draft} maxLength={300} autoComplete="off" enterKeyHint="send" disabled={left === 0}
-          placeholder={left === 0 ? t('chat.limitTitle') : roomText('say', lang)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onChange={(event) => setDraft(event.target.value)} />
-        <button type="submit" aria-label={t('common.send')} disabled={busy || left === 0 || !draft.trim()}><Icon name="send" size={19} /></button>
+        <input id="room-input" ref={field} value={draft} maxLength={300} autoComplete="off" enterKeyHint="send" disabled={billingStopped}
+          placeholder={billingStopped ? t('shop.heading') : roomText('say', lang)} onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} onChange={(event) => setDraft(event.target.value)} />
+        <button type="submit" aria-label={t('common.send')} disabled={busy || billingStopped || !draft.trim()}><Icon name="send" size={19} /></button>
       </form>
       {giftOpen && <GiftSheet call localSession={import.meta.env.DEV || !getToken()} onClose={() => setGiftOpen(false)} onSent={giftSent} />}
+      <ChargeModal open={billingOpen} onClose={() => setBillingOpen(false)} />
     </div>
   );
 

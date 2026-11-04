@@ -52,6 +52,8 @@ export interface ChatSendOptions {
   onResult?: (r: ChatSendResT, added: Msg[], before: number) => void;
   /** Ask for his next words with her reply (her room's choices, QA #4). */
   suggest?: boolean;
+  /** Video-room messages are included in the per-minute video rate. */
+  channel?: 'text' | 'video';
   /** Her reply has arrived in full: her room speaks it in her runtime voice when that is on (#73, lib/herVoice.ts). */
   speak?: (reply: string, sig?: string) => void;
   /**
@@ -111,12 +113,12 @@ export function useChatSend(star: StarId, o: ChatSendOptions): ChatSend {
       // N-58: her service busy (503), a timeout, a dropped connection or a rate limit (after its Retry-After, at most
       // 3 s) is tried once more by itself before he hears of it.
       const replyLanguage = o.language ?? t.lang;
-      const r = await chat(stateRef.current, star, text, replyLanguage, setLive, o.suggest).catch(async (e: unknown) => {
+      const r = await chat(stateRef.current, star, text, replyLanguage, setLive, o.suggest, o.channel).catch(async (e: unknown) => {
         const wait = retryWaitMs(e);
         if (wait == null) throw e;
         setLive(null);
         await new Promise((ok) => setTimeout(ok, wait));
-        return chat(stateRef.current, star, text, replyLanguage, setLive, o.suggest);
+        return chat(stateRef.current, star, text, replyLanguage, setLive, o.suggest, o.channel);
       });
       actions.applyChat(star, r);
       const add: Msg[] = [{ id: uid(), from: 'her', text: r.reply }];
@@ -129,7 +131,7 @@ export function useChatSend(star: StarId, o: ChatSendOptions): ChatSend {
       // M11: his reply went — the moment her notifications may be offered (components/pushOffer.tsx, once).
       if (!o.holdOffer) window.dispatchEvent(new Event(REPLIED));
     } catch (e) {
-      if (errorCode(e) === 'daily_limit') actions.chatExhausted();
+      if (errorCode(e) === 'insufficient_points') actions.chatExhausted();
       else if (isBlocked(e)) o.onToast(t('chat.blocked'));
       // N-58: never silently dropped — his bubble says it did not go, with a one-tap resend (his words stay on it).
       else actions.chatFailed(star, mine.id);
