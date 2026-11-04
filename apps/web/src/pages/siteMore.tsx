@@ -145,7 +145,7 @@ export function Stars() {
           <Link to={videoTo} className="btn btn-rose magnetic stars-video-cta" onClick={() => { actions.setStar(c.id); actions.setTrialStar(c.id); }}>
             <Icon name="play" size={18} /><span><b>{copy.video}</b><small>{copy.videoSub}</small></span>
           </Link>
-          <Link to={textTo} className="btn btn-ghost stars-text-cta" onClick={() => { actions.setStar(c.id); actions.setTrialStar(c.id); }}>
+          <Link to={textTo} className="btn stars-text-cta" onClick={() => { actions.setStar(c.id); actions.setTrialStar(c.id); }}>
             <span><b>{copy.text}</b><small>{copy.textSub}</small></span>
           </Link>
         </div>

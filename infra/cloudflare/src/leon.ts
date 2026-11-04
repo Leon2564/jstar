@@ -286,6 +286,9 @@ export default {
     headers.set('referrer-policy', 'strict-origin-when-cross-origin');
     if (url.pathname.startsWith('/assets/')) {
       headers.set('cache-control', 'public, max-age=31536000, immutable');
+    } else {
+      // Route documents and the service worker must always discover the latest hashed asset entrypoints.
+      headers.set('cache-control', 'no-cache, must-revalidate');
     }
     return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   }
