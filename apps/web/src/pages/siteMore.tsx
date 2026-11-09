@@ -7,6 +7,7 @@ import { SCENE_GROUPS } from '@jstar/shared/catalog';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { CAST, getStar } from '../data/cast';
+import { heroEntry } from '../data/heroMedia';
 import { CARDS, CARD_BY_ID, type CardDef } from '../data/cards';
 import { EVENT_BADGE, eventStatus } from '../data/events';
 import { upcomingEvents } from '../data/eventsCalendar';
@@ -18,7 +19,7 @@ import { useStore, useT } from '../lib/store';
 import { isDemo } from '../services/api';
 import { Icon, LangSelect, MediaSlot, SiteHeader, siteNav } from '../components/ui';
 import { SceneVideo, media, sceneFor, stillOf } from '../components/stage';
-import { CardArt, rankOf } from '../components/cardArt';
+import { CardArt } from '../components/cardArt';
 import { CardShowcase } from '../components/cardShowcase';
 import { Footer, LEGAL, SNS } from '../components/footer';
 import { LIVE_COVERS, ResponsiveLiveCover } from '../components/liveCover';
@@ -94,8 +95,12 @@ export function Stars() {
     ['stars.birthday', profile.birthday && monthDayLabel(profile.birthday, t.lang)], ['stars.height', profile.height],
     ['stars.from', pick(profile.from)], ['stars.likes', pick(profile.likes)]
   ] as [Key, string | undefined][]).filter((r): r is [Key, string] => !!r[1]);
-  const top = CARDS.filter((x) => x.star === c.id).sort((a, b) => rankOf(b) - rankOf(a)).slice(0, 3);
   const copy = PROFILE_HUB_COPY[t.lang];
+  const featureVideo = heroEntry(c.id, false);
+  const featureSource = featureVideo?.sources.find((source) => source.type.includes('avc1') && source.width <= 1280)
+    ?? featureVideo?.sources.find((source) => source.type.includes('avc1'))
+    ?? featureVideo?.sources[0];
+  const photo = PROFILE_SPACE_PHOTOS[c.id];
   const videoTo = state.user ? `/me/home?star=${c.id}` : '/trial';
   const textTo = state.user ? `/me/chat?star=${c.id}` : '/trial?mode=text';
   const voiceUrl = `/voice/greet/${c.id}-welcome.mp3`;
@@ -154,25 +159,26 @@ export function Stars() {
             {rows.map(([k, v]) => <div key={k}><dt>{t(k)}</dt><dd>{v}</dd></div>)}
           </dl>
         )}
-        {top.length > 0 && (
-          <section className="stars-scenes rise-seq" style={{ '--d': 5 } as React.CSSProperties} aria-labelledby="stars-scenes-title">
-            <div className="stars-section-head"><div><span className="eyebrow">VIDEO SCENES</span><h2 id="stars-scenes-title">{copy.scenes}</h2></div><Link to="/gacha">{copy.gacha} <Icon name="chev" size={14} /></Link></div>
-            <p>{copy.scenesBody}</p>
-            <div className="stars-scene-grid">{top.map((card) => {
-              const owned = !!state.owned[card.id];
-              return <Link key={card.id} className={`stars-scene-card${owned ? ' is-owned' : ' is-locked'}`}
-                to={owned && state.user ? `/me/cards/${card.id}` : '/gacha'}
-                onClick={() => { if (!owned) actions.setGachaPool(`star:${c.id}`); }}>
-                <CardArt card={card} small />
-                <span><b>{localText(card.title, t.lang)}</b><small>{owned ? copy.unlocked : copy.locked}</small></span>
-              </Link>;
-            })}</div>
-          </section>
-        )}
+        <section className="stars-space rise-seq" style={{ '--d': 5 } as React.CSSProperties} aria-labelledby="stars-space-title">
+          <div className="stars-section-head"><div><span className="eyebrow">HER SPACE · 01</span><h2 id="stars-space-title">{copy.space}</h2></div><span className="stars-space-mark">✦ JSTAR</span></div>
+          <p className="stars-space-lead">{copy.spaceLead}</p>
+          <div className="stars-editorial-grid">
+            <figure className="stars-editorial-photo"><img src={photo} alt={copy.photoAlt.replace('{name}', name)} loading="lazy" /><figcaption><span>01 / {copy.photo}</span><b>{name}</b></figcaption></figure>
+            <figure className="stars-editorial-portrait"><ResponsiveLiveCover cover={LIVE_COVERS[c.id]} className="stars-editorial-portrait-img" /><figcaption>{copy.portrait}</figcaption></figure>
+          </div>
+          <div className="stars-feature-film">
+            <div className="stars-feature-film-head"><span className="eyebrow">FILM · 01</span><span>{copy.filmHint}</span></div>
+            {featureVideo && featureSource ? <video key={c.id} controls playsInline preload="none" poster={featureVideo.poster} aria-label={copy.filmAlt.replace('{name}', name)}><source src={featureSource.src} type={featureSource.type} /></video> : <img src={photo} alt={copy.photoAlt.replace('{name}', name)} loading="lazy" />}
+            <div className="stars-feature-film-copy"><div><h3>{copy.film}</h3><p>{copy.filmBody}</p></div><span aria-hidden="true">↗</span></div>
+          </div>
+        </section>
         <section className="stars-moments rise-seq" style={{ '--d': 6 } as React.CSSProperties} aria-labelledby="stars-moments-title">
-          <div className="stars-section-head"><div><span className="eyebrow">PUBLIC MOMENTS</span><h2 id="stars-moments-title">{copy.moments}</h2></div></div>
+          <div className="stars-section-head"><div><span className="eyebrow">PUBLIC NOTES · 02</span><h2 id="stars-moments-title">{copy.moments}</h2></div></div>
           <div className="stars-moment-list">
-            {copy.posts.map((post, index) => <article key={post.title}><div className="stars-moment-avatar"><ResponsiveLiveCover cover={LIVE_COVERS[c.id]} className="stars-moment-face" /></div><div><header><b>{name}</b><time>{index === 0 ? copy.today : `${index + 1}D`}</time></header><p>{post.body.replace('{name}', first)}</p><span>{post.tag}</span></div></article>)}
+            {copy.posts.map((post, index) => <article key={post.title}>
+              <div className="stars-moment-avatar"><ResponsiveLiveCover cover={LIVE_COVERS[c.id]} className="stars-moment-face" /></div>
+              <div className="stars-moment-content"><header><b>{name}</b><span>JSTAR · {String(index + 1).padStart(2, '0')}</span></header><p>{post.body.replace('{name}', first)}</p>{index === 0 && <img className="stars-moment-image" src={photo} alt={copy.photoAlt.replace('{name}', name)} loading="lazy" />}<span className="stars-moment-tag">{post.tag}</span></div>
+            </article>)}
           </div>
         </section>
         {SIGNATURE[c.id] && <img className="stars-autograph" src={SIGNATURE[c.id]} alt={t('stars.sign')} />}
@@ -194,40 +200,48 @@ export function Stars() {
 const PROFILE_HUB_COPY = {
   ja: {
     video: 'ビデオ通話', videoSub: '彼女と顔を見ながら話す', text: 'メッセージ', textSub: '文字でゆっくり話す',
-    scenes: 'ビデオ通話シーン', scenesBody: 'カードを集めると、新しい衣装や場所で話せるシーンが増えます。', gacha: 'ガチャで解放', unlocked: '解放済み', locked: 'カードで解放',
-    moments: '公開モーメント', today: 'TODAY', posts: [
-      { title: 'scene', body: '{name}の新しいビデオ通話シーンを公開しました。', tag: '#JSTAR #ビデオ通話' },
-      { title: 'pv', body: '新しいPVを少しだけ。続きはカードで見てね。', tag: '#NEW_PV' },
-      { title: 'hello', body: '今日も待ってるね。会いに来てくれたらうれしいな。', tag: '#ONLINE' }
+    space: '彼女のスペース', spaceLead: '写真と言葉、そして少しの映像。彼女らしい空気を、ここでゆっくり。', photo: 'PHOTO DIARY', portrait: 'A MOMENT WITH HER', photoAlt: '{name}の写真', film: '彼女の時間', filmBody: '再生して、彼女の表情や空気を感じて。', filmHint: 'タップして再生', filmAlt: '{name}のプロフィール映像',
+    moments: '公開モーメント', posts: [
+      { title: 'scene', body: 'この一枚が、{name}らしい時間の入り口になりますように。', tag: '#JSTAR #PHOTO' },
+      { title: 'pv', body: '短い映像を置いておくね。少しだけ一緒に過ごせたらうれしいな。', tag: '#FILM' },
+      { title: 'hello', body: '今日もここで待ってるね。話したくなったら、いつでも。', tag: '#MESSAGE' }
     ]
   },
   'zh-Hant': {
     video: '視訊通話', videoSub: '和她面對面聊天', text: '文字聊天', textSub: '用訊息慢慢聊',
-    scenes: '視訊對話場景', scenesBody: '收集卡牌，即可解鎖新的服裝、地點與專屬視訊對話。', gacha: '去抽卡解鎖', unlocked: '已解鎖', locked: '抽卡解鎖',
-    moments: '公開動態', today: '今天', posts: [
-      { title: 'scene', body: '{name}的新視訊對話場景公開了。', tag: '#JSTAR #視訊通話' },
-      { title: 'pv', body: '先公開一小段新 PV，完整內容在卡牌裡見。', tag: '#NEW_PV' },
-      { title: 'hello', body: '今天也在線等你，想見面的時候就來找我吧。', tag: '#ONLINE' }
+    space: '她的個人空間', spaceLead: '一些照片、一些心情，還有屬於她的影像片段。慢慢認識她。', photo: '影像日記', portrait: '她的片刻', photoAlt: '{name}的照片', film: '和她相處的片刻', filmBody: '點開影片，看看她此刻的神情與氛圍。', filmHint: '點擊播放', filmAlt: '{name}的個人影片',
+    moments: '公開動態', posts: [
+      { title: 'scene', body: '留下一張照片，記錄屬於{name}的一個片刻。', tag: '#JSTAR #PHOTO' },
+      { title: 'pv', body: '這段影像裡有她安靜的表情，也有一點想對你說的話。', tag: '#FILM' },
+      { title: 'hello', body: '想聊聊的時候，可以從這裡來找我。', tag: '#MESSAGE' }
     ]
   },
   en: {
     video: 'Video call', videoSub: 'Talk face to face', text: 'Text chat', textSub: 'Take it slow in messages',
-    scenes: 'Video conversation scenes', scenesBody: 'Collect cards to unlock new outfits, locations, and private video conversations.', gacha: 'Unlock in gacha', unlocked: 'Unlocked', locked: 'Unlock with card',
-    moments: 'Public moments', today: 'TODAY', posts: [
-      { title: 'scene', body: 'A new video call scene with {name} is now available.', tag: '#JSTAR #VIDEOCALL' },
-      { title: 'pv', body: 'A little preview of the new PV. Find the full moment in the card.', tag: '#NEW_PV' },
-      { title: 'hello', body: 'I am online today too. Come see me whenever you want.', tag: '#ONLINE' }
+    space: 'Her space', spaceLead: 'A few photos, a few thoughts, and a film that feels like her. Take your time.', photo: 'PHOTO DIARY', portrait: 'A MOMENT WITH HER', photoAlt: 'A portrait of {name}', film: 'A moment with her', filmBody: 'Press play and spend a quiet moment in her world.', filmHint: 'PRESS PLAY', filmAlt: 'Profile video of {name}',
+    moments: 'Public moments', posts: [
+      { title: 'scene', body: 'A photograph to hold one small moment with {name}.', tag: '#JSTAR #PHOTO' },
+      { title: 'pv', body: 'A short film, a quiet expression, and a few seconds in her world.', tag: '#FILM' },
+      { title: 'hello', body: 'Whenever you feel like talking, you can find me here.', tag: '#MESSAGE' }
     ]
   },
   ko: {
     video: '영상 통화', videoSub: '얼굴을 보며 대화하기', text: '문자 채팅', textSub: '메시지로 천천히 대화하기',
-    scenes: '영상 대화 장면', scenesBody: '카드를 모으면 새로운 의상과 장소의 영상 대화를 해금할 수 있어요.', gacha: '뽑기로 해금', unlocked: '해금 완료', locked: '카드로 해금',
-    moments: '공개 모먼트', today: '오늘', posts: [
-      { title: 'scene', body: '{name}의 새로운 영상 통화 장면이 공개됐어요.', tag: '#JSTAR #영상통화' },
-      { title: 'pv', body: '새 PV를 조금만 공개할게요. 전체 장면은 카드에서 만나요.', tag: '#NEW_PV' },
-      { title: 'hello', body: '오늘도 기다리고 있어요. 보고 싶을 때 만나러 와요.', tag: '#ONLINE' }
+    space: '그녀의 공간', spaceLead: '사진과 짧은 생각, 그리고 그녀다운 영상. 천천히 알아가 보세요.', photo: 'PHOTO DIARY', portrait: '그녀의 순간', photoAlt: '{name}의 사진', film: '그녀와의 순간', filmBody: '재생해서 그녀의 표정과 분위기를 느껴보세요.', filmHint: '눌러서 재생', filmAlt: '{name}의 프로필 영상',
+    moments: '공개 모먼트', posts: [
+      { title: 'scene', body: '{name}와 함께한 작은 순간을 사진으로 남겼어요.', tag: '#JSTAR #PHOTO' },
+      { title: 'pv', body: '짧은 영상 속 그녀의 표정과 분위기를 느껴보세요.', tag: '#FILM' },
+      { title: 'hello', body: '이야기하고 싶을 때 언제든 여기로 와요.', tag: '#MESSAGE' }
     ]
   }
+} as const;
+
+const PROFILE_SPACE_PHOTOS = {
+  mahiro: '/media/mahiro-feedback/poster.jpg',
+  nana: '/media/nana-feedback/posters-4k/nana-react-a-16x9.jpg',
+  unpai: '/media/unpai-feedback/posters-4k/unpai-react-a-16x9.jpg',
+  alice: '/media/alice-feedback/posters/alice-react-a-16x9.jpg',
+  eimi: '/media/eimi-feedback/enter-poster.png'
 } as const;
 
 // f5 / f6: v1.1 (Nest), life together and the scenes. Their lines are reviewed (#84), but the scenes play in

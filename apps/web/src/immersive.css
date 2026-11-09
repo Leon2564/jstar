@@ -212,7 +212,7 @@ body[data-route^='/me/']:not([data-route='/me/home'], [data-route^='/me/scene'],
   .stars-intro { font-size: 12px; line-height: 1.65; }
 }
 
-/* Compact profile hub: one identity, two conversation choices, unlocked scenes and a small public feed. */
+/* Personal space: a quiet editorial collage, one playable film, and a short public journal. */
 .stars-hub .stars-profile-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
 .stars-hub .stars-media::after { background: linear-gradient(to bottom, rgba(8, 10, 30, .24), transparent 22%, rgba(10, 12, 34, .08) 55%, var(--navy-deep)); }
 .stars-hub .stars-info { gap: 16px; }
@@ -230,29 +230,40 @@ body[data-route^='/me/']:not([data-route='/me/home'], [data-route^='/me/scene'],
 .stars-hub-actions .stars-text-cta:hover { background: rgba(239, 232, 237, .18); border-color: rgba(239, 232, 237, .78); }
 .stars-hub-actions .stars-text-cta span { align-items: center; }
 .stars-hub .voice-btn { grid-column: 1; width: 44px; min-height: 38px; justify-self: end; margin-bottom: -6px; }
-.stars-scenes, .stars-moments { border-top: 1px solid rgba(239, 232, 237, .18); padding-top: 16px; }
+.stars-space, .stars-moments { border-top: 1px solid rgba(239, 232, 237, .18); padding-top: 20px; }
 .stars-section-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; }
-.stars-section-head h2 { margin: 3px 0 0; font-family: var(--serif); font-size: 20px; font-weight: 500; }
-.stars-section-head > a { min-height: 36px; display: inline-flex; align-items: center; gap: 4px; color: var(--accent); font-size: 11px; white-space: nowrap; }
-.stars-scenes > p { margin: 8px 0 13px; color: rgba(239, 232, 237, .66); font-size: 11px; line-height: 1.7; }
-.stars-scene-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
-.stars-scene-card { min-width: 0; display: flex; flex-direction: column; gap: 7px; color: var(--ivory); }
-.stars-scene-card .cardx { width: 100%; }
-.stars-scene-card > span { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.stars-scene-card > span b { overflow: hidden; font-size: 10px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
-.stars-scene-card > span small { color: var(--accent); font-size: 9px; }
-.stars-scene-card.is-locked .cardx { filter: saturate(.62) brightness(.72); }
-.stars-moment-list { margin-top: 10px; display: grid; gap: 0; }
-.stars-moment-list article { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 10px; padding: 12px 0; border-top: 1px solid rgba(239, 232, 237, .1); }
+.stars-section-head h2 { margin: 5px 0 0; font-family: var(--serif); font-size: clamp(23px, 2vw, 31px); font-weight: 500; letter-spacing: .06em; }
+.stars-space-mark { color: rgba(239, 232, 237, .48); font-family: var(--serif); font-size: 11px; letter-spacing: .18em; white-space: nowrap; }
+.stars-space-lead { max-width: 36ch; margin: 12px 0 18px; color: rgba(239, 232, 237, .7); font-family: var(--serif); font-size: 14px; line-height: 1.8; }
+.stars-editorial-grid { display: grid; grid-template-columns: 1.4fr .8fr; gap: 10px; align-items: stretch; }
+.stars-editorial-grid figure { position: relative; min-width: 0; height: 244px; margin: 0; overflow: hidden; background: #12172f; }
+.stars-editorial-grid figure::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(10, 11, 29, .7)); pointer-events: none; }
+.stars-editorial-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.stars-editorial-grid figure:hover img { transform: scale(1.045); }
+.stars-editorial-photo img { object-position: center 27%; }
+.stars-editorial-portrait-img { object-position: 55% 22%; }
+.stars-editorial-grid figcaption { position: absolute; z-index: 1; bottom: 13px; left: 14px; right: 12px; display: flex; flex-direction: column; gap: 3px; color: var(--ivory); font-family: var(--serif); font-size: 10px; letter-spacing: .14em; }
+.stars-editorial-photo figcaption b { font-size: 18px; font-weight: 500; letter-spacing: .04em; }
+.stars-editorial-portrait figcaption { writing-mode: vertical-rl; left: auto; right: 12px; bottom: 12px; }
+.stars-feature-film { margin-top: 18px; padding: 12px; border: 1px solid rgba(239, 232, 237, .19); background: rgba(255, 255, 255, .045); }
+.stars-feature-film-head { display: flex; justify-content: space-between; gap: 12px; padding: 3px 2px 11px; color: rgba(239, 232, 237, .6); font-size: 10px; letter-spacing: .1em; }
+.stars-feature-film video, .stars-feature-film > img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #090c1b; }
+.stars-feature-film-copy { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 13px 3px 2px; }
+.stars-feature-film-copy h3 { margin: 0; font-family: var(--serif); font-size: 18px; font-weight: 500; }
+.stars-feature-film-copy p { margin: 4px 0 0; color: rgba(239, 232, 237, .65); font-size: 11px; line-height: 1.6; }
+.stars-feature-film-copy > span { align-self: flex-start; color: var(--accent); font-family: var(--serif); font-size: 20px; }
+.stars-moment-list { margin-top: 14px; display: grid; gap: 0; }
+.stars-moment-list article { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding: 18px 0; border-top: 1px solid rgba(239, 232, 237, .13); }
 .stars-moment-list article:first-child { border-top: 0; }
-.stars-moment-avatar { position: relative; width: 38px; height: 38px; border-radius: 50%; overflow: hidden; background: rgba(255,255,255,.08); }
+.stars-moment-avatar { position: relative; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; background: rgba(255,255,255,.08); }
 .stars-moment-face { width: 100%; height: 100%; object-fit: cover; object-position: 58% 18%; transform: scale(1.55); }
-.stars-moment-list article > div:last-child { min-width: 0; }
+.stars-moment-content { min-width: 0; }
 .stars-moment-list header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-.stars-moment-list header b { font-family: var(--serif); font-size: 12px; font-weight: 500; }
-.stars-moment-list time { color: rgba(239, 232, 237, .48); font-size: 8px; letter-spacing: .12em; }
-.stars-moment-list p { margin: 5px 0; color: rgba(239, 232, 237, .82); font-size: 11px; line-height: 1.65; }
-.stars-moment-list article > div > span { color: var(--accent); font-size: 9px; letter-spacing: .04em; }
+.stars-moment-list header b { font-family: var(--serif); font-size: 13px; font-weight: 500; }
+.stars-moment-list header span { color: rgba(239, 232, 237, .48); font-size: 9px; letter-spacing: .12em; }
+.stars-moment-list p { margin: 8px 0 11px; color: rgba(239, 232, 237, .82); font-size: 12px; line-height: 1.75; }
+.stars-moment-image { display: block; width: 100%; max-height: 180px; aspect-ratio: 16 / 7; object-fit: cover; object-position: center 30%; margin: 0 0 10px; }
+.stars-moment-tag { color: var(--accent); font-size: 10px; letter-spacing: .04em; }
 .stars-hub .stars-autograph { margin-top: -4px; max-width: 120px; opacity: .55; }
 
 @media (min-width: 1024px) {
@@ -269,6 +280,8 @@ body[data-route^='/me/']:not([data-route='/me/home'], [data-route^='/me/scene'],
   .stars-hub-actions { grid-template-columns: 1fr; }
   .stars-hub-actions .btn { min-height: 56px; }
   .stars-hub .voice-btn { grid-column: 1; }
+  .stars-editorial-grid figure { height: 190px; }
+  .stars-feature-film { padding: 8px; }
 }
 
 /* Pick: each talent's still, her breathing clip on hover. */
