@@ -175,7 +175,16 @@ export function Stars() {
         <section className="stars-moments rise-seq" style={{ '--d': 6 } as React.CSSProperties} aria-labelledby="stars-moments-title">
           <div className="stars-section-head"><div><span className="eyebrow">PUBLIC NOTES · 02</span><h2 id="stars-moments-title">{copy.moments}</h2></div></div>
           <div className="stars-moment-list">
-            {copy.posts.map((post, index) => <article key={post.title}>
+            {c.id === 'nana' ? NANA_PUBLIC_MOMENTS.map((post, index) => <article key={post.id} className="stars-moment-media-post">
+              <div className="stars-moment-avatar"><ResponsiveLiveCover cover={LIVE_COVERS[c.id]} className="stars-moment-face" /></div>
+              <div className="stars-moment-content"><header><b>{name}</b><span>JSTAR · {String(index + 1).padStart(2, '0')}</span></header>
+                <p>{post.caption[t.lang]}</p>
+                {post.kind === 'photos'
+                  ? <div className="stars-moment-gallery">{post.images.map((src, photoIndex) => <img key={src} src={src} alt={`${post.caption[t.lang]} · ${photoIndex + 1}`} loading="lazy" />)}</div>
+                  : <video controls playsInline preload="none" poster={post.poster} aria-label={post.caption[t.lang]}><source src={post.video} type="video/mp4" /></video>}
+                <span className="stars-moment-tag">{post.tag}</span>
+              </div>
+            </article>) : copy.posts.map((post, index) => <article key={post.title}>
               <div className="stars-moment-avatar"><ResponsiveLiveCover cover={LIVE_COVERS[c.id]} className="stars-moment-face" /></div>
               <div className="stars-moment-content"><header><b>{name}</b><span>JSTAR · {String(index + 1).padStart(2, '0')}</span></header><p>{post.body.replace('{name}', first)}</p>{index === 0 && <img className="stars-moment-image" src={photo} alt={copy.photoAlt.replace('{name}', name)} loading="lazy" />}<span className="stars-moment-tag">{post.tag}</span></div>
             </article>)}
@@ -243,6 +252,29 @@ const PROFILE_SPACE_PHOTOS = {
   alice: '/media/alice-feedback/posters/alice-react-a-16x9.jpg',
   eimi: '/media/eimi-feedback/enter-poster.png'
 } as const;
+
+const NANA_PUBLIC_MOMENTS = [
+  {
+    id: 'stairs', kind: 'photos', images: ['/media/profile/nana/stairs-01.jpg', '/media/profile/nana/stairs-02.jpg'], tag: '#PHOTO · 01',
+    caption: { ja: '階段の途中で、ふと見上げた二つの瞬間。', 'zh-Hant': '樓梯轉角，抬頭看鏡頭的兩個瞬間。', en: 'Two little moments, looking up from the stairs.', ko: '계단에서 올려다본 두 순간.' }
+  },
+  {
+    id: 'garden', kind: 'video', video: '/media/profile/nana/garden.mp4', poster: '/media/profile/nana/garden-poster.png', tag: '#VIDEO · 01',
+    caption: { ja: '庭の揺れる椅子で、ブルーベリーと小さな休憩。', 'zh-Hant': '坐在庭院吊椅上，帶著一籃藍莓偷個閒。', en: 'A little garden break with a basket of blueberries.', ko: '정원의 흔들의자에서 블루베리와 함께 잠깐 쉬어가기.' }
+  },
+  {
+    id: 'sofa', kind: 'photos', images: ['/media/profile/nana/sofa-01.jpg', '/media/profile/nana/sofa-02.jpg'], tag: '#PHOTO · 02',
+    caption: { ja: '白いソファで、少しだけのんびり。', 'zh-Hant': '在白色沙發上，讓午後慢一點。', en: 'A slower afternoon on the white sofa.', ko: '하얀 소파에서 조금 느리게 보내는 오후.' }
+  },
+  {
+    id: 'morning', kind: 'video', video: '/media/profile/nana/morning.mp4', poster: '/media/profile/nana/morning-poster.png', tag: '#VIDEO · 02',
+    caption: { ja: '窓から光が入る朝、ベッドの上でひと息。', 'zh-Hant': '晨光從窗邊進來，抱著枕頭慢慢醒來。', en: 'Morning light, a pillow, and a moment to wake up slowly.', ko: '창가의 아침 햇살, 베개를 안고 천천히 눈뜨는 시간.' }
+  },
+  {
+    id: 'spa', kind: 'photos', images: ['/media/profile/nana/spa-01.jpg', '/media/profile/nana/spa-02.jpg'], tag: '#PHOTO · 03',
+    caption: { ja: '星のような灯りと、あたたかな湯のそばで。', 'zh-Hant': '星點燈光與暖暖的水邊，留一點放鬆的時間。', en: 'A little time to unwind beneath starry lights by the warm water.', ko: '별빛 같은 조명과 따뜻한 물가에서 쉬어가는 시간.' }
+  }
+] as const;
 
 // f5 / f6: v1.1 (Nest), life together and the scenes. Their lines are reviewed (#84), but the scenes play in
 // production only once their clips exist (the publish rule), so production shows these two once the clips land.
