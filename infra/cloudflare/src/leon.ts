@@ -2,6 +2,8 @@ interface Env {
   ASSETS: Fetcher;
   MEDIA: R2Bucket;
   AI: Ai;
+  ARK_API_KEY?: string;
+  ARK_MODEL?: string;
   TEXT_AGENT_LIMITER: RateLimit;
   TEXT_AGENT_GLOBAL_LIMITER: RateLimit;
   VIDU_API_TOKEN: string;
@@ -43,6 +45,8 @@ const R2_PREFIXES = ['/media/', '/cards/', '/voice/', '/audio/', '/gifts/', '/ic
 const R2_CACHE_CONTROL = 'public, max-age=86400, stale-while-revalidate=604800';
 const MAX_WARM_BYTES = 32 * 1024 * 1024;
 const VIDU_BASE = 'https://api.vidu.com';
+const ARK_CHAT_URL = 'https://ark.ap-southeast.bytepluses.com/api/v3/chat/completions';
+const ARK_DEFAULT_MODEL = 'seed-sc-260628';
 const LIVE_STARS = ['mahiro', 'nana', 'unpai', 'alice', 'eimi'] as const;
 type LiveStar = typeof LIVE_STARS[number];
 type LiveLayout = 'desktop' | 'mobile';
@@ -107,13 +111,27 @@ async function textAgent(request: Request, env: Env): Promise<Response> {
   const history = (Array.isArray(body.history) ? body.history : []).slice(-8)
     .filter((item) => ['user', 'assistant'].includes(item.role || '') && typeof item.content === 'string')
     .map((item) => ({ role: item.role as 'user' | 'assistant', content: item.content!.slice(0, 500) }));
+  const messages = [
+    { role: 'system', content: `${viduConfig(env, star, 'desktop').persona}\n${JAPANESE_POLICY}\n相手への返答は短い自然な日本語の一、二文にしてください。実在の本人ではなくAIキャラクターとして話してください。` },
+    ...history,
+    { role: 'user', content: body.text.trim() }
+  ];
   try {
+    if (env.ARK_API_KEY) {
+      const response = await fetch(ARK_CHAT_URL, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${env.ARK_API_KEY}`, 'content-type': 'application/json' },
+        body: JSON.stringify({ model: env.ARK_MODEL || ARK_DEFAULT_MODEL, messages, max_tokens: 160, stream: false }),
+        signal: AbortSignal.timeout(20_000)
+      });
+      if (!response.ok) return json({ error: 'agent_unavailable' }, { status: 503 });
+      const result = await response.json().catch(() => null) as { choices?: { message?: { content?: string } }[] } | null;
+      const reply = result?.choices?.[0]?.message?.content?.trim();
+      if (!reply) return json({ error: 'agent_empty_reply' }, { status: 502 });
+      return json({ reply });
+    }
     const result = await env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
-      messages: [
-        { role: 'system', content: `${viduConfig(env, star, 'desktop').persona}\n${JAPANESE_POLICY}\n相手への返答は短い自然な日本語の一、二文にしてください。実在の本人ではなくAIキャラクターとして話してください。` },
-        ...history,
-        { role: 'user', content: body.text.trim() }
-      ],
+      messages,
       max_tokens: 160
     });
     const reply = typeof result === 'object' && result && 'response' in result ? String(result.response || '').trim() : '';

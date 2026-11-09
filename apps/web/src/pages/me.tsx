@@ -60,6 +60,7 @@ const WeatherChip = lazy(() => weatherRoom().then((m) => ({ default: m.WeatherCh
 const SeasonDecor = lazy(() => import('../components/seasonDecor').then((m) => ({ default: m.SeasonDecor })));
 import { HerMessagesSetting } from '../components/herMessages';
 import { GiftButton, giftName } from '../components/gift';
+import { LIVE_COVERS } from '../components/liveCover';
 import { VoiceToday } from '../components/voiceMinutes';
 import type { GiftSendResT } from '@jstar/shared/contracts';
 import { CallNameSetting } from '../components/callName';
@@ -1107,7 +1108,18 @@ export function Chat() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="page member chat chat-night">
+    <div className="page member chat chat-night chat-editorial" data-star={c.id}>
+      <div className="chat-main">
+        <aside className="chat-stage" aria-label={starName(c, t.lang)}>
+          <picture><source media="(max-width: 1023px)" srcSet={LIVE_COVERS[c.id].desktop} /><img src={LIVE_COVERS[c.id].mobile} alt="" loading="eager" decoding="async" /></picture>
+          <div className="chat-stage-copy">
+            <span className="chat-stage-kicker">✦ JSTAR · 1:1</span>
+            <strong>{starName(c, t.lang)}</strong>
+            <p>{t(`star.${c.id}.line` as Key)}</p>
+            <span className="chat-stage-ai">{t('common.aiBadge')}</span>
+          </div>
+        </aside>
+        <div className="chat-conversation">
       <header className="chat-hdr">
         <Link to="/me/home" className="icon-btn" aria-label={t('chat.backHome')} onClick={(e) => {
           // Before he leaves her room, she brings up the next time once (#59).
@@ -1215,6 +1227,8 @@ export function Chat() {
           onChange={(e) => { if (voice.listening) voice.ctl.cancel(); setDraft(e.target.value); }} />
         <button type="submit" className="round" style={{ background: 'var(--rose)', color: 'var(--navy-deep)' }} aria-label={t('common.send')} disabled={left === 0 || (!voice.listening && (busy || !draft.trim()))}><Icon name="send" size={18} /></button>
       </form>
+        </div>
+      </div>
       <Toast msg={toast} />
       <TabBar />
     </div>

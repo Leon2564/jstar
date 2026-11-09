@@ -5,3 +5,43 @@
 .chat-night .composer input, .chat-night .tabbar { background: rgba(var(--nd), 0.9); border-color: var(--iv-line); color: var(--ivory); }
 .chat-night .composer input::placeholder, .chat-night .muted, .chat-night .tabbar a { color: var(--iv-meta); }
 .chat-night .chip, .chat-night .round.btn-ghost, .chat-night .tabbar a[aria-current='page'] { color: var(--ivory); border-color: var(--iv-line); }
+
+/* A quiet portrait and a focused conversation share the screen. */
+.chat-editorial { background: #101329; }
+.chat-editorial .chat-main { display: flex; flex: 1; min-height: 0; width: min(100%, 1680px); margin: 0 auto; border-inline: 1px solid rgba(239, 232, 237, .1); }
+.chat-editorial .chat-stage { position: relative; flex: 0 0 38%; min-width: 0; overflow: hidden; background: #111429; }
+.chat-editorial .chat-stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 12, 31, .1) 35%, rgba(10, 12, 31, .82) 100%); pointer-events: none; }
+.chat-editorial .chat-stage picture, .chat-editorial .chat-stage img { display: block; width: 100%; height: 100%; }
+.chat-editorial .chat-stage img { object-fit: cover; object-position: center 30%; }
+.chat-editorial .chat-stage-copy { position: absolute; z-index: 1; left: clamp(26px, 3vw, 56px); right: 24px; bottom: clamp(28px, 4vw, 64px); color: var(--ivory); }
+.chat-editorial .chat-stage-kicker { display: block; margin-bottom: 14px; color: var(--rose-glow); font-size: 11px; letter-spacing: .22em; }
+.chat-editorial .chat-stage-copy strong { display: block; font: 500 clamp(30px, 3vw, 52px)/1.2 var(--serif); letter-spacing: .08em; }
+.chat-editorial .chat-stage-copy p { max-width: 24ch; margin: 16px 0; font: 17px/1.8 var(--serif); white-space: pre-line; }
+.chat-editorial .chat-stage-ai { display: inline-block; padding: 6px 11px; border: 1px solid rgba(239, 232, 237, .36); border-radius: 999px; background: rgba(16, 19, 41, .38); color: rgba(239, 232, 237, .84); font-size: 10px; letter-spacing: .08em; }
+.chat-editorial .chat-conversation { display: flex; flex: 1; min-width: 0; min-height: 0; flex-direction: column; background: radial-gradient(circle at 82% 2%, rgba(187, 133, 161, .12), transparent 42%), #1b1e3d; }
+.chat-editorial .chat-hdr { min-height: 76px; padding: 10px 24px; background: rgba(22, 25, 53, .76); border-color: rgba(239, 232, 237, .12); }
+.chat-editorial .chat-body { padding: 32px clamp(24px, 4vw, 64px); background: transparent; gap: 17px; }
+.chat-editorial .chat-body .msg { max-width: min(78%, 520px); padding: 14px 18px; font-size: 15px; line-height: 1.75; }
+.chat-editorial .chat-body .msg.her { border: 1px solid rgba(239, 232, 237, .17); background: rgba(246, 237, 244, .11); box-shadow: 0 12px 32px rgba(6, 8, 24, .13); border-radius: 3px 18px 18px 18px; }
+.chat-editorial .chat-body .msg.me { background: linear-gradient(135deg, #e5a8ba, #cb829c); border-radius: 18px 18px 3px 18px; }
+.chat-editorial .composer { padding: 16px clamp(24px, 4vw, 64px) calc(18px + env(safe-area-inset-bottom)); background: rgba(19, 22, 47, .86); border-color: rgba(239, 232, 237, .13); }
+.chat-editorial .composer input { height: 50px; padding-inline: 20px; background: rgba(239, 232, 237, .075); border: 1px solid rgba(239, 232, 237, .28); border-radius: 9px; }
+.chat-editorial .composer input:focus { border-color: var(--rose-glow); box-shadow: 0 0 0 3px rgba(229, 168, 186, .12); }
+.chat-editorial .composer button[type='submit'] { border-radius: 9px; width: 50px; height: 50px; }
+@media (min-width: 1024px) {
+  .chat-editorial .chat-hdr { padding-inline: clamp(24px, 4vw, 64px); }
+}
+@media (max-width: 1023px) {
+  .chat-editorial .chat-main { flex-direction: column; border: 0; }
+  .chat-editorial .chat-stage { flex: 0 0 132px; }
+  .chat-editorial .chat-stage img { object-position: center 30%; }
+  .chat-editorial .chat-stage::after { background: linear-gradient(90deg, rgba(10, 12, 31, .83), rgba(10, 12, 31, .28)); }
+  .chat-editorial .chat-stage-copy { left: 20px; right: 12px; bottom: 16px; }
+  .chat-editorial .chat-stage-kicker { margin-bottom: 4px; font-size: 9px; }
+  .chat-editorial .chat-stage-copy strong { font-size: 25px; }
+  .chat-editorial .chat-stage-copy p { margin: 2px 0 0; font-size: 12px; line-height: 1.3; }
+  .chat-editorial .chat-stage-ai { display: none; }
+  .chat-editorial .chat-hdr { min-height: 64px; padding: 7px 12px; }
+  .chat-editorial .chat-body { padding: 22px 16px; }
+  .chat-editorial .composer { padding: 10px 12px calc(12px + env(safe-area-inset-bottom)); }
+}
