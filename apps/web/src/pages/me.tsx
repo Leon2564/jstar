@@ -1053,7 +1053,7 @@ export function Chat() {
     setAnswered(true);
     setOffer(null);
     setProposal(null);
-    if (leaving) nav('/me/home');
+    if (leaving) nav('/');
   }
   // Her message (#58) opened once is also her line in the conversation: when the history already has it, it shows there.
   const inHistory = !!opened?.payload.herMessage && msgs.some((m) => m.from === 'her' && m.text === inboxLine(opened, t));
@@ -1123,7 +1123,7 @@ export function Chat() {
         </aside>
         <div className="chat-conversation">
       <header className="chat-hdr">
-        <Link to="/me/home" className="icon-btn" aria-label={t('chat.backHome')} onClick={(e) => {
+        <Link to="/" className="icon-btn" aria-label={t('chat.backHome')} onClick={(e) => {
           // Before he leaves her room, she brings up the next time once (#59).
           if (proposal && !answered && !offer && sentHere.size > 0) { e.preventDefault(); setOffer('leaving'); }
         }}><Icon name="back" /></Link>
