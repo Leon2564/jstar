@@ -159,7 +159,7 @@ export function Stars() {
             {rows.map(([k, v]) => <div key={k}><dt>{t(k)}</dt><dd>{v}</dd></div>)}
           </dl>
         )}
-        <section className="stars-space rise-seq" style={{ '--d': 5 } as React.CSSProperties} aria-labelledby="stars-space-title">
+        {c.id !== 'nana' && <section className="stars-space rise-seq" style={{ '--d': 5 } as React.CSSProperties} aria-labelledby="stars-space-title">
           <div className="stars-section-head"><div><span className="eyebrow">HER SPACE · 01</span><h2 id="stars-space-title">{copy.space}</h2></div><span className="stars-space-mark">✦ JSTAR</span></div>
           <p className="stars-space-lead">{copy.spaceLead}</p>
           <div className="stars-editorial-grid">
@@ -171,9 +171,9 @@ export function Stars() {
             {featureVideo && featureSource ? <video key={c.id} controls playsInline preload="none" poster={featureVideo.poster} aria-label={copy.filmAlt.replace('{name}', name)}><source src={featureSource.src} type={featureSource.type} /></video> : <img src={photo} alt={copy.photoAlt.replace('{name}', name)} loading="lazy" />}
             <div className="stars-feature-film-copy"><div><h3>{copy.film}</h3><p>{copy.filmBody}</p></div><span aria-hidden="true">↗</span></div>
           </div>
-        </section>
-        <section className="stars-moments rise-seq" style={{ '--d': 6 } as React.CSSProperties} aria-labelledby="stars-moments-title">
-          <div className="stars-section-head"><div><span className="eyebrow">PUBLIC NOTES · 02</span><h2 id="stars-moments-title">{copy.moments}</h2></div></div>
+        </section>}
+        <section className="stars-moments rise-seq" style={{ '--d': c.id === 'nana' ? 5 : 6 } as React.CSSProperties} aria-labelledby="stars-moments-title">
+          <div className="stars-section-head"><div><span className="eyebrow">PUBLIC NOTES · {c.id === 'nana' ? '01' : '02'}</span><h2 id="stars-moments-title">{copy.moments}</h2></div></div>
           <div className="stars-moment-list">
             {c.id === 'nana' ? NANA_PUBLIC_MOMENTS.map((post, index) => <article key={post.id} className="stars-moment-media-post">
               <div className="stars-moment-avatar"><ResponsiveLiveCover cover={LIVE_COVERS[c.id]} className="stars-moment-face" /></div>
