@@ -7,6 +7,7 @@ import { CONFIG } from '../lib/config';
 import { BOND_RULES, STAGE_RULES, TRIGGER_RULES, WAKEUP_RULES, passActive } from '@jstar/shared/rules';
 import { stageAtLeast } from '@jstar/shared/relationship';
 import type { Msg } from '../lib/state';
+import { useChatTranslations } from '../lib/chatTranslation';
 import { uid, useStore, useT } from '../lib/store';
 import { SEND_FAILED, useChatSend } from './chatSend';
 import { answerCallName, bondOf, calendarToday, demoCalendarDay, demoConfessionDay, drawHistory, errorCode, history, inbox, logout, makePromise, promises, readInbox, relationshipOf, relationships, lastRelationships, serverMode, isDemo } from '../services/api';
@@ -922,6 +923,7 @@ export function Chat() {
   const sound = useSound();
   const first = starFirst(c, t.lang);
   const msgs = state.chats[c.id];
+  const displayHer = useChatTranslations(msgs, t.lang);
   const msgsRef = useRef(msgs);
   msgsRef.current = msgs;
   // Talents whose conversation was empty when this screen opened: she opens with a line, and it stays for the visit.
@@ -1170,7 +1172,7 @@ export function Chat() {
             {i === made?.at && <PromiseMade promise={made.promise} />}
             {m.kind === 'memory'
               ? <Link to="/me/cards?tab=memory" className="panel small fade-in" style={{ padding: 12 }}><span style={{ color: 'var(--rose-text)' }}>{t('chat.memory', { title: m.text })}</span><br /><span className="tiny muted">{t('chat.viewCard')}</span></Link>
-              : <p className={`msg ${m.from}${failed.has(m.id) ? ' failed' : ''}`}>{m.text}</p>}
+              : <p className={`msg ${m.from}${failed.has(m.id) ? ' failed' : ''}`}>{m.from === 'her' ? displayHer(m.text) : m.text}</p>}
             {failed.has(m.id) && (
               // B-R1: on her chat's night, the room's rose-glow (AA), never rose-text (2.3:1 on navy).
               <p className="tiny" role="alert" data-testid="chat-failed" style={{ alignSelf: 'flex-end', margin: '-6px 0 0', display: 'flex', gap: 8, alignItems: 'center', color: 'var(--rose-glow)' }}>
@@ -1206,7 +1208,7 @@ export function Chat() {
             {t('chat.pickup', { title: cardTitle(CARD_BY_ID[pickupAsk.cardId], t.lang) })}
           </Link>
         )}
-        {busy && (live ? <p className="msg her" data-testid="chat-live" aria-hidden="true">{live}</p> : <Typing label={t('common.typing', { first })} />)}
+        {busy && (live && t.lang === 'ja' ? <p className="msg her" data-testid="chat-live" aria-hidden="true">{live}</p> : <Typing label={t('common.typing', { first })} />)}
         {left === 0 && !busy && (
           // H2: nothing is sold in v1.1 — the limit says when it comes back and what a lucky-card code gives.
           <Link to="/me/shop" className="panel fade-in" style={{ display: 'flex', flexDirection: 'column', gap: 6 }} data-testid="chat-limit">

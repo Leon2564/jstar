@@ -6,6 +6,8 @@ interface Env {
   ARK_MODEL?: string;
   TEXT_AGENT_LIMITER: RateLimit;
   TEXT_AGENT_GLOBAL_LIMITER: RateLimit;
+  TEXT_TRANSLATION_LIMITER: RateLimit;
+  TEXT_TRANSLATION_GLOBAL_LIMITER: RateLimit;
   VIDU_API_TOKEN: string;
   VIDU_MAHIRO_DESKTOP_AVATAR_ID: string;
   VIDU_MAHIRO_MOBILE_AVATAR_ID: string;
@@ -52,6 +54,7 @@ type LiveStar = typeof LIVE_STARS[number];
 type LiveLayout = 'desktop' | 'mobile';
 
 const JAPANESE_POLICY = '最優先の言語規則：相手がどの言語で話しても、返答、発話、字幕用の原文は必ず自然な日本語だけにする。中国語、英語、韓国語などを返答本文に混ぜない。音声で話す文章と返す原文を完全に一致させる。';
+const CHAT_LANGUAGES = { ja: 'Japanese', 'zh-Hant': 'Traditional Chinese', en: 'English', ko: 'Korean' } as const;
 const DEFAULT_PERSONA: Record<LiveStar, string> = {
   mahiro: 'あなたはJSTAR上でAIであることが明示された、唯井まひろの公認AIキャラクターです。柔らかく少し内向的で、素直に気持ちを伝え、優しく大切にされると安心して距離を縮めます。若々しく甘いが幼すぎない声で、少し照れながら自然な日本語で一、二文だけ話します。',
   nana: 'あなたはJSTAR上でAIであることが明示された、八木奈々の公認AIキャラクターです。静かで文学的、内向的で誠実な雰囲気を保ち、相手の話をよく聞いてから、温かく細やかな日本語で一、二文だけ返します。',
@@ -139,6 +142,68 @@ async function textAgent(request: Request, env: Env): Promise<Response> {
     return json({ reply });
   } catch {
     return json({ error: 'agent_unavailable' }, { status: 503 });
+  }
+}
+
+async function translateChat(request: Request, env: Env): Promise<Response> {
+  const ip = request.headers.get('cf-connecting-ip') || 'unknown';
+  const [visitorLimit, globalLimit] = await Promise.all([
+    env.TEXT_TRANSLATION_LIMITER.limit({ key: ip }),
+    env.TEXT_TRANSLATION_GLOBAL_LIMITER.limit({ key: 'all' })
+  ]);
+  if (!visitorLimit.success || !globalLimit.success) return json({ error: 'rate_limited' }, { status: 429 });
+  const body = await request.json().catch(() => null) as { lang?: string; texts?: string[] } | null;
+  if (!body || !(body.lang && Object.hasOwn(CHAT_LANGUAGES, body.lang)) || !Array.isArray(body.texts)
+    || body.texts.length < 1 || body.texts.length > 16
+    || body.texts.some((text) => typeof text !== 'string' || !text.trim() || text.length > 500)
+    || body.texts.join('').length > 4000) {
+    return json({ error: 'invalid_translation_request' }, { status: 400 });
+  }
+  const target = CHAT_LANGUAGES[body.lang as keyof typeof CHAT_LANGUAGES];
+  const messages = [
+    { role: 'system', content: `Translate each item of the user's JSON array into natural ${target}. Keep the character's gentle conversational tone, names, and meaning. If an item is already in ${target}, keep it natural and unchanged. Return ONLY a JSON object with a "texts" array of strings in the same order, with no notes or markdown.` },
+    { role: 'user', content: JSON.stringify(body.texts) }
+  ];
+  try {
+    let output: unknown;
+    if (env.ARK_API_KEY) {
+      const response = await fetch(ARK_CHAT_URL, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${env.ARK_API_KEY}`, 'content-type': 'application/json' },
+        body: JSON.stringify({ model: env.ARK_MODEL || ARK_DEFAULT_MODEL, messages, max_tokens: 2400, stream: false }),
+        signal: AbortSignal.timeout(20_000)
+      });
+      if (!response.ok) return json({ error: 'translation_unavailable' }, { status: 503 });
+      const result = await response.json().catch(() => null) as { choices?: { message?: { content?: string } }[] } | null;
+      output = result?.choices?.[0]?.message?.content;
+    } else {
+      const result = await env.AI.run('@cf/meta/llama-3.3-70b-instruct-fp8-fast', {
+        messages,
+        max_tokens: 2400,
+        response_format: {
+          type: 'json_schema',
+          json_schema: {
+            type: 'object',
+            properties: { texts: { type: 'array', items: { type: 'string' } } },
+            required: ['texts']
+          }
+        }
+      });
+      output = typeof result === 'object' && result && 'response' in result ? result.response : null;
+    }
+    if (typeof output === 'string') {
+      const start = output.indexOf('{');
+      const end = output.lastIndexOf('}');
+      output = start >= 0 && end > start ? JSON.parse(output.slice(start, end + 1)) as unknown : null;
+    }
+    const texts = output && typeof output === 'object' && 'texts' in output ? output.texts : null;
+    if (!Array.isArray(texts) || texts.length !== body.texts.length
+      || texts.some((text) => typeof text !== 'string' || !text.trim())) {
+      return json({ error: 'translation_unavailable' }, { status: 502 });
+    }
+    return json({ texts });
+  } catch {
+    return json({ error: 'translation_unavailable' }, { status: 503 });
   }
 }
 
@@ -327,6 +392,7 @@ export default {
     if (url.pathname === '/v1/live/session' && request.method === 'POST') return createLiveSession(request, env);
     if (url.pathname === '/v1/live/control' && request.method === 'GET') return connectViduControl(request, env);
     if (url.pathname === '/v1/agent/chat' && request.method === 'POST') return textAgent(request, env);
+    if (url.pathname === '/v1/agent/translate' && request.method === 'POST') return translateChat(request, env);
     if (isR2Asset(url.pathname)) {
       if (request.method !== 'GET' && request.method !== 'HEAD') {
         return new Response('Method not allowed', { status: 405, headers: { allow: 'GET, HEAD' } });
